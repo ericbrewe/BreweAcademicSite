@@ -21,27 +21,25 @@ interests:
 name: Eric Brewe
 organizations:
 - name: Drexel University
-  url: ""
-role: Professor of Artificial Intelligence
+  url: "https://sites.google.com/thecastlecenter.org/drexel-per-network-public/home?authuser=1"
+role: Associate Professor of Physics and Science Education
 social:
 - icon: envelope
   icon_pack: fas
   link: '#contact'
 - icon: twitter
   icon_pack: fab
-  link: https://twitter.com/GeorgeCushen
+  link: https://twitter.com/ericbrewe
 - icon: google-scholar
   icon_pack: ai
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+  link: https://scholar.google.com/citations?user=eQWSzOEAAAAJ&hl=en
 - icon: github
   icon_pack: fab
-  link: https://github.com/gcushen
+  link: https://github.com/ericbrewe
 superuser: true
 user_groups:
 - Researchers
 - Visitors
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+Dr. Eric Brewe is an Associate Professor in Physics and Science Education at Drexel University. His research into the teaching and learning of physics at the university level includes developing curriculum for the Modeling Instruction course, leading inquiries into the role of Modeling Instruction in promoting student learning, participation, retention & persistence, enhanced attitudes toward science and equity. This research has led to describing the role of participation in learning using primarily quantitative measures including the use of Network Analyses, and recently Functional Magnetic Resonance Imaging. In addition to research on postsecondary physics, Dr. Brewe has been involved in preparing future physics teachers through Modeling Workshops, and as co-editor of the PhysTEC sponsored book, Recruiting and Educating Future Physics Teachers: Case Studies and Effective Practices. Dr. Brewe helped to found the American Physical Society’s Topical Group on Physics Education Research (GPER) and served as the founding Chair of GPER. He recently co-edited the Focused Collection on Gender in Physics published by Physical Review – Physics Education Research and now serves on the editorial board for Physical Review – PER.  Dr. Brewe was chosen as a Fellow of the American Physical Society in 2019. 
