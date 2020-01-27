@@ -2,14 +2,13 @@
 date: "2018-09-09T00:00:00Z"
 draft: false
 lastmod: "2018-09-09T00:00:00Z"
-linktitle: An Example Course
+linktitle: Physics 115
 menu:
   example:
-    name: Overview
+    name: Physics 115
     weight: 1
-summary: Learn how to use Academic's docs layout for publishing online courses, software
-  documentation, and tutorials.
-title: Overview
+summary: Contemporary Physics III
+title: PHYS 115
 toc: true
 type: docs
 weight: 1
