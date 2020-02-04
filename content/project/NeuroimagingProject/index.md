@@ -6,6 +6,6 @@ image:
   focal_point: Smart
 summary: Neuroimaging Project
 tags:
-- Neruoimaging
+- Neuroimaging
 title: Neuroimaging
 ---
