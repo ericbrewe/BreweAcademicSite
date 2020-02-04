@@ -17,12 +17,9 @@ date_format = "Jan 2006"
 #   Required fields are `title`, `company`, and `date_start`.
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
+
 [[experience]]
-<<<<<<< HEAD
-  title = "Associate Professor Physics and Science Education"
-=======
   title = "Associate Professor of Physics and Science Education"
->>>>>>> 0fb155b2e500094c12b1aef25a99841b5aa16ecd
   company = "Drexel University"
   company_url = "https://sites.google.com/thecastlecenter.org/drexel-per-network-public/home?authuser=1"
   location = "Philadelphia"
@@ -31,19 +28,13 @@ date_format = "Jan 2006"
   description = ""
 
 [[experience]]
-<<<<<<< HEAD
   title = "Associate Professor Science Education / Associate Director STEM Transformation Institute"
-=======
-  title = "Assistant/Associate Professor of Science Education"
->>>>>>> 0fb155b2e500094c12b1aef25a99841b5aa16ecd
   company = "Florida International University"
   company_url = ""
   location = "Miami, FL"
   date_start = "2007-08-01"
   date_end = "2016-12-31"
   description = ""
-<<<<<<< HEAD
-=======
 
 [[experience]]
   title = "Assistant Professor of Physics"
@@ -53,14 +44,6 @@ date_format = "Jan 2006"
   date_start = "2002-08-01"
   date_end = "2007-07-31"
   description = ""
->>>>>>> 0fb155b2e500094c12b1aef25a99841b5aa16ecd
 
-[[experience]]
-  title = "Assistant Professor Physics"
-  company = "Hawaii Pacific University"
-  company_url = ""
-  location = "Kaneohe, HI"
-  date_start = "2002-08-01"
-  date_end = "2007-05-31"
-  description = ""
+
 +++
