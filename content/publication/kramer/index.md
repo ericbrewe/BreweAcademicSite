@@ -1,6 +1,6 @@
 ---
 title: "Improving Physics Education through a Diverse Research and Learning Community at Florida International University"
-date: -01-01
+date: 2008-01-01
 publishDate: 2020-02-05T15:04:32.572226Z
 authors: ["Laird H Kramer", "Eric Brewe"]
 publication_types: ["2"]
