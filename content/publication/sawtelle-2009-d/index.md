@@ -8,5 +8,6 @@ abstract: "The Colorado Learning Attitudes about Science Survey (CLASS) has been
 featured: false
 publication: "*Physical Review Special Topics - Physics Education Research*"
 doi: "10.1103/PhysRevSTPER.5.023101"
+url_pdf: "https://journals.aps.org/prper/pdf/10.1103/PhysRevSTPER.5.023101"
 ---
 
