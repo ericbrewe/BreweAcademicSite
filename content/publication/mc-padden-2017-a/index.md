@@ -1,0 +1,13 @@
+---
+title: "Impact of the second semester University Modeling Instruction course on students' representation choices"
+date: 2017-01-01
+publishDate: 2020-02-05T15:04:32.545416Z
+authors: ["Daryl McPadden", "Eric Brewe"]
+publication_types: ["2"]
+abstract: "© 2017 authors. Published by the American Physical Society. Published by the American Physical Society under the terms of the \"https://creativecommons.org/licenses/by/4.0/\" Creative Commons Attribution 4.0 International license. Further distribution of this work must maintain attribution to the author(s) and the published article's title, journal citation, and DOI. Representation use is a critical skill for learning, problem solving, and communicating in science, especially in physics where multiple representations often scaffold the understanding of a phenomenon. University Modeling Instruction, which is an active-learning, research-based introductory physics curriculum centered on students' use of scientific models, has made representation use a primary learning goal with explicit class time devoted to introducing and coordinating representations as part of the model building process. However, because of the semester break, the second semester course, Modeling Instruction-Electricity and Magnetism (MI-EM), contains a mixture of students who are returning from the Modeling Instruction-mechanics course (to whom we refer to as \"returning students\") and students who are new to Modeling Instruction with the MI-EM course (to whom we refer to as \"new students\"). In this study, we analyze the impact of MI-EM on students' representation choices across the introductory physics content for these different groups of students by examining both what individual representations students choose and their average number of representations on a modified card-sort survey with a variety of mechanics and EM questions. Using Wilcoxon-signed-rank tests, Wilcoxon-Mann-Whitney tests, Cliff's delta effect sizes, and box plots, we compare students' representation choices from pre- to postsemester, from new and returning students, and from mechanics and EM content. We find that there is a significant difference between returning and new students' representation choices, which serves as a baseline comparison between Modeling Instruction and traditional lecture-based physics classes. We also find that returning students maintain a high representation use across the MI-EM semester, while new students see significant growth in their representation use regardless of content."
+featured: false
+publication: "*Physical Review Physics Education Research*"
+url_pdf: "https://link.aps.org/doi/10.1103/PhysRevPhysEducRes.13.020129"
+doi: "10.1103/PhysRevPhysEducRes.13.020129"
+---
+
