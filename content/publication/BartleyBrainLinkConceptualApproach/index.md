@@ -1,7 +1,7 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "BartleyBrainLinkConceptualApproach"
+title: "Brain activity links performance in science reasoning with conceptual approach"
 authors: ["Jessica E. Bartley", "Matthew C. Riedel", "Taylor Salo", "Emily R. Boeving", "Katherine L. Bottenhorn", "Rosalie Odean", "Alina Nazareth", "Robert W. Laird", "Matthew T. Sutherland", "Shannon M. Pruden",  "Eric Brewe",  "Angela R. Laird"]
 date: 2019-12-02
 doi: "doi.org/10.1038/s41539-019-0059-8"
