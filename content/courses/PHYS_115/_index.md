@@ -4,7 +4,7 @@ draft: false
 lastmod: "2018-09-09T00:00:00Z"
 linktitle: Physics 115 - Sp 2020
 menu:
-  example:
+  PHYS_115:
     name: Physics 115
     weight: 1
 summary: Contemporary Physics III

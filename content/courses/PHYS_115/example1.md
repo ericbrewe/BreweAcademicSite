@@ -3,10 +3,10 @@ date: "2019-05-05T00:00:00+01:00"
 draft: false
 linktitle: Tips 1-2
 menu:
-  example:
+  PHYS_115:
     parent: Physics 115
     weight: 1
-title: Example Page 1
+title: PHYS 115 Page 1
 toc: true
 type: docs
 weight: 1
