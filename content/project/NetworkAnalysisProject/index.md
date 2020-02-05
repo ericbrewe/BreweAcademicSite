@@ -4,7 +4,7 @@ external_link: https://sites.google.com/thecastlecenter.org/drexel-per-network-p
 image: 
   caption: 
   focal_point: Smart
-summary: Network Analysis
+summary: Investigating the roles of social networks in physics learning and success. 
 tags:
 - Network Analysis
 title: Network Analysis Projects

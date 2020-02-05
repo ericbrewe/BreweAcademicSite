@@ -4,7 +4,7 @@ external_link: https://sites.google.com/thecastlecenter.org/drexel-per-network-p
 image:
   caption: 
   focal_point: Smart
-summary: Neuroimaging Project
+summary: This project explores changes to neurobiology after taking physics classes (Exploring the Neural Mechanisms of Physics Learning), in collaboration with  with the Neuroinformatics and Brain Connectivity Lab at Florida International University. 
 tags:
 - Neuroimaging
 title: Neuroimaging
