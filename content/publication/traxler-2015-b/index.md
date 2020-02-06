@@ -8,5 +8,6 @@ abstract: "© 2015 authors. Published by the American Physical Society. We repor
 featured: false
 publication: "*Physical Review Special Topics - Physics Education Research*"
 doi: "10.1103/PhysRevSTPER.11.020132"
+url_pdf: "https://journals.aps.org/prper/pdf/10.1103/PhysRevSTPER.11.020132"
 ---
 
