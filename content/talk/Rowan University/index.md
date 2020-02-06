@@ -29,7 +29,7 @@ publishDate: "2017-01-01T00:00:00Z"
 slides: 
 summary: Rowan University Physics Department Colloquium
 tags: []
-title: The Roles of Engagement: Network Analysis in Physics Education Research
+title: "The Roles of Engagement: Network Analysis in Physics Education Research""
 url_code: ""
 url_pdf: ""
 url_slides: ""
