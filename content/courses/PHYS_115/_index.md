@@ -21,9 +21,11 @@ M, W, F - 10:00-10:50
 30 March - 12 June
 
 **Instructors**
-Dr. Eric Brewe, Disque Hall Rm. 918 [mailto:eb573@drexel.edu]
 
-Virgina Price, DH 916
+|    | Office | email | Office Hrs |
+|----|----|---|-------|------------|
+| Dr. Eric Brewe | Disque Hall Rm. 918 | <eb573@drexel.edu> |
+| Virgina Price | DH 916 | <vep32@drexel.edu> |
 
 **Learning Outcomes**
 * Apply key concepts and physical laws of magnetism and circuits including conservation of charge, Coulomb’s law, electric potential, Kirchoff’s rules, Biot-Savart law, Ampere's law, Faraday’s law and Lenz’s law
