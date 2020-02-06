@@ -8,6 +8,7 @@ abstract: "Differences in learning gains between interactive engagement and lect
 featured: false
 publication: "*AIP Conference Proceedings*"
 tags: ["Learning Community", "Modeling Instruction", "Network Analysis", "Participation"]
-doi: "10.1063/1.3515255"
+doi: "doi.org/10.1063/1.3515255"
+url_pdf: "http://link.aip.org/link/?APCPCS/1289/85/1"
 ---
 

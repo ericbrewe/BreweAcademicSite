@@ -36,7 +36,7 @@ Matter and Interactions, Chabay and Sherwood
 
 
 
-## Course Outline##
+## Course Outline
 We will cover chapters 17-23 and one additional supplemental chapter S3 on Waves. Topics will include:
 * Magnetic Fields
 * Electric Circuits
@@ -46,14 +46,16 @@ We will cover chapters 17-23 and one additional supplemental chapter S3 on Waves
 * Electromagnetic Radiation
 * Waves and Particles
 
-##Grading##
+## Grading
 Grades will be based on the following weighting of different course componentes
-|Homework: |30% (Combining written problem sets and computational assignments)|
-|Midterm: |25%| 
-|Final: |35%|
-|Class Participation: |10%|
+
+| Category             | Percentage                                                         |
+| ---------------------| ------------------------------------------------------------------ |
+| Homework:            | 30% (Combining written problem sets and computational assignments) |
+| Midterm:             | 25%                                                                | 
+| Final:               | 35%                                                                |
+| Class Participation: | 10%                                                                |
 
 
 
-
-
+---
