@@ -16,12 +16,13 @@ weight: 1
 
 ## Course Info - Winter 2020
 **Schedule**
-M,W,F - 10:00-10:50
+M, W, F - 10:00-10:50
 
 30 March - 12 June
 
 **Instructors**
-Dr. Eric Brewe, Disque Hall Rm. 918
+Dr. Eric Brewe, Disque Hall Rm. 918 [mailto:eb573@drexel.edu]
+
 Virgina Price, DH 916
 
 **Learning Outcomes**
