@@ -16,7 +16,7 @@ publishDate: 2020-02-05T10:27:40-05:00
 publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: "npj Science of Learning"
+publication: "*npj Science of Learning*"
 publication_short: ""
 
 abstract: "Understanding how students learn is crucial for helping them succeed. We examined brain function in 107 undergraduate students during a task known to be challenging for many students – physics problem solving – to characterize underlying neural mechanisms and determine how these support comprehension and proficiency. Further, we applied module analysis to response distributions, defining groups of students who answered using similar physics conceptions, and probed for brain differences linked with different conceptual approaches. We found integrated executive, attentional, visual motion, and default mode brain systems cooperate to achieve sequential and sustained physics-related cognition. While accuracy alone did not predict brain function, dissociable brain patterns were observed when students solved problems using different physics conceptions, and increased success was linked to conceptual coherence. Our analyses demonstrate that episodic associations and control processes operate in tandem to support physics reasoning, offering potential insight to support student learning."
