@@ -1,7 +1,7 @@
 ---
 date: "2019-05-05T00:00:00+01:00"
 draft: false
-linktitle: Written Homework #1 - Ch 18
+linktitle: Written Homework 1 - Ch 18
 menu:
   PHYS_115:
     parent: Physics 115
