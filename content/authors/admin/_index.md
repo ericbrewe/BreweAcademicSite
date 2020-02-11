@@ -36,9 +36,9 @@ social:
 - icon: github
   icon_pack: fab
   link: https://github.com/ericbrewe
--icon: orcid
-  icon_pack = ai
-  link = https://orcid.org/0000-0003-3480-7040
+- icon: orcid
+  icon_pack: ai
+  link: https://orcid.org/0000-0003-3480-7040
 superuser: true
 user_groups:
 - Researchers
