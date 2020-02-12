@@ -61,12 +61,14 @@ Grades will be based on the following weighting of different course components.
 | Class Participation: | 10%                                                                |
 
 ## Homework
+Since homework is one way you will demonstrate understanding, you will need to write up homework in a way that demonstrates that you understand the material. You will need to not only show your work, but incorporate explanations of how and why you are doing what you are doing. 
 
-Homework will be dur at the beginning of class each week on Friday, except during Week 1 and the week of the midterm. Since homework is one way you will demonstrate understanding, you will need to write up homework in a way that demonstrates that you understand the material. You will need to not only show your work, but incorporate explanations of how and why you are doing what you are doing. 
+### Written Assignments
+Homework will be due at the beginning of class each week on Friday, except during Week 1 and the week of the midterm. 
 
 You are allowed to work together on homework in the analysis phase, but you will need to work individually in the 'writing it up' phase.  This means while you may come to the same answers, your explanations of how you got there will be unique and distinct. 
 
-### Programming Assingments
+### Programming Assignments
 
 Programming assignments will be discussed in recitation, and will count as 1/3 of your total homework grade. Programming assignments are due at the beginning of recitation on Wednesday in weeks 3, 5, 8, and 10 (see schedule below).
 
