@@ -14,7 +14,7 @@ weight: 2
 
 **Drawing magnetic field lines**
 
-The Biot-Savart lwa for constant currents is:
+The Biot-Savart law for constant currents is:
 
 $$\mathbf B = I\frac{\mu_{0}}{4\pi} \int \frac{\vec{dl} \times \hat{r}} {r^2} $$
 
