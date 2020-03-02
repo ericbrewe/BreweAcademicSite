@@ -31,7 +31,7 @@ summary: "Rutgers University Physics Department Colloquium"
 tags: []
 title: "Modeling Instruction, student engagement, and neurobiological impacts"
 url_code: ""
-url_pdf: ""
+url_pdf: "slides/RutgersColloquium.pdf"
 url_slides: ""
 url_video: ""
 ---
