@@ -1,6 +1,6 @@
 ---
-authors: []
-categories: []
+authors: [Eric Brewe]
+categories: [PHYS 115]
 date: "2019-02-05T00:00:00Z"
 slides:
   highlight_style: dracula
@@ -9,6 +9,8 @@ summary: An introduction to using Academic's Slides feature.
 tags: []
 title: Slides
 ---
+
+
 
 # Create slides in Markdown with Academic
 

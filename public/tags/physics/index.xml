@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Physics | Eric Brewe Academic</title>
+    <link>/tags/physics/</link>
+      <atom:link href="/tags/physics/index.xml" rel="self" type="application/rss+xml" />
+    <description>Physics</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Physics</title>
+      <link>/tags/physics/</link>
+    </image>
+    
+    <item>
+      <title>Understanding the development of interest and self-efficacy in active-learning undergraduate physics courses</title>
+      <link>/publication/dou-2018/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/dou-2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Exploring the relationship between self-efficacy and retention in introductory physics</title>
+      <link>/publication/sawtelle-2012-jrst/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publication/sawtelle-2012-jrst/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

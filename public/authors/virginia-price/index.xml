@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Virginia Price | Eric Brewe Academic</title>
+    <link>/authors/virginia-price/</link>
+      <atom:link href="/authors/virginia-price/index.xml" rel="self" type="application/rss+xml" />
+    <description>Virginia Price</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Virginia Price</title>
+      <link>/authors/virginia-price/</link>
+    </image>
+    
+    <item>
+      <title>Determining Influences of Women Deciding to Major in Physics</title>
+      <link>/publication/price-perc-poster-19/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/price-perc-poster-19/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

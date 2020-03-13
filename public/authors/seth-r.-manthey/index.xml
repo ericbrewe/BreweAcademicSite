@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Seth R. Manthey | Eric Brewe Academic</title>
+    <link>/authors/seth-r.-manthey/</link>
+      <atom:link href="/authors/seth-r.-manthey/index.xml" rel="self" type="application/rss+xml" />
+    <description>Seth R. Manthey</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 01 Jan 2013 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Seth R. Manthey</title>
+      <link>/authors/seth-r.-manthey/</link>
+    </image>
+    
+    <item>
+      <title>Regression analysis exploring teacher impact on student FCI post scores</title>
+      <link>/publication/mahadeo-2013/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/mahadeo-2013/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

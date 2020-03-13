@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cognitive control | Eric Brewe Academic</title>
+    <link>/tags/cognitive-control/</link>
+      <atom:link href="/tags/cognitive-control/index.xml" rel="self" type="application/rss+xml" />
+    <description>Cognitive control</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Cognitive control</title>
+      <link>/tags/cognitive-control/</link>
+    </image>
+    
+    <item>
+      <title>Meta-analytic evidence for a core problem solving network across multiple representational domains</title>
+      <link>/publication/bartley-2018/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/bartley-2018/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

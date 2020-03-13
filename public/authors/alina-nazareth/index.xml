@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Alina Nazareth | Eric Brewe Academic</title>
+    <link>/authors/alina-nazareth/</link>
+      <atom:link href="/authors/alina-nazareth/index.xml" rel="self" type="application/rss+xml" />
+    <description>Alina Nazareth</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 02 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Alina Nazareth</title>
+      <link>/authors/alina-nazareth/</link>
+    </image>
+    
+    <item>
+      <title>Brain activity links performance in science reasoning with conceptual approach</title>
+      <link>/publication/bartleybrainlinkconceptualapproach/</link>
+      <pubDate>Mon, 02 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/bartleybrainlinkconceptualapproach/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sex differences in brain correlates of STEM anxiety</title>
+      <link>/publication/gonzalez-2019-stem-anxiety-brain/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/gonzalez-2019-stem-anxiety-brain/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Toward a Neurobiological Basis for Understanding Learning in University Modeling Instruction Physics Courses</title>
+      <link>/publication/brewe-2018-neuroimaging/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/brewe-2018-neuroimaging/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

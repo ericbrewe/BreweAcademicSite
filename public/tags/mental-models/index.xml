@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mental Models | Eric Brewe Academic</title>
+    <link>/tags/mental-models/</link>
+      <atom:link href="/tags/mental-models/index.xml" rel="self" type="application/rss+xml" />
+    <description>Mental Models</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Mental Models</title>
+      <link>/tags/mental-models/</link>
+    </image>
+    
+    <item>
+      <title>Toward a Neurobiological Basis for Understanding Learning in University Modeling Instruction Physics Courses</title>
+      <link>/publication/brewe-2018-neuroimaging/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/brewe-2018-neuroimaging/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

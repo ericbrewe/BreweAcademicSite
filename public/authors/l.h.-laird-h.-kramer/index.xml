@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>L.H. Laird H. Kramer | Eric Brewe Academic</title>
+    <link>/authors/l.h.-laird-h.-kramer/</link>
+      <atom:link href="/authors/l.h.-laird-h.-kramer/index.xml" rel="self" type="application/rss+xml" />
+    <description>L.H. Laird H. Kramer</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 01 Jan 2015 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>L.H. Laird H. Kramer</title>
+      <link>/authors/l.h.-laird-h.-kramer/</link>
+    </image>
+    
+    <item>
+      <title>Developing a physics expert identity in a biophysics research group</title>
+      <link>/publication/rodriguez-2015-a/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/rodriguez-2015-a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Positive Impacts of Modeling Instruction on Self‐Efficacy</title>
+      <link>/publication/sawtelle-2010/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publication/sawtelle-2010/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

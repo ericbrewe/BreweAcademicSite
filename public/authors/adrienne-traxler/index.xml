@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Adrienne Traxler | Eric Brewe Academic</title>
+    <link>/authors/adrienne-traxler/</link>
+      <atom:link href="/authors/adrienne-traxler/index.xml" rel="self" type="application/rss+xml" />
+    <description>Adrienne Traxler</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 01 Jan 2013 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Adrienne Traxler</title>
+      <link>/authors/adrienne-traxler/</link>
+    </image>
+    
+    <item>
+      <title>Extending positive CLASS results across multiple instructors and multiple classes of Modeling Instruction</title>
+      <link>/publication/brewe-2013-extend-class/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/brewe-2013-extend-class/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

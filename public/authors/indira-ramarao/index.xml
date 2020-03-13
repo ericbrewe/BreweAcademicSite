@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Indira Ramarao | Eric Brewe Academic</title>
+    <link>/authors/indira-ramarao/</link>
+      <atom:link href="/authors/indira-ramarao/index.xml" rel="self" type="application/rss+xml" />
+    <description>Indira Ramarao</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 11 Feb 2020 09:41:13 -0500</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Indira Ramarao</title>
+      <link>/authors/indira-ramarao/</link>
+    </image>
+    
+    <item>
+      <title>A Network Analysis of Domestic Violence Beliefs Among Young Adults in India</title>
+      <link>/publication/rodriguezananetworkdomesticviolence/</link>
+      <pubDate>Tue, 11 Feb 2020 09:41:13 -0500</pubDate>
+      <guid>/publication/rodriguezananetworkdomesticviolence/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Eric Williams | Eric Brewe Academic</title>
+    <link>/authors/eric-williams/</link>
+      <atom:link href="/authors/eric-williams/index.xml" rel="self" type="application/rss+xml" />
+    <description>Eric Williams</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 01 Jan 2015 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Eric Williams</title>
+      <link>/authors/eric-williams/</link>
+    </image>
+    
+    <item>
+      <title>Understanding Centrality: Investigating Student Outcomes within a Classroom Social Network</title>
+      <link>/publication/williams-2015/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/williams-2015/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>graduate students | Eric Brewe Academic</title>
+    <link>/tags/graduate-students/</link>
+      <atom:link href="/tags/graduate-students/index.xml" rel="self" type="application/rss+xml" />
+    <description>graduate students</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 01 Jan 2013 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>graduate students</title>
+      <link>/tags/graduate-students/</link>
+    </image>
+    
+    <item>
+      <title>Cookies as agents for community membership</title>
+      <link>/publication/rodriguez-2013/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/rodriguez-2013/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

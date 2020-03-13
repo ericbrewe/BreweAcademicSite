@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Learning community | Eric Brewe Academic</title>
+    <link>/tags/learning-community/</link>
+      <atom:link href="/tags/learning-community/index.xml" rel="self" type="application/rss+xml" />
+    <description>Learning community</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 01 Jan 2010 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Learning community</title>
+      <link>/tags/learning-community/</link>
+    </image>
+    
+    <item>
+      <title>Changing participation through formation of student learning communities</title>
+      <link>/publication/brewe-2010-b/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publication/brewe-2010-b/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Investigating Student Communities with Network Analysis of Interactions in a Physics Learning Center</title>
+      <link>/publication/brewe-2009-communities-aip/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/publication/brewe-2009-communities-aip/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

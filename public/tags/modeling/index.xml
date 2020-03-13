@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Modeling | Eric Brewe Academic</title>
+    <link>/tags/modeling/</link>
+      <atom:link href="/tags/modeling/index.xml" rel="self" type="application/rss+xml" />
+    <description>Modeling</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 01 Jan 2015 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Modeling</title>
+      <link>/tags/modeling/</link>
+    </image>
+    
+    <item>
+      <title>The Impacts of Instructor and Student Gender on Student Performance in Introductory Modeling Instruction Courses</title>
+      <link>/publication/mc-padden-2015/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/mc-padden-2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Regression analysis exploring teacher impact on student FCI post scores</title>
+      <link>/publication/mahadeo-2013/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/mahadeo-2013/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Creating opportunities to influence self-efficacy through modeling instruction</title>
+      <link>/publication/sawtelle-2012-se-opportunities-aip/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publication/sawtelle-2012-se-opportunities-aip/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

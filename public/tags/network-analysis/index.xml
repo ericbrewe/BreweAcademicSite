@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Network Analysis | Eric Brewe Academic</title>
+    <link>/tags/network-analysis/</link>
+      <atom:link href="/tags/network-analysis/index.xml" rel="self" type="application/rss+xml" />
+    <description>Network Analysis</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 11 Feb 2020 09:41:13 -0500</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Network Analysis</title>
+      <link>/tags/network-analysis/</link>
+    </image>
+    
+    <item>
+      <title>A Network Analysis of Domestic Violence Beliefs Among Young Adults in India</title>
+      <link>/publication/rodriguezananetworkdomesticviolence/</link>
+      <pubDate>Tue, 11 Feb 2020 09:41:13 -0500</pubDate>
+      <guid>/publication/rodriguezananetworkdomesticviolence/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Network Analysis Projects</title>
+      <link>/project/networkanalysisproject/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/project/networkanalysisproject/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Changing participation through formation of student learning communities</title>
+      <link>/publication/brewe-2010-b/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publication/brewe-2010-b/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

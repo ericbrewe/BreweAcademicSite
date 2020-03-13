@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Seth Manthey | Eric Brewe Academic</title>
+    <link>/authors/seth-manthey/</link>
+      <atom:link href="/authors/seth-manthey/index.xml" rel="self" type="application/rss+xml" />
+    <description>Seth Manthey</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 01 Jan 2013 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Seth Manthey</title>
+      <link>/authors/seth-manthey/</link>
+    </image>
+    
+    <item>
+      <title>Toward University Modeling Instruction--Biology: Adapting Curricular Frameworks from Physics to Biology</title>
+      <link>/publication/manthey-2013-a/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/manthey-2013-a/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

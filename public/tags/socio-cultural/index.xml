@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>socio-cultural | Eric Brewe Academic</title>
+    <link>/tags/socio-cultural/</link>
+      <atom:link href="/tags/socio-cultural/index.xml" rel="self" type="application/rss+xml" />
+    <description>socio-cultural</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 01 Jan 2012 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>socio-cultural</title>
+      <link>/tags/socio-cultural/</link>
+    </image>
+    
+    <item>
+      <title>&#34;Implicit action&#34;: Understanding discourse management in modeling instruction</title>
+      <link>/publication/durden-2012/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publication/durden-2012/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

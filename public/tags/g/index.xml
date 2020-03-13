@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>g- | Eric Brewe Academic</title>
+    <link>/tags/g/</link>
+      <atom:link href="/tags/g/index.xml" rel="self" type="application/rss+xml" />
+    <description>g-</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 01 Jan 2015 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>g-</title>
+      <link>/tags/g/</link>
+    </image>
+    
+    <item>
+      <title>The Impacts of Instructor and Student Gender on Student Performance in Introductory Modeling Instruction Courses</title>
+      <link>/publication/mc-padden-2015/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/mc-padden-2015/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

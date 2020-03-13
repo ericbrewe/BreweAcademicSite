@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>L.H. Laird H Kramer | Eric Brewe Academic</title>
+    <link>/authors/l.h.-laird-h-kramer/</link>
+      <atom:link href="/authors/l.h.-laird-h-kramer/index.xml" rel="self" type="application/rss+xml" />
+    <description>L.H. Laird H Kramer</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 01 Jan 2013 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>L.H. Laird H Kramer</title>
+      <link>/authors/l.h.-laird-h-kramer/</link>
+    </image>
+    
+    <item>
+      <title>Extending positive CLASS results across multiple instructors and multiple classes of Modeling Instruction</title>
+      <link>/publication/brewe-2013-extend-class/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/brewe-2013-extend-class/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Creating opportunities to influence self-efficacy through modeling instruction</title>
+      <link>/publication/sawtelle-2012-se-opportunities-aip/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publication/sawtelle-2012-se-opportunities-aip/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Identifying events that impact self-efficacy in physics learning</title>
+      <link>/publication/sawtelle-2012-se-events/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publication/sawtelle-2012-se-events/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Moving toward change: Institutionalizing reform through implementation of the Learning Assistant model and Open Source Tutorials</title>
+      <link>/publication/goertzen-2011/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/publication/goertzen-2011/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Toward equity through participation in Modeling Instruction in introductory university physics</title>
+      <link>/publication/brewe-2010-toward-equity/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publication/brewe-2010-toward-equity/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

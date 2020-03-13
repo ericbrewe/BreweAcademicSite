@@ -1,0 +1,857 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors | Eric Brewe Academic</title>
+    <link>/authors/</link>
+      <atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
+    <description>Authors</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 06 Mar 2020 15:30:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Authors</title>
+      <link>/authors/</link>
+    </image>
+    
+    <item>
+      <title>Eric Brewe</title>
+      <link>/authors/eric-brewe/</link>
+      <pubDate>Fri, 06 Mar 2020 15:30:00 +0000</pubDate>
+      <guid>/authors/eric-brewe/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ana L. Rodriguez</title>
+      <link>/authors/ana-l.-rodriguez/</link>
+      <pubDate>Tue, 11 Feb 2020 09:41:13 -0500</pubDate>
+      <guid>/authors/ana-l.-rodriguez/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dionne P. Stephens</title>
+      <link>/authors/dionne-p.-stephens/</link>
+      <pubDate>Tue, 11 Feb 2020 09:41:13 -0500</pubDate>
+      <guid>/authors/dionne-p.-stephens/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Indira Ramarao</title>
+      <link>/authors/indira-ramarao/</link>
+      <pubDate>Tue, 11 Feb 2020 09:41:13 -0500</pubDate>
+      <guid>/authors/indira-ramarao/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Purnima Madhivanan</title>
+      <link>/authors/purnima-madhivanan/</link>
+      <pubDate>Tue, 11 Feb 2020 09:41:13 -0500</pubDate>
+      <guid>/authors/purnima-madhivanan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Alina Nazareth</title>
+      <link>/authors/alina-nazareth/</link>
+      <pubDate>Mon, 02 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/alina-nazareth/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Angela R. Laird</title>
+      <link>/authors/angela-r.-laird/</link>
+      <pubDate>Mon, 02 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/angela-r.-laird/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Emily R. Boeving</title>
+      <link>/authors/emily-r.-boeving/</link>
+      <pubDate>Mon, 02 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/emily-r.-boeving/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jessica E. Bartley</title>
+      <link>/authors/jessica-e.-bartley/</link>
+      <pubDate>Mon, 02 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/jessica-e.-bartley/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Katherine L. Bottenhorn</title>
+      <link>/authors/katherine-l.-bottenhorn/</link>
+      <pubDate>Mon, 02 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/katherine-l.-bottenhorn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Matthew C. Riedel</title>
+      <link>/authors/matthew-c.-riedel/</link>
+      <pubDate>Mon, 02 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/matthew-c.-riedel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Matthew T. Sutherland</title>
+      <link>/authors/matthew-t.-sutherland/</link>
+      <pubDate>Mon, 02 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/matthew-t.-sutherland/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Robert W. Laird</title>
+      <link>/authors/robert-w.-laird/</link>
+      <pubDate>Mon, 02 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/robert-w.-laird/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rosalie Odean</title>
+      <link>/authors/rosalie-odean/</link>
+      <pubDate>Mon, 02 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/rosalie-odean/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shannon M. Pruden</title>
+      <link>/authors/shannon-m.-pruden/</link>
+      <pubDate>Mon, 02 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/shannon-m.-pruden/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Taylor Salo</title>
+      <link>/authors/taylor-salo/</link>
+      <pubDate>Mon, 02 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/taylor-salo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ariel A. Gonzalez</title>
+      <link>/authors/ariel-a.-gonzalez/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/ariel-a.-gonzalez/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Elsa I. Bravo</title>
+      <link>/authors/elsa-i.-bravo/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/elsa-i.-bravo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Eric A Williams</title>
+      <link>/authors/eric-a-williams/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/eric-a-williams/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Justyna P Zwolak</title>
+      <link>/authors/justyna-p-zwolak/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/justyna-p-zwolak/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Michael C. Riedel</title>
+      <link>/authors/michael-c.-riedel/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/michael-c.-riedel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Remy Dou</title>
+      <link>/authors/remy-dou/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/remy-dou/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Renee Michelle Goertzen</title>
+      <link>/authors/renee-michelle-goertzen/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/renee-michelle-goertzen/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Theodore Hodapp</title>
+      <link>/authors/theodore-hodapp/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/theodore-hodapp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Timothy Hayes</title>
+      <link>/authors/timothy-hayes/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/timothy-hayes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Virginia Price</title>
+      <link>/authors/virginia-price/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/virginia-price/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Zahra Hazari</title>
+      <link>/authors/zahra-hazari/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/zahra-hazari/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Daryl McPadden</title>
+      <link>/authors/daryl-mcpadden/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/authors/daryl-mcpadden/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Geoff Potvin</title>
+      <link>/authors/geoff-potvin/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/authors/geoff-potvin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jason Dowd</title>
+      <link>/authors/jason-dowd/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/authors/jason-dowd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Justyna P. Zwolak</title>
+      <link>/authors/justyna-p.-zwolak/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/authors/justyna-p.-zwolak/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kathryn B. H. Clancy</title>
+      <link>/authors/kathryn-b.-h.-clancy/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/authors/kathryn-b.-h.-clancy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lauren M. Aycock</title>
+      <link>/authors/lauren-m.-aycock/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/authors/lauren-m.-aycock/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Michael Zwolak</title>
+      <link>/authors/michael-zwolak/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/authors/michael-zwolak/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Robert Shand</title>
+      <link>/authors/robert-shand/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/authors/robert-shand/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Susan B. Eickhoff</title>
+      <link>/authors/susan-b.-eickhoff/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/authors/susan-b.-eickhoff/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vashti Sawtelle</title>
+      <link>/authors/vashti-sawtelle/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/authors/vashti-sawtelle/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Eric A. Williams</title>
+      <link>/authors/eric-a.-williams/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/authors/eric-a.-williams/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>I.G. Ian G. Bearden</title>
+      <link>/authors/i.g.-ian-g.-bearden/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/authors/i.g.-ian-g.-bearden/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jesper Bruun</title>
+      <link>/authors/jesper-bruun/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/authors/jesper-bruun/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Laird H Kramer</title>
+      <link>/authors/laird-h-kramer/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/authors/laird-h-kramer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Adrienne L. Traxler</title>
+      <link>/authors/adrienne-l.-traxler/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/authors/adrienne-l.-traxler/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Eric Williams</title>
+      <link>/authors/eric-williams/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/authors/eric-williams/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Idaykis Rodriguez</title>
+      <link>/authors/idaykis-rodriguez/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/authors/idaykis-rodriguez/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jonathan V. Mahadeo</title>
+      <link>/authors/jonathan-v.-mahadeo/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/authors/jonathan-v.-mahadeo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>L.H. Laird H. Kramer</title>
+      <link>/authors/l.h.-laird-h.-kramer/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/authors/l.h.-laird-h.-kramer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Renee Michelle R.M. Goertzen</title>
+      <link>/authors/renee-michelle-r.m.-goertzen/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/authors/renee-michelle-r.m.-goertzen/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Binod Nainabasti</title>
+      <link>/authors/binod-nainabasti/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/authors/binod-nainabasti/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>David T Brookes</title>
+      <link>/authors/david-t-brookes/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/authors/david-t-brookes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Yuehai Yang</title>
+      <link>/authors/yuehai-yang/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/authors/yuehai-yang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Adrienne Traxler</title>
+      <link>/authors/adrienne-traxler/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/authors/adrienne-traxler/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jorge de La Garza</title>
+      <link>/authors/jorge-de-la-garza/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/authors/jorge-de-la-garza/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>L.H. Laird H Kramer</title>
+      <link>/authors/l.h.-laird-h-kramer/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/authors/l.h.-laird-h-kramer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Laird H. Kramer</title>
+      <link>/authors/laird-h.-kramer/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/authors/laird-h.-kramer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Laird Kramer</title>
+      <link>/authors/laird-kramer/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/authors/laird-kramer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>N.J. Nancy J Pelaez</title>
+      <link>/authors/n.j.-nancy-j-pelaez/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/authors/n.j.-nancy-j-pelaez/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nathan Samuels</title>
+      <link>/authors/nathan-samuels/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/authors/nathan-samuels/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Seth Manthey</title>
+      <link>/authors/seth-manthey/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/authors/seth-manthey/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Seth R. Manthey</title>
+      <link>/authors/seth-r.-manthey/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/authors/seth-r.-manthey/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Todd J T.J. Cooke</title>
+      <link>/authors/todd-j-t.j.-cooke/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/authors/todd-j-t.j.-cooke/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Charles Henderson</title>
+      <link>/authors/charles-henderson/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/authors/charles-henderson/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jared Durden</title>
+      <link>/authors/jared-durden/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/authors/jared-durden/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>May Lee</title>
+      <link>/authors/may-lee/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/authors/may-lee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Melissa Dancy</title>
+      <link>/authors/melissa-dancy/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/authors/melissa-dancy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A. McGoron</title>
+      <link>/authors/a.-mcgoron/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/authors/a.-mcgoron/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A. Rosenblatt</title>
+      <link>/authors/a.-rosenblatt/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/authors/a.-rosenblatt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A. Tashakkori</title>
+      <link>/authors/a.-tashakkori/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/authors/a.-tashakkori/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>B. Dewsbury</title>
+      <link>/authors/b.-dewsbury/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/authors/b.-dewsbury/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>David Jones</title>
+      <link>/authors/david-jones/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/authors/david-jones/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>E. Villamor</title>
+      <link>/authors/e.-villamor/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/authors/e.-villamor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>G. Narasimhan</title>
+      <link>/authors/g.-narasimhan/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/authors/g.-narasimhan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>J. Alberte</title>
+      <link>/authors/j.-alberte/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/authors/j.-alberte/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>J. Baker</title>
+      <link>/authors/j.-baker/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/authors/j.-baker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>J. Makemson</title>
+      <link>/authors/j.-makemson/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/authors/j.-makemson/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>J.B. Heffernan</title>
+      <link>/authors/j.b.-heffernan/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/authors/j.b.-heffernan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>L. Kos</title>
+      <link>/authors/l.-kos/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/authors/l.-kos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Leanne Wells</title>
+      <link>/authors/leanne-wells/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/authors/leanne-wells/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>M. Galvez</title>
+      <link>/authors/m.-galvez/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/authors/m.-galvez/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>M. Lowenstein</title>
+      <link>/authors/m.-lowenstein/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/authors/m.-lowenstein/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>M. Quirke</title>
+      <link>/authors/m.-quirke/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/authors/m.-quirke/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>M. Tracey</title>
+      <link>/authors/m.-tracey/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/authors/m.-tracey/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>O. Weeks</title>
+      <link>/authors/o.-weeks/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/authors/o.-weeks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>P. Graves</title>
+      <link>/authors/p.-graves/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/authors/p.-graves/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>P. Stoddard</title>
+      <link>/authors/p.-stoddard/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/authors/p.-stoddard/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R. Garcia</title>
+      <link>/authors/r.-garcia/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/authors/r.-garcia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R. Gómez</title>
+      <link>/authors/r.-gomez/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/authors/r.-gomez/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>S. Bhaijee</title>
+      <link>/authors/s.-bhaijee/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/authors/s.-bhaijee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>S. Gavassa</title>
+      <link>/authors/s.-gavassa/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/authors/s.-gavassa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>S. Koptur</title>
+      <link>/authors/s.-koptur/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/authors/s.-koptur/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>S. Shapiro</title>
+      <link>/authors/s.-shapiro/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/authors/s.-shapiro/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>T. Philippi</title>
+      <link>/authors/t.-philippi/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/authors/t.-philippi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>T. Pitzer</title>
+      <link>/authors/t.-pitzer/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/authors/t.-pitzer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>G.E. George E O&#39;Brien</title>
+      <link>/authors/g.e.-george-e-obrien/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/authors/g.e.-george-e-obrien/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>George E. O&#39;Brien</title>
+      <link>/authors/george-e.-obrien/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/authors/george-e.-obrien/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Priscilla Pamelá</title>
+      <link>/authors/priscilla-pamela/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/authors/priscilla-pamela/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>G. O&#39;Brien</title>
+      <link>/authors/g.-obrien/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/authors/g.-obrien/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Edgardo Zamalloa</title>
+      <link>/authors/edgardo-zamalloa/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/authors/edgardo-zamalloa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>George E O&#39;Brien</title>
+      <link>/authors/george-e-obrien/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/authors/george-e-obrien/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ramona Valenzuela</title>
+      <link>/authors/ramona-valenzuela/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/authors/ramona-valenzuela/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Charles R. Henderson</title>
+      <link>/authors/charles-r.-henderson/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/authors/charles-r.-henderson/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Melissa H. Dancy</title>
+      <link>/authors/melissa-h.-dancy/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/authors/melissa-h.-dancy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kathleen A. Harper</title>
+      <link>/authors/kathleen-a.-harper/</link>
+      <pubDate>Thu, 01 Jan 2004 00:00:00 +0000</pubDate>
+      <guid>/authors/kathleen-a.-harper/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Leonardo Hsu</title>
+      <link>/authors/leonardo-hsu/</link>
+      <pubDate>Thu, 01 Jan 2004 00:00:00 +0000</pubDate>
+      <guid>/authors/leonardo-hsu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Thomas M. Foster</title>
+      <link>/authors/thomas-m.-foster/</link>
+      <pubDate>Thu, 01 Jan 2004 00:00:00 +0000</pubDate>
+      <guid>/authors/thomas-m.-foster/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/authors/admin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/authors/admin/</guid>
+      <description>&lt;p&gt;Dr. Eric Brewe is an Associate Professor in Physics and Science Education at Drexel University. His research into the teaching and learning of physics at the university level includes developing curriculum for the Modeling Instruction course, leading inquiries into the role of Modeling Instruction in promoting student learning, participation, retention &amp;amp; persistence, enhanced attitudes toward science and equity. This research has led to describing the role of participation in learning using primarily quantitative measures including the use of Network Analyses, and recently Functional Magnetic Resonance Imaging. In addition to research on postsecondary physics, Dr. Brewe has been involved in preparing future physics teachers through Modeling Workshops, and as co-editor of the PhysTEC sponsored book, Recruiting and Educating Future Physics Teachers: Case Studies and Effective Practices. Dr. Brewe helped to found the American Physical Society’s Topical Group on Physics Education Research (GPER) and served as the founding Chair of GPER. He recently co-edited the Focused Collection on Gender in Physics published by Physical Review – Physics Education Research and now serves on the editorial board for Physical Review – PER.  Dr. Brewe was chosen as a Fellow of the American Physical Society in 2019.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

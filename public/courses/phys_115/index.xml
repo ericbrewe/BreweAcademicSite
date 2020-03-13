@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PHYS 115 | Eric Brewe Academic</title>
+    <link>/courses/phys_115/</link>
+      <atom:link href="/courses/phys_115/index.xml" rel="self" type="application/rss+xml" />
+    <description>PHYS 115</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 09 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>PHYS 115</title>
+      <link>/courses/phys_115/</link>
+    </image>
+    
+    <item>
+      <title>PHYS 115 Page 1</title>
+      <link>/courses/phys_115/hw1/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>/courses/phys_115/hw1/</guid>
+      <description>&lt;p&gt;The first homework, from Chapter 18 will include questions, as well as problems.&lt;/p&gt;
+&lt;h2 id=&#34;questions&#34;&gt;Questions:&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;How can there be a non-zero electric field inside a wire in a circuit?  Isn&#39;t the electric field inside a conductor always zero?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;problems&#34;&gt;Problems:&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>PHYS 115 Page 1</title>
+      <link>/courses/phys_115/program1/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>/courses/phys_115/program1/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Drawing magnetic field lines&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The Biot-Savart lwa for constant currents is:&lt;/p&gt;
+&lt;p&gt;$$\mathbf B = I\frac{\mu_{0}}{4\pi} \int \frac{\vec{dl} \times \hat{r}} {r^2} $$&lt;/p&gt;
+&lt;p&gt;In general this is an integral for every point in space around the loop of current. There are however, a few geometrical configurations that permit considerable simplification. In the case of a wire that passes perpendicular to the plane, the lines of constant magnetic field will curl around the wire according to the right hand rule (i.e. they will have no component out of the plane). You will be modeling such a system in this assignment.  Please set $\frac{\mu_{0}}{4\pi} = 1$  for this problem.&lt;/p&gt;
+&lt;p&gt;First, create a grid of points over the interval [-1,-1]:[1,1]. That is, create an array of x and y coordinates and call them X, and Y. For each point on that grid you will need to calculate the magnetic field. Save the components of the magnetic field in the arrays $B_x$ and $B_y$. You can plot these vector field lines with the following code:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from pylab import *
+quiver (X, Y, Bx, By, scale = 150)
+show()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;What does $\vec{dl}$ look like in the plane? If the wire is coming out of the x-y plane then $\vec{dl} = &amp;lt;0,0,1&amp;gt;$. You do not need to consider other sections of the wire because they do not contribute to the magnetic field (Why not?). Plot the magnetic field for the following configurations of wire.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A single wire coming out of the page at the origin.&lt;/li&gt;
+&lt;li&gt;Two wires separated by a distance of 1, running in parallel.&lt;/li&gt;
+&lt;li&gt;Two wires separated by a distance of 1, running antiparallel.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You &lt;strong&gt;must&lt;/strong&gt; answer these questions by leaving a comment in the code to get credit on the assignment. Look at the magnetic field lines from far away;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;what do the magnetic field lines look like when the wires run in parallel?&lt;/li&gt;
+&lt;li&gt;What do the magnetic field lines look like when the wires run antiparallel?&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

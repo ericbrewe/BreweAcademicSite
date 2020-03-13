@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zahra Hazari | Eric Brewe Academic</title>
+    <link>/authors/zahra-hazari/</link>
+      <atom:link href="/authors/zahra-hazari/index.xml" rel="self" type="application/rss+xml" />
+    <description>Zahra Hazari</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Zahra Hazari</title>
+      <link>/authors/zahra-hazari/</link>
+    </image>
+    
+    <item>
+      <title>Determining Influences of Women Deciding to Major in Physics</title>
+      <link>/publication/price-perc-poster-19/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/price-perc-poster-19/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sexual harassment reported by undergraduate female physicsists</title>
+      <link>/publication/aycock-2018-sexual-harrassment/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/aycock-2018-sexual-harrassment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Understanding the development of interest and self-efficacy in active-learning undergraduate physics courses</title>
+      <link>/publication/dou-2018/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/dou-2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The importance of high school physics teachers for female students&#39; physics identity and persistence</title>
+      <link>/publication/hazari-2017-a/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/hazari-2017-a/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

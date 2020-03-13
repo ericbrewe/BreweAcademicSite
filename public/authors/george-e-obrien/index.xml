@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>George E O&#39;Brien | Eric Brewe Academic</title>
+    <link>/authors/george-e-obrien/</link>
+      <atom:link href="/authors/george-e-obrien/index.xml" rel="self" type="application/rss+xml" />
+    <description>George E O&#39;Brien</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 01 Jan 2008 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>George E O&#39;Brien</title>
+      <link>/authors/george-e-obrien/</link>
+    </image>
+    
+    <item>
+      <title>Impact of the FIU PhysTEC Reform of Introductory Physics Labs</title>
+      <link>/publication/wells-2008/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publication/wells-2008/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

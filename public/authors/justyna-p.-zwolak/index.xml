@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Justyna P. Zwolak | Eric Brewe Academic</title>
+    <link>/authors/justyna-p.-zwolak/</link>
+      <atom:link href="/authors/justyna-p.-zwolak/index.xml" rel="self" type="application/rss+xml" />
+    <description>Justyna P. Zwolak</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Justyna P. Zwolak</title>
+      <link>/authors/justyna-p.-zwolak/</link>
+    </image>
+    
+    <item>
+      <title>Educational commitment and social networking: The power of informal networks</title>
+      <link>/publication/zwolak-2018/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/zwolak-2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Understanding the development of interest and self-efficacy in active-learning undergraduate physics courses</title>
+      <link>/publication/dou-2018/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/dou-2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Students&#39; network integration as a predictor of persistence in introductory physics courses</title>
+      <link>/publication/zwolak-2017/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/zwolak-2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The impact of social integration on student persistence in introductory Modeling Instruction courses</title>
+      <link>/publication/zwolak-2015/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/zwolak-2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Understanding Centrality: Investigating Student Outcomes within a Classroom Social Network</title>
+      <link>/publication/williams-2015/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/williams-2015/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

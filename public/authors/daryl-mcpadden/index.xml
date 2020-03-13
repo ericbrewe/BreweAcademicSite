@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Daryl McPadden | Eric Brewe Academic</title>
+    <link>/authors/daryl-mcpadden/</link>
+      <atom:link href="/authors/daryl-mcpadden/index.xml" rel="self" type="application/rss+xml" />
+    <description>Daryl McPadden</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Daryl McPadden</title>
+      <link>/authors/daryl-mcpadden/</link>
+    </image>
+    
+    <item>
+      <title>Power Boxes: New Representation for Analyzing DC Circuits</title>
+      <link>/publication/mc-padden-2018-power-boxes/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/mc-padden-2018-power-boxes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Impact of the second semester University Modeling Instruction course on students&#39; representation choices</title>
+      <link>/publication/mc-padden-2017-a/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/mc-padden-2017-a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Network Analysis of Students&#39; Use of Representations in Problem Solving</title>
+      <link>/publication/mc-padden-2016/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/mc-padden-2016/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Multiple Representations and Epistemic Games in Introductory Physics Exam Solutions</title>
+      <link>/publication/traxler-2015/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/traxler-2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Impacts of Instructor and Student Gender on Student Performance in Introductory Modeling Instruction Courses</title>
+      <link>/publication/mc-padden-2015/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/mc-padden-2015/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>David Jones | Eric Brewe Academic</title>
+    <link>/authors/david-jones/</link>
+      <atom:link href="/authors/david-jones/index.xml" rel="self" type="application/rss+xml" />
+    <description>David Jones</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2011 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>David Jones</title>
+      <link>/authors/david-jones/</link>
+    </image>
+    
+    <item>
+      <title>Moving toward change: Institutionalizing reform through implementation of the Learning Assistant model and Open Source Tutorials</title>
+      <link>/publication/goertzen-2011/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/publication/goertzen-2011/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

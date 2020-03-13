@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>01 | Eric Brewe Academic</title>
+    <link>/tags/01/</link>
+      <atom:link href="/tags/01/index.xml" rel="self" type="application/rss+xml" />
+    <description>01</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 01 Jan 2015 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>01</title>
+      <link>/tags/01/</link>
+    </image>
+    
+    <item>
+      <title>The Impacts of Instructor and Student Gender on Student Performance in Introductory Modeling Instruction Courses</title>
+      <link>/publication/mc-padden-2015/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/mc-padden-2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Study of Informal Learning Communities : a Tale of Two Physics Courses</title>
+      <link>/publication/yang-2014/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/yang-2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Network centrality and student self-efficacy in an interactive introductory physics environment</title>
+      <link>/publication/dou-2014/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/dou-2014/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

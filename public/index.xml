@@ -1,0 +1,792 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Eric Brewe Academic</title>
+    <link>/</link>
+      <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <description>Eric Brewe Academic</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 06 Mar 2020 15:30:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Eric Brewe Academic</title>
+      <link>/</link>
+    </image>
+    
+    <item>
+      <title>PHYS 115 Page 1</title>
+      <link>/courses/phys_115/hw1/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>/courses/phys_115/hw1/</guid>
+      <description>&lt;p&gt;The first homework, from Chapter 18 will include questions, as well as problems.&lt;/p&gt;
+&lt;h2 id=&#34;questions&#34;&gt;Questions:&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;How can there be a non-zero electric field inside a wire in a circuit?  Isn&#39;t the electric field inside a conductor always zero?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;problems&#34;&gt;Problems:&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Example Page 1</title>
+      <link>/courses/phys101/example1/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>/courses/phys101/example1/</guid>
+      <description>&lt;p&gt;In this tutorial, I&#39;ll share my top 10 tips for getting started with Academic:&lt;/p&gt;
+&lt;h2 id=&#34;tip-1&#34;&gt;Tip 1&lt;/h2&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
+&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
+&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
+&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
+&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+&lt;h2 id=&#34;tip-2&#34;&gt;Tip 2&lt;/h2&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
+&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
+&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
+&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
+&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>PHYS 115 Page 1</title>
+      <link>/courses/phys_115/program1/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>/courses/phys_115/program1/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Drawing magnetic field lines&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The Biot-Savart lwa for constant currents is:&lt;/p&gt;
+&lt;p&gt;$$\mathbf B = I\frac{\mu_{0}}{4\pi} \int \frac{\vec{dl} \times \hat{r}} {r^2} $$&lt;/p&gt;
+&lt;p&gt;In general this is an integral for every point in space around the loop of current. There are however, a few geometrical configurations that permit considerable simplification. In the case of a wire that passes perpendicular to the plane, the lines of constant magnetic field will curl around the wire according to the right hand rule (i.e. they will have no component out of the plane). You will be modeling such a system in this assignment.  Please set $\frac{\mu_{0}}{4\pi} = 1$  for this problem.&lt;/p&gt;
+&lt;p&gt;First, create a grid of points over the interval [-1,-1]:[1,1]. That is, create an array of x and y coordinates and call them X, and Y. For each point on that grid you will need to calculate the magnetic field. Save the components of the magnetic field in the arrays $B_x$ and $B_y$. You can plot these vector field lines with the following code:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from pylab import *
+quiver (X, Y, Bx, By, scale = 150)
+show()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;What does $\vec{dl}$ look like in the plane? If the wire is coming out of the x-y plane then $\vec{dl} = &amp;lt;0,0,1&amp;gt;$. You do not need to consider other sections of the wire because they do not contribute to the magnetic field (Why not?). Plot the magnetic field for the following configurations of wire.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A single wire coming out of the page at the origin.&lt;/li&gt;
+&lt;li&gt;Two wires separated by a distance of 1, running in parallel.&lt;/li&gt;
+&lt;li&gt;Two wires separated by a distance of 1, running antiparallel.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You &lt;strong&gt;must&lt;/strong&gt; answer these questions by leaving a comment in the code to get credit on the assignment. Look at the magnetic field lines from far away;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;what do the magnetic field lines look like when the wires run in parallel?&lt;/li&gt;
+&lt;li&gt;What do the magnetic field lines look like when the wires run antiparallel?&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Example Page 2</title>
+      <link>/courses/phys101/example2/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>/courses/phys101/example2/</guid>
+      <description>&lt;p&gt;Here are some more tips for getting started with Academic:&lt;/p&gt;
+&lt;h2 id=&#34;tip-3&#34;&gt;Tip 3&lt;/h2&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
+&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
+&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
+&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
+&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+&lt;h2 id=&#34;tip-4&#34;&gt;Tip 4&lt;/h2&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
+&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
+&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
+&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
+&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Roles of Engagement: Network Analysis in Physics Education Research</title>
+      <link>/talk/rowan-university/</link>
+      <pubDate>Fri, 06 Mar 2020 15:30:00 +0000</pubDate>
+      <guid>/talk/rowan-university/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Modeling Instruction, student engagement, and neurobiological impacts</title>
+      <link>/talk/rutgers-university/</link>
+      <pubDate>Wed, 04 Mar 2020 15:30:00 +0000</pubDate>
+      <guid>/talk/rutgers-university/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Network Analysis of Domestic Violence Beliefs Among Young Adults in India</title>
+      <link>/publication/rodriguezananetworkdomesticviolence/</link>
+      <pubDate>Tue, 11 Feb 2020 09:41:13 -0500</pubDate>
+      <guid>/publication/rodriguezananetworkdomesticviolence/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Brain activity links performance in science reasoning with conceptual approach</title>
+      <link>/publication/bartleybrainlinkconceptualapproach/</link>
+      <pubDate>Mon, 02 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/bartleybrainlinkconceptualapproach/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Slides</title>
+      <link>/slides/example/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>/slides/example/</guid>
+      <description>&lt;h1 id=&#34;create-slides-in-markdown-with-academic&#34;&gt;Create slides in Markdown with Academic&lt;/h1&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://sourcethemes.com/academic/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Academic&lt;/a&gt;
+ | 
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;
+&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Efficiently write slides in Markdown&lt;/li&gt;
+&lt;li&gt;3-in-1: Create, Present, and Publish your slides&lt;/li&gt;
+&lt;li&gt;Supports speaker notes&lt;/li&gt;
+&lt;li&gt;Mobile friendly slides&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;controls&#34;&gt;Controls&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Next: &lt;code&gt;Right Arrow&lt;/code&gt; or &lt;code&gt;Space&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Previous: &lt;code&gt;Left Arrow&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Start: &lt;code&gt;Home&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Finish: &lt;code&gt;End&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Overview: &lt;code&gt;Esc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Speaker notes: &lt;code&gt;S&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Fullscreen: &lt;code&gt;F&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Zoom: &lt;code&gt;Alt + Click&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://github.com/hakimel/reveal.js#pdf-export&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF Export&lt;/a&gt;
+: &lt;code&gt;E&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;code-highlighting&#34;&gt;Code Highlighting&lt;/h2&gt;
+&lt;p&gt;Inline code: &lt;code&gt;variable&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Code block:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;porridge = &amp;quot;blueberry&amp;quot;
+if porridge == &amp;quot;blueberry&amp;quot;:
+    print(&amp;quot;Eating...&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;math&#34;&gt;Math&lt;/h2&gt;
+&lt;p&gt;In-line math: $x + y = z$&lt;/p&gt;
+&lt;p&gt;Block math:&lt;/p&gt;
+&lt;p&gt;$$
+f\left( x \right) = ;\frac{{2\left( {x + 4} \right)\left( {x - 4} \right)}}{{\left( {x + 4} \right)\left( {x + 1} \right)}}
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;fragments&#34;&gt;Fragments&lt;/h2&gt;
+&lt;p&gt;Make content appear incrementally&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{{% fragment %}} One {{% /fragment %}}
+{{% fragment %}} **Two** {{% /fragment %}}
+{{% fragment %}} Three {{% /fragment %}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Press &lt;code&gt;Space&lt;/code&gt; to play!&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
+One
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+&lt;strong&gt;Two&lt;/strong&gt;
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+Three
+&lt;/span&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;A fragment can accept two optional parameters:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;class&lt;/code&gt;: use a custom style (requires definition in custom CSS)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;weight&lt;/code&gt;: sets the order in which a fragment appears&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;speaker-notes&#34;&gt;Speaker Notes&lt;/h2&gt;
+&lt;p&gt;Add speaker notes to your presentation&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{% speaker_note %}}
+- Only the speaker can read these notes
+- Press `S` key to view
+{{% /speaker_note %}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Press the &lt;code&gt;S&lt;/code&gt; key to view the speaker notes!&lt;/p&gt;
+&lt;aside class=&#34;notes&#34;&gt;
+  &lt;ul&gt;
+&lt;li&gt;Only the speaker can read these notes&lt;/li&gt;
+&lt;li&gt;Press &lt;code&gt;S&lt;/code&gt; key to view&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/aside&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;themes&#34;&gt;Themes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;black: Black background, white text, blue links (default)&lt;/li&gt;
+&lt;li&gt;white: White background, black text, blue links&lt;/li&gt;
+&lt;li&gt;league: Gray background, white text, blue links&lt;/li&gt;
+&lt;li&gt;beige: Beige background, dark text, brown links&lt;/li&gt;
+&lt;li&gt;sky: Blue background, thin dark text, blue links&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;night: Black background, thick white text, orange links&lt;/li&gt;
+&lt;li&gt;serif: Cappuccino background, gray text, brown links&lt;/li&gt;
+&lt;li&gt;simple: White background, black text, blue links&lt;/li&gt;
+&lt;li&gt;solarized: Cream-colored background, dark green text, blue links&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+
+&lt;section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image=&#34;/img/boards.jpg&#34;
+  &gt;
+
+&lt;h2 id=&#34;custom-slide&#34;&gt;Custom Slide&lt;/h2&gt;
+&lt;p&gt;Customize the slide style and background&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{&amp;lt; slide background-image=&amp;quot;/img/boards.jpg&amp;quot; &amp;gt;}}
+{{&amp;lt; slide background-color=&amp;quot;#0000FF&amp;quot; &amp;gt;}}
+{{&amp;lt; slide class=&amp;quot;my-style&amp;quot; &amp;gt;}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;custom-css-example&#34;&gt;Custom CSS Example&lt;/h2&gt;
+&lt;p&gt;Let&#39;s make headers navy colored.&lt;/p&gt;
+&lt;p&gt;Create &lt;code&gt;assets/css/reveal_custom.css&lt;/code&gt; with:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.reveal section h1,
+.reveal section h2,
+.reveal section h3 {
+  color: navy;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;questions&#34;&gt;Questions?&lt;/h1&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://spectrum.chat/academic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ask&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Determining Influences of Women Deciding to Major in Physics</title>
+      <link>/publication/price-perc-poster-19/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/price-perc-poster-19/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linking engagement and performance : The social network analysis perspective</title>
+      <link>/publication/williams-2019-network-growth/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/williams-2019-network-growth/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sex differences in brain correlates of STEM anxiety</title>
+      <link>/publication/gonzalez-2019-stem-anxiety-brain/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/gonzalez-2019-stem-anxiety-brain/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Privacy Policy</title>
+      <link>/privacy/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
+      <guid>/privacy/</guid>
+      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Terms</title>
+      <link>/terms/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
+      <guid>/terms/</guid>
+      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Costs of success: Financial implications of implementation of active learning in introductory physics courses for students and administrators</title>
+      <link>/publication/brewe-2018/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/brewe-2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Educational commitment and social networking: The power of informal networks</title>
+      <link>/publication/zwolak-2018/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/zwolak-2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Meta-analytic evidence for a core problem solving network across multiple representational domains</title>
+      <link>/publication/bartley-2018/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/bartley-2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Modelling instruction for university physics: Examining the theory in practice</title>
+      <link>/publication/brewe-2018-a/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/brewe-2018-a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Power Boxes: New Representation for Analyzing DC Circuits</title>
+      <link>/publication/mc-padden-2018-power-boxes/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/mc-padden-2018-power-boxes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sexual harassment reported by undergraduate female physicsists</title>
+      <link>/publication/aycock-2018-sexual-harrassment/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/aycock-2018-sexual-harrassment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Roles of Engagement : Network Analysis in Physics Education Research Abstract :</title>
+      <link>/publication/brewe-2018-roles-of-engagement/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/brewe-2018-roles-of-engagement/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Toward a Neurobiological Basis for Understanding Learning in University Modeling Instruction Physics Courses</title>
+      <link>/publication/brewe-2018-neuroimaging/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/brewe-2018-neuroimaging/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Understanding the development of interest and self-efficacy in active-learning undergraduate physics courses</title>
+      <link>/publication/dou-2018/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/dou-2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Impact of the second semester University Modeling Instruction course on students&#39; representation choices</title>
+      <link>/publication/mc-padden-2017-a/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/mc-padden-2017-a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Students&#39; network integration as a predictor of persistence in introductory physics courses</title>
+      <link>/publication/zwolak-2017/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/zwolak-2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The importance of high school physics teachers for female students&#39; physics identity and persistence</title>
+      <link>/publication/hazari-2017-a/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/hazari-2017-a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Modeling Instruction</title>
+      <link>/project/modelinginstructionproject/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/project/modelinginstructionproject/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Network Analysis Projects</title>
+      <link>/project/networkanalysisproject/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/project/networkanalysisproject/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Neuroimaging</title>
+      <link>/project/neuroimagingproject/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/project/neuroimagingproject/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Beyond performance metrics : Examining a decrease in students &#39; physics self-efficacy through a social networks lens</title>
+      <link>/publication/dou-2016/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/dou-2016/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Editorial: Focused Collection: Gender in Physics</title>
+      <link>/publication/brewe-2016-gender/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/brewe-2016-gender/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Network Analysis of Students&#39; Use of Representations in Problem Solving</title>
+      <link>/publication/mc-padden-2016/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/mc-padden-2016/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Using Module Analysis for Multiple Choice Responses: A New Method Applied to Force Concept Inventory Data</title>
+      <link>/publication/brewe-2016/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/brewe-2016/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Developing a physics expert identity in a biophysics research group</title>
+      <link>/publication/rodriguez-2015-a/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/rodriguez-2015-a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Equity investigation of attitudinal shifts in introductory physics</title>
+      <link>/publication/traxler-2015-b/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/traxler-2015-b/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Multiple Representations and Epistemic Games in Introductory Physics Exam Solutions</title>
+      <link>/publication/traxler-2015/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/traxler-2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The impact of social integration on student persistence in introductory Modeling Instruction courses</title>
+      <link>/publication/zwolak-2015/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/zwolak-2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Impacts of Instructor and Student Gender on Student Performance in Introductory Modeling Instruction Courses</title>
+      <link>/publication/mc-padden-2015/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/mc-padden-2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Understanding Centrality: Investigating Student Outcomes within a Classroom Social Network</title>
+      <link>/publication/williams-2015/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/williams-2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Study of Informal Learning Communities : a Tale of Two Physics Courses</title>
+      <link>/publication/yang-2014/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/yang-2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Network centrality and student self-efficacy in an interactive introductory physics environment</title>
+      <link>/publication/dou-2014/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/dou-2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cookies as agents for community membership</title>
+      <link>/publication/rodriguez-2013/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/rodriguez-2013/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Expanded Markers of Success in Introductory University Physics</title>
+      <link>/publication/goertzen-2013/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/goertzen-2013/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Extending positive CLASS results across multiple instructors and multiple classes of Modeling Instruction</title>
+      <link>/publication/brewe-2013-extend-class/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/brewe-2013-extend-class/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>From Vision to Change: Educational Initiatives and Research at the Intersection of Physics and Biology</title>
+      <link>/publication/brewe-2013-cbe/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/brewe-2013-cbe/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Instructional changes based on cogenerative physics reform</title>
+      <link>/publication/samuels-2013/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/samuels-2013/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Regression analysis exploring teacher impact on student FCI post scores</title>
+      <link>/publication/mahadeo-2013/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/mahadeo-2013/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Talking and learning physics: Predicting future grades from network measures and Force Concept Inventory pretest scores</title>
+      <link>/publication/bruun-2013-talking-learning/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/bruun-2013-talking-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Toward University Modeling Instruction--Biology: Adapting Curricular Frameworks from Physics to Biology</title>
+      <link>/publication/manthey-2013-a/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/manthey-2013-a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>&#34;Implicit action&#34;: Understanding discourse management in modeling instruction</title>
+      <link>/publication/durden-2012/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publication/durden-2012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Communicating scientific ideas: One element of physics expertise</title>
+      <link>/publication/rodriguez-2012-communicating/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publication/rodriguez-2012-communicating/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Creating opportunities to influence self-efficacy through modeling instruction</title>
+      <link>/publication/sawtelle-2012-se-opportunities-aip/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publication/sawtelle-2012-se-opportunities-aip/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Exploring the relationship between self-efficacy and retention in introductory physics</title>
+      <link>/publication/sawtelle-2012-jrst/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publication/sawtelle-2012-jrst/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Identifying events that impact self-efficacy in physics learning</title>
+      <link>/publication/sawtelle-2012-se-events/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publication/sawtelle-2012-se-events/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Impact of equity models and statistical measures on interpretations of educational reform</title>
+      <link>/publication/rodriguez-2012-a/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publication/rodriguez-2012-a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Investigating student communities with network analysis of interactions in a physics learning center</title>
+      <link>/publication/brewe-2012-networks/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publication/brewe-2012-networks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Successes and Constraints in the Enactment of a Reform</title>
+      <link>/publication/lee-2012/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publication/lee-2012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Energy as a substancelike quantity that flows: Theoretical considerations and pedagogical consequences</title>
+      <link>/publication/brewe-2011-energy/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/publication/brewe-2011-energy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Moving toward change: Institutionalizing reform through implementation of the Learning Assistant model and Open Source Tutorials</title>
+      <link>/publication/goertzen-2011/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/publication/goertzen-2011/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>QBIC, an interdisciplinary and quantitative biological sciences curriculum: Concept to implementation</title>
+      <link>/publication/weeks-2011/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/publication/weeks-2011/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Changing participation through formation of student learning communities</title>
+      <link>/publication/brewe-2010-b/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publication/brewe-2010-b/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Constructing a Model of Physics Expertise</title>
+      <link>/publication/rodriguez-2010/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publication/rodriguez-2010/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Positive Impacts of Modeling Instruction on Self‐Efficacy</title>
+      <link>/publication/sawtelle-2010/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publication/sawtelle-2010/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Toward equity through participation in Modeling Instruction in introductory university physics</title>
+      <link>/publication/brewe-2010-toward-equity/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publication/brewe-2010-toward-equity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>An Exploratory Qualitative Study of the Proximal Goal Setting of Two Introductory Modeling Instruction Physics Students</title>
+      <link>/publication/sawtelle-2009-a/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/publication/sawtelle-2009-a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Investigating Student Communities with Network Analysis of Interactions in a Physics Learning Center</title>
+      <link>/publication/brewe-2009-communities-aip/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/publication/brewe-2009-communities-aip/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Modeling instruction: Positive attitudinal shifts in introductory physics measured with CLASS</title>
+      <link>/publication/brewe-2009-a/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/publication/brewe-2009-a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Validation study of the Colorado Learning Attitudes about Science Survey at a Hispanic-serving institution</title>
+      <link>/publication/sawtelle-2009-d/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/publication/sawtelle-2009-d/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CLASS shifts in modeling instruction</title>
+      <link>/publication/brewe-2008-a/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publication/brewe-2008-a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Impact of the FIU PhysTEC Reform of Introductory Physics Labs</title>
+      <link>/publication/wells-2008/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publication/wells-2008/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Improving Physics Education through a Diverse Research and Learning Community at Florida International University</title>
+      <link>/publication/kramer/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publication/kramer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Modeling theory applied: Modeling Instruction in introductory physics</title>
+      <link>/publication/brewe-2008-modeling-theory/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publication/brewe-2008-modeling-theory/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Modeling Success: Building Community for Reform</title>
+      <link>/publication/dancy-2007/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/publication/dancy-2007/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Resource Letter RPS-1: Research in problem solving</title>
+      <link>/publication/hsu-2004/</link>
+      <pubDate>Thu, 01 Jan 2004 00:00:00 +0000</pubDate>
+      <guid>/publication/hsu-2004/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

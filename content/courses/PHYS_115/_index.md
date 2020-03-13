@@ -17,8 +17,10 @@ weight: 1
 ## Course Info - Winter 2020
 **Schedule**
 M, W, F - 10:00-10:50
+We will be meeting online, we will be using a suite of tools to manage the class and these will evolve as the course is developed. My current plan is to have Zoom based classes during the scheduled time for the first few weeks. 
 
-30 March - 12 June
+
+6 April - 12 June (Maybe)
 
 **Instructors**
 
@@ -26,6 +28,9 @@ M, W, F - 10:00-10:50
 |----|----|---|-------|------------|
 | Dr. Eric Brewe | Disque Hall Rm. 918 | <eb573@drexel.edu> |
 | Virgina Price | DH 916 | <vep32@drexel.edu> |
+
+**Preamble**
+This class is going to be weird. I have taught blended courses, and used the tools available, but have not had any experience with fully online classes. I will be trying, I promise to be patient with you, and will ask the same of me. 
 
 **Learning Outcomes**
 * Apply key concepts and physical laws of magnetism and circuits including conservation of charge, Coulomb’s law, electric potential, Kirchoff’s rules, Biot-Savart law, Ampere's law, Faraday’s law and Lenz’s law
@@ -36,7 +41,13 @@ M, W, F - 10:00-10:50
 **Textbook**
 Matter and Interactions, Chabay and Sherwood
 
-
+**Course Tools**
+Due to the transition to online learning, we will be using a variety of tools to support learning. 
+*Zoom: We have a zoom classroom, you may need to install Zoom software. <https://drexel.zoom.us/my/ericbrewe> 
+*Gradescope: You will be handing in homework on Gradescope, you may have gotten an email from them saying you were enrolled. We'll talk about how this will work. 
+*Slack: Would it be useful to you to have a Slack channel? Or is the BBlearn site sufficient?
+*PhET Simulations: These are cool simulations that do a nice job of conveying complex physics. 
+*GlowScript: You will be using vPython to develop small computational projects. I think we will be using GlowScript, but I am still investigating all alternatives. 
 
 
 ## Course Outline

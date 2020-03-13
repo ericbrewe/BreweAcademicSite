@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pagerank centrality | Eric Brewe Academic</title>
+    <link>/tags/pagerank-centrality/</link>
+      <atom:link href="/tags/pagerank-centrality/index.xml" rel="self" type="application/rss+xml" />
+    <description>pagerank centrality</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jan 2014 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>pagerank centrality</title>
+      <link>/tags/pagerank-centrality/</link>
+    </image>
+    
+    <item>
+      <title>A Study of Informal Learning Communities : a Tale of Two Physics Courses</title>
+      <link>/publication/yang-2014/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/yang-2014/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
