@@ -89,16 +89,16 @@ Much of this class will be active, we will expect you to be working together on 
 
 ## Course Schedule
 
-|**Week**|**Class Dates**|**Content**|**Homework**|**Exams**|
+|**Week**|**Class Dates**|**Content**|**Homework**|
 |--------|---------------|-----------|------------|---------|
-|1| Apr 6, 8, 10  |Ch 18 - Electric Field and Circuits | | |
-|2| Apr 13, 15, 17     |Ch 19 - Circuit Elements            | HW #1 due| |
-|3| Apr 20, 22, 24    |Ch 17 - Magnetic Fields             | HW #2 due, Program #1 due| |
-|4| Apr 27, 29, May 1    |Ch 20 - Magnetic Forces             | HW #3 due| |
-|5| May 4, 6, 8  |Ch 21 - Fields in Space, Gauss & Ampere's | HW #4 due, Program #2 due| |
-|6| May 11, 13, 15      |Review Ch 17-21                     | HW #5 due | |
-|7| May 18, 20, 22    |Ch 22 - Faraday's Law               |  None | |
-|8| May 27, 29     |Ch 23 - EM Radiation                |  HW #6 due, Program #3 due| |
-|9| June 1, 3, 5       |Waves                |  HW #7 due, Program #4 due| |
-|10| Exam Week        |                    |   | TBD |
+|1| Apr 6, 8, 10  |Ch 18 - Electric Field and Circuits | | 
+|2| Apr 13, 15, 17     |Ch 19 - Circuit Elements            | HW #1 due| 
+|3| Apr 20, 22, 24    |Ch 17 - Magnetic Fields             | HW #2 due, Program #1 due| 
+|4| Apr 27, 29, May 1    |Ch 20 - Magnetic Forces             | HW #3 due| 
+|5| May 4, 6, 8  |Ch 21 - Fields in Space, Gauss & Ampere's | HW #4 due, Program #2 due| 
+|6| May 11, 13, 15      |Review Ch 17-21                     | HW #5 due | 
+|7| May 18, 20, 22    |Ch 22 - Faraday's Law               |  None | 
+|8| May 27, 29     |Ch 23 - EM Radiation                |  HW #6 due, Program #3 due| 
+|9| June 1, 3, 5       |Waves                |  HW #7 due, Program #4 due| 
+|10| Exam Week        |                    |   | 
 ---
