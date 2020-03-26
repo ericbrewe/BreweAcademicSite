@@ -17,7 +17,9 @@ weight: 1
 ## Course Info - Winter 2020
 **Schedule**
 M, W, F - 10:00-10:50 + Recitation W 2:00-3:50 or 4:00-5:50
-We will be mixing synchronous and asynchronous class meetings. Mondays will be synchronous Problem Solving Workshops, Wednesdays will be synchronous New Material, Fridays will be asynchronous activities. 
+We will be mixing synchronous and asynchronous class meetings. 
+
+Mondays will be synchronous Problem Solving Workshops, Wednesdays will be synchronous New Material, Fridays will be asynchronous activities. All synchronous activities will be recorded and posted in a separate section.
 
 6 April - 12 June
 
@@ -87,6 +89,7 @@ Programming assignments will be discussed in recitation, and will count as 25\% 
 
 Much of this class will be active, we will expect you to be working together on problems, computational assignments, discussing, and asking questions. This will be worth 10\% of your overall grade.
 
+
 ## Course Schedule
 
 |**Week**|**Class Dates**|**Content**|**Homework**|
@@ -101,4 +104,9 @@ Much of this class will be active, we will expect you to be working together on 
 |8| May 27, 29     |Ch 23 - EM Radiation                |  HW #6 due, | 
 |9| June 1, 3, 5       |Waves                |  HW #7 due, Program #4 due| 
 |10| Exam Week        |                    |   | 
+
+## Resources
+There are a bunch of resources available to help you in this course:
+* Matter and Interactions Video Lectures <https://matterandinteractions.org/videos/EM.html> 
+
 ---
