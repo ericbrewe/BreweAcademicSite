@@ -17,7 +17,7 @@ weight: 1
 ## Course Info - Winter 2020
 **Schedule**
 M, W, F - 10:00-10:50 + Recitation W 2:00-3:50 or 4:00-5:50
-We will be mixing synchronous and asynchronous class meetings, we'll work out the exact schedule during the first class meeting.
+We will be mixing synchronous and asynchronous class meetings. Mondays will be synchronous Problem Solving Workshops, Wednesdays will be synchronous New Material, Fridays will be asynchronous activities. 
 
 6 April - 12 June
 
@@ -25,7 +25,7 @@ We will be mixing synchronous and asynchronous class meetings, we'll work out th
 
 |     | email | Office Hrs |
 |-----|---|-------|------------|
-| Dr. Eric Brewe | <eb573@drexel.edu> | W 11-12; By request
+| Dr. Eric Brewe | <eb573@drexel.edu> | M 11-12; F 10-12 + By Appointment
 | Virgina Price | <vep32@drexel.edu> | 
 
 **Preamble**
@@ -43,13 +43,13 @@ Matter and Interactions, Chabay and Sherwood
 **Course Tools**
 Due to the transition to online learning, we will be using a variety of tools to support learning. 
 
-*Zoom: We have a zoom classroom, you may need to install Zoom software. I will be sending you an invitation to the first Zoom meeting soon.
+*Zoom*: We have a zoom classroom, you may need to install Zoom software. You should have received an invitation
 
-*Gradescope: You will be handing in homework on Gradescope, you may have gotten an email from them saying you were enrolled. We'll talk about how this will work. 
+*Gradescope*: You will be handing in homework on Gradescope, you should have gotten an email from them about enrollment. We'll talk about how this will work. 
 
-*Slack: We are going to use Slack for our classroom communication, I've used it before, and students found it to be pretty useful. 
+*Slack*: We are going to have a Slack channel that people can use for varied classroom communications, you are not required to sign up, but, I've used it before, and students found it to be pretty useful. 
 
-*GlowScript: The class will be using GlowScript to develop small computational projects. GlowScript is not quite the same as vPython - but very clase, the TA, Virginia Price will be holding recitations on Wednesdays.
+*GlowScript*: The class will be using GlowScript <https://www.glowscript.org/> to develop small computational projects. GlowScript is not quite the same as vPython - but very clase, the TA, Virginia Price will be holding recitations on Wednesdays. 
 
 
 ## Course Outline
@@ -67,7 +67,7 @@ I see grades as an indicator of your understanding, so your job in earning a gra
 
 | Category             | Percentage                                                         |
 | ---------------------| ------------------------------------------------------------------ |
-| Homework:            | 65%        |
+| Written Homework:            | 65%        |
 | Computational Homework:    | 25%  | 
 | Class Participation: | 10%        |
 
@@ -75,13 +75,13 @@ I see grades as an indicator of your understanding, so your job in earning a gra
 Since homework is the primary way you will demonstrate understanding, you will need to write up homework in a way that demonstrates that you understand the material. You will need to not only show your work, but incorporate explanations of how and why you are doing what you are doing. In order to give you maximum opportunity to demonstrate your understanding, you will be allowed to re-submit your assignment for regrading.   
 
 ### Written Assignments
-Homework will be submitted through Gradescope, tenatively on Friday, but this is subjedt to change. 
+Homework will be submitted through Gradescope, tenatively on Monday nights. 
 
 You are allowed to work together on homework in the analysis phase, but you will need to work individually in the 'writing it up' phase.  This means while you may come to the same answers, your explanations of how you got there will be unique and distinct. 
 
 ### Programming Assignments
 
-Programming assignments will be discussed in recitation, and will count as 25\% of your overall grade. Programming assignments are due at the beginning of recitation on Wednesday in weeks 3, 5, 8, and 10 (see schedule below).
+Programming assignments will be discussed in recitation, and will count as 25\% of your overall grade. Programming assignments are due at the beginning of recitation on Wednesday in weeks 3, 5, 7, and 9 (see schedule below).
 
 ## Class Participation
 
@@ -95,10 +95,10 @@ Much of this class will be active, we will expect you to be working together on 
 |2| Apr 13, 15, 17     |Ch 19 - Circuit Elements            | HW #1 due| 
 |3| Apr 20, 22, 24    |Ch 17 - Magnetic Fields             | HW #2 due, Program #1 due| 
 |4| Apr 27, 29, May 1    |Ch 20 - Magnetic Forces             | HW #3 due| 
-|5| May 4, 6, 8  |Ch 21 - Fields in Space, Gauss & Ampere's | HW #4 due, Program #2 due| 
-|6| May 11, 13, 15      |Review Ch 17-21                     | HW #5 due | 
-|7| May 18, 20, 22    |Ch 22 - Faraday's Law               |  None | 
-|8| May 27, 29     |Ch 23 - EM Radiation                |  HW #6 due, Program #3 due| 
+|5| May 4, 6, 8  |Ch 21 - Fields in Space, Gauss & Ampere's |Check In , Program #2 due| 
+|6| May 11, 13, 15      |Review Ch 17-21                     | HW #4 due| 
+|7| May 18, 20, 22    |Ch 22 - Faraday's Law               |HW #5 due  Program #3 due | 
+|8| May 27, 29     |Ch 23 - EM Radiation                |  HW #6 due, | 
 |9| June 1, 3, 5       |Waves                |  HW #7 due, Program #4 due| 
 |10| Exam Week        |                    |   | 
 ---
