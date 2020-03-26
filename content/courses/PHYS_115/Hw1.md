@@ -5,11 +5,11 @@ linktitle: HW 1 - Ch 18
 menu:
   PHYS_115:
     parent: Physics 115
-    weight: 1
+    weight: 2
 title: PHYS 115 Page 1
 toc: true
 type: docs
-weight: 1
+weight: 2
 ---
 
 The first homework, from Chapter 18 will include questions, as well as problems. 

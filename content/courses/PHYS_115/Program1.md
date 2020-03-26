@@ -5,11 +5,11 @@ linktitle: Prog 1
 menu:
   PHYS_115:
     parent: Physics 115
-    weight: 2
+    weight: 3
 title: PHYS 115 Page 1
 toc: true
 type: docs
-weight: 2
+weight: 3
 ---
 
 **Drawing magnetic field lines**
