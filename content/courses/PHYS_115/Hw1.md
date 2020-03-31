@@ -15,6 +15,7 @@ weight: 2
 The first homework, from Chapter 18 will include questions, as well as problems. 
 
 ## Questions:
-1. How can there be a non-zero electric field inside a wire in a circuit?  Isn't the electric field inside a conductor always zero?
+Questions 5 & 16
 
 ## Problems:
+23, 26, 36, 41, 44, 49
