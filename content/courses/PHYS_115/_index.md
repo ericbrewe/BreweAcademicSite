@@ -45,7 +45,7 @@ Matter and Interactions, Chabay and Sherwood
 **Course Tools**
 Due to the transition to online learning, we will be using a variety of tools to support learning. 
 
-*Zoom*: We have a zoom classroom, you may need to install Zoom software. You should have received an invitation
+*Zoom*: We have a zoom classroom, you may need to install Zoom software. You should have received an invitation. 
 
 *Gradescope*: You will be handing in homework on Gradescope, you should have gotten an email from them about enrollment. We'll talk about how this will work. 
 
@@ -74,20 +74,61 @@ I see grades as an indicator of your understanding, so your job in earning a gra
 | Class Participation: | 10%        |
 
 ## Homework
-Since homework is the primary way you will demonstrate understanding, you will need to write up homework in a way that demonstrates that you understand the material. You will need to not only show your work, but incorporate explanations of how and why you are doing what you are doing. In order to give you maximum opportunity to demonstrate your understanding, you will be allowed to re-submit your assignment for regrading.   
+Since homework is the primary way you will demonstrate understanding, you will need to write up homework in a way that demonstrates that you understand the material. You will need to not only show your work, but incorporate explanations of how and why you are doing what you are doing. In order to give you maximum opportunity to demonstrate your understanding, you will be allowed to re-submit your assignment for regrading. There are two types of homework, written assignments and computational assignments.  
 
 ### Written Assignments
-Homework will be submitted through Gradescope, tenatively on Monday nights. 
+Homework will be submitted through Gradescope, and will be due on Monday nights at 11:59 PM. 
 
 You are allowed to work together on homework in the analysis phase, but you will need to work individually in the 'writing it up' phase.  This means while you may come to the same answers, your explanations of how you got there will be unique and distinct. 
 
+The goal of this class is that you master the content. We will grade each problem on each assignment with a four point rubric. If your score on any given problem is a 3 or 4, you will have completed the problem at a satisfactory level. If you do not score a 3 or a 4 you are welcome to resubmit. We will accept resubmissions each week on Monday nights. 
+
+Your score on the written assignments will be the proportion of the problems that you have completed at the satisfactory level. So if you do all the problems, but only reach satisfactory on 85\% of them, you will get an 85\% for the homework score. 
+
 ### Programming Assignments
 
-Programming assignments will be discussed in recitation, and will count as 25\% of your overall grade. Programming assignments are due at the beginning of recitation on Wednesday in weeks 3, 5, 7, and 9 (see schedule below).
+Programming assignments will also be submitted through Gradescope. These assignments will be discussed in recitation, and will count as 25\% of your overall grade. Programming assignments are due at the beginning of recitation on Wednesday in weeks 3, 5, 7, and 9 (see schedule below).
 
 ## Class Participation
 
 Much of this class will be active, we will expect you to be working together on problems, computational assignments, discussing, and asking questions. This will be worth 10\% of your overall grade.
+
+## Grades
+Grades for the course will be assigned according to the following scale:
+| Grade | Percentage|
+|-------|-----------|
+|A+ | 97-100|
+|A | 90 - 96|
+|B+ | 87-89|
+|B | 80-86|
+|C+| 77-79 |
+|C | 70-76 |
+|D+ | 67-69 |
+|D | 60-66 |
+|F | 0-59 |
+
+\noindent \textbf{Drexel University Resources:} 
+Note that Drexel University offers several resources to students in need.  These include but are not limited to:
+\begin{description} 
+\item[\textbf{\em Physics Help Center}] {The \href{https://drexel.edu/coas/academics/departments-centers/physics/physics-help-center/}{Physics Help! Center} offers free tutoring sessions to Drexel students in introductory physics classes. Times for drop-in help with PHYS 102 can be found in the calendar for Korman 104. TAs for this course will hold office hours in Korman 104.}
+
+\item[\textbf{\em Office of Disability Resources (ODR).}] {Students with disabilities requesting accommodations and services at Drexel University need to present a current Accommodation Verification Letter (AVL) to the instructor before any accommodation can be made. AVLs are issued by ODR. Additional information can be found at: \newline
+\url{http://drexel.edu/oed/disabilityResources/students/}}
+
+\item[\textbf{\em Health Center and Student Counseling.}] {Please visit the
+following websites for specific information: \newline
+\url{http://drexel.edu/counselingandhealth/student-health-center/overview/}
+\newline
+\url{http://drexel.edu/counselingandhealth/counseling-center/overview/}}
+
+\item\textbf{\em Academic Integrity:} Breaches of academic integrity, for example by cheating or plagiarizing, are serious infractions of the community standards of Drexel University. Refer to the following websites to understand expectations of students and consequences for violating these standards.\\
+\href{http://drexel.edu/provost/policies/academic-integrity/}{Academic Integrity Policy} \\
+\href{http://drexel.edu/studentlife/community_standards/studentHandbook/}{Student Code of Conduct} \\
+
+\item\textbf{Registration Policies:}\\
+\href{https://drexel.edu/provost/policies/course-add-drop/}{Course Add/Drop Policy}\\
+\href{https://drexel.edu/provost/policies/course-withdrawal/}{Course Withdrawl Policy}
+\end{description}
 
 
 ## Course Schedule
