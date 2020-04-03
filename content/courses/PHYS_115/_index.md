@@ -118,18 +118,17 @@ Note that Drexel University offers several resources to students in need.  These
 * Health Center and Student Counseling: Please visit the
 following websites for specific information:
 
-<http://drexel.edu/counselingandhealth/student-health-center/overview/>
-<http://drexel.edu/counselingandhealth/counseling-center/overview/>
+    *<http://drexel.edu/counselingandhealth/student-health-center/overview/>
+    *<http://drexel.edu/counselingandhealth/counseling-center/overview/>
 
 * Academic Integrity: Breaches of academic integrity, for example by cheating or plagiarizing, are serious infractions of the community standards of Drexel University. Refer to the following websites to understand expectations of students and consequences for violating these standards: 
 [Academic Integrity Policy](http://drexel.edu/provost/policies/academic-integrity/)
 [Student Code of Conduct](http://drexel.edu/studentlife/community_standards/studentHandbook/)
 
 * Registration Policies: 
+    *[Course Add/Drop Policy](https://drexel.edu/provost/policies/course-add-drop/)
 
-[Course Add/Drop Policy](https://drexel.edu/provost/policies/course-add-drop/)
-
-[Course Withdrawl Policy](https://drexel.edu/provost/policies/course-withdrawal/)
+    *[Course Withdrawl Policy](https://drexel.edu/provost/policies/course-withdrawal/)
 
 
 
