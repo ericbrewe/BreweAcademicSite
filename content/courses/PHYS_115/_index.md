@@ -1,15 +1,19 @@
 ---
-date: "2018-09-09T00:00:00Z"
-draft: false
-lastmod: "2020-02-11T00:00:00Z"
-linktitle: Physics 115 - Sp 2020
+title: "PHYS 115"
+draft: no
+date: '2018-09-09T00:00:00Z'
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
 menu:
   PHYS_115:
     name: Physics 115
     weight: 1
+linktitle: Physics 115 - Sp 2020
 summary: Contemporary Physics III
-title: PHYS 115
-toc: true
+lastmod: '2020-02-11T00:00:00Z'
+toc: yes
 type: docs
 weight: 1
 ---

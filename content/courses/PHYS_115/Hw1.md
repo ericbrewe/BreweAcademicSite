@@ -1,13 +1,14 @@
 ---
-date: "2019-05-05T00:00:00+01:00"
-draft: false
-linktitle: HW 1 - Ch 18
+title: "PHYS 115 Page 1"
+draft: no
+date: '2019-05-05T00:00:00+01:00'
+output: pdf_document
 menu:
   PHYS_115:
     parent: Physics 115
     weight: 2
-title: PHYS 115 Page 1
-toc: true
+linktitle: HW 1 - Ch 18
+toc: yes
 type: docs
 weight: 2
 ---
