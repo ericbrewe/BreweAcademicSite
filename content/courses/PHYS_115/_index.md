@@ -133,6 +133,12 @@ following websites for specific information:
     * [Course Withdrawl Policy](https://drexel.edu/provost/policies/course-withdrawal/)
 
 
+## Notice: Appropriate Use of Course Materials
+It is important to recognize that some or all of the course materials provided to you may be the intellectual property of Drexel University, the course instructor, or others. Use of this intellectual property is governed by Drexel University policies, including the IT-1 policy found here:
+<https://drexel.edu/it/about/policies/policies/01-Acceptable-Use/>
+
+Briefly, this policy states that course materials, including recordings, provided by the course instructor may not be copied, reproduced, distributed or re-posted. Doing so may be considered a breach of this policy and will be investigated and addressed as possible academic dishonesty, among other potential violations. Improper use of such materials may also constitute a violation of the University’s Code of Conduct found here: https://drexel.edu/cpo/policies/cpo-1/ and will be investigated as such.
+
 
 ## Course Schedule
 
