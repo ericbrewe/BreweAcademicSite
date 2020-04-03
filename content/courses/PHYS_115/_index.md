@@ -95,6 +95,7 @@ Much of this class will be active, we will expect you to be working together on 
 
 ## Grades
 Grades for the course will be assigned according to the following scale:
+
 | Grade | Percentage|
 |-------|-----------|
 |A+ | 97-100|
@@ -107,19 +108,18 @@ Grades for the course will be assigned according to the following scale:
 |D | 60-66 |
 |F | 0-59 |
 
-\noindent \textbf{Drexel University Resources:} 
+## Drexel University Resources: 
 Note that Drexel University offers several resources to students in need.  These include but are not limited to:
-\begin{description} 
-\item[\textbf{\em Physics Help Center}] {The \href{https://drexel.edu/coas/academics/departments-centers/physics/physics-help-center/}{Physics Help! Center} offers free tutoring sessions to Drexel students in introductory physics classes. Times for drop-in help with PHYS 102 can be found in the calendar for Korman 104. TAs for this course will hold office hours in Korman 104.}
 
-\item[\textbf{\em Office of Disability Resources (ODR).}] {Students with disabilities requesting accommodations and services at Drexel University need to present a current Accommodation Verification Letter (AVL) to the instructor before any accommodation can be made. AVLs are issued by ODR. Additional information can be found at: \newline
-\url{http://drexel.edu/oed/disabilityResources/students/}}
+* [The Physics Help Center](https://drexel.edu/coas/academics/departments-centers/physics/physics-help-center/) offers free tutoring sessions to Drexel students in introductory physics classes. It is not totally clear to me how this will work during Spring 2020.
 
-\item[\textbf{\em Health Center and Student Counseling.}] {Please visit the
-following websites for specific information: \newline
-\url{http://drexel.edu/counselingandhealth/student-health-center/overview/}
-\newline
-\url{http://drexel.edu/counselingandhealth/counseling-center/overview/}}
+* [Office of Disability Resources (ODR).](http://drexel.edu/oed/disabilityResources/students/) Students with disabilities requesting accommodations and services at Drexel University need to present a current Accommodation Verification Letter (AVL) to the instructor before any accommodation can be made. AVLs are issued by ODR.
+
+* Health Center and Student Counseling: Please visit the
+following websites for specific information:
+
+<http://drexel.edu/counselingandhealth/student-health-center/overview/>
+<http://drexel.edu/counselingandhealth/counseling-center/overview/>
 
 \item\textbf{\em Academic Integrity:} Breaches of academic integrity, for example by cheating or plagiarizing, are serious infractions of the community standards of Drexel University. Refer to the following websites to understand expectations of students and consequences for violating these standards.\\
 \href{http://drexel.edu/provost/policies/academic-integrity/}{Academic Integrity Policy} \\
