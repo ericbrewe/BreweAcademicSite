@@ -12,7 +12,7 @@ type: docs
 weight: 2
 ---
 
-The first homework, from Chapter 18 will include questions, as well as problems. Please submit your answers through Gradescope
+The first homework, from Chapter 18 will include questions, as well as problems. Please submit your answers through Gradescope (if you would like to print out a copy of the homework - it is available here:[Homework #1](https://docs.google.com/document/d/1REg1N8HrThvPqR7dnLg011IdYNWP6i9RjaJC-84bQK8/edit?usp=sharing) 
 
 ## Questions:
 Questions 5 & 16
