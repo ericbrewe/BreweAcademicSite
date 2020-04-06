@@ -14,15 +14,43 @@
     
     <item>
       <title>PHYS 115 Page 1</title>
+      <link>/courses/phys_115/coursevideos/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>/courses/phys_115/coursevideos/</guid>
+      <description>&lt;p&gt;I will be recording all synchronous class meetings, and will be posting the videos here:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Week&lt;/th&gt;
+&lt;th&gt;Day&lt;/th&gt;
+&lt;th&gt;Video Link&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;One&lt;/td&gt;
+&lt;td&gt;Mon&lt;/td&gt;
+&lt;td&gt;
+&lt;a href=&#34;https://drexel.zoom.us/rec/share/1O5yfoHv2mhIYtbXuRqCU_IxRp3uT6a803UarPFenU1DSnvvOfWPz8CznvZNHQ60&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Video Day 1&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>PHYS 115 Page 1</title>
       <link>/courses/phys_115/hw1/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
       <guid>/courses/phys_115/hw1/</guid>
-      <description>&lt;p&gt;The first homework, from Chapter 18 will include questions, as well as problems.&lt;/p&gt;
+      <description>&lt;p&gt;The first homework, from Chapter 18 will include questions, as well as problems. Please submit your answers through Gradescope (if you would like to print out a copy of the homework - it is available here:
+&lt;a href=&#34;https://docs.google.com/document/d/1REg1N8HrThvPqR7dnLg011IdYNWP6i9RjaJC-84bQK8/edit?usp=sharing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Homework #1&lt;/a&gt;
+&lt;/p&gt;
 &lt;h2 id=&#34;questions&#34;&gt;Questions:&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;How can there be a non-zero electric field inside a wire in a circuit?  Isn&#39;t the electric field inside a conductor always zero?&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;Questions 5 &amp;amp; 16&lt;/p&gt;
 &lt;h2 id=&#34;problems&#34;&gt;Problems:&lt;/h2&gt;
+&lt;p&gt;23, 26, 36, 41, 49&lt;/p&gt;
 </description>
     </item>
     
@@ -32,7 +60,7 @@
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
       <guid>/courses/phys_115/program1/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Drawing magnetic field lines&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;The Biot-Savart lwa for constant currents is:&lt;/p&gt;
+&lt;p&gt;The Biot-Savart law for constant currents is:&lt;/p&gt;
 &lt;p&gt;$$\mathbf B = I\frac{\mu_{0}}{4\pi} \int \frac{\vec{dl} \times \hat{r}} {r^2} $$&lt;/p&gt;
 &lt;p&gt;In general this is an integral for every point in space around the loop of current. There are however, a few geometrical configurations that permit considerable simplification. In the case of a wire that passes perpendicular to the plane, the lines of constant magnetic field will curl around the wire according to the right hand rule (i.e. they will have no component out of the plane). You will be modeling such a system in this assignment.  Please set $\frac{\mu_{0}}{4\pi} = 1$  for this problem.&lt;/p&gt;
 &lt;p&gt;First, create a grid of points over the interval [-1,-1]:[1,1]. That is, create an array of x and y coordinates and call them X, and Y. For each point on that grid you will need to calculate the magnetic field. Save the components of the magnetic field in the arrays $B_x$ and $B_y$. You can plot these vector field lines with the following code:&lt;/p&gt;

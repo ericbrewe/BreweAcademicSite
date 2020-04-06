@@ -1,20 +1,18 @@
 ---
-authors: [Eric Brewe]
-categories: [PHYS 115]
-date: "2019-02-05T00:00:00Z"
+title: "Chapter18Slides"
+categories: PHYS 115
+date: '2019-02-05T00:00:00Z'
 slides:
   highlight_style: dracula
-  theme: black
-summary: An introduction to using Academic's Slides feature.
+  theme: white
+summary: A few slides on Chapter 18 from Chabay & Sherwood
 tags: []
-title: Slides
+authors: Eric Brewe
 ---
 
+# Current
 
-
-# Create slides in Markdown with Academic
-
-[Academic](https://sourcethemes.com/academic/) | [Documentation](https://sourcethemes.com/academic/docs/managing-content/#create-slides)
+-
 
 ---
 

@@ -3,12 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/courses/phys_115/hw1/</loc>
+    <loc>/courses/phys101/example1/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/courses/phys101/example1/</loc>
+    <loc>/courses/phys_115/coursevideos/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
   </url>
   
@@ -23,12 +23,17 @@
   </url>
   
   <url>
-    <loc>/courses/phys_115/program1/</loc>
+    <loc>/courses/phys_115/hw1/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
   </url>
   
   <url>
     <loc>/courses/phys101/example2/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/phys_115/program1/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
   </url>
   
@@ -39,11 +44,6 @@
   
   <url>
     <loc>/authors/eric-brewe/</loc>
-    <lastmod>2020-03-06T15:30:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
     <lastmod>2020-03-06T15:30:00+00:00</lastmod>
   </url>
   
@@ -173,6 +173,41 @@
   </url>
   
   <url>
+    <loc>/courses/</loc>
+    <lastmod>2020-02-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/admin/</loc>
+    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/courseplanningincrisis/</loc>
+    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/slides/ch18slides/ch18slides/</loc>
+    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/phys-115/</loc>
+    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/slides/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
   </url>
@@ -194,11 +229,6 @@
   
   <url>
     <loc>/publication/price-perc-poster-19/</loc>
-    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/doi10.1103/physrevphyseducres.15.020150-urlhttps/</loc>
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -263,6 +293,11 @@
   </url>
   
   <url>
+    <loc>/</loc>
+    <lastmod>2018-06-28T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/privacy/</loc>
     <lastmod>2018-06-28T00:00:00+01:00</lastmod>
   </url>
@@ -288,6 +323,11 @@
   </url>
   
   <url>
+    <loc>/tags/class/</loc>
+    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/classroom-interactions/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
   </url>
@@ -299,6 +339,11 @@
   
   <url>
     <loc>/publication/brewe-2018/</loc>
+    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/curriculum/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -333,7 +378,7 @@
   </url>
   
   <url>
-    <loc>/tags/force-concept-inventory/</loc>
+    <loc>/tags/force-concept-inventory./</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -389,6 +434,11 @@
   
   <url>
     <loc>/authors/michael-zwolak/</loc>
+    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/modeling/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -479,6 +529,11 @@
   
   <url>
     <loc>/publication/dou-2018/</loc>
+    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/university/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -663,11 +718,6 @@
   </url>
   
   <url>
-    <loc>/tags/modeling/</loc>
-    <lastmod>2015-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/publication/traxler-2015/</loc>
     <lastmod>2015-01-01T00:00:00+00:00</lastmod>
   </url>
@@ -818,11 +868,6 @@
   </url>
   
   <url>
-    <loc>/tags/force-concept-inventory./</loc>
-    <lastmod>2013-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/publication/brewe-2013-cbe/</loc>
     <lastmod>2013-01-01T00:00:00+00:00</lastmod>
   </url>
@@ -914,11 +959,6 @@
   
   <url>
     <loc>/publication/manthey-2013-a/</loc>
-    <lastmod>2013-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/university/</loc>
     <lastmod>2013-01-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -1059,11 +1099,6 @@
   
   <url>
     <loc>/tags/biology/</loc>
-    <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/curriculum/</loc>
     <lastmod>2011-01-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -1298,11 +1333,6 @@
   </url>
   
   <url>
-    <loc>/tags/class/</loc>
-    <lastmod>2008-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/publication/brewe-2008-a/</loc>
     <lastmod>2008-01-01T00:00:00+00:00</lastmod>
   </url>
@@ -1373,19 +1403,7 @@
   </url>
   
   <url>
-    <loc>/authors/admin/</loc>
-  </url>
-  
-  <url>
-    <loc>/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>/courses/</loc>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
+    <loc>/tags/doi10.1103/physrevphyseducres.15.020150-urlhttps/</loc>
   </url>
   
 </urlset>
