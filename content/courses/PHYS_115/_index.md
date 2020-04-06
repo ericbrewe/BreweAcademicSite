@@ -32,7 +32,7 @@ Mondays will be synchronous Problem Solving Workshops, Wednesdays will be synchr
 |     | email | Office Hrs |
 |-----|---|-------|------------|
 | Dr. Eric Brewe | <eb573@drexel.edu> | M 11-12; F 10-12 + By Appointment
-| Virgina Price | <vep32@drexel.edu> | 
+| Virgina Price | <vep32@drexel.edu> | Tu, Th, 1:00-2:00
 
 **Preamble**
 This class is going to be weird, times are weird. I have taught blended courses, and used the tools available, but have not had any experience with fully online classes. I will be trying, I promise to be patient with you, and will ask the same of me. 
