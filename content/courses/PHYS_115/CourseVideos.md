@@ -16,4 +16,4 @@ I will be recording all synchronous class meetings, and will be posting the vide
 
 |Week|Day|Video Link|
 |---|---|---|
-|One|Mon|[Video Day 1](https://drexel.zoom.us/rec/share/1O5yfoHv2mhIYtbXuRqCU_IxRp3uT6a803UarPFenU1DSnvvOfWPz8CznvZNHQ60)|
+|One|Mon|<https://drexel.zoom.us/rec/share/1O5yfoHv2mhIYtbXuRqCU_IxRp3uT6a803UarPFenU1DSnvvOfWPz8CznvZNHQ60>|
