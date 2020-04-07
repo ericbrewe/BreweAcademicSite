@@ -14,7 +14,7 @@ type: docs
 weight: 1
 ---
 
-Testing a link to a set of slides. <a href="/Ch18Slides" target="_blank">here</a>
+Testing a link to a set of slides <a href="content/slides/Ch18Slides" target="_blank">here</a>
 
 
 ## Flexibility
