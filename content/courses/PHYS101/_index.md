@@ -16,7 +16,7 @@ weight: 1
 
  
 
-<a href="/ChSlides" target="_blank">here</a>
+<a href="/content/slides/ChSlides" target="_blank">here</a>
 
 ## Flexibility
 
