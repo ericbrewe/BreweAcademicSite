@@ -14,7 +14,12 @@ type: docs
 weight: 1
 ---
 
+Testing a link to a set of slides. <a href="/Ch18Slides" target="_blank">here</a>
+
+
 ## Flexibility
+
+
 
 This feature can be used for publishing content such as:
 
