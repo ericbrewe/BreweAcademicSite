@@ -1,6 +1,6 @@
 ---
 authors: [Eric Brewe]
-categories: [PHYS 115]
+categories: [slides]
 date: "2019-02-05T00:00:00Z"
 slides:
   highlight_style: dracula
