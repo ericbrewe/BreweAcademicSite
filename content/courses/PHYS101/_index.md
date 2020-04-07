@@ -14,7 +14,7 @@ type: docs
 weight: 1
 ---
 
-Testing a link to a set of [Ch18Slides]({{< ref "/content/slides/Ch18Slides/"}}) 
+Testing a link to a set of [Ch18Slides]({{< ref "/content/slides/ChSlides/"}}) 
 
 
 ## Flexibility
