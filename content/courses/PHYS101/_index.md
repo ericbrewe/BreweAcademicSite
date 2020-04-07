@@ -15,6 +15,7 @@ weight: 1
 ---
 
  
+# This is how you link to slides.
 
 <a href="/slides/ChSlides" target="_blank">here</a>
 
