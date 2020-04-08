@@ -4,9 +4,9 @@ draft: false
 linktitle: Videos
 menu:
   PHYS_115:
-    parent: Physics 115
+    parent: Class Videos
     weight: 1
-title: PHYS 115 Page 1
+title: Zoom recordings from Physics 115
 toc: true
 type: docs
 weight: 1
