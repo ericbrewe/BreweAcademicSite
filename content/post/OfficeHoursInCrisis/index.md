@@ -40,6 +40,6 @@ I was able to share my screen on my tablet and get bitpaper.io to work well and 
 On the downside, I have wireless headphones which are great. But because they are wireless, you can leave and go to places like the bathroom with the headphones on.  Note to self, remember the mute button. 
 
 Finally, I made what I think is a useful Zoom background. 
-{{< img library = "true" src = "CoffeeBackground.jpg">}}
+{{< figure library = "true" src = "CoffeeBackground.jpg">}}
 
 These are small victories. But they are victories! Good to have a confidence boost going into next week.
