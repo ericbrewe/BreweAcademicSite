@@ -91,7 +91,7 @@ Your score on the written assignments will be the proportion of the problems tha
 
 #### Grading Rubric
 
-We will use the following rubric for all graded assignments
+We will use the following rubric for all written assignments
 
 | Score | Meaning |
 | ---------------------| ----------------------------------------------- |
