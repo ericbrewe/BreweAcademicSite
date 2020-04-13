@@ -25,6 +25,7 @@ Around any closed loop
 
 {{% fragment %}} $V_{Batt}$ {{% /fragment %}} {{% fragment %}} $- I_3R_3$ {{% /fragment %}} {{% fragment %}} $- I_2R_2$ {{% /fragment %}} {{% fragment %}} $- I_1R_1 = 0$  {{% /fragment %}}
 
+{{% fragment %}} $V_{Batt}$ {{% /fragment %}} {{% fragment %}} $- I(R_3 + R_2 + R_1) = 0${{% /fragment %}}
 ---
 
 
