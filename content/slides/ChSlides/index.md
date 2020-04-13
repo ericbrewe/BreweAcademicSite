@@ -19,7 +19,7 @@ $\Sigma V = 0$
 Around any closed loop
 
 ---
-{{< figure src="images/series-circuit.jpg" title="All resistors = $5\Omega$" lightbox="false" >}}//
+{{< figure src="images/series-circuit.jpg" title="All resistors = $5\Omega$" lightbox="false" >}}
 
 {{% fragment %}} $V_{Batt}$ {{% /fragment %}} {{% fragment %}} $- V_3$ {{% /fragment %}} {{% fragment %}} $- V_2$ {{% /fragment %}} {{% fragment %}} $- V_1 = 0$ {{% /fragment %}}
 
