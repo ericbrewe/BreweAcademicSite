@@ -90,7 +90,9 @@ The goal of this class is that you master the content. We will grade each proble
 Your score on the written assignments will be the proportion of the problems that you have completed at the satisfactory level. So if you do all the problems, but only reach satisfactory on 85\% of them, you will get an 85\% for the homework score. 
 
 #### Grading Rubric
+
 We will use the following rubric for all graded assignments
+
 | Score | Meaning |
 | ---------------------| ----------------------------------------------- |
 | 4 | Fully complete, well explained, all work shown, correct answer someone could pick up this solution and read it.|
