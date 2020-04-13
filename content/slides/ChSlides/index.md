@@ -22,9 +22,9 @@ Around any closed loop
 
 
 
-{{%/ fragment /%}} $V_{Batt}$ {{%/ /fragment /%}} 
-{{%/ fragment /%}} $- V_1$ {{%/ /fragment /%}}  
-{{%/ fragment /%}} $- V_3 =0$  {{%/ /fragment /%}}
+{{% fragment %}} $V_{Batt}$ {{% /fragment %}} 
+{{% fragment %}} $- V_1$ {{% /fragment %}}  
+{{% fragment %}} $- V_3 =0$  {{% /fragment %}}
 
 
 ---
