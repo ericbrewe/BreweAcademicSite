@@ -20,9 +20,9 @@ Around any closed loop
 
 ---
 
+{{< figure src="/images/series-circuit.jpg" title="A caption" lightbox="true" >}}
 
-
-{{% fragment %}} $V_{Batt}$ {{% /fragment %}}  {{% fragment %}} $- V_1$ {{% /fragment %}}   {{% fragment %}} $- V_3 =0$  {{% /fragment %}}
+{{% fragment %}} $V_{Batt}$ {{% /fragment %}}  {{% fragment %}} $- V_1$ {{% /fragment %}}   {{% fragment %}} $- V_2 =0$  {{% /fragment %}}
 
 
 ---
