@@ -15,10 +15,14 @@ slides:
 
 ## Loop Rule
 
-$\Sigma V = 0$ Around any closed loop
+$\Sigma V = 0$ 
+Around any closed loop
 
 ---
-\
+
+
+
+{{%/* fragment */%}} $V_{Batt}$ {{%/* /fragment */%}} {{%/* fragment */%}} $- V_1$ {{%/* /fragment */%}}  {{%/* fragment */%}} $- V_3 =0$  {{%/* /fragment */%}}
 
 
 ---
