@@ -23,11 +23,17 @@ Around any closed loop
 
 {{% fragment %}} $V_{Batt}$ {{% /fragment %}} {{% fragment %}} $- V_3$ {{% /fragment %}} {{% fragment %}} $- V_2$ {{% /fragment %}} {{% fragment %}} $- V_1 = 0$ {{% /fragment %}}
 
+We know V = IR, so 
+
 {{% fragment %}} $V_{Batt}$ {{% /fragment %}} {{% fragment %}} $- I_3R_3$ {{% /fragment %}} {{% fragment %}} $- I_2R_2$ {{% /fragment %}} {{% fragment %}} $- I_1R_1 = 0$  {{% /fragment %}}
 
-{{% fragment %}} $V_{Batt}$ {{% /fragment %}} {{% fragment %}} $- I(R_3 + R_2 + R_1) = 0${{% /fragment %}}
 ---
+{{< figure src="images/series-circuit.jpg" title="All resistors = $5\Omega$" lightbox="false" >}}
 
+$V_{Batt} - I_3R_3 - I_2R_2- I_1R_1 = 0$ and current is the same everywhere in a series circuit...so
+
+{{% fragment %}} $V_{Batt} - I(R_3 + R_2 + R_1) = 0${{% /fragment %}}
+---
 
 ---
 
