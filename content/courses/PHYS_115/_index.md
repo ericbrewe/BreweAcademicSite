@@ -71,8 +71,8 @@ We will aim to cover chapters 17-23 and one additional supplemental chapter S3 o
 ## Grading
 I see grades as an indicator of your understanding, so your job in earning a grade is to demonstrate your understanding of course material. Because this course is using a different format, we are going to emphasize using problem solutions rather than exams as a way of demonstrating your competencies. 
 
-| Category             | Percentage                                                         |
-| ---------------------| ------------------------------------------------------------------ |
+| Category             | Percentage    |
+| ---------------------| ----------------------------------------------- |
 | Written Homework:            | 65%        |
 | Computational Homework:    | 25%  | 
 | Class Participation: | 10%        |
@@ -92,7 +92,7 @@ Your score on the written assignments will be the proportion of the problems tha
 #### Grading Rubric
 We will use the following rubric for all graded assignments
 | Score | Meaning |
-|----- |---|
+| ----- | ---- |
 | 4 | Fully complete, well explained, all work shown, correct answer someone could pick up this solution and read it.|
 | 3 | Complete, explained adquately, work shown, correct answer. Someone would probably understand this solution. |
 | 2 | Missing either adequate explanation or work, answer is correct, but someone would struggle to understand what you've done to get to this solution.|
