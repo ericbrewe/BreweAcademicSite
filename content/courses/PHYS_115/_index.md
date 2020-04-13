@@ -89,6 +89,17 @@ The goal of this class is that you master the content. We will grade each proble
 
 Your score on the written assignments will be the proportion of the problems that you have completed at the satisfactory level. So if you do all the problems, but only reach satisfactory on 85\% of them, you will get an 85\% for the homework score. 
 
+#### Grading Rubric
+We will use the following rubric for all graded assignments
+|Score| Meaning |
+|---  |---|
+| 4 | Fully complete, well explained, all work shown, correct answer someone could pick up this solution and read it.|
+| 3 | Complete, explained adquately, work shown, correct answer. Someone would probably understand this solution. |
+| 2 | Missing either adequate explanation or work, answer is correct, but someone would struggle to understand what you've done to get to this solution.|
+| 1 | Missing either adequate explanation or work and answer is incorrect. |
+| 0 | No or very little effort demonstrated |
+
+
 ### Programming Assignments
 
 Programming assignments will also be submitted through Gradescope. These assignments will be discussed in recitation, and will count as 25\% of your overall grade. Programming assignments are due at the beginning of recitation on Wednesday in weeks 3, 5, 7, and 9 (see schedule below).
