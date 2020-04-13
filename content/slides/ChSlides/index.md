@@ -20,7 +20,7 @@ Around any closed loop
 
 ---
 ### Series Circuits
-{{< figure src="images/series-circuit.jpg" title=[] lightbox="false" >}}
+{{< figure src="images/series-circuit.jpg" >}}
 
 {{% fragment %}} $V_{Batt}$ {{% /fragment %}} {{% fragment %}} $- V_3$ {{% /fragment %}} {{% fragment %}} $- V_2$ {{% /fragment %}} {{% fragment %}} $- V_1 = 0$ {{% /fragment %}}
 
