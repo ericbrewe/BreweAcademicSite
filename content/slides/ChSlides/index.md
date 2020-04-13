@@ -30,7 +30,7 @@ Around any closed loop
 
 ---
 ### Series Circuits
-{{< figure src="images/series-circuit.jpg" title="All resistors = $5\Omega$" lightbox="false" >}}
+{{< figure src="images/series-circuit.jpg" >}}
 
 $V_{Batt} - I_3R_3 - I_2R_2- I_1R_1 = 0$ 
 
@@ -39,7 +39,7 @@ and current is the same everywhere in a series circuit...so
 {{% fragment %}} $V_{Batt} - I(R_3 + R_2 + R_1) = 0${{% /fragment %}}
 ---
 ### Series Circuits
-{{< figure src="images/series-circuit.jpg" title="All resistors = $5\Omega$" lightbox="false" >}}
+{{< figure src="images/series-circuit.jpg" >}}
 
 $V_{Batt} - I(R_3 + R_2 + R_1) = 0$ 
 
@@ -50,8 +50,9 @@ In series circuits, then...
 
 ---
 ### Parallel Circuits
-{{< figure src="images/Parallel.png" title="All resistors = $5\Omega$" lightbox="false" >}}
-
+{{< figure src="images/Parallel.png" >}}
+Lets choose a path $1 -> 8 -> 7 -> 2 -> 1$, then,
+{{% fragment %}} $V_{Batt} - I_1R_1 = 0$ {{% /fragment %}}
 ---
 
 
