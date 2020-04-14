@@ -4,13 +4,18 @@ subtitle: "⚔<br/>with xaringan"
 author: "Yihui Xie"
 institute: "RStudio, PBC"
 date: "2016/12/12 (updated: `r Sys.Date()`)"
-output:
-  xaringan::moon_reader:
-    lib_dir: libs
-    nature:
-      highlightStyle: github
-      highlightLines: true
-      countIncrementalSlides: false
+output:revealjs::revealjs_presentation
+    theme: simple
+    highlight: haddock
+    center: true
+    css: reveal.css
+    transition: slide
+#  xaringan::moon_reader:
+#    lib_dir: libs
+#    nature:
+#      highlightStyle: github
+#      highlightLines: true
+#      countIncrementalSlides: false
 ---
 
 background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/be/Sharingan_triple.svg)
