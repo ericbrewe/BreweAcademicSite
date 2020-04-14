@@ -88,22 +88,22 @@ $$I_{Total} = V_1/R_1 + V_2/R_2 + V_3/R_3$$
 But, V is same across all parallel branches, so
 
 $$V/R_{Total} = V/R_1 + V/R_2 + V/R_3$$
-and
 $$V/R_{Total} = V(1/R_1 + 1/R_2 + 1/R_3)$$
 
 In Parallel branches
-
 $$1/R_{Total} = 1/R_1 + 1/R_2 + 1/R_3 + ...$$
 
 ---
 ### Series/Parallel
 
 *Series Circuits*
+
 Current is same at all points
 $$ \Sigma \Delta V = 0$$
 $R_{Total} = R_1 + R_2 + R_3+...$
 
 *Parallel Circuits*
+
 Voltage is same across all branches
 $$I_{Total} = I_1 + I_2 + I_3$$
 $$1/R_{Total} = 1/R_1 + 1/R_2 + 1/R_3 + ...$$
