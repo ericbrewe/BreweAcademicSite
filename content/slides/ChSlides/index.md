@@ -112,3 +112,21 @@ $$1/R_{Total} = 1/R_1 + 1/R_2 + 1/R_3 + ...$$
 
 ---
 
+### Capacitors
+{{< figure src="images/RCCircuit.png" width="300px">}}
+**Charging Capacitor** 
+
+As capacitor charges, charge builds up on plates of capacitor, creating electric field, building up a potential difference across the capacitor.
+
+
+---
+
+### Capacitors
+{{< figure src="images/RCCircuit.png" width="300px">}}
+**Charging Capacitor** 
+
+Charge on capacitor: $Q = VC$
+
+Capacitance: $C = \epsilon (A/d)$
+
+---

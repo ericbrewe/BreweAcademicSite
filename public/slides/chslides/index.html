@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  
+  
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.7.0">
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="/slides/chslides/">
+
+  <title>Ch 19 Slides | Eric Brewe Academic</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/reveal.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/theme/white.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous">
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/reveal_custom.min.css">
+
+  
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/css/print/pdf.css' : 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+
+</head>
+<body>
+
+  
+<div class="reveal">
+  <div class="slides">
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+    <section>
+    
+      <h2 id="loop-rule">Loop Rule</h2>
+<p>$\Sigma V = 0$
+Around any closed loop</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="series-circuits">Series Circuits</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="images/series-circuit.jpg" >
+<img data-src="images/series-circuit.jpg" class="lazyload" alt="" ></a>
+
+
+
+</figure>
+
+<p><span class="fragment " >
+$V_{Batt}$
+</span> <span class="fragment " >
+$- V_3$
+</span> <span class="fragment " >
+$- V_2$
+</span> <span class="fragment " >
+$- V_1 = 0$
+</span></p>
+<p><span class="fragment " >
+We know V = IR, so
+</span></p>
+<p><span class="fragment " >
+$V_{Batt}$
+</span> <span class="fragment " >
+$- I_3R_3$
+</span> <span class="fragment " >
+$- I_2R_2$
+</span> <span class="fragment " >
+$- I_1R_1 = 0$<br>
+</span></p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="series-circuits-1">Series Circuits</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="images/series-circuit.jpg" >
+<img data-src="images/series-circuit.jpg" class="lazyload" alt="" ></a>
+
+
+
+</figure>
+
+<p>$V_{Batt} - I_3R_3 - I_2R_2- I_1R_1 = 0$</p>
+<p>I is the same everywhere in a series circuit</p>
+<p><span class="fragment " >
+$V_{Batt} - I(R_3 + R_2 + R_1) = 0$
+</span></p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="series-circuits-2">Series Circuits</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="images/series-circuit.jpg" >
+<img data-src="images/series-circuit.jpg" class="lazyload" alt="" ></a>
+
+
+
+</figure>
+
+<p>$V_{Batt} - I(R_3 + R_2 + R_1) = 0$</p>
+<p>In series circuits, then&hellip;
+<span class="fragment " >
+$V_{Batt} - IR_{Total} = 0$
+</span></p>
+<p><span class="fragment " >
+$R_{Total} = R_1 + R_2 + R_3+&hellip;$
+</span></p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="parallel-circuits">Parallel Circuits</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="images/Parallel.png" >
+<img data-src="images/Parallel.png" class="lazyload" alt="" ></a>
+
+
+
+</figure>
+
+<p>Choose a path $1 \rightarrow 8 \rightarrow 7 \rightarrow 2 \rightarrow 1$, then,</p>
+<p><span class="fragment " >
+$V_{Batt} - I_1R_1 = 0$
+</span></p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="parallel-circuits-1">Parallel Circuits</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="images/Parallel.png" >
+<img data-src="images/Parallel.png" class="lazyload" alt="" width="300px" ></a>
+
+
+
+</figure>
+
+<p>Choose a different path $1 \rightarrow 8 \rightarrow 6 \rightarrow 3 \rightarrow 1$</p>
+<p><span class="fragment " >
+$V_{Batt} - I_2R_2 = 0$
+</span></p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="parallel-circuits-2">Parallel Circuits</h3>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="images/Parallel.png" >
+<img data-src="images/Parallel.png" class="lazyload" alt="" width="300px" ></a>
+
+
+
+</figure>
+
+Since $V_{Batt} - I_2R_2 = 0$ and $V_{Batt} - I_2R_2 = 0$</p>
+<p>In each branch of a parallel circuit, $\Delta V$ must be the same.</p>
+<p><span class="fragment " >
+$V_1 = V_2 = V_3 = V_{Batt}$
+</span></p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="parallel-circuits-3">Parallel Circuits</h3>
+<p>In a parallel circuit, the current splits at each junction. So the current leaving the battery is $I_{Total} = I_1 + I_2 + I_3$</p>
+<p>And, $V = IR$ or $I = V/R$ which can be substituted in.</p>
+<p>$$I_{Total} = V_1/R_1 + V_2/R_2 + V_3/R_3$$</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="parallel-circuits-4">Parallel Circuits</h3>
+<p>$$I_{Total} = V_1/R_1 + V_2/R_2 + V_3/R_3$$
+But, V is same across all parallel branches, so</p>
+<p>$$V/R_{Total} = V/R_1 + V/R_2 + V/R_3$$
+$$V/R_{Total} = V(1/R_1 + 1/R_2 + 1/R_3)$$</p>
+<p>In Parallel branches
+$$1/R_{Total} = 1/R_1 + 1/R_2 + 1/R_3 + &hellip;$$</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<p><em>Series Circuits</em></p>
+<ul>
+<li>Current is same at all points</li>
+<li>$$ \Sigma \Delta V = 0$$</li>
+<li>$R_{Total} = R_1 + R_2 + R_3+&hellip;$</li>
+</ul>
+<p><em>Parallel Circuits</em></p>
+<ul>
+<li>Voltage is same across all branches</li>
+<li>$$I_{Total} = I_1 + I_2 + I_3$$</li>
+<li>$1/R_{Total} = 1/R_1 + 1/R_2 + 1/R_3 + &hellip;$</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="capacitors">Capacitors</h3>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/Guhao1KxaPc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+    </section>
+    
+
+    
+    
+  </div>
+</div>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/js/reveal.min.js"></script>
+
+  <script>
+    window.revealPlugins = { dependencies: [
+      
+      { src: 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      
+      { src: 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+      
+      { src: 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/plugin/zoom-js/zoom.js', async: true },
+      
+      { src: 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/plugin/math/math.js', async: true },
+      
+      { src: 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/plugin/print-pdf/print-pdf.js', async: true },
+      
+      { src: '\/js\/vendor\/reveal.js\/plugin\/notes\/notes.js', async: true }
+    ]};
+
+    let revealDefaults = { center: true, controls: true, history: true, progress: true, transition: 'slide', mouseWheel: true };
+    let revealOptions = Object.assign({}, revealDefaults, revealPlugins);
+    Reveal.initialize(revealOptions);
+  </script>
+
+</body>
+</html>
