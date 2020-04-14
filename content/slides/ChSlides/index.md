@@ -145,5 +145,16 @@ Loop rule still applies, so
   $$V_{Batt} -V_{Cap} -V_{Res} = 0$$
 
   $$V_{Batt} -Q/C - IR = 0$$
+  
+  $$V_{Batt} -Q(t)/C - \frac{dQ(t)}{dt}R = 0$$
+
+---
+### Capacitors
+  
+  $$V_{Batt} -Q(t)/C - \frac{dQ(t)}{dt}R = 0$$
+  
+- Look at the initial and final conditions.
+    -At $t = 0, I = I_0, Q_0 = 0$
+    -As $t \rightarrow \infty, I \rightarrow 0, Q \to VC$
 
 ---
