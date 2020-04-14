@@ -142,22 +142,23 @@ Loop rule still applies, so
 
 ---
 ### Capacitors - Charging
-  $$V_{Batt} -V_{Cap} -V_{Res} = 0$$
 
-  {{% fragment %}} $$V_{Batt} -Q/C - IR = 0$$ {{% /fragment %}}
-  
-  {{% fragment %}} $$V_{Batt} -Q(t)/C - \frac{dQ(t)}{dt}R = 0$$ {{% /fragment %}}
+$$V_{Batt} -V_{Cap} -V_{Res} = 0$$
+
+{{% fragment %}} $$V_{Batt} -Q/C - IR = 0$$ {{% /fragment %}}
+
+{{% fragment %}} $$V_{Batt} -Q(t)/C - \frac{dQ(t)}{dt}R = 0$$ {{% /fragment %}}
 
 ---
 ### Capacitors - Charging
   
-  $$V_{Batt} -Q(t)/C - \frac{dQ(t)}{dt}R = 0$$
+$$V_{Batt} -Q(t)/C - \frac{dQ(t)}{dt}R = 0$$
   
 - Look at the initial and final conditions.
     - At $t = 0, I = I_0, Q_0 = 0$
     - As $t \rightarrow \infty, I \rightarrow 0, Q \to VC$
     
-    {{% fragment %}} $Q(t) = Q_0(1- e^{-t/RC})$ {{% /fragment %}}
+{{% fragment %}} $Q(t) = Q_0(1- e^{-t/RC})$ {{% /fragment %}}
     
 ---
 
@@ -176,7 +177,7 @@ as $t \to \infty, Q(\infty) = VC$, and $I(\infty) = Q_0(1-1) = 0$
 ---
 
 ### Capacitors - Disharging
-{{< figure src="images/DishargingCap.png" width="300px">}}
+{{< figure src="images/DishargingCap.png" >}}
 
 Loop rule still applies, so 
 
@@ -194,20 +195,20 @@ Loop rule still applies, so
 ---
 ### Capacitors - Disharging
   
-  $$Q(t)/C - \frac{dQ(t)}{dt}R = 0$$
+$$Q(t)/C - \frac{dQ(t)}{dt}R = 0$$
   
 - Look at the initial and final conditions.
     - At $t = 0, I = I_0, Q_0 = VC$
     - As $t \to \infty, I \to 0, Q \to 0$
     
-    {{% fragment %}} $Q(t) = VCe^{-t/RC}$ {{% /fragment %}}
+{{% fragment %}} $Q(t) = VCe^{-t/RC}$ {{% /fragment %}}
     
 ---
 
 At time = 0 
 $$Q(t) = VCe^{-t/RC}$$
 $$\frac{dQ(t)}{dt} = \frac{VC}{-RC}e^{-t/RC}$$
-at t = 0, $Q(0) = VC$,  and $I_0 = \frac{VC}{RC} = V_{C}/R$
+at t = 0, $Q(0) = VC$,  and $I_0 = -\frac{VC}{RC} = -V_{C}/R$
 
 ---
 
