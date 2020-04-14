@@ -51,7 +51,7 @@ In series circuits, then...
 
 ---
 ### Parallel Circuits
-{{< figure src="images/Parallel.png" fig_height = 3 >}}
+{{< figure src="images/Parallel.png" fig_height = 2 >}}
 
 Choose a path $1 \Rightarrow 8 \Rightarrow 7 \Rightarrow 2 \Rightarrow 1$, then,
 
@@ -66,13 +66,11 @@ Choose a different path $1 \Rightarrow 8 \Rightarrow 6 \Rightarrow 3 \Rightarrow
 {{% fragment %}} $V_{Batt} - I_2R_2 = 0$ {{% /fragment %}}
 
 
-
-
-
 ---
+### Parallel Circuits
+Since $V_{Batt} - I_2R_2 = 0$ and $V_{Batt} - I_2R_2 = 0$
 
-
-
+In each branch of a parallel circuit, $\DeltaV$ must be the same. 
 
 
 
