@@ -65,7 +65,6 @@ Choose a different path $1 \Rightarrow 8 \Rightarrow 6 \Rightarrow 3 \Rightarrow
 
 {{% fragment %}} $V_{Batt} - I_2R_2 = 0$ {{% /fragment %}}
 
-
 ---
 ### Parallel Circuits
 Since $V_{Batt} - I_2R_2 = 0$ and $V_{Batt} - I_2R_2 = 0$
@@ -73,6 +72,7 @@ Since $V_{Batt} - I_2R_2 = 0$ and $V_{Batt} - I_2R_2 = 0$
 In each branch of a parallel circuit, $\DeltaV$ must be the same.
 
 {{% fragment %}} $V_1 = V_2 = V_3 = V_{Batt}$ {{% /fragment %}}
+
 ---
 ### Parallel Circuits
 In a parallel circuit, the current splits at each junction. So the current leaving the battery is $I_{Total} = I_1 + I_2 + I_3$
@@ -80,6 +80,7 @@ In a parallel circuit, the current splits at each junction. So the current leavi
 And, $V = IR$ or $I = V/R$ which can be substituted in.
 
 $$I_{Total} = V_1/R_1 + V_2/R_2 + V_3/R_3$$
+
 ---
 
 
