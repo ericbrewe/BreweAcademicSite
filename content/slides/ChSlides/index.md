@@ -51,7 +51,7 @@ In series circuits, then...
 
 ---
 ### Parallel Circuits
-{{< figure src="images/Parallel.png" fig_height = 1 >}}
+{{< figure src="images/Parallel.png" fig_height = 0.5 >}}
 
 Choose a path $1 \Rightarrow 8 \Rightarrow 7 \Rightarrow 2 \Rightarrow 1$, then,
 
