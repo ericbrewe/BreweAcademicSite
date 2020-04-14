@@ -22,7 +22,7 @@ weight: 1
 ## Flexibility
 
 
-<a href="/slides/TextXaringan" target="_blank">here</a>
+<a href="/slides/TestX" target="_blank">here</a>
 
 
 
