@@ -59,7 +59,7 @@ Choose a path $1 \Rightarrow 8 \Rightarrow 7 \Rightarrow 2 \Rightarrow 1$, then,
 
 ---
 ### Parallel Circuits
-{{< figure src="images/Parallel.png" width="80px">}}
+{{< figure src="images/Parallel.png" width="300px">}}
 
 Choose a different path $1 \Rightarrow 8 \Rightarrow 6 \Rightarrow 3 \Rightarrow 1$
 
@@ -67,9 +67,10 @@ Choose a different path $1 \Rightarrow 8 \Rightarrow 6 \Rightarrow 3 \Rightarrow
 
 ---
 ### Parallel Circuits
+{{< figure src="images/Parallel.png" width="300px">}}
 Since $V_{Batt} - I_2R_2 = 0$ and $V_{Batt} - I_2R_2 = 0$
 
-In each branch of a parallel circuit, $\DeltaV$ must be the same.
+In each branch of a parallel circuit, $\Delta V$ must be the same.
 
 {{% fragment %}} $V_1 = V_2 = V_3 = V_{Batt}$ {{% /fragment %}}
 
@@ -82,5 +83,13 @@ And, $V = IR$ or $I = V/R$ which can be substituted in.
 $$I_{Total} = V_1/R_1 + V_2/R_2 + V_3/R_3$$
 
 ---
+### Parallel Circuits
+$$I_{Total} = V_1/R_1 + V_2/R_2 + V_3/R_3$$
+But, V is same across all parallel branches, so
 
+$$V/R_{Total} = V/R_1 + V/R_2 + V/R_3$$
+and
+$$V/R_{Total} = V(1/R_1 + 1/R_2 + 1/R_3)$$
 
+In Parallel branches
+$$1/R_{Total} = 1/R_1 + 1/R_2 + 1/R_3$$
