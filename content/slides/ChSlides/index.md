@@ -141,3 +141,9 @@ Loop rule still applies, so
 
 
 ---
+### Capacitors
+  $$V_{Batt} -V_{Cap} -V_{Res} = 0$$
+
+  $$V_{Batt} -Q/C - IR = 0$$
+
+---

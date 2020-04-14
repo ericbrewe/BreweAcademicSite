@@ -19,10 +19,6 @@ weight: 1
 
 <a href="/slides/ChSlides" target="_blank">here</a>
 
-## Flexibility
-
-
-<a href="/slides/TestX" target="_blank">here</a>
 
 
 
