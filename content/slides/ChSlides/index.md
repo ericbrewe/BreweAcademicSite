@@ -121,7 +121,7 @@ As capacitor charges, charge builds up on plates of capacitor, creating electric
 
 ---
 
-### Capacitors
+### Capacitors - Charging
 {{< figure src="images/RCCircuit.png" width="300px">}}
 **Charging Capacitor** 
 
@@ -130,7 +130,7 @@ Charge on capacitor: $Q = VC$
 Capacitance: $C = \epsilon (A/d)$
 
 ---
-### Capacitors
+### Capacitors - Charging
 {{< figure src="images/RCCircuit.png" width="300px">}}
 
 Loop rule still applies, so 
@@ -141,7 +141,7 @@ Loop rule still applies, so
 
 
 ---
-### Capacitors
+### Capacitors - Charging
   $$V_{Batt} -V_{Cap} -V_{Res} = 0$$
 
   $$V_{Batt} -Q/C - IR = 0$$
@@ -149,12 +149,14 @@ Loop rule still applies, so
   $$V_{Batt} -Q(t)/C - \frac{dQ(t)}{dt}R = 0$$
 
 ---
-### Capacitors
+### Capacitors - Charging
   
   $$V_{Batt} -Q(t)/C - \frac{dQ(t)}{dt}R = 0$$
   
 - Look at the initial and final conditions.
-    -At $t = 0, I = I_0, Q_0 = 0$
-    -As $t \rightarrow \infty, I \rightarrow 0, Q \to VC$
+    - At $t = 0, I = I_0, Q_0 = 0$
+    - As $t \rightarrow \infty, I \rightarrow 0, Q \to VC$
+    
+    {{% fragment %}} $Q(t) = Q_0(1- e^(-t/RC))$ {{% /fragment %}}
 
 ---
