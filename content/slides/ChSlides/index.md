@@ -53,7 +53,7 @@ In series circuits, then...
 ### Parallel Circuits
 {{< figure src="images/Parallel.png" >}}
 
-Choose a path $1 \Rightarrow 8 \Rightarrow 7 \Rightarrow 2 \Rightarrow 1$, then,
+Choose a path $1 \rightarrow 8 \rightarrow 7 \rightarrow 2 \rightarrow 1$, then,
 
 {{% fragment %}} $V_{Batt} - I_1R_1 = 0$ {{% /fragment %}}
 
@@ -61,7 +61,7 @@ Choose a path $1 \Rightarrow 8 \Rightarrow 7 \Rightarrow 2 \Rightarrow 1$, then,
 ### Parallel Circuits
 {{< figure src="images/Parallel.png" width="300px">}}
 
-Choose a different path $1 \Rightarrow 8 \Rightarrow 6 \Rightarrow 3 \Rightarrow 1$
+Choose a different path $1 \rightarrow 8 \rightarrow 6 \rightarrow 3 \rightarrow 1$
 
 {{% fragment %}} $V_{Batt} - I_2R_2 = 0$ {{% /fragment %}}
 
@@ -93,3 +93,4 @@ $$V/R_{Total} = V(1/R_1 + 1/R_2 + 1/R_3)$$
 
 In Parallel branches
 $$1/R_{Total} = 1/R_1 + 1/R_2 + 1/R_3$$
+---
