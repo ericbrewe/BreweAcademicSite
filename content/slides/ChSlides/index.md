@@ -144,9 +144,9 @@ Loop rule still applies, so
 ### Capacitors - Charging
   $$V_{Batt} -V_{Cap} -V_{Res} = 0$$
 
-  $$V_{Batt} -Q/C - IR = 0$$
+  {{% fragment %}} $$V_{Batt} -Q/C - IR = 0$$ {{% /fragment %}}
   
-  $$V_{Batt} -Q(t)/C - \frac{dQ(t)}{dt}R = 0$$
+  {{% fragment %}} $$V_{Batt} -Q(t)/C - \frac{dQ(t)}{dt}R = 0$$ {{% /fragment %}}
 
 ---
 ### Capacitors - Charging
@@ -157,6 +157,22 @@ Loop rule still applies, so
     - At $t = 0, I = I_0, Q_0 = 0$
     - As $t \rightarrow \infty, I \rightarrow 0, Q \to VC$
     
-    {{% fragment %}} $Q(t) = Q_0(1- e^(-t/RC))$ {{% /fragment %}}
+    {{% fragment %}} $Q(t) = Q_0(1- e^{-t/RC})$ {{% /fragment %}}
+    
 
 ---
+### Capacitors - Charging
+  
+  $$V_{Batt} -Q(t)/C - \frac{dQ(t)}{dt}R = 0$$
+  
+- Look at the initial and final conditions.
+    - At $t = 0, I = I_0, Q_0 = 0$
+    - As $t \rightarrow \infty, I \rightarrow 0, Q \to VC$
+    
+    {{% fragment %}} $Q(t) = Q_0(1- e^{-t/RC})$ {{% /fragment %}}
+    
+
+---
+$$Q(t) = Q_0(1- e^{-t/RC})$$
+$$\frac{dQ(t)}{dt} = \frac{Q_0}{RC}e^{-t/RC}$$
+at t = 0, $Q(0) = Q_0$,  and $I_0 = \frac{Q_0}/{RC} = V/R$
