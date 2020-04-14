@@ -130,3 +130,14 @@ Charge on capacitor: $Q = VC$
 Capacitance: $C = \epsilon (A/d)$
 
 ---
+### Capacitors
+{{< figure src="images/RCCircuit.png" width="300px">}}
+
+Loop rule still applies, so 
+
+{{% fragment %}} $V_{Batt}$ {{% /fragment %}}
+{{% fragment %}} $-V_{Cap}$ {{% /fragment %}}
+{{% fragment %}} $-V_{Res} = 0$ {{% /fragment %}}
+
+
+---
