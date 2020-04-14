@@ -105,6 +105,9 @@ $R_{Total} = R_1 + R_2 + R_3+...$
 *Parallel Circuits*
 
 Voltage is same across all branches
+
 $$I_{Total} = I_1 + I_2 + I_3$$
-$$1/R_{Total} = 1/R_1 + 1/R_2 + 1/R_3 + ...$$
+$1/R_{Total} = 1/R_1 + 1/R_2 + 1/R_3 + ...$
 ---
+### Capacitors
+{{< youtube Guhao1KxaPc >}}
