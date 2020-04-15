@@ -18,7 +18,7 @@ image:
 projects: []
 ---
 
-After last week's trainwreck of a class I knew I had to make some changes. So this week I wrote [a ton of slides.]({{< ref "/slides/ChSlides/index.md"}})  
+After last week's trainwreck of a class I knew I had to make some changes. So this week I wrote [a ton of slides.](<http://ericbrewe.com/slides/chslides/#/>)  
 
 Plus side, they look great! 
 
