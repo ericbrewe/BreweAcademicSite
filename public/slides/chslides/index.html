@@ -57,7 +57,29 @@
     
     <section>
     
-      <h2 id="loop-rule">Loop Rule</h2>
+      <h3 id="resistors-and-capacitors">Resistors and Capacitors</h3>
+<p><strong>Resistors</strong></p>
+<ul>
+<li>Conductors that have different resistivity</li>
+<li>Resistivity, $\rho = \frac{\left| \vec{E} \right| }{J} = R\frac{A}{l}$</li>
+<li>$R = \frac{\rho l}{A}$</li>
+</ul>
+<p><strong>Capcitors</strong></p>
+<ul>
+<li>Most simply, plates that allow charges to distribute over their area.</li>
+<li>Capacitance, $C = \epsilon_0 \frac{A}{d}$</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="loop-rule">Loop Rule</h3>
 <p>$\Sigma V = 0$
 Around any closed loop</p>
 
@@ -352,18 +374,14 @@ $$1/R_{Total} = 1/R_1 + 1/R_2 + 1/R_3 + &hellip;$$</p>
     <section>
     
       
-<p><em>Series Circuits</em></p>
-<ul>
-<li>Current is same at all points</li>
-<li>$$ \Sigma \Delta V = 0$$</li>
-<li>$R_{Total} = R_1 + R_2 + R_3+&hellip;$</li>
-</ul>
-<p><em>Parallel Circuits</em></p>
-<ul>
-<li>Voltage is same across all branches</li>
-<li>$$I_{Total} = I_1 + I_2 + I_3$$</li>
-<li>$1/R_{Total} = 1/R_1 + 1/R_2 + 1/R_3 + &hellip;$</li>
-</ul>
+<p><em>Series Circuits</em>
+Current is same at all points
+$$ \Sigma \Delta V = 0$$
+$R_{Total} = R_1 + R_2 + R_3+&hellip;$</p>
+<p><em>Parallel Circuits</em>
+Voltage is same across all branches
+$$I_{Total} = I_1 + I_2 + I_3$$
+$1/R_{Total} = 1/R_1 + 1/R_2 + 1/R_3 + &hellip;$</p>
 
     </section>
     
@@ -380,6 +398,302 @@ $$1/R_{Total} = 1/R_1 + 1/R_2 + 1/R_3 + &hellip;$$</p>
   <iframe src="https://www.youtube.com/embed/Guhao1KxaPc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="capacitors-1">Capacitors</h3>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="images/RCCircuit.png" >
+<img data-src="images/RCCircuit.png" class="lazyload" alt="" width="300px" ></a>
+
+
+
+</figure>
+
+<strong>Charging Capacitor</strong></p>
+<p>As capacitor charges, charge builds up on plates of capacitor, creating electric field, building up a potential difference across the capacitor.</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="capacitors-2">Capacitors</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="images/RCCircuit.png" >
+<img data-src="images/RCCircuit.png" class="lazyload" alt="" width="300px" ></a>
+
+
+
+</figure>
+
+<p><strong>Charging Capacitor</strong></p>
+<p>Charge on capacitor: $Q = VC$</p>
+<p>Capacitance: $C = \epsilon (A/d)$</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="capacitors---charging">Capacitors - Charging</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="images/RCCircuit.png" >
+<img data-src="images/RCCircuit.png" class="lazyload" alt="" width="300px" ></a>
+
+
+
+</figure>
+
+<p>Loop rule still applies, so</p>
+<p><span class="fragment " >
+$V_{Batt}$
+</span>
+<span class="fragment " >
+$-V_{Cap}$
+</span>
+<span class="fragment " >
+$-V_{Res} = 0$
+</span></p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="capacitors---charging-1">Capacitors - Charging</h3>
+<p>$$V_{Batt} -V_{Cap} -V_{Res} = 0$$</p>
+<p><span class="fragment " >
+$$V_{Batt} -Q/C - IR = 0$$
+</span></p>
+<p><span class="fragment " >
+$$V_{Batt} -Q(t)/C - \frac{dQ(t)}{dt}R = 0$$
+</span></p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="capacitors---charging-2">Capacitors - Charging</h3>
+<p>$$V_{Batt} -Q(t)/C - \frac{dQ(t)}{dt}R = 0$$</p>
+<ul>
+<li>Look at the initial and final conditions.
+<ul>
+<li>At $t = 0, I = I_0, Q = Q_0, Q_0 often = 0 $</li>
+<li>As $t \rightarrow \infty, I \rightarrow 0, Q \to VC$</li>
+</ul>
+</li>
+</ul>
+<p><span class="fragment " >
+$Q(t) = Q_0(1- e^{-t/RC})$
+</span></p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<p>At time = 0
+$$Q(t) = Q_0(1- e^{-t/RC})$$
+$$\frac{dQ(t)}{dt} = \frac{Q_0}{RC}e^{-t/RC}$$
+at t = 0, $Q(0) = Q_0$,  and $I_0 = \frac{Q_0}{RC} = V/R$</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<p>As time goes to infinity
+$$Q(t) = Q_0(1- e^{-t/RC})$$
+$$\frac{dQ(t)}{dt} = \frac{Q_0}{RC}e^{-t/RC}$$
+as $t \to \infty, Q(\infty) = VC$, and $I(\infty) = I_0(1-1) = 0$</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="capacitors---disharging">Capacitors - Disharging</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="images/RC.jpg" >
+<img data-src="images/RC.jpg" class="lazyload" alt="" width="300px" ></a>
+
+
+
+</figure>
+
+<p>Loop rule still applies, so</p>
+<p><span class="fragment " >
+$V_{Cap}$
+</span>
+<span class="fragment " >
+$-V_{Res} = 0$
+</span></p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="capacitors---disharging-1">Capacitors - Disharging</h3>
+<p>$$V_{Cap} -V_{Res} = 0$$</p>
+<p><span class="fragment " >
+$$Q/C - IR = 0$$
+</span></p>
+<p><span class="fragment " >
+$$Q(t)/C - \frac{dQ(t)}{dt}R = 0$$
+</span></p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="capacitors---disharging-2">Capacitors - Disharging</h3>
+<p>$$Q(t)/C - \frac{dQ(t)}{dt}R = 0$$</p>
+<ul>
+<li>Look at the initial and final conditions.
+<ul>
+<li>At $t = 0, I = I_0, Q_0 = VC$</li>
+<li>As $t \to \infty, I \to 0, Q \to 0$</li>
+</ul>
+</li>
+</ul>
+<p><span class="fragment " >
+$Q(t) = VCe^{-t/RC}$
+</span></p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<p>At time = 0
+$$Q(t) = VCe^{-t/RC}$$
+$$\frac{dQ(t)}{dt} = \frac{VC}{-RC}e^{-t/RC}$$
+at t = 0, $Q(0) = VC$,  and $I_0 = -\frac{VC}{RC} = -V_{C}/R$</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<p>As time goes to infinity
+$$Q(t) = VCe^{-t/RC}$$
+$$\frac{dQ(t)}{dt} = \frac{VC}{-RC}e^{-t/RC}$$
+as $t \to \infty, Q(\infty) = 0$, and $I(\infty) = V_{C}/R = 0$</p>
 
     </section>
     

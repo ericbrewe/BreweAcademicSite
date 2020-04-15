@@ -13,7 +13,7 @@
     </image>
     
     <item>
-      <title>PHYS 115 Page 1</title>
+      <title>Zoom recordings from Physics 115</title>
       <link>/courses/phys_115/coursevideos/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
       <guid>/courses/phys_115/coursevideos/</guid>
@@ -31,7 +31,28 @@
 &lt;td&gt;One&lt;/td&gt;
 &lt;td&gt;Mon&lt;/td&gt;
 &lt;td&gt;
-&lt;a href=&#34;https://drexel.zoom.us/rec/share/1O5yfoHv2mhIYtbXuRqCU_IxRp3uT6a803UarPFenU1DSnvvOfWPz8CznvZNHQ60&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Video Day 1&lt;/a&gt;
+&lt;a href=&#34;https://drexel.zoom.us/rec/share/1O5yfoHv2mhIYtbXuRqCU_IxRp3uT6a803UarPFenU1DSnvvOfWPz8CznvZNHQ60&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Class One Video&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;One&lt;/td&gt;
+&lt;td&gt;Wed&lt;/td&gt;
+&lt;td&gt;
+&lt;a href=&#34;https://drexel.zoom.us/rec/share/-N4qdu7Q0WhIYo3W6EaHZYItD77haaa81CAZr6cInUdYmkpTzzln3xl1IMDi41ls&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Class Two Video - I forgot to start at the beginning of class&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Two&lt;/td&gt;
+&lt;td&gt;Mon&lt;/td&gt;
+&lt;td&gt;
+&lt;a href=&#34;https://drexel.zoom.us/rec/share/_vR4FJjdqV1OGqPqzX3DXIg-J43qaaa80yhN8_ILyUhsw4oUYfzv8NA7gMPWSV4P&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ch 18 Prob. Solving&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Two&lt;/td&gt;
+&lt;td&gt;Wed&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;/slides/ChSlides&#34; target=&#34;_blank&#34;&gt;Week 2 Slides&lt;/a&gt;, 
+&lt;a href=&#34;https://drexel.zoom.us/rec/share/9dZXNaDu9UBOZ43MuBCEUat7MrrLT6a803JKrPMJzR53dls91_mGl63Q7i2Ezmgv&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ch 19 Video&lt;/a&gt;
 &lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
@@ -40,7 +61,7 @@
     </item>
     
     <item>
-      <title>PHYS 115 Page 1</title>
+      <title>PHYS 115 Homework #1</title>
       <link>/courses/phys_115/hw1/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
       <guid>/courses/phys_115/hw1/</guid>
@@ -55,30 +76,55 @@
     </item>
     
     <item>
-      <title>PHYS 115 Page 1</title>
-      <link>/courses/phys_115/program1/</link>
+      <title>PHYS 115 Homework #2</title>
+      <link>/courses/phys_115/hw2/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>/courses/phys_115/program1/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Drawing magnetic field lines&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;The Biot-Savart law for constant currents is:&lt;/p&gt;
-&lt;p&gt;$$\mathbf B = I\frac{\mu_{0}}{4\pi} \int \frac{\vec{dl} \times \hat{r}} {r^2} $$&lt;/p&gt;
-&lt;p&gt;In general this is an integral for every point in space around the loop of current. There are however, a few geometrical configurations that permit considerable simplification. In the case of a wire that passes perpendicular to the plane, the lines of constant magnetic field will curl around the wire according to the right hand rule (i.e. they will have no component out of the plane). You will be modeling such a system in this assignment.  Please set $\frac{\mu_{0}}{4\pi} = 1$  for this problem.&lt;/p&gt;
-&lt;p&gt;First, create a grid of points over the interval [-1,-1]:[1,1]. That is, create an array of x and y coordinates and call them X, and Y. For each point on that grid you will need to calculate the magnetic field. Save the components of the magnetic field in the arrays $B_x$ and $B_y$. You can plot these vector field lines with the following code:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from pylab import *
-quiver (X, Y, Bx, By, scale = 150)
-show()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;What does $\vec{dl}$ look like in the plane? If the wire is coming out of the x-y plane then $\vec{dl} = &amp;lt;0,0,1&amp;gt;$. You do not need to consider other sections of the wire because they do not contribute to the magnetic field (Why not?). Plot the magnetic field for the following configurations of wire.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;A single wire coming out of the page at the origin.&lt;/li&gt;
-&lt;li&gt;Two wires separated by a distance of 1, running in parallel.&lt;/li&gt;
-&lt;li&gt;Two wires separated by a distance of 1, running antiparallel.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;You &lt;strong&gt;must&lt;/strong&gt; answer these questions by leaving a comment in the code to get credit on the assignment. Look at the magnetic field lines from far away;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;what do the magnetic field lines look like when the wires run in parallel?&lt;/li&gt;
-&lt;li&gt;What do the magnetic field lines look like when the wires run antiparallel?&lt;/li&gt;
-&lt;/ul&gt;
+      <guid>/courses/phys_115/hw2/</guid>
+      <description>&lt;p&gt;Please submit your answers through Gradescope (if you would like to print out a copy of the homework - it is available here:
+&lt;a href=&#34;https://docs.google.com/document/d/1rYEWGSTNADeqz8sjVtRN8aNLf7aHnfDjE1ICsdnlWt4/edit?usp=sharing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Homework #2&lt;/a&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;questions&#34;&gt;Questions:&lt;/h2&gt;
+&lt;p&gt;Questions 20 &amp;amp; 25&lt;/p&gt;
+&lt;h2 id=&#34;problems&#34;&gt;Problems:&lt;/h2&gt;
+&lt;p&gt;29-31 (they are all sort of the same problem), 42, 54, 74, 78&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Week 1, Ch 18</title>
+      <link>/courses/phys_115/asyncactivities1/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>/courses/phys_115/asyncactivities1/</guid>
+      <description>&lt;p&gt;For this week&amp;rsquo;s Friday activities you should do the following:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Read through Chapter 18.&lt;/li&gt;
+&lt;li&gt;Watch the video lectures (if you still want additional lectures). There are two possible sources, 
+&lt;a href=&#34;https://matterandinteractions.org/videos/EM.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Matt Kohlmeyer&lt;/a&gt;
+ and 
+&lt;a href=&#34;https://www.youtube.com/watch?v=-7W294N_Hkk&amp;amp;feature=youtu.be&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ruth Chabay&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Work through the worksheet about 
+&lt;a href=&#34;https://docs.google.com/document/d/1rm3WjyElyxEfGOVJqKi-a3RbHTkK90xpgpaXeY3-WN8/edit?usp=sharing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Relating Current and Voltage&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Week 2, Ch 19</title>
+      <link>/courses/phys_115/asyncactivities2/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>/courses/phys_115/asyncactivities2/</guid>
+      <description>&lt;p&gt;For this week&amp;rsquo;s Friday activities you should do the following:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Read Chapter 19.&lt;/li&gt;
+&lt;li&gt;Work through the worksheet about 
+&lt;a href=&#34;https://docs.google.com/document/d/1UjTOYFFhoKPW4ruvxS_YHuYI2IJ3OIeP1GDoI-NRMvE/edit?usp=sharing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Investigating Capacitors&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Work through the worksheet about 
+&lt;a href=&#34;https://docs.google.com/document/d/1MyZIHM1HKYTiWSCcIgOZiMtwEUSyd_g5F8crX_gHX_8/edit?usp=sharing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Capacitors in Series and Parallel&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
 </description>
     </item>
     

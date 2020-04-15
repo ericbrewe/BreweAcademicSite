@@ -5,12 +5,48 @@
     <link>/post/</link>
       <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 17 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 15 Apr 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Posts</title>
       <link>/post/</link>
     </image>
+    
+    <item>
+      <title>Incremental Improvements</title>
+      <link>/post/improvements/</link>
+      <pubDate>Wed, 15 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/improvements/</guid>
+      <description>&lt;p&gt;After last week&amp;rsquo;s trainwreck of a class&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Adapting Plans</title>
+      <link>/post/coursereplanningincrisis/</link>
+      <pubDate>Wed, 17 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>/post/coursereplanningincrisis/</guid>
+      <description>&lt;p&gt;So, now I&amp;rsquo;ve done it. I have taught a week online. I had a day of logistics and getting to know (even though I don&amp;rsquo;t see people&amp;rsquo;s faces) the students on Monday. That did nothing to prepare me for the trainwreck that was going to be my first day of lecturing.&lt;/p&gt;
+&lt;p&gt;I learned a ton about what I do when I lecture today.  My approach to lecture is the sort of standard &amp;ldquo;Chalk and Talk&amp;rdquo; sort of thing. I do not typically prepare a bunch of slides (or any actually). Typically I talk, write on the whiteboard and periodically pause to ask questions that I expect the students to answer verbally (e.g. &amp;ldquo;If the current here is 10, what would the current be over here?&amp;quot;). I also do not write out a script - I have an outline, and tend to work from the outline which allows me to improvise as I went along. So I assumed that is what I would do.&lt;/p&gt;
+&lt;p&gt;My plan has assumptions built into it.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I assumed I would be able to use &amp;lt;Bitpaper.io&amp;gt; to make sketches and do the &amp;ldquo;Chalk&amp;rdquo; part, while I talked.&lt;/li&gt;
+&lt;li&gt;I assumed I would be able to ask questions of the students and get answers.&lt;/li&gt;
+&lt;li&gt;I assumed my outline was about 50 minutes (gulp, not the case.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Shit started unravelling for me beginning about 30 min before lecture.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Thirty min prior to lecture:&lt;/em&gt; Bitpaper only allows you one whiteboard / month for free, which I had not discovered because I only tried one at a time. So at the last minute I had to change to using Google&amp;rsquo;s Jamboard.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Two min into lecture:&lt;/em&gt; I realized about 2 minutes in that my students all have their video off, so I couldn&amp;rsquo;t see their faces to see if they were understanding anything. They are also all muted so if I ask questions, they all answer using chat. This is ok, but I need to think through how to adapt my current style to this situation&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Five min into lecture&lt;/em&gt; My pen has this annoying feature, where it stopped working consistently and I had to keep switching back and forth between the pen and laser feature.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Twenty five min into lecture&lt;/em&gt; I was both underprepared and overly optimistic. I need to have a much more detailed outline than I did today. I need to build in some time to have students have the opportunity to ask questions. I got through what I needed, but felt like I was both adding details that don&amp;rsquo;t need to be there and skipping over things.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Twenty six min into lecture&lt;/em&gt; I forgot to start recording the lecture. We are supposed to record all the synchronous class meetings, and I forgot, so my recording starts 26 min into class.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Fourty five min into lecture&lt;/em&gt; I use &lt;strong&gt;a lot&lt;/strong&gt; of gestures while I am teaching. This does not translate at all to the chalk and talk setup I have here. I truly don&amp;rsquo;t know what I can do about this, but be aware.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Twenty five min after lecture&lt;/em&gt; I have to do this again next week.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Nothing to do but get better, becasue that was about as bad as it gets.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Course Planning during Covid</title>
@@ -53,6 +89,46 @@
 &lt;h3 id=&#34;homework&#34;&gt;Homework&lt;/h3&gt;
 &lt;p&gt;I learned about Gradescope &lt;a href=&#34;https://www.gradescope.com/&#34;&gt;https://www.gradescope.com/&lt;/a&gt; and wanted to give it a try anyway. But it seems to do all the things I want / need to be able to do and maybe will do it faster. Since we have a rubric that we will use for all assignments, it should be pretty useful. Plus it allows multiple resubmissions and re-grades.&lt;/p&gt;
 &lt;p&gt;With these decisions out of the way I can actually start planning what we are going to do!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Office Hours</title>
+      <link>/post/officehoursincrisis/</link>
+      <pubDate>Wed, 17 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>/post/officehoursincrisis/</guid>
+      <description>&lt;p&gt;I had a bad day on Wednesday, class was clunky, my technology kept freezing, and I felt bad about myself.&lt;/p&gt;
+&lt;p&gt;So today when 4 different students showed up for office hours I was a bit nervous.  It actually worked out much better than I had imagined.  First, each student was very understanding about the challenges, which I totally appreciated.&lt;/p&gt;
+&lt;p&gt;Second, I found that I was able to manage the Zoom room, starting one breakout room so students could work on homework and jump back into the main room when they had questions.&lt;/p&gt;
+&lt;p&gt;I was able to share my screen on my tablet and get bitpaper.io to work well and I even jumped to a PhET simulation at one point to talk through what they were trying to understand.&lt;/p&gt;
+&lt;p&gt;On the downside, I have wireless headphones which are great. But because they are wireless, you can leave and go to places like the bathroom with the headphones on.  Note to self, remember the mute button.&lt;/p&gt;
+&lt;p&gt;Finally, I made what I think is a useful Zoom background.
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/CoffeeBackground.jpg&#34; &gt;
+&lt;img data-src=&#34;/img/CoffeeBackground.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; &gt;&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;These are small victories. But they are victories! Good to have a confidence boost going into next week.&lt;/p&gt;
 </description>
     </item>
     

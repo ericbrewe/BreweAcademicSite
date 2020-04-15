@@ -34,7 +34,7 @@
     </item>
     
     <item>
-      <title>PHYS 115 Page 1</title>
+      <title>Zoom recordings from Physics 115</title>
       <link>/courses/phys_115/coursevideos/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
       <guid>/courses/phys_115/coursevideos/</guid>
@@ -52,7 +52,28 @@
 &lt;td&gt;One&lt;/td&gt;
 &lt;td&gt;Mon&lt;/td&gt;
 &lt;td&gt;
-&lt;a href=&#34;https://drexel.zoom.us/rec/share/1O5yfoHv2mhIYtbXuRqCU_IxRp3uT6a803UarPFenU1DSnvvOfWPz8CznvZNHQ60&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Video Day 1&lt;/a&gt;
+&lt;a href=&#34;https://drexel.zoom.us/rec/share/1O5yfoHv2mhIYtbXuRqCU_IxRp3uT6a803UarPFenU1DSnvvOfWPz8CznvZNHQ60&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Class One Video&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;One&lt;/td&gt;
+&lt;td&gt;Wed&lt;/td&gt;
+&lt;td&gt;
+&lt;a href=&#34;https://drexel.zoom.us/rec/share/-N4qdu7Q0WhIYo3W6EaHZYItD77haaa81CAZr6cInUdYmkpTzzln3xl1IMDi41ls&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Class Two Video - I forgot to start at the beginning of class&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Two&lt;/td&gt;
+&lt;td&gt;Mon&lt;/td&gt;
+&lt;td&gt;
+&lt;a href=&#34;https://drexel.zoom.us/rec/share/_vR4FJjdqV1OGqPqzX3DXIg-J43qaaa80yhN8_ILyUhsw4oUYfzv8NA7gMPWSV4P&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ch 18 Prob. Solving&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Two&lt;/td&gt;
+&lt;td&gt;Wed&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;/slides/ChSlides&#34; target=&#34;_blank&#34;&gt;Week 2 Slides&lt;/a&gt;, 
+&lt;a href=&#34;https://drexel.zoom.us/rec/share/9dZXNaDu9UBOZ43MuBCEUat7MrrLT6a803JKrPMJzR53dls91_mGl63Q7i2Ezmgv&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ch 19 Video&lt;/a&gt;
 &lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
@@ -61,7 +82,7 @@
     </item>
     
     <item>
-      <title>PHYS 115 Page 1</title>
+      <title>PHYS 115 Homework #1</title>
       <link>/courses/phys_115/hw1/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
       <guid>/courses/phys_115/hw1/</guid>
@@ -72,6 +93,21 @@
 &lt;p&gt;Questions 5 &amp;amp; 16&lt;/p&gt;
 &lt;h2 id=&#34;problems&#34;&gt;Problems:&lt;/h2&gt;
 &lt;p&gt;23, 26, 36, 41, 49&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>PHYS 115 Homework #2</title>
+      <link>/courses/phys_115/hw2/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>/courses/phys_115/hw2/</guid>
+      <description>&lt;p&gt;Please submit your answers through Gradescope (if you would like to print out a copy of the homework - it is available here:
+&lt;a href=&#34;https://docs.google.com/document/d/1rYEWGSTNADeqz8sjVtRN8aNLf7aHnfDjE1ICsdnlWt4/edit?usp=sharing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Homework #2&lt;/a&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;questions&#34;&gt;Questions:&lt;/h2&gt;
+&lt;p&gt;Questions 20 &amp;amp; 25&lt;/p&gt;
+&lt;h2 id=&#34;problems&#34;&gt;Problems:&lt;/h2&gt;
+&lt;p&gt;29-31 (they are all sort of the same problem), 42, 54, 74, 78&lt;/p&gt;
 </description>
     </item>
     
@@ -97,30 +133,49 @@
     </item>
     
     <item>
-      <title>PHYS 115 Page 1</title>
-      <link>/courses/phys_115/program1/</link>
+      <title>Week 1, Ch 18</title>
+      <link>/courses/phys_115/asyncactivities1/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>/courses/phys_115/program1/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Drawing magnetic field lines&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;The Biot-Savart law for constant currents is:&lt;/p&gt;
-&lt;p&gt;$$\mathbf B = I\frac{\mu_{0}}{4\pi} \int \frac{\vec{dl} \times \hat{r}} {r^2} $$&lt;/p&gt;
-&lt;p&gt;In general this is an integral for every point in space around the loop of current. There are however, a few geometrical configurations that permit considerable simplification. In the case of a wire that passes perpendicular to the plane, the lines of constant magnetic field will curl around the wire according to the right hand rule (i.e. they will have no component out of the plane). You will be modeling such a system in this assignment.  Please set $\frac{\mu_{0}}{4\pi} = 1$  for this problem.&lt;/p&gt;
-&lt;p&gt;First, create a grid of points over the interval [-1,-1]:[1,1]. That is, create an array of x and y coordinates and call them X, and Y. For each point on that grid you will need to calculate the magnetic field. Save the components of the magnetic field in the arrays $B_x$ and $B_y$. You can plot these vector field lines with the following code:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from pylab import *
-quiver (X, Y, Bx, By, scale = 150)
-show()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;What does $\vec{dl}$ look like in the plane? If the wire is coming out of the x-y plane then $\vec{dl} = &amp;lt;0,0,1&amp;gt;$. You do not need to consider other sections of the wire because they do not contribute to the magnetic field (Why not?). Plot the magnetic field for the following configurations of wire.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;A single wire coming out of the page at the origin.&lt;/li&gt;
-&lt;li&gt;Two wires separated by a distance of 1, running in parallel.&lt;/li&gt;
-&lt;li&gt;Two wires separated by a distance of 1, running antiparallel.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;You &lt;strong&gt;must&lt;/strong&gt; answer these questions by leaving a comment in the code to get credit on the assignment. Look at the magnetic field lines from far away;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;what do the magnetic field lines look like when the wires run in parallel?&lt;/li&gt;
-&lt;li&gt;What do the magnetic field lines look like when the wires run antiparallel?&lt;/li&gt;
-&lt;/ul&gt;
+      <guid>/courses/phys_115/asyncactivities1/</guid>
+      <description>&lt;p&gt;For this week&amp;rsquo;s Friday activities you should do the following:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Read through Chapter 18.&lt;/li&gt;
+&lt;li&gt;Watch the video lectures (if you still want additional lectures). There are two possible sources, 
+&lt;a href=&#34;https://matterandinteractions.org/videos/EM.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Matt Kohlmeyer&lt;/a&gt;
+ and 
+&lt;a href=&#34;https://www.youtube.com/watch?v=-7W294N_Hkk&amp;amp;feature=youtu.be&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ruth Chabay&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Work through the worksheet about 
+&lt;a href=&#34;https://docs.google.com/document/d/1rm3WjyElyxEfGOVJqKi-a3RbHTkK90xpgpaXeY3-WN8/edit?usp=sharing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Relating Current and Voltage&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Week 2, Ch 19</title>
+      <link>/courses/phys_115/asyncactivities2/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>/courses/phys_115/asyncactivities2/</guid>
+      <description>&lt;p&gt;For this week&amp;rsquo;s Friday activities you should do the following:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Read Chapter 19.&lt;/li&gt;
+&lt;li&gt;Work through the worksheet about 
+&lt;a href=&#34;https://docs.google.com/document/d/1UjTOYFFhoKPW4ruvxS_YHuYI2IJ3OIeP1GDoI-NRMvE/edit?usp=sharing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Investigating Capacitors&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Work through the worksheet about 
+&lt;a href=&#34;https://docs.google.com/document/d/1MyZIHM1HKYTiWSCcIgOZiMtwEUSyd_g5F8crX_gHX_8/edit?usp=sharing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Capacitors in Series and Parallel&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Incremental Improvements</title>
+      <link>/post/improvements/</link>
+      <pubDate>Wed, 15 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/improvements/</guid>
+      <description>&lt;p&gt;After last week&amp;rsquo;s trainwreck of a class&lt;/p&gt;
 </description>
     </item>
     
@@ -154,6 +209,33 @@ show()
       <pubDate>Mon, 02 Dec 2019 00:00:00 +0000</pubDate>
       <guid>/publication/bartleybrainlinkconceptualapproach/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Adapting Plans</title>
+      <link>/post/coursereplanningincrisis/</link>
+      <pubDate>Wed, 17 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>/post/coursereplanningincrisis/</guid>
+      <description>&lt;p&gt;So, now I&amp;rsquo;ve done it. I have taught a week online. I had a day of logistics and getting to know (even though I don&amp;rsquo;t see people&amp;rsquo;s faces) the students on Monday. That did nothing to prepare me for the trainwreck that was going to be my first day of lecturing.&lt;/p&gt;
+&lt;p&gt;I learned a ton about what I do when I lecture today.  My approach to lecture is the sort of standard &amp;ldquo;Chalk and Talk&amp;rdquo; sort of thing. I do not typically prepare a bunch of slides (or any actually). Typically I talk, write on the whiteboard and periodically pause to ask questions that I expect the students to answer verbally (e.g. &amp;ldquo;If the current here is 10, what would the current be over here?&amp;quot;). I also do not write out a script - I have an outline, and tend to work from the outline which allows me to improvise as I went along. So I assumed that is what I would do.&lt;/p&gt;
+&lt;p&gt;My plan has assumptions built into it.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I assumed I would be able to use &amp;lt;Bitpaper.io&amp;gt; to make sketches and do the &amp;ldquo;Chalk&amp;rdquo; part, while I talked.&lt;/li&gt;
+&lt;li&gt;I assumed I would be able to ask questions of the students and get answers.&lt;/li&gt;
+&lt;li&gt;I assumed my outline was about 50 minutes (gulp, not the case.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Shit started unravelling for me beginning about 30 min before lecture.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Thirty min prior to lecture:&lt;/em&gt; Bitpaper only allows you one whiteboard / month for free, which I had not discovered because I only tried one at a time. So at the last minute I had to change to using Google&amp;rsquo;s Jamboard.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Two min into lecture:&lt;/em&gt; I realized about 2 minutes in that my students all have their video off, so I couldn&amp;rsquo;t see their faces to see if they were understanding anything. They are also all muted so if I ask questions, they all answer using chat. This is ok, but I need to think through how to adapt my current style to this situation&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Five min into lecture&lt;/em&gt; My pen has this annoying feature, where it stopped working consistently and I had to keep switching back and forth between the pen and laser feature.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Twenty five min into lecture&lt;/em&gt; I was both underprepared and overly optimistic. I need to have a much more detailed outline than I did today. I need to build in some time to have students have the opportunity to ask questions. I got through what I needed, but felt like I was both adding details that don&amp;rsquo;t need to be there and skipping over things.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Twenty six min into lecture&lt;/em&gt; I forgot to start recording the lecture. We are supposed to record all the synchronous class meetings, and I forgot, so my recording starts 26 min into class.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Fourty five min into lecture&lt;/em&gt; I use &lt;strong&gt;a lot&lt;/strong&gt; of gestures while I am teaching. This does not translate at all to the chalk and talk setup I have here. I truly don&amp;rsquo;t know what I can do about this, but be aware.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Twenty five min after lecture&lt;/em&gt; I have to do this again next week.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Nothing to do but get better, becasue that was about as bad as it gets.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -201,140 +283,481 @@ show()
     </item>
     
     <item>
-      <title>Slides</title>
-      <link>/slides/ch18slides/ch18slides/</link>
-      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>/slides/ch18slides/ch18slides/</guid>
-      <description>&lt;h1 id=&#34;create-slides-in-markdown-with-academic&#34;&gt;Create slides in Markdown with Academic&lt;/h1&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://sourcethemes.com/academic/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Academic&lt;/a&gt;
- | 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;
+      <title>Office Hours</title>
+      <link>/post/officehoursincrisis/</link>
+      <pubDate>Wed, 17 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>/post/officehoursincrisis/</guid>
+      <description>&lt;p&gt;I had a bad day on Wednesday, class was clunky, my technology kept freezing, and I felt bad about myself.&lt;/p&gt;
+&lt;p&gt;So today when 4 different students showed up for office hours I was a bit nervous.  It actually worked out much better than I had imagined.  First, each student was very understanding about the challenges, which I totally appreciated.&lt;/p&gt;
+&lt;p&gt;Second, I found that I was able to manage the Zoom room, starting one breakout room so students could work on homework and jump back into the main room when they had questions.&lt;/p&gt;
+&lt;p&gt;I was able to share my screen on my tablet and get bitpaper.io to work well and I even jumped to a PhET simulation at one point to talk through what they were trying to understand.&lt;/p&gt;
+&lt;p&gt;On the downside, I have wireless headphones which are great. But because they are wireless, you can leave and go to places like the bathroom with the headphones on.  Note to self, remember the mute button.&lt;/p&gt;
+&lt;p&gt;Finally, I made what I think is a useful Zoom background.
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/CoffeeBackground.jpg&#34; &gt;
+&lt;img data-src=&#34;/img/CoffeeBackground.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; &gt;&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
 &lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+&lt;p&gt;These are small victories. But they are victories! Good to have a confidence boost going into next week.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Ch 19 Slides</title>
+      <link>/slides/chslides/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>/slides/chslides/</guid>
+      <description>&lt;h3 id=&#34;resistors-and-capacitors&#34;&gt;Resistors and Capacitors&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Resistors&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Efficiently write slides in Markdown&lt;/li&gt;
-&lt;li&gt;3-in-1: Create, Present, and Publish your slides&lt;/li&gt;
-&lt;li&gt;Supports speaker notes&lt;/li&gt;
-&lt;li&gt;Mobile friendly slides&lt;/li&gt;
+&lt;li&gt;Conductors that have different resistivity&lt;/li&gt;
+&lt;li&gt;Resistivity, $\rho = \frac{\left| \vec{E} \right| }{J} = R\frac{A}{l}$&lt;/li&gt;
+&lt;li&gt;$R = \frac{\rho l}{A}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Capcitors&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Most simply, plates that allow charges to distribute over their area.&lt;/li&gt;
+&lt;li&gt;Capacitance, $C = \epsilon_0 \frac{A}{d}$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;controls&#34;&gt;Controls&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Next: &lt;code&gt;Right Arrow&lt;/code&gt; or &lt;code&gt;Space&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Previous: &lt;code&gt;Left Arrow&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Start: &lt;code&gt;Home&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Finish: &lt;code&gt;End&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Overview: &lt;code&gt;Esc&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Speaker notes: &lt;code&gt;S&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Fullscreen: &lt;code&gt;F&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Zoom: &lt;code&gt;Alt + Click&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://github.com/hakimel/reveal.js#pdf-export&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF Export&lt;/a&gt;
-: &lt;code&gt;E&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&#34;loop-rule&#34;&gt;Loop Rule&lt;/h3&gt;
+&lt;p&gt;$\Sigma V = 0$
+Around any closed loop&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;code-highlighting&#34;&gt;Code Highlighting&lt;/h2&gt;
-&lt;p&gt;Inline code: &lt;code&gt;variable&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Code block:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;porridge = &amp;quot;blueberry&amp;quot;
-if porridge == &amp;quot;blueberry&amp;quot;:
-    print(&amp;quot;Eating...&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;math&#34;&gt;Math&lt;/h2&gt;
-&lt;p&gt;In-line math: $x + y = z$&lt;/p&gt;
-&lt;p&gt;Block math:&lt;/p&gt;
-&lt;p&gt;$$
-f\left( x \right) = ;\frac{{2\left( {x + 4} \right)\left( {x - 4} \right)}}{{\left( {x + 4} \right)\left( {x + 1} \right)}}
-$$&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;fragments&#34;&gt;Fragments&lt;/h2&gt;
-&lt;p&gt;Make content appear incrementally&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;{{% fragment %}} One {{% /fragment %}}
-{{% fragment %}} **Two** {{% /fragment %}}
-{{% fragment %}} Three {{% /fragment %}}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Press &lt;code&gt;Space&lt;/code&gt; to play!&lt;/p&gt;
+&lt;h3 id=&#34;series-circuits&#34;&gt;Series Circuits&lt;/h3&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;images/series-circuit.jpg&#34; &gt;
+&lt;img data-src=&#34;images/series-circuit.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; &gt;&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
 &lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
-One
-&lt;/span&gt;
-&lt;span class=&#34;fragment &#34; &gt;
-&lt;strong&gt;Two&lt;/strong&gt;
-&lt;/span&gt;
-&lt;span class=&#34;fragment &#34; &gt;
-Three
+$V_{Batt}$
+&lt;/span&gt; &lt;span class=&#34;fragment &#34; &gt;
+$- V_3$
+&lt;/span&gt; &lt;span class=&#34;fragment &#34; &gt;
+$- V_2$
+&lt;/span&gt; &lt;span class=&#34;fragment &#34; &gt;
+$- V_1 = 0$
+&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
+We know V = IR, so
+&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
+$V_{Batt}$
+&lt;/span&gt; &lt;span class=&#34;fragment &#34; &gt;
+$- I_3R_3$
+&lt;/span&gt; &lt;span class=&#34;fragment &#34; &gt;
+$- I_2R_2$
+&lt;/span&gt; &lt;span class=&#34;fragment &#34; &gt;
+$- I_1R_1 = 0$&lt;br&gt;
 &lt;/span&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;A fragment can accept two optional parameters:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;class&lt;/code&gt;: use a custom style (requires definition in custom CSS)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;weight&lt;/code&gt;: sets the order in which a fragment appears&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;speaker-notes&#34;&gt;Speaker Notes&lt;/h2&gt;
-&lt;p&gt;Add speaker notes to your presentation&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{% speaker_note %}}
-- Only the speaker can read these notes
-- Press `S` key to view
-{{% /speaker_note %}}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Press the &lt;code&gt;S&lt;/code&gt; key to view the speaker notes!&lt;/p&gt;
-&lt;aside class=&#34;notes&#34;&gt;
-  &lt;ul&gt;
-&lt;li&gt;Only the speaker can read these notes&lt;/li&gt;
-&lt;li&gt;Press &lt;code&gt;S&lt;/code&gt; key to view&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/aside&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;themes&#34;&gt;Themes&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;black: Black background, white text, blue links (default)&lt;/li&gt;
-&lt;li&gt;white: White background, black text, blue links&lt;/li&gt;
-&lt;li&gt;league: Gray background, white text, blue links&lt;/li&gt;
-&lt;li&gt;beige: Beige background, dark text, brown links&lt;/li&gt;
-&lt;li&gt;sky: Blue background, thin dark text, blue links&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;ul&gt;
-&lt;li&gt;night: Black background, thick white text, orange links&lt;/li&gt;
-&lt;li&gt;serif: Cappuccino background, gray text, brown links&lt;/li&gt;
-&lt;li&gt;simple: White background, black text, blue links&lt;/li&gt;
-&lt;li&gt;solarized: Cream-colored background, dark green text, blue links&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
+&lt;h3 id=&#34;series-circuits-1&#34;&gt;Series Circuits&lt;/h3&gt;
 
-&lt;section data-noprocess data-shortcode-slide
-  
-      
-      data-background-image=&#34;/img/boards.jpg&#34;
-  &gt;
 
-&lt;h2 id=&#34;custom-slide&#34;&gt;Custom Slide&lt;/h2&gt;
-&lt;p&gt;Customize the slide style and background&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{&amp;lt; slide background-image=&amp;quot;/img/boards.jpg&amp;quot; &amp;gt;}}
-{{&amp;lt; slide background-color=&amp;quot;#0000FF&amp;quot; &amp;gt;}}
-{{&amp;lt; slide class=&amp;quot;my-style&amp;quot; &amp;gt;}}
-&lt;/code&gt;&lt;/pre&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;images/series-circuit.jpg&#34; &gt;
+&lt;img data-src=&#34;images/series-circuit.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; &gt;&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;$V_{Batt} - I_3R_3 - I_2R_2- I_1R_1 = 0$&lt;/p&gt;
+&lt;p&gt;I is the same everywhere in a series circuit&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
+$V_{Batt} - I(R_3 + R_2 + R_1) = 0$
+&lt;/span&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;custom-css-example&#34;&gt;Custom CSS Example&lt;/h2&gt;
-&lt;p&gt;Let&amp;rsquo;s make headers navy colored.&lt;/p&gt;
-&lt;p&gt;Create &lt;code&gt;assets/css/reveal_custom.css&lt;/code&gt; with:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.reveal section h1,
-.reveal section h2,
-.reveal section h3 {
-  color: navy;
-}
-&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;series-circuits-2&#34;&gt;Series Circuits&lt;/h3&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;images/series-circuit.jpg&#34; &gt;
+&lt;img data-src=&#34;images/series-circuit.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; &gt;&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;$V_{Batt} - I(R_3 + R_2 + R_1) = 0$&lt;/p&gt;
+&lt;p&gt;In series circuits, then&amp;hellip;
+&lt;span class=&#34;fragment &#34; &gt;
+$V_{Batt} - IR_{Total} = 0$
+&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
+$R_{Total} = R_1 + R_2 + R_3+&amp;hellip;$
+&lt;/span&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h1 id=&#34;questions&#34;&gt;Questions?&lt;/h1&gt;
+&lt;h3 id=&#34;parallel-circuits&#34;&gt;Parallel Circuits&lt;/h3&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;images/Parallel.png&#34; &gt;
+&lt;img data-src=&#34;images/Parallel.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; &gt;&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Choose a path $1 \rightarrow 8 \rightarrow 7 \rightarrow 2 \rightarrow 1$, then,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
+$V_{Batt} - I_1R_1 = 0$
+&lt;/span&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;parallel-circuits-1&#34;&gt;Parallel Circuits&lt;/h3&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;images/Parallel.png&#34; &gt;
+&lt;img data-src=&#34;images/Parallel.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;300px&#34; &gt;&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Choose a different path $1 \rightarrow 8 \rightarrow 6 \rightarrow 3 \rightarrow 1$&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
+$V_{Batt} - I_2R_2 = 0$
+&lt;/span&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;parallel-circuits-2&#34;&gt;Parallel Circuits&lt;/h3&gt;
 &lt;p&gt;
-&lt;a href=&#34;https://spectrum.chat/academic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ask&lt;/a&gt;
-&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;images/Parallel.png&#34; &gt;
+&lt;img data-src=&#34;images/Parallel.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;300px&#34; &gt;&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+Since $V_{Batt} - I_2R_2 = 0$ and $V_{Batt} - I_2R_2 = 0$&lt;/p&gt;
+&lt;p&gt;In each branch of a parallel circuit, $\Delta V$ must be the same.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
+$V_1 = V_2 = V_3 = V_{Batt}$
+&lt;/span&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;parallel-circuits-3&#34;&gt;Parallel Circuits&lt;/h3&gt;
+&lt;p&gt;In a parallel circuit, the current splits at each junction. So the current leaving the battery is $I_{Total} = I_1 + I_2 + I_3$&lt;/p&gt;
+&lt;p&gt;And, $V = IR$ or $I = V/R$ which can be substituted in.&lt;/p&gt;
+&lt;p&gt;$$I_{Total} = V_1/R_1 + V_2/R_2 + V_3/R_3$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;parallel-circuits-4&#34;&gt;Parallel Circuits&lt;/h3&gt;
+&lt;p&gt;$$I_{Total} = V_1/R_1 + V_2/R_2 + V_3/R_3$$
+But, V is same across all parallel branches, so&lt;/p&gt;
+&lt;p&gt;$$V/R_{Total} = V/R_1 + V/R_2 + V/R_3$$
+$$V/R_{Total} = V(1/R_1 + 1/R_2 + 1/R_3)$$&lt;/p&gt;
+&lt;p&gt;In Parallel branches
+$$1/R_{Total} = 1/R_1 + 1/R_2 + 1/R_3 + &amp;hellip;$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Series Circuits&lt;/em&gt;
+Current is same at all points
+$$ \Sigma \Delta V = 0$$
+$R_{Total} = R_1 + R_2 + R_3+&amp;hellip;$&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Parallel Circuits&lt;/em&gt;
+Voltage is same across all branches
+$$I_{Total} = I_1 + I_2 + I_3$$
+$1/R_{Total} = 1/R_1 + 1/R_2 + 1/R_3 + &amp;hellip;$&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;capacitors&#34;&gt;Capacitors&lt;/h3&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Guhao1KxaPc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;h3 id=&#34;capacitors-1&#34;&gt;Capacitors&lt;/h3&gt;
 &lt;p&gt;
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;
-&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;images/RCCircuit.png&#34; &gt;
+&lt;img data-src=&#34;images/RCCircuit.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;300px&#34; &gt;&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;strong&gt;Charging Capacitor&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;As capacitor charges, charge builds up on plates of capacitor, creating electric field, building up a potential difference across the capacitor.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;capacitors-2&#34;&gt;Capacitors&lt;/h3&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;images/RCCircuit.png&#34; &gt;
+&lt;img data-src=&#34;images/RCCircuit.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;300px&#34; &gt;&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;Charging Capacitor&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Charge on capacitor: $Q = VC$&lt;/p&gt;
+&lt;p&gt;Capacitance: $C = \epsilon (A/d)$&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;capacitors---charging&#34;&gt;Capacitors - Charging&lt;/h3&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;images/RCCircuit.png&#34; &gt;
+&lt;img data-src=&#34;images/RCCircuit.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;300px&#34; &gt;&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Loop rule still applies, so&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
+$V_{Batt}$
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+$-V_{Cap}$
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+$-V_{Res} = 0$
+&lt;/span&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;capacitors---charging-1&#34;&gt;Capacitors - Charging&lt;/h3&gt;
+&lt;p&gt;$$V_{Batt} -V_{Cap} -V_{Res} = 0$$&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
+$$V_{Batt} -Q/C - IR = 0$$
+&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
+$$V_{Batt} -Q(t)/C - \frac{dQ(t)}{dt}R = 0$$
+&lt;/span&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;capacitors---charging-2&#34;&gt;Capacitors - Charging&lt;/h3&gt;
+&lt;p&gt;$$V_{Batt} -Q(t)/C - \frac{dQ(t)}{dt}R = 0$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Look at the initial and final conditions.
+&lt;ul&gt;
+&lt;li&gt;At $t = 0, I = I_0, Q = Q_0, Q_0 often = 0 $&lt;/li&gt;
+&lt;li&gt;As $t \rightarrow \infty, I \rightarrow 0, Q \to VC$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
+$Q(t) = Q_0(1- e^{-t/RC})$
+&lt;/span&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;At time = 0
+$$Q(t) = Q_0(1- e^{-t/RC})$$
+$$\frac{dQ(t)}{dt} = \frac{Q_0}{RC}e^{-t/RC}$$
+at t = 0, $Q(0) = Q_0$,  and $I_0 = \frac{Q_0}{RC} = V/R$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;As time goes to infinity
+$$Q(t) = Q_0(1- e^{-t/RC})$$
+$$\frac{dQ(t)}{dt} = \frac{Q_0}{RC}e^{-t/RC}$$
+as $t \to \infty, Q(\infty) = VC$, and $I(\infty) = I_0(1-1) = 0$&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;capacitors---disharging&#34;&gt;Capacitors - Disharging&lt;/h3&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;images/RC.jpg&#34; &gt;
+&lt;img data-src=&#34;images/RC.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;300px&#34; &gt;&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Loop rule still applies, so&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
+$V_{Cap}$
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+$-V_{Res} = 0$
+&lt;/span&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;capacitors---disharging-1&#34;&gt;Capacitors - Disharging&lt;/h3&gt;
+&lt;p&gt;$$V_{Cap} -V_{Res} = 0$$&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
+$$Q/C - IR = 0$$
+&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
+$$Q(t)/C - \frac{dQ(t)}{dt}R = 0$$
+&lt;/span&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;capacitors---disharging-2&#34;&gt;Capacitors - Disharging&lt;/h3&gt;
+&lt;p&gt;$$Q(t)/C - \frac{dQ(t)}{dt}R = 0$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Look at the initial and final conditions.
+&lt;ul&gt;
+&lt;li&gt;At $t = 0, I = I_0, Q_0 = VC$&lt;/li&gt;
+&lt;li&gt;As $t \to \infty, I \to 0, Q \to 0$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
+$Q(t) = VCe^{-t/RC}$
+&lt;/span&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;At time = 0
+$$Q(t) = VCe^{-t/RC}$$
+$$\frac{dQ(t)}{dt} = \frac{VC}{-RC}e^{-t/RC}$$
+at t = 0, $Q(0) = VC$,  and $I_0 = -\frac{VC}{RC} = -V_{C}/R$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;As time goes to infinity
+$$Q(t) = VCe^{-t/RC}$$
+$$\frac{dQ(t)}{dt} = \frac{VC}{-RC}e^{-t/RC}$$
+as $t \to \infty, Q(\infty) = 0$, and $I(\infty) = V_{C}/R = 0$&lt;/p&gt;
+&lt;hr&gt;
 </description>
     </item>
     

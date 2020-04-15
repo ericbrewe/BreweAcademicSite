@@ -28,13 +28,43 @@
   </url>
   
   <url>
+    <loc>/courses/phys_115/hw2/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/courses/phys101/example2/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/courses/phys_115/program1/</loc>
+    <loc>/courses/phys_115/asyncactivities1/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/phys_115/asyncactivities2/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <lastmod>2020-04-15T11:29:23-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/improvements/</loc>
+    <lastmod>2020-04-15T11:29:23-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/phys-115/</loc>
+    <lastmod>2020-04-15T11:29:23-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2020-04-15T11:29:23-04:00</lastmod>
   </url>
   
   <url>
@@ -183,27 +213,22 @@
   </url>
   
   <url>
+    <loc>/post/coursereplanningincrisis/</loc>
+    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/post/courseplanningincrisis/</loc>
     <lastmod>2019-04-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/</loc>
+    <loc>/post/officehoursincrisis/</loc>
     <lastmod>2019-04-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/</loc>
-    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/slides/ch18slides/ch18slides/</loc>
-    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/phys-115/</loc>
+    <loc>/slides/chslides/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
   </url>
   
