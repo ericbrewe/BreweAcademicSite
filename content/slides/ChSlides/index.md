@@ -190,7 +190,7 @@ as $t \to \infty, Q(\infty) = VC$, and $I(\infty) = I_0(1-1) = 0$
 ---
 
 ### Capacitors - Disharging
-{{< figure src="images/RCCircuitDisharge.png" >}}
+{{< figure src="images/Disharge.png" >}}
 
 Loop rule still applies, so 
 
