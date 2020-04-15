@@ -19,3 +19,4 @@ I will be recording all synchronous class meetings, and will be posting the vide
 |One|Mon|[Class One Video](<https://drexel.zoom.us/rec/share/1O5yfoHv2mhIYtbXuRqCU_IxRp3uT6a803UarPFenU1DSnvvOfWPz8CznvZNHQ60>)|
 |One|Wed|[Class Two Video - I forgot to start at the beginning of class](<https://drexel.zoom.us/rec/share/-N4qdu7Q0WhIYo3W6EaHZYItD77haaa81CAZr6cInUdYmkpTzzln3xl1IMDi41ls>)
 |Two|Mon| [Ch 18 Prob. Solving](<https://drexel.zoom.us/rec/share/_vR4FJjdqV1OGqPqzX3DXIg-J43qaaa80yhN8_ILyUhsw4oUYfzv8NA7gMPWSV4P>)
+|Two|Wed|<a href="/slides/ChSlides" target="_blank">Week 2 Slides</a>|

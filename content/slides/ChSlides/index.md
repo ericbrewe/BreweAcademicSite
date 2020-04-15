@@ -188,7 +188,6 @@ $$\frac{dQ(t)}{dt} = \frac{Q_0}{RC}e^{-t/RC}$$
 as $t \to \infty, Q(\infty) = VC$, and $I(\infty) = I_0(1-1) = 0$
 
 ---
-
 ### Capacitors - Disharging
 
 {{< figure src="images/Discharge.png" width="300px">}}
@@ -199,6 +198,7 @@ Loop rule still applies, so
 {{% fragment %}} $-V_{Res} = 0$ {{% /fragment %}}
  
 ---
+
 ### Capacitors - Disharging
   $$V_{Cap} -V_{Res} = 0$$
 
