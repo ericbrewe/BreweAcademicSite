@@ -15,9 +15,9 @@ slides:
 
 ### Resistors and Capacitors
 
-**Resistors **
+**Resistors**
 - Conductors that have different resistivity
-- Resistivity, $\rho = \frac{\abs{ \vec{E}}}{J} = R\frac{A}{l}$
+- Resistivity, $\rho = \frac{\left| \vec{E} \right| }{J} = R\frac{A}{l}$
 - $R = \frac{\rho l}{A}$
 
 **Capcitors**
