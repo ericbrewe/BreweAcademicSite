@@ -17,12 +17,12 @@ slides:
 
 **Resistors **
 - Conductors that have different resistivity
-- Resistivity, $\rho = \frac{\abs{\vec{E}}}{J} = R\frac{A}{l}$
+- Resistivity, $\rho = \frac{\abs{ \vec{E}}}{J} = R\frac{A}{l}$
 - $R = \frac{\rho l}{A}$
 
 **Capcitors**
 - Most simply, plates that allow charges to distribute over their area. 
-- Capacitance, $C = \epsilon_0 \frac{A}{d}, 
+- Capacitance, $C = \epsilon_0 \frac{A}{d}$
 
 ---
 
@@ -168,7 +168,7 @@ $$V_{Batt} -V_{Cap} -V_{Res} = 0$$
 $$V_{Batt} -Q(t)/C - \frac{dQ(t)}{dt}R = 0$$
   
 - Look at the initial and final conditions.
-    - At $t = 0, I = I_0, Q_0 = 0$
+    - At $t = 0, I = I_0, Q = Q_0, Q_0 often = 0 $
     - As $t \rightarrow \infty, I \rightarrow 0, Q \to VC$
     
 {{% fragment %}} $Q(t) = Q_0(1- e^{-t/RC})$ {{% /fragment %}}
@@ -185,12 +185,12 @@ at t = 0, $Q(0) = Q_0$,  and $I_0 = \frac{Q_0}{RC} = V/R$
 As time goes to infinity
 $$Q(t) = Q_0(1- e^{-t/RC})$$
 $$\frac{dQ(t)}{dt} = \frac{Q_0}{RC}e^{-t/RC}$$
-as $t \to \infty, Q(\infty) = VC$, and $I(\infty) = Q_0(1-1) = 0$
+as $t \to \infty, Q(\infty) = VC$, and $I(\infty) = I_0(1-1) = 0$
 
 ---
 
 ### Capacitors - Disharging
-{{< figure src="images/DishargingCap.png" >}}
+{{< figure src="images/RCCircuitDisharge.png" >}}
 
 Loop rule still applies, so 
 
