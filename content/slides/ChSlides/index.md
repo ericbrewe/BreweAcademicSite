@@ -13,7 +13,20 @@ slides:
   highlight_style: dracula
 ---
 
-## Loop Rule
+### Resistors and Capacitors
+
+**Resistors **
+- Conductors that have different resistivity
+- Resistivity, $\rho = \frac{\abs{\vec{E}}}{J} = R\frac{A}{l}$
+- $R = \frac{\rho l}{A}$
+
+**Capcitors**
+- Most simply, plates that allow charges to distribute over their area. 
+- Capacitance, $C = \epsilon_0 \frac{A}{d}, 
+
+---
+
+### Loop Rule
 
 $\Sigma V = 0$ 
 Around any closed loop
