@@ -136,6 +136,7 @@ As capacitor charges, charge builds up on plates of capacitor, creating electric
 
 ### Capacitors
 {{< figure src="images/RCCircuit.png" width="300px">}}
+
 **Charging Capacitor** 
 
 Charge on capacitor: $Q = VC$
@@ -189,7 +190,7 @@ as $t \to \infty, Q(\infty) = VC$, and $I(\infty) = I_0(1-1) = 0$
 
 ---
 ### Capacitors - Disharging
-{{< figure src="images/RC.png" width="300px">}}
+{{< figure src="images/RC.jpg" width="300px">}}
 
 Loop rule still applies, so 
 
