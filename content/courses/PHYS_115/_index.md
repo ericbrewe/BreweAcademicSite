@@ -101,7 +101,6 @@ We will use the following rubric for all written assignments
 | 1 | Missing either adequate explanation or work and answer is incorrect. |
 | 0 | No or very little effort demonstrated |
 
-
 ### Programming Assignments
 
 Programming assignments will also be submitted through Gradescope. These assignments will be discussed in recitation, and will count as 25\% of your overall grade. Programming assignments are due at the beginning of recitation on Wednesday in weeks 3, 5, 7, and 9 (see schedule below).
@@ -109,6 +108,10 @@ Programming assignments will also be submitted through Gradescope. These assignm
 ## Class Participation
 
 Much of this class will be active, we will expect you to be working together on problems, computational assignments, discussing, and asking questions. This will be worth 10\% of your overall grade.
+
+## Gradebook
+I foolishly have written a gradebook app so you can see your current grade. To use it enter the randomly generated ID number I sent you.
+[Gradebook](<https://eric-brewe.shinyapps.io/PHYS115Gradebook/>)
 
 ## Grades
 Grades for the course will be assigned according to the following scale:
