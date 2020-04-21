@@ -1,5 +1,5 @@
 ---
-title: Chapter17ChabaySherwood
+title: "Chapter17ChabaySherwood"
 author: Eric Brewe
 output: revealjs::revealjs_presentation
     #logo: /static/img/PERLogos.jpg
@@ -9,7 +9,7 @@ output: revealjs::revealjs_presentation
 # One Slide
 
 - Stuffs
-- More 
+- More 2
     - Extras
 
 1 On thing
@@ -17,3 +17,5 @@ output: revealjs::revealjs_presentation
 ---
  
 ## Second slide
+
+...
