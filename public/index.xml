@@ -171,6 +171,14 @@
     </item>
     
     <item>
+      <title>A toolkit for physics department advocacy (and survival) and its connection to EP3</title>
+      <link>/talk/apsaprildepttoolkit/</link>
+      <pubDate>Mon, 20 Apr 2020 14:43:00 +0000</pubDate>
+      <guid>/talk/apsaprildepttoolkit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Incremental Improvements</title>
       <link>/post/improvements/</link>
       <pubDate>Wed, 15 Apr 2020 00:00:00 +0000</pubDate>
@@ -1428,34 +1436,28 @@ Three
     </item>
     
     <item>
-      <title></title>
-      <link>/slides/aps_toolkit_slides/aps_toolkit_presentation/</link>
+      <title>Chapter17ChabaySherwood</title>
+      <link>/slides/ch17slides/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/slides/aps_toolkit_slides/aps_toolkit_presentation/</guid>
-      <description>&lt;p&gt;========================================================
-author: Eric Brewe, Jesus Pando, Scott Franklin
-date:
-autosize: true&lt;/p&gt;
-&lt;h1 id=&#34;first-slide&#34;&gt;First Slide&lt;/h1&gt;
-&lt;p&gt;For more details on authoring R presentations please visit &lt;a href=&#34;https://support.rstudio.com/hc/en-us/articles/200486468&#34;&gt;https://support.rstudio.com/hc/en-us/articles/200486468&lt;/a&gt;.&lt;/p&gt;
+      <guid>/slides/ch17slides/</guid>
+      <description>
+
+
+&lt;div id=&#34;one-slide&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;One Slide&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;Bullet 1&lt;/li&gt;
-&lt;li&gt;Bullet 2&lt;/li&gt;
-&lt;li&gt;Bullet 3&lt;/li&gt;
+&lt;li&gt;Stuffs&lt;/li&gt;
+&lt;li&gt;More
+&lt;ul&gt;
+&lt;li&gt;Extras&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;slide-with-code&#34;&gt;Slide With Code&lt;/h1&gt;
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;summary(cars)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;     speed           dist       
- Min.   : 4.0   Min.   :  2.00  
- 1st Qu.:12.0   1st Qu.: 26.00  
- Median :15.0   Median : 36.00  
- Mean   :15.4   Mean   : 42.98  
- 3rd Qu.:19.0   3rd Qu.: 56.00  
- Max.   :25.0   Max.   :120.00  
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&#34;slide-with-plot&#34;&gt;Slide With Plot&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&#34;APS_Toolkit_Presentation-figure/unnamed-chunk-2-1.png&#34; alt=&#34;plot of chunk unnamed-chunk-2&#34;&gt;&lt;/p&gt;
+&lt;p&gt;1 On thing&lt;/p&gt;
+&lt;hr /&gt;
+&lt;div id=&#34;second-slide&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Second slide&lt;/h2&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 </description>
     </item>
     

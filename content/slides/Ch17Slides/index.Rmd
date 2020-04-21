@@ -1,0 +1,19 @@
+---
+title: Chapter17ChabaySherwood
+author: Eric Brewe
+output: revealjs::revealjs_presentation
+    #logo: /static/img/PERLogos.jpg
+
+---
+
+# One Slide
+
+- Stuffs
+- More 
+    - Extras
+
+1 On thing
+
+---
+ 
+## Second slide
