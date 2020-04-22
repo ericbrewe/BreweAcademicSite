@@ -169,7 +169,7 @@ gradebook %&amp;gt;%
   select(SID, ID_Post, contains(&amp;quot;Ch18&amp;quot;), contains(&amp;quot;Ch19&amp;quot;)) %&amp;gt;%
   mutate(OverallPercent = (Ch18PercentGood*Ch18Poss + Ch19PercentGood*Ch19Poss)/(Ch18Poss + Ch19Poss))
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Yes! It works. Now I just need to figure out how to post these so they can be published anonymously and accessible electronically. This means Shiny! But perhaps that is a separate post.&lt;/p&gt;
+&lt;p&gt;Yes! It works. Now I just need to figure out how to post these so they can be published anonymously and accessible electronically. This means Shiny 😬! But perhaps that is a separate post.&lt;/p&gt;
 </description>
     </item>
     

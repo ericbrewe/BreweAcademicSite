@@ -115,7 +115,7 @@ OverallScores <- gradebook %>%
 
 ```
 
-Yes! It works. Now I just need to figure out how to post these so they can be published anonymously and accessible electronically. This means Shiny!  But perhaps that is a separate post. 
+Yes! It works. Now I just need to figure out how to post these so they can be published anonymously and accessible electronically. This means Shiny :grimacing:!  But perhaps that is a separate post. 
 
 
 
