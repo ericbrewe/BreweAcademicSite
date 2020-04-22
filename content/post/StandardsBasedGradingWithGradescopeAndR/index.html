@@ -1,0 +1,121 @@
+---
+title: Standards Based Grading With Gradescope and R
+author: Eric Brewe
+date: '2020-04-22'
+slug: Standards Based Grading Gradescope and R
+categories:
+  - PHYS 115
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-04-15T11:29:23-04:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+
+
+<p>Initially, I wrote this post first, but then realized that I needed to talk about Standards Based Grading before I launched into the weird realities I discovered trying to implement SBG. So I wrote about SBG in a separate post <a href="https://ericbrewe.com/post/standards-based-grading/">Standards Based Grading</a>.</p>
+<p>The theory is good, but implementing it means I need to be able to accomplish a few things:</p>
+<ol style="list-style-type: decimal">
+<li>I need a gradebook that calculates the proportion of problems that are satisfactory.</li>
+<li>I need a gradebook that students can check online.</li>
+<li>I need to be able to revise these grades as students resubmit.</li>
+<li>I need to be able to accept resubmissions.</li>
+</ol>
+<p>First, and foremost, <a href="https://www.gradescope.com/">Gradescope</a> is pretty well set up to collect electronic homework and to allow you to grade homework electronically. For this part, you write up a homework pdf, create a homework assignment, select your grading preferences (I choose positive scoring, with 0-4 as the possible score for each problem), set some due dates, and add a rubric.</p>
+<p>I wrote one rubric, that I apply to each problem:</p>
+<table>
+<colgroup>
+<col width="30%" />
+<col width="69%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Score</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>4</td>
+<td>Fully complete, well explained, all work shown, correct answer someone could pick up this solution and read it.</td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td>Complete, explained adquately, work shown, correct answer. Someone would probably understand this solution.</td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td>Missing either adequate explanation or work, answer is correct, but someone would struggle to understand what you’ve done to get to this solution.</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>Missing either adequate explanation or work and answer is incorrect.</td>
+</tr>
+<tr class="odd">
+<td>0</td>
+<td>No or very little effort demonstrated</td>
+</tr>
+</tbody>
+</table>
+<p>Grading on Gradescope is somewhat faster than by hand, as I can read a problem solution and just push a button and it will assign that score. You can also annotate solutions.</p>
+<p>So collecting homework isn’t a problem. The problem arose when I needed to be able to collect resubmissions. This isn’t built easily into Gradescope, though when I emailed them they came back with four suggestions quickly, Nice Work Olga! To handle resubmissions, I set each homework to allow for late submissions and set the due date on late submissions to the end of the grading period. That way students can upload as many times as they need.</p>
+<p>I graded my first assignment, and then realized that BlackBoard (our content management system) and Gradescope don’t easily allow you to maintain a gradebook that looks at proportion of problems above a certain score. I know R, why not just build my own gradebook. So that is what I have done.</p>
+<p>Gradescope allows you to download a csv file that includes a Student ID, their scores on individual problems and their email. There is a bunch we can work with. But there is a problem, I can’t post grades based on any of those things, and BlackBoard does not do grades based on a proportion.</p>
+<p>First, I assigned each student a randomly generated number and added it to the gradebook</p>
+<pre class="r"><code>ID_Postable = sample(1000:9999, nrow(gradebook), replace = F)
+
+gradebook %&gt;%
+  mutate(ID_Post = ID_Postable) -&gt; gradebook
+</code></pre>
+<p>But there is a problem. Grading systems all calculate based on percent scores so a student with all 2s would get a 50%. I need a grading system. I have a gradebook, but need to calculate the proportion of problem scores that are evaluated as satisfactory. The work flow is Pull in weekly grades, clean up the column names, calculate a weekly proportion of satisfactory problems, then add this to the total.</p>
+<p>First, I wrote a function to clean up the names of the weekly grades and to limit what we included.</p>
+<pre class="r"><code>CleanAndNameFunction = function(df,Ch){
+  df &lt;- df %&gt;%
+    select(-c(Name, Email, `Total Score`, Status, `Submission ID`, `Submission Time`, `Lateness (H:M:S)`, `View Count`) )
+  
+  df %&gt;% 
+    select(-SID) %&gt;%
+    names(.) %&gt;%
+    str_extract_all(&quot;: [PQ0-9]+&quot;) %&gt;%
+    str_extract_all(&quot;[PQ0-9]+&quot;) -&gt; ProbNames
+  
+  ProbNames = unlist(ProbNames)
+  #Assign names of Problems
+  names(df)[2:length(df)] = ProbNames
+  
+  #Adds the Chapter Number to each of the problem column names
+  df &lt;- df %&gt;%
+    rename_at(vars(ProbNames), function(x) paste0(&quot;Ch&quot;, Chapter, x))
+  
+  df
+}</code></pre>
+<p>Now I have to calculate the proportion of the problems in any given week that are satisfactory (in my case, this means a score above 2). R and the Tidyverse are good, but really focus on analysis by columns, doing this was surprisingly more difficult than I had thought. So I wrote a function that identifies all the data, then it evaluates each column as to whether it is above the cutoff score, but that evaluates to TRUE/FALSE, so that has to be converted to numeric and rowSums (the dplyr version) was calculated. Then I renamed to ChapterNGood (the number that are satisfactory), ChapterNPoss (the number of problems), and the ChapterGoodPercent (satisfactory / possible).</p>
+<pre class="r"><code>PercentAbove = function(df, Ch){
+  Chap = paste0(&quot;Ch&quot;,Ch)
+  
+  df %&gt;%
+    select(starts_with(Chap)) %&gt;%
+    mutate_all(function(x) as.numeric(x&gt;2)) %&gt;%
+    mutate(NGood = rowSums(.)) %&gt;%
+    mutate(PercentGood = 100*NGood/(length(.)-1)) %&gt;%
+    mutate(Poss = length(.)-2) %&gt;%
+    select(NGood, Poss, PercentGood) %&gt;%
+    rename_at(vars(NGood, Poss, PercentGood), function(x) paste0(Chap, x)) %&gt;%
+    bind_cols(df) %&gt;%
+    select(SID,everything())
+}</code></pre>
+<p>Hooray! But now we need to blend these data back into the gradebook and calculate the overall proportion of scores that are satisfactory.</p>
+<p>I don’t yet have this as a function, because it will certainly use a quosure…but this does it for two chapters…</p>
+<pre class="r"><code>OverallScores &lt;- gradebook %&gt;%
+  select(SID, ID_Post, contains(&quot;Poss&quot;), contains(&quot;Good&quot;)) %&gt;%
+  select(SID, ID_Post, contains(&quot;Ch18&quot;), contains(&quot;Ch19&quot;)) %&gt;%
+  mutate(OverallPercent = (Ch18PercentGood*Ch18Poss + Ch19PercentGood*Ch19Poss)/(Ch18Poss + Ch19Poss))
+</code></pre>
+<p>Yes! It works. Now I just need to figure out how to post these so they can be published anonymously and accessible electronically. This means Shiny! But perhaps that is a separate post.</p>

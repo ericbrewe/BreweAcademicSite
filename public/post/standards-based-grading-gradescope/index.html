@@ -28,10 +28,12 @@
   
     
   
-  <meta name="description" content="Associate Professor of Physics and Science Education">
+  <meta name="description" content="Initially, I wrote this post first, but then realized that I needed to talk about Standards Based Grading before I launched into the weird realities I discovered trying to implement SBG. So I wrote about SBG in a separate post [Standards Based Grading]({{&lt; ref “/post/StandardsBasedGrading/index.html” &gt;}}).
+The theory is good, but implementing it means I need to be able to accomplish a few things:
+I need a gradebook that calculates the proportion of problems that are satisfactory.">
 
   
-  <link rel="alternate" hreflang="en-us" href="/post/">
+  <link rel="alternate" hreflang="en-us" href="/post/standards-based-grading-gradescope/">
 
   
 
@@ -249,14 +251,12 @@
 
 
   
-  <link rel="alternate" href="/post/index.xml" type="application/rss+xml" title="Eric Brewe Academic">
-  
 
   <link rel="manifest" href="/index.webmanifest">
   <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="/post/">
+  <link rel="canonical" href="/post/standards-based-grading-gradescope/">
 
   
   
@@ -273,18 +273,67 @@
   <meta property="twitter:creator" content="@ericbrewe">
   
   <meta property="og:site_name" content="Eric Brewe Academic">
-  <meta property="og:url" content="/post/">
-  <meta property="og:title" content="Posts | Eric Brewe Academic">
-  <meta property="og:description" content="Associate Professor of Physics and Science Education"><meta property="og:image" content="img/map[gravatar:%!s(bool=false) shape:circle]">
+  <meta property="og:url" content="/post/standards-based-grading-gradescope/">
+  <meta property="og:title" content="Standards Based Grading With Gradescope and R | Eric Brewe Academic">
+  <meta property="og:description" content="Initially, I wrote this post first, but then realized that I needed to talk about Standards Based Grading before I launched into the weird realities I discovered trying to implement SBG. So I wrote about SBG in a separate post [Standards Based Grading]({{&lt; ref “/post/StandardsBasedGrading/index.html” &gt;}}).
+The theory is good, but implementing it means I need to be able to accomplish a few things:
+I need a gradebook that calculates the proportion of problems that are satisfactory."><meta property="og:image" content="img/map[gravatar:%!s(bool=false) shape:circle]">
   <meta property="twitter:image" content="img/map[gravatar:%!s(bool=false) shape:circle]"><meta property="og:locale" content="en-us">
   
-    <meta property="og:updated_time" content="2020-04-22T00:00:00&#43;00:00">
+    
+      <meta property="article:published_time" content="2020-04-22T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2020-04-15T11:29:23-04:00">
   
 
   
 
 
+    
 
+
+
+
+
+
+  
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/post/standards-based-grading-gradescope/"
+  },
+  "headline": "Standards Based Grading With Gradescope and R",
+  
+  "datePublished": "2020-04-22T00:00:00Z",
+  "dateModified": "2020-04-15T11:29:23-04:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Eric Brewe"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Eric Brewe Academic",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "img//"
+    }
+  },
+  "description": "Initially, I wrote this post first, but then realized that I needed to talk about Standards Based Grading before I launched into the weird realities I discovered trying to implement SBG. So I wrote about SBG in a separate post [Standards Based Grading]({{\u0026lt; ref “/post/StandardsBasedGrading/index.html” \u0026gt;}}).\nThe theory is good, but implementing it means I need to be able to accomplish a few things:\nI need a gradebook that calculates the proportion of problems that are satisfactory."
+}
+</script>
+
+  
 
   
 
@@ -292,10 +341,13 @@
   
 
 
+  
 
 
 
-  <title>Posts | Eric Brewe Academic</title>
+
+
+  <title>Standards Based Grading With Gradescope and R | Eric Brewe Academic</title>
 
 </head>
 
@@ -560,78 +612,33 @@
 </nav>
 
 
-  
-
-
-
-
-
-
-
-
-
-
-
+  <article class="article">
 
   
 
+
+
+
+
+
+
+
+
+
+
+
+  
+
   
   
+  
+<div class="article-container pt-3">
+  <h1>Standards Based Grading With Gradescope and R</h1>
+
+  
+
   
     
-  
-<div class="universal-wrapper pt-3">
-  <h1>Posts</h1>
-
-  
-
-  
-</div>
-
-
-
-<div class="universal-wrapper">
-
-  
-
-  
-  
-    
-      
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/post/standards-based-grading/" >Standards Based Grading</a>
-    </h3>
-
-    
-    <div class="article-style">
-      My plan for this course has been to use standards based grading on weekly assignments. The basic theory of this practice is that we …
-    </div>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
 
 
 <div class="article-metadata">
@@ -656,7 +663,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    3 min read
+    2 min read
   </span>
   
 
@@ -673,501 +680,313 @@
 
 </div>
 
-      
-    </div>
-
     
 
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 </div>
 
-    
-  
-    
-      
 
 
+  <div class="article-container">
 
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/post/standards-based-grading-gradescope-and-r/" >Standards Based Grading With Gradescope and R</a>
-    </h3>
-
-    
     <div class="article-style">
-      Initially, I wrote this post first, but then realized that I needed to talk about Standards Based Grading before I launched into the …
-    </div>
-    
-
-    <div class="stream-meta article-metadata">
-
       
 
+
+<p>Initially, I wrote this post first, but then realized that I needed to talk about Standards Based Grading before I launched into the weird realities I discovered trying to implement SBG. So I wrote about SBG in a separate post [Standards Based Grading]({{&lt; ref “/post/StandardsBasedGrading/index.html” &gt;}}).</p>
+<p>The theory is good, but implementing it means I need to be able to accomplish a few things:</p>
+<ol style="list-style-type: decimal">
+<li>I need a gradebook that calculates the proportion of problems that are satisfactory.</li>
+<li>I need a gradebook that students can check online.</li>
+<li>I need to be able to revise these grades as students resubmit.</li>
+<li>I need to be able to accept resubmissions.</li>
+</ol>
+<p>First, and foremost, <a href="https://www.gradescope.com/">Gradescope</a> is pretty well set up to collect electronic homework and to allow you to grade homework electronically. For this part, you write up a homework pdf, create a homework assignment, select your grading preferences (I choose positive scoring, with 0-4 as the possible score for each problem), set some due dates, and add a rubric.</p>
+<p>I wrote one rubric, that I apply to each problem.</p>
+<table>
+<colgroup>
+<col width="30%" />
+<col width="69%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Score</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>4</td>
+<td>Fully complete, well explained, all work shown, correct answer someone could pick up this solution and read it.</td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td>Complete, explained adquately, work shown, correct answer. Someone would probably understand this solution.</td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td>Missing either adequate explanation or work, answer is correct, but someone would struggle to understand what you’ve done to get to this solution.</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>Missing either adequate explanation or work and answer is incorrect.</td>
+</tr>
+<tr class="odd">
+<td>0</td>
+<td>No or very little effort demonstrated</td>
+</tr>
+</tbody>
+</table>
+<p>Grading on Gradescope is somewhat faster than by hand, as I can read a problem solution and just push a button and it will assign that score. You can also annotate solutions.</p>
+<p>So collecting homework isn’t a problem. The problem arose when I needed to be able to collect resubmissions. This isn’t built easily into Gradescope, though when I emailed them they came back with four suggestions quickly, Nice Work Olga! To handle resubmissions, I set each homework to allow for late submissions and set the due date on late submissions to the end of the grading period. That way students can upload as many times as they need.</p>
+<p>I graded my first assignment, and then realized that BlackBoard (our content management system) and Gradescope don’t easily allow you to maintain a gradebook that looks at proportion of problems above a certain score. I know R, why not just build my own gradebook. So that is what I have done.</p>
+<p>First, I assigned each student a r</p>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
       
         
-
-
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/post/standards-based-grading-gradescope/&amp;text=Standards%20Based%20Grading%20With%20Gradescope%20and%20R" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
     
       
-          Last updated on
       
-    
-    Apr 15, 2020
-  </span>
-  
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    5 min read
-  </span>
-  
-
-  
-  
-  
-
-  
-  
-  <span class="middot-divider"></span>
-  <span class="article-categories">
-    <i class="fas fa-folder mr-1"></i><a href="/categories/phys-115/">PHYS 115</a></span>
-  
-
-</div>
-
-      
-    </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-    
-  
-    
-      
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/post/improvements/" >Incremental Improvements</a>
-    </h3>
-
-    
-    <div class="article-style">
-      After last week&rsquo;s trainwreck of a class I knew I had to make some changes. So this week I wrote a ton of slides. Plus side, they …
-    </div>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
       
         
-
-
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/post/standards-based-grading-gradescope/&amp;t=Standards%20Based%20Grading%20With%20Gradescope%20and%20R" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
     
       
-          Last updated on
       
-    
-    Apr 15, 2020
-  </span>
-  
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    1 min read
-  </span>
-  
-
-  
-  
-  
-
-  
-  
-  <span class="middot-divider"></span>
-  <span class="article-categories">
-    <i class="fas fa-folder mr-1"></i><a href="/categories/phys-115/">PHYS 115</a></span>
-  
-
-</div>
-
-      
-    </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-    
-  
-    
-      
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/post/coursereplanningincrisis/" >Adapting Plans</a>
-    </h3>
-
-    
-    <div class="article-style">
-      After week one of teaching things change.
-    </div>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
       
         
-
-
-<div class="article-metadata">
-
-  
-  
-  
-  
-  <div>
-    
-
-
-
-  
-  <span><a href="/authors/admin/">Eric Brewe</a></span>
-
-  </div>
-  
-  
-
-  
-  <span class="article-date">
-    
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Standards%20Based%20Grading%20With%20Gradescope%20and%20R&amp;body=/post/standards-based-grading-gradescope/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
     
       
-    
-    Apr 17, 2019
-  </span>
-  
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    3 min read
-  </span>
-  
-
-  
-  
-  
-
-  
-  
-
-</div>
-
       
-    </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-    
-  
-    
-      
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/post/courseplanningincrisis/" >Course Planning during Covid</a>
-    </h3>
-
-    
-    <div class="article-style">
-      Adapting to fully online teaching.
-    </div>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
       
         
-
-
-<div class="article-metadata">
-
-  
-  
-  
-  
-  <div>
-    
-
-
-
-  
-  <span><a href="/authors/admin/">Eric Brewe</a></span>
-
-  </div>
-  
-  
-
-  
-  <span class="article-date">
-    
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/post/standards-based-grading-gradescope/&amp;title=Standards%20Based%20Grading%20With%20Gradescope%20and%20R" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
     
       
-    
-    Apr 17, 2019
-  </span>
-  
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    5 min read
-  </span>
-  
-
-  
-  
-  
-
-  
-  
-
-</div>
-
       
-    </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-    
-  
-    
-      
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/post/officehoursincrisis/" >Office Hours</a>
-    </h3>
-
-    
-    <div class="article-style">
-      After a trainwreck on Wednesday, I had office hours today and it wasn&rsquo;t bad, in fact it was good.
-    </div>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
       
         
-
-
-<div class="article-metadata">
-
-  
-  
-  
-  
-  <div>
-    
-
-
-
-  
-  <span><a href="/authors/admin/">Eric Brewe</a></span>
-
-  </div>
-  
-  
-
-  
-  <span class="article-date">
-    
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=Standards%20Based%20Grading%20With%20Gradescope%20and%20R%20/post/standards-based-grading-gradescope/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
     
       
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=/post/standards-based-grading-gradescope/&amp;title=Standards%20Based%20Grading%20With%20Gradescope%20and%20R" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
     
-    Apr 17, 2019
-  </span>
-  
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    1 min read
-  </span>
-  
-
-  
-  
-  
-
-  
-  
-
+  </ul>
 </div>
 
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
       
+      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu635fa0ebf01560a13199048602a719ec_1118093_270x270_fill_q90_lanczos_center.jpg" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/">Eric Brewe</a></h5>
+      <h6 class="card-subtitle">Associate Professor of Physics and Science Education</h6>
+      <p class="card-text">Physics Education Researcher</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/ericbrewe" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?user=eQWSzOEAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/ericbrewe" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://orcid.org/0000-0003-3480-7040" target="_blank" rel="noopener">
+        <i class="ai ai-orcid"></i>
+      </a>
+    </li>
+  
+</ul>
+
     </div>
-
-    
-
   </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
 
-    
-  
+
+
+
+
+
+
+
 
   
+  
 
 
-</div>
+
+  </div>
+</article>
 
       
 
