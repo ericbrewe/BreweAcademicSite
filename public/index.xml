@@ -76,6 +76,18 @@
 &lt;a href=&#34;https://drexel.zoom.us/rec/share/9dZXNaDu9UBOZ43MuBCEUat7MrrLT6a803JKrPMJzR53dls91_mGl63Q7i2Ezmgv&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ch 19 Video&lt;/a&gt;
 &lt;/td&gt;
 &lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Three&lt;/td&gt;
+&lt;td&gt;Mon&lt;/td&gt;
+&lt;td&gt;Processing&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Three&lt;/td&gt;
+&lt;td&gt;Wed&lt;/td&gt;
+&lt;td&gt;
+&lt;a href=&#34;https://drexel.zoom.us/rec/share/-JFcK6vg6lxJEo3VtEDbXO0EJp-iX6a8gCFL-vYEzUy_V5R-4pff7uwhg4NdrfEv&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ch 17 Lecture&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 </description>
@@ -183,6 +195,57 @@
 &lt;a href=&#34;https://docs.google.com/document/d/1MyZIHM1HKYTiWSCcIgOZiMtwEUSyd_g5F8crX_gHX_8/edit?usp=sharing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Capacitors in Series and Parallel&lt;/a&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Standards Based Grading With Gradescope</title>
+      <link>/post/standars-based-grading/</link>
+      <pubDate>Wed, 22 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/standars-based-grading/</guid>
+      <description>
+
+
+&lt;p&gt;My plan for this course has been to use standards based grading on weekly assignments. The basic theory of this practice is that we should be assessing students on their understanding, so this means that they have to demonstrate said understanding. They do this in my class by submitting weekly homework (not a big deal). The big difference in standards-based grading is that each problem is evaluated on a standardized rubric.&lt;/p&gt;
+&lt;p&gt;I need a rubric. But I also know that websites like &lt;a href=&#34;https://www.chegg.com/&#34;&gt;Chegg&lt;/a&gt; make it super easy to find answers to textbook problems. So a rubric that just evaluates answers may not ensure that students are demonstrating understanding. The rubric I have developed then focuses on explanation of their solutions. It is here:&lt;/p&gt;
+&lt;table&gt;
+&lt;colgroup&gt;
+&lt;col width=&#34;30%&#34; /&gt;
+&lt;col width=&#34;69%&#34; /&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th&gt;Score&lt;/th&gt;
+&lt;th&gt;Meaning&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;Fully complete, well explained, all work shown, correct answer someone could pick up this solution and read it.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;Complete, explained adquately, work shown, correct answer. Someone would probably understand this solution.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;Missing either adequate explanation or work, answer is correct, but someone would struggle to understand what you’ve done to get to this solution.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;Missing either adequate explanation or work and answer is incorrect.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;No or very little effort demonstrated&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Then the students’ grades are determined based on the proportion of the problems that are evaluated as satisfactory. So for example, if a student submits 100% of the problems, but only 85% are evaluated as satisfactory, then that student would have an 85%. Another student who submits only 80% of the problems but every problem submitted is evaluated as satisfactory would get an 80%.&lt;/p&gt;
+&lt;p&gt;This grading scheme is interesting becasue it is not what physics majors have typically experienced. They are used to solving problems and focusing on right answers. It is possible for a student to have correctly solved every problem, but have not explained anything (meaning no words), and that student will have a 0%! One of the biggest challenges I have is helping students to break this habit of submitting solutions without any explanation.&lt;/p&gt;
+&lt;p&gt;That is not the end though. Because the goal is for students to achieve standards, I also allow for students to resubmit work (up to 9 times). This helps to alleviate the issue of students who have solved problems correctly, but haven’t explained. Go back, explain, and resubmit. You can take a 0% to a 100% fairly efficiently. Hopefully, it encourages students to review their feedback and consider the work they have submitted - at least that is the ideal. Currently, it feels like about 1/3 of the class is fully on board - including explanations and writing up work thoroughly and many times beautifully. One third has not used a single word in any of their problems - so we talked aobut this in class today. And the middle third hasn’t quite calibrated their explanations, sometimes they are doing it effectively and sometimes not.&lt;/p&gt;
+&lt;p&gt;This process is interesting, I am testing it at a small scale (16 students). I am evaluating relatively harshly in the beginning as I find that if I don’t they won’t come to the realization that they need to incorporate explanations. Gradescope makes this process pretty easy as I built the rubric one time and use it over and over for each problem. But that is a different post.&lt;/p&gt;
 </description>
     </item>
     
