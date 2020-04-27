@@ -1,0 +1,37 @@
+---
+title: Problem Solving Workshops at a distance
+author: Eric Brewe
+date: '2020-04-22'
+slug: Problem Solving Workshops
+categories:
+  - PHYS 115
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-04-15T11:29:23-04:00'
+featured: no
+image:
+  caption: 'Problem Solving Command Center'
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+My teaching agenda includes weekly problem solving workshops. The idea is that students should have time to work together on solving some problems.  It has taken three different flavors thus far. 
+
+1. Students have a question about the homework problem that is due on Mondays. If someone asks, we will work on the problem in small groups and then come back together. 
+2. Students all work on a problem that illustrates something that I want to emphasize.  This is good practice when I want students to have a common starting point for more complex problems or when I want to emphasize different approaches to solving a single problem. 
+3. Students are in groups and each group is assigned a different problem. This works well when they are not struggling with the problems, and I want them to have the opportunity to see lots of different problems. 
+
+So how to make this work at a distance?
+
+First, I use [Google Jamboard](<https://jamboard.google.com/>), because I can set up a separate board for each group before class, with a unique url. In the jamboard, I include the problem that I want them to work on, either as a link, or a picture, or today I used a sticky note. One of the things that I have to remember is to set the sharing options so that anyone with the link can edit (otherwise no one can write on the jamboard).
+
+Once I have set up the jamboards, I find it important to keep a google doc that has the links for each group and the group number, so I can quickly share these. 
+
+In Zoom, I have people join breakout rooms (3-4 per room).  Then I cycle through the rooms and using the chat function assign each room a problem (that is why having the links handy is useful).
+
+Today, I managed to put all four jamboards on my extra monitor, so I could keep track of how groups were making progress.  It was so cool!:tada::clap::thumbsup: I felt like I was in some sort of problem solving command center. I was able to see groups making progress, I didn't have to move from Zoom breakout rooms to pose questions (in one group I asked a question by adding a sticky note), and then I noticed another group didn't seem to be making much progress so I joined that breakout room and was able to help out a bit. 
+
+I love having students work problems out together because I think it does a ton of good.  This isn't quite that, but I'll take small victories:boom:!
