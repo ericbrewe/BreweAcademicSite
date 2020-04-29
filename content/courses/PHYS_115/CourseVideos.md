@@ -22,4 +22,5 @@ I will be recording all synchronous class meetings, and will be posting the vide
 |Two|Wed|<a href="/slides/ChSlides" target="_blank">Week 2 Slides</a>, [Ch 19 Video](<https://drexel.zoom.us/rec/share/9dZXNaDu9UBOZ43MuBCEUat7MrrLT6a803JKrPMJzR53dls91_mGl63Q7i2Ezmgv>) |
 |Three| Mon| Processing |
 |Three| Wed| [Ch 18 Lecture](https://drexel.zoom.us/rec/share/-JFcK6vg6lxJEo3VtEDbXO0EJp-iX6a8gCFL-vYEzUy_V5R-4pff7uwhg4NdrfEv)|
-|Four| Mon| [Ch 17 Prob. Solving](<https://drexel.zoom.us/rec/share/zv1XbLPfrj5LW5Xj0kycZLcoPN3HX6a80HNI_PILmhrCoaCtlEA6Rg_bFr8Wu7NV>)
+|Four| Mon| [Ch 17 Prob. Solving](<https://drexel.zoom.us/rec/share/zv1XbLPfrj5LW5Xj0kycZLcoPN3HX6a80HNI_PILmhrCoaCtlEA6Rg_bFr8Wu7NV>)|
+|Four | Wed | [Ch 20 Lecture](<https://drexel.zoom.us/rec/share/w8F5Mpvuzj5Lb7OOx1qHdp4vFKXqeaa81CRIqfUFyxkQH8lLeAb7DkskT6VQEoOL>)|
