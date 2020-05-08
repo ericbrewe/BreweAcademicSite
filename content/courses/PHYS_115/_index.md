@@ -18,6 +18,11 @@ type: docs
 weight: 1
 ---
 
+DON'T FORGET TO CHECK YOUR GRADES
+
+[GRADEBOOK](<https://eric-brewe.shinyapps.io/PHYS115Gradebook/>)
+
+
 ## Course Info - Winter 2020
 **Schedule**
 M, W, F - 10:00-10:50 + Recitation W 2:00-3:50 or 4:00-5:50
