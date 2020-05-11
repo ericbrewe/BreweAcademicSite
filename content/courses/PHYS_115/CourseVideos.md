@@ -25,3 +25,4 @@ I will be recording all synchronous class meetings, and will be posting the vide
 |Four| Mon| [Ch 17 Prob. Solving](<https://drexel.zoom.us/rec/share/zv1XbLPfrj5LW5Xj0kycZLcoPN3HX6a80HNI_PILmhrCoaCtlEA6Rg_bFr8Wu7NV>)|
 |Four | Wed | [Ch 20 Lecture](<https://drexel.zoom.us/rec/share/w8F5Mpvuzj5Lb7OOx1qHdp4vFKXqeaa81CRIqfUFyxkQH8lLeAb7DkskT6VQEoOL>)|
 |Five | Wed | [Magnetic Moment](<https://drexel.zoom.us/rec/share/tfV3DL2v2GJIcqfz0R3YBal_WbzLeaa8g3BMrKVbzkoKDwLHHaqalc4p0LRYnstL>)|
+|Six | Mon | [Ch 20 Prob Solving](<https://drexel.zoom.us/rec/share/-ZZPBev8xk9JcpX32E3ve4t5GobYaaa81yUb_fEEn0186jcQt7LJLeqgFtSTO2Sv>)|
