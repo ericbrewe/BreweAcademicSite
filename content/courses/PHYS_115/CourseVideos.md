@@ -26,3 +26,4 @@ I will be recording all synchronous class meetings, and will be posting the vide
 |Four | Wed | [Ch 20 Lecture](<https://drexel.zoom.us/rec/share/w8F5Mpvuzj5Lb7OOx1qHdp4vFKXqeaa81CRIqfUFyxkQH8lLeAb7DkskT6VQEoOL>)|
 |Five | Wed | [Magnetic Moment](<https://drexel.zoom.us/rec/share/tfV3DL2v2GJIcqfz0R3YBal_WbzLeaa8g3BMrKVbzkoKDwLHHaqalc4p0LRYnstL>)|
 |Six | Mon | [Ch 20 Prob Solving](<https://drexel.zoom.us/rec/share/-ZZPBev8xk9JcpX32E3ve4t5GobYaaa81yUb_fEEn0186jcQt7LJLeqgFtSTO2Sv>)|
+|Six | Wed | [Ch 21 Gauss & Ampere Law](<https://drexel.zoom.us/rec/share/yuJLH57z1H1OAbeO6l7CV6MsBK_Jeaa82nJNqKcFmEiAwsYU2B9z-V_nC8LYhsGx>) |
