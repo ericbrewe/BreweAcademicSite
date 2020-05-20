@@ -28,3 +28,4 @@ I will be recording all synchronous class meetings, and will be posting the vide
 |Six | Mon | [Ch 20 Prob Solving](<https://drexel.zoom.us/rec/share/-ZZPBev8xk9JcpX32E3ve4t5GobYaaa81yUb_fEEn0186jcQt7LJLeqgFtSTO2Sv>)|
 |Six | Wed | [Ch 21 Gauss & Ampere Law](<https://drexel.zoom.us/rec/share/yuJLH57z1H1OAbeO6l7CV6MsBK_Jeaa82nJNqKcFmEiAwsYU2B9z-V_nC8LYhsGx>) |
 |Seven | Mon | [Ch 21 Prob Solving](<https://drexel.zoom.us/rec/share/usVfcJ7t011IYLfQxF_kSPYhRJndX6a80Cgd-6cFmB72cwWZ2rNVARiW4KmuS7Sz>)|
+|Seven | Wed | [Ch 22 Faraday's Law](<https://drexel.zoom.us/rec/share/v5RubJXytWNJS6_v1kbgeaQZPKL0X6a8hCFIrPALy0K5SxsQBPknXo3v-RPybrg>)|
