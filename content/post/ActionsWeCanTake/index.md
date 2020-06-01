@@ -49,5 +49,7 @@ This is a small action. I suggest that you might do the same or something simila
 
 Please reach out if you want any suggestions about what you might do in your classes. 
 
+This is not enough, but it felt like a start. 
+
 Best, 
 Eric
