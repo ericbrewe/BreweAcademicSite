@@ -31,4 +31,4 @@ I will be recording all synchronous class meetings, and will be posting the vide
 |Seven | Wed | [Ch 22 Faraday's Law](<https://drexel.zoom.us/rec/share/v5RubJXytWNJS6_v1kbgeaQZPKL0X6a8hCFIrPALy0K5SxsQBPknXo3v-RPybrg>)|
 |Eight | Wed | [Ch 23 Radiation](<https://drexel.zoom.us/rec/share/78xcA6qo2lhIHp2TsRvWSqEKE7n3X6a81iIf-fVfykhbkSOGNkCjmo8BP4JKQZnh>)|
 |Nine | Mon | [Prob Solving](<https://drexel.zoom.us/rec/share/w5dzbLPc92dOWp3QqxDNc5UqOp7caaa82ycZqaBenRnUBDUho3gih-ynvgDLGglz>)|
-
+| Nine | Wed | [Momentum and Energy in E&B Fields](<https://drexel.zoom.us/rec/share/wvZfAp63pk1IXa_s02rEWP4cGrz5eaa8hCEZrKYJy0zZflyRhZKmvNyYa2YHQ691>)|
