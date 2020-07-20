@@ -1,6 +1,7 @@
 ---
-date: "2020-07-20T00:00:00Z"
+title: R For SNA
 draft: no
+date: "2020-07-20T00:00:00Z"
 lastmod: "2020-07-20T00:00:00Z"
 linktitle: R For SNA
 menu:
@@ -8,10 +9,9 @@ menu:
     name: R For SNA
     weight: 1
 summary: A workshop on R for doing Social Network Analysis
-title: R For SNA
 toc: yes
 type: docs
-weight: 1
+weight: 2
 ---
 
 Welcome to this workshop designed to help get you started on using R to analyze social network data. First, thanks to Dali Ma and the Social Science Research Committee for supporting these workshops.
