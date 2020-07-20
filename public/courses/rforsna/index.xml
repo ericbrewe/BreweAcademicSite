@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R For SNA | Eric Brewe Academic</title>
+    <link>/courses/rforsna/</link>
+      <atom:link href="/courses/rforsna/index.xml" rel="self" type="application/rss+xml" />
+    <description>R For SNA</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 20 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>R For SNA</title>
+      <link>/courses/rforsna/</link>
+    </image>
+    
+    <item>
+      <title>Workshop 1</title>
+      <link>/courses/rforsna/workshop1/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>/courses/rforsna/workshop1/</guid>
+      <description>&lt;p&gt;In order to prepare for workshop one - I have five things that I need you to do:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Install R and RStudio on your computers.
+a. R can be downloaded from a link on this website &lt;a href=&#34;https://www.r-project.org/&#34;&gt;https://www.r-project.org/&lt;/a&gt;
+b. RStudio can be downloaded here: &lt;a href=&#34;https://rstudio.com/products/rstudio/download/&#34;&gt;https://rstudio.com/products/rstudio/download/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Set up a series of folders somewhere:
+a. The toplevel folder should be called &amp;ldquo;RForSNA&amp;rdquo;
+b. Inside there should be folders called &amp;ldquo;data&amp;rdquo; and &amp;ldquo;plots&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;I will send you a survey on Survey Monkey.  I need you to answer the survey&lt;/li&gt;
+&lt;li&gt;Before the first workshop, I will email you a few csv files, please download each and save in the folder titled &amp;ldquo;data&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Let me know if you have trouble with any of the steps 1-4.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The [slides for Workshop #1 are here]&amp;lt;&amp;gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
