@@ -14,7 +14,7 @@ type: docs
 weight: 2
 ---
 
-Welcome to this workshop designed to help get you started on using R to analyze social network data. First, thanks to Dali Ma and the Social Science Research Committee for supporting these workshops.
+Welcome to this workshop designed to help get you started on using R to analyze social network data. First, thanks to Dali Ma and the Social Science Research Committee for supporting these workshops!
 
 ## The Plan
 These three workshops are intended to get you thinking about Social Network Analysis, which has a number of theoretical and methodological committments that are different than doing standard inferential statistics. The workshops were reverse enginneered, the goal is to do SNA, and we will focus on analyzing networks, and analyzing individuals within networks. In order to do this we will learn some R, the schedule is below.
