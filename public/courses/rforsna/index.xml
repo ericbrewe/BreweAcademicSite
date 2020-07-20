@@ -19,19 +19,27 @@
       <guid>/courses/rforsna/workshop1/</guid>
       <description>&lt;p&gt;In order to prepare for workshop one - I have five things that I need you to do:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Install R and RStudio on your computers.
-a. R can be downloaded from a link on this website &lt;a href=&#34;https://www.r-project.org/&#34;&gt;https://www.r-project.org/&lt;/a&gt;
-b. RStudio can be downloaded here: &lt;a href=&#34;https://rstudio.com/products/rstudio/download/&#34;&gt;https://rstudio.com/products/rstudio/download/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Set up a series of folders somewhere:
-a. The toplevel folder should be called &amp;ldquo;RForSNA&amp;rdquo;
-b. Inside there should be folders called &amp;ldquo;data&amp;rdquo; and &amp;ldquo;plots&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;I will send you a survey on Survey Monkey.  I need you to answer the survey&lt;/li&gt;
-&lt;li&gt;Before the first workshop, I will email you a few csv files, please download each and save in the folder titled &amp;ldquo;data&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;Let me know if you have trouble with any of the steps 1-4.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Install R and RStudio on your computers.&lt;/p&gt;
+&lt;p&gt;a. R can be downloaded from a link on this website &lt;a href=&#34;https://www.r-project.org/&#34;&gt;https://www.r-project.org/&lt;/a&gt;
+b. RStudio can be downloaded here: &lt;a href=&#34;https://rstudio.com/products/rstudio/download/&#34;&gt;https://rstudio.com/products/rstudio/download/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Set up a series of folders somewhere:&lt;/p&gt;
+&lt;p&gt;a. The toplevel folder should be called &amp;ldquo;RForSNA&amp;rdquo;
+b. Inside there should be folders called &amp;ldquo;data&amp;rdquo; and &amp;ldquo;plots&amp;rdquo;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I will send you a survey on Survey Monkey.  I need you to answer the survey&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Before the first workshop, I will email you a few csv files, please download each and save in the folder titled &amp;ldquo;data&amp;rdquo;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Let me know if you have trouble with any of the steps 1-4.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;The 
-&lt;a href=&#34;&#34;&gt;slides for Workshop #1 are here&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;The slides for Workshop #1 are here: &lt;a href=&#34;/slides/RForSNA_WS1Xaringan&#34; target=&#34;_blank&#34;&gt;Worshop 1 Slides&lt;/p&gt;
 </description>
     </item>
     
