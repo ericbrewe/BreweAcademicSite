@@ -1,11 +1,11 @@
 ---
-title: R For SNA
+title: "R For SNA"
 draft: no
 date: "2020-07-20T00:00:00Z"
 lastmod: "2020-07-20T00:00:00Z"
 linktitle: R For SNA
 menu:
-  RForSNAL:
+  RForSNA:
     name: R For SNA
     weight: 1
 summary: A workshop on R for doing Social Network Analysis
