@@ -73,19 +73,19 @@ Leraning R is not easy, as I have learned things, I have tried to maintain a lis
 **The Basics**
 
 1. Install R and RStudio
-2. Introduction to R (using Base R) - [R Programming for Data Science]<https://bookdown.org/rdpeng/rprogdatascience/>
-3. My all time favorite book for learning statistics and R is [Learning Statistics with R]<http://tidylsr.djnavarro.net/>
-4. Danielle Navarro also has a course [Robust Tools]<http://robust-tools.djnavarro.net/> that gives a sense about the breadth of the tools that R provides.
-5. These two guides, [The R Guide]<https://drive.google.com/file/d/1G9rqsXdesobxbWivbrD1MN0K97jMNEST/view> and [R for Beginners]<https://drive.google.com/file/d/1jUivTK7z3Ig_51upZ4mD5l2v-PCXOoGp/view>
+2. Introduction to R (using Base R) - [R Programming for Data Science](<https://bookdown.org/rdpeng/rprogdatascience/>)
+3. My all time favorite book for learning statistics and R is [Learning Statistics with R](<http://tidylsr.djnavarro.net/>)
+4. Danielle Navarro also has a course [Robust Tools](<http://robust-tools.djnavarro.net/>) that gives a sense about the breadth of the tools that R provides.
+5. These two guides, [The R Guide](<https://drive.google.com/file/d/1G9rqsXdesobxbWivbrD1MN0K97jMNEST/view>) and [R for Beginners](<https://drive.google.com/file/d/1jUivTK7z3Ig_51upZ4mD5l2v-PCXOoGp/view>)
 
 **A bit more advanced**
 
-1. Hadley Wickham's book, [R For Data Science]<https://r4ds.had.co.nz/>
-2. [Project Oriented Workflows]<https://www.tidyverse.org/blog/2017/12/workflow-vs-script/>
-3. [WTF R]<https://rstats.wtf/index.html> Jenny Bryan is great at explaining things about R and so frequently, I find myself looking at her books.
-4. [Cheat Sheets]<https://rstudio.com/resources/cheatsheets/> I can never remember all the commands. 
-  a. [Data Transformation]<file:///Users/ericbrewelaptop/Downloads/data-transformation.pdf>
-  b. [ggplot2]<https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf>
-  c. [Regular Expressions]<https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf>
-5. [Happy Git With R]<https://happygitwithr.com/> Eventually you'll need to use Git, and this is essential reading for making that transition.
-6. [RMarkdown]<https://bookdown.org/yihui/rmarkdown/software-info.html> Markdown allows you to use reproducible code and integrate R into reporting and writing. This is how I do all my work. 
+1. Hadley Wickham's book, [R For Data Science](<https://r4ds.had.co.nz/>)
+2. [Project Oriented Workflows](<https://www.tidyverse.org/blog/2017/12/workflow-vs-script/>)
+3. [WTF R](<https://rstats.wtf/index.html>) Jenny Bryan is great at explaining things about R and so frequently, I find myself looking at her books.
+4. [Cheat Sheets](<https://rstudio.com/resources/cheatsheets/>) I can never remember all the commands. 
+  a. [Data Transformation](<file:///Users/ericbrewelaptop/Downloads/data-transformation.pdf>)
+  b. [ggplot2](<https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf>)
+  c. [Regular Expressions](<https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf>)
+5. [Happy Git With R](<https://happygitwithr.com/>) Eventually you'll need to use Git, and this is essential reading for making that transition.
+6. [RMarkdown](<https://bookdown.org/yihui/rmarkdown/software-info.html>) Markdown allows you to use reproducible code and integrate R into reporting and writing. This is how I do all my work. 
