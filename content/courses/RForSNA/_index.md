@@ -4,12 +4,12 @@ draft: no
 lastmod: "2020-07-20T00:00:00Z"
 linktitle: R For SNA
 menu:
-  example:
+  RForSNAL:
     name: R For SNA
     weight: 1
 summary: A workshop on R for doing Social Network Analysis
 title: R For SNA
-toc: true
+toc: yes
 type: docs
 weight: 1
 ---
