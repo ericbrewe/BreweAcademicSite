@@ -1,6 +1,6 @@
 ---
 date: "2020-07-20T00:00:00Z"
-draft: false
+draft: no
 lastmod: "2020-07-20T00:00:00Z"
 linktitle: R For SNA
 menu:
