@@ -1,15 +1,16 @@
 ---
 title: "Workshop 1"
 draft: no
-linktitle: Workshop 1
-date: '2020-07-22T00:00:00+01:00'
+date: '2020-07-20T00:00:00+01:00'
+output: pdf_document
 menu:
   RForSNA:
     parent: Workshops
-    weight: 1
+    weight: 2
+linktitle: Workshop 1
 toc: yes
 type: docs
-weight: 1
+weight: 2
 ---
 
 
