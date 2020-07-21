@@ -14,7 +14,7 @@ weight: 1
 
 In order to prepare for workshop one - I have five things that I need you to do:
 
-1. Install R and RStudio on your computers. 
+1. Install R and RStudio on your computer. 
 
     a. R can be downloaded from a link on this website <https://www.r-project.org/>
     b. RStudio can be downloaded here: <https://rstudio.com/products/rstudio/download/>
