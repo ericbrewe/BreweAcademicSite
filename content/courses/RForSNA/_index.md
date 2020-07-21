@@ -1,6 +1,6 @@
 ---
 title: "R For SNA"
-draft: no
+draft: false
 date: "2020-07-20T00:00:00Z"
 lastmod: "2020-07-20T00:00:00Z"
 linktitle: R For SNA
