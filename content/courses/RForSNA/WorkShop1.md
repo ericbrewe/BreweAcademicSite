@@ -29,4 +29,4 @@ In order to prepare for workshop one - I have five things that I need you to do:
 5. Let me know if you have trouble with any of the steps 1-4.
   
   
-The slides for Workshop #1 are here: <a href="/slides/RForSNA_WS1Xaringan" target="_blank">Worshop 1 Slides
+The slides for Workshop #1 are here: <a href="/slides/R_ForSNA_WS1Xaringan" target="_blank">Worshop 1 Slides
