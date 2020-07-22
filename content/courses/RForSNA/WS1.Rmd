@@ -6,10 +6,11 @@ output: html_document
 menu:
   RForSNA:
     parent: Workshops
-    weight: 2
+    weight: 1
 linktitle: "Workshop 1"
+toc: 
 type: docs
-weight: 2
+weight: 1
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(warning = FALSE, message = FALSE, echo = FALSE)
