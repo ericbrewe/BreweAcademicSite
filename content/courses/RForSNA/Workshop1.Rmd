@@ -8,9 +8,9 @@ menu:
     parent: Workshops
     weight: 2
 linktitle: "Workshop 1"
-toc: true
+toc: yes
 type: docs
-weight: 1
+weight: 2
 ---
 
 In order to prepare for workshop one - I have five things that I need you to do:
@@ -26,3 +26,7 @@ In order to prepare for workshop one - I have five things that I need you to do:
 5. Let me know by email if you have trouble with steps 1-4.
 
 The slides for Workshop #1 can be found here:
+```{r}
+
+```
+

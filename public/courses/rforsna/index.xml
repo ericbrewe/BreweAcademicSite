@@ -20,7 +20,7 @@
       <description>
 
 &lt;div id=&#34;TOC&#34;&gt;
-true
+yes
 &lt;/div&gt;
 
 &lt;p&gt;In order to prepare for workshop one - I have five things that I need you to do:&lt;/p&gt;
@@ -40,29 +40,6 @@ true
 &lt;li&gt;Let me know by email if you have trouble with steps 1-4.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;The slides for Workshop #1 can be found here:&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Workshop 1</title>
-      <link>/courses/rforsna/ws1/</link>
-      <pubDate>Tue, 21 Jul 2020 00:00:00 +0100</pubDate>
-      <guid>/courses/rforsna/ws1/</guid>
-      <description>&lt;p&gt;In order to prepare for workshop one - I have five things that I need you to do:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Install R and RStudio on your computer.
-a. R can be downloaded from a link on this website &lt;a href=&#34;https://www.r-project.org/&#34;&gt;https://www.r-project.org/&lt;/a&gt;
-b. RStudio can be downloaded here: &lt;a href=&#34;https://rstudio.com/products/rstudio/download/&#34;&gt;https://rstudio.com/products/rstudio/download/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Set up a series of folders (on your computer or Dropbox / Box.com- don&amp;rsquo;t use Google Drive or OneDrive):
-a. The top level folder should be called &amp;ldquo;RForSNA&amp;rdquo;
-b. Inside the folder &amp;ldquo;RForSNA&amp;rdquo; there should be two folders called &amp;ldquo;data&amp;rdquo; and &amp;ldquo;plots&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;I will send you a survey on Survey Monkey. I need you to answer the survey&lt;/li&gt;
-&lt;li&gt;Before the first workshop, I will email you a few csv files, please download each and save in the folder titled &amp;ldquo;data&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;Let me know by email if you have trouble with steps 1-4.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;The slides for Workshop #1 can be found here:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-{r}&#34;&gt;
-&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     

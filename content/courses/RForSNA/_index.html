@@ -1,0 +1,122 @@
+---
+title: "R For SNA"
+draft: no
+date: "2020-07-20T00:00:00Z"
+lastmod: "2020-07-20T00:00:00Z"
+linktitle: R For SNA
+menu:
+  RForSNA:
+    name: R For SNA
+    weight: 1
+summary: A workshop on R for doing Social Network Analysis
+toc: yes
+type: docs
+weight: 2
+---
+
+
+<div id="TOC">
+yes
+</div>
+
+<p>Welcome to this workshop designed to help get you started on using R to analyze social network data. First, thanks to Dali Ma and the Social Science Research Committee for supporting these workshops!</p>
+<div id="the-plan" class="section level2">
+<h2>The Plan</h2>
+<p>These three workshops are intended to get you thinking about Social Network Analysis, which has a number of theoretical and methodological committments that are different than doing standard inferential statistics. The workshops were reverse enginneered, the goal is to do SNA, and we will focus on analyzing networks, and analyzing individuals within networks. In order to do this we will learn some R, the schedule is below.</p>
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Topics</th>
+<th>Date</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>R for SNA</td>
+<td>4 August 2020</td>
+</tr>
+<tr class="even">
+<td>Individuals within networks - centrality and hypothesis testing</td>
+<td>11 August 2020</td>
+</tr>
+<tr class="odd">
+<td>Properties of whole networks and network comparison</td>
+<td>18 August 2020</td>
+</tr>
+</tbody>
+</table>
+<div id="what-might-you-learn" class="section level3">
+<h3>What might you learn?</h3>
+<p>There are lots of things that I hope you would learn: to look at the complexity of Social Networks, to use R tools to look at networks, to read code, to write code, to find that you are not afraid (and actually like) to analyze data with R. By the end of all three sessions here are things I think you should be able to do after participating in each of the workshops:</p>
+<p><strong>Workshop One</strong></p>
+<ul>
+<li>Import Data into R</li>
+<li>Clean data and prepare data for SNA</li>
+<li>Organize data for SNA</li>
+<li>Vizualize data</li>
+</ul>
+<p><strong>Workshop Two</strong></p>
+<ul>
+<li>Understand different centrality metrics</li>
+<li>Plotting networks and incorporating centrality</li>
+<li>Test hypothesis using centrality metrics</li>
+</ul>
+<p><strong>Workshop Three</strong></p>
+<ul>
+<li>Understand different metrics about whole networks</li>
+<li>Compare networks on the basis of different networks</li>
+</ul>
+</div>
+<div id="what-is-beyond-the-scope" class="section level3">
+<h3>What is beyond the scope?</h3>
+<p>While I would love to say you’d be able to master R in the short span of 3 weeks, you will not. I’ve spent a decade learning it and am proficient, but am constantly learning.</p>
+<p>Similarly, R is a tool. You are the expert in your research, R can help <em>you</em> to uncover elements of your data. I don’t know how to analyze your data - learning R will empower you to analyze your data.</p>
+</div>
+</div>
+<div id="why-r" class="section level2">
+<h2>Why R?</h2>
+<p>I began learning R because I wanted to have something that worked across different platforms. But then I realized that the Open Source movement was something that was particularly interesting to me. But those aren’t the reason. I have come to see R as crucial for reproducibility. If I write a set of code to analyze a dataset, I can re-run this code, and get the same results. I can share the code with my publications, so someone else can check my work. This is critical to doing science. R allows me to do this in a way that Excel doesn’t.</p>
+<p>Certainly other languages (Python, Julia, etc…) will also allow for this, but why I have stuck with R is that there is a rich community that are supportive of learning and growing.</p>
+<div id="why-tidyverse" class="section level3">
+<h3>Why Tidyverse?</h3>
+<p>Open source things tend to be a bit tribal - within R one debate is Base R vs. Tidyverse. This is a debate about how to teach R, and I have decided to use the Tidyverse. It might not ever matter to you, but I want you to know that I have thought about this, and my answer is to use Tidyverse for the following reasons:</p>
+<ul>
+<li>Readability - Code should be readable by humans</li>
+<li>Coherence with my practice - I generally try to use the Tidyverse approach in my work, so I feel like I can best help by using these tools</li>
+<li>Coherence with themselves - These tools are organized in a way that helps them to be internally coherent</li>
+<li>Support - There are loads of books and websites that are published open-source, and so you can typically find the help you need.</li>
+</ul>
+</div>
+</div>
+<div id="resources" class="section level2">
+<h2>Resources</h2>
+<p>Leraning R is not easy, as I have learned things, I have tried to maintain a list of the different resources that I have drawn on.</p>
+<p><strong>The Basics</strong></p>
+<ol style="list-style-type: decimal">
+<li>Install R and RStudio</li>
+<li>Introduction to R (using Base R) - <a href="https://bookdown.org/rdpeng/rprogdatascience/">R Programming for Data Science</a></li>
+<li>My all time favorite book for learning statistics and R is <a href="http://tidylsr.djnavarro.net/">Learning Statistics with R</a></li>
+<li>Danielle Navarro also has a course <a href="http://robust-tools.djnavarro.net/">Robust Tools</a> that gives a sense about the breadth of the tools that R provides.</li>
+<li>These two guides, <a href="https://drive.google.com/file/d/1G9rqsXdesobxbWivbrD1MN0K97jMNEST/view">The R Guide</a> and <a href="https://drive.google.com/file/d/1jUivTK7z3Ig_51upZ4mD5l2v-PCXOoGp/view">R for Beginners</a></li>
+</ol>
+<p><strong>A bit more advanced</strong></p>
+<ol style="list-style-type: decimal">
+<li>Hadley Wickham’s book, <a href="https://r4ds.had.co.nz/">R For Data Science</a></li>
+<li><a href="https://www.tidyverse.org/blog/2017/12/workflow-vs-script/">Project Oriented Workflows</a></li>
+<li><a href="https://rstats.wtf/index.html">WTF R</a> Jenny Bryan is great at explaining things about R and so frequently, I find myself looking at her books.</li>
+<li><a href="https://rstudio.com/resources/cheatsheets/">Cheat Sheets</a> I can never remember all the commands.</li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li><a href="file:///Users/ericbrewelaptop/Downloads/data-transformation.pdf">Data Transformation</a></li>
+<li><a href="https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf">ggplot2</a></li>
+<li><a href="https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf">Regular Expressions</a></li>
+</ol>
+<ol start="5" style="list-style-type: decimal">
+<li><a href="https://happygitwithr.com/">Happy Git With R</a> Eventually you’ll need to use Git, and this is essential reading for making that transition.</li>
+<li><a href="https://bookdown.org/yihui/rmarkdown/software-info.html">RMarkdown</a> Markdown allows you to use reproducible code and integrate R into reporting and writing. This is how I do all my work.</li>
+</ol>
+</div>
