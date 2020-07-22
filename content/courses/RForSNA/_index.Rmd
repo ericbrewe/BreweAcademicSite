@@ -9,7 +9,6 @@ menu:
     name: R For SNA
     weight: 1
 summary: A workshop on R for doing Social Network Analysis
-toc: yes
 type: docs
 weight: 2
 ---
