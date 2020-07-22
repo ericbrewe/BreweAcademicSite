@@ -2,7 +2,7 @@
 title: "Workshop 1"
 draft: no
 date: '2020-07-20T00:00:00+01:00'
-output: pdf_document
+output: html_document
 menu:
   RForSNA:
     parent: Workshops
@@ -12,8 +12,6 @@ toc: yes
 type: docs
 weight: 2
 ---
-
-
 
 
 In order to prepare for workshop one - I have five things that I need you to do:
