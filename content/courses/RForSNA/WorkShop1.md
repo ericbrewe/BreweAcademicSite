@@ -6,7 +6,7 @@ output: html_document
 menu:
   RForSNA:
     parent: Workshops
-    weight: 2
+    weight: 1
 linktitle: Workshop 1
 toc: yes
 type: docs
@@ -30,5 +30,5 @@ In order to prepare for workshop one - I have five things that I need you to do:
 4. Before the first workshop, I will email you a few csv files, please download each and save in the folder titled "data"
 5. Let me know if you have trouble with any of the steps 1-4.
   
-  
-The slides for Workshop #1 are here: 
+
+
