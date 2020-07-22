@@ -10,7 +10,7 @@ menu:
     weight: 1
 summary: A workshop on R for doing Social Network Analysis
 type: docs
-weight: 2
+weight: 1
 ---
 
 Welcome to this workshop designed to help get you started on using R to analyze social network data. First, thanks to Dali Ma and the Social Science Research Committee for supporting these workshops!
