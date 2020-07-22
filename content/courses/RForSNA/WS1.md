@@ -6,8 +6,8 @@ output: html_document
 menu:
   RForSNA:
   parent: Workshops
-  weight: 1
-linktitle: Workshop 1
+  weight: 2
+linktitle: "Workshop 1"
 toc: true
 type: docs
 weight: 1
