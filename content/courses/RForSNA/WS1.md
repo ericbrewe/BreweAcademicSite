@@ -5,8 +5,8 @@ date: "2020-07-21T00:00:00+01:00"
 output: html_document
 menu:
   RForSNA:
-  parent: Workshops
-  weight: 2
+    parent: Workshops
+    weight: 2
 linktitle: "Workshop 1"
 toc: true
 type: docs
