@@ -19,9 +19,6 @@
       <guid>/courses/rforsna/workshop1/</guid>
       <description>
 
-&lt;div id=&#34;TOC&#34;&gt;
-yes
-&lt;/div&gt;
 
 &lt;p&gt;In order to prepare for workshop one - I have five things that I need you to do:&lt;/p&gt;
 &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
@@ -39,7 +36,8 @@ yes
 &lt;li&gt;Before the first workshop, I will email you a few csv files, please download each and save in the folder titled “data”&lt;/li&gt;
 &lt;li&gt;Let me know by email if you have trouble with steps 1-4.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;The slides for Workshop #1 can be found here:&lt;/p&gt;
+&lt;p&gt;The slides for Workshop #1 can be found here:
+&lt;iframe src=&#34;https://ericbrewe.com/slides/rforsna/rforsna_ws1.html#1&#34; width=&#34;672&#34; height=&#34;400px&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
 </description>
     </item>
     

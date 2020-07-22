@@ -8,10 +8,15 @@ menu:
     parent: Workshops
     weight: 2
 linktitle: "Workshop 1"
-toc: yes
 type: docs
 weight: 2
 ---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE, echo = FALSE)
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+```
 
 In order to prepare for workshop one - I have five things that I need you to do:
 
@@ -26,7 +31,7 @@ In order to prepare for workshop one - I have five things that I need you to do:
 5. Let me know by email if you have trouble with steps 1-4.
 
 The slides for Workshop #1 can be found here:
-```{r}
-
+```{r WS1Slides}
+knitr::include_url('https://ericbrewe.com/slides/rforsna/rforsna_ws1.html#1')
 ```
 
