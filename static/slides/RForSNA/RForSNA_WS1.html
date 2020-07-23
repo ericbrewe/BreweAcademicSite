@@ -4,9 +4,9 @@
     <title>R For SNA</title>
     <meta charset="utf-8" />
     <meta name="author" content="Eric Brewe   Associate Professor of Physics at Drexel University" />
-    <meta name="date" content="2020-07-22" />
     <link href="RForSNA_WS1_files/remark-css/default.css" rel="stylesheet" />
-    <link href="RForSNA_WS1_files/remark-css/default-fonts.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/BreweSlides.css" type="text/css" />
+    <link rel="stylesheet" href="css/Fonts.css" type="text/css" />
   </head>
   <body>
     <textarea id="source">
@@ -15,14 +15,14 @@ class: center, middle, inverse, title-slide
 # R For SNA
 ## Workshop 1
 ### Eric Brewe <br> Associate Professor of Physics at Drexel University <br>
-### 2020-07-22
+### 4 August 2020, last update: 2020-07-23
 
 ---
 
 
 
 
-# Tell me why I shouldn't just use Excel?
+# Why shouldn't I just use Excel?
 
 - R is a programming language
   - Data live separate from analysis (this is good)
@@ -35,7 +35,7 @@ class: center, middle, inverse, title-slide
 🤷]
 
 ---
-# R is good for 
+# R is good for... 
 
 - Data cleaning
 - Plotting
@@ -44,6 +44,178 @@ class: center, middle, inverse, title-slide
 - Reproducibility
 - Sharing Code
 
+---
+class: center, middle
+
+# Foundations of Network Analysis
+
+---
+# What is a network?
+.pull-left[
+- Collection of *object-like* things that are connected.
+    - Nodes/actors = Object-like things (Nouns)
+        - Students in a class, Words in a novel, Banks...
+        - Nodes can have attributes 
+            - Gender, 
+            - Word-type,
+            - Market capitialization
+]
+
+
+.pull-right[
+![NetworkImage](https://cdn.journals.aps.org/journals/PRPER/key_images/10.1103/PhysRevPhysEducRes.15.020150.png)
+
+
+]
+---
+# What is a network?
+.pull-left[
+- Collection of *object-like* things that are connected.
+    - Ties/Links/Edges = Connections between nodes (Verbs)
+        - Talked to each other, Are neigbors, Lend money, Sent text message...
+            - Directional
+            - Multiplex
+            - Weighted
+]
+
+
+.pull-right[
+![NetworkImage](https://cdn.journals.aps.org/journals/PRPER/key_images/10.1103/PhysRevPhysEducRes.15.020150.png)
+
+
+]
+---
+# Network Analysis is for the analysis of *relational data*
+
+There are four basic assumptions:
+
+1. Nodes and interactions are interdependent*
+2. Edges allow flow between nodes
+3. Network models on indiviuals both constrain and provide opportunity for action
+4. Network models conceptualize structure as representation of lasting patterns of relations between actors
+
+.footnote[
+\* Violates basic assumption of inferential statistics
+
+Wasserman, S., Faust, K. (1994). Social network analysis: Methods and applications (Vol. 8). Cambridge university press.
+]
+---
+# What can we do with it?
+
+.pull-left[
+### Ego-Level Analyses
+
+- What can we know about the network of one person?
+    - Ego density
+    - Number of neighbors
+    - Number of connected neighbors
+]
+
+.pull-right[
+
+![](img/ParisiEgoNet.png)
+]
+---
+
+# What can we do with it?
+
+.pull-left[
+### Node-Level Analyses
+
+- What can we know about the position of people in a network?
+    - Degree (In/Out/Total)
+    - Geodesic Distance (Kevin Bacon)
+    - PageRank
+    - Target Entropy
+]
+
+.pull-right[
+
+![](img/PERGraph.png)
+]
+---
+
+# What can we do with it?
+
+.pull-left[
+### Whole Network Analyses
+
+- What can we say about a whole network?
+    - Density, Average path length, Giant component
+    - Clustering
+    - Homophily
+    - Modeling
+        - Block models
+        - Small worldness
+]
+
+.pull-right[
+
+![](img/MapEqn.png)]
+---
+
+
+# Historical Foundations
+
+.pull-left[
+
+Joseph Moreno &amp; Helen Hall Jennings (1932)
+- Established foundations of SNA
+
+Quantitative Sociology/Anthropology
+- Davis Southern Women's Club (1941)
+- Small World Problem (1967)
+- Zachary's Karate Club (1977)
+
+Seminal Articles
+- Milgram, Stanley "The small world problem" Psychology Today 2:1, (1967)
+- Grannovetter, Mark S. "The strength of weak ties" American Journal of Sociology (1973)
+]
+
+.pull-right[
+
+![](img/JosephMoreno.jpg)]
+---
+# Modern Foundations of Network Analysis
+
+
+### Sociophysics (1990s)
+
+- Graph theory
+- Information theory
+- Computing 
+- Used to study
+    - Internet
+    - Power grid
+    - Transportation networks
+
+Seminal Articles
+- Watts &amp; Strogratz "Collective dynamics of small world networks" Nature (1998)
+- Page, Brin, Motwani, &amp; Winograd "The PageRank citation ranking: Bringing order to the web" Stanford InfoLab (1999)
+
+---
+
+class: center, middle
+
+# Important Takeaways from History
+
+
+
+Two main camps
+
+Statistical -&gt; hypothesis testing
+
+Graph theoretic -&gt; network models and simulation
+ 
+--
+
+.large[
+They often don't agree.
+
+There is often distain.
+
+They have different language, journals, conferences
+]
 ---
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
