@@ -32,7 +32,7 @@ class: center, middle, inverse, title-slide
 
 .center[Or at least it is hard to screw up
 
-🤷]
+#🤷]
 
 ---
 # R is good for... 
@@ -217,6 +217,106 @@ There is often distain.
 They have different language, journals, conferences
 ]
 ---
+# Network Data in R
+
+.center[
+#### Sociomatrix/Adjacency Matrix
+]
+.pull-left[
+![](RForSNA_WS1_files/figure-html/ToyNet-1.png)&lt;!-- --&gt;
+]
+
+.pull-right[
+
+```r
+A
+```
+
+```
+## 5 x 5 sparse Matrix of class "dgCMatrix"
+##               
+## [1,] . 1 1 1 1
+## [2,] 1 . . . .
+## [3,] 1 . . . .
+## [4,] 1 . . . 1
+## [5,] 1 . . 1 .
+```
+]
+
+---
+## Network Data in R
+
+.center[
+#### Edgelist
+]
+.pull-left[
+![](RForSNA_WS1_files/figure-html/PlotToyNet-1.png)&lt;!-- --&gt;
+]
+
+.pull-right[
+
+```r
+B
+```
+
+```
+## [[1]]
+## + 4/5 edges from cae1753:
+## [1] 1--2 1--3 1--4 1--5
+## 
+## [[2]]
+## + 1/5 edge from cae1753:
+## [1] 1--2
+## 
+## [[3]]
+## + 1/5 edge from cae1753:
+## [1] 1--3
+## 
+## [[4]]
+## + 2/5 edges from cae1753:
+## [1] 1--4 4--5
+## 
+## [[5]]
+## + 2/5 edges from cae1753:
+## [1] 1--5 4--5
+```
+]
+
+---
+
+
+## What does this mean in terms of learning R?
+
+- We need to know something about the different types of data!
+
+.pull-left[
+
+#### Data types (at least some of them)
+
+- **Logical** (T/F, 1/0)
+- **Integers** (whole numbers)
+- **Numeric** (numbers with decimal places)
+- **Complex** (I never use these)
+]
+
+.pull-right[
+#### Data storage (at least some of them)
+
+- **Vectors** = long columns of data (can be any type, but only one type of data)
+- **Dataframes** = like Excel pages (columns can hold different types of data)
+- **Matrices** = like dataframes, but they have named rows/columns 
+    - Adjacency Matrices are of type matrix.
+- **Lists** = the junkdrawer, can hold any type of data (including dataframes or matrices)
+    - in igraph, networks are stored as lists.
+
+]
+---
+
+## What you need to know about R?
+
+- R is the programming language.
+- RStudio is the Integrated Development Environment (IDE)
+-
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

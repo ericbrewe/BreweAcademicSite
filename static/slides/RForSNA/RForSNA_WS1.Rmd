@@ -17,6 +17,9 @@ options(htmltools.dir.version = FALSE)
 knitr::opts_chunk$set(warning = FALSE, message = FALSE)
 library(tidyverse) # load tidyverse package
 library(emo) # load emoji package
+library(igraph)
+library(tidygraph)
+library(ggraph)
 
 ```
 
@@ -30,7 +33,7 @@ library(emo) # load emoji package
 
 .center[Or at least it is hard to screw up
 
-`r emo::ji("doubt")`]
+#`r emo::ji("doubt")`]
 
 ---
 # R is good for... 
@@ -215,4 +218,91 @@ There is often distain.
 They have different language, journals, conferences
 ]
 ---
+# Network Data in R
+
+.center[
+#### Sociomatrix/Adjacency Matrix
+]
+.pull-left[
+```{r ToyNet, echo = FALSE}
+
+set.seed(867)
+gr <- erdos.renyi.game(5, 5, type = "gnm")
+
+plot(gr)
+
+A <- as_adjacency_matrix(gr)
+```
+]
+
+.pull-right[
+```{r ToyNetMatrix}
+A
+```
+]
+
+---
+## Network Data in R
+
+.center[
+#### Edgelist
+]
+.pull-left[
+```{r PlotToyNet, echo = FALSE}
+
+plot(gr)
+
+B = as_adj_edge_list(gr)
+```
+]
+
+.pull-right[
+```{r ToyNetEdgelist}
+B
+```
+]
+
+---
+
+
+## What does this mean in terms of learning R?
+
+- We need to know something about the different types of data!
+
+.pull-left[
+
+#### Data types (at least some of them)
+
+- **Logical** (T/F, 1/0)
+- **Integers** (whole numbers)
+- **Numeric** (numbers with decimal places)
+- **Complex** (I never use these)
+]
+
+.pull-right[
+#### Data storage (at least some of them)
+
+- **Vectors** = long columns of data (can be any type, but only one type of data)
+- **Dataframes** = like Excel pages (columns can hold different types of data)
+- **Matrices** = like dataframes, but they have named rows/columns 
+    - Adjacency Matrices are of type matrix.
+- **Lists** = the junkdrawer, can hold any type of data (including dataframes or matrices)
+    - in igraph, networks are stored as lists.
+
+]
+---
+
+## What you need to know about R?
+
+- R is the programming language.
+- RStudio is the Integrated Development Environment (IDE)
+-
+
+
+
+
+
+
+
+
 
