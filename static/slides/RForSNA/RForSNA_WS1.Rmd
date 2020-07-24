@@ -195,26 +195,29 @@ Seminal Articles
 - Page, Brin, Motwani, & Winograd "The PageRank citation ranking: Bringing order to the web" Stanford InfoLab (1999)
 
 ---
-
-class: center, middle
-
 # Important Takeaways from History
 
+class: center
 
 
 Two main camps
 
+--
+
 Statistical -> hypothesis testing
+
+--
 
 Graph theoretic -> network models and simulation
  
 --
 
-.large[
+.font250.[
 They often don't agree.
+--
 
 There is often distain.
-
+--
 They have different language, journals, conferences
 ]
 ---
@@ -326,7 +329,7 @@ B
 
 ---
 
-# Lets Install Some Packages
+# Let's Install Some Packages
 .font150[You'll only need to do this once.]
 
 ## In Console
@@ -341,8 +344,22 @@ Repeat this with the following packages:
 
 igraph    tidygraph     here     ggraph
 
+---
+
+# Let's Load Some Packages
+.font150[You'll need to do this every time you restart R.]
+
+## In Console
+
 To load tidyverse package...
 
 ```{r InstallPackages, eval=FALSE}
 library(tidyverse)
 ```
+
+Repeat this with the following packages:
+
+igraph    tidygraph     here     ggraph
+
+---
+# Let's get data into R. 
