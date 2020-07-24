@@ -5,7 +5,7 @@ author: 'Eric Brewe <br> Associate Professor of Physics at Drexel University <br
 date: "4 August 2020, last update: `r Sys.Date()`"
 output: 
   xaringan::moon_reader:
-    css: ["default", "css/BreweSlides.css", "css/Fonts.css"]
+    css: [default, metropolis, "BreweSlides.css"]
     nature:
       highlightStyle: github
       highlightLines: true
@@ -242,7 +242,7 @@ A
 ]
 
 ---
-## Network Data in R
+# Network Data in R
 
 .center[
 #### Edgelist
@@ -265,7 +265,7 @@ B
 ---
 
 
-## What does this mean in terms of learning R?
+# What does this mean in terms of learning R?
 
 - We need to know something about the different types of data!
 
@@ -296,13 +296,53 @@ B
 
 - R is the programming language.
 - RStudio is the Integrated Development Environment (IDE)
--
+- Packages: groups of functions that are developed as open source 
+- Base R
+    - The group of packages preloaded into R
+- Tidyverse
+    - Family of packages that are designed with the theory that programming should be readable by humans.
 
 
+.font190[.center[Lets do this!]]
 
 
+---
+# Using R and RStudio
 
+.pull-left[
+- Open RStudio (this will automatically open R)
+- Navigate to your folder titled "RForSNA"
+- In RStudio -> File -> New Project
+    - Select "Existing Directory" (Unless you know Git)
+- In RStudio -> File -> New File -> RMarkdown
+]
+.pull-right[
+![](img/NewProject.png)
+![](img/NewRMarkdown.png)
+]
+---
 
+# Lets Take a Tour of RStudio IDE
 
+---
 
+# Lets Install Some Packages
+.font150[You'll only need to do this once.]
 
+## In Console
+
+To install tidyverse package...
+
+```{r InstallPackages, eval=FALSE}
+install.packages("tidyverse")
+```
+
+Repeat this with the following packages:
+
+igraph    tidygraph     here     ggraph
+
+To load tidyverse package...
+
+```{r InstallPackages, eval=FALSE}
+library(tidyverse)
+```

@@ -5,8 +5,8 @@
     <meta charset="utf-8" />
     <meta name="author" content="Eric Brewe   Associate Professor of Physics at Drexel University" />
     <link href="RForSNA_WS1_files/remark-css/default.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/BreweSlides.css" type="text/css" />
-    <link rel="stylesheet" href="css/Fonts.css" type="text/css" />
+    <link href="RForSNA_WS1_files/remark-css/metropolis.css" rel="stylesheet" />
+    <link rel="stylesheet" href="BreweSlides.css" type="text/css" />
   </head>
   <body>
     <textarea id="source">
@@ -15,7 +15,7 @@ class: center, middle, inverse, title-slide
 # R For SNA
 ## Workshop 1
 ### Eric Brewe <br> Associate Professor of Physics at Drexel University <br>
-### 4 August 2020, last update: 2020-07-23
+### 4 August 2020, last update: 2020-07-24
 
 ---
 
@@ -244,7 +244,7 @@ A
 ]
 
 ---
-## Network Data in R
+# Network Data in R
 
 .center[
 #### Edgelist
@@ -261,23 +261,23 @@ B
 
 ```
 ## [[1]]
-## + 4/5 edges from cae1753:
+## + 4/5 edges from a8180e8:
 ## [1] 1--2 1--3 1--4 1--5
 ## 
 ## [[2]]
-## + 1/5 edge from cae1753:
+## + 1/5 edge from a8180e8:
 ## [1] 1--2
 ## 
 ## [[3]]
-## + 1/5 edge from cae1753:
+## + 1/5 edge from a8180e8:
 ## [1] 1--3
 ## 
 ## [[4]]
-## + 2/5 edges from cae1753:
+## + 2/5 edges from a8180e8:
 ## [1] 1--4 4--5
 ## 
 ## [[5]]
-## + 2/5 edges from cae1753:
+## + 2/5 edges from a8180e8:
 ## [1] 1--5 4--5
 ```
 ]
@@ -285,7 +285,7 @@ B
 ---
 
 
-## What does this mean in terms of learning R?
+# What does this mean in terms of learning R?
 
 - We need to know something about the different types of data!
 
@@ -316,7 +316,55 @@ B
 
 - R is the programming language.
 - RStudio is the Integrated Development Environment (IDE)
--
+- Packages: groups of functions that are developed as open source 
+- Base R
+    - The group of packages preloaded into R
+- Tidyverse
+    - Family of packages that are designed with the theory that programming should be readable by humans.
+
+
+.font190[.center[Lets do this!]]
+
+
+---
+# Using R and RStudio
+
+.pull-left[
+- Open RStudio (this will automatically open R)
+- Navigate to your folder titled "RForSNA"
+- In RStudio -&gt; File -&gt; New Project
+    - Select "Existing Directory" (Unless you know Git)
+- In RStudio -&gt; File -&gt; New File -&gt; RMarkdown
+]
+.pull-right[
+![](img/NewProject.png)
+![](img/NewRMarkdown.png)
+]
+---
+
+# Lets Take a Tour of RStudio IDE
+
+---
+class: center
+
+# Lets Install Some Packages
+You'll only need to do this once.
+
+## In Console
+
+To install tidyverse package...
+
+
+```r
+install.packages("tidyverse")
+```
+
+Repeat this with the following packages:
+
+igraph
+tidygraph
+here
+ggraph
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
