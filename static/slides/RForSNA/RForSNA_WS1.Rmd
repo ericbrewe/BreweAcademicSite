@@ -224,7 +224,7 @@ They have different language, journals, conferences
 # Network Data in R
 
 .center[
-#### Sociomatrix/Adjacency Matrix
+## Sociomatrix/Adjacency Matrix
 ]
 .pull-left[
 ```{r ToyNet, echo = FALSE}
@@ -248,7 +248,7 @@ A
 # Network Data in R
 
 .center[
-#### Edgelist
+## Edgelist
 ]
 .pull-left[
 ```{r PlotToyNet, echo = FALSE}
@@ -260,13 +260,12 @@ B = as_adj_edge_list(gr)
 ]
 
 .pull-right[
-```{r ToyNetEdgelist}
+```{r ToyNetEdgelist, echo=FALSE}
 B
 ```
 ]
 
 ---
-
 
 # What does this mean in terms of learning R?
 
