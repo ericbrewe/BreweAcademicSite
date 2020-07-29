@@ -83,8 +83,9 @@ Leraning R is not easy, as I have learned things, I have tried to maintain a lis
 2. [Project Oriented Workflows](<https://www.tidyverse.org/blog/2017/12/workflow-vs-script/>)
 3. [WTF R](<https://rstats.wtf/index.html>) Jenny Bryan is great at explaining things about R and so frequently, I find myself looking at her books.
 4. [Cheat Sheets](<https://rstudio.com/resources/cheatsheets/>) I can never remember all the commands. 
-  a. [Data Transformation](<file:///Users/ericbrewelaptop/Downloads/data-transformation.pdf>)
-  b. [ggplot2](<https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf>)
+    a. [Data Transformation](<file:///Users/ericbrewelaptop/Downloads/data-transformation.pdf>)
+    b. [ggplot2](<https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf>)
   c. [Regular Expressions](<https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf>)
 5. [Happy Git With R](<https://happygitwithr.com/>) Eventually you'll need to use Git, and this is essential reading for making that transition.
 6. [RMarkdown](<https://bookdown.org/yihui/rmarkdown/software-info.html>) Markdown allows you to use reproducible code and integrate R into reporting and writing. This is how I do all my work. 
+7. [DataCarpentry](<https://datacarpentry.org/>) runs workshops about data analysis and often are oriented to different research specialties. 

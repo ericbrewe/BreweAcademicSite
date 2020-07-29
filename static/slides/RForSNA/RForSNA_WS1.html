@@ -15,7 +15,7 @@ class: center, middle, inverse, title-slide
 # R For SNA
 ## Workshop 1
 ### Eric Brewe <br> Associate Professor of Physics at Drexel University <br>
-### 4 August 2020, last update: 2020-07-24
+### 4 August 2020, last update: 2020-07-29
 
 ---
 
@@ -194,43 +194,37 @@ Seminal Articles
 - Page, Brin, Motwani, &amp; Winograd "The PageRank citation ranking: Bringing order to the web" Stanford InfoLab (1999)
 
 ---
-
-class: center, middle
-
 # Important Takeaways from History
+.center[Two main camps
 
-
-
-Two main camps
+--
 
 Statistical -&gt; hypothesis testing
 
-Graph theoretic -&gt; network models and simulation
+--
+
+Graph theoretic -&gt; network models and simulation]
  
 --
 
-.large[
+.font200.center[
 They often don't agree.
 
 There is often distain.
 
 They have different language, journals, conferences
-]
+]]
 ---
 # Network Data in R
 
 .center[
-#### Sociomatrix/Adjacency Matrix
+## Sociomatrix/Adjacency Matrix
 ]
 .pull-left[
 ![](RForSNA_WS1_files/figure-html/ToyNet-1.png)&lt;!-- --&gt;
 ]
 
 .pull-right[
-
-```r
-A
-```
 
 ```
 ## 5 x 5 sparse Matrix of class "dgCMatrix"
@@ -247,7 +241,7 @@ A
 # Network Data in R
 
 .center[
-#### Edgelist
+## Edgelist
 ]
 .pull-left[
 ![](RForSNA_WS1_files/figure-html/PlotToyNet-1.png)&lt;!-- --&gt;
@@ -255,35 +249,30 @@ A
 
 .pull-right[
 
-```r
-B
-```
-
 ```
 ## [[1]]
-## + 4/5 edges from a8180e8:
+## + 4/5 edges from 4f1c792:
 ## [1] 1--2 1--3 1--4 1--5
 ## 
 ## [[2]]
-## + 1/5 edge from a8180e8:
+## + 1/5 edge from 4f1c792:
 ## [1] 1--2
 ## 
 ## [[3]]
-## + 1/5 edge from a8180e8:
+## + 1/5 edge from 4f1c792:
 ## [1] 1--3
 ## 
 ## [[4]]
-## + 2/5 edges from a8180e8:
+## + 2/5 edges from 4f1c792:
 ## [1] 1--4 4--5
 ## 
 ## [[5]]
-## + 2/5 edges from a8180e8:
+## + 2/5 edges from 4f1c792:
 ## [1] 1--5 4--5
 ```
 ]
 
 ---
-
 
 # What does this mean in terms of learning R?
 
@@ -311,8 +300,7 @@ B
 
 ]
 ---
-
-## What you need to know about R?
+# What you need to know about R?
 
 - R is the programming language.
 - RStudio is the Integrated Development Environment (IDE)
@@ -321,6 +309,8 @@ B
     - The group of packages preloaded into R
 - Tidyverse
     - Family of packages that are designed with the theory that programming should be readable by humans.
+- igraph
+    - Package that is very useful for doing network analyses
 
 
 .font190[.center[Lets do this!]]
@@ -335,6 +325,7 @@ B
 - In RStudio -&gt; File -&gt; New Project
     - Select "Existing Directory" (Unless you know Git)
 - In RStudio -&gt; File -&gt; New File -&gt; RMarkdown
+- Save this file in the folder titled "RForSNA"
 ]
 .pull-right[
 ![](img/NewProject.png)
@@ -345,10 +336,9 @@ B
 # Lets Take a Tour of RStudio IDE
 
 ---
-class: center
 
-# Lets Install Some Packages
-You'll only need to do this once.
+# Let's Install Some Packages
+.font150[You'll only need to do this once.]
 
 ## In Console
 
@@ -361,10 +351,483 @@ install.packages("tidyverse")
 
 Repeat this with the following packages:
 
-igraph
-tidygraph
-here
-ggraph
+igraph    tidygraph     here     ggraph
+
+---
+
+# Let's Load Some Packages
+.font150[You'll need to do this every time you restart R.]
+
+## In Console
+
+To load tidyverse package...
+
+
+```r
+library(tidyverse) #tools for cleaning data 
+library(igraph)  #package for doing network analysis
+library(tidygraph) #tools for doing tidy networks
+library(here) #tools for project-based workflow
+library(ggraph) #plotting tools for networks
+```
+
+--
+
+Once you have done this, you will want to put include a code chunk with all of your libraries into your markdown document so that you don't have to type this every time. 
+
+---
+# Let's get data into R. 
+
+I've sent you a csv file that includes the data for workshop 1, I hope you saved this in your folder titled "data". 
+
+If you have loaded the package "here" this should just work.  If you have not loaded the "here" package you will need to set the working directory. 
+
+Again, you will want to include this as a code chunk in your RMD file.  
+
+
+```r
+#This loads the csv and saves it as a dataframe titled WorkshopData
+
+WorkshopData &lt;- read_csv(here("data", "DataForWorkshop1.csv"))
+```
+
+
+---
+# Let's have a look at the data
+
+
+```r
+glimpse(WorkshopData)
+```
+
+```
+## Rows: 4
+## Columns: 23
+## $ StartDate               &lt;chr&gt; "Start Date", "{\"ImportId\":\"startDate\",\"timeZone\…
+## $ EndDate                 &lt;chr&gt; "End Date", "{\"ImportId\":\"endDate\",\"timeZone\":\"…
+## $ Status                  &lt;chr&gt; "Response Type", "{\"ImportId\":\"status\"}", "Survey …
+## $ IPAddress               &lt;chr&gt; "IP Address", "{\"ImportId\":\"ipAddress\"}", NA, NA
+## $ Progress                &lt;chr&gt; "Progress", "{\"ImportId\":\"progress\"}", "100", "100"
+## $ `Duration (in seconds)` &lt;chr&gt; "Duration (in seconds)", "{\"ImportId\":\"duration\"}"…
+## $ Finished                &lt;chr&gt; "Finished", "{\"ImportId\":\"finished\"}", "True", "Tr…
+## $ RecordedDate            &lt;chr&gt; "Recorded Date", "{\"ImportId\":\"recordedDate\",\"tim…
+## $ ResponseId              &lt;chr&gt; "Response ID", "{\"ImportId\":\"_recordId\"}", "R_2PbT…
+## $ RecipientLastName       &lt;chr&gt; "Recipient Last Name", "{\"ImportId\":\"recipientLastN…
+## $ RecipientFirstName      &lt;chr&gt; "Recipient First Name", "{\"ImportId\":\"recipientFirs…
+## $ RecipientEmail          &lt;chr&gt; "Recipient Email", "{\"ImportId\":\"recipientEmail\"}"…
+## $ ExternalReference       &lt;chr&gt; "External Data Reference", "{\"ImportId\":\"externalDa…
+## $ LocationLatitude        &lt;chr&gt; "Location Latitude", "{\"ImportId\":\"locationLatitude…
+## $ LocationLongitude       &lt;chr&gt; "Location Longitude", "{\"ImportId\":\"locationLongitu…
+## $ DistributionChannel     &lt;chr&gt; "Distribution Channel", "{\"ImportId\":\"distributionC…
+## $ UserLanguage            &lt;chr&gt; "User Language", "{\"ImportId\":\"userLanguage\"}", "E…
+## $ Q2                      &lt;chr&gt; "I am more of a", "{\"ImportId\":\"QID4\"}", "morning …
+## $ Q3                      &lt;chr&gt; "My favorite dessert is", "{\"ImportId\":\"QID2\"}", "…
+## $ Q4                      &lt;chr&gt; "Which of the following beverages have you had this we…
+## $ Q5                      &lt;chr&gt; "How many pages were in the last book you read?", "{\"…
+## $ Q6                      &lt;chr&gt; "Estimate the number of blueberries in this tub of blu…
+## $ Q7                      &lt;chr&gt; "Below are a list of participants in this workshop. Pr…
+```
+
+---
+# Let's start cleaning up.
+
+## First, we don't need most of that data
+
+There is a ton of data there that doesn't make sense for us to keep around. 
+
+We will use the '%&gt;%' (pipe) operator and the verb select
+
+
+```r
+WorkshopData %&gt;%
+  select(ResponseId,Q2:Q7) -&gt; WorkshopData
+
+glimpse(WorkshopData)
+```
+
+```
+## Rows: 4
+## Columns: 7
+## $ ResponseId &lt;chr&gt; "Response ID", "{\"ImportId\":\"_recordId\"}", "R_2PbT59J94Jaqzle",…
+## $ Q2         &lt;chr&gt; "I am more of a", "{\"ImportId\":\"QID4\"}", "morning person.", "ni…
+## $ Q3         &lt;chr&gt; "My favorite dessert is", "{\"ImportId\":\"QID2\"}", "Brown Butter …
+## $ Q4         &lt;chr&gt; "Which of the following beverages have you had this week (select al…
+## $ Q5         &lt;chr&gt; "How many pages were in the last book you read?", "{\"ImportId\":\"…
+## $ Q6         &lt;chr&gt; "Estimate the number of blueberries in this tub of blueberries. Ple…
+## $ Q7         &lt;chr&gt; "Below are a list of participants in this workshop. Prior to this w…
+```
+
+???
+Note the data are not numbers.
+---
+# Let's start cleaning up.
+
+## Now we should actually take a look at the data
+
+
+```r
+WorkshopData %&gt;%
+  head()
+```
+
+```
+## # A tibble: 4 x 7
+##   ResponseId    Q2       Q3        Q4             Q5        Q6             Q7            
+##   &lt;chr&gt;         &lt;chr&gt;    &lt;chr&gt;     &lt;chr&gt;          &lt;chr&gt;     &lt;chr&gt;          &lt;chr&gt;         
+## 1 "Response ID" "I am m… "My favo… "Which of the… "How man… "Estimate the… "Below are a …
+## 2 "{\"ImportId… "{\"Imp… "{\"Impo… "{\"ImportId\… "{\"Impo… "{\"ImportId\… "{\"ImportId\…
+## 3 "R_2PbT59J94… "mornin… "Brown B… "Coffee,Fizzy… "241"     "503"           &lt;NA&gt;         
+## 4 "R_1ImwOPxym… "night … "Ice Cre… "Fruit Juice,… "533"     "400"           &lt;NA&gt;
+```
+--
+Hmm, it looks like there are two rows that are not actually data. 
+
+---
+# Let's start cleaning up.
+
+## Get rid of the two rows of data that are junk
+
+
+```r
+WorkshopData %&gt;%
+  slice(-(1:2))
+```
+
+```
+## # A tibble: 2 x 7
+##   ResponseId     Q2         Q3                   Q4                     Q5    Q6    Q7   
+##   &lt;chr&gt;          &lt;chr&gt;      &lt;chr&gt;                &lt;chr&gt;                  &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;
+## 1 R_2PbT59J94Ja… morning p… Brown Butter Chocol… Coffee,Fizzy Water     241   503   &lt;NA&gt; 
+## 2 R_1ImwOPxym34… night owl. Ice Cream            Fruit Juice,Coffee,Wa… 533   400   &lt;NA&gt;
+```
+
+--
+### Since this worked, we should now update our dataframe
+
+---
+# Let's start cleaning up.
+
+## Get rid of the two rows of data that are junk
+
+
+```r
+WorkshopData %&gt;%
+* slice(-(1:2)) -&gt; WorkshopData
+
+WorkshopData
+```
+
+```
+## # A tibble: 2 x 7
+##   ResponseId     Q2         Q3                   Q4                     Q5    Q6    Q7   
+##   &lt;chr&gt;          &lt;chr&gt;      &lt;chr&gt;                &lt;chr&gt;                  &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;
+## 1 R_2PbT59J94Ja… morning p… Brown Butter Chocol… Coffee,Fizzy Water     241   503   &lt;NA&gt; 
+## 2 R_1ImwOPxym34… night owl. Ice Cream            Fruit Juice,Coffee,Wa… 533   400   &lt;NA&gt;
+```
+
+--
+### Full disclosure I had to google how to do this
+
+---
+# Let's check out the power of R
+
+.font200[.center[I am going to blast through these next slides, to show you some of the things that you might want to do with R]]
+
+
+---
+# Let's start visualizing the data
+
+## For categorical data, you might want to get some counts.
+
+Here is code to do this for the question about morning or night person.
+
+
+
+```r
+WorkshopData %&gt;%
+* select(Q2) %&gt;%
+* group_by(Q2) %&gt;%
+  tally() 
+```
+
+```
+## # A tibble: 2 x 2
+##   Q2                  n
+##   &lt;chr&gt;           &lt;int&gt;
+## 1 morning person.     1
+## 2 night owl.          1
+```
+
+
+---
+# Let's start visualizing the data
+
+## For categorical data, you might want to get a histogram.
+
+Here is code to do this for the favorite dessert type.
+
+.pull-left[
+
+```r
+WorkshopData %&gt;%
+  select(Q3) %&gt;%
+  group_by(Q3) %&gt;% 
+  tally()  
+```
+
+```
+## # A tibble: 2 x 2
+##   Q3                                      n
+##   &lt;chr&gt;                               &lt;int&gt;
+## 1 Brown Butter Chocolate Chip Cookies     1
+## 2 Ice Cream                               1
+```
+]
+.pull-right[
+
+```r
+WorkshopData %&gt;%
+  select(Q3) %&gt;%
+  ggplot(aes(y = Q3)) + 
+  geom_bar()
+```
+
+![](RForSNA_WS1_files/figure-html/DessertTypeHist-1.png)&lt;!-- --&gt;
+]
+
+---
+# Let's look at some quantitative data
+.pull-left[
+### First, let's summarize the reading data.
+
+
+```r
+WorkshopData %&gt;%
+  select(Q5) %&gt;%
+  summarize(Ave = mean(Q5), 
+            SD = sd(Q5))
+```
+
+```
+## # A tibble: 1 x 2
+##     Ave    SD
+##   &lt;dbl&gt; &lt;dbl&gt;
+## 1    NA  206.
+```
+#### If we just run this we get an error message. 
+* It is weird that sd will run, but mean will not. 
+
+]
+
+.pull-right[
+### Convert to numeric
+
+(mutate is a verb that is really useful!)
+
+
+```r
+WorkshopData %&gt;%
+  select(Q5) %&gt;%
+* mutate(Q5 = as.numeric(Q5)) %&gt;%
+  summarize(Ave = mean(Q5, na.rm = TRUE), 
+            SD = sd(Q5, na.rm = TRUE))
+```
+
+```
+## # A tibble: 1 x 2
+##     Ave    SD
+##   &lt;dbl&gt; &lt;dbl&gt;
+## 1   387  206.
+```
+]
+
+
+
+---
+# Let's investigate groups
+
+.pull-left[
+### Are morning people or night owls reading longer books?
+
+
+```r
+WorkshopData %&gt;%
+  select(Q2, Q5) %&gt;%
+  mutate(Q5 = as.numeric(Q5)) %&gt;%
+  group_by(Q2) %&gt;%
+  summarize(Ave = mean(Q5, na.rm = TRUE), 
+            SD = sd(Q5, na.rm = TRUE))
+```
+
+```
+## # A tibble: 2 x 3
+##   Q2                Ave    SD
+##   &lt;chr&gt;           &lt;dbl&gt; &lt;dbl&gt;
+## 1 morning person.   241    NA
+## 2 night owl.        533    NA
+```
+]
+.pull-right[
+
+### We might want to use a boxplot to display these data
+
+
+```r
+#WorkshopData %&gt;%
+#  select(Q2, Q5) %&gt;%
+#  mutate(Q5 = as.numeric(Q5)) %&gt;%
+#  group_by(Q2) %&gt;%
+#  boxplot()
+```
+]
+
+---
+# Let's look at readers vs. blueberries
+
+### Is there a relationship between length of book and estimates on number of blueberries?
+
+.pull-left[
+Could do a scatter plot
+
+```r
+WorkshopData %&gt;%
+  select(Q5:Q6) %&gt;%
+  mutate(Q5 = as.numeric(Q5), Q6 = as.numeric(Q6)) %&gt;%
+  ggplot(aes(x = Q5, y = Q6)) +
+  geom_point()
+```
+
+]
+.pull-right[
+![](RForSNA_WS1_files/figure-html/unnamed-chunk-1-1.png)&lt;!-- --&gt;
+
+]
+
+---
+# Let's look at readers vs. blueberries
+
+### Is there a relationship between length of book and estimates on number of blueberries?
+
+### Or you could do a linear model
+
+
+```r
+summary(lm(Q6 ~ Q5, data = WorkshopData))
+```
+
+```
+## 
+## Call:
+## lm(formula = Q6 ~ Q5, data = WorkshopData)
+## 
+## Residuals:
+## ALL 2 residuals are 0: no residual degrees of freedom!
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)
+## (Intercept)      503         NA      NA       NA
+## Q5533           -103         NA      NA       NA
+## 
+## Residual standard error: NaN on 0 degrees of freedom
+## Multiple R-squared:      1,	Adjusted R-squared:    NaN 
+## F-statistic:   NaN on 1 and 0 DF,  p-value: NA
+```
+---
+# Let's prep our data for SNA
+
+We will need to prep two separate files...
+
+1. An edgelist
+2. A file of attributes of the nodes. 
+
+---
+# Let's make an edgelist
+
+### First, take a look at the data
+
+
+```r
+WorkshopData %&gt;%
+  select(ResponseId, Q7) %&gt;%
+  glimpse()
+```
+
+```
+## Rows: 2
+## Columns: 2
+## $ ResponseId &lt;chr&gt; "R_2PbT59J94Jaqzle", "R_1ImwOPxym34BevQ"
+## $ Q7         &lt;chr&gt; NA, NA
+```
+
+The data are organized so that we have the IDs of the people that are connected separated by commas.  It would be best if we could separate these into separate rows.
+
+
+---
+# Let's make an edgelist
+
+### Separate connection data so we have one row per interaction
+
+
+```r
+WorkshopData %&gt;%
+  select(ResponseId, Q7) %&gt;%
+  separate_rows(Q7) -&gt; EL
+
+head(EL)
+```
+
+```
+## # A tibble: 2 x 2
+##   ResponseId        Q7   
+##   &lt;chr&gt;             &lt;chr&gt;
+## 1 R_2PbT59J94Jaqzle &lt;NA&gt; 
+## 2 R_1ImwOPxym34BevQ &lt;NA&gt;
+```
+
+.font140[
+Since I want to use this Edgelist over and over, I will assign it to a new dataframe
+] 
+
+---
+# Let's make an edgelist
+
+The issue with the edgelist as a data frame is that the command we want to use needs the edgelist to be a matrix. So we need to convert.
+
+
+```r
+EL_M = as.matrix(EL)
+
+dim(EL_M)
+```
+
+```
+## [1] 2 2
+```
+
+---
+# Let's assemble our node attributes
+
+Before we can convert our Edgelist to a network, we should add in the attributes. 
+
+We have several candidate attributes:
+- Morning vs. Night
+- Dessert Type
+- Pages in book
+- Beverages (But this is much harder to deal with)
+
+We will develop a separate dataframe for the attributes. 
+
+
+```r
+WorkshopData %&gt;%
+  select(ResponseId, Q2, Q3, Q5) -&gt; AttributeDf
+```
+
+
+---
+# Let's assemble our node attributes
+
+Experience tells me that when you try to add attributes
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

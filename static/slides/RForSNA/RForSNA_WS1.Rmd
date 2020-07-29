@@ -20,6 +20,7 @@ library(emo) # load emoji package
 library(igraph)
 library(tidygraph)
 library(ggraph)
+library(here)
 
 ```
 
@@ -196,11 +197,7 @@ Seminal Articles
 
 ---
 # Important Takeaways from History
-
-class: center
-
-
-Two main camps
+.center[Two main camps
 
 --
 
@@ -208,18 +205,17 @@ Statistical -> hypothesis testing
 
 --
 
-Graph theoretic -> network models and simulation
+Graph theoretic -> network models and simulation]
  
 --
 
-.font250.[
+.font200.center[
 They often don't agree.
---
 
 There is often distain.
---
+
 They have different language, journals, conferences
-]
+]]
 ---
 # Network Data in R
 
@@ -239,7 +235,7 @@ A <- as_adjacency_matrix(gr)
 ]
 
 .pull-right[
-```{r ToyNetMatrix}
+```{r ToyNetMatrix, echo=FALSE}
 A
 ```
 ]
@@ -293,8 +289,7 @@ B
 
 ]
 ---
-
-## What you need to know about R?
+# What you need to know about R?
 
 - R is the programming language.
 - RStudio is the Integrated Development Environment (IDE)
@@ -303,6 +298,8 @@ B
     - The group of packages preloaded into R
 - Tidyverse
     - Family of packages that are designed with the theory that programming should be readable by humans.
+- igraph
+    - Package that is very useful for doing network analyses
 
 
 .font190[.center[Lets do this!]]
@@ -317,6 +314,7 @@ B
 - In RStudio -> File -> New Project
     - Select "Existing Directory" (Unless you know Git)
 - In RStudio -> File -> New File -> RMarkdown
+- Save this file in the folder titled "RForSNA"
 ]
 .pull-right[
 ![](img/NewProject.png)
@@ -352,13 +350,348 @@ igraph    tidygraph     here     ggraph
 
 To load tidyverse package...
 
-```{r InstallPackages, eval=FALSE}
-library(tidyverse)
+```{r LoadPackages, eval=FALSE}
+library(tidyverse) #tools for cleaning data 
+library(igraph)  #package for doing network analysis
+library(tidygraph) #tools for doing tidy networks
+library(here) #tools for project-based workflow
+library(ggraph) #plotting tools for networks
 ```
 
-Repeat this with the following packages:
+--
 
-igraph    tidygraph     here     ggraph
+Once you have done this, you will want to put include a code chunk with all of your libraries into your markdown document so that you don't have to type this every time. 
 
 ---
 # Let's get data into R. 
+
+I've sent you a csv file that includes the data for workshop 1, I hope you saved this in your folder titled "data". 
+
+If you have loaded the package "here" this should just work.  If you have not loaded the "here" package you will need to set the working directory. 
+
+Again, you will want to include this as a code chunk in your RMD file.  
+
+```{r ReadData, eval=FALSE}
+#This loads the csv and saves it as a dataframe titled WorkshopData
+
+WorkshopData <- read_csv(here("data", "DataForWorkshop1.csv"))
+
+```
+```{r ReadDataForReal, echo = FALSE}
+#This loads the csv and saves it as a dataframe titled WorkshopData
+
+WorkshopData <- read_csv(here("static/slides/RForSNA/data", "DataForWorkshop1.csv"))
+
+```
+
+---
+# Let's have a look at the data
+
+```{r GlimpseData}
+glimpse(WorkshopData)
+
+```
+
+---
+# Let's start cleaning up.
+
+## First, we don't need most of that data
+
+There is a ton of data there that doesn't make sense for us to keep around. 
+
+We will use the '%>%' (pipe) operator and the verb select
+
+```{r DeleteUnNeededVariables}
+WorkshopData %>%
+  select(ResponseId,Q2:Q7) -> WorkshopData
+
+glimpse(WorkshopData)
+```
+
+???
+Note the data are not numbers.
+---
+# Let's start cleaning up.
+
+## Now we should actually take a look at the data
+
+```{r DataHead}
+WorkshopData %>%
+  head()
+```
+--
+Hmm, it looks like there are two rows that are not actually data. 
+
+---
+# Let's start cleaning up.
+
+## Get rid of the two rows of data that are junk
+
+```{r RemoveTwoRows}
+WorkshopData %>%
+  slice(-(1:2))
+```
+
+--
+### Since this worked, we should now update our dataframe
+
+---
+# Let's start cleaning up.
+
+## Get rid of the two rows of data that are junk
+
+```{r RemoveTwoRowsAndSave}
+WorkshopData %>%
+  slice(-(1:2)) -> WorkshopData #<<
+
+WorkshopData
+```
+
+--
+### Full disclosure I had to google how to do this
+
+---
+# Let's check out the power of R
+
+.font200[.center[I am going to blast through these next slides, to show you some of the things that you might want to do with R]]
+
+
+---
+# Let's start visualizing the data
+
+## For categorical data, you might want to get some counts.
+
+Here is code to do this for the question about morning or night person.
+
+
+```{r MorningOrNight}
+
+WorkshopData %>%
+  select(Q2) %>%  #<<
+  group_by(Q2) %>% #<<
+  tally() 
+
+
+```
+
+
+---
+# Let's start visualizing the data
+
+## For categorical data, you might want to get a histogram.
+
+Here is code to do this for the favorite dessert type.
+
+.pull-left[
+```{r DessertType}
+
+WorkshopData %>%
+  select(Q3) %>%
+  group_by(Q3) %>% 
+  tally()  
+
+```
+]
+.pull-right[
+```{r DessertTypeHist}
+
+WorkshopData %>%
+  select(Q3) %>%
+  ggplot(aes(y = Q3)) + 
+  geom_bar()
+
+```
+]
+
+---
+# Let's look at some quantitative data
+.pull-left[
+### First, let's summarize the reading data.
+
+```{r SummarizeBook}
+
+WorkshopData %>%
+  select(Q5) %>%
+  summarize(Ave = mean(Q5), 
+            SD = sd(Q5))
+
+```
+#### If we just run this we get an error message. 
+* It is weird that sd will run, but mean will not. 
+
+]
+
+.pull-right[
+### Convert to numeric
+
+(mutate is a verb that is really useful!)
+
+```{r SummarizeBookNum}
+
+WorkshopData %>%
+  select(Q5) %>%
+  mutate(Q5 = as.numeric(Q5)) %>% #<<
+  summarize(Ave = mean(Q5, na.rm = TRUE), 
+            SD = sd(Q5, na.rm = TRUE))
+
+```
+]
+
+```{r ConvertToNumeric, echo=FALSE}
+
+#WorkshopData %>%
+#  mutate(Q5 = as.numeric(Q5),
+#         Q6 = as.numeric(Q6)) -> WorkshopData
+  
+```
+
+---
+# Let's investigate groups
+
+.pull-left[
+### Are morning people or night owls reading longer books?
+
+```{r ReadersTimeOfDay}
+
+WorkshopData %>%
+  select(Q2, Q5) %>%
+  mutate(Q5 = as.numeric(Q5)) %>%
+  group_by(Q2) %>%
+  summarize(Ave = mean(Q5, na.rm = TRUE), 
+            SD = sd(Q5, na.rm = TRUE))
+
+```
+]
+.pull-right[
+
+### We might want to use a boxplot to display these data
+
+```{r ReadersTimeOfDayBoxplot}
+
+#WorkshopData %>%
+#  select(Q2, Q5) %>%
+#  mutate(Q5 = as.numeric(Q5)) %>%
+#  group_by(Q2) %>%
+#  boxplot()
+
+```
+]
+
+---
+# Let's look at readers vs. blueberries
+
+### Is there a relationship between length of book and estimates on number of blueberries?
+
+.pull-left[
+Could do a scatter plot
+```{r ScatterPlot, fig.show= 'hide'}
+
+WorkshopData %>%
+  select(Q5:Q6) %>%
+  mutate(Q5 = as.numeric(Q5), Q6 = as.numeric(Q6)) %>%
+  ggplot(aes(x = Q5, y = Q6)) +
+  geom_point()
+
+```
+
+]
+.pull-right[
+```{r ref.label= 'ScatterPlot', echo=FALSE}
+
+```
+
+]
+
+---
+# Let's look at readers vs. blueberries
+
+### Is there a relationship between length of book and estimates on number of blueberries?
+
+### Or you could do a linear model
+
+```{r LinearModel}
+
+summary(lm(Q6 ~ Q5, data = WorkshopData))
+
+```
+---
+# Let's prep our data for SNA
+
+We will need to prep two separate files...
+
+1. An edgelist
+2. A file of attributes of the nodes. 
+
+---
+# Let's make an edgelist
+
+### First, take a look at the data
+
+```{r GlimpseQ7}
+
+WorkshopData %>%
+  select(ResponseId, Q7) %>%
+  glimpse()
+
+```
+
+The data are organized so that we have the IDs of the people that are connected separated by commas.  It would be best if we could separate these into separate rows.
+
+
+---
+# Let's make an edgelist
+
+### Separate connection data so we have one row per interaction
+
+```{r SeparateQ7}
+
+WorkshopData %>%
+  select(ResponseId, Q7) %>%
+  separate_rows(Q7) -> EL
+
+head(EL)
+
+```
+
+.font140[
+Since I want to use this Edgelist over and over, I will assign it to a new dataframe
+] 
+
+---
+# Let's make an edgelist
+
+The issue with the edgelist as a data frame is that the command we want to use needs the edgelist to be a matrix. So we need to convert.
+
+```{r ConvertEdgelistToMatrix}
+
+EL_M = as.matrix(EL)
+
+dim(EL_M)
+
+```
+
+---
+# Let's assemble our node attributes
+
+Before we can convert our Edgelist to a network, we should add in the attributes. 
+
+We have several candidate attributes:
+- Morning vs. Night
+- Dessert Type
+- Pages in book
+- Beverages (But this is much harder to deal with)
+
+We will develop a separate dataframe for the attributes. 
+
+```{r Attributes}
+WorkshopData %>%
+  select(ResponseId, Q2, Q3, Q5) -> AttributeDf
+```
+
+
+---
+# Let's assemble our node attributes
+
+Experience tells me that when you try to add attributes
+
+
