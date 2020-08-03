@@ -380,7 +380,7 @@ WorkshopData <- read_csv(here("data", "DataForWorkshop1.csv"))
 ```{r ReadDataForReal, echo = FALSE}
 #This loads the csv and saves it as a dataframe titled WorkshopData
 
-WorkshopData <- read_csv(here("static/slides/RForSNA/data", "DataForWorkshop1.csv"))
+WorkshopData <- read_csv(here("static/slides/RForSNA/data", "DataForWorkshop1-2.csv"))
 
 ```
 
@@ -391,6 +391,11 @@ WorkshopData <- read_csv(here("static/slides/RForSNA/data", "DataForWorkshop1.cs
 glimpse(WorkshopData)
 
 ```
+
+
+
+
+
 
 ---
 # Let's start cleaning up.
