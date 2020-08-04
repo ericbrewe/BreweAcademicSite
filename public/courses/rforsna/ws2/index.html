@@ -28,11 +28,10 @@
   
     
   
-  <meta name="description" content="In order to prepare for workshop one - I have five things that I need you to do:
-Install R and RStudio on your computer. R can be downloaded from a link on this website https://www.r-project.org/ RStudio can be downloaded here: https://rstudio.com/products/rstudio/download/  Set up a series of folders (on your computer or Dropbox / Box.com- don’t use Google Drive or OneDrive): The top level folder should be called “RForSNA” Inside the folder “RForSNA” there should be two folders called “data” and “plots”  I will send you a survey on Survey Monkey.">
+  <meta name="description" content="Workshop #2 is going to build on the results of WS1, but we are actually going to analyze the network that we built in workshop #1. Also, I expect there will be a good deal more time available for discussion and questions. We will start with the network we made with attributes. We don’t need to build the nework from scratch, instead I took the network we had and stored it as a .">
 
   
-  <link rel="alternate" hreflang="en-us" href="/courses/rforsna/ws1/">
+  <link rel="alternate" hreflang="en-us" href="/courses/rforsna/ws2/">
 
   
 
@@ -255,7 +254,7 @@ Install R and RStudio on your computer. R can be downloaded from a link on this 
   <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="/courses/rforsna/ws1/">
+  <link rel="canonical" href="/courses/rforsna/ws2/">
 
   
   
@@ -272,10 +271,9 @@ Install R and RStudio on your computer. R can be downloaded from a link on this 
   <meta property="twitter:creator" content="@ericbrewe">
   
   <meta property="og:site_name" content="Eric Brewe Academic">
-  <meta property="og:url" content="/courses/rforsna/ws1/">
-  <meta property="og:title" content="Workshop 1 | Eric Brewe Academic">
-  <meta property="og:description" content="In order to prepare for workshop one - I have five things that I need you to do:
-Install R and RStudio on your computer. R can be downloaded from a link on this website https://www.r-project.org/ RStudio can be downloaded here: https://rstudio.com/products/rstudio/download/  Set up a series of folders (on your computer or Dropbox / Box.com- don’t use Google Drive or OneDrive): The top level folder should be called “RForSNA” Inside the folder “RForSNA” there should be two folders called “data” and “plots”  I will send you a survey on Survey Monkey."><meta property="og:image" content="img/map[gravatar:%!s(bool=false) shape:circle]">
+  <meta property="og:url" content="/courses/rforsna/ws2/">
+  <meta property="og:title" content="Workshop 2 | Eric Brewe Academic">
+  <meta property="og:description" content="Workshop #2 is going to build on the results of WS1, but we are actually going to analyze the network that we built in workshop #1. Also, I expect there will be a good deal more time available for discussion and questions. We will start with the network we made with attributes. We don’t need to build the nework from scratch, instead I took the network we had and stored it as a ."><meta property="og:image" content="img/map[gravatar:%!s(bool=false) shape:circle]">
   <meta property="twitter:image" content="img/map[gravatar:%!s(bool=false) shape:circle]"><meta property="og:locale" content="en-us">
   
     
@@ -300,7 +298,7 @@ Install R and RStudio on your computer. R can be downloaded from a link on this 
 
 
 
-  <title>Workshop 1 | Eric Brewe Academic</title>
+  <title>Workshop 2 | Eric Brewe Academic</title>
 
 </head>
 
@@ -607,11 +605,11 @@ Install R and RStudio on your computer. R can be downloaded from a link on this 
     <a class="docs-toc-link" href="/courses/rforsna/ws1/">Workshops</a>
     <ul class="nav docs-sidenav">
       
-      <li class="active">
+      <li >
         <a href="/courses/rforsna/ws1/">Workshop 1</a>
       </li>
       
-      <li >
+      <li class="active">
         <a href="/courses/rforsna/ws2/">Workshop 2</a>
       </li>
       
@@ -632,30 +630,75 @@ Install R and RStudio on your computer. R can be downloaded from a link on this 
       <article class="article">
 
         <div class="docs-article-container">
-          <h1>Workshop 1</h1>
+          <h1>Workshop 2</h1>
 
           <div class="article-style">
             
 
 
-<p>In order to prepare for workshop one - I have five things that I need you to do:</p>
-<ol style="list-style-type: decimal">
-<li>Install R and RStudio on your computer.
-<ol style="list-style-type: lower-alpha">
-<li>R can be downloaded from a link on this website <a href="https://www.r-project.org/" class="uri">https://www.r-project.org/</a></li>
-<li>RStudio can be downloaded here: <a href="https://rstudio.com/products/rstudio/download/" class="uri">https://rstudio.com/products/rstudio/download/</a></li>
-</ol></li>
-<li>Set up a series of folders (on your computer or Dropbox / Box.com- don’t use Google Drive or OneDrive):
-<ol style="list-style-type: lower-alpha">
-<li>The top level folder should be called “RForSNA”</li>
-<li>Inside the folder “RForSNA” there should be two folders called “data” and “plots”</li>
-</ol></li>
-<li>I will send you a survey on Survey Monkey. I need you to answer the survey</li>
-<li>Before the first workshop, I will email you a few csv files, please download each and save in the folder titled “data”</li>
-<li>Let me know by email if you have trouble with steps 1-4.</li>
-</ol>
-<p>The slides for Workshop #1 can be found here:
-<iframe src="https://ericbrewe.com/slides/rforsna/rforsna_ws1.html#1" width="672" height="400px"></iframe></p>
+<p>Workshop #2 is going to build on the results of WS1, but we are actually going to analyze the network that we built in workshop #1. Also, I expect there will be a good deal more time available for discussion and questions. We will start with the network we made with attributes. We don’t need to build the nework from scratch, instead I took the network we had and stored it as a .RDS file. RDS is the native structure for R.</p>
+<p>In workshop #2 we will be looking at centrality metrics and network properties of individual nodes. For workshop #2 to work out ok, here are the things you will need to be able to do, which we covered in workshop #1.</p>
+<ul>
+<li>Install and load the following packages:
+<ul>
+<li>tidyverse</li>
+<li>tidygraph</li>
+<li>ggraph</li>
+<li>igraph</li>
+<li>here</li>
+</ul></li>
+<li>Read in an R object.</li>
+</ul>
+<p>In case you are interested, here are a few resources that I found useful for doing
+SNA:</p>
+<div id="reading-just-some-starting-points" class="section level1">
+<h1>Reading (just some starting points)</h1>
+<ul>
+<li>Christina Prell, Social Network Analysis: History, Theory and Methodology, Sage, 2011.</li>
+<li>Peter J. Carrington, John Scott, and Stanley Wasserman, Models and Methods in Social Network Analysis, Cambridge University Press, 2005.</li>
+<li>Stanley Wasserman and Katherine Faust, Social Network Analysis: Methods and Applications, Cambridge University Press, 1994.</li>
+<li>Mark E.J. Newman, Networks: An Introduction, Oxford University Press, 2010.</li>
+<li>Albert-Lazlo Barabasi, Network Science, freely available through Creative Commons license. <a href="http://barabasi.com/networksciencebook/" class="uri">http://barabasi.com/networksciencebook/</a></li>
+<li>Daniel Z. Grunspan, Benjamin L. Wiggins, and Steven M. Goodreau. (2014). ”Understanding classrooms through social network analysis: A primer for social network analysis in education research” CBE-Life Science Education 13(2) p. 167-178.http://www.lifescied.org/content/13/2/167.</li>
+<li>Katherine Ognyanova, (2015) ”Network Visualization with R”, <a href="http://www.kateto.net/wordpress/wp-content/uploads/2015/06/Polnet%202015%20Network%20Viz%20Tutorial%20-%20Ognyanova.pdf" class="uri">http://www.kateto.net/wordpress/wp-content/uploads/2015/06/Polnet%202015%20Network%20Viz%20Tutorial%20-%20Ognyanova.pdf</a></li>
+<li>Eric Brewe (2018) “The Roles of Engagement: Network Analysis in Physics Education Research” Getting Started in Physics Education Research <a href="https://www.compadre.org/Repository/document/ServeFile.cfm?ID=14725&amp;DocID=4886" class="uri">https://www.compadre.org/Repository/document/ServeFile.cfm?ID=14725&amp;DocID=4886</a></li>
+</ul>
+</div>
+<div id="societies-journals-and-meetings" class="section level1">
+<h1>Societies, Journals, and Meetings</h1>
+<div id="professional-societies" class="section level2">
+<h2>Professional Societies</h2>
+<ul>
+<li>International Network of Social Network Analysis - Much more from the Social Network, social science side</li>
+<li>Network Science Society - The professional society that hosts NetSci - a premier network analysis conference, much more from the graph/theoretic world</li>
+</ul>
+</div>
+<div id="journals" class="section level2">
+<h2>Journals</h2>
+<ul>
+<li>Network Science - Cambridge Press Journal focused on Network Science - much more graph theoretic</li>
+<li>Connections - The journal of INSNA - much more focused on social network analysis &amp; applications.</li>
+<li>Social Networks - An Elsevier Journal focused on SNA - much more statistical</li>
+</ul>
+</div>
+<div id="meetings" class="section level2">
+<h2>Meetings</h2>
+<ul>
+<li>Sunbelt - Conference of INSNA</li>
+<li>NetSci - Conference of Network Science Society</li>
+<li>CompleNet - International Conference on Complex Networks</li>
+</ul>
+</div>
+</div>
+<div id="datasets" class="section level1">
+<h1>Datasets</h1>
+<ul>
+<li>Colorado Index of Complex Networks - Maintained by Aaron Clauset - very high quality datasets</li>
+<li>Stanford Large Network Datasets - Maintained by Stanford - a list, not necessarily as clean, but a large list</li>
+</ul>
+<p>The slides for Workshop #2 can be found here:
+<iframe src="https://ericbrewe.com/slides/rforsna/rforsna_ws2.html#1" width="672" height="400px"></iframe></p>
+</div>
 
           </div>
 
@@ -671,9 +714,10 @@ Install R and RStudio on your computer. R can be downloaded from a link on this 
   
   
   <div class="post-nav-item">
-    <div class="meta-nav">Next</div>
-    <a href="/courses/rforsna/ws2/" rel="prev">Workshop 2</a>
+    <div class="meta-nav">Previous</div>
+    <a href="/courses/rforsna/ws1/" rel="next">Workshop 1</a>
   </div>
+  
   
 </div>
 
@@ -694,7 +738,7 @@ Install R and RStudio on your computer. R can be downloaded from a link on this 
   
 
 <p class="edit-page">
-  <a href="https://github.com/gcushen/hugo-academic/edit/master/content/courses/RForSNA/WS1.html">
+  <a href="https://github.com/gcushen/hugo-academic/edit/master/content/courses/RForSNA/WS2.html">
     <i class="fas fa-pen pr-2"></i>Edit this page
   </a>
 </p>
