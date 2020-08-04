@@ -778,6 +778,7 @@ summary(gr)
 - Color (good for grouping)
 - Shape (good for grouping)
 - Size (good for numeric)
+- Text (good for labels)
 - Layout
 
 ```{r PlotGr1}
@@ -790,15 +791,62 @@ ggraph(gr) +
 # Let's make our plots look a bit better
 
 ### We can add various elements to our plot
-- Layout - lots of options
+- Layout, there are lots of options
+    -Try circle?
 
-```{r PlotGr1}
-ggraph(gr, layout = "circle") +
+```{r PlotGr2}
+ggraph(gr, layout = 'circle') +
   geom_edge_link() +
-  geom_node_point(aes)
+  geom_node_point()
+```
+---
+# Let's make our plots look a bit better
+
+### We can add various elements to our plot
+- Shape, we can make night owls one shape and morning people a differnt shape...
+
+```{r PlotGr3}
+ggraph(gr, layout = 'circle') +
+  geom_edge_link() +
+  geom_node_point(aes(shape = AMPM))
+```
+#### Not great
+
+---
+
+# Let's make our plots look a bit better
+
+### We can add various elements to our plot
+- Color, lets use the dessert type to define a color
+
+```{r PlotGr4}
+ggraph(gr, layout = 'circle') +
+  geom_edge_link() +
+  geom_node_point(aes(color = Dessert))
 ```
 
+---
 
+# Let's make our plots look a bit better
 
+### We can add various elements to our plot
+- Size, lets make the nodes different sizes based on the number of pages in the last book read.
 
+```{r PlotGr5}
+ggraph(gr, layout = 'circle') +
+  geom_edge_link() +
+  geom_node_point(aes(size = Pages))
+```
 
+---
+
+# Let's make our plots look a bit better
+
+### We can add various elements to our plot
+- Let's jam them all together!
+
+```{r PlotGr6}
+ggraph(gr, layout = 'circle') +
+  geom_edge_link() +
+  geom_node_point(aes(shape = AMPM, color = Dessert, size = Pages))
+```

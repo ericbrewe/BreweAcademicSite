@@ -251,23 +251,23 @@ They have different language, journals, conferences
 
 ```
 ## [[1]]
-## + 4/5 edges from 51926b5:
+## + 4/5 edges from 4cdde7a:
 ## [1] 1--2 1--3 1--4 1--5
 ## 
 ## [[2]]
-## + 1/5 edge from 51926b5:
+## + 1/5 edge from 4cdde7a:
 ## [1] 1--2
 ## 
 ## [[3]]
-## + 1/5 edge from 51926b5:
+## + 1/5 edge from 4cdde7a:
 ## [1] 1--3
 ## 
 ## [[4]]
-## + 2/5 edges from 51926b5:
+## + 2/5 edges from 4cdde7a:
 ## [1] 1--4 4--5
 ## 
 ## [[5]]
-## + 2/5 edges from 51926b5:
+## + 2/5 edges from 4cdde7a:
 ## [1] 1--5 4--5
 ```
 ]
@@ -404,24 +404,24 @@ glimpse(WorkshopData)
 ```
 ## Rows: 34
 ## Columns: 18
-## $ ID                      [3m[90m&lt;dbl&gt;[39m[23m 5106, 6633, 7599, 4425, 2495, 6355, 8810, 3877, 1554, …
-## $ StartDate               [3m[90m&lt;dttm&gt;[39m[23m 2020-07-30 12:15:20, 2020-07-30 12:18:50, 2020-07-30 …
-## $ EndDate                 [3m[90m&lt;dttm&gt;[39m[23m 2020-07-30 12:18:59, 2020-07-30 12:20:21, 2020-07-30 …
-## $ Status                  [3m[90m&lt;chr&gt;[39m[23m "IP Address", "IP Address", "IP Address", "IP Address"…
-## $ Progress                [3m[90m&lt;dbl&gt;[39m[23m 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100,…
-## $ `Duration (in seconds)` [3m[90m&lt;dbl&gt;[39m[23m 219, 91, 137, 97, 127, 233, 97, 144, 103, 231, 216, 42…
-## $ Finished                [3m[90m&lt;lgl&gt;[39m[23m TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, …
-## $ RecordedDate            [3m[90m&lt;dttm&gt;[39m[23m 2020-07-30 12:18:59, 2020-07-30 12:20:22, 2020-07-30 …
-## $ SurveyID                [3m[90m&lt;chr&gt;[39m[23m "R_ssTGHZwy5EpQaNX", "R_2fv9VCk0tjdrDOr", "R_1jcQt2E9J…
-## $ ExternalReference       [3m[90m&lt;lgl&gt;[39m[23m NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA…
-## $ DistributionChannel     [3m[90m&lt;chr&gt;[39m[23m "email", "email", "email", "email", "email", "email", …
-## $ UserLanguage            [3m[90m&lt;chr&gt;[39m[23m "EN", "EN", "EN", "EN", "EN", "EN", "EN", "EN", "EN", …
-## $ Q2                      [3m[90m&lt;chr&gt;[39m[23m "morning person.", "morning person.", "night owl.", "m…
-## $ Q3                      [3m[90m&lt;chr&gt;[39m[23m "Brownies", "I don't care for dessert.", "Ice Cream", …
-## $ Q4                      [3m[90m&lt;chr&gt;[39m[23m "Coffee,Water,The tears of my enemies", "Coffee,Tea,Wa…
-## $ Q5                      [3m[90m&lt;dbl&gt;[39m[23m 350, 12, 300, 0, 264, 4, 289, 550, 349, 300, 424, 426,…
-## $ Q6                      [3m[90m&lt;dbl&gt;[39m[23m 350, 56, 5000, 50, 286, 250, 76, 185, 108, 220, 500, 3…
-## $ `as.character(Q5)`      [3m[90m&lt;dbl&gt;[39m[23m 350, 12, 300, 0, 264, 4, 289, 550, 349, 300, 424, 426,…
+## $ ID                      &lt;dbl&gt; 5106, 6633, 7599, 4425, 2495, 6355, 8810, 387…
+## $ StartDate               &lt;dttm&gt; 2020-07-30 12:15:20, 2020-07-30 12:18:50, 20…
+## $ EndDate                 &lt;dttm&gt; 2020-07-30 12:18:59, 2020-07-30 12:20:21, 20…
+## $ Status                  &lt;chr&gt; "IP Address", "IP Address", "IP Address", "IP…
+## $ Progress                &lt;dbl&gt; 100, 100, 100, 100, 100, 100, 100, 100, 100, …
+## $ `Duration (in seconds)` &lt;dbl&gt; 219, 91, 137, 97, 127, 233, 97, 144, 103, 231…
+## $ Finished                &lt;lgl&gt; TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRU…
+## $ RecordedDate            &lt;dttm&gt; 2020-07-30 12:18:59, 2020-07-30 12:20:22, 20…
+## $ SurveyID                &lt;chr&gt; "R_ssTGHZwy5EpQaNX", "R_2fv9VCk0tjdrDOr", "R_…
+## $ ExternalReference       &lt;lgl&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…
+## $ DistributionChannel     &lt;chr&gt; "email", "email", "email", "email", "email", …
+## $ UserLanguage            &lt;chr&gt; "EN", "EN", "EN", "EN", "EN", "EN", "EN", "EN…
+## $ Q2                      &lt;chr&gt; "morning person.", "morning person.", "night …
+## $ Q3                      &lt;chr&gt; "Brownies", "I don't care for dessert.", "Ice…
+## $ Q4                      &lt;chr&gt; "Coffee,Water,The tears of my enemies", "Coff…
+## $ Q5                      &lt;dbl&gt; 350, 12, 300, 0, 264, 4, 289, 550, 349, 300, …
+## $ Q6                      &lt;dbl&gt; 350, 56, 5000, 50, 286, 250, 76, 185, 108, 22…
+## $ `as.character(Q5)`      &lt;dbl&gt; 350, 12, 300, 0, 264, 4, 289, 550, 349, 300, …
 ```
 
 
@@ -446,12 +446,12 @@ glimpse(WorkshopData)
 ```
 ## Rows: 34
 ## Columns: 6
-## $ ID [3m[90m&lt;dbl&gt;[39m[23m 5106, 6633, 7599, 4425, 2495, 6355, 8810, 3877, 1554, 7743, 8353, 2921, 732…
-## $ Q2 [3m[90m&lt;chr&gt;[39m[23m "morning person.", "morning person.", "night owl.", "morning person.", "mor…
-## $ Q3 [3m[90m&lt;chr&gt;[39m[23m "Brownies", "I don't care for dessert.", "Ice Cream", "I don't care for des…
-## $ Q4 [3m[90m&lt;chr&gt;[39m[23m "Coffee,Water,The tears of my enemies", "Coffee,Tea,Water,Milk", "Fruit Jui…
-## $ Q5 [3m[90m&lt;dbl&gt;[39m[23m 350, 12, 300, 0, 264, 4, 289, 550, 349, 300, 424, 426, 231, 290, 1000, 250,…
-## $ Q6 [3m[90m&lt;dbl&gt;[39m[23m 350, 56, 5000, 50, 286, 250, 76, 185, 108, 220, 500, 350, 412, 1135, 300, 3…
+## $ ID &lt;dbl&gt; 5106, 6633, 7599, 4425, 2495, 6355, 8810, 3877, 1554, 7743, 8353, …
+## $ Q2 &lt;chr&gt; "morning person.", "morning person.", "night owl.", "morning perso…
+## $ Q3 &lt;chr&gt; "Brownies", "I don't care for dessert.", "Ice Cream", "I don't car…
+## $ Q4 &lt;chr&gt; "Coffee,Water,The tears of my enemies", "Coffee,Tea,Water,Milk", "…
+## $ Q5 &lt;dbl&gt; 350, 12, 300, 0, 264, 4, 289, 550, 349, 300, 424, 426, 231, 290, 1…
+## $ Q6 &lt;dbl&gt; 350, 56, 5000, 50, 286, 250, 76, 185, 108, 220, 500, 350, 412, 113…
 ```
 
 ???
@@ -469,14 +469,14 @@ WorkshopData %&gt;%
 
 ```
 ## # A tibble: 6 x 6
-##      ID Q2             Q3                     Q4                                 Q5    Q6
-##   &lt;dbl&gt; &lt;chr&gt;          &lt;chr&gt;                  &lt;chr&gt;                           &lt;dbl&gt; &lt;dbl&gt;
-## 1  5106 morning perso… Brownies               Coffee,Water,The tears of my e…   350   350
-## 2  6633 morning perso… I don't care for dess… Coffee,Tea,Water,Milk              12    56
-## 3  7599 night owl.     Ice Cream              Fruit Juice,Tea,Water,Fizzy Wa…   300  5000
-## 4  4425 morning perso… I don't care for dess… Fruit Juice,Coffee,Water            0    50
-## 5  2495 morning perso… Brownies               Coffee,Water                      264   286
-## 6  6355 night owl.     Ice Cream              Fruit Juice,Tea,Water               4   250
+##      ID Q2            Q3                  Q4                            Q5    Q6
+##   &lt;dbl&gt; &lt;chr&gt;         &lt;chr&gt;               &lt;chr&gt;                      &lt;dbl&gt; &lt;dbl&gt;
+## 1  5106 morning pers… Brownies            Coffee,Water,The tears of…   350   350
+## 2  6633 morning pers… I don't care for d… Coffee,Tea,Water,Milk         12    56
+## 3  7599 night owl.    Ice Cream           Fruit Juice,Tea,Water,Fiz…   300  5000
+## 4  4425 morning pers… I don't care for d… Fruit Juice,Coffee,Water       0    50
+## 5  2495 morning pers… Brownies            Coffee,Water                 264   286
+## 6  6355 night owl.    Ice Cream           Fruit Juice,Tea,Water          4   250
 ```
 
 
@@ -634,9 +634,9 @@ WorkshopData %&gt;%
 ##  8  3877      0     1                1     1     1             0             1
 ##  9  1554      0     1                1     0     0             1             0
 ## 10  7743      0     1                0     1     1             1             1
-## # … with 24 more rows, and 3 more variables: `A delicious 12 year single malt scotch
-## #   from the Scottish lowlands with notes of apple` &lt;dbl&gt;, ` cinnamon` &lt;dbl&gt;, ` and
-## #   dried fruit served with a single ice cube` &lt;dbl&gt;
+## # … with 24 more rows, and 3 more variables: `A delicious 12 year single malt
+## #   scotch from the Scottish lowlands with notes of apple` &lt;dbl&gt;, `
+## #   cinnamon` &lt;dbl&gt;, ` and dried fruit served with a single ice cube` &lt;dbl&gt;
 ```
 
 
@@ -949,7 +949,7 @@ summary(gr)
 ```
 
 ```
-## IGRAPH f803900 DN-- 60 101 -- 
+## IGRAPH df87346 DN-- 60 101 -- 
 ## + attr: name (v/c), AMPM (v/c), Dessert (v/c), Pages (v/n)
 ```
 ---
@@ -984,6 +984,102 @@ summary(gr)
 ```
 
 ---
+# Let's make our plots look a bit better
+
+### We can add various elements to our plot
+- Color (good for grouping)
+- Shape (good for grouping)
+- Size (good for numeric)
+- Text (good for labels)
+- Layout
+
+
+```r
+ggraph(gr) +
+  geom_edge_link() +
+  geom_node_point()
+```
+
+![](RForSNA_WS1_files/figure-html/PlotGr1-1.png)&lt;!-- --&gt;
+
+---
+# Let's make our plots look a bit better
+
+### We can add various elements to our plot
+- Layout, there are lots of options
+    -Try circle?
+
+
+```r
+ggraph(gr, layout = 'circle') +
+  geom_edge_link() +
+  geom_node_point()
+```
+
+![](RForSNA_WS1_files/figure-html/PlotGr2-1.png)&lt;!-- --&gt;
+---
+# Let's make our plots look a bit better
+
+### We can add various elements to our plot
+- Shape, we can make night owls one shape and morning people a differnt shape...
+
+
+```r
+ggraph(gr, layout = 'circle') +
+  geom_edge_link() +
+  geom_node_point(aes(shape = AMPM))
+```
+
+![](RForSNA_WS1_files/figure-html/PlotGr3-1.png)&lt;!-- --&gt;
+#### Not great
+
+---
+
+# Let's make our plots look a bit better
+
+### We can add various elements to our plot
+- Color, lets use the dessert type to define a color
+
+
+```r
+ggraph(gr, layout = 'circle') +
+  geom_edge_link() +
+  geom_node_point(aes(color = Dessert))
+```
+
+![](RForSNA_WS1_files/figure-html/PlotGr4-1.png)&lt;!-- --&gt;
+
+---
+
+# Let's make our plots look a bit better
+
+### We can add various elements to our plot
+- Size, lets make the nodes different sizes based on the number of pages in the last book read.
+
+
+```r
+ggraph(gr, layout = 'circle') +
+  geom_edge_link() +
+  geom_node_point(aes(size = Pages))
+```
+
+![](RForSNA_WS1_files/figure-html/PlotGr5-1.png)&lt;!-- --&gt;
+
+---
+
+# Let's make our plots look a bit better
+
+### We can add various elements to our plot
+- Let's jam them all together!
+
+
+```r
+ggraph(gr, layout = 'circle') +
+  geom_edge_link() +
+  geom_node_point(aes(shape = AMPM, color = Dessert, size = Pages))
+```
+
+![](RForSNA_WS1_files/figure-html/PlotGr6-1.png)&lt;!-- --&gt;
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
