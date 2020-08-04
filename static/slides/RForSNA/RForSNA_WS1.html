@@ -15,7 +15,7 @@ class: center, middle, inverse, title-slide
 # R For SNA
 ## Workshop 1
 ### Eric Brewe <br> Associate Professor of Physics at Drexel University <br>
-### 4 August 2020, last update: 2020-07-29
+### 4 August 2020, last update: 2020-08-03
 
 ---
 
@@ -195,7 +195,7 @@ Seminal Articles
 
 ---
 # Important Takeaways from History
-.center[Two main camps
+Two main camps
 
 --
 
@@ -203,17 +203,17 @@ Statistical -&gt; hypothesis testing
 
 --
 
-Graph theoretic -&gt; network models and simulation]
+Graph theoretic -&gt; network models and simulation
  
 --
 
-.font200.center[
+.font150.center[
 They often don't agree.
 
 There is often distain.
 
 They have different language, journals, conferences
-]]
+]
 ---
 # Network Data in R
 
@@ -251,23 +251,23 @@ They have different language, journals, conferences
 
 ```
 ## [[1]]
-## + 4/5 edges from 4f1c792:
+## + 4/5 edges from 51926b5:
 ## [1] 1--2 1--3 1--4 1--5
 ## 
 ## [[2]]
-## + 1/5 edge from 4f1c792:
+## + 1/5 edge from 51926b5:
 ## [1] 1--2
 ## 
 ## [[3]]
-## + 1/5 edge from 4f1c792:
+## + 1/5 edge from 51926b5:
 ## [1] 1--3
 ## 
 ## [[4]]
-## + 2/5 edges from 4f1c792:
+## + 2/5 edges from 51926b5:
 ## [1] 1--4 4--5
 ## 
 ## [[5]]
-## + 2/5 edges from 4f1c792:
+## + 2/5 edges from 51926b5:
 ## [1] 1--5 4--5
 ```
 ]
@@ -388,8 +388,9 @@ Again, you will want to include this as a code chunk in your RMD file.
 ```r
 #This loads the csv and saves it as a dataframe titled WorkshopData
 
-WorkshopData &lt;- read_csv(here("data", "DataForWorkshop1.csv"))
+WorkshopData &lt;- read_csv(here("data", "AnonSurveyData.csv"))
 ```
+
 
 
 ---
@@ -401,32 +402,29 @@ glimpse(WorkshopData)
 ```
 
 ```
-## Rows: 4
-## Columns: 23
-## $ StartDate               &lt;chr&gt; "Start Date", "{\"ImportId\":\"startDate\",\"timeZone\…
-## $ EndDate                 &lt;chr&gt; "End Date", "{\"ImportId\":\"endDate\",\"timeZone\":\"…
-## $ Status                  &lt;chr&gt; "Response Type", "{\"ImportId\":\"status\"}", "Survey …
-## $ IPAddress               &lt;chr&gt; "IP Address", "{\"ImportId\":\"ipAddress\"}", NA, NA
-## $ Progress                &lt;chr&gt; "Progress", "{\"ImportId\":\"progress\"}", "100", "100"
-## $ `Duration (in seconds)` &lt;chr&gt; "Duration (in seconds)", "{\"ImportId\":\"duration\"}"…
-## $ Finished                &lt;chr&gt; "Finished", "{\"ImportId\":\"finished\"}", "True", "Tr…
-## $ RecordedDate            &lt;chr&gt; "Recorded Date", "{\"ImportId\":\"recordedDate\",\"tim…
-## $ ResponseId              &lt;chr&gt; "Response ID", "{\"ImportId\":\"_recordId\"}", "R_2PbT…
-## $ RecipientLastName       &lt;chr&gt; "Recipient Last Name", "{\"ImportId\":\"recipientLastN…
-## $ RecipientFirstName      &lt;chr&gt; "Recipient First Name", "{\"ImportId\":\"recipientFirs…
-## $ RecipientEmail          &lt;chr&gt; "Recipient Email", "{\"ImportId\":\"recipientEmail\"}"…
-## $ ExternalReference       &lt;chr&gt; "External Data Reference", "{\"ImportId\":\"externalDa…
-## $ LocationLatitude        &lt;chr&gt; "Location Latitude", "{\"ImportId\":\"locationLatitude…
-## $ LocationLongitude       &lt;chr&gt; "Location Longitude", "{\"ImportId\":\"locationLongitu…
-## $ DistributionChannel     &lt;chr&gt; "Distribution Channel", "{\"ImportId\":\"distributionC…
-## $ UserLanguage            &lt;chr&gt; "User Language", "{\"ImportId\":\"userLanguage\"}", "E…
-## $ Q2                      &lt;chr&gt; "I am more of a", "{\"ImportId\":\"QID4\"}", "morning …
-## $ Q3                      &lt;chr&gt; "My favorite dessert is", "{\"ImportId\":\"QID2\"}", "…
-## $ Q4                      &lt;chr&gt; "Which of the following beverages have you had this we…
-## $ Q5                      &lt;chr&gt; "How many pages were in the last book you read?", "{\"…
-## $ Q6                      &lt;chr&gt; "Estimate the number of blueberries in this tub of blu…
-## $ Q7                      &lt;chr&gt; "Below are a list of participants in this workshop. Pr…
+## Rows: 34
+## Columns: 18
+## $ ID                      [3m[90m&lt;dbl&gt;[39m[23m 5106, 6633, 7599, 4425, 2495, 6355, 8810, 3877, 1554, …
+## $ StartDate               [3m[90m&lt;dttm&gt;[39m[23m 2020-07-30 12:15:20, 2020-07-30 12:18:50, 2020-07-30 …
+## $ EndDate                 [3m[90m&lt;dttm&gt;[39m[23m 2020-07-30 12:18:59, 2020-07-30 12:20:21, 2020-07-30 …
+## $ Status                  [3m[90m&lt;chr&gt;[39m[23m "IP Address", "IP Address", "IP Address", "IP Address"…
+## $ Progress                [3m[90m&lt;dbl&gt;[39m[23m 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100,…
+## $ `Duration (in seconds)` [3m[90m&lt;dbl&gt;[39m[23m 219, 91, 137, 97, 127, 233, 97, 144, 103, 231, 216, 42…
+## $ Finished                [3m[90m&lt;lgl&gt;[39m[23m TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, …
+## $ RecordedDate            [3m[90m&lt;dttm&gt;[39m[23m 2020-07-30 12:18:59, 2020-07-30 12:20:22, 2020-07-30 …
+## $ SurveyID                [3m[90m&lt;chr&gt;[39m[23m "R_ssTGHZwy5EpQaNX", "R_2fv9VCk0tjdrDOr", "R_1jcQt2E9J…
+## $ ExternalReference       [3m[90m&lt;lgl&gt;[39m[23m NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA…
+## $ DistributionChannel     [3m[90m&lt;chr&gt;[39m[23m "email", "email", "email", "email", "email", "email", …
+## $ UserLanguage            [3m[90m&lt;chr&gt;[39m[23m "EN", "EN", "EN", "EN", "EN", "EN", "EN", "EN", "EN", …
+## $ Q2                      [3m[90m&lt;chr&gt;[39m[23m "morning person.", "morning person.", "night owl.", "m…
+## $ Q3                      [3m[90m&lt;chr&gt;[39m[23m "Brownies", "I don't care for dessert.", "Ice Cream", …
+## $ Q4                      [3m[90m&lt;chr&gt;[39m[23m "Coffee,Water,The tears of my enemies", "Coffee,Tea,Wa…
+## $ Q5                      [3m[90m&lt;dbl&gt;[39m[23m 350, 12, 300, 0, 264, 4, 289, 550, 349, 300, 424, 426,…
+## $ Q6                      [3m[90m&lt;dbl&gt;[39m[23m 350, 56, 5000, 50, 286, 250, 76, 185, 108, 220, 500, 3…
+## $ `as.character(Q5)`      [3m[90m&lt;dbl&gt;[39m[23m 350, 12, 300, 0, 264, 4, 289, 550, 349, 300, 424, 426,…
 ```
+
+
 
 ---
 # Let's start cleaning up.
@@ -440,21 +438,20 @@ We will use the '%&gt;%' (pipe) operator and the verb select
 
 ```r
 WorkshopData %&gt;%
-  select(ResponseId,Q2:Q7) -&gt; WorkshopData
+* select(ID,Q2:Q6) -&gt; WorkshopData
 
 glimpse(WorkshopData)
 ```
 
 ```
-## Rows: 4
-## Columns: 7
-## $ ResponseId &lt;chr&gt; "Response ID", "{\"ImportId\":\"_recordId\"}", "R_2PbT59J94Jaqzle",…
-## $ Q2         &lt;chr&gt; "I am more of a", "{\"ImportId\":\"QID4\"}", "morning person.", "ni…
-## $ Q3         &lt;chr&gt; "My favorite dessert is", "{\"ImportId\":\"QID2\"}", "Brown Butter …
-## $ Q4         &lt;chr&gt; "Which of the following beverages have you had this week (select al…
-## $ Q5         &lt;chr&gt; "How many pages were in the last book you read?", "{\"ImportId\":\"…
-## $ Q6         &lt;chr&gt; "Estimate the number of blueberries in this tub of blueberries. Ple…
-## $ Q7         &lt;chr&gt; "Below are a list of participants in this workshop. Prior to this w…
+## Rows: 34
+## Columns: 6
+## $ ID [3m[90m&lt;dbl&gt;[39m[23m 5106, 6633, 7599, 4425, 2495, 6355, 8810, 3877, 1554, 7743, 8353, 2921, 732…
+## $ Q2 [3m[90m&lt;chr&gt;[39m[23m "morning person.", "morning person.", "night owl.", "morning person.", "mor…
+## $ Q3 [3m[90m&lt;chr&gt;[39m[23m "Brownies", "I don't care for dessert.", "Ice Cream", "I don't care for des…
+## $ Q4 [3m[90m&lt;chr&gt;[39m[23m "Coffee,Water,The tears of my enemies", "Coffee,Tea,Water,Milk", "Fruit Jui…
+## $ Q5 [3m[90m&lt;dbl&gt;[39m[23m 350, 12, 300, 0, 264, 4, 289, 550, 349, 300, 424, 426, 231, 290, 1000, 250,…
+## $ Q6 [3m[90m&lt;dbl&gt;[39m[23m 350, 56, 5000, 50, 286, 250, 76, 185, 108, 220, 500, 350, 412, 1135, 300, 3…
 ```
 
 ???
@@ -471,62 +468,17 @@ WorkshopData %&gt;%
 ```
 
 ```
-## # A tibble: 4 x 7
-##   ResponseId    Q2       Q3        Q4             Q5        Q6             Q7            
-##   &lt;chr&gt;         &lt;chr&gt;    &lt;chr&gt;     &lt;chr&gt;          &lt;chr&gt;     &lt;chr&gt;          &lt;chr&gt;         
-## 1 "Response ID" "I am m… "My favo… "Which of the… "How man… "Estimate the… "Below are a …
-## 2 "{\"ImportId… "{\"Imp… "{\"Impo… "{\"ImportId\… "{\"Impo… "{\"ImportId\… "{\"ImportId\…
-## 3 "R_2PbT59J94… "mornin… "Brown B… "Coffee,Fizzy… "241"     "503"           &lt;NA&gt;         
-## 4 "R_1ImwOPxym… "night … "Ice Cre… "Fruit Juice,… "533"     "400"           &lt;NA&gt;
-```
---
-Hmm, it looks like there are two rows that are not actually data. 
-
----
-# Let's start cleaning up.
-
-## Get rid of the two rows of data that are junk
-
-
-```r
-WorkshopData %&gt;%
-  slice(-(1:2))
+## # A tibble: 6 x 6
+##      ID Q2             Q3                     Q4                                 Q5    Q6
+##   &lt;dbl&gt; &lt;chr&gt;          &lt;chr&gt;                  &lt;chr&gt;                           &lt;dbl&gt; &lt;dbl&gt;
+## 1  5106 morning perso… Brownies               Coffee,Water,The tears of my e…   350   350
+## 2  6633 morning perso… I don't care for dess… Coffee,Tea,Water,Milk              12    56
+## 3  7599 night owl.     Ice Cream              Fruit Juice,Tea,Water,Fizzy Wa…   300  5000
+## 4  4425 morning perso… I don't care for dess… Fruit Juice,Coffee,Water            0    50
+## 5  2495 morning perso… Brownies               Coffee,Water                      264   286
+## 6  6355 night owl.     Ice Cream              Fruit Juice,Tea,Water               4   250
 ```
 
-```
-## # A tibble: 2 x 7
-##   ResponseId     Q2         Q3                   Q4                     Q5    Q6    Q7   
-##   &lt;chr&gt;          &lt;chr&gt;      &lt;chr&gt;                &lt;chr&gt;                  &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;
-## 1 R_2PbT59J94Ja… morning p… Brown Butter Chocol… Coffee,Fizzy Water     241   503   &lt;NA&gt; 
-## 2 R_1ImwOPxym34… night owl. Ice Cream            Fruit Juice,Coffee,Wa… 533   400   &lt;NA&gt;
-```
-
---
-### Since this worked, we should now update our dataframe
-
----
-# Let's start cleaning up.
-
-## Get rid of the two rows of data that are junk
-
-
-```r
-WorkshopData %&gt;%
-* slice(-(1:2)) -&gt; WorkshopData
-
-WorkshopData
-```
-
-```
-## # A tibble: 2 x 7
-##   ResponseId     Q2         Q3                   Q4                     Q5    Q6    Q7   
-##   &lt;chr&gt;          &lt;chr&gt;      &lt;chr&gt;                &lt;chr&gt;                  &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;
-## 1 R_2PbT59J94Ja… morning p… Brown Butter Chocol… Coffee,Fizzy Water     241   503   &lt;NA&gt; 
-## 2 R_1ImwOPxym34… night owl. Ice Cream            Fruit Juice,Coffee,Wa… 533   400   &lt;NA&gt;
-```
-
---
-### Full disclosure I had to google how to do this
 
 ---
 # Let's check out the power of R
@@ -554,8 +506,8 @@ WorkshopData %&gt;%
 ## # A tibble: 2 x 2
 ##   Q2                  n
 ##   &lt;chr&gt;           &lt;int&gt;
-## 1 morning person.     1
-## 2 night owl.          1
+## 1 morning person.    19
+## 2 night owl.         15
 ```
 
 
@@ -576,13 +528,17 @@ WorkshopData %&gt;%
 ```
 
 ```
-## # A tibble: 2 x 2
+## # A tibble: 5 x 2
 ##   Q3                                      n
 ##   &lt;chr&gt;                               &lt;int&gt;
-## 1 Brown Butter Chocolate Chip Cookies     1
-## 2 Ice Cream                               1
+## 1 Brown Butter Chocolate Chip Cookies     2
+## 2 Brownies                                9
+## 3 Cheese                                  3
+## 4 I don't care for dessert.               3
+## 5 Ice Cream                              17
 ```
 ]
+
 .pull-right[
 
 ```r
@@ -592,43 +548,110 @@ WorkshopData %&gt;%
   geom_bar()
 ```
 
-![](RForSNA_WS1_files/figure-html/DessertTypeHist-1.png)&lt;!-- --&gt;
+&lt;img src="RForSNA_WS1_files/figure-html/DessertTypeHist-1.png" width="50%" /&gt;
 ]
 
 ---
-# Let's look at some quantitative data
+# Let's explore beverage choices
+
+
+```r
+WorkshopData %&gt;%
+  select(ID, Q4) %&gt;%
+  head()
+```
+
+```
+## # A tibble: 6 x 2
+##      ID Q4                                  
+##   &lt;dbl&gt; &lt;chr&gt;                               
+## 1  5106 Coffee,Water,The tears of my enemies
+## 2  6633 Coffee,Tea,Water,Milk               
+## 3  7599 Fruit Juice,Tea,Water,Fizzy Water   
+## 4  4425 Fruit Juice,Coffee,Water            
+## 5  2495 Coffee,Water                        
+## 6  6355 Fruit Juice,Tea,Water
+```
+
+.font150[Notice, these are *not* tidy data, more than one variable per line]
+---
+# Let's dummy code the beverage data
+
 .pull-left[
+### For **tidy** data we want one value per row
+
+
+```r
+WorkshopData %&gt;%
+  select(ID, Q4) %&gt;%
+* separate_rows(Q4, sep = ",") %&gt;%
+  head(10)
+```
+
+```
+## # A tibble: 10 x 2
+##       ID Q4                     
+##    &lt;dbl&gt; &lt;chr&gt;                  
+##  1  5106 Coffee                 
+##  2  5106 Water                  
+##  3  5106 The tears of my enemies
+##  4  6633 Coffee                 
+##  5  6633 Tea                    
+##  6  6633 Water                  
+##  7  6633 Milk                   
+##  8  7599 Fruit Juice            
+##  9  7599 Tea                    
+## 10  7599 Water
+```
+
+]
+
+.pull-right[
+### We can dummy code these
+
+
+```r
+WorkshopData %&gt;%
+  select(ID, Q4) %&gt;%
+  separate_rows(Q4, sep = ",") %&gt;%
+* mutate(Checked = 1) %&gt;%
+* pivot_wider(names_from = Q4,
+*             values_from = Checked,
+*             values_fill = 0)
+```
+
+```
+## # A tibble: 34 x 11
+##       ID Coffee Water `The tears of m…   Tea  Milk `Fruit Juice` `Fizzy Water`
+##    &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt;            &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;         &lt;dbl&gt;         &lt;dbl&gt;
+##  1  5106      1     1                1     0     0             0             0
+##  2  6633      1     1                0     1     1             0             0
+##  3  7599      0     1                0     1     0             1             1
+##  4  4425      1     1                0     0     0             1             0
+##  5  2495      1     1                0     0     0             0             0
+##  6  6355      0     1                0     1     0             1             0
+##  7  8810      1     0                1     0     0             0             1
+##  8  3877      0     1                1     1     1             0             1
+##  9  1554      0     1                1     0     0             1             0
+## 10  7743      0     1                0     1     1             1             1
+## # … with 24 more rows, and 3 more variables: `A delicious 12 year single malt scotch
+## #   from the Scottish lowlands with notes of apple` &lt;dbl&gt;, ` cinnamon` &lt;dbl&gt;, ` and
+## #   dried fruit served with a single ice cube` &lt;dbl&gt;
+```
+
+
+]
+
+
+---
+# Let's look at some quantitative data
+
 ### First, let's summarize the reading data.
 
 
 ```r
 WorkshopData %&gt;%
   select(Q5) %&gt;%
-  summarize(Ave = mean(Q5), 
-            SD = sd(Q5))
-```
-
-```
-## # A tibble: 1 x 2
-##     Ave    SD
-##   &lt;dbl&gt; &lt;dbl&gt;
-## 1    NA  206.
-```
-#### If we just run this we get an error message. 
-* It is weird that sd will run, but mean will not. 
-
-]
-
-.pull-right[
-### Convert to numeric
-
-(mutate is a verb that is really useful!)
-
-
-```r
-WorkshopData %&gt;%
-  select(Q5) %&gt;%
-* mutate(Q5 = as.numeric(Q5)) %&gt;%
   summarize(Ave = mean(Q5, na.rm = TRUE), 
             SD = sd(Q5, na.rm = TRUE))
 ```
@@ -637,10 +660,8 @@ WorkshopData %&gt;%
 ## # A tibble: 1 x 2
 ##     Ave    SD
 ##   &lt;dbl&gt; &lt;dbl&gt;
-## 1   387  206.
+## 1  327.  247.
 ```
-]
-
 
 
 ---
@@ -653,18 +674,17 @@ WorkshopData %&gt;%
 ```r
 WorkshopData %&gt;%
   select(Q2, Q5) %&gt;%
-  mutate(Q5 = as.numeric(Q5)) %&gt;%
   group_by(Q2) %&gt;%
-  summarize(Ave = mean(Q5, na.rm = TRUE), 
-            SD = sd(Q5, na.rm = TRUE))
+* summarize(Ave = mean(Q5),
+*           SD = sd(Q5))
 ```
 
 ```
 ## # A tibble: 2 x 3
 ##   Q2                Ave    SD
 ##   &lt;chr&gt;           &lt;dbl&gt; &lt;dbl&gt;
-## 1 morning person.   241    NA
-## 2 night owl.        533    NA
+## 1 morning person.  321   215.
+## 2 night owl.       335.  289.
 ```
 ]
 .pull-right[
@@ -673,12 +693,13 @@ WorkshopData %&gt;%
 
 
 ```r
-#WorkshopData %&gt;%
-#  select(Q2, Q5) %&gt;%
-#  mutate(Q5 = as.numeric(Q5)) %&gt;%
-#  group_by(Q2) %&gt;%
-#  boxplot()
+WorkshopData %&gt;%
+  select(Q2, Q5) %&gt;%
+  ggplot(., aes(x = Q2, y = Q5)) +
+  geom_boxplot()
 ```
+
+&lt;img src="RForSNA_WS1_files/figure-html/ReadersTimeOfDayBoxplot-1.png" width="70%" /&gt;
 ]
 
 ---
@@ -687,7 +708,7 @@ WorkshopData %&gt;%
 ### Is there a relationship between length of book and estimates on number of blueberries?
 
 .pull-left[
-Could do a scatter plot
+### Could do a scatter plot
 
 ```r
 WorkshopData %&gt;%
@@ -721,21 +742,22 @@ summary(lm(Q6 ~ Q5, data = WorkshopData))
 ## lm(formula = Q6 ~ Q5, data = WorkshopData)
 ## 
 ## Residuals:
-## ALL 2 residuals are 0: no residual degrees of freedom!
+##    Min     1Q Median     3Q    Max 
+## -365.6 -313.8 -179.1  -98.8 4563.5 
 ## 
 ## Coefficients:
 ##             Estimate Std. Error t value Pr(&gt;|t|)
-## (Intercept)      503         NA      NA       NA
-## Q5533           -103         NA      NA       NA
+## (Intercept) 382.9414   249.7136   1.534    0.135
+## Q5            0.1785     0.6126   0.291    0.773
 ## 
-## Residual standard error: NaN on 0 degrees of freedom
-## Multiple R-squared:      1,	Adjusted R-squared:    NaN 
-## F-statistic:   NaN on 1 and 0 DF,  p-value: NA
+## Residual standard error: 867.6 on 32 degrees of freedom
+## Multiple R-squared:  0.002647,	Adjusted R-squared:  -0.02852 
+## F-statistic: 0.08492 on 1 and 32 DF,  p-value: 0.7726
 ```
 ---
 # Let's prep our data for SNA
 
-We will need to prep two separate files...
+### We will need to prep two separate files...
 
 1. An edgelist
 2. A file of attributes of the nodes. 
@@ -743,66 +765,37 @@ We will need to prep two separate files...
 ---
 # Let's make an edgelist
 
-### First, take a look at the data
+
+There is an issue here. 
+
+I wanted to make these data anonymous (so we don't know who likes scotch)
+
+But to do that I had to make the edgelist for you. 
+
+So I sent you an edgelist as a csv. Sorry.
 
 
-```r
-WorkshopData %&gt;%
-  select(ResponseId, Q7) %&gt;%
-  glimpse()
-```
-
-```
-## Rows: 2
-## Columns: 2
-## $ ResponseId &lt;chr&gt; "R_2PbT59J94Jaqzle", "R_1ImwOPxym34BevQ"
-## $ Q7         &lt;chr&gt; NA, NA
-```
-
-The data are organized so that we have the IDs of the people that are connected separated by commas.  It would be best if we could separate these into separate rows.
-
-
----
-# Let's make an edgelist
-
-### Separate connection data so we have one row per interaction
-
+### Check out the edgelist
 
 ```r
-WorkshopData %&gt;%
-  select(ResponseId, Q7) %&gt;%
-  separate_rows(Q7) -&gt; EL
-
+EL = read_csv(here("data", "AnonEL.csv"))
 head(EL)
 ```
 
-```
-## # A tibble: 2 x 2
-##   ResponseId        Q7   
-##   &lt;chr&gt;             &lt;chr&gt;
-## 1 R_2PbT59J94Jaqzle &lt;NA&gt; 
-## 2 R_1ImwOPxym34BevQ &lt;NA&gt;
-```
-
-.font140[
-Since I want to use this Edgelist over and over, I will assign it to a new dataframe
-] 
-
----
-# Let's make an edgelist
-
-The issue with the edgelist as a data frame is that the command we want to use needs the edgelist to be a matrix. So we need to convert.
-
-
-```r
-EL_M = as.matrix(EL)
-
-dim(EL_M)
-```
 
 ```
-## [1] 2 2
+## # A tibble: 6 x 2
+##      ID Connections
+##   &lt;dbl&gt;       &lt;dbl&gt;
+## 1  5106        5106
+## 2  6633        6196
+## 3  7599        5462
+## 4  4425        7743
+## 5  2495        3940
+## 6  6355        6355
 ```
+
+
 
 ---
 # Let's assemble our node attributes
@@ -813,21 +806,184 @@ We have several candidate attributes:
 - Morning vs. Night
 - Dessert Type
 - Pages in book
-- Beverages (But this is much harder to deal with)
 
 We will develop a separate dataframe for the attributes. 
 
 
 ```r
 WorkshopData %&gt;%
-  select(ResponseId, Q2, Q3, Q5) -&gt; AttributeDf
+  select(ID, Q2, Q3, Q5) -&gt; AttributeDf
 ```
 
 
 ---
 # Let's assemble our node attributes
 
-Experience tells me that when you try to add attributes
+Experience tells me that when you try to add attributes that you often make a mistake where the number attributes don't match up well to the number of nodes...but lets see.
+
+
+
+
+
+```r
+gr &lt;- graph_from_data_frame(EL, directed = TRUE)
+
+plot(gr)
+```
+
+&lt;img src="RForSNA_WS1_files/figure-html/AssembleGraph-1.png" width="40%" /&gt;
+
+```r
+gr = as_tbl_graph(gr)
+```
+
+
+
+---
+# Let's add some attributes
+
+So actually the easiest way to add the attributes is to add them while you make the graph.  
+
+But that isn't as easy as it seems
+
+
+```r
+gr %&gt;%
+  activate(nodes) %&gt;%
+  mutate(AMPM = AttributeDf$Q2)
+```
+But that isn't as easy as it seems...
+
+
+--- 
+# Let's sort out these attributes. 
+
+
+
+The warning was: "Input `AMPM` must be size 60 or 1, not 34."
+
+What this means is we need to take our attributes dataframe and make sure all the nodes are listed. 
+
+To do this we need to:
+- Compile a dataframe of all nodes listed in the graph
+- Use a join to add attributes to this dataframe
+
+---
+# Let's sort out these attributes (pt 2)
+
+
+```r
+#This will get a vector of all nodes
+gr %&gt;%
+  activate(nodes) %&gt;%
+  as_tibble() %&gt;%
+  transmute(ID = name) %&gt;%
+  mutate(ID = as.numeric(ID))-&gt; GrNodes
+
+#Now we pull in the attributes using a left_join
+NodeAttributes = left_join(GrNodes, AttributeDf, by = "ID")
+```
+
+You should inspect Node Attributes
+
+---
+# Let's sort out these attributes (pt 3)
+
+
+### Inspect the head
+
+
+```r
+head(NodeAttributes)
+```
+
+```
+## # A tibble: 6 x 4
+##      ID Q2              Q3                           Q5
+##   &lt;dbl&gt; &lt;chr&gt;           &lt;chr&gt;                     &lt;dbl&gt;
+## 1  5106 morning person. Brownies                    350
+## 2  6633 morning person. I don't care for dessert.    12
+## 3  7599 night owl.      Ice Cream                   300
+## 4  4425 morning person. I don't care for dessert.     0
+## 5  2495 morning person. Brownies                    264
+## 6  6355 night owl.      Ice Cream                     4
+```
+
+---
+# Let's sort out these attributes (pt 4)
+
+### Inspect the tail
+
+
+```r
+tail(NodeAttributes)
+```
+
+```
+## # A tibble: 6 x 4
+##      ID Q2    Q3       Q5
+##   &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt; &lt;dbl&gt;
+## 1  7128 &lt;NA&gt;  &lt;NA&gt;     NA
+## 2  1050 &lt;NA&gt;  &lt;NA&gt;     NA
+## 3  3799 &lt;NA&gt;  &lt;NA&gt;     NA
+## 4  1651 &lt;NA&gt;  &lt;NA&gt;     NA
+## 5  8984 &lt;NA&gt;  &lt;NA&gt;     NA
+## 6  1958 &lt;NA&gt;  &lt;NA&gt;     NA
+```
+
+
+
+---
+# Let's finally assemble this graph. 
+
+
+```r
+gr %&gt;%
+  as_tbl_graph() %&gt;%
+  activate(nodes) %&gt;%
+  mutate(AMPM = NodeAttributes$Q2) %&gt;%
+  mutate(Dessert = NodeAttributes$Q3) %&gt;%
+  mutate(Pages = NodeAttributes$Q5) -&gt; gr
+
+summary(gr)
+```
+
+```
+## IGRAPH f803900 DN-- 60 101 -- 
+## + attr: name (v/c), AMPM (v/c), Dessert (v/c), Pages (v/n)
+```
+---
+# Let's finally assemble this graph.
+
+### Take a look at your graph
+
+
+```
+## # A tbl_graph: 60 nodes and 101 edges
+## #
+## # A directed multigraph with 8 components
+## #
+## # Node Data: 60 x 4 (active)
+##   name  AMPM            Dessert                   Pages
+##   &lt;chr&gt; &lt;chr&gt;           &lt;chr&gt;                     &lt;dbl&gt;
+## 1 5106  morning person. Brownies                    350
+## 2 6633  morning person. I don't care for dessert.    12
+## 3 7599  night owl.      Ice Cream                   300
+## 4 4425  morning person. I don't care for dessert.     0
+## 5 2495  morning person. Brownies                    264
+## 6 6355  night owl.      Ice Cream                     4
+## # … with 54 more rows
+## #
+## # Edge Data: 101 x 2
+##    from    to
+##   &lt;int&gt; &lt;int&gt;
+## 1     1     1
+## 2     2    35
+## 3     3    14
+## # … with 98 more rows
+```
+
+---
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

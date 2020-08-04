@@ -197,7 +197,7 @@ Seminal Articles
 
 ---
 # Important Takeaways from History
-.center[Two main camps
+Two main camps
 
 --
 
@@ -205,17 +205,17 @@ Statistical -> hypothesis testing
 
 --
 
-Graph theoretic -> network models and simulation]
+Graph theoretic -> network models and simulation
  
 --
 
-.font200.center[
+.font150.center[
 They often don't agree.
 
 There is often distain.
 
 They have different language, journals, conferences
-]]
+]
 ---
 # Network Data in R
 
@@ -374,13 +374,14 @@ Again, you will want to include this as a code chunk in your RMD file.
 ```{r ReadData, eval=FALSE}
 #This loads the csv and saves it as a dataframe titled WorkshopData
 
-WorkshopData <- read_csv(here("data", "DataForWorkshop1.csv"))
+WorkshopData <- read_csv(here("data", "AnonSurveyData.csv"))
 
 ```
+
 ```{r ReadDataForReal, echo = FALSE}
 #This loads the csv and saves it as a dataframe titled WorkshopData
 
-WorkshopData <- read_csv(here("static/slides/RForSNA/data", "DataForWorkshop1-2.csv"))
+WorkshopData <- read_csv(here("static/slides/RForSNA/data", "AnonSurveyData.csv"))
 
 ```
 
@@ -391,9 +392,6 @@ WorkshopData <- read_csv(here("static/slides/RForSNA/data", "DataForWorkshop1-2.
 glimpse(WorkshopData)
 
 ```
-
-
-
 
 
 
@@ -408,7 +406,7 @@ We will use the '%>%' (pipe) operator and the verb select
 
 ```{r DeleteUnNeededVariables}
 WorkshopData %>%
-  select(ResponseId,Q2:Q7) -> WorkshopData
+  select(ID,Q2:Q6) -> WorkshopData #<<
 
 glimpse(WorkshopData)
 ```
@@ -424,36 +422,7 @@ Note the data are not numbers.
 WorkshopData %>%
   head()
 ```
---
-Hmm, it looks like there are two rows that are not actually data. 
 
----
-# Let's start cleaning up.
-
-## Get rid of the two rows of data that are junk
-
-```{r RemoveTwoRows}
-WorkshopData %>%
-  slice(-(1:2))
-```
-
---
-### Since this worked, we should now update our dataframe
-
----
-# Let's start cleaning up.
-
-## Get rid of the two rows of data that are junk
-
-```{r RemoveTwoRowsAndSave}
-WorkshopData %>%
-  slice(-(1:2)) -> WorkshopData #<<
-
-WorkshopData
-```
-
---
-### Full disclosure I had to google how to do this
 
 ---
 # Let's check out the power of R
@@ -497,8 +466,9 @@ WorkshopData %>%
 
 ```
 ]
+
 .pull-right[
-```{r DessertTypeHist}
+```{r DessertTypeHist, out.width= "50%"}
 
 WorkshopData %>%
   select(Q3) %>%
@@ -509,46 +479,62 @@ WorkshopData %>%
 ]
 
 ---
-# Let's look at some quantitative data
-.pull-left[
-### First, let's summarize the reading data.
+# Let's explore beverage choices
 
-```{r SummarizeBook}
-
+```{r BevChoices}
 WorkshopData %>%
-  select(Q5) %>%
-  summarize(Ave = mean(Q5), 
-            SD = sd(Q5))
-
+  select(ID, Q4) %>%
+  head()
 ```
-#### If we just run this we get an error message. 
-* It is weird that sd will run, but mean will not. 
+
+.font150[Notice, these are *not* tidy data, more than one variable per line]
+---
+# Let's dummy code the beverage data
+
+.pull-left[
+### For **tidy** data we want one value per row
+
+```{r TidyBevChoices}
+WorkshopData %>%
+  select(ID, Q4) %>%
+  separate_rows(Q4, sep = ",") %>% #<<
+  head(10)
+```
 
 ]
 
 .pull-right[
-### Convert to numeric
+### We can dummy code these
 
-(mutate is a verb that is really useful!)
+```{r WideTidyBevChoices}
+WorkshopData %>%
+  select(ID, Q4) %>%
+  separate_rows(Q4, sep = ",") %>%
+  mutate(Checked = 1) %>% #<<
+  pivot_wider(names_from = Q4, #<<
+              values_from = Checked, #<<
+              values_fill = 0) #<<
 
-```{r SummarizeBookNum}
+```
+
+
+]
+
+
+---
+# Let's look at some quantitative data
+
+### First, let's summarize the reading data.
+
+```{r SummarizeBook,}
 
 WorkshopData %>%
   select(Q5) %>%
-  mutate(Q5 = as.numeric(Q5)) %>% #<<
   summarize(Ave = mean(Q5, na.rm = TRUE), 
             SD = sd(Q5, na.rm = TRUE))
 
 ```
-]
 
-```{r ConvertToNumeric, echo=FALSE}
-
-#WorkshopData %>%
-#  mutate(Q5 = as.numeric(Q5),
-#         Q6 = as.numeric(Q6)) -> WorkshopData
-  
-```
 
 ---
 # Let's investigate groups
@@ -560,10 +546,9 @@ WorkshopData %>%
 
 WorkshopData %>%
   select(Q2, Q5) %>%
-  mutate(Q5 = as.numeric(Q5)) %>%
   group_by(Q2) %>%
-  summarize(Ave = mean(Q5, na.rm = TRUE), 
-            SD = sd(Q5, na.rm = TRUE))
+  summarize(Ave = mean(Q5), #<<
+            SD = sd(Q5)) #<<
 
 ```
 ]
@@ -571,13 +556,12 @@ WorkshopData %>%
 
 ### We might want to use a boxplot to display these data
 
-```{r ReadersTimeOfDayBoxplot}
+```{r ReadersTimeOfDayBoxplot, out.width = "70%"}
 
-#WorkshopData %>%
-#  select(Q2, Q5) %>%
-#  mutate(Q5 = as.numeric(Q5)) %>%
-#  group_by(Q2) %>%
-#  boxplot()
+WorkshopData %>%
+  select(Q2, Q5) %>%
+  ggplot(., aes(x = Q2, y = Q5)) +
+  geom_boxplot()
 
 ```
 ]
@@ -588,7 +572,7 @@ WorkshopData %>%
 ### Is there a relationship between length of book and estimates on number of blueberries?
 
 .pull-left[
-Could do a scatter plot
+### Could do a scatter plot
 ```{r ScatterPlot, fig.show= 'hide'}
 
 WorkshopData %>%
@@ -622,7 +606,7 @@ summary(lm(Q6 ~ Q5, data = WorkshopData))
 ---
 # Let's prep our data for SNA
 
-We will need to prep two separate files...
+### We will need to prep two separate files...
 
 1. An edgelist
 2. A file of attributes of the nodes. 
@@ -630,50 +614,28 @@ We will need to prep two separate files...
 ---
 # Let's make an edgelist
 
-### First, take a look at the data
 
-```{r GlimpseQ7}
+There is an issue here. 
 
-WorkshopData %>%
-  select(ResponseId, Q7) %>%
-  glimpse()
+I wanted to make these data anonymous (so we don't know who likes scotch)
 
-```
+But to do that I had to make the edgelist for you. 
 
-The data are organized so that we have the IDs of the people that are connected separated by commas.  It would be best if we could separate these into separate rows.
+So I sent you an edgelist as a csv. Sorry.
 
 
----
-# Let's make an edgelist
-
-### Separate connection data so we have one row per interaction
-
-```{r SeparateQ7}
-
-WorkshopData %>%
-  select(ResponseId, Q7) %>%
-  separate_rows(Q7) -> EL
-
+### Check out the edgelist
+```{r GenerateEL, eval=FALSE}
+EL = read_csv(here("data", "AnonEL.csv"))
 head(EL)
-
 ```
 
-.font140[
-Since I want to use this Edgelist over and over, I will assign it to a new dataframe
-] 
-
----
-# Let's make an edgelist
-
-The issue with the edgelist as a data frame is that the command we want to use needs the edgelist to be a matrix. So we need to convert.
-
-```{r ConvertEdgelistToMatrix}
-
-EL_M = as.matrix(EL)
-
-dim(EL_M)
-
+```{r GenerateELForReal, echo=FALSE}
+EL = read_csv(here("/static/slides/RForSNA/data", "AnonEL.csv"))
+head(EL)
 ```
+
+
 
 ---
 # Let's assemble our node attributes
@@ -684,19 +646,159 @@ We have several candidate attributes:
 - Morning vs. Night
 - Dessert Type
 - Pages in book
-- Beverages (But this is much harder to deal with)
 
 We will develop a separate dataframe for the attributes. 
 
 ```{r Attributes}
 WorkshopData %>%
-  select(ResponseId, Q2, Q3, Q5) -> AttributeDf
+  select(ID, Q2, Q3, Q5) -> AttributeDf
 ```
 
 
 ---
 # Let's assemble our node attributes
 
-Experience tells me that when you try to add attributes
+Experience tells me that when you try to add attributes that you often make a mistake where the number attributes don't match up well to the number of nodes...but lets see.
+
+
+
+
+```{r AssembleGraph, out.width= "40%"}
+
+gr <- graph_from_data_frame(EL, directed = TRUE)
+
+plot(gr)
+
+
+gr = as_tbl_graph(gr)
+
+```
+
+
+
+---
+# Let's add some attributes
+
+So actually the easiest way to add the attributes is to add them while you make the graph.  
+
+But that isn't as easy as it seems
+
+```{r GraphWAttributes1, warning=TRUE, eval=FALSE}
+
+gr %>%
+  activate(nodes) %>%
+  mutate(AMPM = AttributeDf$Q2)
+
+```
+But that isn't as easy as it seems...
+
+
+--- 
+# Let's sort out these attributes. 
+
+
+
+The warning was: "Input `AMPM` must be size 60 or 1, not 34."
+
+What this means is we need to take our attributes dataframe and make sure all the nodes are listed. 
+
+To do this we need to:
+- Compile a dataframe of all nodes listed in the graph
+- Use a join to add attributes to this dataframe
+
+---
+# Let's sort out these attributes (pt 2)
+
+```{r GraphWAttributes2}
+#This will get a vector of all nodes
+gr %>%
+  activate(nodes) %>%
+  as_tibble() %>%
+  transmute(ID = name) %>%
+  mutate(ID = as.numeric(ID))-> GrNodes
+
+#Now we pull in the attributes using a left_join
+NodeAttributes = left_join(GrNodes, AttributeDf, by = "ID")
+```
+
+You should inspect Node Attributes
+
+---
+# Let's sort out these attributes (pt 3)
+
+
+### Inspect the head
+
+```{r GraphWAttributes3}
+
+head(NodeAttributes)
+
+```
+
+---
+# Let's sort out these attributes (pt 4)
+
+### Inspect the tail
+
+```{r GraphWAttributes4}
+
+tail(NodeAttributes)
+
+```
+
+
+
+---
+# Let's finally assemble this graph. 
+
+```{r BuildGraph}
+
+gr %>%
+  as_tbl_graph() %>%
+  activate(nodes) %>%
+  mutate(AMPM = NodeAttributes$Q2) %>%
+  mutate(Dessert = NodeAttributes$Q3) %>%
+  mutate(Pages = NodeAttributes$Q5) -> gr
+
+summary(gr)
+```
+---
+# Let's finally assemble this graph.
+
+### Take a look at your graph
+
+```{r InspectGr, echo=FALSE}
+ gr 
+```
+
+---
+# Let's make our plots look a bit better
+
+### We can add various elements to our plot
+- Color (good for grouping)
+- Shape (good for grouping)
+- Size (good for numeric)
+- Layout
+
+```{r PlotGr1}
+ggraph(gr) +
+  geom_edge_link() +
+  geom_node_point()
+```
+
+---
+# Let's make our plots look a bit better
+
+### We can add various elements to our plot
+- Layout - lots of options
+
+```{r PlotGr1}
+ggraph(gr, layout = "circle") +
+  geom_edge_link() +
+  geom_node_point(aes)
+```
+
+
+
 
 
