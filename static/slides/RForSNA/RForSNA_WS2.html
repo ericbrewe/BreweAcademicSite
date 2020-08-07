@@ -15,14 +15,14 @@ class: center, middle, inverse, title-slide
 # R For SNA
 ## Workshop 2
 ### Eric Brewe <br> Associate Professor of Physics at Drexel University <br>
-### 11 August 2020, last update: 2020-08-06
+### 11 August 2020, last update: 2020-08-07
 
 ---
 
 
 
 
----
+
 # Welcome Back!
 
 ### Workshop #1 was a sprint!
@@ -120,7 +120,7 @@ gr
 # Let's plot it quickly
 
 .pull-left[
-## What do you notice?
+## Which node is the most important?
 
 ````
 
@@ -138,6 +138,56 @@ gr %&gt;%
 .pull-right[
 ![](RForSNA_WS2_files/figure-html/plotGrR-1.png)&lt;!-- --&gt;
 ]
+---
+# Let's explore centrality
+
+### One view of importance is how many people you are connected to.
+.pull-left[
+- **Degree** = number of edges a node is involved in.
+- **Indegree** = number of incoming edges
+- **Outdegree** = number of outgoing edges
+
+Lets calculate degree
+````
+
+```r
+gr %&gt;%
+  activate(nodes) %&gt;%
+  mutate(deg = centrality_degree()) %&gt;%
+  arrange(desc(deg))
+```
+]
+
+.pull-right[
+
+
+```
+## # A tbl_graph: 60 nodes and 101 edges
+## #
+## # A directed multigraph with 8 components
+## #
+## # Node Data: 60 x 5 (active)
+##   name  AMPM            Dessert                   Pages   deg
+##   &lt;chr&gt; &lt;chr&gt;           &lt;chr&gt;                     &lt;dbl&gt; &lt;dbl&gt;
+## 1 2921  morning person. Ice Cream                   426    10
+## 2 7743  morning person. Ice Cream                   300     9
+## 3 7040  morning person. I don't care for dessert.   400     7
+## 4 1386  night owl.      Ice Cream                   500     7
+## 5 8810  morning person. Ice Cream                   289     6
+## 6 9929  morning person. Brownies                    527     5
+## # … with 54 more rows
+## #
+## # Edge Data: 101 x 2
+##    from    to
+##   &lt;int&gt; &lt;int&gt;
+## 1    19    19
+## 2    20    35
+## 3    21    11
+## # … with 98 more rows
+```
+
+]
+---
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

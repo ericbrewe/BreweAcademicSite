@@ -24,7 +24,7 @@ library(here)
 
 ```
 
----
+
 # Welcome Back!
 
 ### Workshop #1 was a sprint!
@@ -101,7 +101,7 @@ gr
 # Let's plot it quickly
 
 .pull-left[
-## What do you notice?
+## Which node is the most important?
 
 ````
 ```{r plotGr, eval = F}
@@ -124,3 +124,37 @@ gr %>%
   theme(legend.position="bottom")
 ```
 ]
+---
+# Let's explore centrality
+
+### One view of importance is how many people you are connected to.
+.pull-left[
+- **Degree** = number of edges a node is involved in.
+- **Indegree** = number of incoming edges
+- **Outdegree** = number of outgoing edges
+
+Lets calculate degree
+````
+```{r CalcDegree, eval = F}
+gr %>%
+  activate(nodes) %>%
+  mutate(deg = centrality_degree()) %>%
+  arrange(desc(deg))
+
+```
+]
+
+.pull-right[
+
+```{r CalcDegreeTrue, echo = F}
+gr %>%
+  activate(nodes) %>%
+  mutate(deg = centrality_degree()) %>%
+   arrange(desc(deg))
+  
+  
+#head(deg)
+```
+
+]
+---
