@@ -20,6 +20,7 @@
       <description>
 
 
+&lt;p&gt;If you missed it, here is video of &lt;a href=&#34;https://drexel.zoom.us/rec/play/6cElcb-r_W43G4KcswSDCqcvW43rK_-shCNKq_pYmB3gVnVSZlajN7dEY7MsxwIjYmSt3ELK95yxvx2D?continueMode=true&amp;amp;_x_zm_rtaid=-X5Jfr7yTgCnKLiyVoClXg.1597171066688.b4c9154f854606598f23c8508df2dd7d&amp;amp;_x_zm_rhtaid=6&#34;&gt;Workshop #1&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;In order to prepare for workshop one - I have five things that I need you to do:&lt;/p&gt;
 &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
 &lt;li&gt;Install R and RStudio on your computer.
@@ -49,6 +50,7 @@
       <description>
 
 
+&lt;p&gt;If you missed it, &lt;a href=&#34;https://drexel.zoom.us/rec/share/99dVH-Guy09Jf7OV12PBAql6HJr6aaa81HUWqfUKyBn6z3EdwCdgLwjRhs_8OX9V&#34;&gt;here is video of Workshop #2&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Workshop #2 is going to build on the results of WS1, but we are actually going to analyze the network that we built in workshop #1. Also, I expect there will be a good deal more time available for discussion and questions. We will start with the network we made with attributes. We don’t need to build the nework from scratch, instead I took the network we had and stored it as a .RDS file. RDS is the native structure for R.&lt;/p&gt;
 &lt;p&gt;In workshop #2 we will be looking at centrality metrics and network properties of individual nodes. For workshop #2 to work out ok, here are the things you will need to be able to do, which we covered in workshop #1.&lt;/p&gt;
 &lt;ul&gt;
@@ -112,6 +114,30 @@ SNA:&lt;/p&gt;
 &lt;p&gt;The slides for Workshop #2 can be found here:
 &lt;iframe src=&#34;https://ericbrewe.com/slides/rforsna/rforsna_ws2.html#1&#34; width=&#34;672&#34; height=&#34;400px&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
 &lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Workshop 3</title>
+      <link>/courses/rforsna/ws3/</link>
+      <pubDate>Tue, 21 Jul 2020 00:00:00 +0100</pubDate>
+      <guid>/courses/rforsna/ws3/</guid>
+      <description>
+
+
+&lt;p&gt;Workshop #3 continues to build on the results of WS1, but we are actually going to analyze the network that we built in workshop #1.&lt;/p&gt;
+&lt;p&gt;In workshop #3 we will be looking at characterizing the network as a whole, and thinking about how we can compare networks.&lt;/p&gt;
+&lt;p&gt;There were a couple of questions that arose out of workshop #2 (one about missing data and one about choosing a centrality metric). I promised a couple of papers, and here they are:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing Data&lt;/strong&gt;
+- Žnidaršič, A., Ferligoj, A., &amp;amp; Doreian, P. (2012). Non-response in social networks: The impact of different non-response treatments on the stability of blockmodels. Social Networks, 34(4), 438-450. &lt;a href=&#34;https://www.sciencedirect.com/science/article/abs/pii/S037887331200010X&#34; class=&#34;uri&#34;&gt;https://www.sciencedirect.com/science/article/abs/pii/S037887331200010X&lt;/a&gt;
+- Huisman, M. (2009). Imputation of missing network data: Some simple procedures. Journal of Social Structure, 10(1), 1-29. &lt;a href=&#34;https://www.rug.nl/research/portal/files/14031886/Huisman_imputation_JoSS2009.pdf&#34; class=&#34;uri&#34;&gt;https://www.rug.nl/research/portal/files/14031886/Huisman_imputation_JoSS2009.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Centrality metrics&lt;/strong&gt;
+- Borgatti, S. P. (2005). Centrality and network flow. Social networks, 27(1), 55-71. &lt;a href=&#34;https://www.sciencedirect.com/science/article/abs/pii/S0378873304000693&#34; class=&#34;uri&#34;&gt;https://www.sciencedirect.com/science/article/abs/pii/S0378873304000693&lt;/a&gt;
+- Koschützki, D., Lehmann, K. A., Tenfelde-Podehl, D., &amp;amp; Zlotowski, O. (2005). Advanced centrality concepts. In Network analysis (pp. 83-111). Springer, Berlin, Heidelberg. &lt;a href=&#34;https://link.springer.com/chapter/10.1007/978-3-540-31955-9_5&#34; class=&#34;uri&#34;&gt;https://link.springer.com/chapter/10.1007/978-3-540-31955-9_5&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This one sort of spans the two:
+- Borgatti, S. P., Carley, K. M., &amp;amp; Krackhardt, D. (2006). On the robustness of centrality measures under conditions of imperfect data. Social networks, 28(2), 124-136. &lt;a href=&#34;https://www.sciencedirect.com/science/article/abs/pii/S0378873305000353&#34; class=&#34;uri&#34;&gt;https://www.sciencedirect.com/science/article/abs/pii/S0378873305000353&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The slides for Workshop #3 can be found here:
+&lt;iframe src=&#34;https://ericbrewe.com/slides/rforsna/rforsna_ws3.html#1&#34; width=&#34;672&#34; height=&#34;400px&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
 </description>
     </item>
     

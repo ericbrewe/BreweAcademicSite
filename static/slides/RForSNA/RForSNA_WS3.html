@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>R For SNA</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Eric Brewe   Associate Professor of Physics at Drexel University" />
+    <link href="RForSNA_WS3_files/remark-css/default.css" rel="stylesheet" />
+    <link href="RForSNA_WS3_files/remark-css/metropolis.css" rel="stylesheet" />
+    <link rel="stylesheet" href="BreweSlides.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# R For SNA
+## Workshop 3
+### Eric Brewe <br> Associate Professor of Physics at Drexel University <br>
+### 18 August 2020, last update: 2020-08-11
+
+---
+
+
+
+
+
+# Welcome Back!
+
+### Our project is about building and analyzing the Workshop network
+
+So we will **not** need a new project folder, we will continue to use RForSNA, which you should have set up in WS1. 
+
+This time we will add a new .Rmd file, give it a title like "network_properties.Rmd"
+
+So navigate to your RForSNA file and create a new .Rmd file. 
+
+Then, add a code chunk to load the libraries necessary and run this chunk.
+
+
+```r
+library(tidyverse) #tools for cleaning data 
+library(igraph)  #package for doing network analysis
+library(tidygraph) #tools for doing tidy networks
+library(here) #tools for project-based workflow
+library(ggraph) #plotting tools for networks
+library(boot)  #to do resampling
+```
+
+
+---
+# Let's load our data 
+
+This workshop assumes you did the work from week 1 and you know how to install libraries, read csv files into data, and to manipulate data in R. 
+
+The benefit of having done the work previously is that we don't have to re-do it (unless we want to change something)
+
+So I took the network at the end of workshop #1 and saved it as a .rds file. I could have saved it as a pair of csv files and rebuilt the network, but if I save as rds it will be ready to go!
+
+To load an rds file the syntax is a little different:
+
+
+```r
+gr &lt;- readRDS(here("data", "WokshopNetwork.rds"))
+```
+
+
+---
+# Let's plot it quickly
+
+.pull-left[
+## Whare are distinctive features of the network?
+
+````
+
+```r
+gr %&gt;%
+  ggraph(layout = "kk") +
+  geom_edge_link() +
+  geom_node_point() +
+  theme(legend.position="bottom")
+```
+````
+
+]
+
+.pull-right[
+![](RForSNA_WS3_files/figure-html/plotGrR-1.png)&lt;!-- --&gt;
+]
+---
+# Let's explore whole network metrics
+
+- Density: Proportion of possible connections that exist
+- Diameter: Longest Shortest Path across network
+- Average degree: This is pretty descriptive. 
+- Average Path Length: Average shortest distance between every pair of nodes
+- Reciprocity: Extent to which each directed edge is a two way edge
+- Modularity: Extent to which the network can be disassociated into distinct clusters
+- Transitivity: Extent to which three connected nodes form triangles
+- Homophily: Extent to which nodes with similar attribute are connected
+
+This is a list of many common graph metrics used in tidygraph
+https://rdrr.io/cran/tidygraph/man/graph_measures.html
+
+---
+# Lets calculate a couple of these...
+
+### For many of these it is a very simple one line command.
+Here is density
+
+```r
+edge_density(gr)
+```
+
+```
+## [1] 0.02853107
+```
+
+Here is diameter
+
+```r
+diameter(gr)
+```
+
+```
+## [1] 6
+```
+
+--
+.center.font200[So?]
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

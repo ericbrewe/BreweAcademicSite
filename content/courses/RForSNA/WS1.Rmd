@@ -19,6 +19,8 @@ library(knitr)
 library(kableExtra)
 ```
 
+If you missed it, here is video of [Workshop #1](<https://drexel.zoom.us/rec/play/6cElcb-r_W43G4KcswSDCqcvW43rK_-shCNKq_pYmB3gVnVSZlajN7dEY7MsxwIjYmSt3ELK95yxvx2D?continueMode=true&_x_zm_rtaid=-X5Jfr7yTgCnKLiyVoClXg.1597171066688.b4c9154f854606598f23c8508df2dd7d&_x_zm_rhtaid=6>)
+
 In order to prepare for workshop one - I have five things that I need you to do:
 
 1. Install R and RStudio on your computer. 

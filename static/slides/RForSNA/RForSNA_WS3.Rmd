@@ -1,0 +1,133 @@
+---
+title: "R For SNA"
+subtitle: Workshop 3
+author: 'Eric Brewe <br> Associate Professor of Physics at Drexel University <br>'
+date: "18 August 2020, last update: `r Sys.Date()`"
+output: 
+  xaringan::moon_reader:
+    css: [default, metropolis, "BreweSlides.css"]
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(warning = FALSE, message = FALSE)
+library(tidyverse) # load tidyverse package
+library(emo) # load emoji package
+library(igraph)
+library(tidygraph)
+library(ggraph)
+library(here)
+library(boot)
+```
+
+
+# Welcome Back!
+
+### Our project is about building and analyzing the Workshop network
+
+So we will **not** need a new project folder, we will continue to use RForSNA, which you should have set up in WS1. 
+
+This time we will add a new .Rmd file, give it a title like "network_properties.Rmd"
+
+So navigate to your RForSNA file and create a new .Rmd file. 
+
+Then, add a code chunk to load the libraries necessary and run this chunk.
+
+```{r LoadPackages, eval=FALSE}
+library(tidyverse) #tools for cleaning data 
+library(igraph)  #package for doing network analysis
+library(tidygraph) #tools for doing tidy networks
+library(here) #tools for project-based workflow
+library(ggraph) #plotting tools for networks
+library(boot)  #to do resampling
+```
+
+
+---
+# Let's load our data 
+
+This workshop assumes you did the work from week 1 and you know how to install libraries, read csv files into data, and to manipulate data in R. 
+
+The benefit of having done the work previously is that we don't have to re-do it (unless we want to change something)
+
+So I took the network at the end of workshop #1 and saved it as a .rds file. I could have saved it as a pair of csv files and rebuilt the network, but if I save as rds it will be ready to go!
+
+To load an rds file the syntax is a little different:
+
+```{r LoadNetwork, eval=FALSE}
+
+gr <- readRDS(here("data", "WokshopNetwork.rds"))
+
+```
+
+```{r LoadNetworkForReal, echo=FALSE}
+
+gr <- readRDS(here("static/slides/RForSNA/data", "WorkshopNetwork.rds"))
+
+```
+---
+# Let's plot it quickly
+
+.pull-left[
+## Whare are distinctive features of the network?
+
+````
+```{r plotGr, eval = F}
+gr %>%
+  ggraph(layout = "kk") +
+  geom_edge_link() +
+  geom_node_point() +
+  theme(legend.position="bottom")
+```
+````
+
+]
+
+.pull-right[
+```{r plotGrR, echo = F}
+gr %>%
+  ggraph(layout = "kk") +
+  geom_edge_link() +
+  geom_node_point() +
+  theme(legend.position="bottom")
+```
+]
+---
+# Let's explore whole network metrics
+
+- Density: Proportion of possible connections that exist
+- Diameter: Longest Shortest Path across network
+- Average degree: This is pretty descriptive. 
+- Average Path Length: Average shortest distance between every pair of nodes
+- Reciprocity: Extent to which each directed edge is a two way edge
+- Modularity: Extent to which the network can be disassociated into distinct clusters
+- Transitivity: Extent to which three connected nodes form triangles
+- Homophily: Extent to which nodes with similar attribute are connected
+
+This is a list of many common graph metrics used in tidygraph
+https://rdrr.io/cran/tidygraph/man/graph_measures.html
+
+---
+# Lets calculate a couple of these...
+
+### For many of these it is a very simple one line command.
+Here is density
+```{r CalcDensity}
+
+edge_density(gr)
+
+```
+
+Here is diameter
+```{r CalcDiameter}
+
+diameter(gr)
+
+```
+
+--
+.center.font200[So?]

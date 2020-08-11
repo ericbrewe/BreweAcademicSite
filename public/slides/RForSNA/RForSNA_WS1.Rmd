@@ -34,7 +34,10 @@ library(here)
 
 .center[Or at least it is hard to screw up
 
-#`r emo::ji("doubt")`]
+
+
+#`r emo::ji("doubt")`
+]
 
 ---
 # R is good for... 
