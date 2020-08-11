@@ -128,33 +128,394 @@ gr %>%
 # Let's explore centrality
 
 ### One view of importance is how many people you are connected to.
-.pull-left[
 - **Degree** = number of edges a node is involved in.
-- **Indegree** = number of incoming edges
-- **Outdegree** = number of outgoing edges
+- **In Degree** = number of incoming edges
+- **Out Degree** = number of outgoing edges
 
 Lets calculate degree
-````
-```{r CalcDegree, eval = F}
+```{r CalcDegree}
 gr %>%
   activate(nodes) %>%
-  mutate(deg = centrality_degree()) %>%
-  arrange(desc(deg))
+  mutate(deg = centrality_degree(mode = "total")) %>%
+  arrange(desc(deg)) -> gr
+  
+gr
+
+```
+
+
+
+---
+# Let's use the degree in a plot
+
+.pull-left[
+````
+```{r plotGrCent, eval = F}
+gr %>%
+  ggraph(layout = "kk") +
+  geom_edge_link() +
+  geom_node_point(aes(size = deg )) +
+  theme(legend.position="bottom")
+```
+````
+
+]
+
+.pull-right[
+```{r plotGrCentR, echo = F}
+gr %>%
+  ggraph(layout = "kk") +
+  geom_edge_link() +
+  geom_node_point(aes(size = deg)) +
+  theme(legend.position="bottom")
+```
+]
+---
+# Let's see about just In-degree
+```{r CalcInDegree}
+gr %>%
+  activate(nodes) %>%
+  mutate(InDeg = centrality_degree(mode = "in")) %>%
+  arrange(desc(InDeg)) -> gr
+  
+gr
+
+```
+
+
+
+---
+# Let's use in degree in our plot
+
+.pull-left[
+````
+```{r plotGrInCent, eval = F}
+gr %>%
+  ggraph(layout = "kk") +
+  geom_edge_link() +
+  geom_node_point(aes(size = InDeg )) +
+  theme(legend.position="bottom")
+```
+````
+
+]
+
+.pull-right[
+```{r plotGrInCentR, echo = F}
+gr %>%
+  ggraph(layout = "kk") +
+  geom_edge_link() +
+  geom_node_point(aes(size = InDeg)) +
+  theme(legend.position="bottom")
+```
+]
+
+---
+# Lets compare centrality plots.
+
+### You might have noticed, the plots change layouts
+
+.pull-left[
+
+#### To address this we set a layout...
+
+````
+```{r SetLayout, eval = FALSE}
+
+GrLayout = create_layout(gr, 
+                layout = "kk")
+
+ggraph(GrLayout) +
+  geom_edge_link() +
+  geom_node_point(aes(size = InDeg)) +
+  theme(legend.position="bottom")
+
+
+```
+````
+
+]
+
+.pull-right[
+
+#### The only issue is, we then can't change nodes/attributes.
+
+```{r TestLayout, echo=FALSE}
+
+GrLayout = create_layout(gr, 
+                         layout = "kk")
+ggraph(GrLayout) +
+  geom_edge_link() +
+  geom_node_point(aes(size = InDeg)) +
+  theme(legend.position="bottom")
+```
+
+]
+---
+# Let's compare in-degree and out-degree
+
+.pull-left[
+```{r InDegLayout}
+
+ggraph(GrLayout) +
+  geom_edge_link() +
+  geom_node_point(aes(size = InDeg)) +
+  theme(legend.position="bottom")
 
 ```
 ]
 
 .pull-right[
 
-```{r CalcDegreeTrue, echo = F}
-gr %>%
-  activate(nodes) %>%
-  mutate(deg = centrality_degree()) %>%
-   arrange(desc(deg))
-  
-  
-#head(deg)
+```{r OutDegLayout}
+
+ggraph(GrLayout) +
+  geom_edge_link() +
+  geom_node_point(aes(size = deg)) +
+  theme(legend.position="bottom")
 ```
 
 ]
 ---
+# Let's explore some other centrality measures
+
+### Here is a list of all of the centrality measures that you have access to in tidygraph:
+
+### http://finzi.psych.upenn.edu/R/library/tidygraph/html/centrality.html
+
+
+## This is a workshop and thus far I've done most of the work!  It is your turn!
+
+1. I will randomly assign people to breakout rooms.
+2. As a group, choose one of the centrality measures from the list.
+3. Calculate the centrality measure, use it in the plotting recipe we've been using, and be ready to describe what you think this centrality metric measures. 
+4. You will have 10-15 minutes.  
+
+---
+# Let's use centrality in hypothesis testing
+
+We should establish a research question. How about:
+
+### Are morning people or night owls more central in our network?
+
+To test this we might use:
+1. An independent samples t-test to see if the means of a centrality metric is different.
+2. A linear model to explore the relationships between the grouping variable and the outcome variable. 
+
+Either way, we need to choose a centrality metric.
+
+.center[.font170[Our winner...centrality_eigen!]]
+
+---
+# Let's first calculate and plot eigenvector centrality
+
+Eigenvector centrality is interesting because it allows a node to inherit centrality from neighbors. It works with weighted networks, and but it treats directed networks as undirected.
+
+We want to calculate eigenvector centrality, then add it as an attribute to our graph, and add it to our layout dataframe.
+```{r EigenCent}
+
+gr %>%
+  activate(nodes) %>%
+  mutate(CentE = centrality_eigen()) %>%
+  arrange(desc(CentE)) -> gr
+
+#This makes a dataframe of names and CentE
+gr %>%
+  activate(nodes) %>%
+  select(name, CentE) %>%
+  as_tibble()-> CentEdf
+
+#This adds it to the GrLayout dataframe.
+GrLayout = left_join(GrLayout, CentEdf, by = "name")
+
+```
+
+---
+# Let's plot with eigenvector centrality
+
+.pull-left[
+````
+```{r PlotECent, eval =FALSE}
+
+ggraph(GrLayout) +
+  geom_edge_link() +
+  geom_node_point(aes(size = CentE)) +
+  theme(legend.position="bottom")
+  
+```
+````
+]
+
+.pull-right[
+
+```{r PlotECentR, echo =FALSE}
+
+ggraph(GrLayout) +
+  geom_edge_link() +
+  geom_node_point(aes(size = CentE)) +
+  theme(legend.position="bottom")
+  
+```
+
+]
+.center[
+### Cool, different nodes are important!
+]
+---
+# Let's get ready to use in linear model
+
+### First, let's see how it is distributed
+
+.pull-left[
+````
+```{r BoxPlot, eval = FALSE}
+gr %>%
+  select(AMPM,CentE) %>%
+  as_tibble() %>%
+  ggplot(., aes(x = CentE)) + 
+  geom_histogram()
+
+```
+````
+
+
+]
+
+.pull-right[
+
+### Not Normal!
+```{r BoxPlotR, echo=FALSE}
+gr %>%
+  select(AMPM,CentE) %>%
+  as_tibble() %>%
+  ggplot(., aes(x = CentE)) + 
+  geom_histogram()
+
+```
+]
+
+---
+# Let's reflect
+
+### Remember when I said...
+
+--
+
+"Nodes and interactions are interdependent*"
+
+and
+
+--
+
+"\* Violates basic assumption of inferential statistics"
+
+--
+
+Well, this is the problem, because network metrics are interdependent, they are invariably not normally distributed. Which means we have to take some additional precautions about how we use them in hypothesis testing. Which means...
+--
+
+.center.font190[Bootstrapping!]
+
+.footnote[
+I said it here: https://ericbrewe.com/slides/rforsna/rforsna_ws1.html#8
+]
+
+---
+# Let's get ready to bootstrap
+
+### What is bootstrapping?
+Bootstrapping is a resampling method, where you draw samples based on your existing dataset, calculate your measure of interest, store this, and then rinse and repeat.
+
+
+--
+
+.center.font170[R has a package for that.] 
+
+--
+### Let's install the package "boot" and load it. 
+
+````
+```{r IntallBoot, eval=FALSE}
+
+install.packages("boot")
+library(boot)
+
+```
+````
+---
+# Let's set up a bootstrapped model
+
+### Our goal was to answer the question, "Are morning people or night owls more central in our network?"
+
+So we will run a bootstrapped linear model to look at this relationship.
+
+First, get our data and assign it to its own dataframe (you don't have to, but.)
+
+```{r GetBootData}
+GrLayout %>%
+  select(AMPM,CentE) -> LmData
+```
+
+--
+
+Next, we need to define the linear model as a function. Why? I'll explain in next slide.
+
+```{r BootFunction}
+bs <- function(formula, data, indices) {
+  d <- data[indices,]
+  fit <- lm(formula, data = d)
+  return(coef(fit))
+}
+  
+```
+
+
+---
+# Let's run this linear model
+
+### Finally, we use the boot command to call the function
+Since we want to run this once, and keep our results around, we should do two things.
+
+1. Set our seed so that we can replicate if need be.
+2. Assign our results to a data structure. 
+
+```{r RunBootLM}
+set.seed(327)
+
+results <- boot(data = LmData, 
+     statistic = bs, #<<
+     R = 50, 
+     formula = CentE ~ AMPM)
+
+```
+
+
+---
+# Let's explore the results
+
+.pull-left[
+
+### First, what is the result if we don't use bootstrapping?
+
+```{r lmResults}
+lm(CentE ~ AMPM, data = LmData)
+```
+]
+.pull-right[
+### Now, what about the bootstrap?
+```{r BootResults}
+results
+```
+
+]
+
+---
+#Let's figure out what this means
+
+- Original is the estimate without resampling.
+- Bias is the difference between the bootstrap mean and the original.
+- t1* is the intercept
+- t2* is the coefficient for the AMPM variable
+
+
+
