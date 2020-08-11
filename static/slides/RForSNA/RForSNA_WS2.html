@@ -566,6 +566,24 @@ results
 ## t2* -0.003963586 -0.019188955  0.07939136
 ```
 
+```r
+boot.ci(results, type = "basic")
+```
+
+```
+## BOOTSTRAP CONFIDENCE INTERVAL CALCULATIONS
+## Based on 50 bootstrap replicates
+## 
+## CALL : 
+## boot.ci(boot.out = results, type = "basic")
+## 
+## Intervals : 
+## Level      Basic         
+## 95%   (-0.0285,  0.2213 )  
+## Calculations and Intervals on Original Scale
+## Some basic intervals may be unstable
+```
+
 ]
 
 ---
@@ -575,6 +593,15 @@ results
 - Bias is the difference between the bootstrap mean and the original.
 - t1* is the intercept
 - t2* is the coefficient for the AMPM variable
+
+The confidence interval on the coefficients are (-0.0285, 0.2213)
+
+### So, are morning people more central than night owls?
+
+.center.font200[Probabaly not
+
+😞
+]
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

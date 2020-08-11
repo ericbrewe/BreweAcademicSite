@@ -505,6 +505,8 @@ lm(CentE ~ AMPM, data = LmData)
 ### Now, what about the bootstrap?
 ```{r BootResults}
 results
+
+boot.ci(results, type = "basic")
 ```
 
 ]
@@ -516,6 +518,16 @@ results
 - Bias is the difference between the bootstrap mean and the original.
 - t1* is the intercept
 - t2* is the coefficient for the AMPM variable
+
+The confidence interval on the coefficients are (-0.0285, 0.2213)
+
+### So, are morning people more central than night owls?
+
+.center.font200[Probabaly not
+
+`r emo::ji("disappointed")`
+]
+
 
 
 
