@@ -478,10 +478,12 @@ We did it!
 # Let's be thankful
 
 .font200.center[
-
 Thanks to Dali Ma
---
+
+
 Thanks to SSRC
---
+
 Thanks to all of you
+
+`r emo::ji("clap")`
 ]
