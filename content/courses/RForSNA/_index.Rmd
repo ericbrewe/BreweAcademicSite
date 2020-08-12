@@ -30,12 +30,16 @@ There are lots of things that I hope you would learn: to look at the complexity 
 
 **Workshop One**
 
+[Workshop 1 Video](<https://drexel.zoom.us/rec/play/6cElcb-r_W43G4KcswSDCqcvW43rK_-shCNKq_pYmB3gVnVSZlajN7dEY7MsxwIjYmSt3ELK95yxvx2D?continueMode=true&_x_zm_rtaid=-X5Jfr7yTgCnKLiyVoClXg.1597171066688.b4c9154f854606598f23c8508df2dd7d&_x_zm_rhtaid=6>)
+
 * Import Data into R
 * Clean data and prepare data for SNA
 * Organize data for SNA
 * Vizualize data
 
 **Workshop Two**
+
+[Workshop 2 Video](<https://drexel.zoom.us/rec/share/99dVH-Guy09Jf7OV12PBAql6HJr6aaa81HUWqfUKyBn6z3EdwCdgLwjRhs_8OX9V>)
 
 * Understand different centrality metrics 
 * Plotting networks and incorporating centrality
