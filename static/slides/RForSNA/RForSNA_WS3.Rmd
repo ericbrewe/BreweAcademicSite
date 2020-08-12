@@ -69,16 +69,21 @@ gr <- readRDS(here("data", "WokshopNetwork.rds"))
 gr <- readRDS(here("static/slides/RForSNA/data", "WorkshopNetwork.rds"))
 
 ```
+
 ---
 # Let's plot it quickly
+
+While we are at it we might as well set a layout.
 
 .pull-left[
 ## Whare are distinctive features of the network?
 
 ````
 ```{r plotGr, eval = F}
-gr %>%
-  ggraph(layout = "kk") +
+GrLayout <- create_layout(gr,
+                          layout = "kk")
+
+ggraph(GrLayout) +
   geom_edge_link() +
   geom_node_point() +
   theme(legend.position="bottom")
@@ -89,8 +94,10 @@ gr %>%
 
 .pull-right[
 ```{r plotGrR, echo = F}
-gr %>%
-  ggraph(layout = "kk") +
+GrLayout <- create_layout(gr,
+                          layout = "kk")
+
+ggraph(GrLayout) +
   geom_edge_link() +
   geom_node_point() +
   theme(legend.position="bottom")
@@ -99,14 +106,18 @@ gr %>%
 ---
 # Let's explore whole network metrics
 
+**These are fairly easy to calculate**
 - Density: Proportion of possible connections that exist
 - Diameter: Longest Shortest Path across network
-- Average degree: This is pretty descriptive. 
-- Average Path Length: Average shortest distance between every pair of nodes
 - Reciprocity: Extent to which each directed edge is a two way edge
-- Modularity: Extent to which the network can be disassociated into distinct clusters
 - Transitivity: Extent to which three connected nodes form triangles
+- Average Path Length: Average shortest distance between every pair of nodes
+
+**These require a bit more work**
+- Giant: Number of nodes connected to largest component
 - Homophily: Extent to which nodes with similar attribute are connected
+- Average degree: This is pretty descriptive. 
+
 
 This is a list of many common graph metrics used in tidygraph
 https://rdrr.io/cran/tidygraph/man/graph_measures.html
@@ -122,26 +133,355 @@ edge_density(gr)
 
 ```
 
-Here is diameter
+Here is diameter, note that with tidygraph you have to use the with_graph() function, and specify the graph and function graph_diameter()
 ```{r CalcDiameter}
 
-diameter(gr)
+with_graph(gr, graph_diameter())
 
 ```
 
 --
 .center.font200[So?]
 
+
 ---
-# Lets decide where to go next
+# Let's calculate a couple of others
 
-## Option A: Create a function to calculate these all at once
+###  It is your turn, choose one of the ones that are easy to calculate and make the calculation. 
 
-## Option B: Consider how to compare to other networks
+--
+```{r}
+
+with_graph(gr, graph_reciprocity()) #Reciprocity
+transitivity(gr) #Transitivity
+with_graph(gr, graph_mean_dist()) #Average Distance
+
+```
 
 ---
 # Let's create a function
 
-## When we characterize a network, it makes sense to use the same set of metrics. 
-This is a time and place to create a function so we don't have to re-do this every time. 
+### Creating a function accomplishes two things:
+1. We can calculate some of the harder to calcluate metrics
+2. We do not have to re-do each time we want to analyze a new network.
 
+```{r GrMetricFunction}
+GrFunction <- function(gr){
+  Giant = max(clusters(gr)$csize)
+  AMPMHomophily = with_graph(gr, graph_assortativity(AMPM))
+  DessertHomophily = with_graph(gr, graph_assortativity(Dessert))
+  AveDeg = gr %>%
+    activate(nodes) %>%
+    mutate(Deg = centrality_degree( mode = 'total') ) %>%
+    select(Deg) %>%
+    as_tibble() %>%
+    summarise(AveDeg = mean(Deg))
+  df = tibble(Giant, AMPMHomophily, DessertHomophily, AveDeg )
+  return(df)
+}
+
+```
+
+---
+# Let's run this function
+
+```{r RunGrFunction}
+
+GrFunction(gr)
+```
+
+### What do these numbers mean?
+--
+
+*Giant* = 30, there are 30 people connected in the largest component. 
+
+*AMPM Homophily*, Since this is negative, there is a propensity for people to associate with others, (e.g., A morning person is more likely connected to a night owl)
+
+*Dessert Homophily*, this is pretty close to zero, so there doesn't seem to be an association.
+
+*AveDeg*, the average person has 3.37 incoming or outgoing edges
+
+--
+
+### Is this unique?
+
+---
+# Let's decide if our network is unique
+
+### What is the big problem with the network that we have collected?
+
+--
+
+1. We have one network.
+2. There is no variance in the metrics.  
+3. What is the null hypothesis/model?
+
+---
+# Let's talk about camps
+
+### This is a place where there are sort of two camps of network analysis
+
+.pull-left[
+### Statistical Camp
+
+- **Variance:** Permutation/resampling techniques such as bootstrap. 
+- **Null hypothesis:** Exponential random graph models (ERGMs)
+
+]
+
+.pull-right[
+### Graph Theoretic Camp
+
+- **Null Model** Theory driven models
+    - Random Graph (Erdos-Renyi)
+    - Small World (Wttts-Strogatz)
+    - Preferential Attachment (Barabasi-Albert)
+- **Variance** Network simulation
+]
+
+---
+# Let's try a graph-theoretic model
+
+### We'll generate a Erdos-Renyi model and compare our graph characteristics
+
+First, we need to tell the simulation how many nodes and edges to include.
+
+```{r GenerateERGraphChar}
+N_Nodes = with_graph(gr, graph_order())
+N_Edges = with_graph(gr, graph_size())
+```
+--
+
+### Now we can actually generate the graph
+```{r GenerateERGr}
+
+set.seed(522)
+ER_gr <- play_erdos_renyi(n = N_Nodes, m = N_Edges)
+
+```
+
+---
+# Let's check out our ER Graph
+
+.pull-left[
+```{r plotER, eval=FALSE}
+
+ER_gr %>%
+  ggraph(layout = "kk") + 
+  geom_edge_link() +
+  geom_node_point() +
+  theme(legend.position="bottom")
+```
+
+]
+
+.pull-right[
+```{r plotERT, echo=FALSE}
+
+ER_gr %>%
+  ggraph(layout = "kk") + 
+  geom_edge_link() +
+  geom_node_point() 
+
+```
+]
+
+---
+# Let's put them side by side
+
+.pull-left[
+```{r plotWSNet}
+ggraph(GrLayout) +
+  geom_edge_link() +
+  geom_node_point() 
+```
+
+]
+.pull-right[
+```{r plotERT2}
+
+ER_gr %>%
+  ggraph(layout = "kk") + 
+  geom_edge_link() +
+  geom_node_point() 
+
+```
+]
+
+---
+# Let's assign attributes
+
+### In order to compare homophily, we need our ER_gr to have the same attributes.
+
+I emailed you all an additional file that has a random graph with attributes (because it was a pain to add those in.) So now, we need to add these in...
+
+
+```{r GetWSNetAMPM, eval=FALSE}
+
+ER_gr_attr <- readRDS(here("static/slides/RForSNA/data", "RandomGraph.rds")) 
+
+```
+
+
+```{r GetWSNetAMPM_Real, echo=FALSE}
+
+ER_gr_attr <- readRDS(here("static/slides/RForSNA/data", "RandomGraph.rds")) 
+
+ER_gr_attr 
+
+```
+
+
+
+
+---
+# Let's use our function to compare
+
+
+### Measured network
+```{r MeasuredNet}
+
+GrFunction(gr)
+```
+
+
+
+### Random network
+```{r ERNet}
+
+GrFunction(ER_gr_attr) 
+```
+
+---
+# Let's now do this 100 times!
+
+In order to do this, lets reduce the number of graph metrics we want to calculate.
+
+```{r SmallerFunction}
+SmGrFunction <- function(gr){
+  Giant = max(clusters(gr)$csize)
+  Recip  = with_graph(gr, graph_reciprocity())
+  Trans = transitivity(gr) 
+  Dist = with_graph(gr, graph_mean_dist()) 
+  Dia = with_graph(gr, graph_diameter())
+  df = tibble(Giant, Recip, Trans, Dist, Dia )
+  return(df)
+}
+```
+
+
+```{r ReplicateERGraphs}
+
+for (i in 1:100)
+  {
+  test_gr = play_erdos_renyi(n = N_Nodes, m = N_Edges)
+  if(i==1) 
+    {df <- SmGrFunction(test_gr)} else
+    {df <- bind_rows(df, SmGrFunction(test_gr))}
+  }
+```
+
+---
+# Let's explore our simulated networks
+
+```{r ExploreDf}
+head(df)
+```
+---
+# Let's get a summary
+And lets average these out.
+
+```{r SummarizeDf}
+
+df %>%
+  summarise(across(everything(), mean)) 
+```
+
+And standard deviations.
+
+```{r SummarizeDf2}
+
+df %>%
+  summarise(across(everything(), sd))
+```
+
+---
+# Let's compare with measured
+
+```{r SummarizeDf3}
+
+df %>%
+  summarise(across(everything(), mean)) 
+```
+
+```{r MeasuredDf}
+
+SmGrFunction(gr)
+
+```
+
+---
+# Let's get a confidcence interval
+
+### If we want to estimate the confidence with which we think our measured netowk is different on one of these metrics, we can look for the percentiles.
+
+Let's see if the measured average distance falls within the 95% of the simulated network....
+
+```{r Quantile}
+
+quantile(df$Dist, probs = c(0.05, 0.95))
+```
+
+Since the measured average distance is outside of this range, we can say that the measured network is not a random network!
+
+---
+# Let's summarize
+
+.font160[
+1. We measured one network
+2. To compare we generated a random network
+3. We replicated 100 times
+4. We checked whether metrics from the measured network falls within some confidence range.
+5. We can say the measured network is different than random. 
+]
+
+---
+# Let's reflect
+
+.font120[
+
+We did it!
+
+1. We can import data into R
+2. We can manipulate these data
+3. We can create a network
+4. We can plot a network
+5. We can calculate a number of centrality measures
+6. We can use these in plotting networks
+7. We can use these in testing hypotheses
+8. We can calculate a number of whole graph metrics
+9. We can use these in comparing networks
+
+]
+
+---
+# Let's note what we missed
+
+.font150[
+
+1. We didn't do community detection
+2. We didn't really touch Base R
+3. We didn't deal with ERGMs.
+]
+
+---
+# Let's be thankful
+
+.font200.center[
+
+Thanks to Dali Ma
+--
+Thanks to SSRC
+--
+Thanks to all of you
+]

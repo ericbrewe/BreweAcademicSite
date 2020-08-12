@@ -69,16 +69,21 @@ gr <- readRDS(here("data", "WokshopNetwork.rds"))
 gr <- readRDS(here("static/slides/RForSNA/data", "WorkshopNetwork.rds"))
 
 ```
+
 ---
 # Let's plot it quickly
+
+While we are at it we might as well set a layout.
 
 .pull-left[
 ## Whare are distinctive features of the network?
 
 ````
 ```{r plotGr, eval = F}
-gr %>%
-  ggraph(layout = "kk") +
+GrLayout <- create_layout(gr,
+                          layout = "kk")
+
+ggraph(GrLayout) +
   geom_edge_link() +
   geom_node_point() +
   theme(legend.position="bottom")
@@ -89,8 +94,10 @@ gr %>%
 
 .pull-right[
 ```{r plotGrR, echo = F}
-gr %>%
-  ggraph(layout = "kk") +
+GrLayout <- create_layout(gr,
+                          layout = "kk")
+
+ggraph(GrLayout) +
   geom_edge_link() +
   geom_node_point() +
   theme(legend.position="bottom")
@@ -99,14 +106,16 @@ gr %>%
 ---
 # Let's explore whole network metrics
 
+**These are fairly easy to calculate**
 - Density: Proportion of possible connections that exist
 - Diameter: Longest Shortest Path across network
+- Reciprocity: Extent to which each directed edge is a two way edge
+- Transitivity: Extent to which three connected nodes form triangles
+
+**These require a bit more work**
+- Homophily: Extent to which nodes with similar attribute are connected
 - Average degree: This is pretty descriptive. 
 - Average Path Length: Average shortest distance between every pair of nodes
-- Reciprocity: Extent to which each directed edge is a two way edge
-- Modularity: Extent to which the network can be disassociated into distinct clusters
-- Transitivity: Extent to which three connected nodes form triangles
-- Homophily: Extent to which nodes with similar attribute are connected
 
 This is a list of many common graph metrics used in tidygraph
 https://rdrr.io/cran/tidygraph/man/graph_measures.html
@@ -122,26 +131,48 @@ edge_density(gr)
 
 ```
 
-Here is diameter
+Here is diameter, note that with tidygraph you have to use the with_graph() function, and specify the graph and function graph_diameter()
 ```{r CalcDiameter}
 
-diameter(gr)
+with_graph(gr, graph_diameter())
 
 ```
 
 --
 .center.font200[So?]
 
+
 ---
-# Lets decide where to go next
+# Let's calculate a couple of others
 
-## Option A: Create a function to calculate these all at once
+###  Now it is your turn, choose one of the ones that are easy to calculate and make the calculation. 
 
-## Option B: Consider how to compare to other networks
+--
+```{r}
+
+with_graph(gr, graph_reciprocity()) #Reciprocity
+with_graph(gr, graph_modularity())
+
+```
+
+
+
+---
+# Let's decide if our network is unique
+
+.font160[We will:]
+
+## Create a function to calculate these all at once
+
+## Consider how to compare to other networks
 
 ---
 # Let's create a function
 
 ## When we characterize a network, it makes sense to use the same set of metrics. 
 This is a time and place to create a function so we don't have to re-do this every time. 
+
+```{r}
+with_graph(gr, graph_mean_dist())
+```
 
