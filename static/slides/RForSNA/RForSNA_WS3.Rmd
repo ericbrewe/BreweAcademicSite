@@ -60,7 +60,7 @@ To load an rds file the syntax is a little different:
 
 ```{r LoadNetwork, eval=FALSE}
 
-gr <- readRDS(here("data", "WokshopNetwork.rds"))
+gr <- readRDS(here("data", "WorkshopNetwork.rds"))
 
 ```
 
@@ -225,7 +225,7 @@ GrFunction(gr)
 ### Statistical Camp
 
 - **Variance:** Permutation/resampling techniques such as bootstrap. 
-- **Null hypothesis:** Exponential random graph models (ERGMs)
+- **Null hypothesis:** Exponential random graph models (ERGMs) Or rewired network
 
 ]
 
@@ -234,7 +234,7 @@ GrFunction(gr)
 
 - **Null Model** Theory driven models
     - Random Graph (Erdos-Renyi)
-    - Small World (Wttts-Strogatz)
+    - Small World (Watts-Strogatz)
     - Preferential Attachment (Barabasi-Albert)
 - **Variance** Network simulation
 ]
@@ -318,7 +318,7 @@ I emailed you all an additional file that has a random graph with attributes (be
 
 ```{r GetWSNetAMPM, eval=FALSE}
 
-ER_gr_attr <- readRDS(here("static/slides/RForSNA/data", "RandomGraph.rds")) 
+ER_gr_attr <- readRDS(here("data", "RandomGraph.rds")) 
 
 ```
 
@@ -423,13 +423,13 @@ SmGrFunction(gr)
 ---
 # Let's get a confidcence interval
 
-### If we want to estimate the confidence with which we think our measured netowk is different on one of these metrics, we can look for the percentiles.
+### If we want to estimate the confidence with which we think our measured network is different on one of these metrics, we can look for the percentiles.
 
 Let's see if the measured average distance falls within the 95% of the simulated network....
 
 ```{r Quantile}
 
-quantile(df$Dist, probs = c(0.05, 0.95))
+quantile(df$Dist, probs = c(0.025, 0.975))
 ```
 
 Since the measured average distance is outside of this range, we can say that the measured network is not a random network!
