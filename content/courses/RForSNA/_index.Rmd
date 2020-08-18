@@ -51,7 +51,7 @@ There are lots of things that I hope you would learn: to look at the complexity 
 
 **Workshop Three**
 
-[Workshop 3 Video](<https://drexel.zoom.us/rec/share/3c53EL720XtLAbPs-FmDVa8CJp7Meaa823UW__JczUqtzdhzr7TS6NbzAv5GvFzj>)
+[Workshop 3 Video](<https://drexel.zoom.us/rec/share/7sYyCpHZzk9LUNLu-W7aVJYAHpjJeaa8hiBN86dcyhNEBUwSWzKAxCdRqFb19pE>)
 
 [Workshop 3 Slides](<https://ericbrewe.com/slides/rforsna/rforsna_ws3.html#1>)
 
