@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Informal education | Eric Brewe Academic</title>
-    <link>/tags/informal-education/</link>
-      <atom:link href="/tags/informal-education/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://ericbrewe.netlify.com/tags/informal-education/</link>
+      <atom:link href="https://ericbrewe.netlify.com/tags/informal-education/index.xml" rel="self" type="application/rss+xml" />
     <description>Informal education</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 01 Jan 2009 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Informal education</title>
-      <link>/tags/informal-education/</link>
+      <link>https://ericbrewe.netlify.com/tags/informal-education/</link>
     </image>
     
     <item>
       <title>Investigating Student Communities with Network Analysis of Interactions in a Physics Learning Center</title>
-      <link>/publication/brewe-2009-communities-aip/</link>
+      <link>https://ericbrewe.netlify.com/publication/brewe-2009-communities-aip/</link>
       <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
-      <guid>/publication/brewe-2009-communities-aip/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/brewe-2009-communities-aip/</guid>
       <description></description>
     </item>
     

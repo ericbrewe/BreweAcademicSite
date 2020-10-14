@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Community of learners | Eric Brewe Academic</title>
-    <link>/tags/community-of-learners/</link>
-      <atom:link href="/tags/community-of-learners/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://ericbrewe.netlify.com/tags/community-of-learners/</link>
+      <atom:link href="https://ericbrewe.netlify.com/tags/community-of-learners/index.xml" rel="self" type="application/rss+xml" />
     <description>Community of learners</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 01 Jan 2013 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Community of learners</title>
-      <link>/tags/community-of-learners/</link>
+      <link>https://ericbrewe.netlify.com/tags/community-of-learners/</link>
     </image>
     
     <item>
       <title>Expanded Markers of Success in Introductory University Physics</title>
-      <link>/publication/goertzen-2013/</link>
+      <link>https://ericbrewe.netlify.com/publication/goertzen-2013/</link>
       <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
-      <guid>/publication/goertzen-2013/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/goertzen-2013/</guid>
       <description></description>
     </item>
     

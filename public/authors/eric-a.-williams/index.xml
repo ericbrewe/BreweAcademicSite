@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Eric A. Williams | Eric Brewe Academic</title>
-    <link>/authors/eric-a.-williams/</link>
-      <atom:link href="/authors/eric-a.-williams/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://ericbrewe.netlify.com/authors/eric-a.-williams/</link>
+      <atom:link href="https://ericbrewe.netlify.com/authors/eric-a.-williams/index.xml" rel="self" type="application/rss+xml" />
     <description>Eric A. Williams</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Eric A. Williams</title>
-      <link>/authors/eric-a.-williams/</link>
+      <link>https://ericbrewe.netlify.com/authors/eric-a.-williams/</link>
     </image>
     
     <item>
       <title>Students&#39; network integration as a predictor of persistence in introductory physics courses</title>
-      <link>/publication/zwolak-2017/</link>
+      <link>https://ericbrewe.netlify.com/publication/zwolak-2017/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>/publication/zwolak-2017/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/zwolak-2017/</guid>
       <description></description>
     </item>
     

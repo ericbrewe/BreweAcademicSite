@@ -2,53 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Social network analysis | Eric Brewe Academic</title>
-    <link>/tags/social-network-analysis/</link>
-      <atom:link href="/tags/social-network-analysis/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://ericbrewe.netlify.com/tags/social-network-analysis/</link>
+      <atom:link href="https://ericbrewe.netlify.com/tags/social-network-analysis/index.xml" rel="self" type="application/rss+xml" />
     <description>Social network analysis</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Social network analysis</title>
-      <link>/tags/social-network-analysis/</link>
+      <link>https://ericbrewe.netlify.com/tags/social-network-analysis/</link>
     </image>
     
     <item>
       <title>Understanding the development of interest and self-efficacy in active-learning undergraduate physics courses</title>
-      <link>/publication/dou-2018/</link>
+      <link>https://ericbrewe.netlify.com/publication/dou-2018/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>/publication/dou-2018/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/dou-2018/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A Study of Informal Learning Communities : a Tale of Two Physics Courses</title>
-      <link>/publication/yang-2014/</link>
+      <link>https://ericbrewe.netlify.com/publication/yang-2014/</link>
       <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
-      <guid>/publication/yang-2014/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/yang-2014/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Network centrality and student self-efficacy in an interactive introductory physics environment</title>
-      <link>/publication/dou-2014/</link>
+      <link>https://ericbrewe.netlify.com/publication/dou-2014/</link>
       <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
-      <guid>/publication/dou-2014/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/dou-2014/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Expanded Markers of Success in Introductory University Physics</title>
-      <link>/publication/goertzen-2013/</link>
+      <link>https://ericbrewe.netlify.com/publication/goertzen-2013/</link>
       <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
-      <guid>/publication/goertzen-2013/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/goertzen-2013/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Investigating Student Communities with Network Analysis of Interactions in a Physics Learning Center</title>
-      <link>/publication/brewe-2009-communities-aip/</link>
+      <link>https://ericbrewe.netlify.com/publication/brewe-2009-communities-aip/</link>
       <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
-      <guid>/publication/brewe-2009-communities-aip/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/brewe-2009-communities-aip/</guid>
       <description></description>
     </item>
     

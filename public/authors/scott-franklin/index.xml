@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Scott Franklin | Eric Brewe Academic</title>
-    <link>/authors/scott-franklin/</link>
-      <atom:link href="/authors/scott-franklin/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://ericbrewe.netlify.com/authors/scott-franklin/</link>
+      <atom:link href="https://ericbrewe.netlify.com/authors/scott-franklin/index.xml" rel="self" type="application/rss+xml" />
     <description>Scott Franklin</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 20 Apr 2020 14:43:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Scott Franklin</title>
-      <link>/authors/scott-franklin/</link>
+      <link>https://ericbrewe.netlify.com/authors/scott-franklin/</link>
     </image>
     
     <item>
       <title>A toolkit for physics department advocacy (and survival) and its connection to EP3</title>
-      <link>/talk/apsaprildepttoolkit/</link>
+      <link>https://ericbrewe.netlify.com/talk/apsaprildepttoolkit/</link>
       <pubDate>Mon, 20 Apr 2020 14:43:00 +0000</pubDate>
-      <guid>/talk/apsaprildepttoolkit/</guid>
+      <guid>https://ericbrewe.netlify.com/talk/apsaprildepttoolkit/</guid>
       <description></description>
     </item>
     

@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jonathan V. Mahadeo | Eric Brewe Academic</title>
-    <link>/authors/jonathan-v.-mahadeo/</link>
-      <atom:link href="/authors/jonathan-v.-mahadeo/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://ericbrewe.netlify.com/authors/jonathan-v.-mahadeo/</link>
+      <atom:link href="https://ericbrewe.netlify.com/authors/jonathan-v.-mahadeo/index.xml" rel="self" type="application/rss+xml" />
     <description>Jonathan V. Mahadeo</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 01 Jan 2015 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Jonathan V. Mahadeo</title>
-      <link>/authors/jonathan-v.-mahadeo/</link>
+      <link>https://ericbrewe.netlify.com/authors/jonathan-v.-mahadeo/</link>
     </image>
     
     <item>
       <title>Multiple Representations and Epistemic Games in Introductory Physics Exam Solutions</title>
-      <link>/publication/traxler-2015/</link>
+      <link>https://ericbrewe.netlify.com/publication/traxler-2015/</link>
       <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
-      <guid>/publication/traxler-2015/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/traxler-2015/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Regression analysis exploring teacher impact on student FCI post scores</title>
-      <link>/publication/mahadeo-2013/</link>
+      <link>https://ericbrewe.netlify.com/publication/mahadeo-2013/</link>
       <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
-      <guid>/publication/mahadeo-2013/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/mahadeo-2013/</guid>
       <description></description>
     </item>
     

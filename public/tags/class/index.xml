@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CLASS | Eric Brewe Academic</title>
-    <link>/tags/class/</link>
-      <atom:link href="/tags/class/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://ericbrewe.netlify.com/tags/class/</link>
+      <atom:link href="https://ericbrewe.netlify.com/tags/class/index.xml" rel="self" type="application/rss+xml" />
     <description>CLASS</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>CLASS</title>
-      <link>/tags/class/</link>
+      <link>https://ericbrewe.netlify.com/tags/class/</link>
     </image>
     
     <item>
       <title>CLASS shifts in modeling instruction</title>
-      <link>/publication/brewe-2008-a/</link>
+      <link>https://ericbrewe.netlify.com/publication/brewe-2008-a/</link>
       <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
-      <guid>/publication/brewe-2008-a/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/brewe-2008-a/</guid>
       <description></description>
     </item>
     

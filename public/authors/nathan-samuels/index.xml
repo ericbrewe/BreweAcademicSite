@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nathan Samuels | Eric Brewe Academic</title>
-    <link>/authors/nathan-samuels/</link>
-      <atom:link href="/authors/nathan-samuels/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://ericbrewe.netlify.com/authors/nathan-samuels/</link>
+      <atom:link href="https://ericbrewe.netlify.com/authors/nathan-samuels/index.xml" rel="self" type="application/rss+xml" />
     <description>Nathan Samuels</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 01 Jan 2013 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Nathan Samuels</title>
-      <link>/authors/nathan-samuels/</link>
+      <link>https://ericbrewe.netlify.com/authors/nathan-samuels/</link>
     </image>
     
     <item>
       <title>Instructional changes based on cogenerative physics reform</title>
-      <link>/publication/samuels-2013/</link>
+      <link>https://ericbrewe.netlify.com/publication/samuels-2013/</link>
       <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
-      <guid>/publication/samuels-2013/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/samuels-2013/</guid>
       <description></description>
     </item>
     

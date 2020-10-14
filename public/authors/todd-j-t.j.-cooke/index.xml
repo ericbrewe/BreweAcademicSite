@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Todd J T.J. Cooke | Eric Brewe Academic</title>
-    <link>/authors/todd-j-t.j.-cooke/</link>
-      <atom:link href="/authors/todd-j-t.j.-cooke/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://ericbrewe.netlify.com/authors/todd-j-t.j.-cooke/</link>
+      <atom:link href="https://ericbrewe.netlify.com/authors/todd-j-t.j.-cooke/index.xml" rel="self" type="application/rss+xml" />
     <description>Todd J T.J. Cooke</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 01 Jan 2013 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Todd J T.J. Cooke</title>
-      <link>/authors/todd-j-t.j.-cooke/</link>
+      <link>https://ericbrewe.netlify.com/authors/todd-j-t.j.-cooke/</link>
     </image>
     
     <item>
       <title>From Vision to Change: Educational Initiatives and Research at the Intersection of Physics and Biology</title>
-      <link>/publication/brewe-2013-cbe/</link>
+      <link>https://ericbrewe.netlify.com/publication/brewe-2013-cbe/</link>
       <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
-      <guid>/publication/brewe-2013-cbe/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/brewe-2013-cbe/</guid>
       <description></description>
     </item>
     

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Case studies | Eric Brewe Academic</title>
-    <link>/tags/case-studies/</link>
-      <atom:link href="/tags/case-studies/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://ericbrewe.netlify.com/tags/case-studies/</link>
+      <atom:link href="https://ericbrewe.netlify.com/tags/case-studies/index.xml" rel="self" type="application/rss+xml" />
     <description>Case studies</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 01 Jan 2013 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Case studies</title>
-      <link>/tags/case-studies/</link>
+      <link>https://ericbrewe.netlify.com/tags/case-studies/</link>
     </image>
     
     <item>
       <title>Expanded Markers of Success in Introductory University Physics</title>
-      <link>/publication/goertzen-2013/</link>
+      <link>https://ericbrewe.netlify.com/publication/goertzen-2013/</link>
       <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
-      <guid>/publication/goertzen-2013/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/goertzen-2013/</guid>
       <description></description>
     </item>
     

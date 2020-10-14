@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Neuroeducation | Eric Brewe Academic</title>
-    <link>/tags/neuroeducation/</link>
-      <atom:link href="/tags/neuroeducation/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://ericbrewe.netlify.com/tags/neuroeducation/</link>
+      <atom:link href="https://ericbrewe.netlify.com/tags/neuroeducation/index.xml" rel="self" type="application/rss+xml" />
     <description>Neuroeducation</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Neuroeducation</title>
-      <link>/tags/neuroeducation/</link>
+      <link>https://ericbrewe.netlify.com/tags/neuroeducation/</link>
     </image>
     
     <item>
       <title>Toward a Neurobiological Basis for Understanding Learning in University Modeling Instruction Physics Courses</title>
-      <link>/publication/brewe-2018-neuroimaging/</link>
+      <link>https://ericbrewe.netlify.com/publication/brewe-2018-neuroimaging/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>/publication/brewe-2018-neuroimaging/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/brewe-2018-neuroimaging/</guid>
       <description></description>
     </item>
     

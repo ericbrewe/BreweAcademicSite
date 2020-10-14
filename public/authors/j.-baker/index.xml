@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>J. Baker | Eric Brewe Academic</title>
-    <link>/authors/j.-baker/</link>
-      <atom:link href="/authors/j.-baker/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://ericbrewe.netlify.com/authors/j.-baker/</link>
+      <atom:link href="https://ericbrewe.netlify.com/authors/j.-baker/index.xml" rel="self" type="application/rss+xml" />
     <description>J. Baker</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2011 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>J. Baker</title>
-      <link>/authors/j.-baker/</link>
+      <link>https://ericbrewe.netlify.com/authors/j.-baker/</link>
     </image>
     
     <item>
       <title>QBIC, an interdisciplinary and quantitative biological sciences curriculum: Concept to implementation</title>
-      <link>/publication/weeks-2011/</link>
+      <link>https://ericbrewe.netlify.com/publication/weeks-2011/</link>
       <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
-      <guid>/publication/weeks-2011/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/weeks-2011/</guid>
       <description></description>
     </item>
     

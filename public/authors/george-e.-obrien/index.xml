@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>George E. O&#39;Brien | Eric Brewe Academic</title>
-    <link>/authors/george-e.-obrien/</link>
-      <atom:link href="/authors/george-e.-obrien/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://ericbrewe.netlify.com/authors/george-e.-obrien/</link>
+      <atom:link href="https://ericbrewe.netlify.com/authors/george-e.-obrien/index.xml" rel="self" type="application/rss+xml" />
     <description>George E. O&#39;Brien</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 01 Jan 2010 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>George E. O&#39;Brien</title>
-      <link>/authors/george-e.-obrien/</link>
+      <link>https://ericbrewe.netlify.com/authors/george-e.-obrien/</link>
     </image>
     
     <item>
       <title>Changing participation through formation of student learning communities</title>
-      <link>/publication/brewe-2010-b/</link>
+      <link>https://ericbrewe.netlify.com/publication/brewe-2010-b/</link>
       <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
-      <guid>/publication/brewe-2010-b/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/brewe-2010-b/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Modeling instruction: Positive attitudinal shifts in introductory physics measured with CLASS</title>
-      <link>/publication/brewe-2009-a/</link>
+      <link>https://ericbrewe.netlify.com/publication/brewe-2009-a/</link>
       <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
-      <guid>/publication/brewe-2009-a/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/brewe-2009-a/</guid>
       <description></description>
     </item>
     
     <item>
       <title>CLASS shifts in modeling instruction</title>
-      <link>/publication/brewe-2008-a/</link>
+      <link>https://ericbrewe.netlify.com/publication/brewe-2008-a/</link>
       <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
-      <guid>/publication/brewe-2008-a/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/brewe-2008-a/</guid>
       <description></description>
     </item>
     

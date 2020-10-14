@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rosalie Odean | Eric Brewe Academic</title>
-    <link>/authors/rosalie-odean/</link>
-      <atom:link href="/authors/rosalie-odean/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://ericbrewe.netlify.com/authors/rosalie-odean/</link>
+      <atom:link href="https://ericbrewe.netlify.com/authors/rosalie-odean/index.xml" rel="self" type="application/rss+xml" />
     <description>Rosalie Odean</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 02 Dec 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Rosalie Odean</title>
-      <link>/authors/rosalie-odean/</link>
+      <link>https://ericbrewe.netlify.com/authors/rosalie-odean/</link>
     </image>
     
     <item>
       <title>Brain activity links performance in science reasoning with conceptual approach</title>
-      <link>/publication/bartleybrainlinkconceptualapproach/</link>
+      <link>https://ericbrewe.netlify.com/publication/bartleybrainlinkconceptualapproach/</link>
       <pubDate>Mon, 02 Dec 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/bartleybrainlinkconceptualapproach/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/bartleybrainlinkconceptualapproach/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sex differences in brain correlates of STEM anxiety</title>
-      <link>/publication/gonzalez-2019-stem-anxiety-brain/</link>
+      <link>https://ericbrewe.netlify.com/publication/gonzalez-2019-stem-anxiety-brain/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/gonzalez-2019-stem-anxiety-brain/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/gonzalez-2019-stem-anxiety-brain/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Toward a Neurobiological Basis for Understanding Learning in University Modeling Instruction Physics Courses</title>
-      <link>/publication/brewe-2018-neuroimaging/</link>
+      <link>https://ericbrewe.netlify.com/publication/brewe-2018-neuroimaging/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>/publication/brewe-2018-neuroimaging/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/brewe-2018-neuroimaging/</guid>
       <description></description>
     </item>
     

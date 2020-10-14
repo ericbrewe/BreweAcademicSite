@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Participation | Eric Brewe Academic</title>
-    <link>/tags/participation/</link>
-      <atom:link href="/tags/participation/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://ericbrewe.netlify.com/tags/participation/</link>
+      <atom:link href="https://ericbrewe.netlify.com/tags/participation/index.xml" rel="self" type="application/rss+xml" />
     <description>Participation</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jan 2014 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Participation</title>
-      <link>/tags/participation/</link>
+      <link>https://ericbrewe.netlify.com/tags/participation/</link>
     </image>
     
     <item>
       <title>A Study of Informal Learning Communities : a Tale of Two Physics Courses</title>
-      <link>/publication/yang-2014/</link>
+      <link>https://ericbrewe.netlify.com/publication/yang-2014/</link>
       <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
-      <guid>/publication/yang-2014/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/yang-2014/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Expanded Markers of Success in Introductory University Physics</title>
-      <link>/publication/goertzen-2013/</link>
+      <link>https://ericbrewe.netlify.com/publication/goertzen-2013/</link>
       <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
-      <guid>/publication/goertzen-2013/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/goertzen-2013/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Changing participation through formation of student learning communities</title>
-      <link>/publication/brewe-2010-b/</link>
+      <link>https://ericbrewe.netlify.com/publication/brewe-2010-b/</link>
       <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
-      <guid>/publication/brewe-2010-b/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/brewe-2010-b/</guid>
       <description></description>
     </item>
     

@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Justyna P Zwolak | Eric Brewe Academic</title>
-    <link>/authors/justyna-p-zwolak/</link>
-      <atom:link href="/authors/justyna-p-zwolak/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://ericbrewe.netlify.com/authors/justyna-p-zwolak/</link>
+      <atom:link href="https://ericbrewe.netlify.com/authors/justyna-p-zwolak/index.xml" rel="self" type="application/rss+xml" />
     <description>Justyna P Zwolak</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Justyna P Zwolak</title>
-      <link>/authors/justyna-p-zwolak/</link>
+      <link>https://ericbrewe.netlify.com/authors/justyna-p-zwolak/</link>
     </image>
     
     <item>
       <title>Linking engagement and performance : The social network analysis perspective</title>
-      <link>/publication/williams-2019-network-growth/</link>
+      <link>https://ericbrewe.netlify.com/publication/williams-2019-network-growth/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/williams-2019-network-growth/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/williams-2019-network-growth/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Beyond performance metrics : Examining a decrease in students &#39; physics self-efficacy through a social networks lens</title>
-      <link>/publication/dou-2016/</link>
+      <link>https://ericbrewe.netlify.com/publication/dou-2016/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
-      <guid>/publication/dou-2016/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/dou-2016/</guid>
       <description></description>
     </item>
     

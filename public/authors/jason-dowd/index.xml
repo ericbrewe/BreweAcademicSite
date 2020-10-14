@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jason Dowd | Eric Brewe Academic</title>
-    <link>/authors/jason-dowd/</link>
-      <atom:link href="/authors/jason-dowd/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://ericbrewe.netlify.com/authors/jason-dowd/</link>
+      <atom:link href="https://ericbrewe.netlify.com/authors/jason-dowd/index.xml" rel="self" type="application/rss+xml" />
     <description>Jason Dowd</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Jason Dowd</title>
-      <link>/authors/jason-dowd/</link>
+      <link>https://ericbrewe.netlify.com/authors/jason-dowd/</link>
     </image>
     
     <item>
       <title>Power Boxes: New Representation for Analyzing DC Circuits</title>
-      <link>/publication/mc-padden-2018-power-boxes/</link>
+      <link>https://ericbrewe.netlify.com/publication/mc-padden-2018-power-boxes/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>/publication/mc-padden-2018-power-boxes/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/mc-padden-2018-power-boxes/</guid>
       <description></description>
     </item>
     

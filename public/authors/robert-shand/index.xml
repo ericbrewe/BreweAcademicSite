@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Robert Shand | Eric Brewe Academic</title>
-    <link>/authors/robert-shand/</link>
-      <atom:link href="/authors/robert-shand/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://ericbrewe.netlify.com/authors/robert-shand/</link>
+      <atom:link href="https://ericbrewe.netlify.com/authors/robert-shand/index.xml" rel="self" type="application/rss+xml" />
     <description>Robert Shand</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Robert Shand</title>
-      <link>/authors/robert-shand/</link>
+      <link>https://ericbrewe.netlify.com/authors/robert-shand/</link>
     </image>
     
     <item>
       <title>Costs of success: Financial implications of implementation of active learning in introductory physics courses for students and administrators</title>
-      <link>/publication/brewe-2018/</link>
+      <link>https://ericbrewe.netlify.com/publication/brewe-2018/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>/publication/brewe-2018/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/brewe-2018/</guid>
       <description></description>
     </item>
     

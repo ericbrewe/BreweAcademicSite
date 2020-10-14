@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Edgardo Zamalloa | Eric Brewe Academic</title>
-    <link>/authors/edgardo-zamalloa/</link>
-      <atom:link href="/authors/edgardo-zamalloa/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://ericbrewe.netlify.com/authors/edgardo-zamalloa/</link>
+      <atom:link href="https://ericbrewe.netlify.com/authors/edgardo-zamalloa/index.xml" rel="self" type="application/rss+xml" />
     <description>Edgardo Zamalloa</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 01 Jan 2008 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Edgardo Zamalloa</title>
-      <link>/authors/edgardo-zamalloa/</link>
+      <link>https://ericbrewe.netlify.com/authors/edgardo-zamalloa/</link>
     </image>
     
     <item>
       <title>Impact of the FIU PhysTEC Reform of Introductory Physics Labs</title>
-      <link>/publication/wells-2008/</link>
+      <link>https://ericbrewe.netlify.com/publication/wells-2008/</link>
       <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
-      <guid>/publication/wells-2008/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/wells-2008/</guid>
       <description></description>
     </item>
     

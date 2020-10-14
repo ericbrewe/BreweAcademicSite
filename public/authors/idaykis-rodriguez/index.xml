@@ -2,61 +2,61 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Idaykis Rodriguez | Eric Brewe Academic</title>
-    <link>/authors/idaykis-rodriguez/</link>
-      <atom:link href="/authors/idaykis-rodriguez/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://ericbrewe.netlify.com/authors/idaykis-rodriguez/</link>
+      <atom:link href="https://ericbrewe.netlify.com/authors/idaykis-rodriguez/index.xml" rel="self" type="application/rss+xml" />
     <description>Idaykis Rodriguez</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 01 Jan 2015 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Idaykis Rodriguez</title>
-      <link>/authors/idaykis-rodriguez/</link>
+      <link>https://ericbrewe.netlify.com/authors/idaykis-rodriguez/</link>
     </image>
     
     <item>
       <title>Developing a physics expert identity in a biophysics research group</title>
-      <link>/publication/rodriguez-2015-a/</link>
+      <link>https://ericbrewe.netlify.com/publication/rodriguez-2015-a/</link>
       <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
-      <guid>/publication/rodriguez-2015-a/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/rodriguez-2015-a/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cookies as agents for community membership</title>
-      <link>/publication/rodriguez-2013/</link>
+      <link>https://ericbrewe.netlify.com/publication/rodriguez-2013/</link>
       <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
-      <guid>/publication/rodriguez-2013/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/rodriguez-2013/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Communicating scientific ideas: One element of physics expertise</title>
-      <link>/publication/rodriguez-2012-communicating/</link>
+      <link>https://ericbrewe.netlify.com/publication/rodriguez-2012-communicating/</link>
       <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
-      <guid>/publication/rodriguez-2012-communicating/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/rodriguez-2012-communicating/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Impact of equity models and statistical measures on interpretations of educational reform</title>
-      <link>/publication/rodriguez-2012-a/</link>
+      <link>https://ericbrewe.netlify.com/publication/rodriguez-2012-a/</link>
       <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
-      <guid>/publication/rodriguez-2012-a/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/rodriguez-2012-a/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Constructing a Model of Physics Expertise</title>
-      <link>/publication/rodriguez-2010/</link>
+      <link>https://ericbrewe.netlify.com/publication/rodriguez-2010/</link>
       <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
-      <guid>/publication/rodriguez-2010/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/rodriguez-2010/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Toward equity through participation in Modeling Instruction in introductory university physics</title>
-      <link>/publication/brewe-2010-toward-equity/</link>
+      <link>https://ericbrewe.netlify.com/publication/brewe-2010-toward-equity/</link>
       <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
-      <guid>/publication/brewe-2010-toward-equity/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/brewe-2010-toward-equity/</guid>
       <description></description>
     </item>
     

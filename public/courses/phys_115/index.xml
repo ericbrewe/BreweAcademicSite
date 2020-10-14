@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PHYS 115 | Eric Brewe Academic</title>
-    <link>/courses/phys_115/</link>
-      <atom:link href="/courses/phys_115/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://ericbrewe.netlify.com/courses/phys_115/</link>
+      <atom:link href="https://ericbrewe.netlify.com/courses/phys_115/index.xml" rel="self" type="application/rss+xml" />
     <description>PHYS 115</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 09 Sep 2018 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>PHYS 115</title>
-      <link>/courses/phys_115/</link>
+      <link>https://ericbrewe.netlify.com/courses/phys_115/</link>
     </image>
     
     <item>
       <title>Zoom recordings from Physics 115</title>
-      <link>/courses/phys_115/coursevideos/</link>
+      <link>https://ericbrewe.netlify.com/courses/phys_115/coursevideos/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>/courses/phys_115/coursevideos/</guid>
+      <guid>https://ericbrewe.netlify.com/courses/phys_115/coursevideos/</guid>
       <description>&lt;p&gt;I will be recording all synchronous class meetings, and will be posting the videos here:&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -51,7 +51,7 @@
 &lt;tr&gt;
 &lt;td&gt;Two&lt;/td&gt;
 &lt;td&gt;Wed&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;/slides/ChSlides&#34; target=&#34;_blank&#34;&gt;Week 2 Slides&lt;/a&gt;, 
+&lt;td&gt;&lt;a href=&#34;https://ericbrewe.netlify.com/slides/ChSlides&#34; target=&#34;_blank&#34;&gt;Week 2 Slides&lt;/a&gt;, 
 &lt;a href=&#34;https://drexel.zoom.us/rec/share/9dZXNaDu9UBOZ43MuBCEUat7MrrLT6a803JKrPMJzR53dls91_mGl63Q7i2Ezmgv&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ch 19 Video&lt;/a&gt;
 &lt;/td&gt;
 &lt;/tr&gt;
@@ -144,9 +144,9 @@
     
     <item>
       <title>PHYS 115 Homework #1</title>
-      <link>/courses/phys_115/hw1/</link>
+      <link>https://ericbrewe.netlify.com/courses/phys_115/hw1/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>/courses/phys_115/hw1/</guid>
+      <guid>https://ericbrewe.netlify.com/courses/phys_115/hw1/</guid>
       <description>&lt;p&gt;The first homework, from Chapter 18 will include questions, as well as problems. Please submit your answers through Gradescope (if you would like to print out a copy of the homework - it is available here:
 &lt;a href=&#34;https://docs.google.com/document/d/1REg1N8HrThvPqR7dnLg011IdYNWP6i9RjaJC-84bQK8/edit?usp=sharing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Homework #1&lt;/a&gt;
 &lt;/p&gt;
@@ -159,9 +159,9 @@
     
     <item>
       <title>PHYS 115 Homework #2</title>
-      <link>/courses/phys_115/hw2/</link>
+      <link>https://ericbrewe.netlify.com/courses/phys_115/hw2/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>/courses/phys_115/hw2/</guid>
+      <guid>https://ericbrewe.netlify.com/courses/phys_115/hw2/</guid>
       <description>&lt;p&gt;Please submit your answers through Gradescope (if you would like to print out a copy of the homework - it is available here:
 &lt;a href=&#34;https://docs.google.com/document/d/1rYEWGSTNADeqz8sjVtRN8aNLf7aHnfDjE1ICsdnlWt4/edit?usp=sharing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Homework #2&lt;/a&gt;
 &lt;/p&gt;
@@ -174,9 +174,9 @@
     
     <item>
       <title>PHYS 115 Homework #3</title>
-      <link>/courses/phys_115/hw3/</link>
+      <link>https://ericbrewe.netlify.com/courses/phys_115/hw3/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>/courses/phys_115/hw3/</guid>
+      <guid>https://ericbrewe.netlify.com/courses/phys_115/hw3/</guid>
       <description>&lt;p&gt;Please submit your answers through Gradescope (if you would like to print out a copy of the homework - it is available here:
 
 &lt;a href=&#34;https://docs.google.com/document/d/1cILkK7f2ijjYyF0RQ_lKWGxBQK5ZSS6j-vkg4F0S1EE/edit?usp=sharing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Homework #3&lt;/a&gt;
@@ -190,9 +190,9 @@
     
     <item>
       <title>PHYS 115 Homework #4</title>
-      <link>/courses/phys_115/hw4/</link>
+      <link>https://ericbrewe.netlify.com/courses/phys_115/hw4/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>/courses/phys_115/hw4/</guid>
+      <guid>https://ericbrewe.netlify.com/courses/phys_115/hw4/</guid>
       <description>&lt;p&gt;This is due on May 12.
 Please submit your answers through Gradescope (if you would like to print out a copy of the homework - it is available here:
 
@@ -207,9 +207,9 @@ Please submit your answers through Gradescope (if you would like to print out a 
     
     <item>
       <title>PHYS 115 Homework #5</title>
-      <link>/courses/phys_115/hw5/</link>
+      <link>https://ericbrewe.netlify.com/courses/phys_115/hw5/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>/courses/phys_115/hw5/</guid>
+      <guid>https://ericbrewe.netlify.com/courses/phys_115/hw5/</guid>
       <description>&lt;p&gt;This is due on May 19.
 Please submit your answers through Gradescope (if you would like to print out a copy of the homework - it is available here:
 
@@ -224,9 +224,9 @@ Please submit your answers through Gradescope (if you would like to print out a 
     
     <item>
       <title>PHYS 115 Homework #6</title>
-      <link>/courses/phys_115/hw6/</link>
+      <link>https://ericbrewe.netlify.com/courses/phys_115/hw6/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>/courses/phys_115/hw6/</guid>
+      <guid>https://ericbrewe.netlify.com/courses/phys_115/hw6/</guid>
       <description>&lt;p&gt;This is due on May 26.
 Please submit your answers through Gradescope (if you would like to print out a copy of the homework - it is available here:
 
@@ -241,9 +241,9 @@ Please submit your answers through Gradescope (if you would like to print out a 
     
     <item>
       <title>PHYS 115 Homework #7</title>
-      <link>/courses/phys_115/hw7/</link>
+      <link>https://ericbrewe.netlify.com/courses/phys_115/hw7/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>/courses/phys_115/hw7/</guid>
+      <guid>https://ericbrewe.netlify.com/courses/phys_115/hw7/</guid>
       <description>&lt;p&gt;This is due on June 2.
 Please submit your answers through Gradescope (if you would like to print out a copy of the homework - it is available here:
 
@@ -258,9 +258,9 @@ Please submit your answers through Gradescope (if you would like to print out a 
     
     <item>
       <title>Week 1, Ch 18</title>
-      <link>/courses/phys_115/asyncactivities1/</link>
+      <link>https://ericbrewe.netlify.com/courses/phys_115/asyncactivities1/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>/courses/phys_115/asyncactivities1/</guid>
+      <guid>https://ericbrewe.netlify.com/courses/phys_115/asyncactivities1/</guid>
       <description>&lt;p&gt;For this week&amp;rsquo;s Friday activities you should do the following:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Read through Chapter 18.&lt;/li&gt;
@@ -278,9 +278,9 @@ Please submit your answers through Gradescope (if you would like to print out a 
     
     <item>
       <title>Week 2, Ch 19</title>
-      <link>/courses/phys_115/asyncactivities2/</link>
+      <link>https://ericbrewe.netlify.com/courses/phys_115/asyncactivities2/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>/courses/phys_115/asyncactivities2/</guid>
+      <guid>https://ericbrewe.netlify.com/courses/phys_115/asyncactivities2/</guid>
       <description>&lt;p&gt;For this week&amp;rsquo;s Friday activities you should do the following:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Read Chapter 19.&lt;/li&gt;
@@ -296,9 +296,9 @@ Please submit your answers through Gradescope (if you would like to print out a 
     
     <item>
       <title>Week 3, Ch 17</title>
-      <link>/courses/phys_115/asyncactivities3/</link>
+      <link>https://ericbrewe.netlify.com/courses/phys_115/asyncactivities3/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>/courses/phys_115/asyncactivities3/</guid>
+      <guid>https://ericbrewe.netlify.com/courses/phys_115/asyncactivities3/</guid>
       <description>&lt;p&gt;For this week&amp;rsquo;s Friday activities you should do the following:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Read Chapter 17.&lt;/li&gt;
@@ -311,9 +311,9 @@ Please submit your answers through Gradescope (if you would like to print out a 
     
     <item>
       <title>Week 4, Ch 20</title>
-      <link>/courses/phys_115/asyncactivities4/</link>
+      <link>https://ericbrewe.netlify.com/courses/phys_115/asyncactivities4/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>/courses/phys_115/asyncactivities4/</guid>
+      <guid>https://ericbrewe.netlify.com/courses/phys_115/asyncactivities4/</guid>
       <description>&lt;p&gt;For this week, take a tour of the Mag Lab in Tallahassee, FL to see some of the really interesting work being done using Magnetic Fields and Magnetic Forces.&lt;/p&gt;
 &lt;p&gt;Check out the following:&lt;/p&gt;
 &lt;ul&gt;
@@ -335,9 +335,9 @@ Please submit your answers through Gradescope (if you would like to print out a 
     
     <item>
       <title>Week 6, Ch 21</title>
-      <link>/courses/phys_115/asyncactivities5/</link>
+      <link>https://ericbrewe.netlify.com/courses/phys_115/asyncactivities5/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>/courses/phys_115/asyncactivities5/</guid>
+      <guid>https://ericbrewe.netlify.com/courses/phys_115/asyncactivities5/</guid>
       <description>&lt;p&gt;This week you have two things to do.&lt;/p&gt;
 &lt;p&gt;First, read Chapter 21.&lt;/p&gt;
 &lt;p&gt;I have not hidden that I don&amp;rsquo;t love Gauss Law or Ampere&amp;rsquo;s Law.&lt;/p&gt;
@@ -347,9 +347,9 @@ Please submit your answers through Gradescope (if you would like to print out a 
     
     <item>
       <title>Week 7, Ch 22</title>
-      <link>/courses/phys_115/asyncactivities6/</link>
+      <link>https://ericbrewe.netlify.com/courses/phys_115/asyncactivities6/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>/courses/phys_115/asyncactivities6/</guid>
+      <guid>https://ericbrewe.netlify.com/courses/phys_115/asyncactivities6/</guid>
       <description>&lt;p&gt;This week you have two things to do.&lt;/p&gt;
 &lt;p&gt;First, read Chapter 22. The diagrams there are very useful.&lt;/p&gt;
 &lt;p&gt;Second, open the 
@@ -363,9 +363,9 @@ Please submit your answers through Gradescope (if you would like to print out a 
     
     <item>
       <title>Week 8, Ch 23</title>
-      <link>/courses/phys_115/asyncactivities7/</link>
+      <link>https://ericbrewe.netlify.com/courses/phys_115/asyncactivities7/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>/courses/phys_115/asyncactivities7/</guid>
+      <guid>https://ericbrewe.netlify.com/courses/phys_115/asyncactivities7/</guid>
       <description>&lt;p&gt;This week you have three things to do.&lt;/p&gt;
 &lt;p&gt;First, read Chapter 23. Particularly 939-951.&lt;/p&gt;
 &lt;p&gt;Second, complete the 
@@ -377,9 +377,9 @@ Please submit your answers through Gradescope (if you would like to print out a 
     
     <item>
       <title>Week 9, All Chapters</title>
-      <link>/courses/phys_115/asyncactivities8/</link>
+      <link>https://ericbrewe.netlify.com/courses/phys_115/asyncactivities8/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>/courses/phys_115/asyncactivities8/</guid>
+      <guid>https://ericbrewe.netlify.com/courses/phys_115/asyncactivities8/</guid>
       <description>&lt;p&gt;This week I want to ask for two things.&lt;/p&gt;
 &lt;p&gt;First, complete the course evaluation form.  This is important to me, and I really am interested in your feedback.&lt;/p&gt;
 &lt;p&gt;Second, work on completing assignments that you have missed, and resubmitting any that are not up to satisfactory standards. All assignments will be due on June 12, which is the last day of finals.&lt;/p&gt;

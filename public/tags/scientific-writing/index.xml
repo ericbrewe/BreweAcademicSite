@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>scientific writing | Eric Brewe Academic</title>
-    <link>/tags/scientific-writing/</link>
-      <atom:link href="/tags/scientific-writing/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://ericbrewe.netlify.com/tags/scientific-writing/</link>
+      <atom:link href="https://ericbrewe.netlify.com/tags/scientific-writing/index.xml" rel="self" type="application/rss+xml" />
     <description>scientific writing</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 01 Jan 2012 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>scientific writing</title>
-      <link>/tags/scientific-writing/</link>
+      <link>https://ericbrewe.netlify.com/tags/scientific-writing/</link>
     </image>
     
     <item>
       <title>Communicating scientific ideas: One element of physics expertise</title>
-      <link>/publication/rodriguez-2012-communicating/</link>
+      <link>https://ericbrewe.netlify.com/publication/rodriguez-2012-communicating/</link>
       <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
-      <guid>/publication/rodriguez-2012-communicating/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/rodriguez-2012-communicating/</guid>
       <description></description>
     </item>
     

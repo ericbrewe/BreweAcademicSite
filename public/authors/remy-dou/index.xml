@@ -2,69 +2,69 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Remy Dou | Eric Brewe Academic</title>
-    <link>/authors/remy-dou/</link>
-      <atom:link href="/authors/remy-dou/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://ericbrewe.netlify.com/authors/remy-dou/</link>
+      <atom:link href="https://ericbrewe.netlify.com/authors/remy-dou/index.xml" rel="self" type="application/rss+xml" />
     <description>Remy Dou</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Remy Dou</title>
-      <link>/authors/remy-dou/</link>
+      <link>https://ericbrewe.netlify.com/authors/remy-dou/</link>
     </image>
     
     <item>
       <title>Linking engagement and performance : The social network analysis perspective</title>
-      <link>/publication/williams-2019-network-growth/</link>
+      <link>https://ericbrewe.netlify.com/publication/williams-2019-network-growth/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/williams-2019-network-growth/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/williams-2019-network-growth/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Costs of success: Financial implications of implementation of active learning in introductory physics courses for students and administrators</title>
-      <link>/publication/brewe-2018/</link>
+      <link>https://ericbrewe.netlify.com/publication/brewe-2018/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>/publication/brewe-2018/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/brewe-2018/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Understanding the development of interest and self-efficacy in active-learning undergraduate physics courses</title>
-      <link>/publication/dou-2018/</link>
+      <link>https://ericbrewe.netlify.com/publication/dou-2018/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>/publication/dou-2018/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/dou-2018/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Students&#39; network integration as a predictor of persistence in introductory physics courses</title>
-      <link>/publication/zwolak-2017/</link>
+      <link>https://ericbrewe.netlify.com/publication/zwolak-2017/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>/publication/zwolak-2017/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/zwolak-2017/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Beyond performance metrics : Examining a decrease in students &#39; physics self-efficacy through a social networks lens</title>
-      <link>/publication/dou-2016/</link>
+      <link>https://ericbrewe.netlify.com/publication/dou-2016/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
-      <guid>/publication/dou-2016/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/dou-2016/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Understanding Centrality: Investigating Student Outcomes within a Classroom Social Network</title>
-      <link>/publication/williams-2015/</link>
+      <link>https://ericbrewe.netlify.com/publication/williams-2015/</link>
       <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
-      <guid>/publication/williams-2015/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/williams-2015/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Network centrality and student self-efficacy in an interactive introductory physics environment</title>
-      <link>/publication/dou-2014/</link>
+      <link>https://ericbrewe.netlify.com/publication/dou-2014/</link>
       <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
-      <guid>/publication/dou-2014/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/dou-2014/</guid>
       <description></description>
     </item>
     

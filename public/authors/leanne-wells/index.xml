@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Leanne Wells | Eric Brewe Academic</title>
-    <link>/authors/leanne-wells/</link>
-      <atom:link href="/authors/leanne-wells/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://ericbrewe.netlify.com/authors/leanne-wells/</link>
+      <atom:link href="https://ericbrewe.netlify.com/authors/leanne-wells/index.xml" rel="self" type="application/rss+xml" />
     <description>Leanne Wells</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2011 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Leanne Wells</title>
-      <link>/authors/leanne-wells/</link>
+      <link>https://ericbrewe.netlify.com/authors/leanne-wells/</link>
     </image>
     
     <item>
       <title>Moving toward change: Institutionalizing reform through implementation of the Learning Assistant model and Open Source Tutorials</title>
-      <link>/publication/goertzen-2011/</link>
+      <link>https://ericbrewe.netlify.com/publication/goertzen-2011/</link>
       <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
-      <guid>/publication/goertzen-2011/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/goertzen-2011/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Impact of the FIU PhysTEC Reform of Introductory Physics Labs</title>
-      <link>/publication/wells-2008/</link>
+      <link>https://ericbrewe.netlify.com/publication/wells-2008/</link>
       <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
-      <guid>/publication/wells-2008/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/wells-2008/</guid>
       <description></description>
     </item>
     

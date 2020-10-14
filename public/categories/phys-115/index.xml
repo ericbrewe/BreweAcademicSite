@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PHYS 115 | Eric Brewe Academic</title>
-    <link>/categories/phys-115/</link>
-      <atom:link href="/categories/phys-115/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://ericbrewe.netlify.com/categories/phys-115/</link>
+      <atom:link href="https://ericbrewe.netlify.com/categories/phys-115/index.xml" rel="self" type="application/rss+xml" />
     <description>PHYS 115</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 22 Apr 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>PHYS 115</title>
-      <link>/categories/phys-115/</link>
+      <link>https://ericbrewe.netlify.com/categories/phys-115/</link>
     </image>
     
     <item>
       <title>Problem Solving Workshops at a distance</title>
-      <link>/post/problem-solving-workshops/</link>
+      <link>https://ericbrewe.netlify.com/post/problem-solving-workshops/</link>
       <pubDate>Wed, 22 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>/post/problem-solving-workshops/</guid>
+      <guid>https://ericbrewe.netlify.com/post/problem-solving-workshops/</guid>
       <description>
 
 
@@ -37,9 +37,9 @@
     
     <item>
       <title>Standards Based Grading</title>
-      <link>/post/standards-based-grading/</link>
+      <link>https://ericbrewe.netlify.com/post/standards-based-grading/</link>
       <pubDate>Wed, 22 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>/post/standards-based-grading/</guid>
+      <guid>https://ericbrewe.netlify.com/post/standards-based-grading/</guid>
       <description>
 
 
@@ -88,9 +88,9 @@
     
     <item>
       <title>Standards Based Grading With Gradescope and R</title>
-      <link>/post/standards-based-grading-gradescope-and-r/</link>
+      <link>https://ericbrewe.netlify.com/post/standards-based-grading-gradescope-and-r/</link>
       <pubDate>Wed, 22 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>/post/standards-based-grading-gradescope-and-r/</guid>
+      <guid>https://ericbrewe.netlify.com/post/standards-based-grading-gradescope-and-r/</guid>
       <description>
 
 
@@ -198,9 +198,9 @@ gradebook %&amp;gt;%
     
     <item>
       <title>Incremental Improvements</title>
-      <link>/post/improvements/</link>
+      <link>https://ericbrewe.netlify.com/post/improvements/</link>
       <pubDate>Wed, 15 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>/post/improvements/</guid>
+      <guid>https://ericbrewe.netlify.com/post/improvements/</guid>
       <description>&lt;p&gt;After last week&amp;rsquo;s trainwreck of a class I knew I had to make some changes. So this week I wrote 
 &lt;a href=&#34;http://ericbrewe.com/slides/chslides/#/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;a ton of slides.&lt;/a&gt;
 &lt;/p&gt;
@@ -213,9 +213,9 @@ gradebook %&amp;gt;%
     
     <item>
       <title>Slides</title>
-      <link>/slides/example/</link>
+      <link>https://ericbrewe.netlify.com/slides/example/</link>
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>/slides/example/</guid>
+      <guid>https://ericbrewe.netlify.com/slides/example/</guid>
       <description>&lt;h1 id=&#34;create-slides-in-markdown-with-academic&#34;&gt;Create slides in Markdown with Academic&lt;/h1&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://sourcethemes.com/academic/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Academic&lt;/a&gt;

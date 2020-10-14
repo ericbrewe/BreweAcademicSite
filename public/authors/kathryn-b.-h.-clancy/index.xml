@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kathryn B. H. Clancy | Eric Brewe Academic</title>
-    <link>/authors/kathryn-b.-h.-clancy/</link>
-      <atom:link href="/authors/kathryn-b.-h.-clancy/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://ericbrewe.netlify.com/authors/kathryn-b.-h.-clancy/</link>
+      <atom:link href="https://ericbrewe.netlify.com/authors/kathryn-b.-h.-clancy/index.xml" rel="self" type="application/rss+xml" />
     <description>Kathryn B. H. Clancy</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Kathryn B. H. Clancy</title>
-      <link>/authors/kathryn-b.-h.-clancy/</link>
+      <link>https://ericbrewe.netlify.com/authors/kathryn-b.-h.-clancy/</link>
     </image>
     
     <item>
       <title>Sexual harassment reported by undergraduate female physicsists</title>
-      <link>/publication/aycock-2018-sexual-harrassment/</link>
+      <link>https://ericbrewe.netlify.com/publication/aycock-2018-sexual-harrassment/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>/publication/aycock-2018-sexual-harrassment/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/aycock-2018-sexual-harrassment/</guid>
       <description></description>
     </item>
     

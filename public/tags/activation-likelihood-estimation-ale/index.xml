@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Activation likelihood estimation (ALE) | Eric Brewe Academic</title>
-    <link>/tags/activation-likelihood-estimation-ale/</link>
-      <atom:link href="/tags/activation-likelihood-estimation-ale/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://ericbrewe.netlify.com/tags/activation-likelihood-estimation-ale/</link>
+      <atom:link href="https://ericbrewe.netlify.com/tags/activation-likelihood-estimation-ale/index.xml" rel="self" type="application/rss+xml" />
     <description>Activation likelihood estimation (ALE)</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Activation likelihood estimation (ALE)</title>
-      <link>/tags/activation-likelihood-estimation-ale/</link>
+      <link>https://ericbrewe.netlify.com/tags/activation-likelihood-estimation-ale/</link>
     </image>
     
     <item>
       <title>Meta-analytic evidence for a core problem solving network across multiple representational domains</title>
-      <link>/publication/bartley-2018/</link>
+      <link>https://ericbrewe.netlify.com/publication/bartley-2018/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>/publication/bartley-2018/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/bartley-2018/</guid>
       <description></description>
     </item>
     

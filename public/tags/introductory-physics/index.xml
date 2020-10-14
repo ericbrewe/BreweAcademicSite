@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Introductory physics | Eric Brewe Academic</title>
-    <link>/tags/introductory-physics/</link>
-      <atom:link href="/tags/introductory-physics/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://ericbrewe.netlify.com/tags/introductory-physics/</link>
+      <atom:link href="https://ericbrewe.netlify.com/tags/introductory-physics/index.xml" rel="self" type="application/rss+xml" />
     <description>Introductory physics</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 01 Jan 2015 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Introductory physics</title>
-      <link>/tags/introductory-physics/</link>
+      <link>https://ericbrewe.netlify.com/tags/introductory-physics/</link>
     </image>
     
     <item>
       <title>Multiple Representations and Epistemic Games in Introductory Physics Exam Solutions</title>
-      <link>/publication/traxler-2015/</link>
+      <link>https://ericbrewe.netlify.com/publication/traxler-2015/</link>
       <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
-      <guid>/publication/traxler-2015/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/traxler-2015/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Expanded Markers of Success in Introductory University Physics</title>
-      <link>/publication/goertzen-2013/</link>
+      <link>https://ericbrewe.netlify.com/publication/goertzen-2013/</link>
       <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
-      <guid>/publication/goertzen-2013/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/goertzen-2013/</guid>
       <description></description>
     </item>
     

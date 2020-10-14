@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Physics education | Eric Brewe Academic</title>
-    <link>/tags/physics-education/</link>
-      <atom:link href="/tags/physics-education/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://ericbrewe.netlify.com/tags/physics-education/</link>
+      <atom:link href="https://ericbrewe.netlify.com/tags/physics-education/index.xml" rel="self" type="application/rss+xml" />
     <description>Physics education</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 01 Jan 2015 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Physics education</title>
-      <link>/tags/physics-education/</link>
+      <link>https://ericbrewe.netlify.com/tags/physics-education/</link>
     </image>
     
     <item>
       <title>The Impacts of Instructor and Student Gender on Student Performance in Introductory Modeling Instruction Courses</title>
-      <link>/publication/mc-padden-2015/</link>
+      <link>https://ericbrewe.netlify.com/publication/mc-padden-2015/</link>
       <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
-      <guid>/publication/mc-padden-2015/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/mc-padden-2015/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Investigating Student Communities with Network Analysis of Interactions in a Physics Learning Center</title>
-      <link>/publication/brewe-2009-communities-aip/</link>
+      <link>https://ericbrewe.netlify.com/publication/brewe-2009-communities-aip/</link>
       <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
-      <guid>/publication/brewe-2009-communities-aip/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/brewe-2009-communities-aip/</guid>
       <description></description>
     </item>
     

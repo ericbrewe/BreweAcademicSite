@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Recent &amp; Upcoming Talks | Eric Brewe Academic</title>
-    <link>/talk/</link>
-      <atom:link href="/talk/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://ericbrewe.netlify.com/talk/</link>
+      <atom:link href="https://ericbrewe.netlify.com/talk/index.xml" rel="self" type="application/rss+xml" />
     <description>Recent &amp; Upcoming Talks</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 20 Apr 2020 14:43:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Recent &amp; Upcoming Talks</title>
-      <link>/talk/</link>
+      <link>https://ericbrewe.netlify.com/talk/</link>
     </image>
     
     <item>
       <title>A toolkit for physics department advocacy (and survival) and its connection to EP3</title>
-      <link>/talk/apsaprildepttoolkit/</link>
+      <link>https://ericbrewe.netlify.com/talk/apsaprildepttoolkit/</link>
       <pubDate>Mon, 20 Apr 2020 14:43:00 +0000</pubDate>
-      <guid>/talk/apsaprildepttoolkit/</guid>
+      <guid>https://ericbrewe.netlify.com/talk/apsaprildepttoolkit/</guid>
       <description></description>
     </item>
     
     <item>
       <title>The Roles of Engagement: Network Analysis in Physics Education Research</title>
-      <link>/talk/rowan-university/</link>
+      <link>https://ericbrewe.netlify.com/talk/rowan-university/</link>
       <pubDate>Fri, 06 Mar 2020 15:30:00 +0000</pubDate>
-      <guid>/talk/rowan-university/</guid>
+      <guid>https://ericbrewe.netlify.com/talk/rowan-university/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Modeling Instruction, student engagement, and neurobiological impacts</title>
-      <link>/talk/rutgers-university/</link>
+      <link>https://ericbrewe.netlify.com/talk/rutgers-university/</link>
       <pubDate>Wed, 04 Mar 2020 15:30:00 +0000</pubDate>
-      <guid>/talk/rutgers-university/</guid>
+      <guid>https://ericbrewe.netlify.com/talk/rutgers-university/</guid>
       <description></description>
     </item>
     

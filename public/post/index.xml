@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts | Eric Brewe Academic</title>
-    <link>/post/</link>
-      <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://ericbrewe.netlify.com/post/</link>
+      <atom:link href="https://ericbrewe.netlify.com/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jun 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Posts</title>
-      <link>/post/</link>
+      <link>https://ericbrewe.netlify.com/post/</link>
     </image>
     
     <item>
       <title>Actions we can take</title>
-      <link>/post/actionswecantake/</link>
+      <link>https://ericbrewe.netlify.com/post/actionswecantake/</link>
       <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
-      <guid>/post/actionswecantake/</guid>
+      <guid>https://ericbrewe.netlify.com/post/actionswecantake/</guid>
       <description>&lt;p&gt;I am a physics faculty member, and I care about physics and the physics community, which is why I think as a physics faculty member I needed to address the racial violence that is part of the broader society in my physics class today. This is not something that I am always comfortable with.&lt;/p&gt;
 &lt;p&gt;Also, I am not willing to not take some actions - big or small.&lt;/p&gt;
 &lt;p&gt;Here is what I did:&lt;/p&gt;
@@ -42,9 +42,9 @@ Eric&lt;/p&gt;
     
     <item>
       <title>Individual Meetings With Students</title>
-      <link>/post/individualmeetingswithstudents/</link>
+      <link>https://ericbrewe.netlify.com/post/individualmeetingswithstudents/</link>
       <pubDate>Fri, 08 May 2020 00:00:00 +0000</pubDate>
-      <guid>/post/individualmeetingswithstudents/</guid>
+      <guid>https://ericbrewe.netlify.com/post/individualmeetingswithstudents/</guid>
       <description>&lt;p&gt;My class reached the halfway point this week. One of the things that I had planned was to have individual meetings with my students. This is a luxury of having a smaller class.&lt;/p&gt;
 &lt;p&gt;Basically, I built a week into the course schedule where I didn&amp;rsquo;t add any new material. I had no idea about how quickly or slowly the couse was going to go at the beginning. So I added a week of flex at the half way point. It was there to allow me to catch up if I needed to, to give students a week to catch their breath, and to assess how they are doing.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;This was really smart&lt;/strong&gt;&lt;/p&gt;
@@ -60,9 +60,9 @@ Eric&lt;/p&gt;
     
     <item>
       <title>Problem Solving Workshops at a distance</title>
-      <link>/post/problem-solving-workshops/</link>
+      <link>https://ericbrewe.netlify.com/post/problem-solving-workshops/</link>
       <pubDate>Wed, 22 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>/post/problem-solving-workshops/</guid>
+      <guid>https://ericbrewe.netlify.com/post/problem-solving-workshops/</guid>
       <description>
 
 
@@ -83,9 +83,9 @@ Eric&lt;/p&gt;
     
     <item>
       <title>Standards Based Grading</title>
-      <link>/post/standards-based-grading/</link>
+      <link>https://ericbrewe.netlify.com/post/standards-based-grading/</link>
       <pubDate>Wed, 22 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>/post/standards-based-grading/</guid>
+      <guid>https://ericbrewe.netlify.com/post/standards-based-grading/</guid>
       <description>
 
 
@@ -134,9 +134,9 @@ Eric&lt;/p&gt;
     
     <item>
       <title>Standards Based Grading With Gradescope and R</title>
-      <link>/post/standards-based-grading-gradescope-and-r/</link>
+      <link>https://ericbrewe.netlify.com/post/standards-based-grading-gradescope-and-r/</link>
       <pubDate>Wed, 22 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>/post/standards-based-grading-gradescope-and-r/</guid>
+      <guid>https://ericbrewe.netlify.com/post/standards-based-grading-gradescope-and-r/</guid>
       <description>
 
 
@@ -244,9 +244,9 @@ gradebook %&amp;gt;%
     
     <item>
       <title>Incremental Improvements</title>
-      <link>/post/improvements/</link>
+      <link>https://ericbrewe.netlify.com/post/improvements/</link>
       <pubDate>Wed, 15 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>/post/improvements/</guid>
+      <guid>https://ericbrewe.netlify.com/post/improvements/</guid>
       <description>&lt;p&gt;After last week&amp;rsquo;s trainwreck of a class I knew I had to make some changes. So this week I wrote 
 &lt;a href=&#34;http://ericbrewe.com/slides/chslides/#/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;a ton of slides.&lt;/a&gt;
 &lt;/p&gt;
@@ -259,9 +259,9 @@ gradebook %&amp;gt;%
     
     <item>
       <title>Adapting Plans</title>
-      <link>/post/coursereplanningincrisis/</link>
+      <link>https://ericbrewe.netlify.com/post/coursereplanningincrisis/</link>
       <pubDate>Wed, 17 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>/post/coursereplanningincrisis/</guid>
+      <guid>https://ericbrewe.netlify.com/post/coursereplanningincrisis/</guid>
       <description>&lt;p&gt;So, now I&amp;rsquo;ve done it. I have taught a week online. I had a day of logistics and getting to know (even though I don&amp;rsquo;t see people&amp;rsquo;s faces) the students on Monday. That did nothing to prepare me for the trainwreck that was going to be my first day of lecturing.&lt;/p&gt;
 &lt;p&gt;I learned a ton about what I do when I lecture today.  My approach to lecture is the sort of standard &amp;ldquo;Chalk and Talk&amp;rdquo; sort of thing. I do not typically prepare a bunch of slides (or any actually). Typically I talk, write on the whiteboard and periodically pause to ask questions that I expect the students to answer verbally (e.g. &amp;ldquo;If the current here is 10, what would the current be over here?&amp;quot;). I also do not write out a script - I have an outline, and tend to work from the outline which allows me to improvise as I went along. So I assumed that is what I would do.&lt;/p&gt;
 &lt;p&gt;My plan has assumptions built into it.&lt;/p&gt;
@@ -286,9 +286,9 @@ gradebook %&amp;gt;%
     
     <item>
       <title>Course Planning during Covid</title>
-      <link>/post/courseplanningincrisis/</link>
+      <link>https://ericbrewe.netlify.com/post/courseplanningincrisis/</link>
       <pubDate>Wed, 17 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>/post/courseplanningincrisis/</guid>
+      <guid>https://ericbrewe.netlify.com/post/courseplanningincrisis/</guid>
       <description>&lt;p&gt;Drexel is on the quarter system. And because students could not stay in dorms safely, Drexel announced that all classes during the spring quarter would be fully online.&lt;/p&gt;
 &lt;p&gt;I have never taught a fully online course. I have never taught a course during a pandemic. I have never taught the course I was planning before (PHYS 115, Contemporary Physics III).&lt;/p&gt;
 &lt;p&gt;The announcment that all courses would be fully online was made right before final exams, so I didn&amp;rsquo;t even get to practice with one class online during Winter Term. I did get to practice with giving an online final exam through BlackBoard - but that is a different story.  What I did learn was that I did not want to give online exams.&lt;/p&gt;
@@ -330,9 +330,9 @@ gradebook %&amp;gt;%
     
     <item>
       <title>Office Hours</title>
-      <link>/post/officehoursincrisis/</link>
+      <link>https://ericbrewe.netlify.com/post/officehoursincrisis/</link>
       <pubDate>Wed, 17 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>/post/officehoursincrisis/</guid>
+      <guid>https://ericbrewe.netlify.com/post/officehoursincrisis/</guid>
       <description>&lt;p&gt;I had a bad day on Wednesday, class was clunky, my technology kept freezing, and I felt bad about myself.&lt;/p&gt;
 &lt;p&gt;So today when 4 different students showed up for office hours I was a bit nervous.  It actually worked out much better than I had imagined.  First, each student was very understanding about the challenges, which I totally appreciated.&lt;/p&gt;
 &lt;p&gt;Second, I found that I was able to manage the Zoom room, starting one breakout room so students could work on homework and jump back into the main room when they had questions.&lt;/p&gt;
@@ -357,8 +357,8 @@ gradebook %&amp;gt;%
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/CoffeeBackground.jpg&#34; &gt;
-&lt;img data-src=&#34;/img/CoffeeBackground.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; &gt;&lt;/a&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://ericbrewe.netlify.com/img/CoffeeBackground.jpg&#34; &gt;
+&lt;img data-src=&#34;https://ericbrewe.netlify.com/img/CoffeeBackground.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; &gt;&lt;/a&gt;
 
 
 

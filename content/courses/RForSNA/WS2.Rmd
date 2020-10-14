@@ -38,7 +38,8 @@ SNA:
 
 # Reading (just some starting points)
 
-- Christina Prell, Social Network Analysis: History, Theory and Methodology, Sage, 2011.
+- John Scott, and Peter J. Carrington, The SAGE Handbook of Social Network Analysis, 2014.
+- Christina Prell, Social Network Analysis: History, Theory and Methodology, SAGE, 2011.
 - Peter J. Carrington, John Scott, and Stanley Wasserman, Models and Methods in Social Network Analysis, Cambridge University Press, 2005.
 - Stanley Wasserman and Katherine Faust, Social Network Analysis: Methods and Applications, Cambridge University Press, 1994.
 - Mark E.J. Newman, Networks: An Introduction, Oxford University Press, 2010.

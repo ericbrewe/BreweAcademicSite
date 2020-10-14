@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jessica E. Bartley | Eric Brewe Academic</title>
-    <link>/authors/jessica-e.-bartley/</link>
-      <atom:link href="/authors/jessica-e.-bartley/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://ericbrewe.netlify.com/authors/jessica-e.-bartley/</link>
+      <atom:link href="https://ericbrewe.netlify.com/authors/jessica-e.-bartley/index.xml" rel="self" type="application/rss+xml" />
     <description>Jessica E. Bartley</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 02 Dec 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Jessica E. Bartley</title>
-      <link>/authors/jessica-e.-bartley/</link>
+      <link>https://ericbrewe.netlify.com/authors/jessica-e.-bartley/</link>
     </image>
     
     <item>
       <title>Brain activity links performance in science reasoning with conceptual approach</title>
-      <link>/publication/bartleybrainlinkconceptualapproach/</link>
+      <link>https://ericbrewe.netlify.com/publication/bartleybrainlinkconceptualapproach/</link>
       <pubDate>Mon, 02 Dec 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/bartleybrainlinkconceptualapproach/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/bartleybrainlinkconceptualapproach/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sex differences in brain correlates of STEM anxiety</title>
-      <link>/publication/gonzalez-2019-stem-anxiety-brain/</link>
+      <link>https://ericbrewe.netlify.com/publication/gonzalez-2019-stem-anxiety-brain/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/gonzalez-2019-stem-anxiety-brain/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/gonzalez-2019-stem-anxiety-brain/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Meta-analytic evidence for a core problem solving network across multiple representational domains</title>
-      <link>/publication/bartley-2018/</link>
+      <link>https://ericbrewe.netlify.com/publication/bartley-2018/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>/publication/bartley-2018/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/bartley-2018/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Toward a Neurobiological Basis for Understanding Learning in University Modeling Instruction Physics Courses</title>
-      <link>/publication/brewe-2018-neuroimaging/</link>
+      <link>https://ericbrewe.netlify.com/publication/brewe-2018-neuroimaging/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>/publication/brewe-2018-neuroimaging/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/brewe-2018-neuroimaging/</guid>
       <description></description>
     </item>
     

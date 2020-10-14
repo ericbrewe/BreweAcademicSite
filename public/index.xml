@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Eric Brewe Academic</title>
-    <link>/</link>
-      <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://ericbrewe.netlify.com/</link>
+      <atom:link href="https://ericbrewe.netlify.com/index.xml" rel="self" type="application/rss+xml" />
     <description>Eric Brewe Academic</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 28 Jun 2018 00:00:00 +0100</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 21 Jul 2020 00:00:00 +0100</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Eric Brewe Academic</title>
-      <link>/</link>
+      <link>https://ericbrewe.netlify.com/</link>
     </image>
     
     <item>
       <title>Workshop 1</title>
-      <link>/courses/rforsna/ws1/</link>
+      <link>https://ericbrewe.netlify.com/courses/rforsna/ws1/</link>
       <pubDate>Tue, 21 Jul 2020 00:00:00 +0100</pubDate>
-      <guid>/courses/rforsna/ws1/</guid>
+      <guid>https://ericbrewe.netlify.com/courses/rforsna/ws1/</guid>
       <description>
 
 
@@ -44,9 +44,9 @@
     
     <item>
       <title>Workshop 2</title>
-      <link>/courses/rforsna/ws2/</link>
+      <link>https://ericbrewe.netlify.com/courses/rforsna/ws2/</link>
       <pubDate>Tue, 21 Jul 2020 00:00:00 +0100</pubDate>
-      <guid>/courses/rforsna/ws2/</guid>
+      <guid>https://ericbrewe.netlify.com/courses/rforsna/ws2/</guid>
       <description>
 
 
@@ -119,9 +119,9 @@ SNA:&lt;/p&gt;
     
     <item>
       <title>Workshop 3</title>
-      <link>/courses/rforsna/ws3/</link>
+      <link>https://ericbrewe.netlify.com/courses/rforsna/ws3/</link>
       <pubDate>Tue, 21 Jul 2020 00:00:00 +0100</pubDate>
-      <guid>/courses/rforsna/ws3/</guid>
+      <guid>https://ericbrewe.netlify.com/courses/rforsna/ws3/</guid>
       <description>
 
 
@@ -143,9 +143,9 @@ SNA:&lt;/p&gt;
     
     <item>
       <title>Zoom recordings from Physics 115</title>
-      <link>/courses/phys_115/coursevideos/</link>
+      <link>https://ericbrewe.netlify.com/courses/phys_115/coursevideos/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>/courses/phys_115/coursevideos/</guid>
+      <guid>https://ericbrewe.netlify.com/courses/phys_115/coursevideos/</guid>
       <description>&lt;p&gt;I will be recording all synchronous class meetings, and will be posting the videos here:&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -180,7 +180,7 @@ SNA:&lt;/p&gt;
 &lt;tr&gt;
 &lt;td&gt;Two&lt;/td&gt;
 &lt;td&gt;Wed&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;/slides/ChSlides&#34; target=&#34;_blank&#34;&gt;Week 2 Slides&lt;/a&gt;, 
+&lt;td&gt;&lt;a href=&#34;https://ericbrewe.netlify.com/slides/ChSlides&#34; target=&#34;_blank&#34;&gt;Week 2 Slides&lt;/a&gt;, 
 &lt;a href=&#34;https://drexel.zoom.us/rec/share/9dZXNaDu9UBOZ43MuBCEUat7MrrLT6a803JKrPMJzR53dls91_mGl63Q7i2Ezmgv&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ch 19 Video&lt;/a&gt;
 &lt;/td&gt;
 &lt;/tr&gt;
@@ -273,9 +273,9 @@ SNA:&lt;/p&gt;
     
     <item>
       <title>PHYS 115 Homework #1</title>
-      <link>/courses/phys_115/hw1/</link>
+      <link>https://ericbrewe.netlify.com/courses/phys_115/hw1/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>/courses/phys_115/hw1/</guid>
+      <guid>https://ericbrewe.netlify.com/courses/phys_115/hw1/</guid>
       <description>&lt;p&gt;The first homework, from Chapter 18 will include questions, as well as problems. Please submit your answers through Gradescope (if you would like to print out a copy of the homework - it is available here:
 &lt;a href=&#34;https://docs.google.com/document/d/1REg1N8HrThvPqR7dnLg011IdYNWP6i9RjaJC-84bQK8/edit?usp=sharing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Homework #1&lt;/a&gt;
 &lt;/p&gt;
@@ -288,9 +288,9 @@ SNA:&lt;/p&gt;
     
     <item>
       <title>PHYS 115 Homework #2</title>
-      <link>/courses/phys_115/hw2/</link>
+      <link>https://ericbrewe.netlify.com/courses/phys_115/hw2/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>/courses/phys_115/hw2/</guid>
+      <guid>https://ericbrewe.netlify.com/courses/phys_115/hw2/</guid>
       <description>&lt;p&gt;Please submit your answers through Gradescope (if you would like to print out a copy of the homework - it is available here:
 &lt;a href=&#34;https://docs.google.com/document/d/1rYEWGSTNADeqz8sjVtRN8aNLf7aHnfDjE1ICsdnlWt4/edit?usp=sharing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Homework #2&lt;/a&gt;
 &lt;/p&gt;
@@ -303,9 +303,9 @@ SNA:&lt;/p&gt;
     
     <item>
       <title>PHYS 115 Homework #3</title>
-      <link>/courses/phys_115/hw3/</link>
+      <link>https://ericbrewe.netlify.com/courses/phys_115/hw3/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>/courses/phys_115/hw3/</guid>
+      <guid>https://ericbrewe.netlify.com/courses/phys_115/hw3/</guid>
       <description>&lt;p&gt;Please submit your answers through Gradescope (if you would like to print out a copy of the homework - it is available here:
 
 &lt;a href=&#34;https://docs.google.com/document/d/1cILkK7f2ijjYyF0RQ_lKWGxBQK5ZSS6j-vkg4F0S1EE/edit?usp=sharing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Homework #3&lt;/a&gt;
@@ -319,9 +319,9 @@ SNA:&lt;/p&gt;
     
     <item>
       <title>PHYS 115 Homework #4</title>
-      <link>/courses/phys_115/hw4/</link>
+      <link>https://ericbrewe.netlify.com/courses/phys_115/hw4/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>/courses/phys_115/hw4/</guid>
+      <guid>https://ericbrewe.netlify.com/courses/phys_115/hw4/</guid>
       <description>&lt;p&gt;This is due on May 12.
 Please submit your answers through Gradescope (if you would like to print out a copy of the homework - it is available here:
 
@@ -336,9 +336,9 @@ Please submit your answers through Gradescope (if you would like to print out a 
     
     <item>
       <title>PHYS 115 Homework #5</title>
-      <link>/courses/phys_115/hw5/</link>
+      <link>https://ericbrewe.netlify.com/courses/phys_115/hw5/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>/courses/phys_115/hw5/</guid>
+      <guid>https://ericbrewe.netlify.com/courses/phys_115/hw5/</guid>
       <description>&lt;p&gt;This is due on May 19.
 Please submit your answers through Gradescope (if you would like to print out a copy of the homework - it is available here:
 
@@ -353,9 +353,9 @@ Please submit your answers through Gradescope (if you would like to print out a 
     
     <item>
       <title>PHYS 115 Homework #6</title>
-      <link>/courses/phys_115/hw6/</link>
+      <link>https://ericbrewe.netlify.com/courses/phys_115/hw6/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>/courses/phys_115/hw6/</guid>
+      <guid>https://ericbrewe.netlify.com/courses/phys_115/hw6/</guid>
       <description>&lt;p&gt;This is due on May 26.
 Please submit your answers through Gradescope (if you would like to print out a copy of the homework - it is available here:
 
@@ -370,9 +370,9 @@ Please submit your answers through Gradescope (if you would like to print out a 
     
     <item>
       <title>PHYS 115 Homework #7</title>
-      <link>/courses/phys_115/hw7/</link>
+      <link>https://ericbrewe.netlify.com/courses/phys_115/hw7/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>/courses/phys_115/hw7/</guid>
+      <guid>https://ericbrewe.netlify.com/courses/phys_115/hw7/</guid>
       <description>&lt;p&gt;This is due on June 2.
 Please submit your answers through Gradescope (if you would like to print out a copy of the homework - it is available here:
 
@@ -387,9 +387,9 @@ Please submit your answers through Gradescope (if you would like to print out a 
     
     <item>
       <title>Week 1, Ch 18</title>
-      <link>/courses/phys_115/asyncactivities1/</link>
+      <link>https://ericbrewe.netlify.com/courses/phys_115/asyncactivities1/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>/courses/phys_115/asyncactivities1/</guid>
+      <guid>https://ericbrewe.netlify.com/courses/phys_115/asyncactivities1/</guid>
       <description>&lt;p&gt;For this week&amp;rsquo;s Friday activities you should do the following:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Read through Chapter 18.&lt;/li&gt;
@@ -407,9 +407,9 @@ Please submit your answers through Gradescope (if you would like to print out a 
     
     <item>
       <title>Week 2, Ch 19</title>
-      <link>/courses/phys_115/asyncactivities2/</link>
+      <link>https://ericbrewe.netlify.com/courses/phys_115/asyncactivities2/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>/courses/phys_115/asyncactivities2/</guid>
+      <guid>https://ericbrewe.netlify.com/courses/phys_115/asyncactivities2/</guid>
       <description>&lt;p&gt;For this week&amp;rsquo;s Friday activities you should do the following:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Read Chapter 19.&lt;/li&gt;
@@ -425,9 +425,9 @@ Please submit your answers through Gradescope (if you would like to print out a 
     
     <item>
       <title>Week 3, Ch 17</title>
-      <link>/courses/phys_115/asyncactivities3/</link>
+      <link>https://ericbrewe.netlify.com/courses/phys_115/asyncactivities3/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>/courses/phys_115/asyncactivities3/</guid>
+      <guid>https://ericbrewe.netlify.com/courses/phys_115/asyncactivities3/</guid>
       <description>&lt;p&gt;For this week&amp;rsquo;s Friday activities you should do the following:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Read Chapter 17.&lt;/li&gt;
@@ -440,9 +440,9 @@ Please submit your answers through Gradescope (if you would like to print out a 
     
     <item>
       <title>Week 4, Ch 20</title>
-      <link>/courses/phys_115/asyncactivities4/</link>
+      <link>https://ericbrewe.netlify.com/courses/phys_115/asyncactivities4/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>/courses/phys_115/asyncactivities4/</guid>
+      <guid>https://ericbrewe.netlify.com/courses/phys_115/asyncactivities4/</guid>
       <description>&lt;p&gt;For this week, take a tour of the Mag Lab in Tallahassee, FL to see some of the really interesting work being done using Magnetic Fields and Magnetic Forces.&lt;/p&gt;
 &lt;p&gt;Check out the following:&lt;/p&gt;
 &lt;ul&gt;
@@ -464,9 +464,9 @@ Please submit your answers through Gradescope (if you would like to print out a 
     
     <item>
       <title>Week 6, Ch 21</title>
-      <link>/courses/phys_115/asyncactivities5/</link>
+      <link>https://ericbrewe.netlify.com/courses/phys_115/asyncactivities5/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>/courses/phys_115/asyncactivities5/</guid>
+      <guid>https://ericbrewe.netlify.com/courses/phys_115/asyncactivities5/</guid>
       <description>&lt;p&gt;This week you have two things to do.&lt;/p&gt;
 &lt;p&gt;First, read Chapter 21.&lt;/p&gt;
 &lt;p&gt;I have not hidden that I don&amp;rsquo;t love Gauss Law or Ampere&amp;rsquo;s Law.&lt;/p&gt;
@@ -476,9 +476,9 @@ Please submit your answers through Gradescope (if you would like to print out a 
     
     <item>
       <title>Week 7, Ch 22</title>
-      <link>/courses/phys_115/asyncactivities6/</link>
+      <link>https://ericbrewe.netlify.com/courses/phys_115/asyncactivities6/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>/courses/phys_115/asyncactivities6/</guid>
+      <guid>https://ericbrewe.netlify.com/courses/phys_115/asyncactivities6/</guid>
       <description>&lt;p&gt;This week you have two things to do.&lt;/p&gt;
 &lt;p&gt;First, read Chapter 22. The diagrams there are very useful.&lt;/p&gt;
 &lt;p&gt;Second, open the 
@@ -492,9 +492,9 @@ Please submit your answers through Gradescope (if you would like to print out a 
     
     <item>
       <title>Week 8, Ch 23</title>
-      <link>/courses/phys_115/asyncactivities7/</link>
+      <link>https://ericbrewe.netlify.com/courses/phys_115/asyncactivities7/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>/courses/phys_115/asyncactivities7/</guid>
+      <guid>https://ericbrewe.netlify.com/courses/phys_115/asyncactivities7/</guid>
       <description>&lt;p&gt;This week you have three things to do.&lt;/p&gt;
 &lt;p&gt;First, read Chapter 23. Particularly 939-951.&lt;/p&gt;
 &lt;p&gt;Second, complete the 
@@ -506,9 +506,9 @@ Please submit your answers through Gradescope (if you would like to print out a 
     
     <item>
       <title>Week 9, All Chapters</title>
-      <link>/courses/phys_115/asyncactivities8/</link>
+      <link>https://ericbrewe.netlify.com/courses/phys_115/asyncactivities8/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>/courses/phys_115/asyncactivities8/</guid>
+      <guid>https://ericbrewe.netlify.com/courses/phys_115/asyncactivities8/</guid>
       <description>&lt;p&gt;This week I want to ask for two things.&lt;/p&gt;
 &lt;p&gt;First, complete the course evaluation form.  This is important to me, and I really am interested in your feedback.&lt;/p&gt;
 &lt;p&gt;Second, work on completing assignments that you have missed, and resubmitting any that are not up to satisfactory standards. All assignments will be due on June 12, which is the last day of finals.&lt;/p&gt;
@@ -517,9 +517,9 @@ Please submit your answers through Gradescope (if you would like to print out a 
     
     <item>
       <title>Actions we can take</title>
-      <link>/post/actionswecantake/</link>
+      <link>https://ericbrewe.netlify.com/post/actionswecantake/</link>
       <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
-      <guid>/post/actionswecantake/</guid>
+      <guid>https://ericbrewe.netlify.com/post/actionswecantake/</guid>
       <description>&lt;p&gt;I am a physics faculty member, and I care about physics and the physics community, which is why I think as a physics faculty member I needed to address the racial violence that is part of the broader society in my physics class today. This is not something that I am always comfortable with.&lt;/p&gt;
 &lt;p&gt;Also, I am not willing to not take some actions - big or small.&lt;/p&gt;
 &lt;p&gt;Here is what I did:&lt;/p&gt;
@@ -545,9 +545,9 @@ Eric&lt;/p&gt;
     
     <item>
       <title>Individual Meetings With Students</title>
-      <link>/post/individualmeetingswithstudents/</link>
+      <link>https://ericbrewe.netlify.com/post/individualmeetingswithstudents/</link>
       <pubDate>Fri, 08 May 2020 00:00:00 +0000</pubDate>
-      <guid>/post/individualmeetingswithstudents/</guid>
+      <guid>https://ericbrewe.netlify.com/post/individualmeetingswithstudents/</guid>
       <description>&lt;p&gt;My class reached the halfway point this week. One of the things that I had planned was to have individual meetings with my students. This is a luxury of having a smaller class.&lt;/p&gt;
 &lt;p&gt;Basically, I built a week into the course schedule where I didn&amp;rsquo;t add any new material. I had no idea about how quickly or slowly the couse was going to go at the beginning. So I added a week of flex at the half way point. It was there to allow me to catch up if I needed to, to give students a week to catch their breath, and to assess how they are doing.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;This was really smart&lt;/strong&gt;&lt;/p&gt;
@@ -563,9 +563,9 @@ Eric&lt;/p&gt;
     
     <item>
       <title>Problem Solving Workshops at a distance</title>
-      <link>/post/problem-solving-workshops/</link>
+      <link>https://ericbrewe.netlify.com/post/problem-solving-workshops/</link>
       <pubDate>Wed, 22 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>/post/problem-solving-workshops/</guid>
+      <guid>https://ericbrewe.netlify.com/post/problem-solving-workshops/</guid>
       <description>
 
 
@@ -586,9 +586,9 @@ Eric&lt;/p&gt;
     
     <item>
       <title>Standards Based Grading</title>
-      <link>/post/standards-based-grading/</link>
+      <link>https://ericbrewe.netlify.com/post/standards-based-grading/</link>
       <pubDate>Wed, 22 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>/post/standards-based-grading/</guid>
+      <guid>https://ericbrewe.netlify.com/post/standards-based-grading/</guid>
       <description>
 
 
@@ -637,9 +637,9 @@ Eric&lt;/p&gt;
     
     <item>
       <title>Standards Based Grading With Gradescope and R</title>
-      <link>/post/standards-based-grading-gradescope-and-r/</link>
+      <link>https://ericbrewe.netlify.com/post/standards-based-grading-gradescope-and-r/</link>
       <pubDate>Wed, 22 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>/post/standards-based-grading-gradescope-and-r/</guid>
+      <guid>https://ericbrewe.netlify.com/post/standards-based-grading-gradescope-and-r/</guid>
       <description>
 
 
@@ -747,17 +747,17 @@ gradebook %&amp;gt;%
     
     <item>
       <title>A toolkit for physics department advocacy (and survival) and its connection to EP3</title>
-      <link>/talk/apsaprildepttoolkit/</link>
+      <link>https://ericbrewe.netlify.com/talk/apsaprildepttoolkit/</link>
       <pubDate>Mon, 20 Apr 2020 14:43:00 +0000</pubDate>
-      <guid>/talk/apsaprildepttoolkit/</guid>
+      <guid>https://ericbrewe.netlify.com/talk/apsaprildepttoolkit/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Incremental Improvements</title>
-      <link>/post/improvements/</link>
+      <link>https://ericbrewe.netlify.com/post/improvements/</link>
       <pubDate>Wed, 15 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>/post/improvements/</guid>
+      <guid>https://ericbrewe.netlify.com/post/improvements/</guid>
       <description>&lt;p&gt;After last week&amp;rsquo;s trainwreck of a class I knew I had to make some changes. So this week I wrote 
 &lt;a href=&#34;http://ericbrewe.com/slides/chslides/#/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;a ton of slides.&lt;/a&gt;
 &lt;/p&gt;
@@ -770,41 +770,41 @@ gradebook %&amp;gt;%
     
     <item>
       <title>The Roles of Engagement: Network Analysis in Physics Education Research</title>
-      <link>/talk/rowan-university/</link>
+      <link>https://ericbrewe.netlify.com/talk/rowan-university/</link>
       <pubDate>Fri, 06 Mar 2020 15:30:00 +0000</pubDate>
-      <guid>/talk/rowan-university/</guid>
+      <guid>https://ericbrewe.netlify.com/talk/rowan-university/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Modeling Instruction, student engagement, and neurobiological impacts</title>
-      <link>/talk/rutgers-university/</link>
+      <link>https://ericbrewe.netlify.com/talk/rutgers-university/</link>
       <pubDate>Wed, 04 Mar 2020 15:30:00 +0000</pubDate>
-      <guid>/talk/rutgers-university/</guid>
+      <guid>https://ericbrewe.netlify.com/talk/rutgers-university/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A Network Analysis of Domestic Violence Beliefs Among Young Adults in India</title>
-      <link>/publication/rodriguezananetworkdomesticviolence/</link>
+      <link>https://ericbrewe.netlify.com/publication/rodriguezananetworkdomesticviolence/</link>
       <pubDate>Tue, 11 Feb 2020 09:41:13 -0500</pubDate>
-      <guid>/publication/rodriguezananetworkdomesticviolence/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/rodriguezananetworkdomesticviolence/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Brain activity links performance in science reasoning with conceptual approach</title>
-      <link>/publication/bartleybrainlinkconceptualapproach/</link>
+      <link>https://ericbrewe.netlify.com/publication/bartleybrainlinkconceptualapproach/</link>
       <pubDate>Mon, 02 Dec 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/bartleybrainlinkconceptualapproach/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/bartleybrainlinkconceptualapproach/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Adapting Plans</title>
-      <link>/post/coursereplanningincrisis/</link>
+      <link>https://ericbrewe.netlify.com/post/coursereplanningincrisis/</link>
       <pubDate>Wed, 17 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>/post/coursereplanningincrisis/</guid>
+      <guid>https://ericbrewe.netlify.com/post/coursereplanningincrisis/</guid>
       <description>&lt;p&gt;So, now I&amp;rsquo;ve done it. I have taught a week online. I had a day of logistics and getting to know (even though I don&amp;rsquo;t see people&amp;rsquo;s faces) the students on Monday. That did nothing to prepare me for the trainwreck that was going to be my first day of lecturing.&lt;/p&gt;
 &lt;p&gt;I learned a ton about what I do when I lecture today.  My approach to lecture is the sort of standard &amp;ldquo;Chalk and Talk&amp;rdquo; sort of thing. I do not typically prepare a bunch of slides (or any actually). Typically I talk, write on the whiteboard and periodically pause to ask questions that I expect the students to answer verbally (e.g. &amp;ldquo;If the current here is 10, what would the current be over here?&amp;quot;). I also do not write out a script - I have an outline, and tend to work from the outline which allows me to improvise as I went along. So I assumed that is what I would do.&lt;/p&gt;
 &lt;p&gt;My plan has assumptions built into it.&lt;/p&gt;
@@ -829,9 +829,9 @@ gradebook %&amp;gt;%
     
     <item>
       <title>Course Planning during Covid</title>
-      <link>/post/courseplanningincrisis/</link>
+      <link>https://ericbrewe.netlify.com/post/courseplanningincrisis/</link>
       <pubDate>Wed, 17 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>/post/courseplanningincrisis/</guid>
+      <guid>https://ericbrewe.netlify.com/post/courseplanningincrisis/</guid>
       <description>&lt;p&gt;Drexel is on the quarter system. And because students could not stay in dorms safely, Drexel announced that all classes during the spring quarter would be fully online.&lt;/p&gt;
 &lt;p&gt;I have never taught a fully online course. I have never taught a course during a pandemic. I have never taught the course I was planning before (PHYS 115, Contemporary Physics III).&lt;/p&gt;
 &lt;p&gt;The announcment that all courses would be fully online was made right before final exams, so I didn&amp;rsquo;t even get to practice with one class online during Winter Term. I did get to practice with giving an online final exam through BlackBoard - but that is a different story.  What I did learn was that I did not want to give online exams.&lt;/p&gt;
@@ -873,9 +873,9 @@ gradebook %&amp;gt;%
     
     <item>
       <title>Office Hours</title>
-      <link>/post/officehoursincrisis/</link>
+      <link>https://ericbrewe.netlify.com/post/officehoursincrisis/</link>
       <pubDate>Wed, 17 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>/post/officehoursincrisis/</guid>
+      <guid>https://ericbrewe.netlify.com/post/officehoursincrisis/</guid>
       <description>&lt;p&gt;I had a bad day on Wednesday, class was clunky, my technology kept freezing, and I felt bad about myself.&lt;/p&gt;
 &lt;p&gt;So today when 4 different students showed up for office hours I was a bit nervous.  It actually worked out much better than I had imagined.  First, each student was very understanding about the challenges, which I totally appreciated.&lt;/p&gt;
 &lt;p&gt;Second, I found that I was able to manage the Zoom room, starting one breakout room so students could work on homework and jump back into the main room when they had questions.&lt;/p&gt;
@@ -900,8 +900,8 @@ gradebook %&amp;gt;%
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/CoffeeBackground.jpg&#34; &gt;
-&lt;img data-src=&#34;/img/CoffeeBackground.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; &gt;&lt;/a&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://ericbrewe.netlify.com/img/CoffeeBackground.jpg&#34; &gt;
+&lt;img data-src=&#34;https://ericbrewe.netlify.com/img/CoffeeBackground.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; &gt;&lt;/a&gt;
 
 
 
@@ -913,9 +913,9 @@ gradebook %&amp;gt;%
     
     <item>
       <title>Ch 19 Slides</title>
-      <link>/slides/chslides/</link>
+      <link>https://ericbrewe.netlify.com/slides/chslides/</link>
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>/slides/chslides/</guid>
+      <guid>https://ericbrewe.netlify.com/slides/chslides/</guid>
       <description>&lt;h3 id=&#34;resistors-and-capacitors&#34;&gt;Resistors and Capacitors&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Resistors&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -1352,9 +1352,9 @@ as $t \to \infty, Q(\infty) = 0$, and $I(\infty) = V_{C}/R = 0$&lt;/p&gt;
     
     <item>
       <title>Slides</title>
-      <link>/slides/example/</link>
+      <link>https://ericbrewe.netlify.com/slides/example/</link>
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>/slides/example/</guid>
+      <guid>https://ericbrewe.netlify.com/slides/example/</guid>
       <description>&lt;h1 id=&#34;create-slides-in-markdown-with-academic&#34;&gt;Create slides in Markdown with Academic&lt;/h1&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://sourcethemes.com/academic/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Academic&lt;/a&gt;
@@ -1490,531 +1490,513 @@ Three
     
     <item>
       <title>Determining Influences of Women Deciding to Major in Physics</title>
-      <link>/publication/price-perc-poster-19/</link>
+      <link>https://ericbrewe.netlify.com/publication/price-perc-poster-19/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/price-perc-poster-19/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/price-perc-poster-19/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Linking engagement and performance : The social network analysis perspective</title>
-      <link>/publication/williams-2019-network-growth/</link>
+      <link>https://ericbrewe.netlify.com/publication/williams-2019-network-growth/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/williams-2019-network-growth/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/williams-2019-network-growth/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sex differences in brain correlates of STEM anxiety</title>
-      <link>/publication/gonzalez-2019-stem-anxiety-brain/</link>
+      <link>https://ericbrewe.netlify.com/publication/gonzalez-2019-stem-anxiety-brain/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/gonzalez-2019-stem-anxiety-brain/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/gonzalez-2019-stem-anxiety-brain/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Privacy Policy</title>
-      <link>/privacy/</link>
-      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
-      <guid>/privacy/</guid>
-      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Terms</title>
-      <link>/terms/</link>
-      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
-      <guid>/terms/</guid>
-      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Costs of success: Financial implications of implementation of active learning in introductory physics courses for students and administrators</title>
-      <link>/publication/brewe-2018/</link>
+      <link>https://ericbrewe.netlify.com/publication/brewe-2018/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>/publication/brewe-2018/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/brewe-2018/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Educational commitment and social networking: The power of informal networks</title>
-      <link>/publication/zwolak-2018/</link>
+      <link>https://ericbrewe.netlify.com/publication/zwolak-2018/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>/publication/zwolak-2018/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/zwolak-2018/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Meta-analytic evidence for a core problem solving network across multiple representational domains</title>
-      <link>/publication/bartley-2018/</link>
+      <link>https://ericbrewe.netlify.com/publication/bartley-2018/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>/publication/bartley-2018/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/bartley-2018/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Modelling instruction for university physics: Examining the theory in practice</title>
-      <link>/publication/brewe-2018-a/</link>
+      <link>https://ericbrewe.netlify.com/publication/brewe-2018-a/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>/publication/brewe-2018-a/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/brewe-2018-a/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Power Boxes: New Representation for Analyzing DC Circuits</title>
-      <link>/publication/mc-padden-2018-power-boxes/</link>
+      <link>https://ericbrewe.netlify.com/publication/mc-padden-2018-power-boxes/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>/publication/mc-padden-2018-power-boxes/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/mc-padden-2018-power-boxes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sexual harassment reported by undergraduate female physicsists</title>
-      <link>/publication/aycock-2018-sexual-harrassment/</link>
+      <link>https://ericbrewe.netlify.com/publication/aycock-2018-sexual-harrassment/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>/publication/aycock-2018-sexual-harrassment/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/aycock-2018-sexual-harrassment/</guid>
       <description></description>
     </item>
     
     <item>
       <title>The Roles of Engagement : Network Analysis in Physics Education Research Abstract :</title>
-      <link>/publication/brewe-2018-roles-of-engagement/</link>
+      <link>https://ericbrewe.netlify.com/publication/brewe-2018-roles-of-engagement/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>/publication/brewe-2018-roles-of-engagement/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/brewe-2018-roles-of-engagement/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Toward a Neurobiological Basis for Understanding Learning in University Modeling Instruction Physics Courses</title>
-      <link>/publication/brewe-2018-neuroimaging/</link>
+      <link>https://ericbrewe.netlify.com/publication/brewe-2018-neuroimaging/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>/publication/brewe-2018-neuroimaging/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/brewe-2018-neuroimaging/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Understanding the development of interest and self-efficacy in active-learning undergraduate physics courses</title>
-      <link>/publication/dou-2018/</link>
+      <link>https://ericbrewe.netlify.com/publication/dou-2018/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>/publication/dou-2018/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/dou-2018/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Impact of the second semester University Modeling Instruction course on students&#39; representation choices</title>
-      <link>/publication/mc-padden-2017-a/</link>
+      <link>https://ericbrewe.netlify.com/publication/mc-padden-2017-a/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>/publication/mc-padden-2017-a/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/mc-padden-2017-a/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Students&#39; network integration as a predictor of persistence in introductory physics courses</title>
-      <link>/publication/zwolak-2017/</link>
+      <link>https://ericbrewe.netlify.com/publication/zwolak-2017/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>/publication/zwolak-2017/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/zwolak-2017/</guid>
       <description></description>
     </item>
     
     <item>
       <title>The importance of high school physics teachers for female students&#39; physics identity and persistence</title>
-      <link>/publication/hazari-2017-a/</link>
+      <link>https://ericbrewe.netlify.com/publication/hazari-2017-a/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>/publication/hazari-2017-a/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/hazari-2017-a/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Modeling Instruction</title>
-      <link>/project/modelinginstructionproject/</link>
+      <link>https://ericbrewe.netlify.com/project/modelinginstructionproject/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/project/modelinginstructionproject/</guid>
+      <guid>https://ericbrewe.netlify.com/project/modelinginstructionproject/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Network Analysis Projects</title>
-      <link>/project/networkanalysisproject/</link>
+      <link>https://ericbrewe.netlify.com/project/networkanalysisproject/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/project/networkanalysisproject/</guid>
+      <guid>https://ericbrewe.netlify.com/project/networkanalysisproject/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Neuroimaging</title>
-      <link>/project/neuroimagingproject/</link>
+      <link>https://ericbrewe.netlify.com/project/neuroimagingproject/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/project/neuroimagingproject/</guid>
+      <guid>https://ericbrewe.netlify.com/project/neuroimagingproject/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Beyond performance metrics : Examining a decrease in students &#39; physics self-efficacy through a social networks lens</title>
-      <link>/publication/dou-2016/</link>
+      <link>https://ericbrewe.netlify.com/publication/dou-2016/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
-      <guid>/publication/dou-2016/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/dou-2016/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Editorial: Focused Collection: Gender in Physics</title>
-      <link>/publication/brewe-2016-gender/</link>
+      <link>https://ericbrewe.netlify.com/publication/brewe-2016-gender/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
-      <guid>/publication/brewe-2016-gender/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/brewe-2016-gender/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Network Analysis of Students&#39; Use of Representations in Problem Solving</title>
-      <link>/publication/mc-padden-2016/</link>
+      <link>https://ericbrewe.netlify.com/publication/mc-padden-2016/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
-      <guid>/publication/mc-padden-2016/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/mc-padden-2016/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Using Module Analysis for Multiple Choice Responses: A New Method Applied to Force Concept Inventory Data</title>
-      <link>/publication/brewe-2016/</link>
+      <link>https://ericbrewe.netlify.com/publication/brewe-2016/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
-      <guid>/publication/brewe-2016/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/brewe-2016/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Developing a physics expert identity in a biophysics research group</title>
-      <link>/publication/rodriguez-2015-a/</link>
+      <link>https://ericbrewe.netlify.com/publication/rodriguez-2015-a/</link>
       <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
-      <guid>/publication/rodriguez-2015-a/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/rodriguez-2015-a/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Equity investigation of attitudinal shifts in introductory physics</title>
-      <link>/publication/traxler-2015-b/</link>
+      <link>https://ericbrewe.netlify.com/publication/traxler-2015-b/</link>
       <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
-      <guid>/publication/traxler-2015-b/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/traxler-2015-b/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Multiple Representations and Epistemic Games in Introductory Physics Exam Solutions</title>
-      <link>/publication/traxler-2015/</link>
+      <link>https://ericbrewe.netlify.com/publication/traxler-2015/</link>
       <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
-      <guid>/publication/traxler-2015/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/traxler-2015/</guid>
       <description></description>
     </item>
     
     <item>
       <title>The impact of social integration on student persistence in introductory Modeling Instruction courses</title>
-      <link>/publication/zwolak-2015/</link>
+      <link>https://ericbrewe.netlify.com/publication/zwolak-2015/</link>
       <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
-      <guid>/publication/zwolak-2015/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/zwolak-2015/</guid>
       <description></description>
     </item>
     
     <item>
       <title>The Impacts of Instructor and Student Gender on Student Performance in Introductory Modeling Instruction Courses</title>
-      <link>/publication/mc-padden-2015/</link>
+      <link>https://ericbrewe.netlify.com/publication/mc-padden-2015/</link>
       <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
-      <guid>/publication/mc-padden-2015/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/mc-padden-2015/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Understanding Centrality: Investigating Student Outcomes within a Classroom Social Network</title>
-      <link>/publication/williams-2015/</link>
+      <link>https://ericbrewe.netlify.com/publication/williams-2015/</link>
       <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
-      <guid>/publication/williams-2015/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/williams-2015/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A Study of Informal Learning Communities : a Tale of Two Physics Courses</title>
-      <link>/publication/yang-2014/</link>
+      <link>https://ericbrewe.netlify.com/publication/yang-2014/</link>
       <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
-      <guid>/publication/yang-2014/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/yang-2014/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Network centrality and student self-efficacy in an interactive introductory physics environment</title>
-      <link>/publication/dou-2014/</link>
+      <link>https://ericbrewe.netlify.com/publication/dou-2014/</link>
       <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
-      <guid>/publication/dou-2014/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/dou-2014/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cookies as agents for community membership</title>
-      <link>/publication/rodriguez-2013/</link>
+      <link>https://ericbrewe.netlify.com/publication/rodriguez-2013/</link>
       <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
-      <guid>/publication/rodriguez-2013/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/rodriguez-2013/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Expanded Markers of Success in Introductory University Physics</title>
-      <link>/publication/goertzen-2013/</link>
+      <link>https://ericbrewe.netlify.com/publication/goertzen-2013/</link>
       <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
-      <guid>/publication/goertzen-2013/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/goertzen-2013/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Extending positive CLASS results across multiple instructors and multiple classes of Modeling Instruction</title>
-      <link>/publication/brewe-2013-extend-class/</link>
+      <link>https://ericbrewe.netlify.com/publication/brewe-2013-extend-class/</link>
       <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
-      <guid>/publication/brewe-2013-extend-class/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/brewe-2013-extend-class/</guid>
       <description></description>
     </item>
     
     <item>
       <title>From Vision to Change: Educational Initiatives and Research at the Intersection of Physics and Biology</title>
-      <link>/publication/brewe-2013-cbe/</link>
+      <link>https://ericbrewe.netlify.com/publication/brewe-2013-cbe/</link>
       <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
-      <guid>/publication/brewe-2013-cbe/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/brewe-2013-cbe/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Instructional changes based on cogenerative physics reform</title>
-      <link>/publication/samuels-2013/</link>
+      <link>https://ericbrewe.netlify.com/publication/samuels-2013/</link>
       <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
-      <guid>/publication/samuels-2013/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/samuels-2013/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Regression analysis exploring teacher impact on student FCI post scores</title>
-      <link>/publication/mahadeo-2013/</link>
+      <link>https://ericbrewe.netlify.com/publication/mahadeo-2013/</link>
       <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
-      <guid>/publication/mahadeo-2013/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/mahadeo-2013/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Talking and learning physics: Predicting future grades from network measures and Force Concept Inventory pretest scores</title>
-      <link>/publication/bruun-2013-talking-learning/</link>
+      <link>https://ericbrewe.netlify.com/publication/bruun-2013-talking-learning/</link>
       <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
-      <guid>/publication/bruun-2013-talking-learning/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/bruun-2013-talking-learning/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Toward University Modeling Instruction--Biology: Adapting Curricular Frameworks from Physics to Biology</title>
-      <link>/publication/manthey-2013-a/</link>
+      <link>https://ericbrewe.netlify.com/publication/manthey-2013-a/</link>
       <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
-      <guid>/publication/manthey-2013-a/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/manthey-2013-a/</guid>
       <description></description>
     </item>
     
     <item>
       <title>&#34;Implicit action&#34;: Understanding discourse management in modeling instruction</title>
-      <link>/publication/durden-2012/</link>
+      <link>https://ericbrewe.netlify.com/publication/durden-2012/</link>
       <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
-      <guid>/publication/durden-2012/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/durden-2012/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Communicating scientific ideas: One element of physics expertise</title>
-      <link>/publication/rodriguez-2012-communicating/</link>
+      <link>https://ericbrewe.netlify.com/publication/rodriguez-2012-communicating/</link>
       <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
-      <guid>/publication/rodriguez-2012-communicating/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/rodriguez-2012-communicating/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Creating opportunities to influence self-efficacy through modeling instruction</title>
-      <link>/publication/sawtelle-2012-se-opportunities-aip/</link>
+      <link>https://ericbrewe.netlify.com/publication/sawtelle-2012-se-opportunities-aip/</link>
       <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
-      <guid>/publication/sawtelle-2012-se-opportunities-aip/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/sawtelle-2012-se-opportunities-aip/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Exploring the relationship between self-efficacy and retention in introductory physics</title>
-      <link>/publication/sawtelle-2012-jrst/</link>
+      <link>https://ericbrewe.netlify.com/publication/sawtelle-2012-jrst/</link>
       <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
-      <guid>/publication/sawtelle-2012-jrst/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/sawtelle-2012-jrst/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Identifying events that impact self-efficacy in physics learning</title>
-      <link>/publication/sawtelle-2012-se-events/</link>
+      <link>https://ericbrewe.netlify.com/publication/sawtelle-2012-se-events/</link>
       <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
-      <guid>/publication/sawtelle-2012-se-events/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/sawtelle-2012-se-events/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Impact of equity models and statistical measures on interpretations of educational reform</title>
-      <link>/publication/rodriguez-2012-a/</link>
+      <link>https://ericbrewe.netlify.com/publication/rodriguez-2012-a/</link>
       <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
-      <guid>/publication/rodriguez-2012-a/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/rodriguez-2012-a/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Investigating student communities with network analysis of interactions in a physics learning center</title>
-      <link>/publication/brewe-2012-networks/</link>
+      <link>https://ericbrewe.netlify.com/publication/brewe-2012-networks/</link>
       <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
-      <guid>/publication/brewe-2012-networks/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/brewe-2012-networks/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Successes and Constraints in the Enactment of a Reform</title>
-      <link>/publication/lee-2012/</link>
+      <link>https://ericbrewe.netlify.com/publication/lee-2012/</link>
       <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
-      <guid>/publication/lee-2012/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/lee-2012/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Energy as a substancelike quantity that flows: Theoretical considerations and pedagogical consequences</title>
-      <link>/publication/brewe-2011-energy/</link>
+      <link>https://ericbrewe.netlify.com/publication/brewe-2011-energy/</link>
       <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
-      <guid>/publication/brewe-2011-energy/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/brewe-2011-energy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Moving toward change: Institutionalizing reform through implementation of the Learning Assistant model and Open Source Tutorials</title>
-      <link>/publication/goertzen-2011/</link>
+      <link>https://ericbrewe.netlify.com/publication/goertzen-2011/</link>
       <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
-      <guid>/publication/goertzen-2011/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/goertzen-2011/</guid>
       <description></description>
     </item>
     
     <item>
       <title>QBIC, an interdisciplinary and quantitative biological sciences curriculum: Concept to implementation</title>
-      <link>/publication/weeks-2011/</link>
+      <link>https://ericbrewe.netlify.com/publication/weeks-2011/</link>
       <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
-      <guid>/publication/weeks-2011/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/weeks-2011/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Changing participation through formation of student learning communities</title>
-      <link>/publication/brewe-2010-b/</link>
+      <link>https://ericbrewe.netlify.com/publication/brewe-2010-b/</link>
       <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
-      <guid>/publication/brewe-2010-b/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/brewe-2010-b/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Constructing a Model of Physics Expertise</title>
-      <link>/publication/rodriguez-2010/</link>
+      <link>https://ericbrewe.netlify.com/publication/rodriguez-2010/</link>
       <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
-      <guid>/publication/rodriguez-2010/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/rodriguez-2010/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Positive Impacts of Modeling Instruction on Self‐Efficacy</title>
-      <link>/publication/sawtelle-2010/</link>
+      <link>https://ericbrewe.netlify.com/publication/sawtelle-2010/</link>
       <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
-      <guid>/publication/sawtelle-2010/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/sawtelle-2010/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Toward equity through participation in Modeling Instruction in introductory university physics</title>
-      <link>/publication/brewe-2010-toward-equity/</link>
+      <link>https://ericbrewe.netlify.com/publication/brewe-2010-toward-equity/</link>
       <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
-      <guid>/publication/brewe-2010-toward-equity/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/brewe-2010-toward-equity/</guid>
       <description></description>
     </item>
     
     <item>
       <title>An Exploratory Qualitative Study of the Proximal Goal Setting of Two Introductory Modeling Instruction Physics Students</title>
-      <link>/publication/sawtelle-2009-a/</link>
+      <link>https://ericbrewe.netlify.com/publication/sawtelle-2009-a/</link>
       <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
-      <guid>/publication/sawtelle-2009-a/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/sawtelle-2009-a/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Investigating Student Communities with Network Analysis of Interactions in a Physics Learning Center</title>
-      <link>/publication/brewe-2009-communities-aip/</link>
+      <link>https://ericbrewe.netlify.com/publication/brewe-2009-communities-aip/</link>
       <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
-      <guid>/publication/brewe-2009-communities-aip/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/brewe-2009-communities-aip/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Modeling instruction: Positive attitudinal shifts in introductory physics measured with CLASS</title>
-      <link>/publication/brewe-2009-a/</link>
+      <link>https://ericbrewe.netlify.com/publication/brewe-2009-a/</link>
       <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
-      <guid>/publication/brewe-2009-a/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/brewe-2009-a/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Validation study of the Colorado Learning Attitudes about Science Survey at a Hispanic-serving institution</title>
-      <link>/publication/sawtelle-2009-d/</link>
+      <link>https://ericbrewe.netlify.com/publication/sawtelle-2009-d/</link>
       <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
-      <guid>/publication/sawtelle-2009-d/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/sawtelle-2009-d/</guid>
       <description></description>
     </item>
     
     <item>
       <title>CLASS shifts in modeling instruction</title>
-      <link>/publication/brewe-2008-a/</link>
+      <link>https://ericbrewe.netlify.com/publication/brewe-2008-a/</link>
       <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
-      <guid>/publication/brewe-2008-a/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/brewe-2008-a/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Impact of the FIU PhysTEC Reform of Introductory Physics Labs</title>
-      <link>/publication/wells-2008/</link>
+      <link>https://ericbrewe.netlify.com/publication/wells-2008/</link>
       <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
-      <guid>/publication/wells-2008/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/wells-2008/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Improving Physics Education through a Diverse Research and Learning Community at Florida International University</title>
-      <link>/publication/kramer/</link>
+      <link>https://ericbrewe.netlify.com/publication/kramer/</link>
       <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
-      <guid>/publication/kramer/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/kramer/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Modeling theory applied: Modeling Instruction in introductory physics</title>
-      <link>/publication/brewe-2008-modeling-theory/</link>
+      <link>https://ericbrewe.netlify.com/publication/brewe-2008-modeling-theory/</link>
       <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
-      <guid>/publication/brewe-2008-modeling-theory/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/brewe-2008-modeling-theory/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Modeling Success: Building Community for Reform</title>
-      <link>/publication/dancy-2007/</link>
+      <link>https://ericbrewe.netlify.com/publication/dancy-2007/</link>
       <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
-      <guid>/publication/dancy-2007/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/dancy-2007/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Resource Letter RPS-1: Research in problem solving</title>
-      <link>/publication/hsu-2004/</link>
+      <link>https://ericbrewe.netlify.com/publication/hsu-2004/</link>
       <pubDate>Thu, 01 Jan 2004 00:00:00 +0000</pubDate>
-      <guid>/publication/hsu-2004/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/hsu-2004/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Chapter17ChabaySherwood</title>
-      <link>/slides/ch17slides/</link>
+      <link>https://ericbrewe.netlify.com/slides/ch17slides/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/slides/ch17slides/</guid>
+      <guid>https://ericbrewe.netlify.com/slides/ch17slides/</guid>
       <description>
 
 

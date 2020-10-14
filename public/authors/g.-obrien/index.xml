@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>G. O&#39;Brien | Eric Brewe Academic</title>
-    <link>/authors/g.-obrien/</link>
-      <atom:link href="/authors/g.-obrien/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://ericbrewe.netlify.com/authors/g.-obrien/</link>
+      <atom:link href="https://ericbrewe.netlify.com/authors/g.-obrien/index.xml" rel="self" type="application/rss+xml" />
     <description>G. O&#39;Brien</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 01 Jan 2009 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>G. O&#39;Brien</title>
-      <link>/authors/g.-obrien/</link>
+      <link>https://ericbrewe.netlify.com/authors/g.-obrien/</link>
     </image>
     
     <item>
       <title>Investigating Student Communities with Network Analysis of Interactions in a Physics Learning Center</title>
-      <link>/publication/brewe-2009-communities-aip/</link>
+      <link>https://ericbrewe.netlify.com/publication/brewe-2009-communities-aip/</link>
       <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
-      <guid>/publication/brewe-2009-communities-aip/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/brewe-2009-communities-aip/</guid>
       <description></description>
     </item>
     

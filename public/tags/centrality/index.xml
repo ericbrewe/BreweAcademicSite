@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>centrality | Eric Brewe Academic</title>
-    <link>/tags/centrality/</link>
-      <atom:link href="/tags/centrality/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://ericbrewe.netlify.com/tags/centrality/</link>
+      <atom:link href="https://ericbrewe.netlify.com/tags/centrality/index.xml" rel="self" type="application/rss+xml" />
     <description>centrality</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jan 2014 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>centrality</title>
-      <link>/tags/centrality/</link>
+      <link>https://ericbrewe.netlify.com/tags/centrality/</link>
     </image>
     
     <item>
       <title>Network centrality and student self-efficacy in an interactive introductory physics environment</title>
-      <link>/publication/dou-2014/</link>
+      <link>https://ericbrewe.netlify.com/publication/dou-2014/</link>
       <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
-      <guid>/publication/dou-2014/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/dou-2014/</guid>
       <description></description>
     </item>
     

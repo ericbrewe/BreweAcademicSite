@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>dissemination | Eric Brewe Academic</title>
-    <link>/tags/dissemination/</link>
-      <atom:link href="/tags/dissemination/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://ericbrewe.netlify.com/tags/dissemination/</link>
+      <atom:link href="https://ericbrewe.netlify.com/tags/dissemination/index.xml" rel="self" type="application/rss+xml" />
     <description>dissemination</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 01 Jan 2012 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>dissemination</title>
-      <link>/tags/dissemination/</link>
+      <link>https://ericbrewe.netlify.com/tags/dissemination/</link>
     </image>
     
     <item>
       <title>Successes and Constraints in the Enactment of a Reform</title>
-      <link>/publication/lee-2012/</link>
+      <link>https://ericbrewe.netlify.com/publication/lee-2012/</link>
       <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
-      <guid>/publication/lee-2012/</guid>
+      <guid>https://ericbrewe.netlify.com/publication/lee-2012/</guid>
       <description></description>
     </item>
     
