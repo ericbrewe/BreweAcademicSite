@@ -1,5 +1,5 @@
 ---
-title: "Transitioning to online instruction: Strong ties and anxiety""
+title: "Transitioning to online instruction: Strong ties and anxiety"
 date: 2021-07-22
 publishDate: 2021-07-22T15:04:32.571587Z
 authors: ["Eric Brewe", "Adrienne L. Traxler", "Sarah Scanlin"]
