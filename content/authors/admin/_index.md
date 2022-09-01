@@ -22,7 +22,7 @@ name: Eric Brewe
 organizations:
 - name: Drexel University
   url: "https://sites.google.com/thecastlecenter.org/drexel-per-network-public/home?authuser=1"
-role: Associate Professor of Physics and Science Education
+role: Professor of Physics and Science Education
 social:
 - icon: envelope
   icon_pack: fas

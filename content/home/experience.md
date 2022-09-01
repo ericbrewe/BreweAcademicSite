@@ -19,12 +19,21 @@ date_format = "Jan 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
 [[experience]]
+  title = "Professor of Physics and Science Education"
+  company = "Drexel University"
+  company_url = "https://sites.google.com/thecastlecenter.org/drexel-per-network-public/home?authuser=1"
+  location = "Philadelphia"
+  date_start = "2022-09-01"
+  date_end = ""
+  description = ""
+  
+[[experience]]
   title = "Associate Professor of Physics and Science Education"
   company = "Drexel University"
   company_url = "https://sites.google.com/thecastlecenter.org/drexel-per-network-public/home?authuser=1"
   location = "Philadelphia"
   date_start = "2017-01-01"
-  date_end = ""
+  date_end = "2022-09-01"
   description = ""
 
 [[experience]]
