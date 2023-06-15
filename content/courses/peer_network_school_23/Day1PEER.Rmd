@@ -5,7 +5,7 @@ date: "2020-07-21T00:00:00+01:00"
 output: html_document
 menu:
   PEER Network School:
-    parent: Daily Plan
+    parent: Daily_Plan
     weight: 1
 linktitle: "Day 1 - Theory and Data"
 toc: 
