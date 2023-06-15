@@ -3,7 +3,7 @@ title: "PEER Network School 2023"
 draft: no
 date: "2020-07-20T00:00:00Z"
 lastmod: "2020-07-20T00:00:00Z"
-linktitle: PEER Network School 2023
+linktitle: PEER Network School
 menu:
   SNA School:
     name: PEER Network School
