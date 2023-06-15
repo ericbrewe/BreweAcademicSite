@@ -4,8 +4,8 @@ draft: false
 date: "2020-07-21T00:00:00+01:00"
 output: html_document
 menu:
-  RForSNA:
-    parent: Workshops
+  PEER Network School:
+    parent: Daily Plan
     weight: 1
 linktitle: "Day 1 - Theory and Data"
 toc: 
