@@ -1,13 +1,13 @@
 ---
-title: "Workshop 2"
+title: "Day 2"
 draft: false
 date: "2020-07-21T00:00:00+01:00"
 output: html_document
 menu:
-  RForSNA:
-    parent: Workshops
+  peer_network_school:
+    parent: Daily Plan
     weight: 2
-linktitle: "Workshop 2"
+linktitle: "Day 2 - Individuals within networks"
 toc: 
 type: docs
 weight: 1
