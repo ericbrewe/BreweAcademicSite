@@ -24,32 +24,9 @@ library(here)
 
 ```
 
-# Why shouldn't I just use Excel?
-
-- R is a programming language
-  - Data live separate from analysis (this is good)
-  - Data are imported, manipulated, represented, but not changed.
-    - This means you can't screw up!
---
-
-.center[Or at least it is hard to screw up
 
 
 
-#`r emo::ji("doubt")`
-]
-
----
-# R is good for... 
-
-- Data cleaning
-- Plotting
-- Summarizing
-- Manipulating data
-- Reproducibility
-- Sharing Code
-
----
 class: center, middle
 
 # Foundations of Network Analysis
