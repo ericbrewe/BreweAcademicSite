@@ -1,6 +1,6 @@
 ---
-title: "PEER_network_school_2023"
-subtitle: Workshop 1
+title: "PEER_network_school_2023_theory_data"
+subtitle: Day 1
 author: 'Eric Brewe <br> Associate Professor of Physics at Drexel University <br>'
 date: "15 June 2023, last update: `r Sys.Date()`"
 output: 
@@ -16,7 +16,7 @@ output:
 options(htmltools.dir.version = FALSE)
 knitr::opts_chunk$set(warning = FALSE, message = FALSE)
 library(tidyverse) # load tidyverse package
-library(emo) # load emoji package
+library(emoji) # load emoji package
 library(igraph)
 library(tidygraph)
 library(ggraph)
@@ -611,7 +611,7 @@ head(EL)
 ```
 
 ```{r GenerateELForReal, echo=FALSE}
-EL = read_csv(here("/static/slides/RForSNA/data", "AnonEL.csv"))
+EL = read_csv(here("/static/slides/PEER_network_school_2023/data", "AnonEL.csv"))
 head(EL)
 ```
 
