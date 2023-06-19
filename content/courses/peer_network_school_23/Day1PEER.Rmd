@@ -24,6 +24,6 @@ library(kableExtra)
 
 The slides for Workshop #1 can be found here:
 ```{r WS1Slides}
-knitr::include_url('https://ericbrewe.com/slides/rforsna/rforsna_ws1.html#1')
+knitr::include_url('https://ericbrewe.com/slides/PEER_network_school_2023/PEER_network_theory.html#1')
 ```
 

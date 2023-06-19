@@ -351,19 +351,14 @@ If you have loaded the package "here" this should just work.  If you have not lo
 
 Again, you will want to include this as a code chunk in your RMD file.  
 
-```{r ReadData, eval=FALSE}
+```{r ReadData}
 #This loads the csv and saves it as a dataframe titled WorkshopData
 
-WorkshopData <- read_csv(here("data", "AnonSurveyData.csv"))
+WorkshopData <- read_csv(here("static/slides/PEER_network_school_2023/data", "AnonSurveyData.csv"))
 
 ```
 
-```{r ReadDataForReal, echo = FALSE}
-#This loads the csv and saves it as a dataframe titled WorkshopData
-
-WorkshopData <- read_csv(here("static/slides/RForSNA/data", "AnonSurveyData.csv"))
-
-```
+`
 
 ---
 # Let's have a look at the data
@@ -605,13 +600,10 @@ So I sent you an edgelist as a csv. Sorry.
 
 
 ### Check out the edgelist
-```{r GenerateEL, eval=FALSE}
-EL = read_csv(here("data", "AnonEL.csv"))
-head(EL)
-```
+
 
 ```{r GenerateELForReal, echo=FALSE}
-EL = read_csv(here("/static/slides/PEER_network_school_2023/data", "AnonEL.csv"))
+EL = read_csv(here("static/slides/PEER_network_school_2023/data", "AnonEL.csv"))
 head(EL)
 ```
 
@@ -757,7 +749,7 @@ summary(gr)
 ### We can add various elements to our plot
 - Color (good for grouping)
 - Shape (good for grouping)
-- Size (good for numeric)
+- Linewidth (good for numeric)
 - Text (good for labels)
 - Layout
 
