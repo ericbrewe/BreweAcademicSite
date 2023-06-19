@@ -19,6 +19,12 @@ library(knitr)
 library(kableExtra)
 ```
 
+The slides for Day #2 can be found here:
+```{r WS1Slides}
+knitr::include_url('https://ericbrewe.com/slides/PEER_network_school_2023/PEER_Individuals_Networks.html#1')
+```
+
+
 
 
 Day #2 is going to build on the results of yesterday, but we are actually going to analyze the network that we built in workshop #1. Also, I expect there will be a good deal more time available for discussion and questions. We will start with the network we made with attributes. We don't need to build the nework from scratch, instead I took the network we had and stored it as a .RDS file. RDS is the native structure for R.
@@ -33,6 +39,9 @@ In workshop #2 we will be looking at centrality metrics and network properties o
     - here
 - Read in an R object. 
 
+
+
+---
 In case you are interested, here are a few resources that I found useful for doing 
 SNA:
 
@@ -69,8 +78,4 @@ SNA:
 - Colorado Index of Complex Networks - Maintained by Aaron Clauset - very high quality datasets
 - Stanford Large Network Datasets - Maintained by Stanford - a list, not necessarily as clean, but a large list
 
-The slides for Workshop #2 can be found here:
-```{r WS1Slides}
-knitr::include_url('https://ericbrewe.com/slides/PEER_network_school_2023/PEER_Individuals_Networks.html#1')
-```
 

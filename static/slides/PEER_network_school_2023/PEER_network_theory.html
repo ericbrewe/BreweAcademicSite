@@ -240,23 +240,23 @@ They have different language, journals, conferences
 
 ```
 ## [[1]]
-## + 4/5 edges from 51e7ceb:
+## + 4/5 edges from ddd0978:
 ## [1] 1--2 1--3 1--4 1--5
 ## 
 ## [[2]]
-## + 1/5 edge from 51e7ceb:
+## + 1/5 edge from ddd0978:
 ## [1] 1--2
 ## 
 ## [[3]]
-## + 1/5 edge from 51e7ceb:
+## + 1/5 edge from ddd0978:
 ## [1] 1--3
 ## 
 ## [[4]]
-## + 2/5 edges from 51e7ceb:
+## + 2/5 edges from ddd0978:
 ## [1] 1--4 4--5
 ## 
 ## [[5]]
-## + 2/5 edges from 51e7ceb:
+## + 2/5 edges from ddd0978:
 ## [1] 1--5 4--5
 ```
 ]
@@ -929,7 +929,7 @@ summary(gr)
 ```
 
 ```
-## IGRAPH cec8824 DN-- 60 101 -- 
+## IGRAPH 0971b7b DN-- 60 101 -- 
 ## + attr: name (v/c), AMPM (v/c), Dessert (v/c), Pages (v/n)
 ```
 ---
@@ -1098,6 +1098,30 @@ ggraph(gr, layout = 'circle') +
 
 ![](PEER_network_theory_files/figure-html/PlotGr6a-1.png)&lt;!-- --&gt;
 
+]
+
+---
+
+# Let's save our data so that we can access it easily
+
+.pull-left[
+### We want to save as an RDS file
+- This way we avoid having to reconstruct our graph
+- We get our nodes, our edges, and our attributes.
+
+You don't actually need to run this (I've already saved the file as an RDS so we can start with that on Day 2!)
+
+
+]
+
+.pull-right[
+
+````
+
+```r
+write_rds(gr, here("data", "WorkshopNetwork.rds"))
+```
+````
 ]
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>

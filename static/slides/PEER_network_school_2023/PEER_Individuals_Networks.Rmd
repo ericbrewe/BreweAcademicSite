@@ -173,7 +173,7 @@ gr %>%
 ]
 
 ---
-# Lets compare centrality plots.
+# Let's compare centrality plots.
 
 ### You might have noticed, the plots change layouts
 

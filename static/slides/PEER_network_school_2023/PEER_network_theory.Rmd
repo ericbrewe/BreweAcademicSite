@@ -897,3 +897,26 @@ ggraph(gr, layout = 'circle') +
 ```
 
 ]
+
+---
+
+# Let's save our data so that we can access it easily
+
+.pull-left[
+### We want to save as an RDS file
+- This way we avoid having to reconstruct our graph
+- We get our nodes, our edges, and our attributes.
+
+You don't actually need to run this (I've already saved the file as an RDS so we can start with that on Day 2!)
+
+
+]
+
+.pull-right[
+
+````
+```{r WriteRDS, eval=FALSE}
+write_rds(gr, here("data", "WorkshopNetwork.rds"))
+```
+````
+]
