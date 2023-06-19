@@ -1,8 +1,8 @@
 ---
-title: "R For SNA"
-subtitle: Workshop 2
-author: 'Eric Brewe <br> Associate Professor of Physics at Drexel University <br>'
-date: "11 August 2020, last update: `r Sys.Date()`"
+title: "PEER Advanced Field School 2023"
+subtitle: Day 2 - Individuals in Networks
+author: 'Eric Brewe <br> Professor of Physics at Drexel University <br>'
+date: "15 June 2023, last update: `r Sys.Date()`"
 output: 
   xaringan::moon_reader:
     css: [default, metropolis, "BreweSlides.css"]

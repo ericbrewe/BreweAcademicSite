@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>PEER_network_school_2023_theory_data</title>
+    <title>PEER Advanced Field School 2023</title>
     <meta charset="utf-8" />
     <meta name="author" content="Eric Brewe   Professor of Physics at Drexel University  " />
     <script src="PEER_network_theory_files/header-attrs/header-attrs.js"></script>
@@ -14,10 +14,10 @@
 class: center, middle, inverse, title-slide
 
 .title[
-# PEER_network_school_2023_theory_data
+# PEER Advanced Field School 2023
 ]
 .subtitle[
-## Day 1
+## Day 1 - Theory, Data, and Plotting
 ]
 .author[
 ### Eric Brewe <br> Professor of Physics at Drexel University <br>
@@ -240,23 +240,23 @@ They have different language, journals, conferences
 
 ```
 ## [[1]]
-## + 4/5 edges from 4a866e6:
+## + 4/5 edges from 51e7ceb:
 ## [1] 1--2 1--3 1--4 1--5
 ## 
 ## [[2]]
-## + 1/5 edge from 4a866e6:
+## + 1/5 edge from 51e7ceb:
 ## [1] 1--2
 ## 
 ## [[3]]
-## + 1/5 edge from 4a866e6:
+## + 1/5 edge from 51e7ceb:
 ## [1] 1--3
 ## 
 ## [[4]]
-## + 2/5 edges from 4a866e6:
+## + 2/5 edges from 51e7ceb:
 ## [1] 1--4 4--5
 ## 
 ## [[5]]
-## + 2/5 edges from 4a866e6:
+## + 2/5 edges from 51e7ceb:
 ## [1] 1--5 4--5
 ```
 ]
@@ -293,6 +293,7 @@ They have different language, journals, conferences
 
 - R is the programming language.
 - RStudio is the Integrated Development Environment (IDE)
+- Posit.cloud is an online version of the IDE
 - Packages: groups of functions that are developed as open source 
 - Base R
     - The group of packages preloaded into R
@@ -304,22 +305,6 @@ They have different language, journals, conferences
 
 .font190[.center[Lets do this!]]
 
-
----
-# Using R and RStudio
-
-.pull-left[
-- Open RStudio (this will automatically open R)
-- Navigate to your folder titled "RForSNA"
-- In RStudio -&gt; File -&gt; New Project
-    - Select "Existing Directory" (Unless you know Git)
-- In RStudio -&gt; File -&gt; New File -&gt; RMarkdown
-- Save this file in the folder titled "RForSNA"
-]
-.pull-right[
-![](img/NewProject.png)
-![](img/NewRMarkdown.png)
-]
 ---
 
 # Lets Take a Tour of RStudio IDE
@@ -367,20 +352,24 @@ Once you have done this, you will want to put include a code chunk with all of y
 ---
 # Let's get data into R. 
 
-I've sent you a csv file that includes the data for workshop 1, I hope you saved this in your folder titled "data". 
+In this workshop, you have the data from the survey to make things as easy as possible. However, this is not typical.  You will have to find ways to get your data into R but that is sort of different depending on where you are running R (posit.cloud or a local machine)
 
 If you have loaded the package "here" this should just work.  If you have not loaded the "here" package you will need to set the working directory. 
 
 Again, you will want to include this as a code chunk in your RMD file.  
 
 
+
+
+
+
+
 ```r
 #This loads the csv and saves it as a dataframe titled WorkshopData
 
-WorkshopData &lt;- read_csv(here("static/slides/PEER_network_school_2023/data", "AnonSurveyData.csv"))
+WorkshopData &lt;- read_csv(here("data", "AnonSurveyData.csv"))
 ```
 
-`
 
 ---
 # Let's have a look at the data
@@ -768,6 +757,11 @@ So I sent you an edgelist as a csv. Sorry.
 ### Check out the edgelist
 
 
+```r
+EL = read_csv(here("data", "AnonEL.csv"))
+head(EL)
+```
+
 
 ```
 ## # A tibble: 6 × 2
@@ -935,7 +929,7 @@ summary(gr)
 ```
 
 ```
-## IGRAPH aa31ee1 DN-- 60 101 -- 
+## IGRAPH cec8824 DN-- 60 101 -- 
 ## + attr: name (v/c), AMPM (v/c), Dessert (v/c), Pages (v/n)
 ```
 ---

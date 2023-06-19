@@ -1,6 +1,6 @@
 ---
-title: "PEER_network_school_2023_theory_data"
-subtitle: Day 1
+title: "PEER Advanced Field School 2023"
+subtitle: Day 1 - Theory, Data, and Plotting
 author: 'Eric Brewe <br> Professor of Physics at Drexel University <br>'
 date: "15 June 2023, last update: `r Sys.Date()`"
 output: 
@@ -273,6 +273,7 @@ B
 
 - R is the programming language.
 - RStudio is the Integrated Development Environment (IDE)
+- Posit.cloud is an online version of the IDE
 - Packages: groups of functions that are developed as open source 
 - Base R
     - The group of packages preloaded into R
@@ -284,22 +285,6 @@ B
 
 .font190[.center[Lets do this!]]
 
-
----
-# Using R and RStudio
-
-.pull-left[
-- Open RStudio (this will automatically open R)
-- Navigate to your folder titled "RForSNA"
-- In RStudio -> File -> New Project
-    - Select "Existing Directory" (Unless you know Git)
-- In RStudio -> File -> New File -> RMarkdown
-- Save this file in the folder titled "RForSNA"
-]
-.pull-right[
-![](img/NewProject.png)
-![](img/NewRMarkdown.png)
-]
 ---
 
 # Lets Take a Tour of RStudio IDE
@@ -345,20 +330,29 @@ Once you have done this, you will want to put include a code chunk with all of y
 ---
 # Let's get data into R. 
 
-I've sent you a csv file that includes the data for workshop 1, I hope you saved this in your folder titled "data". 
+In this workshop, you have the data from the survey to make things as easy as possible. However, this is not typical.  You will have to find ways to get your data into R but that is sort of different depending on where you are running R (posit.cloud or a local machine)
 
 If you have loaded the package "here" this should just work.  If you have not loaded the "here" package you will need to set the working directory. 
 
 Again, you will want to include this as a code chunk in your RMD file.  
 
-```{r ReadData}
+
+
+```{r ReadDataforReal, echo=FALSE}
 #This loads the csv and saves it as a dataframe titled WorkshopData
 
 WorkshopData <- read_csv(here("static/slides/PEER_network_school_2023/data", "AnonSurveyData.csv"))
 
 ```
 
-`
+
+```{r ReadData, eval=FALSE}
+#This loads the csv and saves it as a dataframe titled WorkshopData
+
+WorkshopData <- read_csv(here("data", "AnonSurveyData.csv"))
+
+```
+
 
 ---
 # Let's have a look at the data
@@ -601,6 +595,10 @@ So I sent you an edgelist as a csv. Sorry.
 
 ### Check out the edgelist
 
+```{r GenerateEL, eval=FALSE}
+EL = read_csv(here("data", "AnonEL.csv"))
+head(EL)
+```
 
 ```{r GenerateELForReal, echo=FALSE}
 EL = read_csv(here("static/slides/PEER_network_school_2023/data", "AnonEL.csv"))
