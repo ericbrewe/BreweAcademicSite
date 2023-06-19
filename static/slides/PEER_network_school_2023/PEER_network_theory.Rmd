@@ -1,7 +1,7 @@
 ---
 title: "PEER_network_school_2023_theory_data"
 subtitle: Day 1
-author: 'Eric Brewe <br> Associate Professor of Physics at Drexel University <br>'
+author: 'Eric Brewe <br> Professor of Physics at Drexel University <br>'
 date: "15 June 2023, last update: `r Sys.Date()`"
 output: 
   xaringan::moon_reader:
