@@ -56,7 +56,7 @@ There are lots of things that I hope you would learn: to look at the complexity 
 [Day 3 Slides](<https://ericbrewe.com/slides/rforsna/rforsna_ws3.html#1>)
 
 * Understand different metrics about whole networks
-* Compare networks on the basis of different networks
+* Community Detection
 
 
 **Day Four**
@@ -110,3 +110,28 @@ Leraning R is not easy, as I have learned things, I have tried to maintain a lis
 5. [Happy Git With R](<https://happygitwithr.com/>) Eventually you'll need to use Git, and this is essential reading for making that transition.
 6. [RMarkdown](<https://bookdown.org/yihui/rmarkdown/software-info.html>) Markdown allows you to use reproducible code and integrate R into reporting and writing. This is how I do all my work. 
 7. [DataCarpentry](<https://datacarpentry.org/>) runs workshops about data analysis and often are oriented to different research specialties. 
+
+
+
+
+
+
+# Societies, Journals, and Meetings
+
+## Professional Societies
+- International Network of Social Network Analysis - Much more from the Social Network, social science side
+- Network Science Society - The professional society that hosts NetSci - a premier network analysis conference, much more from the graph/theoretic world
+
+## Journals
+- Network Science - Cambridge Press Journal focused on Network Science - much more graph theoretic
+- Connections - The journal of INSNA - much more focused on social network analysis & applications. 
+- Social Networks - An Elsevier Journal focused on SNA - much more statistical
+
+## Meetings
+- Sunbelt - Conference of INSNA
+- NetSci - Conference of Network Science Society
+- CompleNet - International Conference on Complex Networks
+
+# Datasets
+- Colorado Index of Complex Networks - Maintained by Aaron Clauset - very high quality datasets
+- Stanford Large Network Datasets - Maintained by Stanford - a list, not necessarily as clean, but a large list

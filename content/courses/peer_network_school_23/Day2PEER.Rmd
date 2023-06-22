@@ -19,15 +19,18 @@ library(knitr)
 library(kableExtra)
 ```
 
+
+
+
+
+Day #2 is going to build on the results of yesterday, but we are actually going to analyze the network that we built in workshop #1. Also, I expect there will be a good deal more time available for discussion and questions. 
+
 The slides for Day #2 can be found here:
-```{r WS1Slides}
+```{r Day2Slides}
 knitr::include_url('https://ericbrewe.com/slides/PEER_network_school_2023/PEER_Individuals_Networks.html#1')
 ```
 
-
-
-
-Day #2 is going to build on the results of yesterday, but we are actually going to analyze the network that we built in workshop #1. Also, I expect there will be a good deal more time available for discussion and questions. We will start with the network we made with attributes. We don't need to build the nework from scratch, instead I took the network we had and stored it as a .RDS file. RDS is the native structure for R.
+We will start with the network we made with attributes. We don't need to build the nework from scratch, instead I took the network we had and stored it as a .RDS file. RDS is the native structure for R.
 
 In workshop #2 we will be looking at centrality metrics and network properties of individual nodes. For workshop #2 to work out ok, here are the things you will need to be able to do, which we covered in workshop #1.
 
@@ -42,40 +45,14 @@ In workshop #2 we will be looking at centrality metrics and network properties o
 
 
 ---
-In case you are interested, here are a few resources that I found useful for doing 
-SNA:
-
-# Reading (just some starting points)
-
-- John Scott, and Peter J. Carrington, The SAGE Handbook of Social Network Analysis, 2014.
-- Christina Prell, Social Network Analysis: History, Theory and Methodology, SAGE, 2011.
-- Peter J. Carrington, John Scott, and Stanley Wasserman, Models and Methods in Social Network Analysis, Cambridge University Press, 2005.
-- Stanley Wasserman and Katherine Faust, Social Network Analysis: Methods and Applications, Cambridge University Press, 1994.
-- Mark E.J. Newman, Networks: An Introduction, Oxford University Press, 2010.
-- Albert-Lazlo Barabasi, Network Science, freely available through Creative Commons license. http://barabasi.com/networksciencebook/
-- Daniel Z. Grunspan, Benjamin L. Wiggins, and Steven M. Goodreau. (2014). ”Understanding classrooms through social network analysis: A primer for social network analysis in education research” CBE-Life Science Education 13(2) p. 167-178.http://www.lifescied.org/content/13/2/167.
-- Katherine Ognyanova, (2015) ”Network Visualization with R”,  http://www.kateto.net/wordpress/wp-content/uploads/2015/06/Polnet%202015%20Network%20Viz%20Tutorial%20-%20Ognyanova.pdf
-- Eric Brewe (2018) "The Roles of Engagement: Network Analysis in Physics Education Research" Getting Started in Physics Education Research https://www.compadre.org/Repository/document/ServeFile.cfm?ID=14725&DocID=4886
+Here are some readings on centrality as a set of connected metrics.
 
 
-# Societies, Journals, and Meetings
-
-## Professional Societies
-- International Network of Social Network Analysis - Much more from the Social Network, social science side
-- Network Science Society - The professional society that hosts NetSci - a premier network analysis conference, much more from the graph/theoretic world
-
-## Journals
-- Network Science - Cambridge Press Journal focused on Network Science - much more graph theoretic
-- Connections - The journal of INSNA - much more focused on social network analysis & applications. 
-- Social Networks - An Elsevier Journal focused on SNA - much more statistical
-
-## Meetings
-- Sunbelt - Conference of INSNA
-- NetSci - Conference of Network Science Society
-- CompleNet - International Conference on Complex Networks
-
-# Datasets
-- Colorado Index of Complex Networks - Maintained by Aaron Clauset - very high quality datasets
-- Stanford Large Network Datasets - Maintained by Stanford - a list, not necessarily as clean, but a large list
+**Centrality metrics**
+    - Borgatti, S. P. (2005). Centrality and network flow. Social networks, 27(1), 55-71. https://www.sciencedirect.com/science/article/abs/pii/S0378873304000693
+    - Koschützki, D., Lehmann, K. A., Tenfelde-Podehl, D., & Zlotowski, O. (2005). Advanced centrality concepts. In Network analysis (pp. 83-111). Springer, Berlin, Heidelberg. https://link.springer.com/chapter/10.1007/978-3-540-31955-9_5
+    
+This one sort of spans centrality and missing data:
+- Borgatti, S. P., Carley, K. M., & Krackhardt, D. (2006). On the robustness of centrality measures under conditions of imperfect data. Social networks, 28(2), 124-136. https://www.sciencedirect.com/science/article/abs/pii/S0378873305000353
 
 
