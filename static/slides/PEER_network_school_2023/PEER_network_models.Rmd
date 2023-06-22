@@ -1,8 +1,8 @@
 ---
-title: "R For SNA"
-subtitle: Workshop 3
-author: 'Eric Brewe <br> Associate Professor of Physics at Drexel University <br>'
-date: "18 August 2020, last update: `r Sys.Date()`"
+title: "PEER Advanced Field School 2023"
+subtitle: Day 4 - Network Models
+author: 'Eric Brewe <br> Professor of Physics at Drexel University <br>'
+date: "15 June 2023, last update: `r Sys.Date()`"
 output: 
   xaringan::moon_reader:
     css: [default, metropolis, "BreweSlides.css"]
@@ -16,7 +16,7 @@ output:
 options(htmltools.dir.version = FALSE)
 knitr::opts_chunk$set(warning = FALSE, message = FALSE)
 library(tidyverse) # load tidyverse package
-library(emo) # load emoji package
+library(emoji) # load emoji package
 library(igraph)
 library(tidygraph)
 library(ggraph)
@@ -29,13 +29,7 @@ library(boot)
 
 ### Our project is about building and analyzing the Workshop network
 
-So we will **not** need a new project folder, we will continue to use RForSNA, which you should have set up in WS1. 
-
-This time we will add a new .Rmd file, give it a title like "network_properties.Rmd"
-
-So navigate to your RForSNA file and create a new .Rmd file. 
-
-Then, add a code chunk to load the libraries necessary and run this chunk.
+We will continue to use the WorkshopNetwork.rds data file.
 
 ```{r LoadPackages, eval=FALSE}
 library(tidyverse) #tools for cleaning data 
@@ -49,14 +43,6 @@ library(boot)  #to do resampling
 
 ---
 # Let's load our data 
-
-This workshop assumes you did the work from week 1 and you know how to install libraries, read csv files into data, and to manipulate data in R. 
-
-The benefit of having done the work previously is that we don't have to re-do it (unless we want to change something)
-
-So I took the network at the end of workshop #1 and saved it as a .rds file. I could have saved it as a pair of csv files and rebuilt the network, but if I save as rds it will be ready to go!
-
-To load an rds file the syntax is a little different:
 
 ```{r LoadNetwork, eval=FALSE}
 
@@ -73,7 +59,7 @@ gr <- readRDS(here("static/slides/RForSNA/data", "WorkshopNetwork.rds"))
 ---
 # Let's plot it quickly
 
-While we are at it we might as well set a layout.
+And get some important features of the graph. 
 
 .pull-left[
 ## Whare are distinctive features of the network?
@@ -103,108 +89,18 @@ ggraph(GrLayout) +
   theme(legend.position="bottom")
 ```
 ]
----
-# Let's explore whole network metrics
 
-**These are fairly easy to calculate**
-- Density: Proportion of possible connections that exist
-- Diameter: Longest Shortest Path across network
-- Reciprocity: Extent to which each directed edge is a two way edge
-- Transitivity: Extent to which three connected nodes form triangles
-- Average Path Length: Average shortest distance between every pair of nodes
-
-**These require a bit more work**
-- Giant: Number of nodes connected to largest component
-- Homophily: Extent to which nodes with similar attribute are connected
-- Average degree: This is pretty descriptive. 
-
-
-This is a list of many common graph metrics used in tidygraph
-https://rdrr.io/cran/tidygraph/man/graph_measures.html
-
----
-# Lets calculate a couple of these...
-
-### For many of these it is a very simple one line command.
-Here is density
-```{r CalcDensity}
-
-edge_density(gr)
-
-```
-
-Here is diameter, note that with tidygraph you have to use the with_graph() function, and specify the graph and function graph_diameter()
-```{r CalcDiameter}
-
-with_graph(gr, graph_diameter())
-
-```
-
---
-.center.font200[So?]
-
-
----
-# Let's calculate a couple of others
-
-###  It is your turn, choose one of the ones that are easy to calculate and make the calculation. 
-
---
 ```{r}
-
-with_graph(gr, graph_reciprocity()) #Reciprocity
-transitivity(gr) #Transitivity
-with_graph(gr, graph_mean_dist()) #Average Distance
-
+gr
 ```
+Note, there are 60 nodes and 101 edges
+
 
 ---
-# Let's create a function
 
-### Creating a function accomplishes two things:
-1. We can calculate some of the harder to calcluate metrics
-2. We do not have to re-do each time we want to analyze a new network.
-
-```{r GrMetricFunction}
-GrFunction <- function(gr){
-  Giant = max(clusters(gr)$csize)
-  AMPMHomophily = with_graph(gr, graph_assortativity(AMPM))
-  DessertHomophily = with_graph(gr, graph_assortativity(Dessert))
-  AveDeg = gr %>%
-    activate(nodes) %>%
-    mutate(Deg = centrality_degree( mode = 'total') ) %>%
-    select(Deg) %>%
-    as_tibble() %>%
-    summarise(AveDeg = mean(Deg))
-  df = tibble(Giant, AMPMHomophily, DessertHomophily, AveDeg )
-  return(df)
-}
-
-```
+.center.font200[Orient]
 
 ---
-# Let's run this function
-
-```{r RunGrFunction}
-
-GrFunction(gr)
-```
-
-### What do these numbers mean?
---
-
-*Giant* = 30, there are 30 people connected in the largest component. 
-
-*AMPM Homophily*, Since this is negative, there is a propensity for people to associate with others, (e.g., A morning person is more likely connected to a night owl)
-
-*Dessert Homophily*, this is pretty close to zero, so there doesn't seem to be an association.
-
-*AveDeg*, the average person has 3.37 incoming or outgoing edges
-
---
-
-### Is this unique?
-
 ---
 # Let's decide if our network is unique
 
@@ -240,80 +136,123 @@ GrFunction(gr)
 ]
 
 ---
-# Let's try a graph-theoretic model
-
-### We'll generate a Erdos-Renyi model and compare our graph characteristics
-
-First, we need to tell the simulation how many nodes and edges to include.
-
-```{r GenerateERGraphChar}
-N_Nodes = with_graph(gr, graph_order())
-N_Edges = with_graph(gr, graph_size())
-```
---
-
-### Now we can actually generate the graph
-```{r GenerateERGr}
-
-set.seed(522)
-ER_gr <- play_erdos_renyi(n = N_Nodes, m = N_Edges)
-
-```
-
----
-# Let's check out our ER Graph
+# Let's compare two networks
 
 .pull-left[
-```{r plotER, eval=FALSE}
 
-ER_gr %>%
-  ggraph(layout = "kk") + 
+```{r plotGr}
+GrLayout <- create_layout(gr,
+                          layout = "kk")
+
+ggraph(GrLayout) +
   geom_edge_link() +
   geom_node_point() +
   theme(legend.position="bottom")
 ```
 
+
 ]
 
 .pull-right[
-```{r plotERT, echo=FALSE}
 
-ER_gr %>%
-  ggraph(layout = "kk") + 
+```{r GetERGraph}
+
+er_gr <- play_erdos_renyi(n = 60, m = 101, loops = FALSE)
+
+GrLayoutER <- create_layout(er_gr,
+                          layout = "kk")
+
+ggraph(GrLayoutER) +
   geom_edge_link() +
-  geom_node_point() 
+  geom_node_point() +
+  theme(legend.position="bottom")
 
 ```
+
+
 ]
+
+
 
 ---
-# Let's put them side by side
+# Let's talk about how you might compare
 
-.pull-left[
-```{r plotWSNet}
-ggraph(GrLayout) +
-  geom_edge_link() +
-  geom_node_point() 
-```
 
-]
-.pull-right[
-```{r plotERT2}
+### What are some ways you can think of to compare these two graphs?
 
-ER_gr %>%
-  ggraph(layout = "kk") + 
-  geom_edge_link() +
-  geom_node_point() 
+
+---
+# Let's compare based on metrics
+
+Why don't we try density
+```{r CalcDensity}
+
+edge_density(gr)
+edge_density(er_gr)
 
 ```
-]
+
+Well that isn't any fun!
+
+---
+# Let's compare based on metrics
+
+Here is diameter, note that with tidygraph you have to use the with_graph() function, and specify the graph and function graph_diameter()
+```{r CalcDiameter}
+
+with_graph(gr, graph_diameter())
+
+with_graph(er_gr, graph_diameter())
+```
+
+Ok, so the numbers are different...does that mean the graphs are different?
+
+---
+# Let's try this 1000 times
+
+
+```{r SampleDiamter}
+#Start by setting up a vector to hold our results.
+diameter_results <- c()
+
+for(i in 1:1000) {
+  tmp <- play_erdos_renyi(n=60, m = 101)
+  diameter_results[i] = with_graph(tmp, graph_diameter())
+}
+
+#Convert to dataframe
+diameter_results_df <- tibble(diam = diameter_results)
+
+#and plot our results
+ggplot(diameter_results_df, aes(diam)) +
+  geom_bar() +
+  geom_vline(xintercept = with_graph(gr, graph_diameter()),
+             color = 'red',
+             size = 2)
+
+```
+
+
+---
+# Let's get a confidcence interval
+
+### If we want to estimate the confidence with which we think our measured network is different on any metrics, we can look for the percentiles.
+
+Let's see if the measured diameter falls within the 95% of the simulated network....
+
+```{r Quantile}
+
+quantile(diameter_results_df$diam, probs = c(0.025, 0.975))
+```
+
+Since the measured diameter of 6 is outside of this range, we can say that the measured network is not a random network!
 
 ---
 # Let's assign attributes
 
 ### In order to compare homophily, we need our ER_gr to have the same attributes.
 
-I emailed you all an additional file that has a random graph with attributes (because it was a pain to add those in.) So now, we need to add these in...
+There is a file that has a random graph with the attributes assigned to it.
 
 
 ```{r GetWSNetAMPM, eval=FALSE}
@@ -325,114 +264,22 @@ ER_gr_attr <- readRDS(here("data", "RandomGraph.rds"))
 
 ```{r GetWSNetAMPM_Real, echo=FALSE}
 
-ER_gr_attr <- readRDS(here("static/slides/RForSNA/data", "RandomGraph.rds")) 
+ER_gr_attr <- readRDS(here("static/slides/PEER_network_school_2023/data", "RandomGraph.rds")) 
 
 ER_gr_attr 
 
 ```
 
 
-
-
----
-# Let's use our function to compare
-
-
-### Measured network
-```{r MeasuredNet}
-
-GrFunction(gr)
-```
+### Now you get to try!
+- Choose a network simulator (think about why you chose it)
+- Decide on a metric (better yet - create a function to look at many at once).
+- Simulate networks
+-- Measure chosen metrics
+-- Store
 
 
 
-### Random network
-```{r ERNet}
-
-GrFunction(ER_gr_attr) 
-```
-
----
-# Let's now do this 100 times!
-
-In order to do this, lets reduce the number of graph metrics we want to calculate.
-
-```{r SmallerFunction}
-SmGrFunction <- function(gr){
-  Giant = max(clusters(gr)$csize)
-  Recip  = with_graph(gr, graph_reciprocity())
-  Trans = transitivity(gr) 
-  Dist = with_graph(gr, graph_mean_dist()) 
-  Dia = with_graph(gr, graph_diameter())
-  df = tibble(Giant, Recip, Trans, Dist, Dia )
-  return(df)
-}
-```
-
-
-```{r ReplicateERGraphs}
-
-for (i in 1:100)
-  {
-  test_gr = play_erdos_renyi(n = N_Nodes, m = N_Edges)
-  if(i==1) 
-    {df <- SmGrFunction(test_gr)} else
-    {df <- bind_rows(df, SmGrFunction(test_gr))}
-  }
-```
-
----
-# Let's explore our simulated networks
-
-```{r ExploreDf}
-head(df)
-```
----
-# Let's get a summary
-And lets average these out.
-
-```{r SummarizeDf}
-
-df %>%
-  summarise(across(everything(), mean)) 
-```
-
-And standard deviations.
-
-```{r SummarizeDf2}
-
-df %>%
-  summarise(across(everything(), sd))
-```
-
----
-# Let's compare with measured
-
-```{r SummarizeDf3}
-
-df %>%
-  summarise(across(everything(), mean)) 
-```
-
-```{r MeasuredDf}
-
-SmGrFunction(gr)
-
-```
-
----
-# Let's get a confidcence interval
-
-### If we want to estimate the confidence with which we think our measured network is different on one of these metrics, we can look for the percentiles.
-
-Let's see if the measured average distance falls within the 95% of the simulated network....
-
-```{r Quantile}
-
-quantile(df$Dist, probs = c(0.025, 0.975))
-```
-
-Since the measured average distance is outside of this range, we can say that the measured network is not a random network!
 
 ---
 # Let's summarize
@@ -478,12 +325,9 @@ We did it!
 # Let's be thankful
 
 .font200.center[
-Thanks to Dali Ma
-
-
-Thanks to SSRC
+Thanks to PEER
 
 Thanks to all of you
 
-`r emo::ji("clap")`
+`r emoji("clap")`
 ]
