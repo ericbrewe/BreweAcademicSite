@@ -101,7 +101,6 @@ Note, there are 60 nodes and 101 edges
 .center.font200[Orient]
 
 ---
----
 # Let's decide if our network is unique
 
 ### What is the big problem with the network that we have collected?
@@ -140,7 +139,7 @@ Note, there are 60 nodes and 101 edges
 
 .pull-left[
 
-```{r plotGr}
+```{r plotGr2}
 GrLayout <- create_layout(gr,
                           layout = "kk")
 
@@ -241,11 +240,24 @@ ggplot(diameter_results_df, aes(diam)) +
 Let's see if the measured diameter falls within the 95% of the simulated network....
 
 ```{r Quantile}
+mean(diameter_results_df$diam)
+
+sd(diameter_results_df$diam)
 
 quantile(diameter_results_df$diam, probs = c(0.025, 0.975))
 ```
 
-Since the measured diameter of 6 is outside of this range, we can say that the measured network is not a random network!
+Since the measured diameter of 6 is outside of this range, we can say pretty confidently that the measured network is not a random network!
+---
+# Let's summarize
+
+.font160[
+1. We measured one network
+2. To compare we generated a network (in this case it was random)
+3. We replicated 1000 times
+4. We checked whether metrics from the measured network falls within some confidence range.
+5. We can say the measured network is different than random. 
+]
 
 ---
 # Let's assign attributes
@@ -276,21 +288,12 @@ ER_gr_attr
 - Decide on a metric (better yet - create a function to look at many at once).
 - Simulate networks
 -- Measure chosen metrics
--- Store
+-- Store metrics in data frame
 
 
 
 
----
-# Let's summarize
 
-.font160[
-1. We measured one network
-2. To compare we generated a random network
-3. We replicated 100 times
-4. We checked whether metrics from the measured network falls within some confidence range.
-5. We can say the measured network is different than random. 
-]
 
 ---
 # Let's reflect
@@ -316,9 +319,8 @@ We did it!
 
 .font150[
 
-1. We didn't do community detection
-2. We didn't really touch Base R
-3. We didn't deal with ERGMs.
+1. We didn't really touch Base R
+2. We didn't deal with ERGMs.
 ]
 
 ---

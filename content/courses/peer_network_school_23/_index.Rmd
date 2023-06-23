@@ -15,7 +15,7 @@ weight: 1
 
 Welcome to this PEER Advanced Network School. First, thanks to Scott Franklin, Ellie Sayre, Mary Bridget Kustusch and the PEER team for supporting this field school!
 
-## The Plan
+### The Plan
 The main idea is to have some time learning about different aspects of Social Network Analysis, and to actually focus on doing the analyses. We will spend the mornings working on learning aspects of SNA, and then the afternoons will be working time, where we actually try to carry out some of the types of analyses on your own data. 
 
 |Topics| Date|
@@ -34,7 +34,7 @@ There are lots of things that I hope you would learn: to look at the complexity 
 
 
 
-[Day 1 Slides](<https://ericbrewe.com/slides/rforsna/rforsna_ws1.html#1>)
+[Day 1 Slides](<https://ericbrewe.com/slides/PEER_network_school_2023/PEER_network_theory.html#1>)
 
 * Import Data into R
 * Clean data and prepare data for SNA
@@ -44,7 +44,7 @@ There are lots of things that I hope you would learn: to look at the complexity 
 **Day Two**
 
 
-[Day 2 Slides](<https://ericbrewe.com/slides/rforsna/rforsna_ws2.html#1>)
+[Day 2 Slides](<https://ericbrewe.com/slides/PEER_network_school_2023/PEER_Individuals_Networks.html#1>)
 
 * Understand different centrality metrics 
 * Plotting networks and incorporating centrality
@@ -53,7 +53,7 @@ There are lots of things that I hope you would learn: to look at the complexity 
 **Day Three**
 
 
-[Day 3 Slides](<https://ericbrewe.com/slides/rforsna/rforsna_ws3.html#1>)
+[Day 3 Slides](<https://ericbrewe.com/slides/PEER_network_school_2023/PEER_whole_networks.html#1>)
 
 * Understand different metrics about whole networks
 * Community Detection
@@ -62,18 +62,18 @@ There are lots of things that I hope you would learn: to look at the complexity 
 **Day Four**
 
 
-[Day 4 Slides](<https://ericbrewe.com/slides/rforsna/rforsna_ws3.html#1>)
+[Day 4 Slides](<https://ericbrewe.com/slides/PEER_network_school_2023/PEER_network_models.html#1>)
 
 * Understand the framework for comparing networks
 * Test hypotheses in a network framework
 
 ### What is beyond the scope?
-While I would love to say you'd be able to master R in the short span of 1 week, you will not. I've spent a decade learning it and am proficient, but am constantly learning. 
+While I would love to say you'd be able to master doing network analysis in R in the short span of 1 week, you will not. I've spent a decade learning it and am proficient, but am constantly learning. 
 
 Similarly, R is a tool. You are the expert in your research, R can help *you* to uncover elements of your data. I don't know how to analyze your data - learning R will empower you to analyze your data. 
 
 
-## Why R?
+### Why R?
 I began learning R because I wanted to have something that worked across different platforms. But then I realized that the Open Source movement was something that was particularly interesting to me.  But those aren't the reason. I have come to see R as crucial for reproducibility. If I write a set of code to analyze a dataset, I can re-run this code, and get the same results. I can share the code with my publications, so someone else can check my work. This is critical to doing science. R allows me to do this in a way that Excel doesn't. 
 
 Certainly other languages (Python, Julia, etc...) will also allow for this, but why I have stuck with R is that there is a rich community that are supportive of learning and growing. 
@@ -87,8 +87,8 @@ Open source things tend to be a bit tribal - within R one debate is Base R vs. T
 - Support - There are loads of books and websites that are published open-source, and so you can typically find the help you need. 
 
 
-## Resources
-Leraning R is not easy, as I have learned things, I have tried to maintain a list of the different resources that I have drawn on. 
+### Resources for Learning R
+Learning R is not easy, as I have learned things, I have tried to maintain a list of the different resources that I have drawn on. 
 
 **The Basics**
 
@@ -110,9 +110,10 @@ Leraning R is not easy, as I have learned things, I have tried to maintain a lis
 5. [Happy Git With R](<https://happygitwithr.com/>) Eventually you'll need to use Git, and this is essential reading for making that transition.
 6. [RMarkdown](<https://bookdown.org/yihui/rmarkdown/software-info.html>) Markdown allows you to use reproducible code and integrate R into reporting and writing. This is how I do all my work. 
 7. [DataCarpentry](<https://datacarpentry.org/>) runs workshops about data analysis and often are oriented to different research specialties. 
+8. [The Effect](<https://theeffectbook.net/>) A really great book that approaches data analysis from a causal inference perspective with code in R and other languages.
 
 
-
+### Resources for Learning SNA
 
 
 
