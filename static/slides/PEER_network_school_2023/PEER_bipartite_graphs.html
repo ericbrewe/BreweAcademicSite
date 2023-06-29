@@ -23,7 +23,7 @@ class: center, middle, inverse, title-slide
 ### Eric Brewe <br> Professor of Physics at Drexel University <br>
 ]
 .date[
-### 15 June 2023, last update: 2023-06-28
+### 15 June 2023, last update: 2023-06-29
 ]
 
 ---
@@ -89,6 +89,58 @@ b_gr &lt;- bipartite_df %&gt;%
   as_tbl_graph()
 ```
 
+
+---
+
+# Let's treat this as a network
+
+There are plenty of things you *can* do with a bipartite network, but mostly *I* focus on the projections.
+
+
+```r
+b_gr %&gt;%
+  bipartite_projection() -&gt; b_gr
+```
+
+Notice that there are two projections, one which is a person-person projection with 60 nodes, one that is a network of Garbage Plate eaters with 2 nodes. 
+
+---
+# Let's look at the person-person network
+
+First, the person-person network 
+
+
+```r
+p_gr &lt;- b_gr$proj1
+
+p_gr %&gt;% 
+  ggraph(.) +
+  geom_edge_link(alpha = .25, aes(width = weight)) +
+  geom_node_point() +
+  theme(legend.position="bottom")
+```
+
+![](PEER_bipartite_graphs_files/figure-html/person_network-1.png)&lt;!-- --&gt;
+
+Ugh...way too dense!  We need to do some sort of data reduction.  That is a different class. But...
+
+---
+
+# Let's do some data reduction
+One common way is to identify the backbone of the network (again, there a bunch of ways to do this, so let's choose an easy one. )
+
+
+```r
+p_gr %&gt;% 
+  ggraph(., layout = 'backbone') +
+  geom_edge_link(alpha = .25, aes(width = weight)) +
+  geom_node_point() +
+  theme(legend.position="bottom")
+```
+
+![](PEER_bipartite_graphs_files/figure-html/reduced_person_network-1.png)&lt;!-- --&gt;
+
+...and it doesn't look different (likely because as Rebeckah pointed out is because this is based on a random variable)
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

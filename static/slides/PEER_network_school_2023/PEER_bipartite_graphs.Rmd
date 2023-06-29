@@ -92,6 +92,7 @@ There are plenty of things you *can* do with a bipartite network, but mostly *I*
 
 ```{r ProjectBipartite}
 
+
 b_gr %>%
   bipartite_projection() -> b_gr
 
