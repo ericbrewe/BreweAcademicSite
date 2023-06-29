@@ -1,0 +1,134 @@
+---
+title: "PEER Advanced Field School 2023"
+subtitle: Bipartite Networks
+author: 'Eric Brewe <br> Professor of Physics at Drexel University <br>'
+date: "15 June 2023, last update: `r Sys.Date()`"
+output: 
+  xaringan::moon_reader:
+    css: [default, metropolis, "BreweSlides.css"]
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(warning = FALSE, message = FALSE)
+library(tidyverse) # load tidyverse package
+library(emoji) # load emoji package
+library(igraph)
+library(tidygraph)
+library(ggraph)
+library(here)
+
+```
+
+# Let's check out bipartite networks 
+
+I took the network file we have been working on and did two things. 1. I exported it as a tibble, and 2. I added a new variable Ate_Garbage_Plate, and saved it as a csv file in the data folder. This is because we have to rebuild this as a bipartite graph.
+
+---
+# Let's load this new csv
+
+````
+```{r LoadNetwork, eval=FALSE}
+
+bipartite_df <- read_csv(here("data", "bipartite_df.csv"))
+
+```
+````
+
+
+```{r LoadNetworkForReal, echo=FALSE}
+
+bipartite_df <- read_csv(here("static/slides/PEER_network_school_2023/data", "bipartite_df.csv"))
+
+```
+
+---
+# Let's take a look at this
+
+Bipartite Networks are sometimes known as affiliation networks.
+
+In this example we might imagine that people who eat garbage plate (a Rochester classic), like to eat garbage plate together?
+
+````
+```{r InspectBipartite, eval = F}
+
+glimpse(bipartite_df)
+
+```
+````
+
+
+```{r InspectBipartiteR, echo = F}
+glimpse(bipartite_df)
+```
+
+---
+
+#Let's make this a network
+
+
+
+```{r BipartiteGR}
+
+b_gr <- bipartite_df %>% 
+  select(name, Ate_Garbage_Plate) %>%
+  as.matrix(.) %>%
+  graph.incidence(.) %>%
+  as_tbl_graph()
+
+
+```
+
+
+---
+
+# Let's treat this as a network
+
+There are plenty of things you *can* do with a bipartite network, but mostly *I* focus on the projections.
+
+```{r ProjectBipartite}
+
+b_gr %>%
+  bipartite_projection() -> b_gr
+
+
+```
+
+Notice that there are two projections, one which is a person-person projection with 60 nodes, one that is a network of Garbage Plate eaters with 2 nodes. 
+
+---
+# Let's look at the person-person network
+
+First, the person-person network 
+
+```{r person_network}
+
+p_gr <- b_gr$proj1
+
+p_gr %>% 
+  ggraph(.) +
+  geom_edge_link(alpha = .25, aes(width = weight)) +
+  geom_node_point() +
+  theme(legend.position="bottom")
+```
+
+Ugh...way too dense!  We need to do some sort of data reduction.  That is a different class. But...
+
+---
+
+# Let's do some data reduction
+One common way is to identify the backbone of the network (again, there a bunch of ways to do this, so let's choose an easy one. )
+
+```{r reduced_person_network}
+
+p_gr %>% 
+  ggraph(., layout = 'backbone') +
+  geom_edge_link(alpha = .25, aes(width = weight)) +
+  geom_node_point() +
+  theme(legend.position="bottom")
+```
+
