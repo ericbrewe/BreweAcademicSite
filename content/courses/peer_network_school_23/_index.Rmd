@@ -129,6 +129,7 @@ Learning R is not easy, as I have learned things, I have tried to maintain a lis
 - [tidygraph](<https://tidygraph.data-imaginist.com/index.html>) enough said
 - [ggraph](<https://ggraph.data-imaginist.com/>) enough said
 - [mr.stochastics](<https://www.mr.schochastics.net/>) Excellent explainers on visualization, and tutorials on doing SNA.
+- [statnet](<https://statnet.org/>) Statnet is a big and important group that are developing tools (including ERGMs) for analysis of social networks from a statistical framework.
 
 # Societies, Journals, and Meetings
 
