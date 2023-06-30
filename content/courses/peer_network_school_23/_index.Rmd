@@ -130,6 +130,7 @@ Learning R is not easy, as I have learned things, I have tried to maintain a lis
 - [ggraph](<https://ggraph.data-imaginist.com/>) enough said
 - [mr.stochastics](<https://www.mr.schochastics.net/>) Excellent explainers on visualization, and tutorials on doing SNA.
 - [statnet](<https://statnet.org/>) Statnet is a big and important group that are developing tools (including ERGMs) for analysis of social networks from a statistical framework.
+- [netUtils](<https://cran.r-project.org/web/packages/netUtils/index.html>) This is a sort of junk drawer of network functions that aren't in other places...if you can't find something that is implemented elsewhere, check here before you go trying to code it up yourself.
 
 # Societies, Journals, and Meetings
 
