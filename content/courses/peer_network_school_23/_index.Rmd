@@ -119,36 +119,36 @@ Learning R is not easy, as I have learned things, I have tried to maintain a lis
 
 ### Resources for Learning SNA
 
-# Books 
+**Books** 
 - [Wasserman and Faust](<https://www.cambridge.org/core/books/social-network-analysis/90030086891EB3491D096034684EFFB8>) The seminal text on social networks from the sociological camp. No help with R, but includes so much that it is an essential reference.
 - [Newman](<https://academic.oup.com/book/27884>) Don't know if I would call it *the* seminal text on networks from the graph-theoretic camp. No help with R. If you want to have access to the mathematical underpinnigs, this one has it (probably).
 - [Barabasi](<http://networksciencebook.com/>) A newer text, it is available to read online, with some animations, cool visuals, etc. Focus on python I think.
 - [Sage Handbook](<https://uk.sagepub.com/en-gb/eur/the-sage-handbook-of-social-network-analysis/book232753>). A comprehensive guide to doing SNA - has chapters on IRB, network generators, analytic approaches and more. Plus if you want to read about the two camps from a sociologist's perspective, chapter four is not particularly kind to physicists. 
 
-# Websites that are useful
+**Websites that are useful**
 - [tidygraph](<https://tidygraph.data-imaginist.com/index.html>) enough said
 - [ggraph](<https://ggraph.data-imaginist.com/>) enough said
 - [mr.stochastics](<https://www.mr.schochastics.net/>) Excellent explainers on visualization, and tutorials on doing SNA.
 - [statnet](<https://statnet.org/>) Statnet is a big and important group that are developing tools (including ERGMs) for analysis of social networks from a statistical framework.
 - [netUtils](<https://cran.r-project.org/web/packages/netUtils/index.html>) This is a sort of junk drawer of network functions that aren't in other places...if you can't find something that is implemented elsewhere, check here before you go trying to code it up yourself.
 
-# Societies, Journals, and Meetings
+## Societies, Journals, and Meetings
 
-## Professional Societies
+**Professional Societies**
 - [International Network of Social Network Analysis](<https://www.insna.org/>) - Much more from the Social Network, social science side
 - [Network Science Society](<https://netscisociety.net/home>) - The professional society that hosts NetSci - a premier network analysis conference, much more from the graph/theoretic world
 
-## Journals
+**Journals**
 - [Network Science](<https://www.cambridge.org/core/journals/network-science>) - Cambridge Press Journal focused on Network Science - much more graph theoretic
 - [Connections](<https://www.insna.org/connections>) - The journal of INSNA - much more focused on social network analysis & applications. 
 - [Social Networks](<https://www.sciencedirect.com/journal/social-networks>) - An Elsevier Journal focused on SNA - much more statistical
 
-## Meetings
+**Meetings**
 - [Sunbelt](<https://www.insna.org/events/sunbelt-2023>) - Conference of INSNA
 - [NetSci](<https://netsci2023.wixsite.com/netsci2023>) - Conference of Network Science Society
 - [CompleNet](<https://complenet.weebly.com/>) - International Conference on Complex Networks
 
-# Datasets
+**Datasets**
 - [Colorado Index of Complex Networks](<https://icon.colorado.edu/#!/>) - Maintained by Aaron Clauset - very high quality datasets
 - [Stanford Large Network Datasets](<https://snap.stanford.edu/data/>) - Maintained by Stanford - a list, not necessarily as clean, but a large list
 
