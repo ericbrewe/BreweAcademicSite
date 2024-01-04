@@ -91,11 +91,11 @@ Learning R is not easy, as I have learned things, I have tried to maintain a lis
 5. [Happy Git With R](<https://happygitwithr.com/>) Eventually you'll need to use Git, and this is essential reading for making that transition.
 6. [RMarkdown](<https://bookdown.org/yihui/rmarkdown/software-info.html>) Markdown allows you to use reproducible code and integrate R into reporting and writing. This is how I do all my work. 
 7. [DataCarpentry](<https://datacarpentry.org/>) runs workshops about data analysis and often are oriented to different research specialties. 
+  a. [Social Science](<https://datacarpentry.org/lessons/#social-science-curriculum>) Data Carpentry has a social science oriented curriculum that looks great. 
 8. [The Effect](<https://theeffectbook.net/>) A really great book that approaches data analysis from a causal inference perspective with code in R, Python, and Stata.
 
 
 **Datasets**
-- [Colorado Index of Complex Networks](<https://icon.colorado.edu/#!/>) - Maintained by Aaron Clauset - very high quality datasets
-- [Stanford Large Network Datasets](<https://snap.stanford.edu/data/>) - Maintained by Stanford - a list, not necessarily as clean, but a large list
+
 
 
