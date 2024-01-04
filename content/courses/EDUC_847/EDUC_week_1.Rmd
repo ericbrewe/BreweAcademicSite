@@ -1,0 +1,35 @@
+---
+title: "Day 1"
+draft: false
+date: "2020-07-21T00:00:00+01:00"
+output: html_document
+menu:
+  peer_network_school:
+    parent: Daily Plan
+    weight: 1
+linktitle: "Day 1 - Theory and Data"
+toc: 
+type: docs
+weight: 1
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE, echo = FALSE)
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+```
+
+
+
+
+The slides for Day #1 can be found here:
+```{r WS1Slides}
+knitr::include_url('https://ericbrewe.com/slides/PEER_network_school_2023/PEER_network_theory.html#1')
+```
+
+
+Each day I am going to include some extra reading materials and notes in case you want to go further.  For day 1 here are some readings on missing data and network generators
+
+**Missing Data**
+    - Žnidaršič, A., Ferligoj, A., & Doreian, P. (2012). Non-response in social networks: The impact of different non-response treatments on the stability of blockmodels. Social Networks, 34(4), 438-450. https://www.sciencedirect.com/science/article/abs/pii/S037887331200010X
+    - Huisman, M. (2009). Imputation of missing network data: Some simple procedures. Journal of Social Structure, 10(1), 1-29. https://www.rug.nl/research/portal/files/14031886/Huisman_imputation_JoSS2009.pdf
