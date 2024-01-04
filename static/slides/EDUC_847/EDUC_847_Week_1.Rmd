@@ -33,9 +33,25 @@ class: center, middle
 
 ---
 
-# What does this mean in terms of learning R?
+# What you need to know about R?
 
-- We need to know something about the different types of data!
+- R is the programming language.
+- RStudio is the Integrated Development Environment (IDE)
+- Posit.cloud is an online version of the IDE
+- Packages: groups of functions that are developed as open source 
+- Base R
+    - The group of packages preloaded into R
+- Tidyverse
+    - Family of packages that are designed with the theory that programming should be readable by humans.
+
+
+.font190[.center[Lets do this!]]
+
+---
+
+# How do we start learning R?
+
+- We need to know something about the different types of data and the ways in which they are stored. 
 
 .pull-left[
 
@@ -45,6 +61,7 @@ class: center, middle
 - **Integers** (whole numbers)
 - **Numeric** (numbers with decimal places)
 - **Complex** (I never use these)
+- **Text** (exactly what it sounds like)
 ]
 
 .pull-right[
@@ -59,23 +76,7 @@ class: center, middle
 
 ]
 ---
-# What you need to know about R?
 
-- R is the programming language.
-- RStudio is the Integrated Development Environment (IDE)
-- Posit.cloud is an online version of the IDE
-- Packages: groups of functions that are developed as open source 
-- Base R
-    - The group of packages preloaded into R
-- Tidyverse
-    - Family of packages that are designed with the theory that programming should be readable by humans.
-- igraph
-    - Package that is very useful for doing network analyses
-
-
-.font190[.center[Lets do this!]]
-
----
 
 # Lets Take a Tour of RStudio IDE
 
@@ -94,7 +95,7 @@ install.packages("tidyverse")
 
 Repeat this with the following packages:
 
-igraph    tidygraph     here     ggraph
+glmnet janitor haven
 
 ---
 
@@ -106,11 +107,11 @@ igraph    tidygraph     here     ggraph
 To load tidyverse package...
 
 ```{r LoadPackages, eval=FALSE}
-library(tidyverse) #tools for cleaning data 
-library(igraph)  #package for doing network analysis
-library(tidygraph) #tools for doing tidy networks
+library(tidyverse) #tools for cleaning and visualizing data 
+library(janitor)  #package for cleaning data
+library(glmnet) #tools for doing regression analyses
 library(here) #tools for project-based workflow
-library(ggraph) #plotting tools for networks
+library(haven) #tools for reading in data from spss
 ```
 
 --
