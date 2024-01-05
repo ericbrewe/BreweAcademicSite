@@ -132,7 +132,7 @@ Again, you will want to include this as a code chunk in your RMD file.
 ```{r ReadDataforReal, echo=FALSE}
 #This loads the csv and saves it as a dataframe titled WorkshopData
 
-WorkshopData <- read_csv(here("static/slides/PEER_network_school_2023/data", "AnonSurveyData.csv"))
+WorkshopData <- read_csv(here("static/slides/EDUC_847/data", "EDUC_847_Survey.csv"))
 
 ```
 
