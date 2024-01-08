@@ -24,12 +24,15 @@ library(kableExtra)
 
 The slides for Day #1 can be found here:
 ```{r WS1Slides}
-knitr::include_url('https://ericbrewe.com/slides/PEER_network_school_2023/PEER_network_theory.html#1')
+knitr::include_url('https://ericbrewe.com/slides/EDUC_847/EDUC_847_Week_1.html#1')
 ```
 
 
-Each day I am going to include some extra reading materials and notes in case you want to go further.  For day 1 here are some readings on missing data and network generators
 
-**Missing Data**
-    - Žnidaršič, A., Ferligoj, A., & Doreian, P. (2012). Non-response in social networks: The impact of different non-response treatments on the stability of blockmodels. Social Networks, 34(4), 438-450. https://www.sciencedirect.com/science/article/abs/pii/S037887331200010X
-    - Huisman, M. (2009). Imputation of missing network data: Some simple procedures. Journal of Social Structure, 10(1), 1-29. https://www.rug.nl/research/portal/files/14031886/Huisman_imputation_JoSS2009.pdf
+**Reading Assignment**
+Here is your reading assignment for Week 1
+
+Read Chapter 5 in The Effect: Research Design and Causality  https://theeffectbook.net/ch-Identification.html
+
+**Additional Resources**
+If you are struggling with R, I think that the introduction chapters of *Learning Statistics with R* are really useful, I suggest looking at chapters 3-8: https://learningstatisticswithr.com/book/part-ii-an-introduction-to-r.html 

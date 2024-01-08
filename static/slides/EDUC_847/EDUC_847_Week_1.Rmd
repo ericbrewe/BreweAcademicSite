@@ -1,8 +1,8 @@
 ---
-title: "PEER Advanced Field School 2023"
+title: "EDUC 847 Winter 24"
 subtitle: Day 1 - Theory, Data, and Plotting
 author: 'Eric Brewe <br> Professor of Physics at Drexel University <br>'
-date: "15 June 2023, last update: `r Sys.Date()`"
+date: "8 January 2024, last update: `r Sys.Date()`"
 output: 
   xaringan::moon_reader:
     css: [default, metropolis, "BreweSlides.css"]
@@ -29,8 +29,57 @@ library(here)
 
 class: center, middle
 
-# Introduction to R and plotting recipes
+# Introduction to this course, R and plotting recipes
 
+
+---
+# Relationships
+
+The basic idea of this course is to understand relationships. 
+
+Specifically, relationships between two (or more) variables.
+
+For Example:
+- Height and weight
+- Temperature and ice cream consumption
+- Average rainfall and happiness
+
+---
+# Human relationships
+
+- Humans are weird and complicated! 
+- A relationship that we can find is not absolute. 
+   - Deterministic relationships: If A then B (ALWAYS)
+   - Probabalistic relationships: If A then a tendency to B
+   - Rainfall and happiness?
+
+.pull-left[
+![](img/HappyRain.jpg)
+]
+.pull-right[
+![](img/sadRain.jpg)
+]
+
+---
+# Prediction vs Causation
+
+Two ways to think about relationships...
+
+1. Knowing about A allows you to know more about B (predictive)
+2. More of A caused more of B (causal)
+
+---
+# Why are we learning coding?
+
+.pull-left[
+#### Research Reproducibility
+
+- One idea of science is falsifiability 
+]
+
+.pull-right[
+![](img/PsychologyCrisis.png)
+]
 ---
 
 # What you need to know about R?
@@ -140,7 +189,8 @@ week_1_data <- read_csv(here("static/slides/EDUC_847/data", "EDUC_847_Survey.csv
 ```{r ReadData, eval=FALSE}
 #This loads the csv and saves it as a dataframe titled week_1_data
 
-week_1_data <- read_csv(here("static/slides/EDUC_847/data", "EDUC_847_Survey.csv"))
+week_1_data <- read_csv(here("static/slides/EDUC_847/data",
+                             "EDUC_847_Survey.csv"))
 
 ```
 
@@ -166,7 +216,7 @@ We will use the '%>%' (pipe) operator and the verb select
 
 ```{r DeleteUnNeededVariables}
 week_1_data %>%
-  select(Q2:Q10) -> w1df #<<
+  select(ID,Q2:Q10) -> w1df #<<
 
 glimpse(w1df)
 ```
@@ -176,7 +226,7 @@ Note the data are not numbers.
 ---
 # Let's keep cleaning up.
 
-Notice there are two rows of data that are just the questions and something from Quqltrics.  Let's get rid of those. 
+Notice there are two rows of data that are just the questions and something from Qualtrics.  Let's get rid of those. 
 
 ```{r RemoveExtraRows}
 w1df %>%
@@ -185,10 +235,6 @@ w1df %>%
 ```
 
 
----
-# Let's check out the power of R
-
-.font200[.center[I am going to blast through these next slides, to show you some of the things that you might want to do with R]]
 
 
 ---
@@ -213,101 +259,177 @@ w1df %>%
 ---
 # Let's start visualizing the data
 
-## For categorical data, you might want to get a histogram.
+## You might want to see the distribution of our data.
 
 Histograms are very important for regression!
 
-Here is code to do this for the favorite dessert type.
+Here is code to do this for the data from above.
 
 .pull-left[
-```{r DessertType}
+```{r AMPM2}
 
 w1df %>%
-  select(Q3) %>%
-  group_by(Q3) %>% 
-  tally()  
+  select(Q2) %>%  #<<
+  group_by(Q2) %>% #<<
+  tally() 
+
 
 ```
 ]
 
 .pull-right[
-```{r DessertTypeHist, out.width= "50%"}
+```{r AMPMHist, out.width= "50%", eval=FALSE}
 
 w1df %>%
-  select(Q3) %>%
-  ggplot(aes(y = Q3)) + 
+  hist(Q2) #<<
+
+```
+]
+
+
+---
+# Let's start visualizing the data
+
+## You might want to see the distribution of our data.
+
+Histograms are very important for regression!
+
+Here is code to do this for the data from above.
+
+.pull-left[
+```{r AMPM3}
+
+w1df %>%
+  select(Q2) %>%  #<<
+  group_by(Q2) %>% #<<
+  tally() 
+
+
+```
+]
+
+.pull-right[
+```{r AMPMHist2, out.width= "50%"}
+
+w1df %>%
+  mutate(Q2 = as.numeric(Q2)) -> w1df #<<
+  
+hist(w1df$Q2)
+
+```
+]
+
+Thats kind of ugly! Lets make it look better.
+
+
+
+
+---
+# Let's make the histogram look better
+
+
+.pull-left[
+```{r AMPM4}
+
+w1df %>%
+  select(Q2) %>%  #<<
+  group_by(Q2) %>% #<<
+  tally() 
+
+
+```
+]
+
+.pull-right[
+```{r AMPMHist3, out.width= "50%"}
+
+w1df %>%
+  select(Q2) %>%
+  ggplot(aes(y = Q2)) + #<<
   geom_bar()
 
+
 ```
 ]
 
----
-# Let's explore beverage choices
+That's a little better?
 
-```{r BevChoices}
-w1df %>%
-  select(Q4) %>%
-  head()
-```
 
-.font150[Notice, these are *not* tidy data, more than one variable per line]
 ---
-# Let's dummy code the beverage data
-This is going to be useful later in the term I promise!
+# Let's make the histogram even better
+
+
 .pull-left[
-### For **tidy** data we want one value per row
+```{r AMPM5}
 
-```{r TidyBevChoices}
 w1df %>%
-  select(Q4) %>%
-  separate_rows(Q4, sep = ",") %>% #<<
-  head(10)
-```
+  select(Q2) %>%  #<<
+  group_by(Q2) %>% #<<
+  tally() 
 
+
+```
 ]
 
 .pull-right[
-### We can dummy code these
+```{r AMPMHist4, out.width= "50%"}
 
-```{r WideTidyBevChoices}
-WorkshopData %>%
-  select(ID, Q4) %>%
-  separate_rows(Q4, sep = ",") %>%
-  mutate(Checked = 1) %>% #<<
-  pivot_wider(names_from = Q4, #<<
-              values_from = Checked, #<<
-              values_fill = 0) #<<
+w1df %>%
+  select(Q2) %>%
+  ggplot(aes(y = Q2)) + 
+  geom_bar() + 
+  theme_minimal() + #<<
+  ggtitle("Histogram of morning/night") #<<
+
 
 ```
-
-
 ]
 
+Good enough for now...you are always welcome to continue adding layers to your plot to make it look even better.  
+See here for more: https://ggplot2.tidyverse.org/
 
 ---
 # Let's look at some quantitative data
 
-### First, let's summarize the reading data.
+### First, let's summarize the book data.
 
-```{r SummarizeBook,}
+```{r SummarizeBook}
 
-WorkshopData %>%
+w1df %>%
   select(Q5) %>%
-  summarize(Ave = mean(Q5, na.rm = TRUE), 
-            SD = sd(Q5, na.rm = TRUE))
+  mutate(Q5 = as.numeric(Q5)) %>%
+  summarize(Ave = mean(Q5, na.rm = TRUE), #<<
+            SD = sd(Q5, na.rm = TRUE)) #<<
 
 ```
 
+
+
+---
+# Let's tidy up a bit
+
+I find it annoying to have to convert the data to numeric all the time.
+
+```{r ConvertData}
+
+w1df %>%
+  mutate(Q3 = as.numeric(Q3)) %>%
+  mutate(Q5 = as.numeric(Q5)) %>%
+  mutate(Q6 = as.numeric(Q6)) -> w1df
+
+glimpse(w1df)
+
+```
 
 ---
 # Let's investigate groups
 
 .pull-left[
-### Are morning people or night owls reading longer books?
+### Do morning people or night owls have longer books nearby?
 
-```{r ReadersTimeOfDay}
+```{r BooksTimeOfDay}
 
-WorkshopData %>%
+w1df %>%
   select(Q2, Q5) %>%
   group_by(Q2) %>%
   summarize(Ave = mean(Q5), #<<
@@ -319,34 +441,35 @@ WorkshopData %>%
 
 ### We might want to use a boxplot to display these data
 
-```{r ReadersTimeOfDayBoxplot, out.width = "70%"}
+```{r BooksTimeOfDayBoxplot, out.width = "100%"}
 
-WorkshopData %>%
+w1df %>%
   select(Q2, Q5) %>%
-  ggplot(., aes(x = Q2, y = Q5)) +
+  mutate(Q2 = as.character(Q2)) %>% #Just this once!
+  ggplot(., aes(x = Q2, y = Q5)) + #<<
   geom_boxplot()
 
 ```
 ]
 
 ---
-# Let's look at readers vs. blueberries
+# Let's look at books vs. weight of cow
 
-### Is there a relationship between length of book and estimates on number of blueberries?
+### Is there a relationship between length of book and estimates on weight of cow?
 
 .pull-left[
 ### Could do a scatter plot
 ```{r ScatterPlot, fig.show= 'hide'}
 
-WorkshopData %>%
+w1df %>%
   select(Q5:Q6) %>%
-  mutate(Q5 = as.numeric(Q5), Q6 = as.numeric(Q6)) %>%
   ggplot(aes(x = Q5, y = Q6)) +
   geom_point()
 
 ```
 
 ]
+
 .pull-right[
 ```{r ref.label= 'ScatterPlot', echo=FALSE}
 
@@ -355,362 +478,72 @@ WorkshopData %>%
 ]
 
 ---
-# Let's look at readers vs. blueberries
+# Let's make our scatter plot look better
 
-### Is there a relationship between length of book and estimates on number of blueberries?
-
-### Or you could do a linear model
-
-```{r LinearModel}
-
-summary(lm(Q6 ~ Q5, data = WorkshopData))
-
-```
----
-# Let's prep our data for SNA
-
-### We will need to prep two separate files...
-
-1. An edgelist
-2. A file of attributes of the nodes. 
-
----
-# Let's make an edgelist
-
-
-There is an issue here. 
-
-I wanted to make these data anonymous (so we don't know who likes scotch)
-
-But to do that I had to make the edgelist for you. 
-
-So I sent you an edgelist as a csv. Sorry.
-
-
-### Check out the edgelist
-
-```{r GenerateEL, eval=FALSE}
-EL = read_csv(here("data", "AnonEL.csv"))
-head(EL)
-```
-
-```{r GenerateELForReal, echo=FALSE}
-EL = read_csv(here("static/slides/PEER_network_school_2023/data", "AnonEL.csv"))
-head(EL)
-```
-
-
-
----
-# Let's assemble our node attributes
-
-Before we can convert our Edgelist to a network, we should add in the attributes. 
-
-We have several candidate attributes:
-- Morning vs. Night
-- Dessert Type
-- Pages in book
-
-We will develop a separate dataframe for the attributes. 
-
-```{r Attributes}
-WorkshopData %>%
-  select(ID, Q2, Q3, Q5) -> AttributeDf
-```
-
-
----
-# Let's assemble our node attributes
-
-Experience tells me that when you try to add attributes that you often make a mistake where the number attributes don't match up well to the number of nodes...but lets see.
-
-
-
-
-```{r AssembleGraph, out.width= "40%"}
-
-gr <- graph_from_data_frame(EL, directed = TRUE)
-
-plot(gr)
-
-
-gr = as_tbl_graph(gr)
-
-```
-
-
-
----
-# Let's add some attributes
-
-So actually the easiest way to add the attributes is to add them while you make the graph.  
-
-But that isn't as easy as it seems
-
-```{r GraphWAttributes1, warning=TRUE, eval=FALSE}
-
-gr %>%
-  activate(nodes) %>%
-  mutate(AMPM = AttributeDf$Q2)
-
-```
-But that isn't as easy as it seems...
-
-
---- 
-# Let's sort out these attributes. 
-
-
-
-The warning was: "Input `AMPM` must be size 60 or 1, not 34."
-
-What this means is we need to take our attributes dataframe and make sure all the nodes are listed. 
-
-To do this we need to:
-- Compile a dataframe of all nodes listed in the graph
-- Use a join to add attributes to this dataframe
-
----
-# Let's sort out these attributes (pt 2)
-
-```{r GraphWAttributes2}
-#This will get a vector of all nodes
-gr %>%
-  activate(nodes) %>%
-  as_tibble() %>%
-  transmute(ID = name) %>%
-  mutate(ID = as.numeric(ID))-> GrNodes
-
-#Now we pull in the attributes using a left_join
-NodeAttributes = left_join(GrNodes, AttributeDf, by = "ID")
-```
-
-You should inspect Node Attributes
-
----
-# Let's sort out these attributes (pt 3)
-
-
-### Inspect the head
-
-```{r GraphWAttributes3}
-
-head(NodeAttributes)
-
-```
-
----
-# Let's sort out these attributes (pt 4)
-
-### Inspect the tail
-
-```{r GraphWAttributes4}
-
-tail(NodeAttributes)
-
-```
-
-
-
----
-# Let's finally assemble this graph. 
-
-```{r BuildGraph}
-
-gr %>%
-  as_tbl_graph() %>%
-  activate(nodes) %>%
-  mutate(AMPM = NodeAttributes$Q2) %>%
-  mutate(Dessert = NodeAttributes$Q3) %>%
-  mutate(Pages = NodeAttributes$Q5) -> gr
-
-summary(gr)
-```
----
-# Let's finally assemble this graph.
-
-### Take a look at your graph
-
-```{r InspectGr, echo=FALSE}
- gr 
-```
-
----
-# Let's make our plots look a bit better
-.pull-left[
-### We can add various elements to our plot
-- Color (good for grouping)
-- Shape (good for grouping)
-- Linewidth (good for numeric)
-- Text (good for labels)
-- Layout
-
-### This is the most basic plot
-````
-```{r PlotGr1, eval = FALSE}
-ggraph(gr) +
-  geom_edge_link() +
-  geom_node_point()
-```
-````
-]
-
-.pull-right[
-
-```{r PlotGr1a, echo=FALSE}
-ggraph(gr) +
-  geom_edge_link() +
-  geom_node_point()
-```
-
-Not super pretty
-]
-
----
-# Let's make our plots look a bit better
-.pull-left[
-### We can add various elements to our plot
-- Layout, there are lots of options
-    -Try circle?
-
-````
-```{r PlotGr2, eval = F}
-ggraph(gr, layout = 'circle') +
-  geom_edge_link() +
-  geom_node_point()
-```
-````
-]
-
-.pull-right[
-```{r PlotGr2a, echo = F}
-ggraph(gr, layout = 'circle') +
-  geom_edge_link() +
-  geom_node_point()
-```
-]
-
----
-
-# Let's make our plots look a bit better
 
 .pull-left[
-### We can add various elements to our plot
-- Shape, we can make night owls one shape and morning people a differnt shape...
+### Could do a scatter plot
+```{r ScatterPlot2, fig.show= 'hide'}
 
-````
-```{r PlotGr3, eval = F}
-ggraph(gr, layout = 'circle') +
-  geom_edge_link() +
-  geom_node_point(aes(shape = AMPM))
+w1df %>%
+  select(Q5:Q6) %>%
+  ggplot(aes(x = Q5, y = Q6)) +
+  geom_point() + 
+  theme_minimal() + 
+  labs(x = "Pages", 
+       y = "Weight of Cow",
+       title = "Kick Ass Scatterplot!")
+
 ```
-````
-]
-.pull-right[
-```{r PlotGr3a, echo = F}
-ggraph(gr, layout = 'circle') +
-  geom_edge_link() +
-  geom_node_point(aes(shape = AMPM))
-```
-
-### Not great
-
-]
----
-
-# Let's make our plots look a bit better
-
-.pull-left[
-### We can add various elements to our plot
-- Color, lets use the dessert type to define a color
-
-````
-```{r PlotGr4,eval=FALSE}
-ggraph(gr, layout = 'circle') +
-  geom_edge_link() +
-  geom_node_point(aes(color = Dessert))
-```
-````
-]
-.pull-right[
-```{r PlotGr4a, echo=FALSE}
-ggraph(gr, layout = 'circle') +
-  geom_edge_link() +
-  geom_node_point(aes(color = Dessert))
-```
-]
----
-
-# Let's make our plots look a bit better
-.pull-left[
-### We can add various elements to our plot
-- Size, lets make the nodes different sizes based on the number of pages in the last book read.
-
-````
-```{r PlotGr5, eval=FALSE}
-ggraph(gr, layout = 'circle') +
-  geom_edge_link() +
-  geom_node_point(aes(size = Pages))
-```
-````
-]
-.pull-right[
-```{r PlotGr5a, echo=FALSE}
-ggraph(gr, layout = 'circle') +
-  geom_edge_link() +
-  geom_node_point(aes(size = Pages))
-```
-]
----
-
-# Let's make our plots look a bit better
-
-.pull-left[
-### We can add various elements to our plot
-- Let's jam them all together!
-
-````
-```{r PlotGr6, eval=FALSE}
-ggraph(gr, layout = 'circle') +
-  geom_edge_link() +
-  geom_node_point(aes(shape = AMPM, 
-                      color = Dessert, 
-                      size = Pages))
-```
-````
-]
-
-.pull-right[
-
-```{r PlotGr6a, echo=FALSE}
-ggraph(gr, layout = 'circle') +
-  geom_edge_link() +
-  geom_node_point(aes(shape = AMPM, 
-                      color = Dessert, 
-                      size = Pages))
-```
-
-]
-
----
-
-# Let's save our data so that we can access it easily
-
-.pull-left[
-### We want to save as an RDS file
-- This way we avoid having to reconstruct our graph
-- We get our nodes, our edges, and our attributes.
-
-You don't actually need to run this (I've already saved the file as an RDS so we can start with that on Day 2!)
-
 
 ]
 
 .pull-right[
+```{r ref.label= 'ScatterPlot2', echo=FALSE}
 
-````
-```{r WriteRDS, eval=FALSE}
-write_rds(gr, here("data", "WorkshopNetwork.rds"))
 ```
-````
+
 ]
+
+---
+# Let's use some colors
+
+What if Morning People have different relationships between the estimates of cow weight and length of the closest book.
+
+.pull-left[
+### Could do a scatter plot
+```{r ScatterPlot3, fig.show= 'hide'}
+
+w1df %>%
+  select(Q2,Q5:Q6) %>%
+  ggplot(aes(x = Q5, y = Q6, color = Q2)) +
+  geom_point() + 
+  theme_minimal() + 
+  labs(x = "Pages", 
+       y = "Weight of Cow",
+       title = "Scatterplot!")
+
+```
+
+]
+
+.pull-right[
+```{r ref.label= 'ScatterPlot3', echo=FALSE}
+
+```
+
+]
+
+---
+# Let's recap
+
+- We know how to get data into R
+- We know how to modify the data
+- We know how to plot the data
+- We have recipes for plotting 
+    - histograms
+    - boxplots
+    - scatterplots
+    
+We are ready to go!
+    
