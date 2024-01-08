@@ -8,9 +8,9 @@ menu:
   applied_regression:
     name: EDUC 847
     weight: 1
-summary: Applied Regression
+summary: Educ 847 Applied Regression for Winter 2024
 type: docs
-weight: 1
+weight: 2
 ---
 
 
