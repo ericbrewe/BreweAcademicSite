@@ -130,17 +130,17 @@ Again, you will want to include this as a code chunk in your RMD file.
 
 
 ```{r ReadDataforReal, echo=FALSE}
-#This loads the csv and saves it as a dataframe titled WorkshopData
+#This loads the csv and saves it as a dataframe titled week_1_data
 
-WorkshopData <- read_csv(here("static/slides/EDUC_847/data", "EDUC_847_Survey.csv"))
+week_1_data <- read_csv(here("static/slides/EDUC_847/data", "EDUC_847_Survey.csv"))
 
 ```
 
 
 ```{r ReadData, eval=FALSE}
-#This loads the csv and saves it as a dataframe titled WorkshopData
+#This loads the csv and saves it as a dataframe titled week_1_data
 
-WorkshopData <- read_csv(here("data", "AnonSurveyData.csv"))
+week_1_data <- read_csv(here("static/slides/EDUC_847/data", "EDUC_847_Survey.csv"))
 
 ```
 
@@ -149,7 +149,7 @@ WorkshopData <- read_csv(here("data", "AnonSurveyData.csv"))
 # Let's have a look at the data
 
 ```{r GlimpseData}
-glimpse(WorkshopData)
+glimpse(week_1_data)
 
 ```
 
@@ -165,22 +165,23 @@ There is a ton of data there that doesn't make sense for us to keep around.
 We will use the '%>%' (pipe) operator and the verb select
 
 ```{r DeleteUnNeededVariables}
-WorkshopData %>%
-  select(ID,Q2:Q6) -> WorkshopData #<<
+week_1_data %>%
+  select(Q2:Q10) -> w1df #<<
 
-glimpse(WorkshopData)
+glimpse(w1df)
 ```
 
 ???
 Note the data are not numbers.
 ---
-# Let's start cleaning up.
+# Let's keep cleaning up.
 
-## Now we should actually take a look at the data
+Notice there are two rows of data that are just the questions and something from Quqltrics.  Let's get rid of those. 
 
-```{r DataHead}
-WorkshopData %>%
-  head()
+```{r RemoveExtraRows}
+w1df %>%
+  filter(row_number() >3 ) -> w1df
+
 ```
 
 
@@ -200,7 +201,7 @@ Here is code to do this for the question about morning or night person.
 
 ```{r MorningOrNight}
 
-WorkshopData %>%
+w1df %>%
   select(Q2) %>%  #<<
   group_by(Q2) %>% #<<
   tally() 
@@ -214,12 +215,14 @@ WorkshopData %>%
 
 ## For categorical data, you might want to get a histogram.
 
+Histograms are very important for regression!
+
 Here is code to do this for the favorite dessert type.
 
 .pull-left[
 ```{r DessertType}
 
-WorkshopData %>%
+w1df %>%
   select(Q3) %>%
   group_by(Q3) %>% 
   tally()  
@@ -230,7 +233,7 @@ WorkshopData %>%
 .pull-right[
 ```{r DessertTypeHist, out.width= "50%"}
 
-WorkshopData %>%
+w1df %>%
   select(Q3) %>%
   ggplot(aes(y = Q3)) + 
   geom_bar()
@@ -242,21 +245,21 @@ WorkshopData %>%
 # Let's explore beverage choices
 
 ```{r BevChoices}
-WorkshopData %>%
-  select(ID, Q4) %>%
+w1df %>%
+  select(Q4) %>%
   head()
 ```
 
 .font150[Notice, these are *not* tidy data, more than one variable per line]
 ---
 # Let's dummy code the beverage data
-
+This is going to be useful later in the term I promise!
 .pull-left[
 ### For **tidy** data we want one value per row
 
 ```{r TidyBevChoices}
-WorkshopData %>%
-  select(ID, Q4) %>%
+w1df %>%
+  select(Q4) %>%
   separate_rows(Q4, sep = ",") %>% #<<
   head(10)
 ```
