@@ -36,11 +36,11 @@ The main idea is to have some time learning about different aspects of regressio
 
 
 
-[Day 1 Slides](<https://ericbrewe.com/slides/PEER_network_school_2023/PEER_network_theory.html#1>)
+[Day 1 Slides](<https://ericbrewe.com/slides/educ_847/educ_847_week_1#1>)
 
 * Import Data into R
-* Clean data and prepare data for SNA
-* Organize data for SNA
+* Clean data and prepare data for Regression
+* Organize data for Regression
 * Vizualize data
 
 
@@ -51,7 +51,7 @@ The main idea is to have some time learning about different aspects of regressio
 
 
 ### What is beyond the scope?
-While I would love to say you'd be able to master doing network analysis in R in the short span of 1 week, you will not. I've spent a decade learning it and am proficient, but am constantly learning. 
+While I would love to say you'd be able to master doing regression in R in the short span of one quarter, you will not. I've spent a decade learning it and am proficient, but am constantly learning. 
 
 Similarly, R is a tool. You are the expert in your research, R can help *you* to uncover elements of your data. I don't know how to analyze your data - learning R will empower you to analyze your data. 
 
@@ -77,7 +77,7 @@ Learning R is not easy, as I have learned things, I have tried to maintain a lis
 
 1. Install R and RStudio
 2. Introduction to R (using Base R) - [R Programming for Data Science](<https://bookdown.org/rdpeng/rprogdatascience/>)
-3. My all time favorite book for learning statistics and R is [Learning Statistics with R](<http://tidylsr.djnavarro.net/>)
+3. My all time favorite book for learning statistics and R is [Learning Statistics with R](<https://learningstatisticswithr.com/book//>)
 4. Danielle Navarro also has a course [Robust Tools](<http://robust-tools.djnavarro.net/>) that gives a sense about the breadth of the tools that R provides.
 5. These two guides, [The R Guide](<https://drive.google.com/file/d/1G9rqsXdesobxbWivbrD1MN0K97jMNEST/view>) and [R for Beginners](<https://drive.google.com/file/d/1jUivTK7z3Ig_51upZ4mD5l2v-PCXOoGp/view>)
 
