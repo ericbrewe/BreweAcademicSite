@@ -122,105 +122,171 @@ w1df %>%
 
 ]
 
+A **residual** is the distance between the Y value for each measurement, and the predicted Y value. 
 
 ---
+# Let's investigate the residuals for our data 
+.pull-left[
+```{r CheckResiduals1}
 
-```{r ScatterPlotWithResiduals, fig.show= 'hide'}
-mod <- lm(Q5 ~ Q6, data = w1df)
-summary(mod)
-mod_df<-augment(mod)
+w1df %>% 
+  select(Q5,Q6)
+```
+]
+.pull-right[
+```{r ref.label= 'ScatterPlot2', echo=FALSE}
+
+```
+]
+
+---
+# Let's make a linear regression model
+
+
+### We want the estimated weight of the cow as predicted by the length of the book closest to the survey respondent. 
+```{r LinearRegression}
+
+Model1 <- lm(Q6 ~ Q5, data = w1df) #<<
+
+Model1
+```
+---
+# Let's clean up our language...
+
+In this situation, Q5 (the Estimated weight of the cow) is the Outcome Variable and Q6 (the number of pages in the closest book) is the Predictor variable.
+
+Outcome Variable is often referred to as independent variable
+
+Predictor Variable is often referred to as the dependent variable. 
+ 
+I hate this language. Predictor and Outcome are much more descriptive. 
+
+---
+# Let's figure out what this means
+
+```{r ModelInterp}
+
+Model1
+
+```
+**Intercept** = if the closest book had 0 pages in it, this would be the estimated weight of the cow that we predict. 
+
+**Q6 coefficient** = If we increase the number of pages in the book, the value of the coeffient tells us how much we would increase the estimated weight of the cow by 
+
+
+---
+# Let's check out those residuals...
+.pull-left[
+```{r ScatterPlotWithResiduals, echo=FALSE }
+
+mod_df<-augment(Model1)
 
 
 mod_df %>%
-  ggplot(aes(x = Q6, y = Q5)) +
+  ggplot(aes(x = Q5, y = Q6)) +
   geom_point() + 
   theme_minimal() + 
   stat_smooth(method = lm, se = FALSE) +
-  geom_segment(aes(xend = Q6, yend= .fitted), color = "red", size = 0.2) +
+  geom_segment(aes(xend = Q5, yend= .fitted), color = "red", size = 0.2) +
   labs(x = "Pages", 
        y = "Weight of Cow",
        title = "Kick Ass Scatterplot!")
 
 ```
 
+]
+.pull-right[
 
+
+
+
+```{r ResidualCheck2}
+
+augment(Model1) %>%
+  select(Q5:.resid) 
+```
+]
 
 ---
-# Let's make the histogram even better
+# Let's see how much better the model fits
 
+```{r ResidualCheck3}
 
-.pull-left[
-```{r AMPM5}
-
-w1df %>%
-  select(Q2) %>%  #<<
-  group_by(Q2) %>% #<<
-  tally() 
-
-
+augment(Model1) %>%
+  select(Q5:.resid) %>%
+  mutate(SqResid = .resid^2) #<<
 ```
-]
-
-.pull-right[
-```{r AMPMHist4, out.width= "50%"}
-
-w1df %>%
-  select(Q2) %>%
-  ggplot(aes(y = Q2)) + 
-  geom_bar() + 
-  theme_minimal() + #<<
-  ggtitle("Histogram of morning/night") #<<
-
-
-```
-]
-
-Good enough for now...you are always welcome to continue adding layers to your plot to make it look even better.  
-See here for more: https://ggplot2.tidyverse.org/
-
-
-
-
 
 ---
-# Let's use some colors
+# Let's see how much better the model fits
 
-What if Morning People have different relationships between the estimates of cow weight and length of the closest book.
+```{r ResidualCheck4}
+
+augment(Model1) %>%
+  select(Q5:.resid) %>%
+  mutate(SqResid = .resid^2) %>%
+  tally(SqResid)
+```
+
+---
+# Let's take a look at R<sup>2</sup>
+
+
+**R<sup>2</sup>** is the measure of how well the model fits
+
+$R^{2} = 1 - \frac{\sum_{i} (Y_{Pred} - Y_{i})^2}{\sum_{i} (Y_{i}-\overline{Y})^2}$
+
+
+```{r  CalcRSq}
+
+augment(Model1) %>%
+  select(Q6:.resid) %>%
+  mutate(SqResid = .resid^2) %>%
+  mutate(SqDiffMean = (Q6 - mean(Q6))^2) -> resid_df
+
+glimpse(resid_df)
+
+```
+
+---
+# Let's take a look at R<sup>2</sup>
+
+
+$R^{2} = 1 - \frac{\sum_{i} (Y_{Pred} - Y_{i})^2}{\sum_{i} (Y_{i}-\overline{Y})^2}$
 
 .pull-left[
-### Could do a scatter plot
-```{r ScatterPlot3, fig.show= 'hide'}
+```{r  CalcRSq2}
 
-w1df %>%
-  select(Q2,Q5:Q6) %>%
-  ggplot(aes(x = Q5, y = Q6, color = Q2)) +
-  geom_point() + 
-  theme_minimal() + 
-  labs(x = "Pages", 
-       y = "Weight of Cow",
-       title = "Scatterplot!")
+SquaredResiduals = sum(resid_df$SqResid)
+SquaredResiduals
+
+SquaredDiffMean = sum(resid_df$SqDiffMean)
+SquaredDiffMean
+
+r2 = 1-(SquaredResiduals/SquaredDiffMean)
+r2
+```
+---
+# Let's compare to the R<sup>2<\sup>
+
+```{r ModelSummary}
+SquaredResiduals
+SquaredDiffMean
+r2
+
+summary(Model1)
 
 ```
 
-]
 
-.pull-right[
-```{r ref.label= 'ScatterPlot3', echo=FALSE}
-
-```
-
-]
 
 ---
 # Let's recap
+We can...
+- Fit a regression model to two continuous variables
+- Calculate the residuals
+- Calculate the squared residuals
+- Use the residuals to calculate the r<sup>2<\sup>
 
-- We know how to get data into R
-- We know how to modify the data
-- We know how to plot the data
-- We have recipes for plotting 
-    - histograms
-    - boxplots
-    - scatterplots
     
-We are ready to go!
     
