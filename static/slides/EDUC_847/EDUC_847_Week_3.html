@@ -266,6 +266,8 @@ We can do a histogram of the residuals
 
 
 ```r
+mod_df &lt;- augment(Model1)
+
 mod_df %&gt;%
   ggplot(aes(y = .resid)) +
   geom_histogram() + 
@@ -453,7 +455,7 @@ summary(sci_model)
 
 
 ---
-# Let's look at hypothesis testing for the coefficient
+# Let's look at hypothesis testing for the coef
 
 ## Statistical significance tells us whether or not we can reject the null hypothesis
 

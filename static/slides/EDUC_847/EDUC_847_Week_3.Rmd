@@ -249,6 +249,7 @@ mod_df %>%
 
 
 ```{r ResidualCheck3, eval=FALSE}
+mod_df <- augment(Model1)
 
 mod_df %>%
   ggplot(aes(y = .resid)) +
@@ -458,7 +459,7 @@ summary(sci_model)
 
 
 ---
-# Let's look at hypothesis testing for the coefficient
+# Let's look at hypothesis testing for the coef
 
 ## Statistical significance tells us whether or not we can reject the null hypothesis
 
