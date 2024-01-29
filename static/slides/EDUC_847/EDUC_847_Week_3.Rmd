@@ -1,0 +1,430 @@
+---
+title: "EDUC 847 Winter 24"
+subtitle: Week 3 - Data for Linear Modeling
+author: 'Eric Brewe <br> Professor of Physics at Drexel University <br>'
+date: "29 January 2024, last update: `r Sys.Date()`"
+output: 
+  xaringan::moon_reader:
+    css: [default, metropolis, "BreweSlides.css"]
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(warning = FALSE, message = FALSE)
+library(tidyverse) # load tidyverse package
+library(emoji) # load emoji package
+library(janitor)
+library(glmnet)
+library(haven)
+library(here)
+library(broom)
+
+
+```
+
+
+
+
+class: center, middle
+
+# Let's start where we ended last class...Scatter Plots
+
+Start by getting the data into R
+
+```{r ReadDataforReal, echo=FALSE}
+
+week_1_data <- read_csv(here("static/slides/EDUC_847/data", "EDUC_847_Survey.csv"))
+
+```
+
+
+```{r ReadData, eval=FALSE}
+#This loads the csv and saves it as a dataframe titled week_1_data
+
+week_1_data <- read_csv(here("static/slides/EDUC_847/data",
+                             "EDUC_847_Survey.csv"))
+
+```
+
+
+---
+# Let's start cleaning up.
+
+
+```{r CleanDataPipeline}
+
+week_1_data %>%
+  select(ID,Q2:Q6) %>%
+  filter(row_number() >3 ) %>%
+  mutate(across(c(Q2:Q3,Q5:Q6), as.numeric)) -> w1df  #<<
+  
+
+```
+
+
+---
+# Let's remember what we did last week
+
+### Is there a relationship between length of book and estimates on weight of cow?
+
+.pull-left[
+### Making a scatter plot to explore
+```{r ScatterPlot2, fig.show= 'hide'}
+
+w1df %>%
+  select(Q5:Q6) %>%
+  ggplot(aes(x = Q5, y = Q6)) +
+  geom_point() + 
+  theme_minimal() + 
+  labs(x = "Pages", 
+       y = "Weight of Cow",
+       title = "Kick Ass Scatterplot!")
+
+```
+
+]
+
+.pull-right[
+```{r ref.label= 'ScatterPlot2', echo=FALSE}
+
+```
+
+]
+
+A **residual** is the distance between the Y value for each measurement, and the predicted Y value. 
+
+
+
+---
+# Let's make a linear regression model
+
+
+### We want the estimated weight of the cow as predicted by the length of the book closest to the survey respondent. 
+```{r LinearRegression}
+
+Model1 <- lm(Q6 ~ Q5, data = w1df) #<<
+
+Model1
+```
+
+
+---
+# Let's dig into our model
+
+```{r ModelInterp2}
+
+summary(Model1)
+
+```
+
+---
+# Let's think about this model...
+
+## F-Statistic = 0.02729 
+This is a ratio of the Model Sum of Squares vs. the Residual Sum of Squares
+
+## p = 0.8753
+This is the percent of time you would have to be willing to have a type one error (False Positive)
+
+## This model doesn't fit very well. 
+
+---
+# Let's think about the Intercept
+
+## Intercept = 1668
+This tells us the average predicted weight of the cow. 
+
+
+## Standard Error = 723.6
+$SE = \frac{\sigma}{\sqrt{N}}$
+
+## t value = 2.3006
+$t = \frac{Intercept}{Standard Error} = \frac{1668.7}{723.6} = 2.03$
+
+## p = 0.0692
+Depending on our predetermined willingness to accept false positives, this tells us whether a result is "statistically significant". 
+
+It is not. 
+---
+# Let's think about the Q5 coeff.
+
+## Q5 = 0.3001
+The average additional weight added for each additional page in the closet book. 
+
+
+## Standard Error = 1.8163
+$SE = \frac{\sigma}{\sqrt{N}}$
+
+## t value = 0.165
+$t = \frac{Intercept}{Standard Error} = \frac{.3001}{1.8163} = 0.165$
+
+## p = 0.8753
+Depending on our predetermined willingness to accept false positives, this tells us whether a result is "statistically significant". 
+
+It is not. 
+---
+# Let's think about why this model is a failure
+
+## Maybe it is because we violated the assumptions?
+And what are those assumptions? 
+from https://learningstatisticswithr.com/book/regression.html#regressionassumptions
+
+
+
+---
+# Let's think about why this model is a failure
+
+### Normality of Residuals
+Residuals are distributed normally.
+
+### Linearity
+Predictor and Fitted are linearly related
+
+### Homogeneity of varicance
+The standard deviation of the residual is the same at all values of the Outcome
+
+### Uncorrelated predictors
+The correlations between predictor variables is small (We'll come back to this)
+
+### No bad outliers
+There aren't any individual data points that are really impacting our model
+
+---
+# Let's check out those residuals...
+.pull-left[
+```{r ScatterPlotWithResiduals, echo=FALSE}
+
+mod_df <-augment(Model1)
+
+mod_df %>%
+  ggplot(aes(x = Q5, y = Q6)) +
+  geom_point() + 
+  theme_minimal() + 
+  stat_smooth(method = lm, se = TRUE) +
+  geom_segment(aes(xend = Q5, yend= .fitted), color = "red", size = 0.2) +
+  labs(x = "Pages", 
+       y = "Weight of Cow",
+       title = "Kick Ass Scatterplot!")
+
+```
+
+]
+.pull-right[
+
+
+
+
+```{r ResidualCheck}
+
+augment(Model1) %>%
+  select(Q5:.resid) 
+```
+]
+
+---
+# Let's check the normality residuals...
+
+We can do a histogram of the residuals
+
+.pull-left[
+```{r ResidualHist, echo=FALSE }
+
+mod_df %>%
+  ggplot(aes(y = .resid)) +
+  geom_histogram() + 
+  theme_minimal() + 
+  coord_flip()
+
+
+```
+
+]
+.pull-right[
+
+
+
+
+```{r ResidualCheck3, eval=FALSE}
+
+mod_df %>%
+  ggplot(aes(y = .resid)) +
+  geom_histogram() + 
+  theme_minimal() + 
+  coord_flip() 
+```
+]
+
+Doesn't look normal!  Could confirm with a Shapiro-Wilk test...
+
+---
+# Let's check the normality residuals...
+
+We can do a Q-Q plot
+.pull-left[
+```{r QQPlot, echo=FALSE }
+
+plot(x = Model1, which = 2 )
+
+
+```
+
+]
+.pull-right[
+
+```{r QQPlot2, eval=FALSE }
+
+plot(x = Model1, which = 2 )
+
+
+```
+
+## Should be a straight line
+
+## Should have a slope = 1
+
+Not so much
+
+
+]
+---
+# Let's check the linearity assumption
+
+We can do a scatter plot of the Outcome (Q6) vs. the Fitted (the result of the eqn. )
+.pull-left[
+```{r OutcomeVsFitted, echo=FALSE }
+
+plot(x = Model1, which = 1 )
+
+
+```
+
+]
+.pull-right[
+```{r OutcomeVsFittedR, eval=FALSE }
+
+plot(x = Model1, which = 1 )
+
+
+```
+## Should be a straight line
+
+
+Not so much
+
+
+]
+---
+# Let's check the homogeneity of variance assumption
+
+We can do a scatter plot of the standardized residuals vs. the Fitted values (the result of the eqn. )
+.pull-left[
+```{r StdResidualsVsFitted, echo=FALSE }
+
+plot(x = Model1, which = 3 )
+
+
+```
+
+]
+.pull-right[
+```{r StdResidualsVsFittedR, eval=FALSE }
+
+plot(x = Model1, which = 3 )
+
+
+```
+
+## Should be a straight horizontal line
+
+
+Not so much
+
+
+]
+---
+# Let's check the no bad outliers assumption
+
+We can do a boxplot to get a sense
+.pull-left[
+```{r BoxPlot, echo=FALSE }
+
+w1df %>%
+  ggplot(aes(y = Q6)) +
+  geom_boxplot() +
+  theme_minimal()
+
+
+```
+
+]
+.pull-right[
+```{r BoxPlotR, eval=FALSE }
+
+w1df %>%
+  ggplot(aes(y = Q6)) +
+  geom_boxplot() +
+  theme_minimal()
+
+
+```
+
+## Note the one way up above might be an outlier
+
+
+We should confirm. 
+
+
+]
+
+---
+# Let's check the no bad outliers assumption
+
+We can check the leverage of the model
+.pull-left[
+```{r Leverage, echo=FALSE }
+
+plot(Model1, which = 5)
+
+
+```
+
+]
+.pull-right[
+```{r Leverage2, eval=FALSE }
+
+plot(Model1, which = 5)
+
+
+```
+
+## Looks like observations 5 might have much larger leverage?
+
+
+We should confirm. 
+
+
+]
+---
+# Let's revisit our model
+
+## Maybe, just maybe this model is junk because...
+
+There is no good reason to think that the number of pages in the book closest to you when you answered this survey has any bearing on how much you would estimate a cow to weigh!  
+
+---
+# Let's try this with a different model 
+
+```{r ReadData2, eval=FALSE}
+#This loads the csv and saves it as a dataframe titled week_1_data
+
+w3df <- read_csv(here("static/slides/EDUC_847/data",
+                             "EDUC_847_Survey.csv"))
+
+
+df <- tibble()
+```
+
