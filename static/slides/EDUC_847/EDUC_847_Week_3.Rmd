@@ -421,10 +421,24 @@ There is no good reason to think that the number of pages in the book closest to
 ```{r ReadData2, eval=FALSE}
 #This loads the csv and saves it as a dataframe titled week_1_data
 
+
 w3df <- read_csv(here("static/slides/EDUC_847/data",
-                             "EDUC_847_Survey.csv"))
+                             "science_scores.csv"))
 
 
-df <- tibble()
+
+sci_model <- lm(sci ~ math_sc, data = w3df)
+
+summary(sci_model)
+
 ```
+
+---
+# Let's look at hypothesis testing
+
+Statistical significance tells us whether or not we can reject the null hypothesis
+
+1. What is the null model?
+2. What is our tolerance for type 1 error? (p-value)
+3. Is this model different from the null model? 
 
