@@ -418,8 +418,7 @@ There is no good reason to think that the number of pages in the book closest to
 ---
 # Let's try this with a different model 
 
-```{r ReadData2, eval=FALSE}
-#This loads the csv and saves it as a dataframe titled week_1_data
+```{r ReadData2}
 
 
 w3df <- read_csv(here("static/slides/EDUC_847/data",
@@ -429,12 +428,18 @@ w3df <- read_csv(here("static/slides/EDUC_847/data",
 
 sci_model <- lm(sci ~ math_sc, data = w3df)
 
+
+```
+---
+# Let's try this with a different model 
+
+```{r summary_sci_model}
+
 summary(sci_model)
 
 ```
-
 ---
-# Let's look at hypothesis testing
+# Let's look at hypothesis testing for the model
 
 ## Statistical significance tells us whether or not we can reject the null hypothesis
 
@@ -442,10 +447,50 @@ summary(sci_model)
 2. What is our tolerance for type 1 error? (p-value)
 3. Is this model different from the null model? 
 
+---
+# Let's look at hypothesis testing for the model
+
+## Statistical significance tells us whether or not we can reject the null hypothesis
+
+1. What is the null model?  The intercept only model. 
+2. What is our tolerance for type 1 error? (p-value) Typically 95%
+3. Is this model different from the null model? Yes.  We know because the F-statistic is very large, and the p- value is less than 0.05 (5%).
+
 
 ---
-# Let's look at effect sizes
+# Let's look at hypothesis testing for the coefficient
+
+## Statistical significance tells us whether or not we can reject the null hypothesis
+
+1. What is the null model?  
+2. What is our tolerance for type 1 error? (p-value) 
+3. Is this model different from the null model? 
+
+---
+# Let's look at hypothesis testing for the coefficient
+
+## Statistical significance tells us whether or not we can reject the null hypothesis
+
+1. What is the null model?  the coefficient = 0
+2. What is our tolerance for type 1 error? (p-value) typically 95%
+3. Is this model different from the null model? Yes!  The t-value for the math_sc is 49.27, p << 0.05
+
+---
+# Let's look at effect sizes on the coef
 
 ## Statistical significance tells us whether or not we can reject the null hypothesis
 
 ## Effect size tells if this is meaningful
+
+For a coefficient, we first establish a tolerance for false positives (95%), then...
+
+$C.I. = b \pm t_{crit} * S.E.(b)$
+
+```{r coeff_conf}
+
+confint(sci_model, level = 0.95)
+```
+
+
+
+

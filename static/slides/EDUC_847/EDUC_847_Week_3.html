@@ -393,6 +393,108 @@ We should confirm.
 
 There is no good reason to think that the number of pages in the book closest to you when you answered this survey has any bearing on how much you would estimate a cow to weigh!  
 
+---
+# Let's try this with a different model 
+
+
+```r
+w3df &lt;- read_csv(here("static/slides/EDUC_847/data",
+                             "science_scores.csv"))
+
+
+
+sci_model &lt;- lm(sci ~ math_sc, data = w3df)
+```
+---
+# Let's try this with a different model 
+
+
+```r
+summary(sci_model)
+```
+
+```
+## 
+## Call:
+## lm(formula = sci ~ math_sc, data = w3df)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -126.81  -22.79    0.91   23.73  106.45 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept) 211.9746     8.3712   25.32   &lt;2e-16 ***
+## math_sc       6.0253     0.1223   49.27   &lt;2e-16 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 34.98 on 498 degrees of freedom
+## Multiple R-squared:  0.8298,	Adjusted R-squared:  0.8294 
+## F-statistic:  2427 on 1 and 498 DF,  p-value: &lt; 2.2e-16
+```
+---
+# Let's look at hypothesis testing for the model
+
+## Statistical significance tells us whether or not we can reject the null hypothesis
+
+1. What is the null model?
+2. What is our tolerance for type 1 error? (p-value)
+3. Is this model different from the null model? 
+
+---
+# Let's look at hypothesis testing for the model
+
+## Statistical significance tells us whether or not we can reject the null hypothesis
+
+1. What is the null model?  The intercept only model. 
+2. What is our tolerance for type 1 error? (p-value) Typically 95%
+3. Is this model different from the null model? Yes.  We know because the F-statistic is very large, and the p- value is less than 0.05 (5%).
+
+
+---
+# Let's look at hypothesis testing for the coefficient
+
+## Statistical significance tells us whether or not we can reject the null hypothesis
+
+1. What is the null model?  
+2. What is our tolerance for type 1 error? (p-value) 
+3. Is this model different from the null model? 
+
+---
+# Let's look at hypothesis testing for the coefficient
+
+## Statistical significance tells us whether or not we can reject the null hypothesis
+
+1. What is the null model?  the coefficient = 0
+2. What is our tolerance for type 1 error? (p-value) typically 95%
+3. Is this model different from the null model? Yes!  The t-value for the math_sc is 49.27, p &lt;&lt; 0.05
+
+---
+# Let's look at effect sizes on the coef
+
+## Statistical significance tells us whether or not we can reject the null hypothesis
+
+## Effect size tells if this is meaningful
+
+For a coefficient, we first establish a tolerance for false positives (95%), then...
+
+`\(C.I. = b \pm t_{crit} * S.E.(b)\)`
+
+
+```r
+confint(sci_model, level = 0.95)
+```
+
+```
+##                  2.5 %     97.5 %
+## (Intercept) 195.527476 228.421823
+## math_sc       5.784981   6.265545
+```
+
+
+
+
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

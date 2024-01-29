@@ -1,5 +1,5 @@
 ---
-title: "Week 2"
+title: "Week 3"
 draft: false
 date: "2020-07-21T00:00:00+01:00"
 output: html_document
@@ -7,7 +7,7 @@ menu:
   applied_regression:
     parent: Daily Plan
     weight: 1
-linktitle: "Week 2 - Bivariate Regression"
+linktitle: "Week 3 - Assumption Checking"
 toc: 
 type: docs
 weight: 1
@@ -15,23 +15,20 @@ weight: 1
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(warning = FALSE, message = FALSE, echo = FALSE)
 library(tidyverse)
-library(knitr)
-library(kableExtra)
-library(broom)
 ```
 
 
 
 
-The slides for Week Two can be found here:
-```{r WS2Slides}
-knitr::include_url('https://ericbrewe.com/slides/EDUC_847/EDUC_847_Week_2.html#1')
+The slides for Week 3 can be found here:
+```{r WS1Slides}
+knitr::include_url('https://ericbrewe.com/slides/EDUC_847/EDUC_847_Week_3.html#1')
 ```
 
 
 
 **Reading Assignment**
-Here is your reading assignment for Week 2
+Here is your reading assignment for Week 3
 
 Read Chapter 15 in Learning Statistics with R
 https://learningstatisticswithr.com/book/regression.html

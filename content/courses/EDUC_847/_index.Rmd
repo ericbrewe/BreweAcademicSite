@@ -59,7 +59,15 @@ There are lots of things that I hope you would learn: to use R tools to look at 
 * Interpreting Regression Output. 
 
 
+**Week Three Slides**
 
+[Week 3 Slides](<https://ericbrewe.com/courses/educ_847/educ_week_3/>)
+
+* Model Assumption Checking
+  * Normality of residuals, Linearity, homogeneity of variance, no bad outliers
+* Hypothesis Testing for the Linear Model
+* Hypothesis Testing for the coefficients
+* Effect Sizes for the coefficients
 
 ### What is beyond the scope?
 While I would love to say you'd be able to master doing regression in R in the short span of one quarter, you will not. I've spent a decade learning it and am proficient, but am constantly learning. 
