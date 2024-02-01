@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>EDUC 847 Winter 24</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Eric Brewe   Professor of Physics at Drexel University  " />
+    <script src="EDUC_847_Week_4_files/header-attrs/header-attrs.js"></script>
+    <link href="EDUC_847_Week_4_files/remark-css/default.css" rel="stylesheet" />
+    <link href="EDUC_847_Week_4_files/remark-css/metropolis.css" rel="stylesheet" />
+    <link rel="stylesheet" href="BreweSlides.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# EDUC 847 Winter 24
+]
+.subtitle[
+## Week 4 - Data for Linear Modeling
+]
+.author[
+### Eric Brewe <br> Professor of Physics at Drexel University <br>
+]
+.date[
+### 5 February 2024, last update: 2024-02-01
+]
+
+---
+
+
+
+
+
+
+
+class: center, middle
+
+# Let's start exploring our new dataset
+
+Start by getting the data into R
+
+
+
+
+
+```r
+#This loads the csv and saves it as a dataframe titled week_1_data
+
+sci_df &lt;- read_csv(here("data",
+                        "science_scores2.csv"))
+```
+
+
+---
+# Let's remember last week
+
+### We want to predict a science score from a math score. 
+
+```r
+*sci_mod &lt;- lm(sci ~ math_sc, data = sci_df)
+
+summary(sci_mod)
+```
+
+```
+## 
+## Call:
+## lm(formula = sci ~ math_sc, data = sci_df)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -1046.2  -362.0  -140.4   144.3  4657.9 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept) -279.474    167.378  -1.670   0.0957 .  
+## math_sc       15.967      2.478   6.445 3.15e-10 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 612.7 on 424 degrees of freedom
+##   (74 observations deleted due to missingness)
+## Multiple R-squared:  0.08922,	Adjusted R-squared:  0.08707 
+## F-statistic: 41.53 on 1 and 424 DF,  p-value: 3.154e-10
+```
+
+Note - we have a new dataset!
+
+---
+# Let's check some other variables
+
+## What about pre score?
+
+```r
+Mod2 &lt;- lm(sci ~ pre_sc, data = sci_df)
+summary(Mod2)
+```
+
+```
+## 
+## Call:
+## lm(formula = sci ~ pre_sc, data = sci_df)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -649.40  -50.95    8.69   50.72 1061.37 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)  178.935      9.786   18.29   &lt;2e-16 ***
+## pre_sc       429.168      4.872   88.08   &lt;2e-16 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 147.2 on 450 degrees of freedom
+##   (48 observations deleted due to missingness)
+## Multiple R-squared:  0.9452,	Adjusted R-squared:  0.9451 
+## F-statistic:  7759 on 1 and 450 DF,  p-value: &lt; 2.2e-16
+```
+
+---
+# Let's check on the assumptions
+
+### Normality of Residuals
+Residuals are distributed normally.
+
+### Linearity
+Predictor and Fitted are linearly related
+
+### Homogeneity of varicance
+The standard deviation of the residual is the same at all values of the Outcome
+
+### Uncorrelated predictors
+The correlations between predictor variables is small (We'll come back to this)
+
+### No bad outliers
+There aren't any individual data points that are really impacting our model
+
+---
+# Let's start with a scatter plot 
+![](EDUC_847_Week_4_files/figure-html/ScatterPlotWithResiduals-1.png)&lt;!-- --&gt;
+
+That doesn't look good, doesn't look normal
+---
+# Let's check the normality
+
+We can do a histogram of residuals
+
+.pull-left[
+![](EDUC_847_Week_4_files/figure-html/ResidualHist-1.png)&lt;!-- --&gt;
+
+]
+.pull-right[
+
+
+
+
+
+```r
+sci_mod_df %&gt;%
+  ggplot(aes(y = .resid)) +
+  geom_histogram() + 
+  theme_minimal() + 
+  coord_flip()
+```
+]
+
+definitely not normal distribution...
+
+
+
+---
+# Let's check the normality
+
+Also doesn't hurt to check the pre_score itself
+
+.pull-left[
+![](EDUC_847_Week_4_files/figure-html/pre_sc_Hist-1.png)&lt;!-- --&gt;
+]
+
+.pull-right[
+
+```r
+sci_mod_df %&gt;%
+  ggplot(aes(y = pre_sc)) +
+  geom_histogram() + 
+  theme_minimal() + 
+  coord_flip()
+```
+]
+
+
+definitely not normal distribution...
+Now What????
+
+
+---
+# Let's transform our data
+
+## When your data are not normally distributed, you can apply a transformation. 
+The most common transformation is a log transformation
+
+.pull-left[
+
+![](EDUC_847_Week_4_files/figure-html/LogTrans-1.png)&lt;!-- --&gt;
+
+]
+
+.pull-right[
+
+
+```r
+sci_mod_df %&gt;%
+  ggplot(aes(y = log(pre_sc))) +
+  geom_histogram() + 
+  theme_minimal() + 
+  coord_flip()
+```
+]
+---
+# Let's use the log transform in a model
+
+
+```r
+Mod3 &lt;- lm(sci ~ log(pre_sc), data = sci_df)
+
+summary(Mod3)
+```
+
+
+
+```
+## 
+## Call:
+## lm(formula = sci ~ log(pre_sc), data = sci_df)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -571.75 -212.78 -102.83   95.64 2887.15 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)   826.35      17.44   47.40   &lt;2e-16 ***
+## log(pre_sc)   533.34      18.28   29.18   &lt;2e-16 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 369.6 on 450 degrees of freedom
+##   (48 observations deleted due to missingness)
+## Multiple R-squared:  0.6542,	Adjusted R-squared:  0.6534 
+## F-statistic: 851.2 on 1 and 450 DF,  p-value: &lt; 2.2e-16
+```
+
+
+
+
+
+---
+# Let's interpret this new model
+
+
+```r
+summary(Mod3)
+```
+
+```
+## 
+## Call:
+## lm(formula = sci ~ log(pre_sc), data = sci_df)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -571.75 -212.78 -102.83   95.64 2887.15 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)   826.35      17.44   47.40   &lt;2e-16 ***
+## log(pre_sc)   533.34      18.28   29.18   &lt;2e-16 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 369.6 on 450 degrees of freedom
+##   (48 observations deleted due to missingness)
+## Multiple R-squared:  0.6542,	Adjusted R-squared:  0.6534 
+## F-statistic: 851.2 on 1 and 450 DF,  p-value: &lt; 2.2e-16
+```
+
+
+
+# Let's check the normality
+
+We can do a histogram of residuals for transformed data
+
+.pull-left[
+![](EDUC_847_Week_4_files/figure-html/LogResidualHist-1.png)&lt;!-- --&gt;
+
+]
+.pull-right[
+
+
+
+
+
+```r
+log_sci_mod_df %&gt;%
+  ggplot(aes(y = .resid)) +
+  geom_histogram() + 
+  theme_minimal() + 
+  coord_flip()
+```
+]
+
+
+
+---
+# Let's consider some other transforms
+
+## Another common transformation is to use Z-scores
+This makes it easy to compare coefficients
+
+
+```r
+Mod4 &lt;- lm(scale(sci) ~ scale(math_sc), data = sci_df)
+
+summary(Mod4)
+```
+
+```
+## 
+## Call:
+## lm(formula = scale(sci) ~ scale(math_sc), data = sci_df)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -1.5219 -0.5266 -0.2043  0.2099  6.7761 
+## 
+## Coefficients:
+##                Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)    -0.03709    0.04319  -0.859    0.391    
+## scale(math_sc)  0.27701    0.04298   6.445 3.15e-10 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 0.8913 on 424 degrees of freedom
+##   (74 observations deleted due to missingness)
+## Multiple R-squared:  0.08922,	Adjusted R-squared:  0.08707 
+## F-statistic: 41.53 on 1 and 424 DF,  p-value: 3.154e-10
+```
+Hey, notice that the t-value and the p value both stay the same as the first model!
+---
+# Let's deal with these missing data!
+
+
+```r
+summary(sci_df)
+```
+
+```
+##        id              gr            motiv            pre_sc        
+##  Min.   :10789   Min.   :1.000   Min.   : 37.39   Min.   : 0.05074  
+##  1st Qu.:34052   1st Qu.:2.000   1st Qu.: 65.01   1st Qu.: 0.50900  
+##  Median :54614   Median :3.000   Median : 73.25   Median : 0.98523  
+##  Mean   :54561   Mean   :2.988   Mean   : 73.20   Mean   : 1.44099  
+##  3rd Qu.:75198   3rd Qu.:4.000   3rd Qu.: 81.33   3rd Qu.: 1.75119  
+##  Max.   :99772   Max.   :5.000   Max.   :106.14   Max.   :10.89618  
+##                                  NA's   :115      NA's   :14        
+##     math_sc            sci        
+##  Min.   : 30.00   Min.   : 184.7  
+##  1st Qu.: 58.79   1st Qu.: 402.8  
+##  Median : 66.61   Median : 595.4  
+##  Mean   : 66.74   Mean   : 811.7  
+##  3rd Qu.: 74.59   3rd Qu.: 972.6  
+##  Max.   :101.33   Max.   :5755.3  
+##  NA's   :40       NA's   :34
+```
+
+
+Any thoughts?
+
+---
+# Let's deal with these missing data!
+
+## Here are some options
+
+- Hot Deck Replacement
+- Mean/Median Replacement
+- Regression Replacement
+- Multiple Imputation
+
+---
+# Let's look at the basics of Multiple Imputation
+ 
+ - Impute missing data (do this several/a bunch of times)
+ - Analyze all the new data sets
+ - Pool the results
+ 
+Sounds difficult, no?
+
+---
+# Let's try multiple imputation
+
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

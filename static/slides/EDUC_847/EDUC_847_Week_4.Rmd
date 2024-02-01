@@ -15,10 +15,8 @@ output:
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
 knitr::opts_chunk$set(warning = FALSE, message = FALSE)
-library(tidyverse) # load tidyverse package
-library(emoji) # load emoji package
+library(tidyverse)
 library(janitor)
-library(glmnet)
 library(haven)
 library(here)
 library(broom)
@@ -31,13 +29,13 @@ library(broom)
 
 class: center, middle
 
-# Let's start where we ended last class...Scatter Plots
+# Let's start exploring our new dataset
 
 Start by getting the data into R
 
 ```{r ReadDataforReal, echo=FALSE}
 
-week_1_data <- read_csv(here("static/slides/EDUC_847/data", "EDUC_847_Survey.csv"))
+sci_df <- read_csv(here("static/slides/EDUC_847/data", "science_scores2.csv"))
 
 ```
 
@@ -45,138 +43,38 @@ week_1_data <- read_csv(here("static/slides/EDUC_847/data", "EDUC_847_Survey.csv
 ```{r ReadData, eval=FALSE}
 #This loads the csv and saves it as a dataframe titled week_1_data
 
-week_1_data <- read_csv(here("static/slides/EDUC_847/data",
-                             "EDUC_847_Survey.csv"))
+sci_df <- read_csv(here("data",
+                        "science_scores2.csv"))
 
 ```
 
 
 ---
-# Let's start cleaning up.
+# Let's remember last week
 
-
-```{r CleanDataPipeline}
-
-week_1_data %>%
-  select(ID,Q2:Q6) %>%
-  filter(row_number() >3 ) %>%
-  mutate(across(c(Q2:Q3,Q5:Q6), as.numeric)) -> w1df  #<<
-  
-
-```
-
-
----
-# Let's remember what we did last week
-
-### Is there a relationship between length of book and estimates on weight of cow?
-
-.pull-left[
-### Making a scatter plot to explore
-```{r ScatterPlot2, fig.show= 'hide'}
-
-w1df %>%
-  select(Q5:Q6) %>%
-  ggplot(aes(x = Q5, y = Q6)) +
-  geom_point() + 
-  theme_minimal() + 
-  labs(x = "Pages", 
-       y = "Weight of Cow",
-       title = "Kick Ass Scatterplot!")
-
-```
-
-]
-
-.pull-right[
-```{r ref.label= 'ScatterPlot2', echo=FALSE}
-
-```
-
-]
-
-A **residual** is the distance between the Y value for each measurement, and the predicted Y value. 
-
-
-
----
-# Let's make a linear regression model
-
-
-### We want the estimated weight of the cow as predicted by the length of the book closest to the survey respondent. 
+### We want to predict a science score from a math score. 
 ```{r LinearRegression}
 
-Model1 <- lm(Q6 ~ Q5, data = w1df) #<<
+sci_mod <- lm(sci ~ math_sc, data = sci_df) #<<
 
-Model1
+summary(sci_mod)
 ```
 
+Note - we have a new dataset!
 
 ---
-# Let's dig into our model
+# Let's check some other variables
 
-```{r ModelInterp2}
+## What about pre score?
+```{r Model2}
 
-summary(Model1)
+Mod2 <- lm(sci ~ pre_sc, data = sci_df)
+summary(Mod2)
 
 ```
 
 ---
-# Let's think about this model...
-
-## F-Statistic = 0.02729 
-This is a ratio of the Model Sum of Squares vs. the Residual Sum of Squares
-
-## p = 0.8753
-This is the percent of time you would have to be willing to have a type one error (False Positive)
-
-## This model doesn't fit very well. 
-
----
-# Let's think about the Intercept
-
-## Intercept = 1668
-This tells us the average predicted weight of the cow. 
-
-
-## Standard Error = 723.6
-$SE = \frac{\sigma}{\sqrt{N}}$
-
-## t value = 2.3006
-$t = \frac{Intercept}{Standard Error} = \frac{1668.7}{723.6} = 2.03$
-
-## p = 0.0692
-Depending on our predetermined willingness to accept false positives, this tells us whether a result is "statistically significant". 
-
-It is not. 
----
-# Let's think about the Q5 coeff.
-
-## Q5 = 0.3001
-The average additional weight added for each additional page in the closet book. 
-
-
-## Standard Error = 1.8163
-$SE = \frac{\sigma}{\sqrt{N}}$
-
-## t value = 0.165
-$t = \frac{Intercept}{Standard Error} = \frac{.3001}{1.8163} = 0.165$
-
-## p = 0.8753
-Depending on our predetermined willingness to accept false positives, this tells us whether a result is "statistically significant". 
-
-It is not. 
----
-# Let's think about why this model is a failure
-
-## Maybe it is because we violated the assumptions?
-And what are those assumptions? 
-from https://learningstatisticswithr.com/book/regression.html#regressionassumptions
-
-
-
----
-# Let's think about why this model is a failure
+# Let's check on the assumptions
 
 ### Normality of Residuals
 Residuals are distributed normally.
@@ -194,46 +92,33 @@ The correlations between predictor variables is small (We'll come back to this)
 There aren't any individual data points that are really impacting our model
 
 ---
-# Let's check out those residuals...
-.pull-left[
+# Let's start with a scatter plot 
 ```{r ScatterPlotWithResiduals, echo=FALSE}
 
-mod_df <-augment(Model1)
+sci_mod_df <-augment(Mod2)
 
-mod_df %>%
-  ggplot(aes(x = Q5, y = Q6)) +
+sci_mod_df %>%
+  ggplot(aes(x = pre_sc, y = sci)) +
   geom_point() + 
   theme_minimal() + 
-  stat_smooth(method = lm, se = TRUE) +
-  geom_segment(aes(xend = Q5, yend= .fitted), color = "red", size = 0.2) +
-  labs(x = "Pages", 
-       y = "Weight of Cow",
-       title = "Kick Ass Scatterplot!")
+  stat_smooth(method = lm, se = TRUE)  +
+  geom_segment(aes(xend = pre_sc, yend= .fitted), color = "red", size = 0.2) +
+  labs(x = "Pre Score", 
+       y = "Science Score")
+
 
 ```
 
-]
-.pull-right[
-
-
-
-
-```{r ResidualCheck}
-
-augment(Model1) %>%
-  select(Q5:.resid) 
-```
-]
-
+That doesn't look good, doesn't look normal
 ---
-# Let's check the normality residuals...
+# Let's check the normality
 
-We can do a histogram of the residuals
+We can do a histogram of residuals
 
 .pull-left[
 ```{r ResidualHist, echo=FALSE }
 
-mod_df %>%
+sci_mod_df %>%
   ggplot(aes(y = .resid)) +
   geom_histogram() + 
   theme_minimal() + 
@@ -249,26 +134,133 @@ mod_df %>%
 
 
 ```{r ResidualCheck3, eval=FALSE}
-mod_df <- augment(Model1)
 
-mod_df %>%
+sci_mod_df %>%
   ggplot(aes(y = .resid)) +
   geom_histogram() + 
   theme_minimal() + 
-  coord_flip() 
+  coord_flip()
+
 ```
 ]
 
-Doesn't look normal!  Could confirm with a Shapiro-Wilk test...
+definitely not normal distribution...
+
+
 
 ---
-# Let's check the normality residuals...
+# Let's check the normality
 
-We can do a Q-Q plot
+Also doesn't hurt to check the pre_score itself
+
 .pull-left[
-```{r QQPlot, echo=FALSE }
+```{r pre_sc_Hist, echo=FALSE }
 
-plot(x = Model1, which = 2 )
+sci_mod_df %>%
+  ggplot(aes(y = pre_sc)) +
+  geom_histogram() + 
+  theme_minimal() + 
+  coord_flip()
+
+
+```
+]
+
+.pull-right[
+```{r pre_sc_HistR, eval=FALSE }
+
+sci_mod_df %>%
+  ggplot(aes(y = pre_sc)) +
+  geom_histogram() + 
+  theme_minimal() + 
+  coord_flip()
+
+
+```
+]
+
+
+definitely not normal distribution...
+Now What????
+
+
+---
+# Let's transform our data
+
+## When your data are not normally distributed, you can apply a transformation. 
+The most common transformation is a log transformation
+
+.pull-left[
+
+```{r LogTrans, echo= FALSE}
+
+sci_mod_df %>%
+  ggplot(aes(y =  log(pre_sc))) +
+  geom_histogram() + 
+  theme_minimal() + 
+  coord_flip()
+```
+
+]
+
+.pull-right[
+
+```{r LogTransR, eval= FALSE}
+
+sci_mod_df %>%
+  ggplot(aes(y = log(pre_sc))) +
+  geom_histogram() + 
+  theme_minimal() + 
+  coord_flip()
+```
+]
+---
+# Let's use the log transform in a model
+
+```{r LogTransformMod, eval = FALSE }
+
+Mod3 <- lm(sci ~ log(pre_sc), data = sci_df)
+
+summary(Mod3)
+
+```
+
+
+```{r LogTransformMod2, echo=FALSE }
+
+Mod3 <- lm(sci ~ log(pre_sc), data = sci_df)
+
+summary(Mod3)
+
+```
+
+
+
+
+
+---
+# Let's interpret this new model
+
+```{r}
+summary(Mod3)
+```
+
+
+
+# Let's check the normality
+
+We can do a histogram of residuals for transformed data
+
+.pull-left[
+```{r LogResidualHist, echo=FALSE }
+
+log_sci_mod_df <- augment(Mod3)
+
+log_sci_mod_df %>%
+  ggplot(aes(y = .resid)) +
+  geom_histogram() + 
+  theme_minimal() + 
+  coord_flip()
 
 
 ```
@@ -276,222 +268,71 @@ plot(x = Model1, which = 2 )
 ]
 .pull-right[
 
-```{r QQPlot2, eval=FALSE }
-
-plot(x = Model1, which = 2 )
 
 
-```
 
-## Should be a straight line
+```{r LogResidualCheck3, eval=FALSE}
 
-## Should have a slope = 1
-
-Not so much
-
-
-]
----
-# Let's check the linearity assumption
-
-We can do a scatter plot of the Outcome (Q6) vs. the Fitted (the result of the eqn. )
-.pull-left[
-```{r OutcomeVsFitted, echo=FALSE }
-
-plot(x = Model1, which = 1 )
-
+log_sci_mod_df %>%
+  ggplot(aes(y = .resid)) +
+  geom_histogram() + 
+  theme_minimal() + 
+  coord_flip()
 
 ```
-
-]
-.pull-right[
-```{r OutcomeVsFittedR, eval=FALSE }
-
-plot(x = Model1, which = 1 )
-
-
-```
-## Should be a straight line
-
-
-Not so much
-
-
-]
----
-# Let's check the homogeneity of variance assumption
-
-We can do a scatter plot of the standardized residuals vs. the Fitted values (the result of the eqn. )
-.pull-left[
-```{r StdResidualsVsFitted, echo=FALSE }
-
-plot(x = Model1, which = 3 )
-
-
-```
-
-]
-.pull-right[
-```{r StdResidualsVsFittedR, eval=FALSE }
-
-plot(x = Model1, which = 3 )
-
-
-```
-
-## Should be a straight horizontal line
-
-
-Not so much
-
-
-]
----
-# Let's check the no bad outliers assumption
-
-We can do a boxplot to get a sense
-.pull-left[
-```{r BoxPlot, echo=FALSE }
-
-w1df %>%
-  ggplot(aes(y = Q6)) +
-  geom_boxplot() +
-  theme_minimal()
-
-
-```
-
-]
-.pull-right[
-```{r BoxPlotR, eval=FALSE }
-
-w1df %>%
-  ggplot(aes(y = Q6)) +
-  geom_boxplot() +
-  theme_minimal()
-
-
-```
-
-## Note the one way up above might be an outlier
-
-
-We should confirm. 
-
-
 ]
 
+
+
 ---
-# Let's check the no bad outliers assumption
+# Let's consider some other transforms
 
-We can check the leverage of the model
-.pull-left[
-```{r Leverage, echo=FALSE }
+## Another common transformation is to use Z-scores
+This makes it easy to compare coefficients
 
-plot(Model1, which = 5)
+```{r ZScTransformMod }
 
+Mod4 <- lm(scale(sci) ~ scale(math_sc), data = sci_df)
+
+summary(Mod4)
+
+```
+Hey, notice that the t-value and the p value both stay the same as the first model!
+---
+# Let's deal with these missing data!
+
+```{r}
+summary(sci_df)
 
 ```
 
-]
-.pull-right[
-```{r Leverage2, eval=FALSE }
 
-plot(Model1, which = 5)
+Any thoughts?
+
+---
+# Let's deal with these missing data!
+
+## Here are some options
+
+- Hot Deck Replacement
+- Mean/Median Replacement
+- Regression Replacement
+- Multiple Imputation
+
+---
+# Let's look at the basics of Multiple Imputation
+ 
+ - Impute missing data (do this several/a bunch of times)
+ - Analyze all the new data sets
+ - Pool the results
+ 
+Sounds difficult, no?
+
+---
+# Let's try multiple imputation
+
+```{r}
 
 
 ```
-
-## Looks like observations 5 might have much larger leverage?
-
-
-We should confirm. 
-
-
-]
----
-# Let's revisit our model
-
-## Maybe, just maybe this model is junk because...
-
-There is no good reason to think that the number of pages in the book closest to you when you answered this survey has any bearing on how much you would estimate a cow to weigh!  
-
----
-# Let's try this with a different model 
-
-```{r ReadData2}
-
-
-w3df <- read_csv(here("static/slides/EDUC_847/data",
-                             "science_scores.csv"))
-
-
-
-sci_model <- lm(sci ~ math_sc, data = w3df)
-
-
-```
----
-# Let's try this with a different model 
-
-```{r summary_sci_model}
-
-summary(sci_model)
-
-```
----
-# Let's look at hypothesis testing for the model
-
-## Statistical significance tells us whether or not we can reject the null hypothesis
-
-1. What is the null model?
-2. What is our tolerance for type 1 error? (p-value)
-3. Is this model different from the null model? 
-
----
-# Let's look at hypothesis testing for the model
-
-## Statistical significance tells us whether or not we can reject the null hypothesis
-
-1. What is the null model?  The intercept only model. 
-2. What is our tolerance for type 1 error? (p-value) Typically 95%
-3. Is this model different from the null model? Yes.  We know because the F-statistic is very large, and the p- value is less than 0.05 (5%).
-
-
----
-# Let's look at hypothesis testing for the coef
-
-## Statistical significance tells us whether or not we can reject the null hypothesis
-
-1. What is the null model?  
-2. What is our tolerance for type 1 error? (p-value) 
-3. Is this model different from the null model? 
-
----
-# Let's look at hypothesis testing for the coefficient
-
-## Statistical significance tells us whether or not we can reject the null hypothesis
-
-1. What is the null model?  the coefficient = 0
-2. What is our tolerance for type 1 error? (p-value) typically 95%
-3. Is this model different from the null model? Yes!  The t-value for the math_sc is 49.27, p << 0.05
-
----
-# Let's look at effect sizes on the coef
-
-## Statistical significance tells us whether or not we can reject the null hypothesis
-
-## Effect size tells if this is meaningful
-
-For a coefficient, we first establish a tolerance for false positives (95%), then...
-
-$C.I. = b \pm t_{crit} * S.E.(b)$
-
-```{r coeff_conf}
-
-confint(sci_model, level = 0.95)
-```
-
-
-
 
