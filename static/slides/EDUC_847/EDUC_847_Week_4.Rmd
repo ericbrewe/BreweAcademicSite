@@ -20,7 +20,7 @@ library(janitor)
 library(haven)
 library(here)
 library(broom)
-
+library(mice)
 
 ```
 
@@ -246,7 +246,7 @@ summary(Mod3)
 ```
 
 
-
+---
 # Let's check the normality
 
 We can do a histogram of residuals for transformed data
@@ -331,8 +331,54 @@ Sounds difficult, no?
 ---
 # Let's try multiple imputation
 
-```{r}
+## First, it works best with data that are MCAR or MAR
 
+```{r visualizeMD}
+
+md.pattern(sci_df)
 
 ```
 
+---
+# Let's go ahead and impute
+
+First, we will set up a dataset with 5 iterations of the imputed data. 
+
+
+```{r imputeMissingData}
+
+sci_df_imp <- mice(sci_df, maxit = 5, m = 5, seed = 327)
+
+```
+
+---
+# Let's plot our imputed data 
+
+We should look at how the new data are distributed using a stripplot. 
+```{r plotImputedMathScore}
+stripplot(sci_df_imp, math_sc, xlab = "imputation number")
+```
+
+
+---
+# Let's use this in a linear model
+
+```{r ModelWithImputedData}
+
+sci_mod_imp <- with(sci_df_imp, lm(sci~ math_sc))
+
+summary(pool(sci_mod_imp))
+
+```
+
+---
+# Let's review...
+
+We spent more time dealing with the underlying data for linear modeling
+
+We can...
+ - transform data when it is not normally distributed
+   - Log-Transform
+   - Z-scores
+ - visualize missingness in our dataset
+ - use multiple imputation with chained equations. 

@@ -1,0 +1,38 @@
+---
+title: "Week 4"
+draft: false
+date: "2020-07-21T00:00:00+01:00"
+output: html_document
+menu:
+  applied_regression:
+    parent: Daily Plan
+    weight: 1
+linktitle: "Week 4 - Data for Linear Modeling"
+toc: 
+type: docs
+weight: 1
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE, echo = FALSE)
+library(tidyverse)
+```
+
+
+
+
+The slides for Week 4 can be found here:
+```{r WS1Slides}
+knitr::include_url('https://ericbrewe.com/slides/EDUC_847/EDUC_847_Week_4.html#1')
+```
+
+
+
+**Reading Assignment**
+Here is your reading assignment for Week 4
+
+Read  Azur, M. J., Stuart, E. A., Frangakis, C., & Leaf, P. J. (2011). Multiple imputation by chained equations: what is it and how does it work?. International journal of methods in psychiatric research, 20(1), 40-49
+https://onlinelibrary.wiley.com/doi/10.1002/mpr.329
+
+
+**Additional Resources**
+If you are struggling with R, I think that the introduction chapters of *Learning Statistics with R* are really useful, I suggest looking at chapters 3-8: https://learningstatisticswithr.com/book/part-ii-an-introduction-to-r.html 

@@ -25,10 +25,10 @@ The main idea is to have some time learning about different aspects of regressio
 |Intro to R and Plotting| 9 January 2024|
 |No Class - MLK |15 January 24|
 |Bivariate Linear Regression |22 January 24|
-|Data transformations | 29 January 24|
-|Multiple Regression |5 Februry 24|
-|Model Selection and Evaluation |12 Februry 24|
-|Multiple Regression w/ Interaction Effects |19 Februry 24|
+|Assumption Checking | 29 January 24|
+|Data transformations |5 Februry 24|
+|Multiple Regression |12 Februry 24|
+|Model Selection and Evaluation |26 Februry 24|
 |Written Assignment \#1 Reviews |26 Februry 24|
 |Logistic Regression |4 March 24|
 |TBD - Choose your own adventure |11 March 24|
@@ -68,6 +68,18 @@ There are lots of things that I hope you would learn: to use R tools to look at 
 * Hypothesis Testing for the Linear Model
 * Hypothesis Testing for the coefficients
 * Effect Sizes for the coefficients
+
+
+**Week Four Slides**
+
+[Week 4 Slides](<https://ericbrewe.com/courses/educ_847/educ_week_4/>)
+
+* transform data when it is not normally distributed
+  * Log-Transform
+  * Z-scores
+* visualize missingness in our dataset
+* use multiple imputation with chained equations.
+
 
 ### What is beyond the scope?
 While I would love to say you'd be able to master doing regression in R in the short span of one quarter, you will not. I've spent a decade learning it and am proficient, but am constantly learning. 
