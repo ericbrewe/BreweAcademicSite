@@ -80,6 +80,9 @@ There are lots of things that I hope you would learn: to use R tools to look at 
 * visualize missingness in our dataset
 * use multiple imputation with chained equations.
 
+**Assignment One**
+[Assignment One](<https://docs.google.com/document/d/1SFvbDpLrjXMllgmqS9WowtQz6Qz_6Ga8DJ0rvSaiQUE/edit?usp=sharing>)
+
 
 ### What is beyond the scope?
 While I would love to say you'd be able to master doing regression in R in the short span of one quarter, you will not. I've spent a decade learning it and am proficient, but am constantly learning. 
