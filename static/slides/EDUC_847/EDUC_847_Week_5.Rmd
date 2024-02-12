@@ -1,8 +1,8 @@
 ---
 title: "EDUC 847 Winter 24"
-subtitle: Week 4 - Data for Linear Modeling
+subtitle: Week 5 - Multiple Regression
 author: 'Eric Brewe <br> Professor of Physics at Drexel University <br>'
-date: "5 February 2024, last update: `r Sys.Date()`"
+date: "12 February 2024, last update: `r Sys.Date()`"
 output: 
   xaringan::moon_reader:
     css: [default, metropolis, "BreweSlides.css"]
@@ -21,21 +21,21 @@ library(haven)
 library(here)
 library(broom)
 library(mice)
+library(car)
 
 ```
 
 
 
 
-class: center, middle
 
-# Let's start wit
+# Let's start with a complete dataset
 
 Start by getting the data into R
 
 ```{r ReadDataforReal, echo=FALSE}
 
-sci_df <- read_csv(here("static/slides/EDUC_847/data", "science_scores2.csv"))
+sci_df <- read_csv(here("static/slides/EDUC_847/data", "science_scores2_Complete.csv"))
 
 ```
 
@@ -44,7 +44,7 @@ sci_df <- read_csv(here("static/slides/EDUC_847/data", "science_scores2.csv"))
 #This loads the csv and saves it as a dataframe titled week_1_data
 
 sci_df <- read_csv(here("data",
-                        "science_scores2.csv"))
+                        "science_scores2_Complete.csv"))
 
 ```
 
@@ -55,146 +55,21 @@ sci_df <- read_csv(here("data",
 ### We want to predict a science score from a math score. 
 ```{r LinearRegression}
 
-sci_mod <- lm(sci ~ math_sc, data = sci_df) #<<
+sci_mod_math <- lm(sci ~ math_sc, data = sci_df) #<<
 
-summary(sci_mod)
+summary(sci_mod_math)
 ```
 
-Note - we have a new dataset!
+Note - we have a new dataset, nothing is missing!
 
 ---
-# Let's check some other variables
-
-## What about pre score?
-```{r Model2}
-
-Mod2 <- lm(sci ~ pre_sc, data = sci_df)
-summary(Mod2)
-
-```
-
----
-# Let's check on the assumptions
-
-### Normality of Residuals
-Residuals are distributed normally.
-
-### Linearity
-Predictor and Fitted are linearly related
-
-### Homogeneity of varicance
-The standard deviation of the residual is the same at all values of the Outcome
-
-### Uncorrelated predictors
-The correlations between predictor variables is small (We'll come back to this)
-
-### No bad outliers
-There aren't any individual data points that are really impacting our model
-
----
-# Let's start with a scatter plot 
-```{r ScatterPlotWithResiduals, echo=FALSE}
-
-sci_mod_df <-augment(Mod2)
-
-sci_mod_df %>%
-  ggplot(aes(x = pre_sc, y = sci)) +
-  geom_point() + 
-  theme_minimal() + 
-  stat_smooth(method = lm, se = TRUE)  +
-  geom_segment(aes(xend = pre_sc, yend= .fitted), color = "red", size = 0.2) +
-  labs(x = "Pre Score", 
-       y = "Science Score")
-
-
-```
-
-That doesn't look good, doesn't look normal
----
-# Let's check the normality
-
-We can do a histogram of residuals
-
-.pull-left[
-```{r ResidualHist, echo=FALSE }
-
-sci_mod_df %>%
-  ggplot(aes(y = .resid)) +
-  geom_histogram() + 
-  theme_minimal() + 
-  coord_flip()
-
-
-```
-
-]
-.pull-right[
-
-
-
-
-```{r ResidualCheck3, eval=FALSE}
-
-sci_mod_df %>%
-  ggplot(aes(y = .resid)) +
-  geom_histogram() + 
-  theme_minimal() + 
-  coord_flip()
-
-```
-]
-
-definitely not normal distribution...
-
-
-
----
-# Let's check the normality
-
-Also doesn't hurt to check the pre_score itself
-
-.pull-left[
-```{r pre_sc_Hist, echo=FALSE }
-
-sci_mod_df %>%
-  ggplot(aes(y = pre_sc)) +
-  geom_histogram() + 
-  theme_minimal() + 
-  coord_flip()
-
-
-```
-]
-
-.pull-right[
-```{r pre_sc_HistR, eval=FALSE }
-
-sci_mod_df %>%
-  ggplot(aes(y = pre_sc)) +
-  geom_histogram() + 
-  theme_minimal() + 
-  coord_flip()
-
-
-```
-]
-
-
-definitely not normal distribution...
-Now What????
-
-
----
-# Let's transform our data
-
-## When your data are not normally distributed, you can apply a transformation. 
-The most common transformation is a log transformation
+# Let's remember we transformed pre_sc
 
 .pull-left[
 
 ```{r LogTrans, echo= FALSE}
 
-sci_mod_df %>%
+sci_df %>%
   ggplot(aes(y =  log(pre_sc))) +
   geom_histogram() + 
   theme_minimal() + 
@@ -207,7 +82,7 @@ sci_mod_df %>%
 
 ```{r LogTransR, eval= FALSE}
 
-sci_mod_df %>%
+sci_df %>%
   ggplot(aes(y = log(pre_sc))) +
   geom_histogram() + 
   theme_minimal() + 
@@ -219,35 +94,80 @@ sci_mod_df %>%
 
 ```{r LogTransformMod, eval = FALSE }
 
-Mod3 <- lm(sci ~ log(pre_sc), data = sci_df)
+sci_mod_pre <- lm(sci ~ log(pre_sc), data = sci_df)
 
-summary(Mod3)
+summary(sci_mod_pre)
 
 ```
 
 
 ```{r LogTransformMod2, echo=FALSE }
 
-Mod3 <- lm(sci ~ log(pre_sc), data = sci_df)
+sci_mod_pre <- lm(sci ~ log(pre_sc), data = sci_df)
 
-summary(Mod3)
+summary(sci_mod_pre)
 
 ```
 
-
-
-
-
 ---
-# Let's interpret this new model
+# Let's reflect
 
 ```{r}
-summary(Mod3)
+
+tidy(summary(sci_mod_math))
+
+tidy(summary(sci_mod_pre))
+```
+
+
+
+
+---
+# Let's put them both in the model
+
+```{r MRLogTransformMod, eval = FALSE }
+
+sci_mod_pre_math <- lm(sci ~ math_sc + log(pre_sc), data = sci_df)
+
+summary(sci_mod_pre_math)
+
+```
+
+
+```{r MRLogTransformMod2, echo=FALSE }
+
+sci_mod_pre_math <- lm(sci ~ math_sc + log(pre_sc), data = sci_df)
+
+summary(sci_mod_pre_math)
+
+```
+
+---
+# Let's interpret
+```{r MRLogTransformMod3, echo=FALSE }
+
+summary(sci_mod_pre_math)
+
+
+
 ```
 
 
 ---
-# Let's check the normality
+# Let's interpret graphically
+
+```{r AddedVariablePlots}
+
+avPlots(sci_mod_pre_math)
+
+
+```
+
+---
+# Let's decide, is it a better model?
+
+
+
 
 We can do a histogram of residuals for transformed data
 
