@@ -22,6 +22,11 @@ library(here)
 library(broom)
 library(mice)
 library(car)
+library(jtools)
+library(kableExtra)
+library(broom.mixed)
+library(emdi)
+library(interactions)
 
 ```
 
@@ -35,7 +40,7 @@ Start by getting the data into R
 
 ```{r ReadDataforReal, echo=FALSE}
 
-sci_df <- read_csv(here("static/slides/EDUC_847/data", "science_scores2_Complete.csv"))
+sci_df <- read_csv(here("static/slides/EDUC_847/data", "science_scores.csv"))
 
 ```
 
@@ -44,7 +49,7 @@ sci_df <- read_csv(here("static/slides/EDUC_847/data", "science_scores2_Complete
 #This loads the csv and saves it as a dataframe titled week_1_data
 
 sci_df <- read_csv(here("data",
-                        "science_scores2_Complete.csv"))
+                        "science_scores.csv"))
 
 ```
 
@@ -57,88 +62,73 @@ sci_df <- read_csv(here("data",
 
 sci_mod_math <- lm(sci ~ math_sc, data = sci_df) #<<
 
-summary(sci_mod_math)
+tidy(summary(sci_mod_math))
 ```
 
 Note - we have a new dataset, nothing is missing!
 
+
+
 ---
-# Let's remember we transformed pre_sc
+# Let's use motivation in a model
 
-.pull-left[
+```{r MotivMod, eval = FALSE }
 
-```{r LogTrans, echo= FALSE}
+sci_mod_motiv <- lm(sci ~ motiv, data = sci_df)
 
-sci_df %>%
-  ggplot(aes(y =  log(pre_sc))) +
-  geom_histogram() + 
-  theme_minimal() + 
-  coord_flip()
-```
+tidy(sci_mod_motiv)
 
-]
-
-.pull-right[
-
-```{r LogTransR, eval= FALSE}
-
-sci_df %>%
-  ggplot(aes(y = log(pre_sc))) +
-  geom_histogram() + 
-  theme_minimal() + 
-  coord_flip()
-```
-]
----
-# Let's use the log transform in a model
-
-```{r LogTransformMod, eval = FALSE }
-
-sci_mod_pre <- lm(sci ~ log(pre_sc), data = sci_df)
-
-summary(sci_mod_pre)
+glance(sci_mod_motiv)
 
 ```
 
 
-```{r LogTransformMod2, echo=FALSE }
+```{r MotivMod2, echo=FALSE }
 
-sci_mod_pre <- lm(sci ~ log(pre_sc), data = sci_df)
+sci_mod_motiv <- lm(sci ~ motiv, data = sci_df)
 
-summary(sci_mod_pre)
+tidy(summary(sci_mod_motiv))
+
+glance(sci_mod_motiv)
 
 ```
 
 ---
 # Let's reflect
 
-```{r}
+```{r CompareModels}
 
-tidy(summary(sci_mod_math))
+tidy(sci_mod_math)
 
-tidy(summary(sci_mod_pre))
+
+tidy(sci_mod_motiv)
+
 ```
 
 
 
 
 ---
-# Let's put them both in the model
+# Let's try something new
 
-```{r MRLogTransformMod, eval = FALSE }
+What if we put them both in the model?
 
-sci_mod_pre_math <- lm(sci ~ math_sc + log(pre_sc), data = sci_df)
+```{r Model_Math_Motiv, eval = FALSE }
 
-summary(sci_mod_pre_math)
+sci_mod_motiv_math <- lm(sci ~ math_sc + motiv, data = sci_df)
+
+tidy(sci_mod_motiv_math)
+glance(sci_mod_motiv_math)
 
 ```
 
 
-```{r MRLogTransformMod2, echo=FALSE }
+```{r Model_Math_Motiv2, echo = FALSE }
 
-sci_mod_pre_math <- lm(sci ~ math_sc + log(pre_sc), data = sci_df)
+sci_mod_motiv_math <- lm(sci ~ math_sc + motiv, data = sci_df)
 
-summary(sci_mod_pre_math)
+tidy(sci_mod_motiv_math)
+glance(sci_mod_motiv_math)
 
 ```
 
@@ -146,7 +136,7 @@ summary(sci_mod_pre_math)
 # Let's interpret
 ```{r MRLogTransformMod3, echo=FALSE }
 
-summary(sci_mod_pre_math)
+summary(sci_mod_motiv_math)
 
 
 
@@ -158,147 +148,226 @@ summary(sci_mod_pre_math)
 
 ```{r AddedVariablePlots}
 
-avPlots(sci_mod_pre_math)
+avPlots(sci_mod_motiv_math)
 
 
 ```
 
+
+---
+# Let's look at these coefficients
+
+```{r CoefficientPlots}
+
+plot_summs(sci_mod_motiv_math)
+
+
+```
+---
+# Let's look at these coefficients
+
+```{r CoefficientPlotsCI}
+
+plot_summs(sci_mod_motiv_math, inner_ci_level = 0.9)
+
+
+```
 ---
 # Let's decide, is it a better model?
 
+We have a few options...
 
-
-
-We can do a histogram of residuals for transformed data
-
-.pull-left[
-```{r LogResidualHist, echo=FALSE }
-
-log_sci_mod_df <- augment(Mod3)
-
-log_sci_mod_df %>%
-  ggplot(aes(y = .resid)) +
-  geom_histogram() + 
-  theme_minimal() + 
-  coord_flip()
-
-
-```
-
-]
-.pull-right[
-
-
-
-
-```{r LogResidualCheck3, eval=FALSE}
-
-log_sci_mod_df %>%
-  ggplot(aes(y = .resid)) +
-  geom_histogram() + 
-  theme_minimal() + 
-  coord_flip()
-
-```
-]
-
-
+- Look at the 	$R^{2}$
+- Look at the adjusted $R^{2}$
+  - adj $R^{2} = 1 - \frac{SS_{res}}{SS_{tot}}*\frac{N-1}{N-K-1}$
+- Akaike information criteria
+  - $AIC = \frac{SS_{res}}{\sigma} + 2K$
+    - Lower is better!
+  - to access AIC can use the step function in the emdi package
+  
 
 ---
-# Let's consider some other transforms
+# Let's look at AIC
 
-## Another common transformation is to use Z-scores
-This makes it easy to compare coefficients
 
-```{r ZScTransformMod }
+To do this, we start with the full model and remove variables and recalculate the AIC. This is called backward selection. 
 
-Mod4 <- lm(scale(sci) ~ scale(math_sc), data = sci_df)
+```{r AIC_L, eval=FALSE}
 
-summary(Mod4)
-
-```
-Hey, notice that the t-value and the p value both stay the same as the first model!
----
-# Let's deal with these missing data!
-
-```{r}
-summary(sci_df)
+step(sci_mod_motiv_math, 
+     direction = "backward")
 
 ```
 
 
-Any thoughts?
-
 ---
-# Let's deal with these missing data!
-
-## Here are some options
-
-- Hot Deck Replacement
-- Mean/Median Replacement
-- Regression Replacement
-- Multiple Imputation
-
----
-# Let's look at the basics of Multiple Imputation
- 
- - Impute missing data (do this several/a bunch of times)
- - Analyze all the new data sets
- - Pool the results
- 
-Sounds difficult, no?
-
----
-# Let's try multiple imputation
-
-## First, it works best with data that are MCAR or MAR
-
-```{r visualizeMD}
-
-md.pattern(sci_df)
-
-```
-
----
-# Let's go ahead and impute
-
-First, we will set up a dataset with 5 iterations of the imputed data. 
+# Let's look at AIC
 
 
-```{r imputeMissingData}
+```{r AIC_R, echo=FALSE}
 
-sci_df_imp <- mice(sci_df, maxit = 5, m = 5, seed = 327)
+step(sci_mod_motiv_math, direction = "backward")
 
-```
 
----
-# Let's plot our imputed data 
-
-We should look at how the new data are distributed using a stripplot. 
-```{r plotImputedMathScore}
-stripplot(sci_df_imp, math_sc, xlab = "imputation number")
 ```
 
 
 ---
-# Let's use this in a linear model
+# Let's compare models graphically
 
-```{r ModelWithImputedData}
+```{r CompareModelsGr}
 
-sci_mod_imp <- with(sci_df_imp, lm(sci~ math_sc))
+plot_summs(sci_mod_motiv, sci_mod_motiv_math, inner_ci_level = 0.9)
+```
 
-summary(pool(sci_mod_imp))
+---
+# Let's compare statistically
+
+We saw that the AIC went down, but more complicated models are typically worse (prone to overfitting, harder to interpret, etc...) Is there a way to compare the models statistically so we can decide if it is worth it to use the more complicated model. We will compare with an ANOVA
+
+We will compare the model with the motivation score as compared to the model with just the math score.
+
+
+```{r AnovaModels}
+
+anova(sci_mod_math, sci_mod_motiv_math)
+
+```
+
+
+---
+# Let's try more variables
+
+What about the group variable? Maybe some groups differ on math, motivation, and science score...
+
+```{r sci_mod_math_motiv_group}
+
+sci_mod_motiv_math_gr <- lm(sci~ math_sc + motiv + gr , data = sci_df)
+
+tidy(sci_mod_motiv_math_gr)
+```
+
+
+---
+# Let's try more variables
+
+What about the group variable? Maybe some groups differ on math, motivation, and science score...
+
+```{r sci_mod_math_motiv_group_graph}
+
+plot_summs(sci_mod_motiv, 
+           sci_mod_motiv_math, 
+           sci_mod_motiv_math_gr, inner_ci_level = 0.9)
+```
+
+---
+# Let's dummy code
+
+So, the main idea here is that we can see that group might matter...but we don't know which group. So let's set up separate variables for each group. 
+
+```{r DummyCoding}
+
+sci_df %>%
+  mutate(Gr1 = case_when(gr == 1 ~ 1, 
+                         gr != 1 ~0))  %>%
+  head(., 20)
+```
+
+
+---
+# Let's dummy code
+
+Now extend out to all groups and assign to new dataframe
+
+```{r DummyCoding2}
+
+sci_df %>%
+  mutate(Gr1 = case_when(gr == 1 ~ 1, 
+                         gr != 1 ~0))  %>%
+  mutate(Gr2 = case_when(gr == 2 ~ 1, 
+                         gr != 2 ~0)) %>%
+  mutate(Gr3 = case_when(gr == 3 ~ 1, 
+                         gr != 3 ~0)) %>%
+  mutate(Gr4 = case_when(gr == 4 ~ 1, 
+                         gr != 4 ~0)) %>%
+  mutate(Gr5 = case_when(gr == 5 ~ 1, 
+                         gr != 5 ~0)) -> sci_df_groups
+
+```
+
+---
+# Let's include the groups in a model
+
+Need to use the new dataframe and add all the different groups
+
+```{r sci_mod_motiv_math_groups}
+
+sci_mod_motiv_math_groups <- lm(sci~ math_sc + 
+                                     motiv + 
+                                     Gr1 +
+                                     Gr2 +
+                                     Gr3 +
+                                     Gr4 +
+                                     Gr5 , data = sci_df_groups)
+```
+
+
+---
+# Let's include the groups in a model
+
+```{r sci_mod_motiv_math_groups_summary}
+
+summary(sci_mod_motiv_math_groups)
+
+
+```
+
+
+
+---
+# Let's explore interactions
+
+What if a student's motivation is somehow connected to their math score?
+
+We should look for interactions...
+
+```{r Interactions}
+sci_mod_motiv_math_interactions <- lm(sci~ math_sc*motiv , data = sci_df)
+
+summary(sci_mod_motiv_math_interactions)
+
+```
+---
+# Let's plot this...
+
+There are two ways, first, we can plot out the coefficients like we have done before...
+
+```{r InteractionsPlot1 }
+
+plot_summs(sci_mod_motiv_math_interactions, inner_ci_level = 0.9)
+
+```
+
+---
+# Let's plot this...
+
+There are two ways, or we can use the interact_plot
+
+```{r InteractionsPlot2 }
+
+interact_plot(model = sci_mod_motiv_math_interactions, pred =  math_sc, modx = motiv)
 
 ```
 
 ---
 # Let's review...
 
-We spent more time dealing with the underlying data for linear modeling
+We spent today looking at how to 
 
 We can...
- - transform data when it is not normally distributed
-   - Log-Transform
-   - Z-scores
- - visualize missingness in our dataset
- - use multiple imputation with chained equations. 
+ - run a multiple regression
+ - interpret a multiple regression 
+ - consider categorical variables
+ - dummy code for categorical variables
+ - visualize regression coefficients
+ - handle interaction terms

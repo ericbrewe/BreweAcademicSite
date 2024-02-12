@@ -83,6 +83,16 @@ There are lots of things that I hope you would learn: to use R tools to look at 
 **Assignment One**
 [Assignment One](<https://docs.google.com/document/d/1SFvbDpLrjXMllgmqS9WowtQz6Qz_6Ga8DJ0rvSaiQUE/edit?usp=sharing>)
 
+**Week 5**
+
+[Week 5 Slides](<https://ericbrewe.com/courses/educ_847/educ_week_5/>)
+
+*run a multiple regression
+*interpret a multiple regression
+*consider categorical variables
+*dummy code for categorical variables
+*visualize regression coefficients
+*handle interaction terms
 
 ### What is beyond the scope?
 While I would love to say you'd be able to master doing regression in R in the short span of one quarter, you will not. I've spent a decade learning it and am proficient, but am constantly learning. 
