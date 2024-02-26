@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.7.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Eric Brewe">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="2023 PEER Advanced Field School on Social Network Analysis">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://ericbrewe.netlify.com/courses/peer_network_school_23/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122962724-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           document.location = url;
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target);  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-122962724-1', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+
+  
+  <link rel="alternate" href="/courses/peer_network_school_23/index.xml" type="application/rss+xml" title="Eric Brewe Academic">
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png">
+
+  <link rel="canonical" href="https://ericbrewe.netlify.com/courses/peer_network_school_23/">
+
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@ericbrewe">
+  <meta property="twitter:creator" content="@ericbrewe">
+  
+  <meta property="og:site_name" content="Eric Brewe Academic">
+  <meta property="og:url" content="https://ericbrewe.netlify.com/courses/peer_network_school_23/">
+  <meta property="og:title" content="PEER Network School 2023 | Eric Brewe Academic">
+  <meta property="og:description" content="2023 PEER Advanced Field School on Social Network Analysis"><meta property="og:image" content="img/map[gravatar:%!s(bool=false) shape:circle]">
+  <meta property="twitter:image" content="img/map[gravatar:%!s(bool=false) shape:circle]"><meta property="og:locale" content="en-us">
+  
+    <meta property="og:updated_time" content="2020-07-20T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>PEER Network School 2023 | Eric Brewe Academic</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Eric Brewe Academic</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Eric Brewe Academic</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#publications"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/courses/"><span>Courses</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+            
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://goo.gl/Wpw7Xi" target="_blank" rel="noopener"><span>CV</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item">
+        <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+
+  
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" placeholder="Search..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+
+  
+  
+  
+  
+  <div class="docs-toc-item active">
+    <a class="docs-toc-link" href="/courses/peer_network_school_23/">PEER Network School</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/peer_network_school_23/day1peer/">Daily Plan</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/peer_network_school_23/day1peer/">Day 1 - Theory and Data</a>
+      </li>
+      
+      <li >
+        <a href="/courses/peer_network_school_23/day2peer/">Day 2 - Individuals within networks</a>
+      </li>
+      
+      <li >
+        <a href="/courses/peer_network_school_23/day3peer/">Day 3 - Properties of whole networks</a>
+      </li>
+      
+      <li >
+        <a href="/courses/peer_network_school_23/day4peer/">Day 4 - Network models</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          <h1>PEER Network School 2023</h1>
+
+          <div class="article-style">
+            
+
+
+<p>Welcome to this PEER Advanced Network School. First, thanks to Scott Franklin, Ellie Sayre, Mary Bridget Kustusch and the PEER team for supporting this field school!</p>
+<div id="the-plan" class="section level3">
+<h3>The Plan</h3>
+<p>The main idea is to have some time learning about different aspects of Social Network Analysis, and to actually focus on doing the analyses. We will spend the mornings working on learning aspects of SNA, and then the afternoons will be working time, where we actually try to carry out some of the types of analyses on your own data.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Topics</th>
+<th>Date</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Network Theory and Data</td>
+<td>26 June 2023</td>
+</tr>
+<tr class="even">
+<td>Individuals within networks</td>
+<td>27 June 2023</td>
+</tr>
+<tr class="odd">
+<td>Properties of whole networks</td>
+<td>28 June 2023</td>
+</tr>
+<tr class="even">
+<td>Network models</td>
+<td>29 June 2023</td>
+</tr>
+<tr class="odd">
+<td>Projects</td>
+<td>30 June 2023</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="what-might-you-learn" class="section level3">
+<h3>What might you learn?</h3>
+<p>There are lots of things that I hope you would learn: to look at the complexity of Social Networks, to use R tools to look at networks, to read code, to write code, to find that you are not afraid (and actually like) to analyze data with R. By the end of all three sessions here are things I think you should be able to do after participating in each of the workshops:</p>
+<p><strong>Day One</strong></p>
+<p><a href="https://ericbrewe.com/slides/PEER_network_school_2023/PEER_network_theory.html#1">Day 1 Slides</a></p>
+<ul>
+<li>Import Data into R</li>
+<li>Clean data and prepare data for SNA</li>
+<li>Organize data for SNA</li>
+<li>Vizualize data</li>
+</ul>
+<p><strong>Day Two</strong></p>
+<p><a href="https://ericbrewe.com/slides/PEER_network_school_2023/PEER_Individuals_Networks.html#1">Day 2 Slides</a></p>
+<ul>
+<li>Understand different centrality metrics</li>
+<li>Plotting networks and incorporating centrality</li>
+</ul>
+<p><strong>Day Three</strong></p>
+<p><a href="https://ericbrewe.com/slides/PEER_network_school_2023/PEER_whole_networks.html#1">Day 3 Slides</a></p>
+<ul>
+<li>Understand different metrics about whole networks</li>
+<li>Community Detection</li>
+</ul>
+<p><a href="https://ericbrewe.com/slides/PEER_network_school_2023/PEER_bipartite_graphs.html#1">Day 3a Slides</a></p>
+<ul>
+<li>Side trip to visit bipartite networks.</li>
+</ul>
+<p><strong>Day Four</strong></p>
+<p><a href="https://ericbrewe.com/slides/PEER_network_school_2023/PEER_network_models.html#1">Day 4 Slides</a></p>
+<ul>
+<li>Understand the framework for comparing networks</li>
+<li>Test hypotheses in a network framework</li>
+</ul>
+</div>
+<div id="what-is-beyond-the-scope" class="section level3">
+<h3>What is beyond the scope?</h3>
+<p>While I would love to say you’d be able to master doing network analysis in R in the short span of 1 week, you will not. I’ve spent a decade learning it and am proficient, but am constantly learning.</p>
+<p>Similarly, R is a tool. You are the expert in your research, R can help <em>you</em> to uncover elements of your data. I don’t know how to analyze your data - learning R will empower you to analyze your data.</p>
+</div>
+<div id="why-r" class="section level3">
+<h3>Why R?</h3>
+<p>I began learning R because I wanted to have something that worked across different platforms. But then I realized that the Open Source movement was something that was particularly interesting to me. But those aren’t the reason. I have come to see R as crucial for reproducibility. If I write a set of code to analyze a dataset, I can re-run this code, and get the same results. I can share the code with my publications, so someone else can check my work. This is critical to doing science. R allows me to do this in a way that Excel doesn’t.</p>
+<p>Certainly other languages (Python, Julia, etc…) will also allow for this, but why I have stuck with R is that there is a rich community that are supportive of learning and growing.</p>
+</div>
+<div id="why-tidyverse" class="section level3">
+<h3>Why Tidyverse?</h3>
+<p>Open source things tend to be a bit tribal - within R one debate is Base R vs. Tidyverse. This is a debate about how to teach R, and I have decided to use the Tidyverse. It might not ever matter to you, but I want you to know that I have thought about this, and my answer is to use Tidyverse for the following reasons:</p>
+<ul>
+<li>Readability - Code should be readable by humans</li>
+<li>Coherence with my practice - I generally try to use the Tidyverse approach in my work, so I feel like I can best help by using these tools</li>
+<li>Coherence with themselves - These tools are organized in a way that helps them to be internally coherent</li>
+<li>Support - There are loads of books and websites that are published open-source, and so you can typically find the help you need.</li>
+</ul>
+</div>
+<div id="resources-for-learning-r" class="section level3">
+<h3>Resources for Learning R</h3>
+<p>Learning R is not easy, as I have learned things, I have tried to maintain a list of the different resources that I have drawn on.</p>
+<p><strong>The Basics</strong></p>
+<ol style="list-style-type: decimal">
+<li>Install R and RStudio</li>
+<li>Introduction to R (using Base R) - <a href="https://bookdown.org/rdpeng/rprogdatascience/">R Programming for Data Science</a></li>
+<li>My all time favorite book for learning statistics and R is <a href="http://tidylsr.djnavarro.net/">Learning Statistics with R</a></li>
+<li>Danielle Navarro also has a course <a href="http://robust-tools.djnavarro.net/">Robust Tools</a> that gives a sense about the breadth of the tools that R provides.</li>
+<li>These two guides, <a href="https://drive.google.com/file/d/1G9rqsXdesobxbWivbrD1MN0K97jMNEST/view">The R Guide</a> and <a href="https://drive.google.com/file/d/1jUivTK7z3Ig_51upZ4mD5l2v-PCXOoGp/view">R for Beginners</a></li>
+</ol>
+<p><strong>A bit more advanced</strong></p>
+<ol style="list-style-type: decimal">
+<li>Hadley Wickham’s book, <a href="https://r4ds.had.co.nz/">R For Data Science</a></li>
+<li><a href="https://www.tidyverse.org/blog/2017/12/workflow-vs-script/">Project Oriented Workflows</a></li>
+<li><a href="https://rstats.wtf/index.html">WTF R</a> Jenny Bryan is great at explaining things about R and so frequently, I find myself looking at her books.</li>
+<li><a href="https://rstudio.com/resources/cheatsheets/">Cheat Sheets</a> I can never remember all the commands.
+<ol style="list-style-type: lower-alpha">
+<li><a href="file:///Users/ericbrewelaptop/Downloads/data-transformation.pdf">Data Transformation</a></li>
+<li><a href="https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf">ggplot2</a></li>
+<li><a href="https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf">Regular Expressions</a></li>
+</ol></li>
+<li><a href="https://happygitwithr.com/">Happy Git With R</a> Eventually you’ll need to use Git, and this is essential reading for making that transition.</li>
+<li><a href="https://bookdown.org/yihui/rmarkdown/software-info.html">RMarkdown</a> Markdown allows you to use reproducible code and integrate R into reporting and writing. This is how I do all my work.</li>
+<li><a href="https://datacarpentry.org/">DataCarpentry</a> runs workshops about data analysis and often are oriented to different research specialties.</li>
+<li><a href="https://theeffectbook.net/">The Effect</a> A really great book that approaches data analysis from a causal inference perspective with code in R, Python, and Stata.</li>
+</ol>
+</div>
+<div id="resources-for-learning-sna" class="section level3">
+<h3>Resources for Learning SNA</h3>
+</div>
+<div id="books" class="section level1">
+<h1>Books</h1>
+<ul>
+<li><a href="https://www.cambridge.org/core/books/social-network-analysis/90030086891EB3491D096034684EFFB8">Wasserman and Faust</a> The seminal text on social networks from the sociological camp. No help with R, but includes so much that it is an essential reference.</li>
+<li><a href="https://academic.oup.com/book/27884">Newman</a> Don’t know if I would call it <em>the</em> seminal text on networks from the graph-theoretic camp. No help with R. If you want to have access to the mathematical underpinnigs, this one has it (probably).</li>
+<li><a href="http://networksciencebook.com/">Barabasi</a> A newer text, it is available to read online, with some animations, cool visuals, etc. Focus on python I think.</li>
+<li><a href="https://uk.sagepub.com/en-gb/eur/the-sage-handbook-of-social-network-analysis/book232753">Sage Handbook</a>. A comprehensive guide to doing SNA - has chapters on IRB, network generators, analytic approaches and more. Plus if you want to read about the two camps from a sociologist’s perspective, chapter four is not particularly kind to physicists.</li>
+</ul>
+</div>
+<div id="websites-that-are-useful" class="section level1">
+<h1>Websites that are useful</h1>
+<ul>
+<li><a href="https://tidygraph.data-imaginist.com/index.html">tidygraph</a> enough said</li>
+<li><a href="https://ggraph.data-imaginist.com/">ggraph</a> enough said</li>
+<li><a href="https://www.mr.schochastics.net/">mr.stochastics</a> Excellent explainers on visualization, and tutorials on doing SNA.</li>
+</ul>
+</div>
+<div id="societies-journals-and-meetings" class="section level1">
+<h1>Societies, Journals, and Meetings</h1>
+<div id="professional-societies" class="section level2">
+<h2>Professional Societies</h2>
+<ul>
+<li><a href="https://www.insna.org/">International Network of Social Network Analysis</a> - Much more from the Social Network, social science side</li>
+<li><a href="https://netscisociety.net/home">Network Science Society</a> - The professional society that hosts NetSci - a premier network analysis conference, much more from the graph/theoretic world</li>
+</ul>
+</div>
+<div id="journals" class="section level2">
+<h2>Journals</h2>
+<ul>
+<li><a href="https://www.cambridge.org/core/journals/network-science">Network Science</a> - Cambridge Press Journal focused on Network Science - much more graph theoretic</li>
+<li><a href="https://www.insna.org/connections">Connections</a> - The journal of INSNA - much more focused on social network analysis &amp; applications.</li>
+<li><a href="https://www.sciencedirect.com/journal/social-networks">Social Networks</a> - An Elsevier Journal focused on SNA - much more statistical</li>
+</ul>
+</div>
+<div id="meetings" class="section level2">
+<h2>Meetings</h2>
+<ul>
+<li><a href="https://www.insna.org/events/sunbelt-2023">Sunbelt</a> - Conference of INSNA</li>
+<li><a href="https://netsci2023.wixsite.com/netsci2023">NetSci</a> - Conference of Network Science Society</li>
+<li><a href="https://complenet.weebly.com/">CompleNet</a> - International Conference on Complex Networks</li>
+</ul>
+</div>
+</div>
+<div id="datasets" class="section level1">
+<h1>Datasets</h1>
+<ul>
+<li><a href="https://icon.colorado.edu/#!/">Colorado Index of Complex Networks</a> - Maintained by Aaron Clauset - very high quality datasets</li>
+<li><a href="https://snap.stanford.edu/data/">Stanford Large Network Datasets</a> - Maintained by Stanford - a list, not necessarily as clean, but a large list</li>
+</ul>
+</div>
+
+          </div>
+
+          
+
+
+
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on Jun 30, 2023</p>
+
+          
+
+
+
+
+
+  
+  
+
+<p class="edit-page">
+  <a href="https://github.com/gcushen/hugo-academic/edit/master/content/courses/peer_network_school_23/_index.html">
+    <i class="fas fa-pen pr-2"></i>Edit this page
+  </a>
+</p>
+
+
+
+
+          
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.05a1a577f32bacf02042997629ddb20e.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

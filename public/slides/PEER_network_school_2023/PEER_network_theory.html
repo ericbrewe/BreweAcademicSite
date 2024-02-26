@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>PEER Advanced Field School 2023</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Eric Brewe   Professor of Physics at Drexel University  " />
+    <script src="PEER_network_theory_files/header-attrs/header-attrs.js"></script>
+    <link href="PEER_network_theory_files/remark-css/default.css" rel="stylesheet" />
+    <link href="PEER_network_theory_files/remark-css/metropolis.css" rel="stylesheet" />
+    <link rel="stylesheet" href="BreweSlides.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# PEER Advanced Field School 2023
+]
+.subtitle[
+## Day 1 - Theory, Data, and Plotting
+]
+.author[
+### Eric Brewe <br> Professor of Physics at Drexel University <br>
+]
+.date[
+### 15 June 2023, last update: 2023-06-19
+]
+
+---
+
+
+
+
+
+
+
+class: center, middle
+
+# Foundations of Network Analysis
+
+---
+# What is a network?
+.pull-left[
+- Collection of *object-like* things that are connected.
+    - Nodes/actors = Object-like things (Nouns)
+        - Students in a class, Words in a novel, Banks...
+        - Nodes can have attributes 
+            - Gender, 
+            - Word-type,
+            - Market capitialization
+]
+
+
+.pull-right[
+![NetworkImage](https://cdn.journals.aps.org/journals/PRPER/key_images/10.1103/PhysRevPhysEducRes.15.020150.png)
+
+
+]
+---
+# What is a network?
+.pull-left[
+- Collection of *object-like* things that are connected.
+    - Ties/Links/Edges = Connections between nodes (Verbs)
+        - Talked to each other, Are neigbors, Lend money, Sent text message...
+            - Directional
+            - Multiplex
+            - Weighted
+]
+
+
+.pull-right[
+![NetworkImage](https://cdn.journals.aps.org/journals/PRPER/key_images/10.1103/PhysRevPhysEducRes.15.020150.png)
+
+
+]
+---
+# Network Analysis is for the analysis of *relational data*
+
+There are four basic assumptions:
+
+1. Nodes and interactions are interdependent*
+2. Edges allow flow between nodes
+3. Network models on indiviuals both constrain and provide opportunity for action
+4. Network models conceptualize structure as representation of lasting patterns of relations between actors
+
+.footnote[
+\* Violates basic assumption of inferential statistics
+
+Wasserman, S., Faust, K. (1994). Social network analysis: Methods and applications (Vol. 8). Cambridge university press.
+]
+---
+# What can we do with it?
+
+.pull-left[
+### Ego-Level Analyses
+
+- What can we know about the network of one person?
+    - Ego density
+    - Number of neighbors
+    - Number of connected neighbors
+]
+
+.pull-right[
+
+![](img/ParisiEgoNet.png)
+]
+---
+
+# What can we do with it?
+
+.pull-left[
+### Node-Level Analyses
+
+- What can we know about the position of people in a network?
+    - Degree (In/Out/Total)
+    - Geodesic Distance (Kevin Bacon)
+    - PageRank
+    - Target Entropy
+]
+
+.pull-right[
+
+![](img/PERGraph.png)
+]
+---
+
+# What can we do with it?
+
+.pull-left[
+### Whole Network Analyses
+
+- What can we say about a whole network?
+    - Density, Average path length, Giant component
+    - Clustering
+    - Homophily
+    - Modeling
+        - Block models
+        - Small worldness
+]
+
+.pull-right[
+
+![](img/MapEqn.png)]
+---
+
+
+# Historical Foundations
+
+.pull-left[
+
+Joseph Moreno &amp; Helen Hall Jennings (1932)
+- Established foundations of SNA
+
+Quantitative Sociology/Anthropology
+- Davis Southern Women's Club (1941)
+- Small World Problem (1967)
+- Zachary's Karate Club (1977)
+
+Seminal Articles
+- Milgram, Stanley "The small world problem" Psychology Today 2:1, (1967)
+- Grannovetter, Mark S. "The strength of weak ties" American Journal of Sociology (1973)
+]
+
+.pull-right[
+
+![](img/JosephMoreno.jpg)]
+---
+# Modern Foundations of Network Analysis
+
+
+### Sociophysics (1990s)
+
+- Graph theory
+- Information theory
+- Computing 
+- Used to study
+    - Internet
+    - Power grid
+    - Transportation networks
+
+Seminal Articles
+- Watts &amp; Strogratz "Collective dynamics of small world networks" Nature (1998)
+- Page, Brin, Motwani, &amp; Winograd "The PageRank citation ranking: Bringing order to the web" Stanford InfoLab (1999)
+
+---
+# Important Takeaways from History
+Two main camps
+
+--
+
+Statistical -&gt; hypothesis testing
+
+--
+
+Graph theoretic -&gt; network models and simulation
+ 
+--
+
+.font150.center[
+They often don't agree.
+
+There is often distain.
+
+They have different language, journals, conferences
+]
+---
+# Network Data in R
+
+.center[
+## Sociomatrix/Adjacency Matrix
+]
+.pull-left[
+![](PEER_network_theory_files/figure-html/ToyNet-1.png)&lt;!-- --&gt;
+]
+
+.pull-right[
+
+```
+## 5 x 5 sparse Matrix of class "dgCMatrix"
+##               
+## [1,] . 1 1 1 1
+## [2,] 1 . . . .
+## [3,] 1 . . . .
+## [4,] 1 . . . 1
+## [5,] 1 . . 1 .
+```
+]
+
+---
+# Network Data in R
+
+.center[
+## Edgelist
+]
+.pull-left[
+![](PEER_network_theory_files/figure-html/PlotToyNet-1.png)&lt;!-- --&gt;
+]
+
+.pull-right[
+
+```
+## [[1]]
+## + 4/5 edges from ddd0978:
+## [1] 1--2 1--3 1--4 1--5
+## 
+## [[2]]
+## + 1/5 edge from ddd0978:
+## [1] 1--2
+## 
+## [[3]]
+## + 1/5 edge from ddd0978:
+## [1] 1--3
+## 
+## [[4]]
+## + 2/5 edges from ddd0978:
+## [1] 1--4 4--5
+## 
+## [[5]]
+## + 2/5 edges from ddd0978:
+## [1] 1--5 4--5
+```
+]
+
+---
+
+# What does this mean in terms of learning R?
+
+- We need to know something about the different types of data!
+
+.pull-left[
+
+#### Data types (at least some of them)
+
+- **Logical** (T/F, 1/0)
+- **Integers** (whole numbers)
+- **Numeric** (numbers with decimal places)
+- **Complex** (I never use these)
+]
+
+.pull-right[
+#### Data storage (at least some of them)
+
+- **Vectors** = long columns of data (can be any type, but only one type of data)
+- **Dataframes** = like Excel pages (columns can hold different types of data)
+- **Matrices** = like dataframes, but they have named rows/columns 
+    - Adjacency Matrices are of type matrix.
+- **Lists** = the junkdrawer, can hold any type of data (including dataframes or matrices)
+    - in igraph, networks are stored as lists.
+
+]
+---
+# What you need to know about R?
+
+- R is the programming language.
+- RStudio is the Integrated Development Environment (IDE)
+- Posit.cloud is an online version of the IDE
+- Packages: groups of functions that are developed as open source 
+- Base R
+    - The group of packages preloaded into R
+- Tidyverse
+    - Family of packages that are designed with the theory that programming should be readable by humans.
+- igraph
+    - Package that is very useful for doing network analyses
+
+
+.font190[.center[Lets do this!]]
+
+---
+
+# Lets Take a Tour of RStudio IDE
+
+---
+
+# Let's Install Some Packages
+.font150[You'll only need to do this once.]
+
+## In Console
+
+To install tidyverse package...
+
+
+```r
+install.packages("tidyverse")
+```
+
+Repeat this with the following packages:
+
+igraph    tidygraph     here     ggraph
+
+---
+
+# Let's Load Some Packages
+.font150[You'll need to do this every time you restart R.]
+
+## In Console
+
+To load tidyverse package...
+
+
+```r
+library(tidyverse) #tools for cleaning data 
+library(igraph)  #package for doing network analysis
+library(tidygraph) #tools for doing tidy networks
+library(here) #tools for project-based workflow
+library(ggraph) #plotting tools for networks
+```
+
+--
+
+Once you have done this, you will want to put include a code chunk with all of your libraries into your markdown document so that you don't have to type this every time. 
+
+---
+# Let's get data into R. 
+
+In this workshop, you have the data from the survey to make things as easy as possible. However, this is not typical.  You will have to find ways to get your data into R but that is sort of different depending on where you are running R (posit.cloud or a local machine)
+
+If you have loaded the package "here" this should just work.  If you have not loaded the "here" package you will need to set the working directory. 
+
+Again, you will want to include this as a code chunk in your RMD file.  
+
+
+
+
+
+
+
+```r
+#This loads the csv and saves it as a dataframe titled WorkshopData
+
+WorkshopData &lt;- read_csv(here("data", "AnonSurveyData.csv"))
+```
+
+
+---
+# Let's have a look at the data
+
+
+```r
+glimpse(WorkshopData)
+```
+
+```
+## Rows: 34
+## Columns: 18
+## $ ID                      &lt;dbl&gt; 5106, 6633, 7599, 4425, 2495, 6355, 8810, 3877…
+## $ StartDate               &lt;dttm&gt; 2020-07-30 12:15:20, 2020-07-30 12:18:50, 202…
+## $ EndDate                 &lt;dttm&gt; 2020-07-30 12:18:59, 2020-07-30 12:20:21, 202…
+## $ Status                  &lt;chr&gt; "IP Address", "IP Address", "IP Address", "IP …
+## $ Progress                &lt;dbl&gt; 100, 100, 100, 100, 100, 100, 100, 100, 100, 1…
+## $ `Duration (in seconds)` &lt;dbl&gt; 219, 91, 137, 97, 127, 233, 97, 144, 103, 231,…
+## $ Finished                &lt;lgl&gt; TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE…
+## $ RecordedDate            &lt;dttm&gt; 2020-07-30 12:18:59, 2020-07-30 12:20:22, 202…
+## $ SurveyID                &lt;chr&gt; "R_ssTGHZwy5EpQaNX", "R_2fv9VCk0tjdrDOr", "R_1…
+## $ ExternalReference       &lt;lgl&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA…
+## $ DistributionChannel     &lt;chr&gt; "email", "email", "email", "email", "email", "…
+## $ UserLanguage            &lt;chr&gt; "EN", "EN", "EN", "EN", "EN", "EN", "EN", "EN"…
+## $ Q2                      &lt;chr&gt; "morning person.", "morning person.", "night o…
+## $ Q3                      &lt;chr&gt; "Brownies", "I don't care for dessert.", "Ice …
+## $ Q4                      &lt;chr&gt; "Coffee,Water,The tears of my enemies", "Coffe…
+## $ Q5                      &lt;dbl&gt; 350, 12, 300, 0, 264, 4, 289, 550, 349, 300, 4…
+## $ Q6                      &lt;dbl&gt; 350, 56, 5000, 50, 286, 250, 76, 185, 108, 220…
+## $ `as.character(Q5)`      &lt;dbl&gt; 350, 12, 300, 0, 264, 4, 289, 550, 349, 300, 4…
+```
+
+
+
+---
+# Let's start cleaning up.
+
+## First, we don't need most of that data
+
+There is a ton of data there that doesn't make sense for us to keep around. 
+
+We will use the '%&gt;%' (pipe) operator and the verb select
+
+
+```r
+WorkshopData %&gt;%
+* select(ID,Q2:Q6) -&gt; WorkshopData
+
+glimpse(WorkshopData)
+```
+
+```
+## Rows: 34
+## Columns: 6
+## $ ID &lt;dbl&gt; 5106, 6633, 7599, 4425, 2495, 6355, 8810, 3877, 1554, 7743, 8353, 2…
+## $ Q2 &lt;chr&gt; "morning person.", "morning person.", "night owl.", "morning person…
+## $ Q3 &lt;chr&gt; "Brownies", "I don't care for dessert.", "Ice Cream", "I don't care…
+## $ Q4 &lt;chr&gt; "Coffee,Water,The tears of my enemies", "Coffee,Tea,Water,Milk", "F…
+## $ Q5 &lt;dbl&gt; 350, 12, 300, 0, 264, 4, 289, 550, 349, 300, 424, 426, 231, 290, 10…
+## $ Q6 &lt;dbl&gt; 350, 56, 5000, 50, 286, 250, 76, 185, 108, 220, 500, 350, 412, 1135…
+```
+
+???
+Note the data are not numbers.
+---
+# Let's start cleaning up.
+
+## Now we should actually take a look at the data
+
+
+```r
+WorkshopData %&gt;%
+  head()
+```
+
+```
+## # A tibble: 6 × 6
+##      ID Q2              Q3                        Q4                    Q5    Q6
+##   &lt;dbl&gt; &lt;chr&gt;           &lt;chr&gt;                     &lt;chr&gt;              &lt;dbl&gt; &lt;dbl&gt;
+## 1  5106 morning person. Brownies                  Coffee,Water,The …   350   350
+## 2  6633 morning person. I don't care for dessert. Coffee,Tea,Water,…    12    56
+## 3  7599 night owl.      Ice Cream                 Fruit Juice,Tea,W…   300  5000
+## 4  4425 morning person. I don't care for dessert. Fruit Juice,Coffe…     0    50
+## 5  2495 morning person. Brownies                  Coffee,Water         264   286
+## 6  6355 night owl.      Ice Cream                 Fruit Juice,Tea,W…     4   250
+```
+
+
+---
+# Let's check out the power of R
+
+.font200[.center[I am going to blast through these next slides, to show you some of the things that you might want to do with R]]
+
+
+---
+# Let's start visualizing the data
+
+## For categorical data, you might want to get some counts.
+
+Here is code to do this for the question about morning or night person.
+
+
+
+```r
+WorkshopData %&gt;%
+* select(Q2) %&gt;%
+* group_by(Q2) %&gt;%
+  tally() 
+```
+
+```
+## # A tibble: 2 × 2
+##   Q2                  n
+##   &lt;chr&gt;           &lt;int&gt;
+## 1 morning person.    19
+## 2 night owl.         15
+```
+
+
+---
+# Let's start visualizing the data
+
+## For categorical data, you might want to get a histogram.
+
+Here is code to do this for the favorite dessert type.
+
+.pull-left[
+
+```r
+WorkshopData %&gt;%
+  select(Q3) %&gt;%
+  group_by(Q3) %&gt;% 
+  tally()  
+```
+
+```
+## # A tibble: 5 × 2
+##   Q3                                      n
+##   &lt;chr&gt;                               &lt;int&gt;
+## 1 Brown Butter Chocolate Chip Cookies     2
+## 2 Brownies                                9
+## 3 Cheese                                  3
+## 4 I don't care for dessert.               3
+## 5 Ice Cream                              17
+```
+]
+
+.pull-right[
+
+```r
+WorkshopData %&gt;%
+  select(Q3) %&gt;%
+  ggplot(aes(y = Q3)) + 
+  geom_bar()
+```
+
+&lt;img src="PEER_network_theory_files/figure-html/DessertTypeHist-1.png" width="50%" /&gt;
+]
+
+---
+# Let's explore beverage choices
+
+
+```r
+WorkshopData %&gt;%
+  select(ID, Q4) %&gt;%
+  head()
+```
+
+```
+## # A tibble: 6 × 2
+##      ID Q4                                  
+##   &lt;dbl&gt; &lt;chr&gt;                               
+## 1  5106 Coffee,Water,The tears of my enemies
+## 2  6633 Coffee,Tea,Water,Milk               
+## 3  7599 Fruit Juice,Tea,Water,Fizzy Water   
+## 4  4425 Fruit Juice,Coffee,Water            
+## 5  2495 Coffee,Water                        
+## 6  6355 Fruit Juice,Tea,Water
+```
+
+.font150[Notice, these are *not* tidy data, more than one variable per line]
+---
+# Let's dummy code the beverage data
+
+.pull-left[
+### For **tidy** data we want one value per row
+
+
+```r
+WorkshopData %&gt;%
+  select(ID, Q4) %&gt;%
+* separate_rows(Q4, sep = ",") %&gt;%
+  head(10)
+```
+
+```
+## # A tibble: 10 × 2
+##       ID Q4                     
+##    &lt;dbl&gt; &lt;chr&gt;                  
+##  1  5106 Coffee                 
+##  2  5106 Water                  
+##  3  5106 The tears of my enemies
+##  4  6633 Coffee                 
+##  5  6633 Tea                    
+##  6  6633 Water                  
+##  7  6633 Milk                   
+##  8  7599 Fruit Juice            
+##  9  7599 Tea                    
+## 10  7599 Water
+```
+
+]
+
+.pull-right[
+### We can dummy code these
+
+
+```r
+WorkshopData %&gt;%
+  select(ID, Q4) %&gt;%
+  separate_rows(Q4, sep = ",") %&gt;%
+* mutate(Checked = 1) %&gt;%
+* pivot_wider(names_from = Q4,
+*             values_from = Checked,
+*             values_fill = 0)
+```
+
+```
+## # A tibble: 34 × 11
+##       ID Coffee Water `The tears of my enemies`   Tea  Milk `Fruit Juice`
+##    &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt;                     &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;         &lt;dbl&gt;
+##  1  5106      1     1                         1     0     0             0
+##  2  6633      1     1                         0     1     1             0
+##  3  7599      0     1                         0     1     0             1
+##  4  4425      1     1                         0     0     0             1
+##  5  2495      1     1                         0     0     0             0
+##  6  6355      0     1                         0     1     0             1
+##  7  8810      1     0                         1     0     0             0
+##  8  3877      0     1                         1     1     1             0
+##  9  1554      0     1                         1     0     0             1
+## 10  7743      0     1                         0     1     1             1
+## # ℹ 24 more rows
+## # ℹ 4 more variables: `Fizzy Water` &lt;dbl&gt;,
+## #   `A delicious 12 year single malt scotch from the Scottish lowlands with notes of apple` &lt;dbl&gt;,
+## #   ` cinnamon` &lt;dbl&gt;, ` and dried fruit served with a single ice cube` &lt;dbl&gt;
+```
+
+
+]
+
+
+---
+# Let's look at some quantitative data
+
+### First, let's summarize the reading data.
+
+
+```r
+WorkshopData %&gt;%
+  select(Q5) %&gt;%
+  summarize(Ave = mean(Q5, na.rm = TRUE), 
+            SD = sd(Q5, na.rm = TRUE))
+```
+
+```
+## # A tibble: 1 × 2
+##     Ave    SD
+##   &lt;dbl&gt; &lt;dbl&gt;
+## 1  327.  247.
+```
+
+
+---
+# Let's investigate groups
+
+.pull-left[
+### Are morning people or night owls reading longer books?
+
+
+```r
+WorkshopData %&gt;%
+  select(Q2, Q5) %&gt;%
+  group_by(Q2) %&gt;%
+* summarize(Ave = mean(Q5),
+*           SD = sd(Q5))
+```
+
+```
+## # A tibble: 2 × 3
+##   Q2                Ave    SD
+##   &lt;chr&gt;           &lt;dbl&gt; &lt;dbl&gt;
+## 1 morning person.  321   215.
+## 2 night owl.       335.  289.
+```
+]
+.pull-right[
+
+### We might want to use a boxplot to display these data
+
+
+```r
+WorkshopData %&gt;%
+  select(Q2, Q5) %&gt;%
+  ggplot(., aes(x = Q2, y = Q5)) +
+  geom_boxplot()
+```
+
+&lt;img src="PEER_network_theory_files/figure-html/ReadersTimeOfDayBoxplot-1.png" width="70%" /&gt;
+]
+
+---
+# Let's look at readers vs. blueberries
+
+### Is there a relationship between length of book and estimates on number of blueberries?
+
+.pull-left[
+### Could do a scatter plot
+
+```r
+WorkshopData %&gt;%
+  select(Q5:Q6) %&gt;%
+  mutate(Q5 = as.numeric(Q5), Q6 = as.numeric(Q6)) %&gt;%
+  ggplot(aes(x = Q5, y = Q6)) +
+  geom_point()
+```
+
+]
+.pull-right[
+![](PEER_network_theory_files/figure-html/unnamed-chunk-1-1.png)&lt;!-- --&gt;
+
+]
+
+---
+# Let's look at readers vs. blueberries
+
+### Is there a relationship between length of book and estimates on number of blueberries?
+
+### Or you could do a linear model
+
+
+```r
+summary(lm(Q6 ~ Q5, data = WorkshopData))
+```
+
+```
+## 
+## Call:
+## lm(formula = Q6 ~ Q5, data = WorkshopData)
+## 
+## Residuals:
+##    Min     1Q Median     3Q    Max 
+## -365.6 -313.8 -179.1  -98.8 4563.5 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)
+## (Intercept) 382.9414   249.7136   1.534    0.135
+## Q5            0.1785     0.6126   0.291    0.773
+## 
+## Residual standard error: 867.6 on 32 degrees of freedom
+## Multiple R-squared:  0.002647,	Adjusted R-squared:  -0.02852 
+## F-statistic: 0.08492 on 1 and 32 DF,  p-value: 0.7726
+```
+---
+# Let's prep our data for SNA
+
+### We will need to prep two separate files...
+
+1. An edgelist
+2. A file of attributes of the nodes. 
+
+---
+# Let's make an edgelist
+
+
+There is an issue here. 
+
+I wanted to make these data anonymous (so we don't know who likes scotch)
+
+But to do that I had to make the edgelist for you. 
+
+So I sent you an edgelist as a csv. Sorry.
+
+
+### Check out the edgelist
+
+
+```r
+EL = read_csv(here("data", "AnonEL.csv"))
+head(EL)
+```
+
+
+```
+## # A tibble: 6 × 2
+##      ID Connections
+##   &lt;dbl&gt;       &lt;dbl&gt;
+## 1  5106        5106
+## 2  6633        6196
+## 3  7599        5462
+## 4  4425        7743
+## 5  2495        3940
+## 6  6355        6355
+```
+
+
+
+---
+# Let's assemble our node attributes
+
+Before we can convert our Edgelist to a network, we should add in the attributes. 
+
+We have several candidate attributes:
+- Morning vs. Night
+- Dessert Type
+- Pages in book
+
+We will develop a separate dataframe for the attributes. 
+
+
+```r
+WorkshopData %&gt;%
+  select(ID, Q2, Q3, Q5) -&gt; AttributeDf
+```
+
+
+---
+# Let's assemble our node attributes
+
+Experience tells me that when you try to add attributes that you often make a mistake where the number attributes don't match up well to the number of nodes...but lets see.
+
+
+
+
+
+```r
+gr &lt;- graph_from_data_frame(EL, directed = TRUE)
+
+plot(gr)
+```
+
+&lt;img src="PEER_network_theory_files/figure-html/AssembleGraph-1.png" width="40%" /&gt;
+
+```r
+gr = as_tbl_graph(gr)
+```
+
+
+
+---
+# Let's add some attributes
+
+So actually the easiest way to add the attributes is to add them while you make the graph.  
+
+But that isn't as easy as it seems
+
+
+```r
+gr %&gt;%
+  activate(nodes) %&gt;%
+  mutate(AMPM = AttributeDf$Q2)
+```
+But that isn't as easy as it seems...
+
+
+--- 
+# Let's sort out these attributes. 
+
+
+
+The warning was: "Input `AMPM` must be size 60 or 1, not 34."
+
+What this means is we need to take our attributes dataframe and make sure all the nodes are listed. 
+
+To do this we need to:
+- Compile a dataframe of all nodes listed in the graph
+- Use a join to add attributes to this dataframe
+
+---
+# Let's sort out these attributes (pt 2)
+
+
+```r
+#This will get a vector of all nodes
+gr %&gt;%
+  activate(nodes) %&gt;%
+  as_tibble() %&gt;%
+  transmute(ID = name) %&gt;%
+  mutate(ID = as.numeric(ID))-&gt; GrNodes
+
+#Now we pull in the attributes using a left_join
+NodeAttributes = left_join(GrNodes, AttributeDf, by = "ID")
+```
+
+You should inspect Node Attributes
+
+---
+# Let's sort out these attributes (pt 3)
+
+
+### Inspect the head
+
+
+```r
+head(NodeAttributes)
+```
+
+```
+## # A tibble: 6 × 4
+##      ID Q2              Q3                           Q5
+##   &lt;dbl&gt; &lt;chr&gt;           &lt;chr&gt;                     &lt;dbl&gt;
+## 1  5106 morning person. Brownies                    350
+## 2  6633 morning person. I don't care for dessert.    12
+## 3  7599 night owl.      Ice Cream                   300
+## 4  4425 morning person. I don't care for dessert.     0
+## 5  2495 morning person. Brownies                    264
+## 6  6355 night owl.      Ice Cream                     4
+```
+
+---
+# Let's sort out these attributes (pt 4)
+
+### Inspect the tail
+
+
+```r
+tail(NodeAttributes)
+```
+
+```
+## # A tibble: 6 × 4
+##      ID Q2    Q3       Q5
+##   &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt; &lt;dbl&gt;
+## 1  7128 &lt;NA&gt;  &lt;NA&gt;     NA
+## 2  1050 &lt;NA&gt;  &lt;NA&gt;     NA
+## 3  3799 &lt;NA&gt;  &lt;NA&gt;     NA
+## 4  1651 &lt;NA&gt;  &lt;NA&gt;     NA
+## 5  8984 &lt;NA&gt;  &lt;NA&gt;     NA
+## 6  1958 &lt;NA&gt;  &lt;NA&gt;     NA
+```
+
+
+
+---
+# Let's finally assemble this graph. 
+
+
+```r
+gr %&gt;%
+  as_tbl_graph() %&gt;%
+  activate(nodes) %&gt;%
+  mutate(AMPM = NodeAttributes$Q2) %&gt;%
+  mutate(Dessert = NodeAttributes$Q3) %&gt;%
+  mutate(Pages = NodeAttributes$Q5) -&gt; gr
+
+summary(gr)
+```
+
+```
+## IGRAPH 0971b7b DN-- 60 101 -- 
+## + attr: name (v/c), AMPM (v/c), Dessert (v/c), Pages (v/n)
+```
+---
+# Let's finally assemble this graph.
+
+### Take a look at your graph
+
+
+```
+## # A tbl_graph: 60 nodes and 101 edges
+## #
+## # A directed multigraph with 8 components
+## #
+## # A tibble: 60 × 4
+##   name  AMPM            Dessert                   Pages
+##   &lt;chr&gt; &lt;chr&gt;           &lt;chr&gt;                     &lt;dbl&gt;
+## 1 5106  morning person. Brownies                    350
+## 2 6633  morning person. I don't care for dessert.    12
+## 3 7599  night owl.      Ice Cream                   300
+## 4 4425  morning person. I don't care for dessert.     0
+## 5 2495  morning person. Brownies                    264
+## 6 6355  night owl.      Ice Cream                     4
+## # ℹ 54 more rows
+## #
+## # A tibble: 101 × 2
+##    from    to
+##   &lt;int&gt; &lt;int&gt;
+## 1     1     1
+## 2     2    35
+## 3     3    14
+## # ℹ 98 more rows
+```
+
+---
+# Let's make our plots look a bit better
+.pull-left[
+### We can add various elements to our plot
+- Color (good for grouping)
+- Shape (good for grouping)
+- Linewidth (good for numeric)
+- Text (good for labels)
+- Layout
+
+### This is the most basic plot
+````
+
+```r
+ggraph(gr) +
+  geom_edge_link() +
+  geom_node_point()
+```
+````
+]
+
+.pull-right[
+
+![](PEER_network_theory_files/figure-html/PlotGr1a-1.png)&lt;!-- --&gt;
+
+Not super pretty
+]
+
+---
+# Let's make our plots look a bit better
+.pull-left[
+### We can add various elements to our plot
+- Layout, there are lots of options
+    -Try circle?
+
+````
+
+```r
+ggraph(gr, layout = 'circle') +
+  geom_edge_link() +
+  geom_node_point()
+```
+````
+]
+
+.pull-right[
+![](PEER_network_theory_files/figure-html/PlotGr2a-1.png)&lt;!-- --&gt;
+]
+
+---
+
+# Let's make our plots look a bit better
+
+.pull-left[
+### We can add various elements to our plot
+- Shape, we can make night owls one shape and morning people a differnt shape...
+
+````
+
+```r
+ggraph(gr, layout = 'circle') +
+  geom_edge_link() +
+  geom_node_point(aes(shape = AMPM))
+```
+````
+]
+.pull-right[
+![](PEER_network_theory_files/figure-html/PlotGr3a-1.png)&lt;!-- --&gt;
+
+### Not great
+
+]
+---
+
+# Let's make our plots look a bit better
+
+.pull-left[
+### We can add various elements to our plot
+- Color, lets use the dessert type to define a color
+
+````
+
+```r
+ggraph(gr, layout = 'circle') +
+  geom_edge_link() +
+  geom_node_point(aes(color = Dessert))
+```
+````
+]
+.pull-right[
+![](PEER_network_theory_files/figure-html/PlotGr4a-1.png)&lt;!-- --&gt;
+]
+---
+
+# Let's make our plots look a bit better
+.pull-left[
+### We can add various elements to our plot
+- Size, lets make the nodes different sizes based on the number of pages in the last book read.
+
+````
+
+```r
+ggraph(gr, layout = 'circle') +
+  geom_edge_link() +
+  geom_node_point(aes(size = Pages))
+```
+````
+]
+.pull-right[
+![](PEER_network_theory_files/figure-html/PlotGr5a-1.png)&lt;!-- --&gt;
+]
+---
+
+# Let's make our plots look a bit better
+
+.pull-left[
+### We can add various elements to our plot
+- Let's jam them all together!
+
+````
+
+```r
+ggraph(gr, layout = 'circle') +
+  geom_edge_link() +
+  geom_node_point(aes(shape = AMPM, 
+                      color = Dessert, 
+                      size = Pages))
+```
+````
+]
+
+.pull-right[
+
+![](PEER_network_theory_files/figure-html/PlotGr6a-1.png)&lt;!-- --&gt;
+
+]
+
+---
+
+# Let's save our data so that we can access it easily
+
+.pull-left[
+### We want to save as an RDS file
+- This way we avoid having to reconstruct our graph
+- We get our nodes, our edges, and our attributes.
+
+You don't actually need to run this (I've already saved the file as an RDS so we can start with that on Day 2!)
+
+
+]
+
+.pull-right[
+
+````
+
+```r
+write_rds(gr, here("data", "WorkshopNetwork.rds"))
+```
+````
+]
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

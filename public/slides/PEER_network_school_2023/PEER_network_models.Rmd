@@ -1,0 +1,335 @@
+---
+title: "PEER Advanced Field School 2023"
+subtitle: Day 4 - Network Models
+author: 'Eric Brewe <br> Professor of Physics at Drexel University <br>'
+date: "15 June 2023, last update: `r Sys.Date()`"
+output: 
+  xaringan::moon_reader:
+    css: [default, metropolis, "BreweSlides.css"]
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(warning = FALSE, message = FALSE)
+library(tidyverse) # load tidyverse package
+library(emoji) # load emoji package
+library(igraph)
+library(tidygraph)
+library(ggraph)
+library(here)
+library(boot)
+```
+
+
+# Welcome Back!
+
+### Our project is about building and analyzing the Workshop network
+
+We will continue to use the WorkshopNetwork.rds data file.
+
+```{r LoadPackages, eval=FALSE}
+library(tidyverse) #tools for cleaning data 
+library(igraph)  #package for doing network analysis
+library(tidygraph) #tools for doing tidy networks
+library(here) #tools for project-based workflow
+library(ggraph) #plotting tools for networks
+library(boot)  #to do resampling
+```
+
+
+---
+# Let's load our data 
+
+```{r LoadNetwork, eval=FALSE}
+
+gr <- readRDS(here("data", "WorkshopNetwork.rds"))
+
+```
+
+```{r LoadNetworkForReal, echo=FALSE}
+
+gr <- readRDS(here("static/slides/RForSNA/data", "WorkshopNetwork.rds"))
+
+```
+
+---
+# Let's plot it quickly
+
+And get some important features of the graph. 
+
+.pull-left[
+## Whare are distinctive features of the network?
+
+````
+```{r plotGr, eval = F}
+GrLayout <- create_layout(gr,
+                          layout = "kk")
+
+ggraph(GrLayout) +
+  geom_edge_link() +
+  geom_node_point() +
+  theme(legend.position="bottom")
+```
+````
+
+]
+
+.pull-right[
+```{r plotGrR, echo = F}
+GrLayout <- create_layout(gr,
+                          layout = "kk")
+
+ggraph(GrLayout) +
+  geom_edge_link() +
+  geom_node_point() +
+  theme(legend.position="bottom")
+```
+]
+
+```{r}
+gr
+```
+Note, there are 60 nodes and 101 edges
+
+
+---
+
+.center.font200[Orient]
+
+---
+# Let's decide if our network is unique
+
+### What is the big problem with the network that we have collected?
+
+--
+
+1. We have one network.
+2. There is no variance in the metrics.  
+3. What is the null hypothesis/model?
+
+---
+# Let's talk about camps
+
+### This is a place where there are sort of two camps of network analysis
+
+.pull-left[
+### Statistical Camp
+
+- **Variance:** Permutation/resampling techniques such as bootstrap. 
+- **Null hypothesis:** Exponential random graph models (ERGMs) Or rewired network
+
+]
+
+.pull-right[
+### Graph Theoretic Camp
+
+- **Null Model** Theory driven models
+    - Random Graph (Erdos-Renyi)
+    - Small World (Watts-Strogatz)
+    - Preferential Attachment (Barabasi-Albert)
+- **Variance** Network simulation
+]
+
+---
+# Let's compare two networks
+
+.pull-left[
+
+```{r plotGr2}
+GrLayout <- create_layout(gr,
+                          layout = "kk")
+
+ggraph(GrLayout) +
+  geom_edge_link() +
+  geom_node_point() +
+  theme(legend.position="bottom")
+```
+
+
+]
+
+.pull-right[
+
+```{r GetERGraph}
+
+er_gr <- play_erdos_renyi(n = 60, m = 101, loops = FALSE)
+
+GrLayoutER <- create_layout(er_gr,
+                          layout = "kk")
+
+ggraph(GrLayoutER) +
+  geom_edge_link() +
+  geom_node_point() +
+  theme(legend.position="bottom")
+
+```
+
+
+]
+
+
+
+---
+# Let's talk about how you might compare
+
+
+### What are some ways you can think of to compare these two graphs?
+
+
+---
+# Let's compare based on metrics
+
+Why don't we try density
+```{r CalcDensity}
+
+edge_density(gr)
+edge_density(er_gr)
+
+```
+
+Well that isn't any fun!
+
+---
+# Let's compare based on metrics
+
+Here is diameter, note that with tidygraph you have to use the with_graph() function, and specify the graph and function graph_diameter()
+```{r CalcDiameter}
+
+with_graph(gr, graph_diameter())
+
+with_graph(er_gr, graph_diameter())
+```
+
+Ok, so the numbers are different...does that mean the graphs are different?
+
+---
+# Let's try this 1000 times
+
+
+```{r SampleDiamter}
+#Start by setting up a vector to hold our results.
+diameter_results <- c()
+
+for(i in 1:1000) {
+  tmp <- play_erdos_renyi(n=60, m = 101)
+  diameter_results[i] = with_graph(tmp, graph_diameter())
+}
+
+#Convert to dataframe
+diameter_results_df <- tibble(diam = diameter_results)
+
+#and plot our results
+ggplot(diameter_results_df, aes(diam)) +
+  geom_bar() +
+  geom_vline(xintercept = with_graph(gr, graph_diameter()),
+             color = 'red',
+             size = 2)
+
+```
+
+
+---
+# Let's get a confidcence interval
+
+### If we want to estimate the confidence with which we think our measured network is different on any metrics, we can look for the percentiles.
+
+Let's see if the measured diameter falls within the 95% of the simulated network....
+
+```{r Quantile}
+mean(diameter_results_df$diam)
+
+sd(diameter_results_df$diam)
+
+quantile(diameter_results_df$diam, probs = c(0.025, 0.975))
+```
+
+Since the measured diameter of 6 is outside of this range, we can say pretty confidently that the measured network is not a random network!
+---
+# Let's summarize
+
+.font160[
+1. We measured one network
+2. To compare we generated a network (in this case it was random)
+3. We replicated 1000 times
+4. We checked whether metrics from the measured network falls within some confidence range.
+5. We can say the measured network is different than random. 
+]
+
+---
+# Let's assign attributes
+
+### In order to compare homophily, we need our ER_gr to have the same attributes.
+
+There is a file that has a random graph with the attributes assigned to it.
+
+
+```{r GetWSNetAMPM, eval=FALSE}
+
+ER_gr_attr <- readRDS(here("data", "RandomGraph.rds")) 
+
+```
+
+
+```{r GetWSNetAMPM_Real, echo=FALSE}
+
+ER_gr_attr <- readRDS(here("static/slides/PEER_network_school_2023/data", "RandomGraph.rds")) 
+
+ER_gr_attr 
+
+```
+
+
+### Now you get to try!
+- Choose a network simulator (think about why you chose it)
+- Decide on a metric (better yet - create a function to look at many at once).
+- Simulate networks
+-- Measure chosen metrics
+-- Store metrics in data frame
+
+
+
+
+
+
+---
+# Let's reflect
+
+.font120[
+
+We did it!
+
+1. We can import data into R
+2. We can manipulate these data
+3. We can create a network
+4. We can plot a network
+5. We can calculate a number of centrality measures
+6. We can use these in plotting networks
+7. We can use these in testing hypotheses
+8. We can calculate a number of whole graph metrics
+9. We can use these in comparing networks
+
+]
+
+---
+# Let's note what we missed
+
+.font150[
+
+1. We didn't really touch Base R
+2. We didn't deal with ERGMs.
+]
+
+---
+# Let's be thankful
+
+.font200.center[
+Thanks to PEER
+
+Thanks to all of you
+
+`r emoji("clap")`
+]

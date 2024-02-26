@@ -1,0 +1,130 @@
+---
+title: "EDUC 847 Winter 24"
+subtitle: Week 6 - Logistic Regression
+author: 'Eric Brewe <br> Professor of Physics at Drexel University <br>'
+date: "26 February 2024, last update: `r Sys.Date()`"
+output: 
+  xaringan::moon_reader:
+    css: [default, metropolis, "BreweSlides.css"]
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(warning = FALSE, message = FALSE)
+library(tidyverse)
+library(janitor)
+library(haven)
+library(here)
+library(broom)
+library(mice)
+library(car)
+library(jtools)
+library(kableExtra)
+library(broom.mixed)
+library(emdi)
+library(interactions)
+
+```
+
+
+
+
+
+# Let's start with a complete dataset
+
+Start by getting the data into R
+
+```{r ReadDataforReal, echo=FALSE}
+
+sci_df <- read_csv(here("static/slides/EDUC_847/data", "sci_scores.csv"))
+
+```
+
+
+```{r ReadData, eval=FALSE}
+#This loads the csv and saves it as a dataframe titled sci_df
+
+sci_df <- read_csv(here("data",
+                        "sci_scores.csv"))
+
+```
+
+
+---
+# Let's remember last class
+
+### We predicted science scores from math scores. 
+```{r LinearRegression}
+
+sci_mod_math <- lm(sci ~ math_sc, data = sci_df) #<<
+
+tidy(summary(sci_mod_math))
+```
+
+Note - we have a new dataset, nothing is missing!
+
+---
+# Let's go futher
+
+## What if we wanted to then predict who would pass some class. 
+
+### Probably need to look at our data
+
+
+```{r ReviewData}
+
+glimpse(sci_df)
+
+```
+
+---
+# Let's plot 
+
+## We can try a scatter plot
+
+```{r scatterplot}
+sci_df %>%
+  ggplot(aes(x = math_sc, y = pass)) +
+  geom_point()
+
+```
+
+
+---
+# Let's plot 
+
+## Boxplots should be better
+
+```{r boxplot}
+sci_df %>%
+  ggplot(aes(x = as.factor(pass), y = math_sc)) +
+  geom_boxplot()
+
+```
+
+---
+# Let's predict passing
+
+## Here's what we know:
+
+- Pass / Fail is a binary outcome variable
+- We have a variety of types of predictor variables
+
+
+
+---
+# Let's review...
+
+We spent today looking at how to 
+
+We can...
+ - run a multiple regression
+ - interpret a multiple regression 
+ - consider categorical variables
+ - dummy code for categorical variables
+ - visualize regression coefficients
+ - handle interaction terms

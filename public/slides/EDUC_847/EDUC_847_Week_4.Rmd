@@ -1,0 +1,384 @@
+---
+title: "EDUC 847 Winter 24"
+subtitle: Week 4 - Data for Linear Modeling
+author: 'Eric Brewe <br> Professor of Physics at Drexel University <br>'
+date: "5 February 2024, last update: `r Sys.Date()`"
+output: 
+  xaringan::moon_reader:
+    css: [default, metropolis, "BreweSlides.css"]
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(warning = FALSE, message = FALSE)
+library(tidyverse)
+library(janitor)
+library(haven)
+library(here)
+library(broom)
+library(mice)
+
+```
+
+
+
+
+class: center, middle
+
+# Let's start wit
+
+Start by getting the data into R
+
+```{r ReadDataforReal, echo=FALSE}
+
+sci_df <- read_csv(here("static/slides/EDUC_847/data", "science_scores2.csv"))
+
+```
+
+
+```{r ReadData, eval=FALSE}
+#This loads the csv and saves it as a dataframe titled week_1_data
+
+sci_df <- read_csv(here("data",
+                        "science_scores2.csv"))
+
+```
+
+
+---
+# Let's remember last week
+
+### We want to predict a science score from a math score. 
+```{r LinearRegression}
+
+sci_mod <- lm(sci ~ math_sc, data = sci_df) #<<
+
+summary(sci_mod)
+```
+
+Note - we have a new dataset!
+
+---
+# Let's check some other variables
+
+## What about pre score?
+```{r Model2}
+
+Mod2 <- lm(sci ~ pre_sc, data = sci_df)
+summary(Mod2)
+
+```
+
+---
+# Let's check on the assumptions
+
+### Normality of Residuals
+Residuals are distributed normally.
+
+### Linearity
+Predictor and Fitted are linearly related
+
+### Homogeneity of varicance
+The standard deviation of the residual is the same at all values of the Outcome
+
+### Uncorrelated predictors
+The correlations between predictor variables is small (We'll come back to this)
+
+### No bad outliers
+There aren't any individual data points that are really impacting our model
+
+---
+# Let's start with a scatter plot 
+```{r ScatterPlotWithResiduals, echo=FALSE}
+
+sci_mod_df <-augment(Mod2)
+
+sci_mod_df %>%
+  ggplot(aes(x = pre_sc, y = sci)) +
+  geom_point() + 
+  theme_minimal() + 
+  stat_smooth(method = lm, se = TRUE)  +
+  geom_segment(aes(xend = pre_sc, yend= .fitted), color = "red", size = 0.2) +
+  labs(x = "Pre Score", 
+       y = "Science Score")
+
+
+```
+
+That doesn't look good, doesn't look normal
+---
+# Let's check the normality
+
+We can do a histogram of residuals
+
+.pull-left[
+```{r ResidualHist, echo=FALSE }
+
+sci_mod_df %>%
+  ggplot(aes(y = .resid)) +
+  geom_histogram() + 
+  theme_minimal() + 
+  coord_flip()
+
+
+```
+
+]
+.pull-right[
+
+
+
+
+```{r ResidualCheck3, eval=FALSE}
+
+sci_mod_df %>%
+  ggplot(aes(y = .resid)) +
+  geom_histogram() + 
+  theme_minimal() + 
+  coord_flip()
+
+```
+]
+
+definitely not normal distribution...
+
+
+
+---
+# Let's check the normality
+
+Also doesn't hurt to check the pre_score itself
+
+.pull-left[
+```{r pre_sc_Hist, echo=FALSE }
+
+sci_mod_df %>%
+  ggplot(aes(y = pre_sc)) +
+  geom_histogram() + 
+  theme_minimal() + 
+  coord_flip()
+
+
+```
+]
+
+.pull-right[
+```{r pre_sc_HistR, eval=FALSE }
+
+sci_mod_df %>%
+  ggplot(aes(y = pre_sc)) +
+  geom_histogram() + 
+  theme_minimal() + 
+  coord_flip()
+
+
+```
+]
+
+
+definitely not normal distribution...
+Now What????
+
+
+---
+# Let's transform our data
+
+## When your data are not normally distributed, you can apply a transformation. 
+The most common transformation is a log transformation
+
+.pull-left[
+
+```{r LogTrans, echo= FALSE}
+
+sci_mod_df %>%
+  ggplot(aes(y =  log(pre_sc))) +
+  geom_histogram() + 
+  theme_minimal() + 
+  coord_flip()
+```
+
+]
+
+.pull-right[
+
+```{r LogTransR, eval= FALSE}
+
+sci_mod_df %>%
+  ggplot(aes(y = log(pre_sc))) +
+  geom_histogram() + 
+  theme_minimal() + 
+  coord_flip()
+```
+]
+---
+# Let's use the log transform in a model
+
+```{r LogTransformMod, eval = FALSE }
+
+Mod3 <- lm(sci ~ log(pre_sc), data = sci_df)
+
+summary(Mod3)
+
+```
+
+
+```{r LogTransformMod2, echo=FALSE }
+
+Mod3 <- lm(sci ~ log(pre_sc), data = sci_df)
+
+summary(Mod3)
+
+```
+
+
+
+
+
+---
+# Let's interpret this new model
+
+```{r}
+summary(Mod3)
+```
+
+
+---
+# Let's check the normality
+
+We can do a histogram of residuals for transformed data
+
+.pull-left[
+```{r LogResidualHist, echo=FALSE }
+
+log_sci_mod_df <- augment(Mod3)
+
+log_sci_mod_df %>%
+  ggplot(aes(y = .resid)) +
+  geom_histogram() + 
+  theme_minimal() + 
+  coord_flip()
+
+
+```
+
+]
+.pull-right[
+
+
+
+
+```{r LogResidualCheck3, eval=FALSE}
+
+log_sci_mod_df %>%
+  ggplot(aes(y = .resid)) +
+  geom_histogram() + 
+  theme_minimal() + 
+  coord_flip()
+
+```
+]
+
+
+
+---
+# Let's consider some other transforms
+
+## Another common transformation is to use Z-scores
+This makes it easy to compare coefficients
+
+```{r ZScTransformMod }
+
+Mod4 <- lm(scale(sci) ~ scale(math_sc), data = sci_df)
+
+summary(Mod4)
+
+```
+Hey, notice that the t-value and the p value both stay the same as the first model!
+---
+# Let's deal with these missing data!
+
+```{r}
+summary(sci_df)
+
+```
+
+
+Any thoughts?
+
+---
+# Let's deal with these missing data!
+
+## Here are some options
+
+- Hot Deck Replacement
+- Mean/Median Replacement
+- Regression Replacement
+- Multiple Imputation
+
+---
+# Let's look at the basics of Multiple Imputation
+ 
+ - Impute missing data (do this several/a bunch of times)
+ - Analyze all the new data sets
+ - Pool the results
+ 
+Sounds difficult, no?
+
+---
+# Let's try multiple imputation
+
+## First, it works best with data that are MCAR or MAR
+
+```{r visualizeMD}
+
+md.pattern(sci_df)
+
+```
+
+---
+# Let's go ahead and impute
+
+First, we will set up a dataset with 5 iterations of the imputed data. 
+
+
+```{r imputeMissingData}
+
+sci_df_imp <- mice(sci_df, maxit = 5, m = 5, seed = 327)
+
+```
+
+---
+# Let's plot our imputed data 
+
+We should look at how the new data are distributed using a stripplot. 
+```{r plotImputedMathScore}
+stripplot(sci_df_imp, math_sc, xlab = "imputation number")
+```
+
+
+---
+# Let's use this in a linear model
+
+```{r ModelWithImputedData}
+
+sci_mod_imp <- with(sci_df_imp, lm(sci~ math_sc))
+
+summary(pool(sci_mod_imp))
+
+```
+
+---
+# Let's review...
+
+We spent more time dealing with the underlying data for linear modeling
+
+We can...
+ - transform data when it is not normally distributed
+   - Log-Transform
+   - Z-scores
+ - visualize missingness in our dataset
+ - use multiple imputation with chained equations. 

@@ -1,0 +1,35 @@
+ID,StartDate,EndDate,Status,Progress,Duration (in seconds),Finished,RecordedDate,SurveyID,ExternalReference,DistributionChannel,UserLanguage,Q2,Q3,Q4,Q5,Q6,as.character(Q5)
+5106,2020-07-30T12:15:20Z,2020-07-30T12:18:59Z,IP Address,100,219,TRUE,2020-07-30T12:18:59Z,R_ssTGHZwy5EpQaNX,NA,email,EN,morning person.,Brownies,"Coffee,Water,The tears of my enemies",350,350,350
+6633,2020-07-30T12:18:50Z,2020-07-30T12:20:21Z,IP Address,100,91,TRUE,2020-07-30T12:20:22Z,R_2fv9VCk0tjdrDOr,NA,email,EN,morning person.,I don't care for dessert.,"Coffee,Tea,Water,Milk",12,56,12
+7599,2020-07-30T12:21:55Z,2020-07-30T12:24:12Z,IP Address,100,137,TRUE,2020-07-30T12:24:13Z,R_1jcQt2E9JqI93Xz,NA,email,EN,night owl.,Ice Cream,"Fruit Juice,Tea,Water,Fizzy Water",300,5000,300
+4425,2020-07-30T12:22:38Z,2020-07-30T12:24:16Z,IP Address,100,97,TRUE,2020-07-30T12:24:16Z,R_3dWBrw6LdoJ9Slq,NA,email,EN,morning person.,I don't care for dessert.,"Fruit Juice,Coffee,Water",0,50,0
+2495,2020-07-30T12:24:45Z,2020-07-30T12:26:52Z,IP Address,100,127,TRUE,2020-07-30T12:26:52Z,R_1qfdWVfr5to5Iwl,NA,email,EN,morning person.,Brownies,"Coffee,Water",264,286,264
+6355,2020-07-30T12:29:26Z,2020-07-30T12:33:20Z,IP Address,100,233,TRUE,2020-07-30T12:33:20Z,R_1H616dBOMQHwEf7,NA,email,EN,night owl.,Ice Cream,"Fruit Juice,Tea,Water",4,250,4
+8810,2020-07-30T12:50:29Z,2020-07-30T12:52:06Z,IP Address,100,97,TRUE,2020-07-30T12:52:06Z,R_2z5RjhoTyYVCl4A,NA,email,EN,morning person.,Ice Cream,"Coffee,Fizzy Water,The tears of my enemies",289,76,289
+3877,2020-07-30T12:52:15Z,2020-07-30T12:54:40Z,IP Address,100,144,TRUE,2020-07-30T12:54:40Z,R_xg5mG1bOWs7gSUp,NA,email,EN,night owl.,Ice Cream,"Tea,Water,Fizzy Water,Milk,The tears of my enemies",550,185,550
+1554,2020-07-30T13:23:31Z,2020-07-30T13:25:15Z,IP Address,100,103,TRUE,2020-07-30T13:25:15Z,R_1EjsVTqCsJWqVoO,NA,email,EN,night owl.,Brown Butter Chocolate Chip Cookies,"Fruit Juice,Water,The tears of my enemies",349,108,349
+7743,2020-07-30T13:24:19Z,2020-07-30T13:28:11Z,IP Address,100,231,TRUE,2020-07-30T13:28:11Z,R_2WTsu5NwBEzatZv,NA,email,EN,morning person.,Ice Cream,"Fruit Juice,Tea,Water,Fizzy Water,Milk",300,220,300
+8353,2020-07-30T13:32:34Z,2020-07-30T13:36:10Z,IP Address,100,216,TRUE,2020-07-30T13:36:11Z,R_3CIV2viqV7CIcg9,NA,email,EN,morning person.,Brownies,"Coffee,Water",424,500,424
+2921,2020-07-30T13:29:30Z,2020-07-30T13:36:33Z,IP Address,100,422,TRUE,2020-07-30T13:36:33Z,R_1CqimgZlvzj5S2Z,NA,email,EN,morning person.,Ice Cream,"Coffee,Tea,Water,The tears of my enemies",426,350,426
+7327,2020-07-30T13:51:27Z,2020-07-30T13:56:25Z,IP Address,100,297,TRUE,2020-07-30T13:56:25Z,R_1pxSlgXp84lxgZP,NA,email,EN,night owl.,Brownies,"Coffee,Tea,Water,Fizzy Water",231,412,231
+5462,2020-07-30T13:59:00Z,2020-07-30T14:04:31Z,IP Address,100,331,TRUE,2020-07-30T14:04:31Z,R_2S16WLx9DEvY0vP,NA,email,EN,morning person.,Ice Cream,"Coffee,Water,Fizzy Water,Milk",290,1135,290
+9362,2020-07-30T14:01:41Z,2020-07-30T14:05:20Z,IP Address,100,219,TRUE,2020-07-30T14:05:20Z,R_1jAJJHMW84W0pdG,NA,email,EN,morning person.,Brownies,"Coffee,Water,Fizzy Water,The tears of my enemies",1000,300,1000
+7539,2020-07-30T14:04:32Z,2020-07-30T14:06:35Z,IP Address,100,122,TRUE,2020-07-30T14:06:35Z,R_1DBIyH2XuxMIDei,NA,email,EN,night owl.,Cheese,"Fruit Juice,Coffee,Tea,Water,Fizzy Water",250,300,250
+1367,2020-07-30T14:05:31Z,2020-07-30T14:08:47Z,IP Address,100,195,TRUE,2020-07-30T14:08:47Z,R_2E6HTM3xuox3YQa,NA,email,EN,morning person.,Ice Cream,"Coffee,Tea,Water,Fizzy Water",329,360,329
+6311,2020-07-30T14:07:02Z,2020-07-30T14:11:49Z,IP Address,100,287,TRUE,2020-07-30T14:11:49Z,R_2wp1gk4rdrb1wXz,NA,email,EN,night owl.,Ice Cream,"Fruit Juice,Coffee,Water,Milk",7,350,7
+4518,2020-07-30T14:33:00Z,2020-07-30T14:36:12Z,IP Address,100,192,TRUE,2020-07-30T14:36:12Z,R_1oaIvYuJ241b45s,NA,email,EN,morning person.,Ice Cream,"Coffee,Water,Fizzy Water",99,425,99
+9929,2020-07-30T15:03:25Z,2020-07-30T15:06:33Z,IP Address,100,188,TRUE,2020-07-30T15:06:33Z,R_2qlVuVpwYYRVZFI,NA,email,EN,morning person.,Brownies,"Coffee,Tea,Water",527,160,527
+7040,2020-07-30T15:18:15Z,2020-07-30T15:21:01Z,IP Address,100,165,TRUE,2020-07-30T15:21:01Z,R_3pnXHCc92fjzYcm,NA,email,EN,morning person.,I don't care for dessert.,"Tea,Water",400,300,400
+5129,2020-07-30T15:46:14Z,2020-07-30T15:51:38Z,IP Address,100,324,TRUE,2020-07-30T15:51:39Z,R_0GR8upC1V2fMrkZ,NA,email,EN,morning person.,Ice Cream,"Coffee,Tea,Water",158,64,158
+2671,2020-07-30T16:03:33Z,2020-07-30T16:16:03Z,IP Address,100,750,TRUE,2020-07-30T16:16:03Z,R_2s4SzRobc2gIsZF,NA,email,EN,night owl.,Cheese,"Fruit Juice,Coffee,Tea,Water,A delicious 12 year single malt scotch from the Scottish lowlands with notes of apple, cinnamon, and dried fruit served with a single ice cube,Milk",832,328,832
+5051,2020-07-30T16:15:19Z,2020-07-30T16:19:26Z,IP Address,100,247,TRUE,2020-07-30T16:19:26Z,R_WBQ1sqAzJ5oelwJ,NA,email,EN,night owl.,Ice Cream,"Tea,Water,Milk",240,100,240
+4386,2020-07-30T16:42:27Z,2020-07-30T16:47:47Z,IP Address,100,320,TRUE,2020-07-30T16:47:47Z,R_12xxYQm8GLT6Dgt,NA,email,EN,morning person.,Brownies,"Coffee,Tea,Water,Milk",324,200,324
+5341,2020-07-30T17:09:26Z,2020-07-30T17:12:38Z,IP Address,100,191,TRUE,2020-07-30T17:12:38Z,R_3KZUGc1SE2ehOpw,NA,email,EN,night owl.,Brown Butter Chocolate Chip Cookies,"Coffee,Water",217,250,217
+3291,2020-07-30T12:51:15Z,2020-07-30T19:50:14Z,IP Address,100,25138,TRUE,2020-07-30T19:50:14Z,R_2uTEwcdjrjGklN4,NA,email,EN,morning person.,Ice Cream,"Coffee,Tea,Water",200,300,200
+4512,2020-07-31T10:11:20Z,2020-07-31T10:16:00Z,IP Address,100,280,TRUE,2020-07-31T10:16:00Z,R_5on8iuZmxVb38rf,NA,email,EN,night owl.,Brownies,"Coffee,Tea,Water,Fizzy Water,Milk,The tears of my enemies",10,152,10
+7410,2020-07-31T10:43:21Z,2020-07-31T10:55:49Z,IP Address,100,747,TRUE,2020-07-31T10:55:50Z,R_2U0cf1rdeqLbnhY,NA,email,EN,morning person.,Ice Cream,"Coffee,Water,Fizzy Water,Milk",407,90,407
+4071,2020-07-31T13:54:15Z,2020-07-31T15:00:51Z,IP Address,100,3996,TRUE,2020-07-31T15:00:51Z,R_3KqHKoc71gGPjZr,NA,email,EN,night owl.,Ice Cream,"Coffee,Tea,Water",142,50,142
+6178,2020-07-31T16:06:25Z,2020-07-31T16:10:16Z,IP Address,100,230,TRUE,2020-07-31T16:10:16Z,R_3MEcKosyeNGXtkd,NA,email,EN,night owl.,Cheese,"Fruit Juice,Water,Milk",400,150,400
+5743,2020-07-31T20:02:54Z,2020-07-31T20:08:50Z,IP Address,100,356,TRUE,2020-07-31T20:08:51Z,R_zYBq31qnpdXfwDD,NA,email,EN,morning person.,Brownies,"Coffee,Tea,Water,Fizzy Water,A delicious 12 year single malt scotch from the Scottish lowlands with notes of apple, cinnamon, and dried fruit served with a single ice cube,The tears of my enemies",300,250,300
+1386,2020-07-31T22:20:57Z,2020-07-31T22:23:14Z,IP Address,100,136,TRUE,2020-07-31T22:23:14Z,R_334mR0HDYdbfs36,NA,email,EN,night owl.,Ice Cream,"Fruit Juice,Coffee,Water,Milk",500,1500,500
+8863,2020-08-02T23:51:28Z,2020-08-02T23:53:51Z,IP Address,100,142,TRUE,2020-08-02T23:53:51Z,R_3lzDKM88cqP82Tk,NA,email,EN,night owl.,Ice Cream,"Fruit Juice,Tea,Water",1000,400,1000

@@ -1,0 +1,292 @@
+---
+title: "EDUC 847 Winter 24"
+subtitle: Week 2 - Fundamentals of Linear Modeling
+author: 'Eric Brewe <br> Professor of Physics at Drexel University <br>'
+date: "22 January 2024, last update: `r Sys.Date()`"
+output: 
+  xaringan::moon_reader:
+    css: [default, metropolis, "BreweSlides.css"]
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(warning = FALSE, message = FALSE)
+library(tidyverse) # load tidyverse package
+library(emoji) # load emoji package
+library(janitor)
+library(glmnet)
+library(haven)
+library(here)
+library(broom)
+
+```
+
+
+
+
+class: center, middle
+
+# Let's start where we ended last class...Scatter Plots
+
+Start by getting the data into R
+
+```{r ReadDataforReal, echo=FALSE}
+
+week_1_data <- read_csv(here("static/slides/EDUC_847/data", "EDUC_847_Survey.csv"))
+
+```
+
+
+```{r ReadData, eval=FALSE}
+#This loads the csv and saves it as a dataframe titled week_1_data
+
+week_1_data <- read_csv(here("static/slides/EDUC_847/data",
+                             "EDUC_847_Survey.csv"))
+
+```
+
+
+---
+# Let's start cleaning up.
+
+## First, we don't need most of that data
+
+There is a ton of data there that doesn't make sense for us to keep around. 
+
+We will use the '%>%' (pipe) operator and the verb select
+
+```{r DeleteUnNeededVariables}
+week_1_data %>%
+  select(ID,Q2:Q6) -> w1df #<<
+
+glimpse(w1df)
+```
+
+
+---
+# Let's keep cleaning up.
+
+Notice there are two rows of data that are just the questions and something from Qualtrics.  Let's get rid of those. 
+
+```{r RemoveExtraRows}
+w1df %>%
+  filter(row_number() >3 ) -> w1df
+
+```
+
+---
+# Let's lump all this together so we don't have to do it again.
+
+
+```{r CleanDataPipeline}
+
+week_1_data %>%
+  select(ID,Q2:Q6) %>%
+  filter(row_number() >3 ) %>%
+  mutate(across(c(Q2:Q3,Q5:Q6), as.numeric)) -> w1df  #<<
+  
+
+```
+
+
+---
+# Let's look at books vs. weight of cow
+
+### Is there a relationship between length of book and estimates on weight of cow?
+
+.pull-left[
+### Making a scatter plot to explore
+```{r ScatterPlot2, fig.show= 'hide'}
+
+w1df %>%
+  select(Q5:Q6) %>%
+  ggplot(aes(x = Q5, y = Q6)) +
+  geom_point() + 
+  theme_minimal() + 
+  labs(x = "Pages", 
+       y = "Weight of Cow",
+       title = "Kick Ass Scatterplot!")
+
+```
+
+]
+
+.pull-right[
+```{r ref.label= 'ScatterPlot2', echo=FALSE}
+
+```
+
+]
+
+A **residual** is the distance between the Y value for each measurement, and the predicted Y value. 
+
+---
+# Let's investigate the residuals for our data 
+.pull-left[
+```{r CheckResiduals1}
+
+w1df %>% 
+  select(Q5,Q6)
+```
+]
+.pull-right[
+```{r ref.label= 'ScatterPlot2', echo=FALSE}
+
+```
+]
+
+---
+# Let's make a linear regression model
+
+
+### We want the estimated weight of the cow as predicted by the length of the book closest to the survey respondent. 
+```{r LinearRegression}
+
+Model1 <- lm(Q6 ~ Q5, data = w1df) #<<
+
+Model1
+```
+---
+# Let's clean up our language...
+
+In this situation, Q5 (the Estimated weight of the cow) is the Outcome Variable and Q6 (the number of pages in the closest book) is the Predictor variable.
+
+Outcome Variable is often referred to as independent variable
+
+Predictor Variable is often referred to as the dependent variable. 
+ 
+I hate this language. Predictor and Outcome are much more descriptive. 
+
+---
+# Let's figure out what this means
+
+```{r ModelInterp}
+
+Model1
+
+```
+**Intercept** = if the closest book had 0 pages in it, this would be the estimated weight of the cow that we predict. 
+
+**Q6 coefficient** = If we increase the number of pages in the book, the value of the coeffient tells us how much we would increase the estimated weight of the cow by 
+
+
+---
+# Let's check out those residuals...
+.pull-left[
+```{r ScatterPlotWithResiduals, echo=FALSE }
+
+mod_df<-augment(Model1)
+
+
+mod_df %>%
+  ggplot(aes(x = Q5, y = Q6)) +
+  geom_point() + 
+  theme_minimal() + 
+  stat_smooth(method = lm, se = FALSE) +
+  geom_segment(aes(xend = Q5, yend= .fitted), color = "red", size = 0.2) +
+  labs(x = "Pages", 
+       y = "Weight of Cow",
+       title = "Kick Ass Scatterplot!")
+
+```
+
+]
+.pull-right[
+
+
+
+
+```{r ResidualCheck2}
+
+augment(Model1) %>%
+  select(Q5:.resid) 
+```
+]
+
+---
+# Let's see how much better the model fits
+
+```{r ResidualCheck3}
+
+augment(Model1) %>%
+  select(Q5:.resid) %>%
+  mutate(SqResid = .resid^2) #<<
+```
+
+---
+# Let's see how much better the model fits
+
+```{r ResidualCheck4}
+
+augment(Model1) %>%
+  select(Q5:.resid) %>%
+  mutate(SqResid = .resid^2) %>%
+  tally(SqResid)
+```
+
+---
+# Let's take a look at R<sup>2</sup>
+
+
+**R<sup>2</sup>** is the measure of how well the model fits
+
+$R^{2} = 1 - \frac{\sum_{i} (Y_{Pred} - Y_{i})^2}{\sum_{i} (Y_{i}-\overline{Y})^2}$
+
+
+```{r  CalcRSq}
+
+augment(Model1) %>%
+  select(Q6:.resid) %>%
+  mutate(SqResid = .resid^2) %>%
+  mutate(SqDiffMean = (Q6 - mean(Q6))^2) -> resid_df
+
+glimpse(resid_df)
+
+```
+
+---
+# Let's take a look at R<sup>2</sup>
+
+
+$R^{2} = 1 - \frac{\sum_{i} (Y_{Pred} - Y_{i})^2}{\sum_{i} (Y_{i}-\overline{Y})^2}$
+
+.pull-left[
+```{r  CalcRSq2}
+
+SquaredResiduals = sum(resid_df$SqResid)
+SquaredResiduals
+
+SquaredDiffMean = sum(resid_df$SqDiffMean)
+SquaredDiffMean
+
+r2 = 1-(SquaredResiduals/SquaredDiffMean)
+r2
+```
+---
+# Let's compare to the R<sup>2<\sup>
+
+```{r ModelSummary}
+SquaredResiduals
+SquaredDiffMean
+r2
+
+summary(Model1)
+
+```
+
+
+
+---
+# Let's recap
+We can...
+- Fit a regression model to two continuous variables
+- Calculate the residuals
+- Calculate the squared residuals
+- Use the residuals to calculate the r<sup>2<\sup>
+
+    
+    
