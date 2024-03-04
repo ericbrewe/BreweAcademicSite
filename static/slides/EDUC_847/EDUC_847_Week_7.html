@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>EDUC 847 Winter 24</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Eric Brewe   Professor of Physics at Drexel University  " />
+    <script src="EDUC_847_Week_7_files/header-attrs/header-attrs.js"></script>
+    <link href="EDUC_847_Week_7_files/remark-css/default.css" rel="stylesheet" />
+    <link href="EDUC_847_Week_7_files/remark-css/metropolis.css" rel="stylesheet" />
+    <link rel="stylesheet" href="BreweSlides.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# EDUC 847 Winter 24
+]
+.subtitle[
+## Week 7 - Machine Learning
+]
+.author[
+### Eric Brewe <br> Professor of Physics at Drexel University <br>
+]
+.date[
+### 4 March 2024, last update: 2024-03-04
+]
+
+---
+
+
+
+
+
+
+
+
+# Let's start with a complete dataset
+
+Today we will use a subset of a dataset that has been peer reviewed. 
+
+It is about Portugese student performance, and can be found here:
+
+https://archive.ics.uci.edu/dataset/320/student+performance
+
+
+
+
+
+```r
+#This loads the csv and saves it as a dataframe titled sci_df
+
+psd &lt;- read_csv(here("data",
+                        "PortugeseStudentData.csv"))
+```
+
+
+---
+# Let's have a look at the data
+
+
+```r
+glimpse(psd)
+```
+
+```
+## Rows: 649
+## Columns: 33
+## $ school     &lt;chr&gt; "GP", "GP", "GP", "GP", "GP", "GP", "GP", "GP", "GP", "GP",…
+## $ sex        &lt;chr&gt; "F", "F", "F", "F", "F", "M", "M", "F", "M", "M", "F", "F",…
+## $ age        &lt;dbl&gt; 18, 17, 15, 15, 16, 16, 16, 17, 15, 15, 15, 15, 15, 15, 15,…
+## $ address    &lt;chr&gt; "U", "U", "U", "U", "U", "U", "U", "U", "U", "U", "U", "U",…
+## $ famsize    &lt;chr&gt; "GT3", "GT3", "LE3", "GT3", "GT3", "LE3", "LE3", "GT3", "LE…
+## $ Pstatus    &lt;chr&gt; "A", "T", "T", "T", "T", "T", "T", "A", "A", "T", "T", "T",…
+## $ Medu       &lt;dbl&gt; 4, 1, 1, 4, 3, 4, 2, 4, 3, 3, 4, 2, 4, 4, 2, 4, 4, 3, 3, 4,…
+## $ Fedu       &lt;dbl&gt; 4, 1, 1, 2, 3, 3, 2, 4, 2, 4, 4, 1, 4, 3, 2, 4, 4, 3, 2, 3,…
+## $ Mjob       &lt;chr&gt; "at_home", "at_home", "at_home", "health", "other", "servic…
+## $ Fjob       &lt;chr&gt; "teacher", "other", "other", "services", "other", "other", …
+## $ reason     &lt;chr&gt; "course", "course", "other", "home", "home", "reputation", …
+## $ guardian   &lt;chr&gt; "mother", "father", "mother", "mother", "father", "mother",…
+## $ traveltime &lt;dbl&gt; 2, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 3, 1, 2, 1, 1, 1, 3, 1, 1,…
+## $ studytime  &lt;dbl&gt; 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 3, 1, 2, 3, 1, 3, 2, 1, 1,…
+## $ failures   &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0,…
+## $ schoolsup  &lt;chr&gt; "yes", "no", "yes", "no", "no", "no", "no", "yes", "no", "n…
+## $ famsup     &lt;chr&gt; "no", "yes", "no", "yes", "yes", "yes", "no", "yes", "yes",…
+## $ paid       &lt;chr&gt; "no", "no", "no", "no", "no", "no", "no", "no", "no", "no",…
+## $ activities &lt;chr&gt; "no", "no", "no", "yes", "no", "yes", "no", "no", "no", "ye…
+## $ nursery    &lt;chr&gt; "yes", "no", "yes", "yes", "yes", "yes", "yes", "yes", "yes…
+## $ higher     &lt;chr&gt; "yes", "yes", "yes", "yes", "yes", "yes", "yes", "yes", "ye…
+## $ internet   &lt;chr&gt; "no", "yes", "yes", "yes", "no", "yes", "yes", "no", "yes",…
+## $ romantic   &lt;chr&gt; "no", "no", "no", "yes", "no", "no", "no", "no", "no", "no"…
+## $ famrel     &lt;dbl&gt; 4, 5, 4, 3, 4, 5, 4, 4, 4, 5, 3, 5, 4, 5, 4, 4, 3, 5, 5, 3,…
+## $ freetime   &lt;dbl&gt; 3, 3, 3, 2, 3, 4, 4, 1, 2, 5, 3, 2, 3, 4, 5, 4, 2, 3, 5, 1,…
+## $ goout      &lt;dbl&gt; 4, 3, 2, 2, 2, 2, 4, 4, 2, 1, 3, 2, 3, 3, 2, 4, 3, 2, 5, 3,…
+## $ Dalc       &lt;dbl&gt; 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1,…
+## $ Walc       &lt;dbl&gt; 1, 1, 3, 1, 2, 2, 1, 1, 1, 1, 2, 1, 3, 2, 1, 2, 2, 1, 4, 3,…
+## $ health     &lt;dbl&gt; 3, 3, 3, 5, 5, 5, 3, 1, 1, 5, 2, 4, 5, 3, 3, 2, 2, 4, 5, 5,…
+## $ absences   &lt;dbl&gt; 4, 2, 6, 0, 0, 6, 0, 2, 0, 0, 2, 0, 0, 0, 0, 6, 10, 2, 2, 6…
+## $ G1         &lt;dbl&gt; 0, 9, 12, 14, 11, 12, 13, 10, 15, 12, 14, 10, 12, 12, 14, 1…
+## $ G2         &lt;dbl&gt; 11, 11, 13, 14, 13, 12, 12, 13, 16, 12, 14, 12, 13, 12, 14,…
+## $ G3         &lt;dbl&gt; 11, 11, 12, 14, 13, 13, 13, 13, 17, 13, 14, 13, 12, 13, 15,…
+```
+
+---
+# Let's figure out some of these variables. 
+
+school - student's school (binary: "GP" - Gabriel Pereira or "MS" - Mousinho da Silveira)
+
+sex - student's sex (binary: "F" - female or "M" - male)
+
+age - student's age (numeric: from 15 to 22)
+
+address - student's home address type (binary: "U" - urban or "R" - rural)
+
+famsize - family size (binary: "LE3" - less or equal to 3 or "GT3" - greater than 3)
+
+Pstatus - parent's cohabitation status (binary: "T" - living together or "A" - apart)
+
+Medu - mother's education (numeric: 0 - none,  1 - primary education (4th grade), 2 – 5th to 9th grade, 3 – secondary education or 4 – higher education)
+
+Fedu - father's education (numeric: 0 - none,  1 - primary education (4th grade), 2 – 5th to 9th grade, 3 – secondary education or 4 – higher education)
+
+---
+# Let's figure out some of these variables.
+Mjob - mother's job (nominal: "teacher", "health" care related, civil "services" (e.g. administrative or police), "at_home" or "other")
+
+Fjob - father's job (nominal: "teacher", "health" care related, civil "services" (e.g. administrative or police), "at_home" or "other")
+
+reason - reason to choose this school (nominal: close to "home", school "reputation", "course" preference or "other")
+
+guardian - student's guardian (nominal: "mother", "father" or "other")
+
+traveltime - home to school travel time (numeric: 1 - &lt;15 min., 2 - 15 to 30 min., 3 - 30 min. to 1 hour, or 4 - &gt;1 hour)
+
+studytime - weekly study time (numeric: 1 - &lt;2 hours, 2 - 2 to 5 hours, 3 - 5 to 10 hours, or 4 - &gt;10 hours)
+
+failures - number of past class failures (numeric: n if 1&lt;=n&lt;3, else 4)
+
+---
+# Let's figure out some of these variables.
+schoolsup - extra educational support (binary: yes or no)
+
+famsup - family educational support (binary: yes or no)
+
+paid - extra paid classes within the course subject (Math or Portuguese) (binary: yes or no)
+
+activities - extra-curricular activities (binary: yes or no)
+
+nursery - attended nursery school (binary: yes or no)
+
+higher - wants to take higher education (binary: yes or no)
+
+internet - Internet access at home (binary: yes or no)
+
+romantic - with a romantic relationship (binary: yes or no)
+
+---
+# Let's figure out some of these variables.
+famrel - quality of family relationships (numeric: from 1 - very bad to 5 - excellent)
+
+freetime - free time after school (numeric: from 1 - very low to 5 - very high)
+
+goout - going out with friends (numeric: from 1 - very low to 5 - very high)
+
+Dalc - workday alcohol consumption (numeric: from 1 - very low to 5 - very high)
+
+Walc - weekend alcohol consumption (numeric: from 1 - very low to 5 - very high)
+
+health - current health status (numeric: from 1 - very bad to 5 - very good)
+
+absences - number of school absences (numeric: from 0 to 93)
+
+---
+# these grades are related with the course subject, Math or Portuguese:
+
+G1 - first period grade (numeric: from 0 to 20)
+
+G2 - second period grade (numeric: from 0 to 20)
+
+G3 - final grade (numeric: from 0 to 20, output target)
+
+
+---
+# Let's make characters factors
+
+## Machine Learning works best with factors, so we should convert character variables to factors
+
+
+```r
+psd %&gt;%
+   select(-G1) %&gt;%
+   mutate_if(is_character, as.factor) %&gt;%
+   mutate(passing = if_else(G3&gt;10, 1,0 )) %&gt;%
+   mutate(passing = as.factor(passing) )-&gt; psd
+```
+
+
+---
+# Let's talk about Machine Learning
+
+## In many ways it accomplishes the same things as typical regression
+
+- Prediction of whether a student passes (G3) using a mix of numeric, categorical, and logistic variables. 
+- Regression typically uses all of the data to generate the model, and then uses the same data to evaluate the model. 
+  - This is not ideal.
+  
+## Additional things ML does:
+
+- Separating data into test and train data. 
+- Variable selection 
+- Model evaluation
+- lots of additional things.
+
+---
+# Let's define our task
+
+## We would like to predict final grade (G3)
+
+To do this, we will use the tidymodels package
+
+https://www.tidymodels.org/
+
+It has a number of the things we'll need to do built into the package. 
+
+---
+# Let's deal with our dataset first
+
+## Since we don't want to use all the data to train our model, we need to split the data
+
+Training data = a portion of the data used to first build the model
+Test data = the remainder of the data that is used to evaluate the model. 
+
+A standard is to do a 75/25 or 80/20 split.  
+
+
+```r
+set.seed(304)
+splits &lt;- initial_split(psd, prop = 0.8)
+
+psd_train &lt;- training(splits)
+psd_test &lt;- testing(splits)
+```
+
+---
+# Let's look at our splits
+
+## Training Data
+
+
+```r
+glimpse(psd_train)
+```
+
+```
+## Rows: 519
+## Columns: 33
+## $ school     &lt;fct&gt; GP, GP, GP, GP, GP, MS, MS, MS, MS, GP, GP, GP, GP, MS, MS,…
+## $ sex        &lt;fct&gt; M, M, F, M, M, M, F, F, F, M, F, M, M, F, F, F, F, F, F, F,…
+## $ age        &lt;dbl&gt; 16, 16, 18, 15, 16, 16, 18, 16, 16, 16, 17, 17, 18, 18, 17,…
+## $ address    &lt;fct&gt; U, U, R, U, U, U, U, U, U, U, U, R, R, R, R, R, U, U, U, R,…
+## $ famsize    &lt;fct&gt; GT3, LE3, GT3, GT3, GT3, GT3, GT3, GT3, GT3, GT3, LE3, LE3,…
+## $ Pstatus    &lt;fct&gt; T, T, T, A, T, A, A, T, T, T, T, T, T, T, A, T, T, T, T, T,…
+## $ Medu       &lt;dbl&gt; 2, 2, 2, 3, 4, 1, 2, 3, 1, 2, 2, 1, 3, 2, 2, 1, 4, 2, 2, 3,…
+## $ Fedu       &lt;dbl&gt; 2, 1, 2, 4, 4, 2, 4, 1, 2, 3, 4, 1, 3, 2, 1, 1, 4, 3, 2, 1,…
+## $ Mjob       &lt;fct&gt; other, other, at_home, services, health, other, other, othe…
+## $ Fjob       &lt;fct&gt; other, other, other, other, other, other, services, other, …
+## $ reason     &lt;fct&gt; course, course, course, course, course, other, reputation, …
+## $ guardian   &lt;fct&gt; father, mother, mother, mother, mother, mother, father, mot…
+## $ traveltime &lt;dbl&gt; 1, 1, 2, 1, 1, 1, 1, 1, 1, 2, 1, 4, 1, 2, 2, 2, 1, 1, 1, 2,…
+## $ studytime  &lt;dbl&gt; 2, 2, 4, 2, 1, 3, 2, 1, 3, 1, 2, 2, 2, 1, 2, 1, 2, 4, 2, 2,…
+## $ failures   &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 3,…
+## $ schoolsup  &lt;fct&gt; no, no, no, no, no, yes, no, no, no, no, no, no, no, no, no…
+## $ famsup     &lt;fct&gt; no, no, no, yes, yes, no, yes, no, yes, no, no, no, yes, no…
+## $ paid       &lt;fct&gt; no, no, no, no, no, no, no, no, no, no, no, no, no, no, no,…
+## $ activities &lt;fct&gt; no, yes, yes, yes, yes, no, no, yes, no, no, yes, yes, no, …
+## $ nursery    &lt;fct&gt; yes, yes, yes, yes, yes, yes, yes, yes, yes, yes, yes, yes,…
+## $ higher     &lt;fct&gt; no, yes, yes, yes, yes, yes, yes, yes, yes, yes, yes, no, y…
+## $ internet   &lt;fct&gt; yes, yes, no, yes, yes, yes, yes, yes, no, yes, yes, no, ye…
+## $ romantic   &lt;fct&gt; no, yes, no, no, no, no, no, no, no, no, yes, yes, yes, yes…
+## $ famrel     &lt;dbl&gt; 4, 4, 4, 5, 3, 4, 2, 3, 1, 5, 4, 5, 4, 5, 5, 3, 4, 4, 5, 5,…
+## $ freetime   &lt;dbl&gt; 3, 2, 4, 4, 4, 4, 3, 1, 3, 3, 3, 3, 3, 5, 3, 5, 4, 5, 4, 4,…
+## $ goout      &lt;dbl&gt; 5, 3, 4, 4, 4, 3, 2, 3, 2, 3, 2, 5, 3, 5, 3, 5, 4, 5, 5, 4,…
+## $ Dalc       &lt;dbl&gt; 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 3, 1, 1, 1,…
+## $ Walc       &lt;dbl&gt; 4, 2, 1, 1, 4, 1, 3, 3, 2, 1, 1, 5, 3, 1, 2, 2, 3, 3, 2, 1,…
+## $ health     &lt;dbl&gt; 4, 5, 4, 1, 5, 5, 1, 1, 4, 3, 5, 5, 5, 3, 2, 4, 5, 2, 5, 5,…
+## $ absences   &lt;dbl&gt; 0, 0, 6, 0, 4, 0, 8, 0, 0, 0, 8, 0, 8, 0, 5, 3, 0, 10, 12, …
+## $ G2         &lt;dbl&gt; 10, 14, 13, 16, 13, 11, 5, 6, 8, 12, 15, 8, 9, 6, 11, 11, 1…
+## $ G3         &lt;dbl&gt; 11, 16, 14, 16, 13, 11, 8, 8, 8, 12, 16, 8, 10, 0, 12, 10, …
+## $ passing    &lt;fct&gt; 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 0,…
+```
+
+---
+# Let's look at our splits
+
+## Testing Data
+
+
+```r
+glimpse(psd_test)
+```
+
+```
+## Rows: 130
+## Columns: 33
+## $ school     &lt;fct&gt; GP, GP, GP, GP, GP, GP, GP, GP, GP, GP, GP, GP, GP, GP, GP,…
+## $ sex        &lt;fct&gt; F, F, M, F, M, M, F, M, M, F, M, M, F, F, M, F, M, M, F, M,…
+## $ age        &lt;dbl&gt; 15, 17, 15, 16, 16, 16, 15, 15, 15, 15, 15, 15, 15, 16, 15,…
+## $ address    &lt;fct&gt; U, U, U, U, U, U, R, U, U, R, U, U, U, U, U, R, U, U, U, U,…
+## $ famsize    &lt;fct&gt; GT3, GT3, GT3, GT3, LE3, LE3, GT3, GT3, LE3, GT3, LE3, GT3,…
+## $ Pstatus    &lt;fct&gt; T, A, T, T, T, T, T, T, T, T, T, T, A, T, A, T, T, T, T, T,…
+## $ Medu       &lt;dbl&gt; 4, 4, 4, 3, 4, 4, 2, 2, 3, 2, 4, 2, 4, 1, 4, 2, 4, 4, 2, 2,…
+## $ Fedu       &lt;dbl&gt; 2, 4, 3, 3, 3, 2, 4, 2, 3, 2, 4, 2, 3, 1, 4, 2, 2, 3, 2, 3,…
+## $ Mjob       &lt;fct&gt; health, other, teacher, other, health, teacher, services, o…
+## $ Fjob       &lt;fct&gt; services, teacher, other, other, other, other, health, othe…
+## $ reason     &lt;fct&gt; home, home, course, reputation, home, course, course, home,…
+## $ guardian   &lt;fct&gt; mother, mother, mother, mother, father, mother, mother, mot…
+## $ traveltime &lt;dbl&gt; 1, 2, 2, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 4, 1, 2, 1, 1, 1, 1,…
+## $ studytime  &lt;dbl&gt; 3, 2, 2, 2, 1, 2, 3, 1, 2, 1, 1, 1, 2, 1, 4, 2, 4, 2, 4, 3,…
+## $ failures   &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,…
+## $ schoolsup  &lt;fct&gt; no, yes, no, yes, no, no, yes, no, no, yes, no, yes, no, ye…
+## $ famsup     &lt;fct&gt; yes, yes, yes, yes, no, no, yes, yes, no, yes, yes, yes, ye…
+## $ paid       &lt;fct&gt; no, no, no, no, no, no, no, no, no, no, no, no, no, no, no,…
+## $ activities &lt;fct&gt; yes, no, no, yes, yes, yes, yes, no, yes, yes, no, no, yes,…
+## $ nursery    &lt;fct&gt; yes, yes, yes, yes, yes, yes, yes, yes, no, yes, no, yes, y…
+## $ higher     &lt;fct&gt; yes, yes, yes, yes, yes, yes, yes, yes, yes, yes, yes, yes,…
+## $ internet   &lt;fct&gt; yes, no, yes, no, yes, yes, yes, yes, yes, no, yes, yes, ye…
+## $ romantic   &lt;fct&gt; yes, no, no, no, no, no, no, no, no, no, yes, no, no, yes, …
+## $ famrel     &lt;dbl&gt; 3, 4, 5, 5, 3, 4, 4, 4, 5, 4, 5, 5, 4, 5, 1, 4, 3, 4, 5, 5,…
+## $ freetime   &lt;dbl&gt; 2, 1, 4, 3, 1, 5, 3, 2, 3, 3, 4, 4, 3, 5, 3, 1, 3, 3, 2, 3,…
+## $ goout      &lt;dbl&gt; 2, 4, 3, 2, 3, 1, 2, 2, 2, 1, 3, 1, 2, 5, 3, 3, 3, 3, 3, 2,…
+## $ Dalc       &lt;dbl&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 5, 5, 1, 1, 2, 1, 1,…
+## $ Walc       &lt;dbl&gt; 1, 1, 2, 1, 3, 3, 1, 2, 1, 1, 4, 1, 1, 5, 5, 3, 1, 3, 3, 2,…
+## $ health     &lt;dbl&gt; 5, 1, 3, 4, 5, 5, 5, 5, 2, 2, 5, 1, 1, 5, 3, 4, 3, 5, 3, 5,…
+## $ absences   &lt;dbl&gt; 0, 2, 0, 2, 6, 0, 2, 8, 0, 8, 8, 0, 0, 0, 0, 0, 0, 0, 1, 2,…
+## $ G2         &lt;dbl&gt; 14, 13, 12, 14, 12, 13, 11, 12, 12, 13, 11, 10, 14, 10, 12,…
+## $ G3         &lt;dbl&gt; 14, 13, 13, 14, 12, 14, 10, 12, 12, 12, 11, 10, 15, 16, 12,…
+## $ passing    &lt;fct&gt; 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0,…
+```
+
+
+
+---
+# Let's talk about options at this point.
+
+## Tidymodels splits the ML process into three main chunks, each chunk has options
+
+- Model Specification
+  - Regression, Random Forest, Neural Network...
+  - What engine to use (STAN, Keras, OLS)
+- Processing 
+  - Data splitting
+  - Cleaning
+- Modeling
+  - Creating a model
+  - Tuning model parameters
+  - Prediction
+  - Evaluation
+  
+  
+---
+# Let's Specify a Model. 
+
+## Tidymodels has a distinct approach to specifying a model.
+We want to tell it to do logistic regression
+
+
+```r
+logistic_reg()
+```
+
+```
+## Logistic Regression Model Specification (classification)
+## 
+## Computational engine: glm
+```
+
+---
+# Let's tell it we want to use logistic regression 
+
+## Tidymodels allows you to choose different approaches
+We want to tell it to do logistic regression
+
+
+```r
+lr_mod &lt;- 
+  logistic_reg()
+```
+
+
+---
+# Let's run this...
+
+
+```r
+lr_fit &lt;- lr_mod %&gt;% fit(passing ~., data = psd_train)
+
+lr_fit
+```
+
+```
+## parsnip model object
+## 
+## 
+## Call:  stats::glm(formula = passing ~ ., family = stats::binomial, data = data)
+## 
+## Coefficients:
+##      (Intercept)          schoolMS              sexM               age  
+##       -4.626e+02        -6.786e-01         1.222e-01        -2.050e-01  
+##         addressU        famsizeLE3          PstatusT              Medu  
+##       -3.451e-01        -2.028e-01        -1.961e-01        -1.843e-02  
+##             Fedu        Mjobhealth         Mjobother      Mjobservices  
+##        1.279e-02        -1.422e+00        -8.151e-01        -9.307e-01  
+##      Mjobteacher        Fjobhealth         Fjobother      Fjobservices  
+##       -8.493e-01        -1.704e+00         8.740e-02        -1.639e-01  
+##      Fjobteacher        reasonhome       reasonother  reasonreputation  
+##        9.972e-01         1.823e-01         3.435e-01        -1.620e-01  
+##   guardianmother     guardianother        traveltime         studytime  
+##       -3.201e-01         1.301e-03        -2.841e-02         1.385e-01  
+##         failures      schoolsupyes         famsupyes           paidyes  
+##       -5.149e-01        -6.206e-01        -1.424e-01         9.133e-01  
+##    activitiesyes        nurseryyes         higheryes       internetyes  
+##       -2.804e-01        -1.144e-01         1.951e-01        -2.217e-01  
+##      romanticyes            famrel          freetime             goout  
+##       -6.348e-01        -1.379e-01        -1.011e-01         1.585e-02  
+##             Dalc              Walc            health          absences  
+##        1.492e-01        -2.393e-03         4.789e-02         6.750e-03  
+##               G2                G3  
+##       -2.074e-01         4.480e+01  
+## 
+## Degrees of Freedom: 518 Total (i.e. Null);  477 Residual
+## Null Deviance:	    632.9 
+## Residual Deviance: 5.692e-08 	AIC: 84
+```
+
+
+---
+# Let's see how it did.
+
+
+```r
+lr_res &lt;- predict(lr_fit, psd_test) %&gt;%
+  bind_cols(predict(lr_fit, psd_test, type = "prob")) %&gt;%
+  bind_cols(psd_test %&gt;% select(passing))
+
+lr_res
+```
+
+```
+## # A tibble: 130 × 4
+##    .pred_class  .pred_0  .pred_1 passing
+##    &lt;fct&gt;          &lt;dbl&gt;    &lt;dbl&gt; &lt;fct&gt;  
+##  1 1           2.22e-16 1   e+ 0 1      
+##  2 1           2.22e-16 1   e+ 0 1      
+##  3 1           2.22e-16 1   e+ 0 1      
+##  4 1           2.22e-16 1   e+ 0 1      
+##  5 1           2.22e-16 1   e+ 0 1      
+##  6 1           2.22e-16 1   e+ 0 1      
+##  7 0           1.00e+ 0 2.73e-11 0      
+##  8 1           2.22e-16 1   e+ 0 1      
+##  9 1           2.22e-16 1   e+ 0 1      
+## 10 1           2.22e-16 1   e+ 0 1      
+## # ℹ 120 more rows
+```
+---
+# Let's check accuracuy
+
+```r
+lr_res %&gt;%
+  accuracy(truth = passing, .pred_class)
+```
+
+```
+## # A tibble: 1 × 3
+##   .metric  .estimator .estimate
+##   &lt;chr&gt;    &lt;chr&gt;          &lt;dbl&gt;
+## 1 accuracy binary             1
+```
+---
+# Let's check the Confusion
+
+```r
+confusionMatrix(lr_res$passing, lr_res$.pred_class)
+```
+
+```
+## Confusion Matrix and Statistics
+## 
+##           Reference
+## Prediction  0  1
+##          0 42  0
+##          1  0 88
+##                                     
+##                Accuracy : 1         
+##                  95% CI : (0.972, 1)
+##     No Information Rate : 0.6769    
+##     P-Value [Acc &gt; NIR] : &lt; 2.2e-16 
+##                                     
+##                   Kappa : 1         
+##                                     
+##  Mcnemar's Test P-Value : NA        
+##                                     
+##             Sensitivity : 1.0000    
+##             Specificity : 1.0000    
+##          Pos Pred Value : 1.0000    
+##          Neg Pred Value : 1.0000    
+##              Prevalence : 0.3231    
+##          Detection Rate : 0.3231    
+##    Detection Prevalence : 0.3231    
+##       Balanced Accuracy : 1.0000    
+##                                     
+##        'Positive' Class : 0         
+## 
+```
+
+---
+# Let's review
+
+We spent today looking at how to use machine learning to do logistic regression
+
+We can...
+ - create a test/train split
+ - use a confusion matrix to evaluate the predictive power of the model
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
