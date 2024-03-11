@@ -110,6 +110,15 @@ There are lots of things that I hope you would learn: to use R tools to look at 
 * create a train test split.
 * use a confusion matrix to evaluate the predictive power of the model
 
+**Week Eight**
+
+[Week 8 Slides](<https://ericbrewe.com/courses/educ_847/educ_week_8/>)
+
+* calculate Bayes factors
+* use Bayesian regression to compare models
+* interpret Bayes factors
+* use Bayes factors to determine what variable to include (and those to drop)
+
 ### What is beyond the scope?
 While I would love to say you'd be able to master doing regression in R in the short span of one quarter, you will not. I've spent a decade learning it and am proficient, but am constantly learning. 
 
