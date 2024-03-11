@@ -1,0 +1,352 @@
+---
+title: "EDUC 847 Winter 24"
+subtitle: Week 8 - BayesFactors
+author: 'Eric Brewe <br> Professor of Physics at Drexel University <br>'
+date: "11 March 2024, last update: `r Sys.Date()`"
+output: 
+  xaringan::moon_reader:
+    css: [default, metropolis, "BreweSlides.css"]
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(warning = FALSE, message = FALSE)
+library(tidyverse)
+library(janitor)
+library(haven)
+library(here)
+library(broom)
+library(mice)
+library(car)
+library(jtools)
+library(kableExtra)
+library(BayesFactor)
+```
+
+
+
+
+
+# Let's start with a complete dataset
+
+Start by getting the data into R
+
+```{r ReadDataforReal, echo=FALSE}
+
+sci_df <- read_csv(here("static/slides/EDUC_847/data", "sci_scores.csv"))
+
+```
+
+
+```{r ReadData, eval=FALSE}
+#This loads the csv and saves it as a dataframe titled sci_df
+
+sci_df <- read_csv(here("data",
+                        "sci_scores.csv"))
+
+```
+
+
+---
+# Let's remember prior work
+
+### We predicted science scores from motivation scores. 
+```{r LinearRegression}
+
+sci_mod_motiv <- lm(sci ~ motiv, data = sci_df) #<<
+
+tidy(summary(sci_mod_motiv))
+```
+
+---
+# Let's decide if it is a good model.
+
+```{r}
+tidy(glance(sci_mod_motiv)) %>% select(column, mean)
+```
+
+
+---
+# Let's compare to the null model
+
+## What would the null model be?
+
+```{r}
+
+sci_mod_null <- lm(sci ~ 1, data = sci_df) #<<
+
+tidy(summary(sci_mod_null))
+```
+
+---
+# Let's get the AIC for the null
+
+```{r}
+tidy(glance(sci_mod_null)) %>% select(column, mean)
+```
+AIC went down.
+
+
+---
+# Let's use ANOVA
+
+```{r}
+
+anova(sci_mod_null,sci_mod_motiv)
+
+```
+
+This suggests we can reject the null hypothesis.
+
+---
+# Let's try another variable
+
+## What if we wanted to investagte group differences
+
+```{r}
+
+sci_mod_gr <- lm(sci ~ gr, data = sci_df) #<<
+
+tidy(summary(sci_mod_gr))
+```
+
+---
+# Let's decide if it is a good model.
+
+```{r}
+tidy(glance(sci_mod_gr)) %>% select(column, mean)
+```
+
+
+
+---
+# Let's use ANOVA
+
+```{r}
+
+anova(sci_mod_null,sci_mod_gr)
+
+```
+
+Doesn't look like we can reject the null. So...?
+
+---
+# Let's check out Bayes Factors
+
+## Bayes factors draw on Bayes' Theorem
+
+The book, Learning Statistics with R has a great description of Bayes' rule, but one of the keys is that in Bayesian thinking is updating. 
+
+### https://learningstatisticswithr.com/book/bayes.html
+
+Here is how it works:
+1. Start with some set of beliefs (called the Prior or Prior Belief)
+2. Choose a likelihood function (sometimes this is the Conditional Probability)
+3. Multiply the Prior with the Likelihood function to update the beliefs. 
+4. Divide by the probability of the data to give the posterior probability (typically called the Posterior)
+
+The equation for the Posterior probability is:
+
+$P(h|d) = \frac{P(d|h)*P(h)}{P(d)}$
+
+---
+# Let's use Bayes Theory in Hypothesis Tests
+
+## For the null hypothesis we can write the posterior probability as:
+
+$P(h_{0}|d) = \frac{P(d|h_{0})*P(h_{0})}{P(d)}$
+
+## For the alternative hypothesis we can write the posterior probability as:
+
+$P(h_{1}|d) = \frac{P(d|h_{1})*P(h_{1})}{P(d)}$
+
+---
+# Let's take an odds ratio
+
+## In principle, we can compare these models by taking the odds ratio of the probablity of Model 1 to the Null Model.
+
+$\frac{Model_{1}}{Model_{0}}$
+
+## What this tells us is how much more probable Model 1 is than Model 0. 
+
+---
+# Let's do some math
+
+## When we actually do this division...
+
+$\frac{Model_{1}}{Model_{0}} = \frac{P(h_{1}|d)}{P(d|h_{0})} = \frac{\frac{P(d|h_{1})*P(h_{1})}{P(d)}}{\frac{P(d|h_{0})*P(h_{0})}{P(d)}}$
+
+Which is great, because a number of things divide out, and we end up with 
+
+$Posterior Odds = Bayes Factor * Prior Odds$
+
+$\frac{P(h_{1}|d)}{P(d|h_{0})} = \frac{P(d|h_{1})}{P(d|h_{0})} * \frac{P(h_{1})}{P(h_{0})}$
+
+
+---
+# Let's reflect. 
+
+## Here are some really great features of this approach. 
+
+- What is awesome about this Bayes Factor approach is that it works for any pair of models.  This means we can do this with t-tests or regression models.  
+- The results are sort of easy to interpret, how much more probable is one model than the other. 
+- The ratio can be inverted too - so if we want to know how much more probable the null model is than the alternative, just do the division the other way - which is really powerful when you are doing equity work.
+
+---
+# Let's give it a shot.
+
+## We can start with the model for motivation
+
+First we have to estimate the model.
+
+
+```{r}
+regressionBF(
+  formula = sci ~ motiv,
+  data = sci_df
+)
+```
+
+Hmm, our Bayes Factor is only 1.15, so not a ton better than the null model. 
+
+
+---
+# Let's try a model with groups   
+
+## Remember we know we couldn't reject the null.
+
+```{r}
+regressionBF(
+  formula = sci ~ gr,
+  data = sci_df
+)
+```
+So, this one is less than 1. To get the confidence in the null model over the model with group, we can just take the inverse, so $1/0.2697961 = 3.706503$
+
+---
+# Let's see if there is a better model
+
+```{r}
+
+models <- regressionBF(
+  formula = sci ~ .,
+  data = sci_df
+)
+```
+
+
+---
+# Let's see if there is a better model
+
+```{r}
+topModels<-head(models,5)
+
+topModels
+```
+
+A Bayes Factor of 1.057403e+379!  Is that good?
+
+---
+# Let's see the heuristics
+
+## There isn't a clear rule about what counts as significant evidence
+
+
+|Bayes factor	| Interpretation|
+|--------|------|
+|1 - 3	|Negligible evidence|
+|3 - 20	|Positive evidence|
+|20 - 150	|Strong evidence|
+|$>$150	|Very strong evidence|
+
+So, yeah a Bayes factor of 1.057403e+379 is really strong evidence. 
+
+---
+# Let's compare models
+
+## One of the great features of Bayes Factors is that you can use the same framework to compare models. 
+
+So is the top model (motiv + pre_sc + math_sc) much better than the third best (gr + motiv + pre_sc + math_sc) model?
+
+```{r}
+topModels[1]/topModels[3]
+
+```
+That tells us how confident to be in Model 1 vs. Model 3. 
+
+---
+# Let't consider dropping variables
+
+### To identify variables to drop, we can use the whichModels function
+
+```{r}
+
+regressionBF( 
+ formula = sci ~ motiv + pre_sc + math_sc + gr,
+ data = sci_df,
+ whichModels = "top" #<<
+)
+```
+
+
+---
+# Let't decide what to drop
+
+### The Bayes factor for dropping gr is ~ 57, so yeah get rid of it. 
+
+### The Bayes factor for dropping the others are really small. So motiv, pre_sc, and math_sc should all be in the model 
+
+
+---
+# Let's do one more
+
+```{r}
+BestModels <- generalTestBF(
+  formula = sci ~ motiv + math_sc*pre_sc,
+  data = sci_df)
+BestModels
+```
+
+
+---
+# Let's do one more
+
+```{r}
+BestModels[8]
+```
+
+## Hey! That is the way I specified the data to be simulated, so well done!
+---
+# Let's review
+
+We spent today looking at how to use Bayes factords
+
+We can...
+ - calculate Bayes factors
+ - use Bayesian regression to compare models
+ - interpret Bayes factors
+ - use Bayes factors to determine what variable to include (and those to drop)
+ 
+---
+# Let's reflect
+
+--
+.font150[.center[YOU DID IT!]]
+
+--
+.font150[.center[Congratulations, this wasn't easy!]]
+
+--
+.font150[.center[I appreciate your effort, patience, and committment.]]
+
+
+
+---
+# Let's reflect
+
+.font190[.center[Thank you!]]
+
