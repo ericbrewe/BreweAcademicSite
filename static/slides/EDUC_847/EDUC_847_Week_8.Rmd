@@ -184,7 +184,7 @@ Which is great, because a number of things divide out, and we end up with
 
 $Posterior Odds = Bayes Factor * Prior Odds$
 
-$\frac{P(h_{1}|d)}{P(d|h_{0})} = \frac{P(d|h_{1})}{P(d|h_{0})} * \frac{P(h_{1})}{P(h_{0})}$
+$\frac{P(h_{1}|d)}{P(h_{0}|d)} = \frac{P(d|h_{1})}{P(d|h_{0})} * \frac{P(h_{1})}{P(h_{0})}$
 
 
 ---
