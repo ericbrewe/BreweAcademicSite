@@ -36,3 +36,4 @@ Read Chapter 5 in The Effect: Research Design and Causality  https://theeffectbo
 
 **Additional Resources**
 If you are struggling with R, I think that the introduction chapters of *Learning Statistics with R* are really useful, I suggest looking at chapters 3-8: https://learningstatisticswithr.com/book/part-ii-an-introduction-to-r.html 
+[WTF R](<https://rstats.wtf/index.html>) Jenny Bryan is great at explaining things about R and so frequently, I find myself looking at her books.
