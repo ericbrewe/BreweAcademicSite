@@ -27,15 +27,12 @@ social:
 - icon: envelope
   icon_pack: fas
   link: '#contact'
-- icon: mastodon
-  icon_pack: fab
-  link: https://mas.to/@ericbrewe
-- icon: twitter
-  icon_pack: fab
-  link: https://twitter.com/ericbrewe
 - icon: google-scholar
   icon_pack: ai
   link: https://scholar.google.com/citations?user=eQWSzOEAAAAJ&hl=en
+- icon: linkedin
+  icon_pack: brands
+  link: https://www.linkedin.com/in/eric-brewe-643064b3/
 - icon: github
   icon_pack: fab
   link: https://github.com/ericbrewe
@@ -48,6 +45,6 @@ user_groups:
 - Visitors
 ---
 
-Dr. Eric Brewe is a Professor in Physics and Science Education at Drexel University and is the Associate Dean for Graduate Education. His research into the teaching and learning of physics at the university level includes developing curriculum for the Modeling Instruction course, leading inquiries into the role of Modeling Instruction in promoting student learning, participation, retention & persistence, enhanced attitudes toward science and equity. This research has led to describing the role of participation in learning using primarily quantitative measures including the use of Network Analyses, and recently applications of machine learning and natural language processing. In addition to research on post secondary physics, Dr. Brewe has been involved in preparing future physics teachers through Modeling Workshops, and as co-editor of the PhysTEC sponsored book, Recruiting and Educating Future Physics Teachers: Case Studies and Effective Practices. Dr. Brewe helped to found the American Physical Society’s Topical Group on Physics Education Research (GPER) and served as the founding Chair of GPER. He recently co-edited the Focused Collection on Gender in Physics published by Physical Review – Physics Education Research, served on the editorial board for Physical Review – PER and currently serves as Chair for the APS Forum on Education.  Dr. Brewe was chosen as a Fellow of the American Physical Society in 2019. Beginning in July 2023, Dr. Brewe has been an [Associate Editor with Physical Review Physics Education Research](<https://journals.aps.org/prper/edannounce/prper-associate-editor-eric-brewe>).
+Dr. Eric Brewe is a Professor in Physics and Science Education at Drexel University and is the Associate Dean for Graduate Education. His research into the teaching and learning of physics at the university level includes developing curriculum for the Modeling Instruction course, leading inquiries into the role of Modeling Instruction in promoting student learning, participation, retention & persistence, enhanced attitudes toward science and equity. This research has led to describing the role of participation in learning using primarily quantitative measures including the use of Network Analyses, and recently applications of machine learning and natural language processing. In addition to research on post secondary physics, Dr. Brewe has been involved in preparing future physics teachers through Modeling Workshops, and as co-editor of the PhysTEC sponsored book, Recruiting and Educating Future Physics Teachers: Case Studies and Effective Practices. Dr. Brewe helped to found the American Physical Society’s Topical Group on Physics Education Research (GPER) and served as the founding Chair of GPER. He recently co-edited the Focused Collection on Gender in Physics published by Physical Review – Physics Education Research, served on the editorial board for Physical Review – PER and from 2021-2024 in the Chair line for the APS Forum on Education.  Dr. Brewe was chosen as a Fellow of the American Physical Society in 2019. Beginning in January 2025, Dr. Brewe was selected as [Chief Editor with Physical Review Physics Education Research](<https://journals.aps.org/prper/edannounce/Eric-Brewe-named-Chief-Editor-of-_Physical-Review-Physics-Education-Research_>).
 
 Photo by Liz Waldie
