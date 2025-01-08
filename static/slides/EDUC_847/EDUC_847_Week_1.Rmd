@@ -1,5 +1,5 @@
 ---
-title: "EDUC 847 Winter 24"
+title: "EDUC 847 Winter 25"
 subtitle: Day 1 - Theory, Data, and Plotting
 author: 'Eric Brewe <br> Professor of Physics at Drexel University <br>'
 date: "8 January 2025, last update: `r Sys.Date()`"

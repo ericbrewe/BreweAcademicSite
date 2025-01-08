@@ -1,5 +1,5 @@
 ---
-title: "EDUC 847 Winter 24"
+title: "EDUC 847 Winter 25"
 subtitle: Week 8 - BayesFactors
 author: 'Eric Brewe <br> Professor of Physics at Drexel University <br>'
 date: "11 March 2024, last update: `r Sys.Date()`"
