@@ -164,7 +164,7 @@ Learning R is not easy, as I have learned things, I have tried to maintain a lis
 7. [DataCarpentry](<https://datacarpentry.org/>) runs workshops about data analysis and often are oriented to different research specialties. 
     a. [Social Science](<https://datacarpentry.org/lessons/#social-science-curriculum>) Data Carpentry has a social science oriented curriculum that looks great. 
 8. [The Effect](<https://theeffectbook.net/>) A really great book that approaches data analysis from a causal inference perspective with code in R, Python, and Stata.
-9. [Statistics and Data Visualization Using R: The Art and Practice of Data Analysis](<https://edge.sagepub.com/brownstats1e>). A book with data sets and R scripts embedded. 
+9. [Statistics and Data Visualization Using R: The Art and Practice of Data Analysis](<https://edge.sagepub.com/brownstats1e>). A book with data sets and R scripts  embedded. 
 
 
 
