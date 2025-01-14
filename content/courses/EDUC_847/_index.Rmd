@@ -2,7 +2,7 @@
 title: "EDUC 847"
 draft: no
 date: "2020-07-20T00:00:00Z"
-lastmod: "2020-07-20T00:00:00Z"
+lastmod: "2025-01-13T00:00:00Z"
 linktitle: EDUC 847 - Applied Regression
 menu:
   applied_regression:
