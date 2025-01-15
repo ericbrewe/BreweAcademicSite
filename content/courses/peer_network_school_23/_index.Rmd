@@ -20,11 +20,11 @@ The main idea is to have some time learning about different aspects of Social Ne
 
 |Topics| Date|
 |------|------|
-|Network Theory and Data| 26 June 2023|
-|Individuals within networks |27 June 2023|
-|Properties of whole networks |28 June 2023|
-|Network models |29 June 2023|
-|Projects |30 June 2023|
+|Network Theory and Data| 26 June|
+|Individuals within networks |27 June|
+|Properties of whole networks |28 June|
+|Network models |29 June|
+|Projects |30 June|
 
 
 ### What might you learn?
