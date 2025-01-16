@@ -13,7 +13,7 @@ type: docs
 weight: 1
 ---
 
-Welcome to this PEER Advanced Network School. First, thanks to Scott Franklin, Ellie Sayre, Mary Bridget Kustusch and the PEER team for supporting this field school!
+Welcome to this PEER Advanced Network School. Thanks to Scott Franklin, Ellie Sayre, Mary Bridget Kustusch and the PEER team for supporting this field school!
 
 ### The Plan
 The main idea is to have some time learning about different aspects of Social Network Analysis, and to actually focus on doing the analyses. We will spend the mornings working on learning aspects of SNA, and then the afternoons will be working time, where we actually try to carry out some of the types of analyses on your own data. 
