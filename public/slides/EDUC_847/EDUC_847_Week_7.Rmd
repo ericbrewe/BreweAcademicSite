@@ -1,0 +1,320 @@
+---
+title: "EDUC 847 Winter 24"
+subtitle: Week 7 - Machine Learning
+author: 'Eric Brewe <br> Professor of Physics at Drexel University <br>'
+date: "4 March 2024, last update: `r Sys.Date()`"
+output: 
+  xaringan::moon_reader:
+    css: [default, metropolis, "BreweSlides.css"]
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(warning = FALSE, message = FALSE)
+library(tidyverse)
+library(janitor)
+library(haven)
+library(here)
+library(broom)
+library(mice)
+library(car)
+library(jtools)
+library(kableExtra)
+library(broom.mixed)
+library(emdi)
+library(interactions)
+library(caret)
+library(tidymodels)
+
+```
+
+
+
+
+
+# Let's start with a complete dataset
+
+Today we will use a subset of a dataset that has been peer reviewed. 
+
+It is about Portugese student performance, and can be found here:
+
+https://archive.ics.uci.edu/dataset/320/student+performance
+
+```{r ReadDataforReal, echo=FALSE}
+
+psd <- read_csv(here("static/slides/EDUC_847/data", "PortugeseStudentData.csv"))
+
+```
+
+
+```{r ReadData, eval=FALSE}
+#This loads the csv and saves it as a dataframe titled sci_df
+
+psd <- read_csv(here("data",
+                        "PortugeseStudentData.csv"))
+
+```
+
+
+---
+# Let's have a look at the data
+
+```{r inpsectData}
+glimpse(psd)
+
+```
+
+---
+# Let's figure out some of these variables. 
+
+school - student's school (binary: "GP" - Gabriel Pereira or "MS" - Mousinho da Silveira)
+
+sex - student's sex (binary: "F" - female or "M" - male)
+
+age - student's age (numeric: from 15 to 22)
+
+address - student's home address type (binary: "U" - urban or "R" - rural)
+
+famsize - family size (binary: "LE3" - less or equal to 3 or "GT3" - greater than 3)
+
+Pstatus - parent's cohabitation status (binary: "T" - living together or "A" - apart)
+
+Medu - mother's education (numeric: 0 - none,  1 - primary education (4th grade), 2 – 5th to 9th grade, 3 – secondary education or 4 – higher education)
+
+Fedu - father's education (numeric: 0 - none,  1 - primary education (4th grade), 2 – 5th to 9th grade, 3 – secondary education or 4 – higher education)
+
+---
+# Let's figure out some of these variables.
+Mjob - mother's job (nominal: "teacher", "health" care related, civil "services" (e.g. administrative or police), "at_home" or "other")
+
+Fjob - father's job (nominal: "teacher", "health" care related, civil "services" (e.g. administrative or police), "at_home" or "other")
+
+reason - reason to choose this school (nominal: close to "home", school "reputation", "course" preference or "other")
+
+guardian - student's guardian (nominal: "mother", "father" or "other")
+
+traveltime - home to school travel time (numeric: 1 - <15 min., 2 - 15 to 30 min., 3 - 30 min. to 1 hour, or 4 - >1 hour)
+
+studytime - weekly study time (numeric: 1 - <2 hours, 2 - 2 to 5 hours, 3 - 5 to 10 hours, or 4 - >10 hours)
+
+failures - number of past class failures (numeric: n if 1<=n<3, else 4)
+
+---
+# Let's figure out some of these variables.
+schoolsup - extra educational support (binary: yes or no)
+
+famsup - family educational support (binary: yes or no)
+
+paid - extra paid classes within the course subject (Math or Portuguese) (binary: yes or no)
+
+activities - extra-curricular activities (binary: yes or no)
+
+nursery - attended nursery school (binary: yes or no)
+
+higher - wants to take higher education (binary: yes or no)
+
+internet - Internet access at home (binary: yes or no)
+
+romantic - with a romantic relationship (binary: yes or no)
+
+---
+# Let's figure out some of these variables.
+famrel - quality of family relationships (numeric: from 1 - very bad to 5 - excellent)
+
+freetime - free time after school (numeric: from 1 - very low to 5 - very high)
+
+goout - going out with friends (numeric: from 1 - very low to 5 - very high)
+
+Dalc - workday alcohol consumption (numeric: from 1 - very low to 5 - very high)
+
+Walc - weekend alcohol consumption (numeric: from 1 - very low to 5 - very high)
+
+health - current health status (numeric: from 1 - very bad to 5 - very good)
+
+absences - number of school absences (numeric: from 0 to 93)
+
+---
+# these grades are related with the course subject, Math or Portuguese:
+
+G1 - first period grade (numeric: from 0 to 20)
+
+G2 - second period grade (numeric: from 0 to 20)
+
+G3 - final grade (numeric: from 0 to 20, output target)
+
+
+---
+# Let's make characters factors
+
+## Machine Learning works best with factors, so we should convert character variables to factors
+
+```{r}
+psd %>%
+   select(-G1) %>%
+   mutate_if(is_character, as.factor) %>%
+   mutate(passing = if_else(G3>10, 1,0 )) %>%
+   mutate(passing = as.factor(passing) )-> psd
+```
+
+
+---
+# Let's talk about Machine Learning
+
+## In many ways it accomplishes the same things as typical regression
+
+- Prediction of whether a student passes (G3) using a mix of numeric, categorical, and logistic variables. 
+- Regression typically uses all of the data to generate the model, and then uses the same data to evaluate the model. 
+  - This is not ideal.
+  
+## Additional things ML does:
+
+- Separating data into test and train data. 
+- Variable selection 
+- Model evaluation
+- lots of additional things.
+
+---
+# Let's define our task
+
+## We would like to predict final grade (G3)
+
+To do this, we will use the tidymodels package
+
+https://www.tidymodels.org/
+
+It has a number of the things we'll need to do built into the package. 
+
+---
+# Let's deal with our dataset first
+
+## Since we don't want to use all the data to train our model, we need to split the data
+
+Training data = a portion of the data used to first build the model
+Test data = the remainder of the data that is used to evaluate the model. 
+
+A standard is to do a 75/25 or 80/20 split.  
+
+```{r testtrainsplit}
+
+set.seed(304)
+splits <- initial_split(psd, prop = 0.8)
+
+psd_train <- training(splits)
+psd_test <- testing(splits)
+```
+
+---
+# Let's look at our splits
+
+## Training Data
+
+```{r trainingData}
+
+glimpse(psd_train)
+```
+
+---
+# Let's look at our splits
+
+## Testing Data
+
+```{r testingData}
+
+glimpse(psd_test)
+```
+
+
+
+---
+# Let's talk about options at this point.
+
+## Tidymodels splits the ML process into three main chunks, each chunk has options
+
+- Model Specification
+  - Regression, Random Forest, Neural Network...
+  - What engine to use (STAN, Keras, OLS)
+- Processing 
+  - Data splitting
+  - Cleaning
+- Modeling
+  - Creating a model
+  - Tuning model parameters
+  - Prediction
+  - Evaluation
+  
+  
+---
+# Let's Specify a Model. 
+
+## Tidymodels has a distinct approach to specifying a model.
+We want to tell it to do logistic regression
+
+```{r TidyModels1}
+
+logistic_reg()
+```
+
+---
+# Let's tell it we want to use logistic regression 
+
+## Tidymodels allows you to choose different approaches
+We want to tell it to do logistic regression
+
+```{r TidyModels2}
+
+lr_mod <- 
+  logistic_reg()
+
+```
+
+
+---
+# Let's run this...
+
+```{r RunModels}
+
+lr_fit <- lr_mod %>% fit(passing ~., data = psd_train)
+
+lr_fit
+```
+
+
+---
+# Let's see how it did.
+
+```{r Results}
+lr_res <- predict(lr_fit, psd_test) %>%
+  bind_cols(predict(lr_fit, psd_test, type = "prob")) %>%
+  bind_cols(psd_test %>% select(passing))
+
+lr_res
+
+
+```
+---
+# Let's check accuracuy
+```{r Results2}
+lr_res %>%
+  accuracy(truth = passing, .pred_class)
+
+```
+---
+# Let's check the Confusion
+```{r Results3}
+
+confusionMatrix(lr_res$passing, lr_res$.pred_class)
+
+```
+
+---
+# Let's review
+
+We spent today looking at how to use machine learning to do logistic regression
+
+We can...
+ - create a test/train split
+ - use a confusion matrix to evaluate the predictive power of the model

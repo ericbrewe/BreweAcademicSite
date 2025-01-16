@@ -1,8 +1,8 @@
 ---
-title: "EDUC 847 Winter 24"
+title: "EDUC 847 Winter 25"
 subtitle: Day 1 - Theory, Data, and Plotting
 author: 'Eric Brewe <br> Professor of Physics at Drexel University <br>'
-date: "8 January 2024, last update: `r Sys.Date()`"
+date: "8 January 2025, last update: `r Sys.Date()`"
 output: 
   xaringan::moon_reader:
     css: [default, metropolis, "BreweSlides.css"]
@@ -26,7 +26,7 @@ library(here)
 
 
 
-
+---
 class: center, middle
 
 # Introduction to this course, R and plotting recipes
@@ -121,7 +121,6 @@ Two ways to think about relationships...
 - **Matrices** = like dataframes, but they have named rows/columns 
     - Adjacency Matrices are of type matrix.
 - **Lists** = the junkdrawer, can hold any type of data (including dataframes or matrices)
-    - in igraph, networks are stored as lists.
 
 ]
 ---

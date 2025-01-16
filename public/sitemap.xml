@@ -1,1528 +1,1097 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
-    <loc>https://ericbrewe.netlify.com/courses/rforsna/ws1/</loc>
-    <lastmod>2020-07-21T00:00:00+01:00</lastmod>
+    <loc>http://localhost:4321/courses/peer_network_school_23/day1peer/</loc>
+    <lastmod>2023-06-24T09:37:36-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/courses/peer_network_school_23/day2peer/</loc>
+    <lastmod>2023-06-24T09:37:36-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/courses/peer_network_school_23/day3peer/</loc>
+    <lastmod>2023-06-24T09:37:36-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/courses/peer_network_school_23/day4peer/</loc>
+    <lastmod>2023-06-24T09:37:36-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/courses/educ_847/educ_week_1/</loc>
+    <lastmod>2024-01-29T14:49:07-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/courses/educ_847/educ_week_2/</loc>
+    <lastmod>2024-01-29T14:49:07-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/courses/educ_847/educ_week_3/</loc>
+    <lastmod>2024-01-29T14:49:07-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/courses/educ_847/educ_week_4/</loc>
+    <lastmod>2024-02-05T10:35:01-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/courses/educ_847/educ_week_5/</loc>
+    <lastmod>2024-02-12T13:51:15-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/courses/educ_847/educ_week_6/</loc>
+    <lastmod>2024-02-26T13:20:30-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/courses/educ_847/educ_week_7/</loc>
+    <lastmod>2024-03-10T22:04:27-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/courses/educ_847/educ_week_8/</loc>
+    <lastmod>2024-03-10T22:04:27-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/courses/rforsna/ws1/</loc>
+    <lastmod>2020-08-11T14:58:29-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/courses/rforsna/ws2/</loc>
+    <lastmod>2020-08-11T14:58:29-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/courses/rforsna/ws3/</loc>
+    <lastmod>2020-08-11T14:58:29-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/courses/peer_network_school_23/</loc>
+    <lastmod>2023-06-30T07:51:47-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/courses/rforsna/</loc>
+    <lastmod>2020-08-18T12:10:17-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/courses/phys_115/coursevideos/</loc>
+    <lastmod>2020-06-03T12:44:08-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/courses/phys_115/</loc>
+    <lastmod>2020-05-08T15:26:00-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/courses/phys_115/hw1/</loc>
+    <lastmod>2020-04-06T14:59:35-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/courses/phys_115/hw2/</loc>
+    <lastmod>2020-04-14T08:45:54-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/courses/phys_115/hw3/</loc>
+    <lastmod>2020-04-28T18:05:01-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/courses/phys_115/hw4/</loc>
+    <lastmod>2020-04-28T18:05:01-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/courses/phys_115/hw5/</loc>
+    <lastmod>2020-05-13T11:20:49-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/courses/phys_115/hw6/</loc>
+    <lastmod>2020-05-20T15:02:35-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/courses/phys_115/hw7/</loc>
+    <lastmod>2020-05-27T14:01:52-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/courses/phys_115/asyncactivities1/</loc>
+    <lastmod>2020-04-08T12:00:48-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/courses/phys_115/asyncactivities2/</loc>
+    <lastmod>2020-04-23T14:13:33-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/courses/phys_115/asyncactivities3/</loc>
+    <lastmod>2020-04-23T14:13:33-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/courses/phys_115/asyncactivities4/</loc>
+    <lastmod>2020-04-29T11:15:05-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/courses/phys_115/asyncactivities5/</loc>
+    <lastmod>2020-05-13T11:41:29-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/courses/phys_115/asyncactivities6/</loc>
+    <lastmod>2020-05-21T10:29:46-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/courses/phys_115/asyncactivities7/</loc>
+    <lastmod>2020-05-27T16:52:54-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/courses/phys_115/asyncactivities8/</loc>
+    <lastmod>2020-06-01T11:20:11-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/</loc>
+    <lastmod>2025-01-16T16:04:39-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/eric-brewe/</loc>
+    <lastmod>2024-09-11T13:09:25-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/</loc>
+    <lastmod>2025-01-16T16:08:28-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/talk/drexelteachday/</loc>
+    <lastmod>2024-09-11T13:09:25-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication_types/2/</loc>
+    <lastmod>2022-05-11T21:48:59-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/adrienne-l.-traxler/</loc>
+    <lastmod>2022-05-11T21:48:59-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/commeford-2022-copus-lpa/</loc>
+    <lastmod>2022-05-10T14:24:58-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/kelley-commeford/</loc>
+    <lastmod>2022-05-11T21:48:59-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication_types/</loc>
+    <lastmod>2022-05-11T21:48:59-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/commeford-2021-calep/</loc>
+    <lastmod>2022-05-11T21:48:59-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/-others/</loc>
+    <lastmod>2021-10-13T13:26:13-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/alina-nazareth/</loc>
+    <lastmod>2021-10-13T13:26:13-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/dane-marguglio/</loc>
+    <lastmod>2021-10-13T13:26:13-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/jessica-e-bartley/</loc>
+    <lastmod>2021-10-13T13:26:13-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/kailey-macnamara/</loc>
+    <lastmod>2021-10-13T13:26:13-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/karina-falcone/</loc>
+    <lastmod>2021-10-13T13:26:13-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/matthew-t-sutherland/</loc>
+    <lastmod>2021-10-13T13:26:13-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/michael-c-riedel/</loc>
+    <lastmod>2021-10-13T13:26:13-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/bartleyphysics/</loc>
+    <lastmod>2021-10-13T13:26:13-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/robert-w-laird/</loc>
+    <lastmod>2021-10-13T13:26:13-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/shannon-m-pruden/</loc>
+    <lastmod>2021-10-13T13:26:13-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/talk/drexeluniversitypromotiontalk/</loc>
+    <lastmod>2021-10-12T12:15:20-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/sarah-scanlin/</loc>
+    <lastmod>2022-05-11T20:54:35-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/brewe-2021-transition-remote-instruction/</loc>
+    <lastmod>2022-05-11T20:54:35-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/elsa-i-bravo/</loc>
+    <lastmod>2021-10-13T13:26:13-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/erica-d-musser/</loc>
+    <lastmod>2021-10-13T13:26:13-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/bottenhorn-2021-intelligence/</loc>
+    <lastmod>2021-10-13T13:26:13-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/katherine-l-bottenhorn/</loc>
+    <lastmod>2021-10-13T13:26:13-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/rosalie-odean/</loc>
+    <lastmod>2021-10-13T13:26:13-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/taylor-salo/</loc>
+    <lastmod>2021-10-13T13:26:13-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/camila-monsalve/</loc>
+    <lastmod>2022-05-10T13:30:35-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/daryl-mcpadden/</loc>
+    <lastmod>2022-05-10T13:30:35-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/mc-padden-2020-faculty-resources/</loc>
+    <lastmod>2022-05-10T13:30:35-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/vashti-sawtelle/</loc>
+    <lastmod>2022-05-10T13:30:35-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/traxler-2020-network-positions/</loc>
+    <lastmod>2022-05-10T16:09:20-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/tyme-suda/</loc>
+    <lastmod>2022-05-10T16:09:20-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/post/actionswecantake/</loc>
+    <lastmod>2025-01-16T16:04:39-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/post/individualmeetingswithstudents/</loc>
+    <lastmod>2020-05-08T15:26:00-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/categories/</loc>
+    <lastmod>2020-04-27T11:11:53-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/categories/phys-115/</loc>
+    <lastmod>2020-04-27T11:11:53-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/post/problem-solving-workshops/</loc>
+    <lastmod>2020-04-27T11:11:53-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/post/standards-based-grading/</loc>
+    <lastmod>2020-04-22T11:45:44-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/post/standards-based-grading-gradescope-and-r/</loc>
+    <lastmod>2020-04-22T16:23:29-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/talk/apsaprildepttoolkit/</loc>
+    <lastmod>2020-04-19T22:26:21-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/jesus-pando/</loc>
+    <lastmod>2020-04-19T22:26:21-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/scott-franklin/</loc>
+    <lastmod>2020-04-19T22:26:21-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/post/improvements/</loc>
+    <lastmod>2020-04-15T12:21:18-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/talk/rowan-university/</loc>
+    <lastmod>2020-02-26T18:48:38+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/talk/rutgers-university/</loc>
+    <lastmod>2020-03-02T10:55:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/rodriguezananetworkdomesticviolence/</loc>
+    <lastmod>2020-02-11T09:47:33-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/ana-l.-rodriguez/</loc>
+    <lastmod>2020-02-11T09:47:33-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/dionne-p.-stephens/</loc>
+    <lastmod>2020-02-11T09:47:33-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/indira-ramarao/</loc>
+    <lastmod>2020-02-11T09:47:33-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/network-analysis/</loc>
+    <lastmod>2020-02-11T09:47:33-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/purnima-madhivanan/</loc>
+    <lastmod>2020-02-11T09:47:33-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/</loc>
+    <lastmod>2025-01-16T16:08:28-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/deepa-chari/</loc>
+    <lastmod>2022-05-10T14:05:35-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/geoff-potvin/</loc>
+    <lastmod>2022-05-10T14:05:35-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/hazari-2020-context-dependence-identity/</loc>
+    <lastmod>2022-05-10T14:05:35-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/zahra-hazari/</loc>
+    <lastmod>2022-05-10T14:05:35-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/angela-r.-laird/</loc>
+    <lastmod>2020-02-27T13:33:55-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/bartleybrainlinkconceptualapproach/</loc>
+    <lastmod>2020-02-27T13:33:55-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/emily-r.-boeving/</loc>
+    <lastmod>2020-02-27T13:33:55-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/jessica-e.-bartley/</loc>
+    <lastmod>2020-02-27T13:33:55-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/katherine-l.-bottenhorn/</loc>
+    <lastmod>2020-02-27T13:33:55-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/matthew-c.-riedel/</loc>
+    <lastmod>2020-02-27T13:33:55-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/matthew-t.-sutherland/</loc>
+    <lastmod>2020-02-27T13:33:55-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/robert-w.-laird/</loc>
+    <lastmod>2020-02-27T13:33:55-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/shannon-m.-pruden/</loc>
+    <lastmod>2020-02-27T13:33:55-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/post/coursereplanningincrisis/</loc>
+    <lastmod>2020-04-08T11:40:07-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/post/courseplanningincrisis/</loc>
+    <lastmod>2020-03-26T14:58:03-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/post/officehoursincrisis/</loc>
+    <lastmod>2020-04-10T12:18:09-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/slides/chslides/</loc>
+    <lastmod>2020-04-15T08:33:01-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/slides/</loc>
+    <lastmod>2020-04-21T15:46:19-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/slides/example/</loc>
+    <lastmod>2020-03-13T15:45:57-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication_types/1/</loc>
+    <lastmod>2021-10-13T13:26:13-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/angela-r-laird/</loc>
+    <lastmod>2021-10-13T13:26:13-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/ariel-a.-gonzalez/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/bartley-2019-brain/</loc>
+    <lastmod>2021-10-13T13:26:13-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/price-perc-poster-19/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/doi10.1103/physrevphyseducres.15.020150-urlhttps/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/elsa-i.-bravo/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/emily-r-boeving/</loc>
+    <lastmod>2021-10-13T13:26:13-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/eric-a-williams/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/justyna-p-zwolak/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/kathryn-clancy/</loc>
+    <lastmod>2021-10-13T13:26:13-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/lauren-aycock/</loc>
+    <lastmod>2021-10-13T13:26:13-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/williams-2019-network-growth/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/michael-c.-riedel/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/remy-dou/</loc>
+    <lastmod>2020-02-05T10:14:29-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/renee-michelle-goertzen/</loc>
+    <lastmod>2021-10-13T13:26:13-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/bartley-2019-sex/</loc>
+    <lastmod>2021-10-13T13:26:13-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/gonzalez-2019-stem-anxiety-brain/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/aycock-2019-sexual/</loc>
+    <lastmod>2021-10-13T13:26:13-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/theodore-hodapp/</loc>
+    <lastmod>2021-10-13T13:26:13-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/timothy-hayes/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/virginia-price/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/privacy/</loc>
+    <lastmod>2020-01-23T16:12:40-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/terms/</loc>
+    <lastmod>2020-01-23T16:12:40-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/activation-likelihood-estimation-ale/</loc>
+    <lastmod>2020-02-11T09:58:50-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/brain-network/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/career/</loc>
+    <lastmod>2020-02-05T10:14:29-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/classroom-interactions/</loc>
+    <lastmod>2020-02-05T10:14:29-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/cognitive-control/</loc>
+    <lastmod>2020-02-11T09:58:50-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/brewe-2018/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/curriculum-and-instruction/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/domain-generality/</loc>
+    <lastmod>2020-02-11T09:58:50-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/domain-specificity/</loc>
+    <lastmod>2020-02-11T09:58:50-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/zwolak-2018/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/fmri/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/force-concept-inventory/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/functional-neuroimaging/</loc>
+    <lastmod>2020-02-11T09:58:50-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/interest/</loc>
+    <lastmod>2020-02-05T10:14:29-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/jason-dowd/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/justyna-p.-zwolak/</loc>
+    <lastmod>2020-02-05T10:14:29-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/kathryn-b.-h.-clancy/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/lauren-m.-aycock/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/mental-models/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/meta-analysis/</loc>
+    <lastmod>2020-02-11T09:58:50-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/bartley-2018-meta/</loc>
+    <lastmod>2021-10-13T13:26:13-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/bartley-2018/</loc>
+    <lastmod>2020-02-11T09:58:50-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/michael-zwolak/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/modeling-instruction/</loc>
+    <lastmod>2025-01-16T16:08:28-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/modelling-instruction/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/brewe-2018-a/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/neuroeducation/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/physics/</loc>
+    <lastmod>2020-02-06T13:38:39-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/physics-reasoning/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/mc-padden-2018-power-boxes/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/problem-solving/</loc>
+    <lastmod>2020-02-11T09:58:50-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/reasoning/</loc>
+    <lastmod>2020-02-11T09:58:50-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/robert-shand/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/self-efficacy/</loc>
+    <lastmod>2020-02-06T13:38:39-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/aycock-2018-sexual-harrassment/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/simon-b-eickhoff/</loc>
+    <lastmod>2021-10-13T13:26:13-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/social-network-analysis/</loc>
+    <lastmod>2020-02-05T10:14:29-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/stem-learning/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/susan-b.-eickhoff/</loc>
+    <lastmod>2020-02-11T09:58:50-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/brewe-2018-roles-of-engagement/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/brewe-2018-neuroimaging/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/dou-2018/</loc>
+    <lastmod>2020-02-05T10:14:29-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/university-physics/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/eric-a.-williams/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/mc-padden-2017-a/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/zwolak-2017/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/hazari-2017-a/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/project/modelinginstructionproject/</loc>
+    <lastmod>2025-01-16T16:08:28-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/project/networkanalysisproject/</loc>
+    <lastmod>2020-02-05T09:08:06-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/neuroimaging/</loc>
+    <lastmod>2020-02-05T09:08:06-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/project/neuroimagingproject/</loc>
+    <lastmod>2020-02-05T09:08:06-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/project/</loc>
+    <lastmod>2025-01-16T16:08:28-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/dou-2016/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/brewe-2016-gender/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/i.g.-ian-g.-bearden/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/jesper-bruun/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/kathryn-bh-clancy/</loc>
+    <lastmod>2021-10-13T13:26:13-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/laird-h-kramer/</loc>
+    <lastmod>2020-02-05T10:47:37-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/lauren-m-aycock/</loc>
+    <lastmod>2021-10-13T13:26:13-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/mc-padden-2016/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/aycock-2016-sexual/</loc>
+    <lastmod>2021-10-13T13:26:13-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/brewe-2016/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/zarha-hazari/</loc>
+    <lastmod>2021-10-13T13:26:13-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/01/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/40/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/rodriguez-2015-a/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/epistemic-games/</loc>
+    <lastmod>2020-02-06T13:38:39-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/traxler-2015-b/</loc>
+    <lastmod>2020-02-06T13:38:39-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/eric-williams/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/fci/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/fk/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/g-/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/gender/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/ha/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/idaykis-rodriguez/</loc>
+    <lastmod>2020-02-06T13:38:39-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/instructor/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/introductory/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/introductory-physics/</loc>
+    <lastmod>2020-02-06T13:38:39-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/jonathan-v.-mahadeo/</loc>
+    <lastmod>2020-02-06T13:38:39-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/l.h.-laird-h.-kramer/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/modeling/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/traxler-2015/</loc>
+    <lastmod>2020-02-06T13:38:39-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/pacs/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/physics-education/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/renee-michelle-r.m.-goertzen/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/representation-use/</loc>
+    <lastmod>2020-02-06T13:38:39-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/zwolak-2015/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/mc-padden-2015/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/williams-2015/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/yang-2014/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/binod-nainabasti/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/centrality/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/david-t-brookes/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/di/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/gb/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/informal-learning-community/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/dou-2014/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/pagerank-centrality/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/participation/</loc>
+    <lastmod>2020-02-06T11:36:13-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/physics-oriented-social-networks/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/social-interactions-in-the/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/yuehai-yang/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/adrienne-traxler/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/apprenticeship/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/case-studies/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/cogenerative-dialogues/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/communities-of-practice/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/community-of-learners/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/rodriguez-2013/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/goertzen-2013/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/brewe-2013-extend-class/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/force-concept-inventory./</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/brewe-2013-cbe/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/graduate-students/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/high-school/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/samuels-2013/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/jorge-de-la-garza/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/l.h.-laird-h-kramer/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/laird-h.-kramer/</loc>
+    <lastmod>2020-02-06T13:38:39-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/laird-kramer/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/n.j.-nancy-j-pelaez/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/nathan-samuels/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/pre-college-teaching/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/professional-development/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/mahadeo-2013/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/seth-manthey/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/seth-r.-manthey/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/social-norms./</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/bruun-2013-talking-learning/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/todd-j-t.j.-cooke/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/manthey-2013-a/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/university/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/durden-2012/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/attitudes-and-achievement/</loc>
+    <lastmod>2020-02-06T13:38:39-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/charles-henderson/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/rodriguez-2012-communicating/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/sawtelle-2012-se-opportunities-aip/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/diffusion-of-innovations/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/dissemination/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/diversity/</loc>
+    <lastmod>2020-02-06T13:38:39-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/expertise/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/sawtelle-2012-jrst/</loc>
+    <lastmod>2020-02-06T13:38:39-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/group-learning/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/sawtelle-2012-se-events/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/rodriguez-2012-a/</loc>
+    <lastmod>2020-02-06T13:38:39-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/brewe-2012-networks/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/jared-durden/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/leadership/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/logistic-regression/</loc>
+    <lastmod>2020-02-06T13:38:39-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/may-lee/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/melissa-dancy/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/scientific-writing/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/socialization/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/socio-cultural/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/lee-2012/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/a.-mcgoron/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/a.-rosenblatt/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/a.-tashakkori/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/b.-dewsbury/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/biology/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/curriculum/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/david-jones/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/e.-villamor/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/brewe-2011-energy/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/g.-narasimhan/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/interdisciplinary/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/j.-alberte/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/j.-baker/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/j.-makemson/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/j.b.-heffernan/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/l.-kos/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/leanne-wells/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/m.-galvez/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/m.-lowenstein/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/m.-quirke/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/m.-tracey/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/goertzen-2011/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/o.-weeks/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/p.-graves/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/p.-stoddard/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/weeks-2011/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/quantitative/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/r.-garcia/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/r.-gomez/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/s.-bhaijee/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/s.-gavassa/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/s.-koptur/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/s.-shapiro/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/t.-philippi/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/t.-pitzer/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/undergraduate/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/brewe-2010-b/</loc>
+    <lastmod>2020-02-06T11:36:13-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/rodriguez-2010/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/g.e.-george-e-obrien/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/george-e.-obrien/</loc>
+    <lastmod>2020-02-06T11:36:13-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/learning-community/</loc>
+    <lastmod>2020-02-06T11:36:13-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/motivation/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/sawtelle-2010/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/priscilla-pamela/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/brewe-2010-toward-equity/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/sawtelle-2009-a/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/g.-obrien/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/informal-education/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/brewe-2009-communities-aip/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/brewe-2009-a/</loc>
+    <lastmod>2020-02-05T11:12:39-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/sawtelle-2009-d/</loc>
+    <lastmod>2020-02-05T11:15:49-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/attitudinal-survey/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/class/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/brewe-2008-a/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/edgardo-zamalloa/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/george-e-obrien/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/wells-2008/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/kramer/</loc>
+    <lastmod>2020-02-05T10:47:37-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/brewe-2008-modeling-theory/</loc>
+    <lastmod>2020-02-05T11:12:39-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/ramona-valenzuela/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/charles-r.-henderson/</loc>
+    <lastmod>2020-02-05T11:12:39-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/melissa-h.-dancy/</loc>
+    <lastmod>2020-02-05T11:12:39-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/dancy-2007/</loc>
+    <lastmod>2020-02-05T11:12:39-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/kathleen-a.-harper/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/leonardo-hsu/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/hsu-2004/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/thomas-m.-foster/</loc>
+    <lastmod>2020-02-05T10:06:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication_types/7/</loc>
+    <lastmod>2021-10-13T13:26:13-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/eric-thomas-brewe/</loc>
+    <lastmod>2021-10-13T13:26:13-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/brewe-2002-inclusion/</loc>
+    <lastmod>2021-10-13T13:26:13-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/authors/admin/</loc>
+    <lastmod>2025-01-16T16:01:22-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/slides/ch17slides/</loc>
+    <lastmod>2020-04-21T15:46:19-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/courses/</loc>
+    <lastmod>2020-01-23T16:12:40-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/post/</loc>
+    <lastmod>2020-01-23T16:12:40-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/publication/</loc>
+    <lastmod>2020-01-23T16:12:40-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/talk/</loc>
+    <lastmod>2020-01-23T16:12:40-05:00</lastmod>
   </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/courses/rforsna/ws2/</loc>
-    <lastmod>2020-07-21T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/courses/rforsna/ws3/</loc>
-    <lastmod>2020-07-21T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/courses/rforsna/</loc>
-    <lastmod>2020-07-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/courses/phys_115/coursevideos/</loc>
-    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/courses/phys_115/</loc>
-    <lastmod>2020-02-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/courses/phys_115/hw1/</loc>
-    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/courses/phys_115/hw2/</loc>
-    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/courses/phys_115/hw3/</loc>
-    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/courses/phys_115/hw4/</loc>
-    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/courses/phys_115/hw5/</loc>
-    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/courses/phys_115/hw6/</loc>
-    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/courses/phys_115/hw7/</loc>
-    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/courses/phys_115/asyncactivities1/</loc>
-    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/courses/phys_115/asyncactivities2/</loc>
-    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/courses/phys_115/asyncactivities3/</loc>
-    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/courses/phys_115/asyncactivities4/</loc>
-    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/courses/phys_115/asyncactivities5/</loc>
-    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/courses/phys_115/asyncactivities6/</loc>
-    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/courses/phys_115/asyncactivities7/</loc>
-    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/courses/phys_115/asyncactivities8/</loc>
-    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/courses/</loc>
-    <lastmod>2020-07-21T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/</loc>
-    <lastmod>2020-07-21T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/admin/</loc>
-    <lastmod>2020-06-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/post/actionswecantake/</loc>
-    <lastmod>2020-06-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/</loc>
-    <lastmod>2020-06-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/post/</loc>
-    <lastmod>2020-06-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/post/individualmeetingswithstudents/</loc>
-    <lastmod>2020-05-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/categories/</loc>
-    <lastmod>2020-04-15T11:29:23-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/categories/phys-115/</loc>
-    <lastmod>2020-04-15T11:29:23-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/post/problem-solving-workshops/</loc>
-    <lastmod>2020-04-15T11:29:23-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/post/standards-based-grading/</loc>
-    <lastmod>2020-04-15T11:29:23-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/post/standards-based-grading-gradescope-and-r/</loc>
-    <lastmod>2020-04-15T11:29:23-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/talk/apsaprildepttoolkit/</loc>
-    <lastmod>2020-04-20T14:43:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/eric-brewe/</loc>
-    <lastmod>2020-04-20T14:43:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/jesus-pando/</loc>
-    <lastmod>2020-04-20T14:43:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/talk/</loc>
-    <lastmod>2020-04-20T14:43:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/scott-franklin/</loc>
-    <lastmod>2020-04-20T14:43:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/post/improvements/</loc>
-    <lastmod>2020-04-15T11:29:23-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/talk/rowan-university/</loc>
-    <lastmod>2020-03-06T15:30:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/talk/rutgers-university/</loc>
-    <lastmod>2020-03-04T15:30:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication_types/2/</loc>
-    <lastmod>2020-02-11T09:41:13-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/rodriguezananetworkdomesticviolence/</loc>
-    <lastmod>2020-02-11T09:41:13-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/ana-l.-rodriguez/</loc>
-    <lastmod>2020-02-11T09:41:13-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/dionne-p.-stephens/</loc>
-    <lastmod>2020-02-11T09:41:13-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/indira-ramarao/</loc>
-    <lastmod>2020-02-11T09:41:13-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/network-analysis/</loc>
-    <lastmod>2020-02-11T09:41:13-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication_types/</loc>
-    <lastmod>2020-02-11T09:41:13-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/</loc>
-    <lastmod>2020-02-11T09:41:13-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/purnima-madhivanan/</loc>
-    <lastmod>2020-02-11T09:41:13-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/</loc>
-    <lastmod>2020-02-11T09:41:13-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/alina-nazareth/</loc>
-    <lastmod>2019-12-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/angela-r.-laird/</loc>
-    <lastmod>2019-12-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/bartleybrainlinkconceptualapproach/</loc>
-    <lastmod>2019-12-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/emily-r.-boeving/</loc>
-    <lastmod>2019-12-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/jessica-e.-bartley/</loc>
-    <lastmod>2019-12-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/katherine-l.-bottenhorn/</loc>
-    <lastmod>2019-12-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/matthew-c.-riedel/</loc>
-    <lastmod>2019-12-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/matthew-t.-sutherland/</loc>
-    <lastmod>2019-12-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/robert-w.-laird/</loc>
-    <lastmod>2019-12-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/rosalie-odean/</loc>
-    <lastmod>2019-12-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/shannon-m.-pruden/</loc>
-    <lastmod>2019-12-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/taylor-salo/</loc>
-    <lastmod>2019-12-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/post/coursereplanningincrisis/</loc>
-    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/post/courseplanningincrisis/</loc>
-    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/post/officehoursincrisis/</loc>
-    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/slides/chslides/</loc>
-    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/slides/</loc>
-    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/slides/example/</loc>
-    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication_types/1/</loc>
-    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/ariel-a.-gonzalez/</loc>
-    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/price-perc-poster-19/</loc>
-    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/elsa-i.-bravo/</loc>
-    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/eric-a-williams/</loc>
-    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/justyna-p-zwolak/</loc>
-    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/williams-2019-network-growth/</loc>
-    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/michael-c.-riedel/</loc>
-    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/remy-dou/</loc>
-    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/renee-michelle-goertzen/</loc>
-    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/gonzalez-2019-stem-anxiety-brain/</loc>
-    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/theodore-hodapp/</loc>
-    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/timothy-hayes/</loc>
-    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/virginia-price/</loc>
-    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/zahra-hazari/</loc>
-    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/activation-likelihood-estimation-ale/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/brain-network/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/career/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/class/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/classroom-interactions/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/cognitive-control/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/brewe-2018/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/curriculum/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/curriculum-and-instruction/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/daryl-mcpadden/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/domain-generality/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/domain-specificity/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/zwolak-2018/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/fmri/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/force-concept-inventory./</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/functional-neuroimaging/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/geoff-potvin/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/interest/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/jason-dowd/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/justyna-p.-zwolak/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/kathryn-b.-h.-clancy/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/lauren-m.-aycock/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/mental-models/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/meta-analysis/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/bartley-2018/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/michael-zwolak/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/modeling/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/modeling-instruction/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/modelling-instruction/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/brewe-2018-a/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/neuroeducation/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/physics/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/physics-reasoning/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/mc-padden-2018-power-boxes/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/problem-solving/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/reasoning/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/robert-shand/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/self-efficacy/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/aycock-2018-sexual-harrassment/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/social-network-analysis/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/stem-learning/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/susan-b.-eickhoff/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/brewe-2018-roles-of-engagement/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/brewe-2018-neuroimaging/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/dou-2018/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/university/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/university-physics/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/vashti-sawtelle/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/eric-a.-williams/</loc>
-    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/mc-padden-2017-a/</loc>
-    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/zwolak-2017/</loc>
-    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/hazari-2017-a/</loc>
-    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/project/modelinginstructionproject/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/project/networkanalysisproject/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/neuroimaging/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/project/neuroimagingproject/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/project/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/dou-2016/</loc>
-    <lastmod>2016-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/brewe-2016-gender/</loc>
-    <lastmod>2016-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/i.g.-ian-g.-bearden/</loc>
-    <lastmod>2016-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/jesper-bruun/</loc>
-    <lastmod>2016-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/laird-h-kramer/</loc>
-    <lastmod>2016-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/mc-padden-2016/</loc>
-    <lastmod>2016-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/brewe-2016/</loc>
-    <lastmod>2016-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/01/</loc>
-    <lastmod>2015-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/40/</loc>
-    <lastmod>2015-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/adrienne-l.-traxler/</loc>
-    <lastmod>2015-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/rodriguez-2015-a/</loc>
-    <lastmod>2015-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/epistemic-games/</loc>
-    <lastmod>2015-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/traxler-2015-b/</loc>
-    <lastmod>2015-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/eric-williams/</loc>
-    <lastmod>2015-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/fci/</loc>
-    <lastmod>2015-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/fk/</loc>
-    <lastmod>2015-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/g/</loc>
-    <lastmod>2015-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/gender/</loc>
-    <lastmod>2015-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/ha/</loc>
-    <lastmod>2015-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/idaykis-rodriguez/</loc>
-    <lastmod>2015-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/instructor/</loc>
-    <lastmod>2015-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/introductory/</loc>
-    <lastmod>2015-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/introductory-physics/</loc>
-    <lastmod>2015-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/jonathan-v.-mahadeo/</loc>
-    <lastmod>2015-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/l.h.-laird-h.-kramer/</loc>
-    <lastmod>2015-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/traxler-2015/</loc>
-    <lastmod>2015-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/pacs/</loc>
-    <lastmod>2015-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/physics-education/</loc>
-    <lastmod>2015-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/renee-michelle-r.m.-goertzen/</loc>
-    <lastmod>2015-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/representation-use/</loc>
-    <lastmod>2015-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/zwolak-2015/</loc>
-    <lastmod>2015-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/mc-padden-2015/</loc>
-    <lastmod>2015-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/williams-2015/</loc>
-    <lastmod>2015-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/yang-2014/</loc>
-    <lastmod>2014-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/binod-nainabasti/</loc>
-    <lastmod>2014-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/centrality/</loc>
-    <lastmod>2014-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/david-t-brookes/</loc>
-    <lastmod>2014-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/di/</loc>
-    <lastmod>2014-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/gb/</loc>
-    <lastmod>2014-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/informal-learning-community/</loc>
-    <lastmod>2014-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/dou-2014/</loc>
-    <lastmod>2014-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/pagerank-centrality/</loc>
-    <lastmod>2014-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/participation/</loc>
-    <lastmod>2014-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/physics-oriented-social-networks/</loc>
-    <lastmod>2014-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/social-interactions-in-the/</loc>
-    <lastmod>2014-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/yuehai-yang/</loc>
-    <lastmod>2014-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/adrienne-traxler/</loc>
-    <lastmod>2013-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/apprenticeship/</loc>
-    <lastmod>2013-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/case-studies/</loc>
-    <lastmod>2013-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/cogenerative-dialogues/</loc>
-    <lastmod>2013-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/communities-of-practice/</loc>
-    <lastmod>2013-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/community-of-learners/</loc>
-    <lastmod>2013-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/rodriguez-2013/</loc>
-    <lastmod>2013-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/goertzen-2013/</loc>
-    <lastmod>2013-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/brewe-2013-extend-class/</loc>
-    <lastmod>2013-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/brewe-2013-cbe/</loc>
-    <lastmod>2013-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/graduate-students/</loc>
-    <lastmod>2013-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/high-school/</loc>
-    <lastmod>2013-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/samuels-2013/</loc>
-    <lastmod>2013-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/jorge-de-la-garza/</loc>
-    <lastmod>2013-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/l.h.-laird-h-kramer/</loc>
-    <lastmod>2013-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/laird-h.-kramer/</loc>
-    <lastmod>2013-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/laird-kramer/</loc>
-    <lastmod>2013-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/n.j.-nancy-j-pelaez/</loc>
-    <lastmod>2013-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/nathan-samuels/</loc>
-    <lastmod>2013-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/pre-college-teaching/</loc>
-    <lastmod>2013-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/professional-development/</loc>
-    <lastmod>2013-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/mahadeo-2013/</loc>
-    <lastmod>2013-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/seth-manthey/</loc>
-    <lastmod>2013-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/seth-r.-manthey/</loc>
-    <lastmod>2013-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/social-norms./</loc>
-    <lastmod>2013-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/bruun-2013-talking-learning/</loc>
-    <lastmod>2013-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/todd-j-t.j.-cooke/</loc>
-    <lastmod>2013-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/manthey-2013-a/</loc>
-    <lastmod>2013-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/durden-2012/</loc>
-    <lastmod>2012-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/attitudes-and-achievement/</loc>
-    <lastmod>2012-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/charles-henderson/</loc>
-    <lastmod>2012-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/rodriguez-2012-communicating/</loc>
-    <lastmod>2012-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/sawtelle-2012-se-opportunities-aip/</loc>
-    <lastmod>2012-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/diffusion-of-innovations/</loc>
-    <lastmod>2012-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/dissemination/</loc>
-    <lastmod>2012-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/diversity/</loc>
-    <lastmod>2012-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/expertise/</loc>
-    <lastmod>2012-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/sawtelle-2012-jrst/</loc>
-    <lastmod>2012-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/group-learning/</loc>
-    <lastmod>2012-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/sawtelle-2012-se-events/</loc>
-    <lastmod>2012-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/rodriguez-2012-a/</loc>
-    <lastmod>2012-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/brewe-2012-networks/</loc>
-    <lastmod>2012-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/jared-durden/</loc>
-    <lastmod>2012-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/leadership/</loc>
-    <lastmod>2012-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/logistic-regression/</loc>
-    <lastmod>2012-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/may-lee/</loc>
-    <lastmod>2012-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/melissa-dancy/</loc>
-    <lastmod>2012-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/scientific-writing/</loc>
-    <lastmod>2012-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/socialization/</loc>
-    <lastmod>2012-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/socio-cultural/</loc>
-    <lastmod>2012-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/lee-2012/</loc>
-    <lastmod>2012-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/a.-mcgoron/</loc>
-    <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/a.-rosenblatt/</loc>
-    <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/a.-tashakkori/</loc>
-    <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/b.-dewsbury/</loc>
-    <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/biology/</loc>
-    <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/david-jones/</loc>
-    <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/e.-villamor/</loc>
-    <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/brewe-2011-energy/</loc>
-    <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/g.-narasimhan/</loc>
-    <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/interdisciplinary/</loc>
-    <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/j.-alberte/</loc>
-    <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/j.-baker/</loc>
-    <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/j.-makemson/</loc>
-    <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/j.b.-heffernan/</loc>
-    <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/l.-kos/</loc>
-    <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/leanne-wells/</loc>
-    <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/m.-galvez/</loc>
-    <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/m.-lowenstein/</loc>
-    <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/m.-quirke/</loc>
-    <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/m.-tracey/</loc>
-    <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/goertzen-2011/</loc>
-    <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/o.-weeks/</loc>
-    <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/p.-graves/</loc>
-    <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/p.-stoddard/</loc>
-    <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/weeks-2011/</loc>
-    <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/quantitative/</loc>
-    <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/r.-garcia/</loc>
-    <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/r.-gomez/</loc>
-    <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/s.-bhaijee/</loc>
-    <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/s.-gavassa/</loc>
-    <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/s.-koptur/</loc>
-    <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/s.-shapiro/</loc>
-    <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/t.-philippi/</loc>
-    <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/t.-pitzer/</loc>
-    <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/undergraduate/</loc>
-    <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/brewe-2010-b/</loc>
-    <lastmod>2010-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/rodriguez-2010/</loc>
-    <lastmod>2010-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/g.e.-george-e-obrien/</loc>
-    <lastmod>2010-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/george-e.-obrien/</loc>
-    <lastmod>2010-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/learning-community/</loc>
-    <lastmod>2010-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/motivation/</loc>
-    <lastmod>2010-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/sawtelle-2010/</loc>
-    <lastmod>2010-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/priscilla-pamela/</loc>
-    <lastmod>2010-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/brewe-2010-toward-equity/</loc>
-    <lastmod>2010-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/sawtelle-2009-a/</loc>
-    <lastmod>2009-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/g.-obrien/</loc>
-    <lastmod>2009-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/informal-education/</loc>
-    <lastmod>2009-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/brewe-2009-communities-aip/</loc>
-    <lastmod>2009-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/brewe-2009-a/</loc>
-    <lastmod>2009-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/sawtelle-2009-d/</loc>
-    <lastmod>2009-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/attitudinal-survey/</loc>
-    <lastmod>2008-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/brewe-2008-a/</loc>
-    <lastmod>2008-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/edgardo-zamalloa/</loc>
-    <lastmod>2008-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/george-e-obrien/</loc>
-    <lastmod>2008-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/wells-2008/</loc>
-    <lastmod>2008-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/kramer/</loc>
-    <lastmod>2008-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/brewe-2008-modeling-theory/</loc>
-    <lastmod>2008-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/ramona-valenzuela/</loc>
-    <lastmod>2008-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/charles-r.-henderson/</loc>
-    <lastmod>2007-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/melissa-h.-dancy/</loc>
-    <lastmod>2007-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/dancy-2007/</loc>
-    <lastmod>2007-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/kathleen-a.-harper/</loc>
-    <lastmod>2004-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/leonardo-hsu/</loc>
-    <lastmod>2004-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/publication/hsu-2004/</loc>
-    <lastmod>2004-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/authors/thomas-m.-foster/</loc>
-    <lastmod>2004-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/slides/ch17slides/</loc>
-  </url>
-  
-  <url>
-    <loc>https://ericbrewe.netlify.com/tags/doi10.1103/physrevphyseducres.15.020150-urlhttps/</loc>
-  </url>
-  
 </urlset>
