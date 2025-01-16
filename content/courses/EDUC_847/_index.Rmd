@@ -13,7 +13,7 @@ type: docs
 weight: 2
 ---
 
-Welcome to EDUC 847
+Welcome to EDUC 847 - testing
 
 ### The Plan
 
