@@ -30,7 +30,7 @@ knitr::include_url('https://ericbrewe.com/slides/EDUC_847/EDUC_847_Week_3.html#1
 **Reading Assignment**
 Here is your reading assignment for Week 3
 
-Read Chapter 15 in Learning Statistics with R
+Read Chapter 15 or 16 in Learning Statistics with R
 https://learningstatisticswithr.com/book/regression.html
 
 **Additional Resources**
