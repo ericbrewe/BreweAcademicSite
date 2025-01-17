@@ -22,7 +22,7 @@ library(kableExtra)
 
 
 
-The slides for Day #1 can be found here:
+The slides for Week #1 can be found here:
 ```{r WS1Slides}
 knitr::include_url('https://ericbrewe.com/slides/EDUC_847/EDUC_847_Week_1.html#1')
 ```
