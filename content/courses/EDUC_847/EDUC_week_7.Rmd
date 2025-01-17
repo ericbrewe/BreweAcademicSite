@@ -5,7 +5,7 @@ date: "2020-07-21T00:00:00+01:00"
 output: html_document
 menu:
   applied_regression:
-    parent: Daily Plan
+    parent: Weekly Plan
     weight: 1
 linktitle: "Week 7 - Logistic Regression by Machine Learning"
 toc: 
