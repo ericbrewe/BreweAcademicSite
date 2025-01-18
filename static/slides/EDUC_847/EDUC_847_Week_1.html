@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>EDUC 847 Winter 24</title>
+    <title>EDUC 847 Winter 25</title>
     <meta charset="utf-8" />
     <meta name="author" content="Eric Brewe   Professor of Physics at Drexel University  " />
     <script src="EDUC_847_Week_1_files/header-attrs/header-attrs.js"></script>
@@ -14,7 +14,7 @@
 class: center, middle, inverse, title-slide
 
 .title[
-# EDUC 847 Winter 24
+# EDUC 847 Winter 25
 ]
 .subtitle[
 ## Day 1 - Theory, Data, and Plotting
@@ -23,7 +23,7 @@ class: center, middle, inverse, title-slide
 ### Eric Brewe <br> Professor of Physics at Drexel University <br>
 ]
 .date[
-### 8 January 2024, last update: 2024-03-10
+### 8 January 2025, last update: 2025-01-17
 ]
 
 ---
@@ -33,7 +33,7 @@ class: center, middle, inverse, title-slide
 
 
 
-
+---
 class: center, middle
 
 # Introduction to this course, R and plotting recipes
@@ -128,7 +128,6 @@ Two ways to think about relationships...
 - **Matrices** = like dataframes, but they have named rows/columns 
     - Adjacency Matrices are of type matrix.
 - **Lists** = the junkdrawer, can hold any type of data (including dataframes or matrices)
-    - in igraph, networks are stored as lists.
 
 ]
 ---
@@ -146,7 +145,7 @@ Two ways to think about relationships...
 To install tidyverse package...
 
 
-```r
+``` r
 install.packages("tidyverse")
 ```
 
@@ -164,7 +163,7 @@ glmnet janitor haven
 To load tidyverse package...
 
 
-```r
+``` r
 library(tidyverse) #tools for cleaning and visualizing data 
 library(janitor)  #package for cleaning data
 library(glmnet) #tools for doing regression analyses
@@ -191,7 +190,7 @@ Again, you will want to include this as a code chunk in your RMD file.
 
 
 
-```r
+``` r
 #This loads the csv and saves it as a dataframe titled week_1_data
 
 week_1_data &lt;- read_csv(here("static/slides/EDUC_847/data",
@@ -203,7 +202,7 @@ week_1_data &lt;- read_csv(here("static/slides/EDUC_847/data",
 # Let's have a look at the data
 
 
-```r
+``` r
 glimpse(week_1_data)
 ```
 
@@ -248,7 +247,7 @@ There is a ton of data there that doesn't make sense for us to keep around.
 We will use the '%&gt;%' (pipe) operator and the verb select
 
 
-```r
+``` r
 week_1_data %&gt;%
 * select(ID,Q2:Q10) -&gt; w1df
 
@@ -275,7 +274,7 @@ Note the data are not numbers.
 Notice there are two rows of data that are just the questions and something from Qualtrics.  Let's get rid of those. 
 
 
-```r
+``` r
 w1df %&gt;%
   filter(row_number() &gt;3 ) -&gt; w1df
 ```
@@ -292,7 +291,7 @@ Here is code to do this for the question about morning or night person.
 
 
 
-```r
+``` r
 w1df %&gt;%
 * select(Q2) %&gt;%
 * group_by(Q2) %&gt;%
@@ -319,7 +318,7 @@ Here is code to do this for the data from above.
 
 .pull-left[
 
-```r
+``` r
 w1df %&gt;%
 * select(Q2) %&gt;%
 * group_by(Q2) %&gt;%
@@ -337,7 +336,7 @@ w1df %&gt;%
 
 .pull-right[
 
-```r
+``` r
 w1df %&gt;%
 * hist(Q2)
 ```
@@ -355,7 +354,7 @@ Here is code to do this for the data from above.
 
 .pull-left[
 
-```r
+``` r
 w1df %&gt;%
 * select(Q2) %&gt;%
 * group_by(Q2) %&gt;%
@@ -373,7 +372,7 @@ w1df %&gt;%
 
 .pull-right[
 
-```r
+``` r
 w1df %&gt;%
 * mutate(Q2 = as.numeric(Q2)) -&gt; w1df
   
@@ -394,7 +393,7 @@ Thats kind of ugly! Lets make it look better.
 
 .pull-left[
 
-```r
+``` r
 w1df %&gt;%
 * select(Q2) %&gt;%
 * group_by(Q2) %&gt;%
@@ -412,7 +411,7 @@ w1df %&gt;%
 
 .pull-right[
 
-```r
+``` r
 w1df %&gt;%
   select(Q2) %&gt;%
 * ggplot(aes(y = Q2)) +
@@ -431,7 +430,7 @@ That's a little better?
 
 .pull-left[
 
-```r
+``` r
 w1df %&gt;%
 * select(Q2) %&gt;%
 * group_by(Q2) %&gt;%
@@ -449,7 +448,7 @@ w1df %&gt;%
 
 .pull-right[
 
-```r
+``` r
 w1df %&gt;%
   select(Q2) %&gt;%
   ggplot(aes(y = Q2)) + 
@@ -470,7 +469,7 @@ See here for more: https://ggplot2.tidyverse.org/
 ### First, let's summarize the book data.
 
 
-```r
+``` r
 w1df %&gt;%
   select(Q5) %&gt;%
   mutate(Q5 = as.numeric(Q5)) %&gt;%
@@ -493,7 +492,7 @@ w1df %&gt;%
 I find it annoying to have to convert the data to numeric all the time.
 
 
-```r
+``` r
 w1df %&gt;%
   mutate(Q3 = as.numeric(Q3)) %&gt;%
   mutate(Q5 = as.numeric(Q5)) %&gt;%
@@ -521,7 +520,7 @@ glimpse(w1df)
 ### Do morning people or night owls have longer books nearby?
 
 
-```r
+``` r
 w1df %&gt;%
   select(Q2, Q5) %&gt;%
   group_by(Q2) %&gt;%
@@ -542,7 +541,7 @@ w1df %&gt;%
 ### We might want to use a boxplot to display these data
 
 
-```r
+``` r
 w1df %&gt;%
   select(Q2, Q5) %&gt;%
   mutate(Q2 = as.character(Q2)) %&gt;% #Just this once!
@@ -561,7 +560,7 @@ w1df %&gt;%
 .pull-left[
 ### Could do a scatter plot
 
-```r
+``` r
 w1df %&gt;%
   select(Q5:Q6) %&gt;%
   ggplot(aes(x = Q5, y = Q6)) +
@@ -582,7 +581,7 @@ w1df %&gt;%
 .pull-left[
 ### Could do a scatter plot
 
-```r
+``` r
 w1df %&gt;%
   select(Q5:Q6) %&gt;%
   ggplot(aes(x = Q5, y = Q6)) +
@@ -608,7 +607,7 @@ What if Morning People have different relationships between the estimates of cow
 .pull-left[
 ### Could do a scatter plot
 
-```r
+``` r
 w1df %&gt;%
   select(Q2,Q5:Q6) %&gt;%
   ggplot(aes(x = Q5, y = Q6, color = Q2)) +

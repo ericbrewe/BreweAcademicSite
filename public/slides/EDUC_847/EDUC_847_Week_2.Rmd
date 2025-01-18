@@ -1,8 +1,8 @@
 ---
-title: "EDUC 847 Winter 24"
+title: "EDUC 847 Winter 25"
 subtitle: Week 2 - Fundamentals of Linear Modeling
 author: 'Eric Brewe <br> Professor of Physics at Drexel University <br>'
-date: "22 January 2024, last update: `r Sys.Date()`"
+date: "15 January 2025, last update: `r Sys.Date()`"
 output: 
   xaringan::moon_reader:
     css: [default, metropolis, "BreweSlides.css"]
@@ -96,7 +96,7 @@ week_1_data %>%
 ---
 # Let's look at books vs. weight of cow
 
-### Is there a relationship between length of book and estimates on weight of cow?
+### Is there a relationship between length of book (Q5) and estimates on weight of cow (Q6)?
 
 .pull-left[
 ### Making a scatter plot to explore
@@ -143,7 +143,7 @@ w1df %>%
 # Let's make a linear regression model
 
 
-### We want the estimated weight of the cow as predicted by the length of the book closest to the survey respondent. 
+### We want the estimated weight of the cow (Q6) as predicted by the length of the book closest to the survey respondent (Q5). 
 ```{r LinearRegression}
 
 Model1 <- lm(Q6 ~ Q5, data = w1df) #<<
@@ -153,7 +153,7 @@ Model1
 ---
 # Let's clean up our language...
 
-In this situation, Q5 (the Estimated weight of the cow) is the Outcome Variable and Q6 (the number of pages in the closest book) is the Predictor variable.
+In this situation, Q6 (the Estimated weight of the cow) is the Outcome Variable and Q5 (the number of pages in the closest book) is the Predictor variable.
 
 Outcome Variable is often referred to as independent variable
 
@@ -254,7 +254,7 @@ glimpse(resid_df)
 
 $R^{2} = 1 - \frac{\sum_{i} (Y_{Pred} - Y_{i})^2}{\sum_{i} (Y_{i}-\overline{Y})^2}$
 
-.pull-left[
+
 ```{r  CalcRSq2}
 
 SquaredResiduals = sum(resid_df$SqResid)
@@ -266,6 +266,7 @@ SquaredDiffMean
 r2 = 1-(SquaredResiduals/SquaredDiffMean)
 r2
 ```
+
 ---
 # Let's compare to the R<sup>2<\sup>
 
@@ -286,7 +287,7 @@ We can...
 - Fit a regression model to two continuous variables
 - Calculate the residuals
 - Calculate the squared residuals
-- Use the residuals to calculate the r<sup>2<\sup>
+- Use the residuals to calculate the R<sup>2</sup>
 
     
     

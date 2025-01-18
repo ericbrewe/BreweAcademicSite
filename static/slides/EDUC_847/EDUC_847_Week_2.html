@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>EDUC 847 Winter 24</title>
+    <title>EDUC 847 Winter 25</title>
     <meta charset="utf-8" />
     <meta name="author" content="Eric Brewe   Professor of Physics at Drexel University  " />
     <script src="EDUC_847_Week_2_files/header-attrs/header-attrs.js"></script>
@@ -14,7 +14,7 @@
 class: center, middle, inverse, title-slide
 
 .title[
-# EDUC 847 Winter 24
+# EDUC 847 Winter 25
 ]
 .subtitle[
 ## Week 2 - Fundamentals of Linear Modeling
@@ -23,7 +23,7 @@ class: center, middle, inverse, title-slide
 ### Eric Brewe <br> Professor of Physics at Drexel University <br>
 ]
 .date[
-### 22 January 2024, last update: 2024-01-22
+### 15 January 2025, last update: 2025-01-18
 ]
 
 ---
@@ -44,7 +44,7 @@ Start by getting the data into R
 
 
 
-```r
+``` r
 #This loads the csv and saves it as a dataframe titled week_1_data
 
 week_1_data &lt;- read_csv(here("static/slides/EDUC_847/data",
@@ -62,7 +62,7 @@ There is a ton of data there that doesn't make sense for us to keep around.
 We will use the '%&gt;%' (pipe) operator and the verb select
 
 
-```r
+``` r
 week_1_data %&gt;%
 * select(ID,Q2:Q6) -&gt; w1df
 
@@ -87,7 +87,7 @@ glimpse(w1df)
 Notice there are two rows of data that are just the questions and something from Qualtrics.  Let's get rid of those. 
 
 
-```r
+``` r
 w1df %&gt;%
   filter(row_number() &gt;3 ) -&gt; w1df
 ```
@@ -97,7 +97,7 @@ w1df %&gt;%
 
 
 
-```r
+``` r
 week_1_data %&gt;%
   select(ID,Q2:Q6) %&gt;%
   filter(row_number() &gt;3 ) %&gt;%
@@ -108,12 +108,12 @@ week_1_data %&gt;%
 ---
 # Let's look at books vs. weight of cow
 
-### Is there a relationship between length of book and estimates on weight of cow?
+### Is there a relationship between length of book (Q5) and estimates on weight of cow (Q6)?
 
 .pull-left[
 ### Making a scatter plot to explore
 
-```r
+``` r
 w1df %&gt;%
   select(Q5:Q6) %&gt;%
   ggplot(aes(x = Q5, y = Q6)) +
@@ -137,7 +137,7 @@ A **residual** is the distance between the Y value for each measurement, and the
 # Let's investigate the residuals for our data 
 .pull-left[
 
-```r
+``` r
 w1df %&gt;% 
   select(Q5,Q6)
 ```
@@ -163,9 +163,9 @@ w1df %&gt;%
 # Let's make a linear regression model
 
 
-### We want the estimated weight of the cow as predicted by the length of the book closest to the survey respondent. 
+### We want the estimated weight of the cow (Q6) as predicted by the length of the book closest to the survey respondent (Q5). 
 
-```r
+``` r
 *Model1 &lt;- lm(Q6 ~ Q5, data = w1df)
 
 Model1
@@ -183,7 +183,7 @@ Model1
 ---
 # Let's clean up our language...
 
-In this situation, Q5 (the Estimated weight of the cow) is the Outcome Variable and Q6 (the number of pages in the closest book) is the Predictor variable.
+In this situation, Q6 (the Estimated weight of the cow) is the Outcome Variable and Q5 (the number of pages in the closest book) is the Predictor variable.
 
 Outcome Variable is often referred to as independent variable
 
@@ -195,7 +195,7 @@ I hate this language. Predictor and Outcome are much more descriptive.
 # Let's figure out what this means
 
 
-```r
+``` r
 Model1
 ```
 
@@ -225,7 +225,7 @@ Model1
 
 
 
-```r
+``` r
 augment(Model1) %&gt;%
   select(Q5:.resid) 
 ```
@@ -248,7 +248,7 @@ augment(Model1) %&gt;%
 # Let's see how much better the model fits
 
 
-```r
+``` r
 augment(Model1) %&gt;%
   select(Q5:.resid) %&gt;%
 * mutate(SqResid = .resid^2)
@@ -271,7 +271,7 @@ augment(Model1) %&gt;%
 # Let's see how much better the model fits
 
 
-```r
+``` r
 augment(Model1) %&gt;%
   select(Q5:.resid) %&gt;%
   mutate(SqResid = .resid^2) %&gt;%
@@ -295,7 +295,7 @@ augment(Model1) %&gt;%
 
 
 
-```r
+``` r
 augment(Model1) %&gt;%
   select(Q6:.resid) %&gt;%
   mutate(SqResid = .resid^2) %&gt;%
@@ -321,9 +321,9 @@ glimpse(resid_df)
 
 `\(R^{2} = 1 - \frac{\sum_{i} (Y_{Pred} - Y_{i})^2}{\sum_{i} (Y_{i}-\overline{Y})^2}\)`
 
-.pull-left[
 
-```r
+
+``` r
 SquaredResiduals = sum(resid_df$SqResid)
 SquaredResiduals
 ```
@@ -332,7 +332,7 @@ SquaredResiduals
 ## [1] 8461878
 ```
 
-```r
+``` r
 SquaredDiffMean = sum(resid_df$SqDiffMean)
 SquaredDiffMean
 ```
@@ -341,7 +341,7 @@ SquaredDiffMean
 ## [1] 8508068
 ```
 
-```r
+``` r
 r2 = 1-(SquaredResiduals/SquaredDiffMean)
 r2
 ```
@@ -349,11 +349,12 @@ r2
 ```
 ## [1] 0.005428873
 ```
+
 ---
 # Let's compare to the R&lt;sup&gt;2&lt;\sup&gt;
 
 
-```r
+``` r
 SquaredResiduals
 ```
 
@@ -361,7 +362,7 @@ SquaredResiduals
 ## [1] 8461878
 ```
 
-```r
+``` r
 SquaredDiffMean
 ```
 
@@ -369,7 +370,7 @@ SquaredDiffMean
 ## [1] 8508068
 ```
 
-```r
+``` r
 r2
 ```
 
@@ -377,7 +378,7 @@ r2
 ## [1] 0.005428873
 ```
 
-```r
+``` r
 summary(Model1)
 ```
 
@@ -410,7 +411,7 @@ We can...
 - Fit a regression model to two continuous variables
 - Calculate the residuals
 - Calculate the squared residuals
-- Use the residuals to calculate the r&lt;sup&gt;2&lt;\sup&gt;
+- Use the residuals to calculate the R&lt;sup&gt;2&lt;/sup&gt;
 
     
     
