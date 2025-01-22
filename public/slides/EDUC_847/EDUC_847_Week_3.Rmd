@@ -1,8 +1,8 @@
 ---
-title: "EDUC 847 Winter 24"
+title: "EDUC 847 Winter 25"
 subtitle: Week 3 - Data for Linear Modeling
 author: 'Eric Brewe <br> Professor of Physics at Drexel University <br>'
-date: "29 January 2024, last update: `r Sys.Date()`"
+date: "22 January 2025, last update: `r Sys.Date()`"
 output: 
   xaringan::moon_reader:
     css: [default, metropolis, "BreweSlides.css"]
@@ -120,9 +120,22 @@ Model1
 summary(Model1)
 
 ```
+---
+# Let's look at hypothesis testing for this model
+
+## Statistical significance tells us whether or not we can reject the null hypothesis
+
+1. What is the null model?  
+2. What is our tolerance for type 1 error? (p-value) 
+3. Is this model different from the null model? 
+
+
 
 ---
 # Let's think about this model...
+
+## R<sup>2</sup> = 0.005429
+We saw this last week
 
 ## F-Statistic = 0.02729 
 This is a ratio of the Model Sum of Squares vs. the Residual Sum of Squares
@@ -148,6 +161,7 @@ $t = \frac{Intercept}{Standard Error} = \frac{1668.7}{723.6} = 2.03$
 ## p = 0.0692
 Depending on our predetermined willingness to accept false positives, this tells us whether a result is "statistically significant". 
 
+--
 It is not. 
 ---
 # Let's think about the Q5 coeff.
@@ -165,6 +179,7 @@ $t = \frac{Intercept}{Standard Error} = \frac{.3001}{1.8163} = 0.165$
 ## p = 0.8753
 Depending on our predetermined willingness to accept false positives, this tells us whether a result is "statistically significant". 
 
+--
 It is not. 
 ---
 # Let's think about why this model is a failure
@@ -468,7 +483,7 @@ summary(sci_model)
 3. Is this model different from the null model? 
 
 ---
-# Let's look at hypothesis testing for the coefficient
+# Let's look at hypothesis testing for the coef
 
 ## Statistical significance tells us whether or not we can reject the null hypothesis
 
@@ -477,8 +492,28 @@ summary(sci_model)
 3. Is this model different from the null model? Yes!  The t-value for the math_sc is 49.27, p << 0.05
 
 ---
+# Let's talk about what we can say...
+
+1. Can we reject the null model?
+
+2. Does a p << 0.05 mean that the model is meaningful?
+
+
+---
+# Let's talk about what we can say...
+
+1. Can we reject the null model?
+
+Yes! 
+
+2. Does a p << 0.05 mean that the model is meaningful?
+
+No! 
+
+---
 # Let's look at confidence intervals
 
+Confidence intervals give us a sense about the range of likely true positives.
 
 For a coefficient, we first establish a tolerance for false positives (95%), then...
 
