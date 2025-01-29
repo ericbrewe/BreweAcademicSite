@@ -1,8 +1,8 @@
 ---
-title: "EDUC 847 Winter 24"
+title: "EDUC 847 Winter 25"
 subtitle: Week 4 - Data for Linear Modeling
 author: 'Eric Brewe <br> Professor of Physics at Drexel University <br>'
-date: "5 February 2024, last update: `r Sys.Date()`"
+date: "29 January 2025, last update: `r Sys.Date()`"
 output: 
   xaringan::moon_reader:
     css: [default, metropolis, "BreweSlides.css"]
@@ -29,7 +29,7 @@ library(mice)
 
 class: center, middle
 
-# Let's start wit
+# Let's start where we ended last week
 
 Start by getting the data into R
 
@@ -298,6 +298,7 @@ summary(Mod4)
 
 ```
 Hey, notice that the t-value and the p value both stay the same as the first model!
+
 ---
 # Let's deal with these missing data!
 
@@ -320,7 +321,7 @@ Any thoughts?
 - Multiple Imputation
 
 ---
-# Let's look at the basics of Multiple Imputation
+# Let's look at Multiple Imputation
  
  - Impute missing data (do this several/a bunch of times)
  - Analyze all the new data sets

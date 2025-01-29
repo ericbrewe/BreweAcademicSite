@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>EDUC 847 Winter 24</title>
+    <title>EDUC 847 Winter 25</title>
     <meta charset="utf-8" />
     <meta name="author" content="Eric Brewe   Professor of Physics at Drexel University  " />
     <script src="EDUC_847_Week_4_files/header-attrs/header-attrs.js"></script>
@@ -14,7 +14,7 @@
 class: center, middle, inverse, title-slide
 
 .title[
-# EDUC 847 Winter 24
+# EDUC 847 Winter 25
 ]
 .subtitle[
 ## Week 4 - Data for Linear Modeling
@@ -23,7 +23,7 @@ class: center, middle, inverse, title-slide
 ### Eric Brewe <br> Professor of Physics at Drexel University <br>
 ]
 .date[
-### 5 February 2024, last update: 2024-02-26
+### 29 January 2025, last update: 2025-01-29
 ]
 
 ---
@@ -36,7 +36,7 @@ class: center, middle, inverse, title-slide
 
 class: center, middle
 
-# Let's start wit
+# Let's start where we ended last week
 
 Start by getting the data into R
 
@@ -44,7 +44,7 @@ Start by getting the data into R
 
 
 
-```r
+``` r
 #This loads the csv and saves it as a dataframe titled week_1_data
 
 sci_df &lt;- read_csv(here("data",
@@ -57,7 +57,7 @@ sci_df &lt;- read_csv(here("data",
 
 ### We want to predict a science score from a math score. 
 
-```r
+``` r
 *sci_mod &lt;- lm(sci ~ math_sc, data = sci_df)
 
 summary(sci_mod)
@@ -92,7 +92,7 @@ Note - we have a new dataset!
 
 ## What about pre score?
 
-```r
+``` r
 Mod2 &lt;- lm(sci ~ pre_sc, data = sci_df)
 summary(Mod2)
 ```
@@ -157,7 +157,7 @@ We can do a histogram of residuals
 
 
 
-```r
+``` r
 sci_mod_df %&gt;%
   ggplot(aes(y = .resid)) +
   geom_histogram() + 
@@ -181,7 +181,7 @@ Also doesn't hurt to check the pre_score itself
 
 .pull-right[
 
-```r
+``` r
 sci_mod_df %&gt;%
   ggplot(aes(y = pre_sc)) +
   geom_histogram() + 
@@ -210,7 +210,7 @@ The most common transformation is a log transformation
 .pull-right[
 
 
-```r
+``` r
 sci_mod_df %&gt;%
   ggplot(aes(y = log(pre_sc))) +
   geom_histogram() + 
@@ -222,7 +222,7 @@ sci_mod_df %&gt;%
 # Let's use the log transform in a model
 
 
-```r
+``` r
 Mod3 &lt;- lm(sci ~ log(pre_sc), data = sci_df)
 
 summary(Mod3)
@@ -260,7 +260,7 @@ summary(Mod3)
 # Let's interpret this new model
 
 
-```r
+``` r
 summary(Mod3)
 ```
 
@@ -302,7 +302,7 @@ We can do a histogram of residuals for transformed data
 
 
 
-```r
+``` r
 log_sci_mod_df %&gt;%
   ggplot(aes(y = .resid)) +
   geom_histogram() + 
@@ -320,7 +320,7 @@ log_sci_mod_df %&gt;%
 This makes it easy to compare coefficients
 
 
-```r
+``` r
 Mod4 &lt;- lm(scale(sci) ~ scale(math_sc), data = sci_df)
 
 summary(Mod4)
@@ -348,11 +348,12 @@ summary(Mod4)
 ## F-statistic: 41.53 on 1 and 424 DF,  p-value: 3.154e-10
 ```
 Hey, notice that the t-value and the p value both stay the same as the first model!
+
 ---
 # Let's deal with these missing data!
 
 
-```r
+``` r
 summary(sci_df)
 ```
 
@@ -389,7 +390,7 @@ Any thoughts?
 - Multiple Imputation
 
 ---
-# Let's look at the basics of Multiple Imputation
+# Let's look at Multiple Imputation
  
  - Impute missing data (do this several/a bunch of times)
  - Analyze all the new data sets
@@ -403,7 +404,7 @@ Sounds difficult, no?
 ## First, it works best with data that are MCAR or MAR
 
 
-```r
+``` r
 md.pattern(sci_df)
 ```
 
@@ -426,7 +427,7 @@ First, we will set up a dataset with 5 iterations of the imputed data.
 
 
 
-```r
+``` r
 sci_df_imp &lt;- mice(sci_df, maxit = 5, m = 5, seed = 327)
 ```
 
@@ -465,7 +466,7 @@ sci_df_imp &lt;- mice(sci_df, maxit = 5, m = 5, seed = 327)
 
 We should look at how the new data are distributed using a stripplot. 
 
-```r
+``` r
 stripplot(sci_df_imp, math_sc, xlab = "imputation number")
 ```
 
@@ -476,7 +477,7 @@ stripplot(sci_df_imp, math_sc, xlab = "imputation number")
 # Let's use this in a linear model
 
 
-```r
+``` r
 sci_mod_imp &lt;- with(sci_df_imp, lm(sci~ math_sc))
 
 summary(pool(sci_mod_imp))
