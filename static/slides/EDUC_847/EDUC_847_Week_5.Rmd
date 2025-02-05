@@ -2,7 +2,7 @@
 title: "EDUC 847 Winter 24"
 subtitle: Week 5 - Multiple Regression
 author: 'Eric Brewe <br> Professor of Physics at Drexel University <br>'
-date: "12 February 2024, last update: `r Sys.Date()`"
+date: "5 February 2025, last update: `r Sys.Date()`"
 output: 
   xaringan::moon_reader:
     css: [default, metropolis, "BreweSlides.css"]
@@ -78,7 +78,6 @@ sci_mod_motiv <- lm(sci ~ motiv, data = sci_df)
 
 tidy(sci_mod_motiv)
 
-glance(sci_mod_motiv)
 
 ```
 
@@ -89,7 +88,7 @@ sci_mod_motiv <- lm(sci ~ motiv, data = sci_df)
 
 tidy(summary(sci_mod_motiv))
 
-glance(sci_mod_motiv)
+
 
 ```
 
@@ -104,33 +103,30 @@ tidy(sci_mod_math)
 tidy(sci_mod_motiv)
 
 ```
+---
+# Let's reflect
 
+We have two models that predict science score.
 
+Which is right? 
 
+Which is better?
 
 ---
 # Let's try something new
 
 What if we put them both in the model?
 
-```{r Model_Math_Motiv, eval = FALSE }
+```{r Model_Math_Motiv }
 
 sci_mod_motiv_math <- lm(sci ~ math_sc + motiv, data = sci_df)
 
 tidy(sci_mod_motiv_math)
-glance(sci_mod_motiv_math)
+
 
 ```
 
 
-```{r Model_Math_Motiv2, echo = FALSE }
-
-sci_mod_motiv_math <- lm(sci ~ math_sc + motiv, data = sci_df)
-
-tidy(sci_mod_motiv_math)
-glance(sci_mod_motiv_math)
-
-```
 
 ---
 # Let's interpret
@@ -163,6 +159,9 @@ plot_summs(sci_mod_motiv_math)
 
 
 ```
+
+
+
 ---
 # Let's look at these coefficients
 
@@ -173,6 +172,15 @@ plot_summs(sci_mod_motiv_math, inner_ci_level = 0.9)
 
 ```
 ---
+# Let's review the goodness of fit
+
+```{r GoodnessOfFit}
+
+glance(sci_mod_motiv_math)
+```
+This give us some numbers, but we need to know what these mean. 
+
+---
 # Let's decide, is it a better model?
 
 We have a few options...
@@ -182,7 +190,7 @@ We have a few options...
   - adj $R^{2} = 1 - \frac{SS_{res}}{SS_{tot}}*\frac{N-1}{N-K-1}$
 - Akaike information criteria
   - $AIC = \frac{SS_{res}}{\sigma} + 2K$
-    - Lower is better!
+    - ==Lower is better!==
   - to access AIC can use the step function in the emdi package
   
 
@@ -362,7 +370,7 @@ interact_plot(model = sci_mod_motiv_math_interactions, pred =  math_sc, modx = m
 ---
 # Let's review...
 
-We spent today looking at how to 
+We spent today looking at how to do multiple regression
 
 We can...
  - run a multiple regression

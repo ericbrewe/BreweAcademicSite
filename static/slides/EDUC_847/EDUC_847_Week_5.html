@@ -23,7 +23,7 @@ class: center, middle, inverse, title-slide
 ### Eric Brewe <br> Professor of Physics at Drexel University <br>
 ]
 .date[
-### 12 February 2024, last update: 2024-02-12
+### 5 February 2025, last update: 2025-02-05
 ]
 
 ---
@@ -43,7 +43,7 @@ Start by getting the data into R
 
 
 
-```r
+``` r
 #This loads the csv and saves it as a dataframe titled week_1_data
 
 sci_df &lt;- read_csv(here("data",
@@ -56,7 +56,7 @@ sci_df &lt;- read_csv(here("data",
 
 ### We want to predict a science score from a math score. 
 
-```r
+``` r
 *sci_mod_math &lt;- lm(sci ~ math_sc, data = sci_df)
 
 tidy(summary(sci_mod_math))
@@ -78,12 +78,10 @@ Note - we have a new dataset, nothing is missing!
 # Let's use motivation in a model
 
 
-```r
+``` r
 sci_mod_motiv &lt;- lm(sci ~ motiv, data = sci_df)
 
 tidy(sci_mod_motiv)
-
-glance(sci_mod_motiv)
 ```
 
 
@@ -96,19 +94,11 @@ glance(sci_mod_motiv)
 ## 2 motiv           5.46      2.42      2.25  0.0247
 ```
 
-```
-## # A tibble: 1 × 12
-##   r.squared adj.r.squared sigma statistic p.value    df logLik   AIC   BIC
-##       &lt;dbl&gt;         &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
-## 1    0.0101       0.00810  664.      5.07  0.0247     1 -3958. 7921. 7934.
-## # ℹ 3 more variables: deviance &lt;dbl&gt;, df.residual &lt;int&gt;, nobs &lt;int&gt;
-```
-
 ---
 # Let's reflect
 
 
-```r
+``` r
 tidy(sci_mod_math)
 ```
 
@@ -120,7 +110,7 @@ tidy(sci_mod_math)
 ## 2 math_sc         11.6      2.47     4.70  0.00000343
 ```
 
-```r
+``` r
 tidy(sci_mod_motiv)
 ```
 
@@ -131,9 +121,14 @@ tidy(sci_mod_motiv)
 ## 1 (Intercept)   405.      179.        2.26  0.0242
 ## 2 motiv           5.46      2.42      2.25  0.0247
 ```
+---
+# Let's reflect
 
+We have two models that predict science score.
 
+Which is right? 
 
+Which is better?
 
 ---
 # Let's try something new
@@ -141,14 +136,11 @@ tidy(sci_mod_motiv)
 What if we put them both in the model?
 
 
-```r
+``` r
 sci_mod_motiv_math &lt;- lm(sci ~ math_sc + motiv, data = sci_df)
 
 tidy(sci_mod_motiv_math)
-glance(sci_mod_motiv_math)
 ```
-
-
 
 ```
 ## # A tibble: 3 × 5
@@ -159,13 +151,7 @@ glance(sci_mod_motiv_math)
 ## 3 motiv           6.53      2.38      2.75 0.00624
 ```
 
-```
-## # A tibble: 1 × 12
-##   r.squared adj.r.squared sigma statistic     p.value    df logLik   AIC   BIC
-##       &lt;dbl&gt;         &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;       &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
-## 1    0.0567        0.0529  649.      14.9 0.000000498     2 -3946. 7899. 7916.
-## # ℹ 3 more variables: deviance &lt;dbl&gt;, df.residual &lt;int&gt;, nobs &lt;int&gt;
-```
+
 
 ---
 # Let's interpret
@@ -197,7 +183,7 @@ glance(sci_mod_motiv_math)
 # Let's interpret graphically
 
 
-```r
+``` r
 avPlots(sci_mod_motiv_math)
 ```
 
@@ -208,20 +194,40 @@ avPlots(sci_mod_motiv_math)
 # Let's look at these coefficients
 
 
-```r
+``` r
 plot_summs(sci_mod_motiv_math)
 ```
 
 ![](EDUC_847_Week_5_files/figure-html/CoefficientPlots-1.png)&lt;!-- --&gt;
+
+
+
 ---
 # Let's look at these coefficients
 
 
-```r
+``` r
 plot_summs(sci_mod_motiv_math, inner_ci_level = 0.9)
 ```
 
 ![](EDUC_847_Week_5_files/figure-html/CoefficientPlotsCI-1.png)&lt;!-- --&gt;
+---
+# Let's review the goodness of fit
+
+
+``` r
+glance(sci_mod_motiv_math)
+```
+
+```
+## # A tibble: 1 × 12
+##   r.squared adj.r.squared sigma statistic     p.value    df logLik   AIC   BIC
+##       &lt;dbl&gt;         &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;       &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+## 1    0.0567        0.0529  649.      14.9 0.000000498     2 -3946. 7899. 7916.
+## # ℹ 3 more variables: deviance &lt;dbl&gt;, df.residual &lt;int&gt;, nobs &lt;int&gt;
+```
+This give us some numbers, but we need to know what these mean. 
+
 ---
 # Let's decide, is it a better model?
 
@@ -232,7 +238,7 @@ We have a few options...
   - adj `\(R^{2} = 1 - \frac{SS_{res}}{SS_{tot}}*\frac{N-1}{N-K-1}\)`
 - Akaike information criteria
   - `\(AIC = \frac{SS_{res}}{\sigma} + 2K\)`
-    - Lower is better!
+    - ==Lower is better!==
   - to access AIC can use the step function in the emdi package
   
 
@@ -243,7 +249,7 @@ We have a few options...
 To do this, we start with the full model and remove variables and recalculate the AIC. This is called backward selection. 
 
 
-```r
+``` r
 step(sci_mod_motiv_math, 
      direction = "backward")
 ```
@@ -279,7 +285,7 @@ step(sci_mod_motiv_math,
 # Let's compare models graphically
 
 
-```r
+``` r
 plot_summs(sci_mod_motiv, sci_mod_motiv_math, inner_ci_level = 0.9)
 ```
 
@@ -294,7 +300,7 @@ We will compare the model with the motivation score as compared to the model wit
 
 
 
-```r
+``` r
 anova(sci_mod_math, sci_mod_motiv_math)
 ```
 
@@ -317,7 +323,7 @@ anova(sci_mod_math, sci_mod_motiv_math)
 What about the group variable? Maybe some groups differ on math, motivation, and science score...
 
 
-```r
+``` r
 sci_mod_motiv_math_gr &lt;- lm(sci~ math_sc + motiv + gr , data = sci_df)
 
 tidy(sci_mod_motiv_math_gr)
@@ -340,7 +346,7 @@ tidy(sci_mod_motiv_math_gr)
 What about the group variable? Maybe some groups differ on math, motivation, and science score...
 
 
-```r
+``` r
 plot_summs(sci_mod_motiv, 
            sci_mod_motiv_math, 
            sci_mod_motiv_math_gr, inner_ci_level = 0.9)
@@ -354,7 +360,7 @@ plot_summs(sci_mod_motiv,
 So, the main idea here is that we can see that group might matter...but we don't know which group. So let's set up separate variables for each group. 
 
 
-```r
+``` r
 sci_df %&gt;%
   mutate(Gr1 = case_when(gr == 1 ~ 1, 
                          gr != 1 ~0))  %&gt;%
@@ -394,7 +400,7 @@ sci_df %&gt;%
 Now extend out to all groups and assign to new dataframe
 
 
-```r
+``` r
 sci_df %&gt;%
   mutate(Gr1 = case_when(gr == 1 ~ 1, 
                          gr != 1 ~0))  %&gt;%
@@ -414,7 +420,7 @@ sci_df %&gt;%
 Need to use the new dataframe and add all the different groups
 
 
-```r
+``` r
 sci_mod_motiv_math_groups &lt;- lm(sci~ math_sc + 
                                      motiv + 
                                      Gr1 +
@@ -429,7 +435,7 @@ sci_mod_motiv_math_groups &lt;- lm(sci~ math_sc +
 # Let's include the groups in a model
 
 
-```r
+``` r
 summary(sci_mod_motiv_math_groups)
 ```
 
@@ -471,7 +477,7 @@ What if a student's motivation is somehow connected to their math score?
 We should look for interactions...
 
 
-```r
+``` r
 sci_mod_motiv_math_interactions &lt;- lm(sci~ math_sc*motiv , data = sci_df)
 
 summary(sci_mod_motiv_math_interactions)
@@ -503,7 +509,7 @@ summary(sci_mod_motiv_math_interactions)
 There are two ways, first, we can plot out the coefficients like we have done before...
 
 
-```r
+``` r
 plot_summs(sci_mod_motiv_math_interactions, inner_ci_level = 0.9)
 ```
 
@@ -515,7 +521,7 @@ plot_summs(sci_mod_motiv_math_interactions, inner_ci_level = 0.9)
 There are two ways, or we can use the interact_plot
 
 
-```r
+``` r
 interact_plot(model = sci_mod_motiv_math_interactions, pred =  math_sc, modx = motiv)
 ```
 
@@ -524,7 +530,7 @@ interact_plot(model = sci_mod_motiv_math_interactions, pred =  math_sc, modx = m
 ---
 # Let's review...
 
-We spent today looking at how to 
+We spent today looking at how to do multiple regression
 
 We can...
  - run a multiple regression
