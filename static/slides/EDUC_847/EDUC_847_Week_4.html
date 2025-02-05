@@ -23,11 +23,23 @@ class: center, middle, inverse, title-slide
 ### Eric Brewe <br> Professor of Physics at Drexel University <br>
 ]
 .date[
-### 29 January 2025, last update: 2025-01-29
+### 29 January 2025, last update: 2025-02-05
 ]
 
 ---
 
+# Let's set the stage
+
+* Last week we talked about the assumptions that go into linear modeling. 
+* We didn't talk about what happens when these assumptions are violated. 
+
+This week we'll discuss
+* Data transformations
+* Missing data
+
+Both of these are real issues that arise all the time in doing regression analyses. 
+
+---
 
 
 
@@ -58,9 +70,9 @@ sci_df &lt;- read_csv(here("data",
 ### We want to predict a science score from a math score. 
 
 ``` r
-*sci_mod &lt;- lm(sci ~ math_sc, data = sci_df)
+*Mod1 &lt;- lm(sci ~ math_sc, data = sci_df)
 
-summary(sci_mod)
+summary(Mod1)
 ```
 
 ```
@@ -94,6 +106,7 @@ Note - we have a new dataset!
 
 ``` r
 Mod2 &lt;- lm(sci ~ pre_sc, data = sci_df)
+
 summary(Mod2)
 ```
 
@@ -141,7 +154,7 @@ There aren't any individual data points that are really impacting our model
 # Let's start with a scatter plot 
 ![](EDUC_847_Week_4_files/figure-html/ScatterPlotWithResiduals-1.png)&lt;!-- --&gt;
 
-That doesn't look good, doesn't look normal
+That doesn't look good, doesn't look like the residuals are normally distributed
 ---
 # Let's check the normality
 
@@ -158,7 +171,7 @@ We can do a histogram of residuals
 
 
 ``` r
-sci_mod_df %&gt;%
+Mod2_df %&gt;%
   ggplot(aes(y = .resid)) +
   geom_histogram() + 
   theme_minimal() + 
@@ -182,7 +195,7 @@ Also doesn't hurt to check the pre_score itself
 .pull-right[
 
 ``` r
-sci_mod_df %&gt;%
+Mod2_df %&gt;%
   ggplot(aes(y = pre_sc)) +
   geom_histogram() + 
   theme_minimal() + 
@@ -211,7 +224,7 @@ The most common transformation is a log transformation
 
 
 ``` r
-sci_mod_df %&gt;%
+sci_df %&gt;%
   ggplot(aes(y = log(pre_sc))) +
   geom_histogram() + 
   theme_minimal() + 
@@ -287,6 +300,8 @@ summary(Mod3)
 ```
 
 
+
+
 ---
 # Let's check the normality
 
@@ -303,7 +318,7 @@ We can do a histogram of residuals for transformed data
 
 
 ``` r
-log_sci_mod_df %&gt;%
+log_Mod3_df %&gt;%
   ggplot(aes(y = .resid)) +
   geom_histogram() + 
   theme_minimal() + 
@@ -312,12 +327,22 @@ log_sci_mod_df %&gt;%
 ]
 
 
+---
+# Let's evaluate this new model
+
+Is this model with the transformed data better?
+
+*  The `\(R^2\)` is lower in the new model
+*  The residuals aren't normally distributed.
+
+So maybe this data transformation was not the right way to go. There are other approaches to data transformation. 
+
 
 ---
-# Let's consider some other transforms
+# Let's consider another transform
 
 ## Another common transformation is to use Z-scores
-This makes it easy to compare coefficients
+This makes it easy to compare coefficients across models and between different variables. 
 
 
 ``` r
@@ -350,7 +375,11 @@ summary(Mod4)
 Hey, notice that the t-value and the p value both stay the same as the first model!
 
 ---
-# Let's deal with these missing data!
+# Let's move on to missing data. 
+
+
+---
+# Let's inspect our data
 
 
 ``` r
@@ -377,7 +406,7 @@ summary(sci_df)
 ```
 
 
-Any thoughts?
+What do you notice?
 
 ---
 # Let's deal with these missing data!

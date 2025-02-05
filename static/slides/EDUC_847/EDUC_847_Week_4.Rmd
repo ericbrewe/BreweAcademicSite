@@ -11,6 +11,18 @@ output:
       highlightLines: true
       countIncrementalSlides: false
 ---
+# Let's set the stage
+
+* Last week we talked about the assumptions that go into linear modeling. 
+* We didn't talk about what happens when these assumptions are violated. 
+
+This week we'll discuss
+* Data transformations
+* Missing data
+
+Both of these are real issues that arise all the time in doing regression analyses. 
+
+---
 
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
@@ -55,9 +67,9 @@ sci_df <- read_csv(here("data",
 ### We want to predict a science score from a math score. 
 ```{r LinearRegression}
 
-sci_mod <- lm(sci ~ math_sc, data = sci_df) #<<
+Mod1 <- lm(sci ~ math_sc, data = sci_df) #<<
 
-summary(sci_mod)
+summary(Mod1)
 ```
 
 Note - we have a new dataset!
@@ -69,6 +81,7 @@ Note - we have a new dataset!
 ```{r Model2}
 
 Mod2 <- lm(sci ~ pre_sc, data = sci_df)
+
 summary(Mod2)
 
 ```
@@ -95,9 +108,9 @@ There aren't any individual data points that are really impacting our model
 # Let's start with a scatter plot 
 ```{r ScatterPlotWithResiduals, echo=FALSE}
 
-sci_mod_df <-augment(Mod2)
+Mod2_df <-augment(Mod2)
 
-sci_mod_df %>%
+Mod2_df %>%
   ggplot(aes(x = pre_sc, y = sci)) +
   geom_point() + 
   theme_minimal() + 
@@ -109,7 +122,7 @@ sci_mod_df %>%
 
 ```
 
-That doesn't look good, doesn't look normal
+That doesn't look good, doesn't look like the residuals are normally distributed
 ---
 # Let's check the normality
 
@@ -118,7 +131,7 @@ We can do a histogram of residuals
 .pull-left[
 ```{r ResidualHist, echo=FALSE }
 
-sci_mod_df %>%
+Mod2_df %>%
   ggplot(aes(y = .resid)) +
   geom_histogram() + 
   theme_minimal() + 
@@ -135,7 +148,7 @@ sci_mod_df %>%
 
 ```{r ResidualCheck3, eval=FALSE}
 
-sci_mod_df %>%
+Mod2_df %>%
   ggplot(aes(y = .resid)) +
   geom_histogram() + 
   theme_minimal() + 
@@ -156,7 +169,7 @@ Also doesn't hurt to check the pre_score itself
 .pull-left[
 ```{r pre_sc_Hist, echo=FALSE }
 
-sci_mod_df %>%
+Mod2_df %>%
   ggplot(aes(y = pre_sc)) +
   geom_histogram() + 
   theme_minimal() + 
@@ -169,7 +182,7 @@ sci_mod_df %>%
 .pull-right[
 ```{r pre_sc_HistR, eval=FALSE }
 
-sci_mod_df %>%
+Mod2_df %>%
   ggplot(aes(y = pre_sc)) +
   geom_histogram() + 
   theme_minimal() + 
@@ -194,7 +207,7 @@ The most common transformation is a log transformation
 
 ```{r LogTrans, echo= FALSE}
 
-sci_mod_df %>%
+sci_df %>%
   ggplot(aes(y =  log(pre_sc))) +
   geom_histogram() + 
   theme_minimal() + 
@@ -207,7 +220,7 @@ sci_mod_df %>%
 
 ```{r LogTransR, eval= FALSE}
 
-sci_mod_df %>%
+sci_df %>%
   ggplot(aes(y = log(pre_sc))) +
   geom_histogram() + 
   theme_minimal() + 
@@ -246,6 +259,8 @@ summary(Mod3)
 ```
 
 
+
+
 ---
 # Let's check the normality
 
@@ -254,9 +269,9 @@ We can do a histogram of residuals for transformed data
 .pull-left[
 ```{r LogResidualHist, echo=FALSE }
 
-log_sci_mod_df <- augment(Mod3)
+log_Mod3_df <- augment(Mod3)
 
-log_sci_mod_df %>%
+log_Mod3_df %>%
   ggplot(aes(y = .resid)) +
   geom_histogram() + 
   theme_minimal() + 
@@ -273,7 +288,7 @@ log_sci_mod_df %>%
 
 ```{r LogResidualCheck3, eval=FALSE}
 
-log_sci_mod_df %>%
+log_Mod3_df %>%
   ggplot(aes(y = .resid)) +
   geom_histogram() + 
   theme_minimal() + 
@@ -283,12 +298,22 @@ log_sci_mod_df %>%
 ]
 
 
+---
+# Let's evaluate this new model
+
+Is this model with the transformed data better?
+
+*  The $R^2$ is lower in the new model
+*  The residuals aren't normally distributed.
+
+So maybe this data transformation was not the right way to go. There are other approaches to data transformation. 
+
 
 ---
-# Let's consider some other transforms
+# Let's consider another transform
 
 ## Another common transformation is to use Z-scores
-This makes it easy to compare coefficients
+This makes it easy to compare coefficients across models and between different variables. 
 
 ```{r ZScTransformMod }
 
@@ -300,7 +325,11 @@ summary(Mod4)
 Hey, notice that the t-value and the p value both stay the same as the first model!
 
 ---
-# Let's deal with these missing data!
+# Let's move on to missing data. 
+
+
+---
+# Let's inspect our data
 
 ```{r}
 summary(sci_df)
@@ -308,7 +337,7 @@ summary(sci_df)
 ```
 
 
-Any thoughts?
+What do you notice?
 
 ---
 # Let's deal with these missing data!
