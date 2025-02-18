@@ -1,6 +1,6 @@
 ---
 title: "EDUC 847 Winter 25"
-subtitle: Week 7 - Logistic Regression
+subtitle: Week 6 - Logistic Regression
 author: 'Eric Brewe <br> Professor of Physics at Drexel University <br>'
 date: "19 February 2025, last update: `r Sys.Date()`"
 output: 
