@@ -20,21 +20,11 @@ library(tidyverse)
 
 
 
-The slides for Week 5 can be found here:
+The slides for Week 6 can be found here:
 ```{r WS5Slides}
 knitr::include_url('https://ericbrewe.com/slides/EDUC_847/EDUC_847_Week_6.html#1')
 ```
 
 
 
-**Reading Assignment**
-Here is your reading assignment for Week 5
 
-I felt like I understood some features of multiple regression much better after reading chapter 13 in this book. The book uses Bayesian inference which is sort of different than what we have been doing. So feel free to skip over parts that don't make sense.  But I think the chapter on logistic regression is pretty good conceptually. 
-
-https://www.bayesrulesbook.com/chapter-13
-
-
-
-**Additional Resources**
-If you are struggling with R, I think that the introduction chapters of *Learning Statistics with R* are really useful, I suggest looking at chapters 3-8: https://learningstatisticswithr.com/book/part-ii-an-introduction-to-r.html 

@@ -1,8 +1,8 @@
 ---
-title: "EDUC 847 Winter 24"
-subtitle: Week 6 - Logistic Regression
+title: "EDUC 847 Winter 25"
+subtitle: Week 7 - Logistic Regression
 author: 'Eric Brewe <br> Professor of Physics at Drexel University <br>'
-date: "26 February 2024, last update: `r Sys.Date()`"
+date: "19 February 2025, last update: `r Sys.Date()`"
 output: 
   xaringan::moon_reader:
     css: [default, metropolis, "BreweSlides.css"]
@@ -58,7 +58,7 @@ sci_df <- read_csv(here("data",
 ---
 # Let's remember last class
 
-### We predicted science scores from scores. 
+### We predicted science scores from motivation scores. 
 ```{r LinearRegression}
 
 sci_mod_motiv <- lm(sci ~ motiv, data = sci_df) #<<
@@ -207,7 +207,7 @@ $p(x) = \frac{1}{1+e^{-(\beta_{0}+\beta_{1}x+...)}}$
 
 We interpret this as the probablility of the outcome variable, so in our case, it is the probability of passing.  And by definition, the probability of failing the class is then $1 - p(x)$
 
-This means that the ratio of passing to failing is
+This means that the ratio of passing to failing (an odds ratio) is
 
 $\frac{p(x)}{1-p(x)} = e^{\beta_{0} + \beta_{1}x+...}$
 
@@ -229,16 +229,25 @@ summary(pass_model)
 # Let's interpret
 
 ```{r ViewCoeff}
-coef(pass_model)
+tidy(pass_model)
 ```
 
-But to interpret, we need to take the exp of the coefficient (because this is an log odds ratio)
+First, we take the sign to determine the direction of the relationship.
+
+In this case, motiv = 0.0796....so there is a positive relationship, meaning that increasing the motivation increases the odds of passing.
+
+---
+# Let's interpret
+
+To interpret the value of the coefficient, we need to take the exp of the coefficient (because this is an log odds ratio)
+
+
 
 ```{r ExpCoeff}
 exp(coef(pass_model)[2])
 ```
 
-This means for every increase in motivation score, the odds of passing the class increase by ~8%.  That seems meaningful. But how did we do?  Is this better at predicting passing?
+This means for every increase of one unit in motivation score, the odds of passing the class increase by ~8%.  That seems meaningful. But how did we do?  Is this better at predicting passing?
 
 
 ---
@@ -251,7 +260,7 @@ This means for every increase in motivation score, the odds of passing the class
 ---
 #Let's build a confusion matrix
 
-First, we will use the predict function to generate predicted probabilities of passing. 
+First, we will use the predict function to generate predicted probabilities of passing. In this step we are plugging in the motivation scores into the equation. 
 
 ```{r ConfusionMatrix}
 predicted <- tibble( probs = predict(pass_model, type = "response"))
@@ -266,14 +275,14 @@ But those are numbers, how do we convert to pass/fail?
 ---
 #Let's build a confusion matrix
 
-First, we will use the predict function to generate predicted probabilities of passing. 
+We need to establish a cut score.  One idea would be to use 50%, another is to use 64% since that means we are doing better than just guessing (remember there 64% of the students passed.) 
 
 ```{r ConfusionMatrix2}
 predicted %>%
   mutate(pred_50 = if_else(probs>0.5,1,0)) %>%
   mutate(pred_64 = if_else(probs>0.64,1,0))  -> predictions
 
-head(predictions, 10 )
+head(predictions, 8 )
 ```
 
 ---
@@ -281,7 +290,9 @@ head(predictions, 10 )
 
 
 ```{r ConfusionMatrix3L }
-confusionMatrix(as.factor(sci_df$pass),as.factor(predictions$pred_50))
+confusionMatrix( as.factor(sci_df$pass), 
+                 as.factor(predictions$pred_50), 
+                 positive ="1") #<<
 ```
 
 
@@ -290,7 +301,9 @@ confusionMatrix(as.factor(sci_df$pass),as.factor(predictions$pred_50))
 #Let's build a confusion matrix for the 64%
 
 ```{r ConfusionMatrix4}
-confusionMatrix(as.factor(sci_df$pass),as.factor(predictions$pred_64))
+confusionMatrix( as.factor(sci_df$pass), 
+                 as.factor(predictions$pred_64), 
+                 positive = "1") #<<
 ```
 
 ---

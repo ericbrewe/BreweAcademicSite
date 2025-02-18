@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>EDUC 847 Winter 24</title>
+    <title>EDUC 847 Winter 25</title>
     <meta charset="utf-8" />
     <meta name="author" content="Eric Brewe   Professor of Physics at Drexel University  " />
     <script src="EDUC_847_Week_6_files/header-attrs/header-attrs.js"></script>
@@ -14,16 +14,16 @@
 class: center, middle, inverse, title-slide
 
 .title[
-# EDUC 847 Winter 24
+# EDUC 847 Winter 25
 ]
 .subtitle[
-## Week 6 - Logistic Regression
+## Week 7 - Logistic Regression
 ]
 .author[
 ### Eric Brewe <br> Professor of Physics at Drexel University <br>
 ]
 .date[
-### 26 February 2024, last update: 2024-02-26
+### 19 February 2025, last update: 2025-02-18
 ]
 
 ---
@@ -43,7 +43,7 @@ Start by getting the data into R
 
 
 
-```r
+``` r
 #This loads the csv and saves it as a dataframe titled sci_df
 
 sci_df &lt;- read_csv(here("data",
@@ -54,9 +54,9 @@ sci_df &lt;- read_csv(here("data",
 ---
 # Let's remember last class
 
-### We predicted science scores from scores. 
+### We predicted science scores from motivation scores. 
 
-```r
+``` r
 *sci_mod_motiv &lt;- lm(sci ~ motiv, data = sci_df)
 
 tidy(summary(sci_mod_motiv))
@@ -81,7 +81,7 @@ Note - we have a new dataset, there is a passing variable.
 
 
 
-```r
+``` r
 glimpse(sci_df)
 ```
 
@@ -101,7 +101,7 @@ glimpse(sci_df)
 # Let's review passing data 
 
 
-```r
+``` r
 sci_df %&gt;%
   tabyl(pass)
 ```
@@ -121,7 +121,7 @@ sci_df %&gt;%
 .pull-left[
 
 
-```r
+``` r
 sci_df %&gt;%
   ggplot(aes(x = motiv, y = pass)) +
   geom_point()
@@ -140,7 +140,7 @@ sci_df %&gt;%
 
 .pull-left[
 
-```r
+``` r
 sci_df %&gt;%
   ggplot(aes(x = as.factor(pass), y = motiv)) +
   geom_boxplot()
@@ -183,7 +183,7 @@ sci_df %&gt;%
 # Let's look at motivation
 .pull-left[
 
-```r
+``` r
 sci_df %&gt;%
   ggplot(aes(x = motiv, y = pass)) +
   geom_point() +
@@ -213,7 +213,7 @@ sci_df %&gt;%
 
 We interpret this as the probablility of the outcome variable, so in our case, it is the probability of passing.  And by definition, the probability of failing the class is then `\(1 - p(x)\)`
 
-This means that the ratio of passing to failing is
+This means that the ratio of passing to failing (an odds ratio) is
 
 `\(\frac{p(x)}{1-p(x)} = e^{\beta_{0} + \beta_{1}x+...}\)`
 
@@ -224,7 +224,7 @@ We'll need to interpret the outcome of the regression.
 # Let's do logistic regression!
 
 
-```r
+``` r
 *pass_model &lt;- glm(pass~motiv, data = sci_df, family = "binomial")
 
 summary(pass_model)
@@ -256,19 +256,31 @@ summary(pass_model)
 # Let's interpret
 
 
-```r
-coef(pass_model)
+``` r
+tidy(pass_model)
 ```
 
 ```
-## (Intercept)       motiv 
-## -5.11780574  0.07960186
+## # A tibble: 2 × 5
+##   term        estimate std.error statistic  p.value
+##   &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;
+## 1 (Intercept)  -5.12     0.696       -7.36 1.90e-13
+## 2 motiv         0.0796   0.00978      8.14 3.90e-16
 ```
 
-But to interpret, we need to take the exp of the coefficient (because this is an log odds ratio)
+First, we take the sign to determine the direction of the relationship.
+
+In this case, motiv = 0.0796....so there is a positive relationship, meaning that increasing the motivation increases the odds of passing.
+
+---
+# Let's interpret
+
+To interpret the value of the coefficient, we need to take the exp of the coefficient (because this is an log odds ratio)
 
 
-```r
+
+
+``` r
 exp(coef(pass_model)[2])
 ```
 
@@ -277,7 +289,7 @@ exp(coef(pass_model)[2])
 ## 1.082856
 ```
 
-This means for every increase in motivation score, the odds of passing the class increase by ~8%.  That seems meaningful. But how did we do?  Is this better at predicting passing?
+This means for every increase of one unit in motivation score, the odds of passing the class increase by ~8%.  That seems meaningful. But how did we do?  Is this better at predicting passing?
 
 
 ---
@@ -290,10 +302,10 @@ This means for every increase in motivation score, the odds of passing the class
 ---
 #Let's build a confusion matrix
 
-First, we will use the predict function to generate predicted probabilities of passing. 
+First, we will use the predict function to generate predicted probabilities of passing. In this step we are plugging in the motivation scores into the equation. 
 
 
-```r
+``` r
 predicted &lt;- tibble( probs = predict(pass_model, type = "response"))
 
 head(predicted)
@@ -317,31 +329,29 @@ But those are numbers, how do we convert to pass/fail?
 ---
 #Let's build a confusion matrix
 
-First, we will use the predict function to generate predicted probabilities of passing. 
+We need to establish a cut score.  One idea would be to use 50%, another is to use 64% since that means we are doing better than just guessing (remember there 64% of the students passed.) 
 
 
-```r
+``` r
 predicted %&gt;%
   mutate(pred_50 = if_else(probs&gt;0.5,1,0)) %&gt;%
   mutate(pred_64 = if_else(probs&gt;0.64,1,0))  -&gt; predictions
 
-head(predictions, 10 )
+head(predictions, 8 )
 ```
 
 ```
-## # A tibble: 10 × 3
-##    probs pred_50 pred_64
-##    &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;
-##  1 0.789       1       1
-##  2 0.466       0       0
-##  3 0.844       1       1
-##  4 0.954       1       1
-##  5 0.932       1       1
-##  6 0.612       1       0
-##  7 0.293       0       0
-##  8 0.831       1       1
-##  9 0.711       1       1
-## 10 0.287       0       0
+## # A tibble: 8 × 3
+##   probs pred_50 pred_64
+##   &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;
+## 1 0.789       1       1
+## 2 0.466       0       0
+## 3 0.844       1       1
+## 4 0.954       1       1
+## 5 0.932       1       1
+## 6 0.612       1       0
+## 7 0.293       0       0
+## 8 0.831       1       1
 ```
 
 ---
@@ -349,8 +359,10 @@ head(predictions, 10 )
 
 
 
-```r
-confusionMatrix(as.factor(sci_df$pass),as.factor(predictions$pred_50))
+``` r
+confusionMatrix( as.factor(sci_df$pass), 
+                 as.factor(predictions$pred_50), 
+*                positive ="1")
 ```
 
 ```
@@ -370,16 +382,16 @@ confusionMatrix(as.factor(sci_df$pass),as.factor(predictions$pred_50))
 ##                                           
 ##  Mcnemar's Test P-Value : 1.717e-05       
 ##                                           
-##             Sensitivity : 0.6111          
-##             Specificity : 0.7246          
-##          Pos Pred Value : 0.4278          
-##          Neg Pred Value : 0.8469          
-##              Prevalence : 0.2520          
-##          Detection Rate : 0.1540          
-##    Detection Prevalence : 0.3600          
+##             Sensitivity : 0.7246          
+##             Specificity : 0.6111          
+##          Pos Pred Value : 0.8469          
+##          Neg Pred Value : 0.4278          
+##              Prevalence : 0.7480          
+##          Detection Rate : 0.5420          
+##    Detection Prevalence : 0.6400          
 ##       Balanced Accuracy : 0.6679          
 ##                                           
-##        'Positive' Class : 0               
+##        'Positive' Class : 1               
 ## 
 ```
 
@@ -389,8 +401,10 @@ confusionMatrix(as.factor(sci_df$pass),as.factor(predictions$pred_50))
 #Let's build a confusion matrix for the 64%
 
 
-```r
-confusionMatrix(as.factor(sci_df$pass),as.factor(predictions$pred_64))
+``` r
+confusionMatrix( as.factor(sci_df$pass), 
+                 as.factor(predictions$pred_64), 
+*                positive = "1")
 ```
 
 ```
@@ -410,16 +424,16 @@ confusionMatrix(as.factor(sci_df$pass),as.factor(predictions$pred_64))
 ##                                          
 ##  Mcnemar's Test P-Value : 6.151e-05      
 ##                                          
-##             Sensitivity : 0.5388         
-##             Specificity : 0.7948         
-##          Pos Pred Value : 0.6944         
-##          Neg Pred Value : 0.6656         
-##              Prevalence : 0.4640         
-##          Detection Rate : 0.2500         
-##    Detection Prevalence : 0.3600         
+##             Sensitivity : 0.7948         
+##             Specificity : 0.5388         
+##          Pos Pred Value : 0.6656         
+##          Neg Pred Value : 0.6944         
+##              Prevalence : 0.5360         
+##          Detection Rate : 0.4260         
+##    Detection Prevalence : 0.6400         
 ##       Balanced Accuracy : 0.6668         
 ##                                          
-##        'Positive' Class : 0              
+##        'Positive' Class : 1              
 ## 
 ```
 
