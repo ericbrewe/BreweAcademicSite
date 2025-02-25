@@ -290,9 +290,10 @@ head(predictions, 8 )
 
 
 ```{r ConfusionMatrix3L }
-confusionMatrix( as.factor(sci_df$pass), 
-                 as.factor(predictions$pred_50), 
-                 positive ="1") #<<
+confusionMatrix( as.factor(predictions$pred_50),
+                 as.factor(sci_df$pass), 
+                 positive ="1",
+                 dnn = c("Predicted", "Actual")) #<<
 ```
 
 
@@ -301,9 +302,10 @@ confusionMatrix( as.factor(sci_df$pass),
 #Let's build a confusion matrix for the 64%
 
 ```{r ConfusionMatrix4}
-confusionMatrix( as.factor(sci_df$pass), 
-                 as.factor(predictions$pred_64), 
-                 positive = "1") #<<
+confusionMatrix( as.factor(predictions$pred_64), 
+                 as.factor(sci_df$pass), 
+                 positive = "1",
+                 dnn = c("Predicted", "Actual")) #<<
 ```
 
 ---

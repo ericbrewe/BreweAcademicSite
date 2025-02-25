@@ -23,7 +23,7 @@ class: center, middle, inverse, title-slide
 ### Eric Brewe <br> Professor of Physics at Drexel University <br>
 ]
 .date[
-### 19 February 2025, last update: 2025-02-18
+### 19 February 2025, last update: 2025-02-25
 ]
 
 ---
@@ -360,36 +360,37 @@ head(predictions, 8 )
 
 
 ``` r
-confusionMatrix( as.factor(sci_df$pass), 
-                 as.factor(predictions$pred_50), 
-*                positive ="1")
+confusionMatrix( as.factor(predictions$pred_50),
+                 as.factor(sci_df$pass), 
+                 positive ="1",
+*                dnn = c("Predicted", "Actual"))
 ```
 
 ```
 ## Confusion Matrix and Statistics
 ## 
-##           Reference
-## Prediction   0   1
-##          0  77 103
-##          1  49 271
+##          Actual
+## Predicted   0   1
+##         0  77  49
+##         1 103 271
 ##                                           
 ##                Accuracy : 0.696           
 ##                  95% CI : (0.6536, 0.7361)
-##     No Information Rate : 0.748           
-##     P-Value [Acc &gt; NIR] : 0.9963          
+##     No Information Rate : 0.64            
+##     P-Value [Acc &gt; NIR] : 0.004803        
 ##                                           
 ##                   Kappa : 0.2939          
 ##                                           
 ##  Mcnemar's Test P-Value : 1.717e-05       
 ##                                           
-##             Sensitivity : 0.7246          
-##             Specificity : 0.6111          
-##          Pos Pred Value : 0.8469          
-##          Neg Pred Value : 0.4278          
-##              Prevalence : 0.7480          
+##             Sensitivity : 0.8469          
+##             Specificity : 0.4278          
+##          Pos Pred Value : 0.7246          
+##          Neg Pred Value : 0.6111          
+##              Prevalence : 0.6400          
 ##          Detection Rate : 0.5420          
-##    Detection Prevalence : 0.6400          
-##       Balanced Accuracy : 0.6679          
+##    Detection Prevalence : 0.7480          
+##       Balanced Accuracy : 0.6373          
 ##                                           
 ##        'Positive' Class : 1               
 ## 
@@ -402,36 +403,37 @@ confusionMatrix( as.factor(sci_df$pass),
 
 
 ``` r
-confusionMatrix( as.factor(sci_df$pass), 
-                 as.factor(predictions$pred_64), 
-*                positive = "1")
+confusionMatrix( as.factor(predictions$pred_64), 
+                 as.factor(sci_df$pass), 
+                 positive = "1",
+*                dnn = c("Predicted", "Actual"))
 ```
 
 ```
 ## Confusion Matrix and Statistics
 ## 
-##           Reference
-## Prediction   0   1
-##          0 125  55
-##          1 107 213
+##          Actual
+## Predicted   0   1
+##         0 125 107
+##         1  55 213
 ##                                          
 ##                Accuracy : 0.676          
 ##                  95% CI : (0.633, 0.7169)
-##     No Information Rate : 0.536          
-##     P-Value [Acc &gt; NIR] : 1.341e-10      
+##     No Information Rate : 0.64           
+##     P-Value [Acc &gt; NIR] : 0.05068        
 ##                                          
 ##                   Kappa : 0.3387         
 ##                                          
 ##  Mcnemar's Test P-Value : 6.151e-05      
 ##                                          
-##             Sensitivity : 0.7948         
-##             Specificity : 0.5388         
-##          Pos Pred Value : 0.6656         
-##          Neg Pred Value : 0.6944         
-##              Prevalence : 0.5360         
+##             Sensitivity : 0.6656         
+##             Specificity : 0.6944         
+##          Pos Pred Value : 0.7948         
+##          Neg Pred Value : 0.5388         
+##              Prevalence : 0.6400         
 ##          Detection Rate : 0.4260         
-##    Detection Prevalence : 0.6400         
-##       Balanced Accuracy : 0.6668         
+##    Detection Prevalence : 0.5360         
+##       Balanced Accuracy : 0.6800         
 ##                                          
 ##        'Positive' Class : 1              
 ## 
@@ -462,9 +464,9 @@ We can...
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
-"highlightStyle": "github",
-"highlightLines": true,
-"countIncrementalSlides": false
+  "highlightStyle": "github",
+  "highlightLines": true,
+  "countIncrementalSlides": false
 });
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   window.dispatchEvent(new Event('resize'));

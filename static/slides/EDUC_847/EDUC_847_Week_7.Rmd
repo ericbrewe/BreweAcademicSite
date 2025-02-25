@@ -1,8 +1,8 @@
 ---
-title: "EDUC 847 Winter 24"
+title: "EDUC 847"
 subtitle: Week 7 - Machine Learning
 author: 'Eric Brewe <br> Professor of Physics at Drexel University <br>'
-date: "4 March 2024, last update: `r Sys.Date()`"
+date: "26 February 2025, last update: `r Sys.Date()`"
 output: 
   xaringan::moon_reader:
     css: [default, metropolis, "BreweSlides.css"]
@@ -29,7 +29,6 @@ library(emdi)
 library(interactions)
 library(caret)
 library(tidymodels)
-
 ```
 
 
@@ -156,7 +155,7 @@ G3 - final grade (numeric: from 0 to 20, output target)
 psd %>%
    select(-G1) %>%
    mutate_if(is_character, as.factor) %>%
-   mutate(passing = if_else(G3>10, 1,0 )) %>%
+   mutate(passing = if_else(G3>14, 1,0 )) %>%
    mutate(passing = as.factor(passing) )-> psd
 ```
 
@@ -306,7 +305,10 @@ lr_res %>%
 # Let's check the Confusion
 ```{r Results3}
 
-confusionMatrix(lr_res$passing, lr_res$.pred_class)
+confusionMatrix(lr_res$.pred_class, 
+                lr_res$passing,
+                dnn = c("Predicted", "Actual"),
+                positive = "1")
 
 ```
 

@@ -20,7 +20,7 @@ library(tidyverse)
 
 
 
-The slides for Week 8 can be found here:
+The slides for Week 7 can be found here:
 ```{r WS5Slides}
 knitr::include_url('https://ericbrewe.com/slides/EDUC_847/EDUC_847_Week_7.html#1')
 ```
