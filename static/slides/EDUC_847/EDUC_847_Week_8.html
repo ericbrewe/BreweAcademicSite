@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>EDUC 847 Winter 24</title>
+    <title>EDUC 847 Winter 25</title>
     <meta charset="utf-8" />
     <meta name="author" content="Eric Brewe   Professor of Physics at Drexel University  " />
     <script src="EDUC_847_Week_8_files/header-attrs/header-attrs.js"></script>
@@ -14,7 +14,7 @@
 class: center, middle, inverse, title-slide
 
 .title[
-# EDUC 847 Winter 24
+# EDUC 847 Winter 25
 ]
 .subtitle[
 ## Week 8 - BayesFactors
@@ -23,7 +23,7 @@ class: center, middle, inverse, title-slide
 ### Eric Brewe <br> Professor of Physics at Drexel University <br>
 ]
 .date[
-### 11 March 2024, last update: 2024-03-12
+### 5 March 2025, last update: 2025-03-05
 ]
 
 ---
@@ -43,7 +43,7 @@ Start by getting the data into R
 
 
 
-```r
+``` r
 #This loads the csv and saves it as a dataframe titled sci_df
 
 sci_df &lt;- read_csv(here("data",
@@ -56,7 +56,7 @@ sci_df &lt;- read_csv(here("data",
 
 ### We predicted science scores from motivation scores. 
 
-```r
+``` r
 *sci_mod_motiv &lt;- lm(sci ~ motiv, data = sci_df)
 
 tidy(summary(sci_mod_motiv))
@@ -74,7 +74,7 @@ tidy(summary(sci_mod_motiv))
 # Let's decide if it is a good model.
 
 
-```r
+``` r
 tidy(glance(sci_mod_motiv)) %&gt;% select(column, mean)
 ```
 
@@ -103,7 +103,7 @@ tidy(glance(sci_mod_motiv)) %&gt;% select(column, mean)
 ## What would the null model be?
 
 
-```r
+``` r
 *sci_mod_null &lt;- lm(sci ~ 1, data = sci_df)
 
 tidy(summary(sci_mod_null))
@@ -120,7 +120,7 @@ tidy(summary(sci_mod_null))
 # Let's get the AIC for the null
 
 
-```r
+``` r
 tidy(glance(sci_mod_null)) %&gt;% select(column, mean)
 ```
 
@@ -147,8 +147,10 @@ AIC went down.
 ---
 # Let's use ANOVA
 
+We can use ANOVA to evaluate which model is preferrable. 
 
-```r
+
+``` r
 anova(sci_mod_null,sci_mod_motiv)
 ```
 
@@ -164,7 +166,7 @@ anova(sci_mod_null,sci_mod_motiv)
 ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 ```
 
-This suggests we can reject the null hypothesis.
+This suggests we can reject the null hypothesis, so that means....?
 
 ---
 # Let's try another variable
@@ -172,7 +174,7 @@ This suggests we can reject the null hypothesis.
 ## What if we wanted to investagte group differences
 
 
-```r
+``` r
 *sci_mod_gr &lt;- lm(sci ~ gr, data = sci_df)
 
 tidy(summary(sci_mod_gr))
@@ -190,7 +192,7 @@ tidy(summary(sci_mod_gr))
 # Let's decide if it is a good model.
 
 
-```r
+``` r
 tidy(glance(sci_mod_gr)) %&gt;% select(column, mean)
 ```
 
@@ -218,7 +220,7 @@ tidy(glance(sci_mod_gr)) %&gt;% select(column, mean)
 # Let's use ANOVA
 
 
-```r
+``` r
 anova(sci_mod_null,sci_mod_gr)
 ```
 
@@ -251,25 +253,25 @@ Here is how it works:
 
 The equation for the Posterior probability is:
 
-`\(P(h|d) = \frac{P(d|h)*P(h)}{P(d)}\)`
+`$$P(h|d) = \frac{P(d|h)*P(h)}{P(d)}$$`
 
 ---
 # Let's use Bayes Theory in Hypothesis Tests
 
 ## For the null hypothesis we can write the posterior probability as:
 
-`\(P(h_{0}|d) = \frac{P(d|h_{0})*P(h_{0})}{P(d)}\)`
+`$$P(h_{0}|d) = \frac{P(d|h_{0})*P(h_{0})}{P(d)}$$`
 
 ## For the alternative hypothesis we can write the posterior probability as:
 
-`\(P(h_{1}|d) = \frac{P(d|h_{1})*P(h_{1})}{P(d)}\)`
+`$$P(h_{1}|d) = \frac{P(d|h_{1})*P(h_{1})}{P(d)}$$`
 
 ---
 # Let's take an odds ratio
 
 ## In principle, we can compare these models by taking the odds ratio of the probablity of Model 1 to the Null Model.
 
-`\(\frac{Model_{1}}{Model_{0}}\)`
+`$$\frac{Model_{1}}{Model_{0}}$$`
 
 ## What this tells us is how much more probable Model 1 is than Model 0. 
 
@@ -278,13 +280,14 @@ The equation for the Posterior probability is:
 
 ## When we actually do this division...
 
-`\(\frac{Model_{1}}{Model_{0}} = \frac{P(h_{1}|d)}{P(d|h_{0})} = \frac{\frac{P(d|h_{1})*P(h_{1})}{P(d)}}{\frac{P(d|h_{0})*P(h_{0})}{P(d)}}\)`
+`$$\frac{Model_{1}}{Model_{0}} = \frac{P(h_{1}|d)}{P(d|h_{0})} = \frac{\frac{P(d|h_{1})*P(h_{1})}{P(d)}}{\frac{P(d|h_{0})*P(h_{0})}{P(d)}}$$`
 
 Which is great, because a number of things divide out, and we end up with 
 
-`\(Posterior Odds = Bayes Factor * Prior Odds\)`
+`$$Posterior Odds = Bayes Factor * Prior Odds$$`
 
-`\(\frac{P(h_{1}|d)}{P(h_{0}|d)} = \frac{P(d|h_{1})}{P(d|h_{0})} * \frac{P(h_{1})}{P(h_{0})}\)`
+`$$\frac{P(h_{1}|d)}{P(h_{0}|d)} = \frac{P(d|h_{1})}{P(d|h_{0})} * \frac{P(h_{1})}{P(h_{0})}$$`
+
 
 
 ---
@@ -305,7 +308,7 @@ First we have to estimate the model.
 
 
 
-```r
+``` r
 regressionBF(
   formula = sci ~ motiv,
   data = sci_df
@@ -332,7 +335,7 @@ Hmm, our Bayes Factor is only 1.15, so not a ton better than the null model.
 ## Remember we know we couldn't reject the null.
 
 
-```r
+``` r
 regressionBF(
   formula = sci ~ gr,
   data = sci_df
@@ -355,7 +358,7 @@ So, this one is less than 1. To get the confidence in the null model over the mo
 # Let's see if there is a better model
 
 
-```r
+``` r
 models &lt;- regressionBF(
   formula = sci ~ .,
   data = sci_df
@@ -367,7 +370,7 @@ models &lt;- regressionBF(
 # Let's see if there is a better model
 
 
-```r
+``` r
 topModels&lt;-head(models,5)
 
 topModels
@@ -413,7 +416,7 @@ So, yeah a Bayes factor of 1.057403e+379 is really strong evidence.
 So is the top model (motiv + pre_sc + math_sc) much better than the third best (gr + motiv + pre_sc + math_sc) model?
 
 
-```r
+``` r
 topModels[1]/topModels[3]
 ```
 
@@ -435,7 +438,7 @@ That tells us how confident to be in Model 1 vs. Model 3.
 ### To identify variables to drop, we can use the whichModels function
 
 
-```r
+``` r
 regressionBF( 
  formula = sci ~ motiv + pre_sc + math_sc + gr,
  data = sci_df,
@@ -471,7 +474,7 @@ regressionBF(
 # Let's do one more
 
 
-```r
+``` r
 BestModels &lt;- generalTestBF(
   formula = sci ~ motiv + math_sc*pre_sc,
   data = sci_df)
@@ -502,7 +505,7 @@ BestModels
 # Let's do one more
 
 
-```r
+``` r
 BestModels[8]
 ```
 
@@ -552,9 +555,9 @@ We can...
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
-"highlightStyle": "github",
-"highlightLines": true,
-"countIncrementalSlides": false
+  "highlightStyle": "github",
+  "highlightLines": true,
+  "countIncrementalSlides": false
 });
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   window.dispatchEvent(new Event('resize'));

@@ -2,7 +2,7 @@
 title: "EDUC 847 Winter 25"
 subtitle: Week 8 - BayesFactors
 author: 'Eric Brewe <br> Professor of Physics at Drexel University <br>'
-date: "11 March 2024, last update: `r Sys.Date()`"
+date: "5 March 2025, last update: `r Sys.Date()`"
 output: 
   xaringan::moon_reader:
     css: [default, metropolis, "BreweSlides.css"]
@@ -94,13 +94,15 @@ AIC went down.
 ---
 # Let's use ANOVA
 
+We can use ANOVA to evaluate which model is preferrable. 
+
 ```{r}
 
 anova(sci_mod_null,sci_mod_motiv)
 
 ```
 
-This suggests we can reject the null hypothesis.
+This suggests we can reject the null hypothesis, so that means....?
 
 ---
 # Let's try another variable
@@ -151,25 +153,25 @@ Here is how it works:
 
 The equation for the Posterior probability is:
 
-$P(h|d) = \frac{P(d|h)*P(h)}{P(d)}$
+$$P(h|d) = \frac{P(d|h)*P(h)}{P(d)}$$
 
 ---
 # Let's use Bayes Theory in Hypothesis Tests
 
 ## For the null hypothesis we can write the posterior probability as:
 
-$P(h_{0}|d) = \frac{P(d|h_{0})*P(h_{0})}{P(d)}$
+$$P(h_{0}|d) = \frac{P(d|h_{0})*P(h_{0})}{P(d)}$$
 
 ## For the alternative hypothesis we can write the posterior probability as:
 
-$P(h_{1}|d) = \frac{P(d|h_{1})*P(h_{1})}{P(d)}$
+$$P(h_{1}|d) = \frac{P(d|h_{1})*P(h_{1})}{P(d)}$$
 
 ---
 # Let's take an odds ratio
 
 ## In principle, we can compare these models by taking the odds ratio of the probablity of Model 1 to the Null Model.
 
-$\frac{Model_{1}}{Model_{0}}$
+$$\frac{Model_{1}}{Model_{0}}$$
 
 ## What this tells us is how much more probable Model 1 is than Model 0. 
 
@@ -178,13 +180,14 @@ $\frac{Model_{1}}{Model_{0}}$
 
 ## When we actually do this division...
 
-$\frac{Model_{1}}{Model_{0}} = \frac{P(h_{1}|d)}{P(d|h_{0})} = \frac{\frac{P(d|h_{1})*P(h_{1})}{P(d)}}{\frac{P(d|h_{0})*P(h_{0})}{P(d)}}$
+$$\frac{Model_{1}}{Model_{0}} = \frac{P(h_{1}|d)}{P(d|h_{0})} = \frac{\frac{P(d|h_{1})*P(h_{1})}{P(d)}}{\frac{P(d|h_{0})*P(h_{0})}{P(d)}}$$
 
 Which is great, because a number of things divide out, and we end up with 
 
-$Posterior Odds = Bayes Factor * Prior Odds$
+$$Posterior Odds = Bayes Factor * Prior Odds$$
 
-$\frac{P(h_{1}|d)}{P(h_{0}|d)} = \frac{P(d|h_{1})}{P(d|h_{0})} * \frac{P(h_{1})}{P(h_{0})}$
+$$\frac{P(h_{1}|d)}{P(h_{0}|d)} = \frac{P(d|h_{1})}{P(d|h_{0})} * \frac{P(h_{1})}{P(h_{0})}$$
+
 
 
 ---
